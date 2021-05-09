@@ -32,19 +32,16 @@ Partial Class Clearance
         Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.BunifuDataGridView1 = New Bunifu.UI.WinForms.BunifuDataGridView()
-        Me.InvoiceNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PurposeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AddressColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DateAndTimeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GenderColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AgeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GivenByColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FullNameColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TypeOfClearanceColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.InvoiceNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PurposeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DateAndTimeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GivenByColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FullNameColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TypeOfClearanceColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.BunifuDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -67,7 +64,7 @@ Partial Class Clearance
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.BunifuDataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.BunifuDataGridView1.ColumnHeadersHeight = 40
-        Me.BunifuDataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.InvoiceNumberColumn, Me.PurposeColumn, Me.AddressColumn, Me.DateAndTimeColumn, Me.GenderColumn, Me.AgeColumn, Me.GivenByColumn, Me.FullNameColumn, Me.TypeOfClearanceColumn})
+        Me.BunifuDataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.InvoiceNumberColumn, Me.PurposeColumn, Me.DateAndTimeColumn, Me.GivenByColumn, Me.FullNameColumn, Me.TypeOfClearanceColumn})
         Me.BunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
         Me.BunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black
@@ -107,51 +104,6 @@ Partial Class Clearance
         Me.BunifuDataGridView1.Size = New System.Drawing.Size(1083, 620)
         Me.BunifuDataGridView1.TabIndex = 0
         Me.BunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light
-        '
-        'InvoiceNumberColumn
-        '
-        Me.InvoiceNumberColumn.HeaderText = "INVOICE NO."
-        Me.InvoiceNumberColumn.Name = "InvoiceNumberColumn"
-        '
-        'PurposeColumn
-        '
-        Me.PurposeColumn.HeaderText = "PURPOSE"
-        Me.PurposeColumn.Name = "PurposeColumn"
-        '
-        'AddressColumn
-        '
-        Me.AddressColumn.HeaderText = "ADDRESS"
-        Me.AddressColumn.Name = "AddressColumn"
-        '
-        'DateAndTimeColumn
-        '
-        Me.DateAndTimeColumn.HeaderText = "DATE"
-        Me.DateAndTimeColumn.Name = "DateAndTimeColumn"
-        '
-        'GenderColumn
-        '
-        Me.GenderColumn.HeaderText = "GENDER"
-        Me.GenderColumn.Name = "GenderColumn"
-        '
-        'AgeColumn
-        '
-        Me.AgeColumn.HeaderText = "AGE"
-        Me.AgeColumn.Name = "AgeColumn"
-        '
-        'GivenByColumn
-        '
-        Me.GivenByColumn.HeaderText = "GIVEN BY"
-        Me.GivenByColumn.Name = "GivenByColumn"
-        '
-        'FullNameColumn
-        '
-        Me.FullNameColumn.HeaderText = "FULLNAME"
-        Me.FullNameColumn.Name = "FullNameColumn"
-        '
-        'TypeOfClearanceColumn
-        '
-        Me.TypeOfClearanceColumn.HeaderText = "TYPE"
-        Me.TypeOfClearanceColumn.Name = "TypeOfClearanceColumn"
         '
         'BunifuButton1
         '
@@ -335,6 +287,36 @@ Partial Class Clearance
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Status of residents, this is a place holder text"
         '
+        'InvoiceNumberColumn
+        '
+        Me.InvoiceNumberColumn.HeaderText = "INVOICE NO."
+        Me.InvoiceNumberColumn.Name = "InvoiceNumberColumn"
+        '
+        'PurposeColumn
+        '
+        Me.PurposeColumn.HeaderText = "PURPOSE"
+        Me.PurposeColumn.Name = "PurposeColumn"
+        '
+        'DateAndTimeColumn
+        '
+        Me.DateAndTimeColumn.HeaderText = "DATE"
+        Me.DateAndTimeColumn.Name = "DateAndTimeColumn"
+        '
+        'GivenByColumn
+        '
+        Me.GivenByColumn.HeaderText = "GIVEN BY"
+        Me.GivenByColumn.Name = "GivenByColumn"
+        '
+        'FullNameColumn
+        '
+        Me.FullNameColumn.HeaderText = "FULLNAME"
+        Me.FullNameColumn.Name = "FullNameColumn"
+        '
+        'TypeOfClearanceColumn
+        '
+        Me.TypeOfClearanceColumn.HeaderText = "TYPE"
+        Me.TypeOfClearanceColumn.Name = "TypeOfClearanceColumn"
+        '
         'Clearance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -355,17 +337,14 @@ Partial Class Clearance
     End Sub
 
     Friend WithEvents BunifuDataGridView1 As Bunifu.UI.WinForms.BunifuDataGridView
-    Friend WithEvents InvoiceNumberColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PurposeColumn As DataGridViewTextBoxColumn
-    Friend WithEvents AddressColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DateAndTimeColumn As DataGridViewTextBoxColumn
-    Friend WithEvents GenderColumn As DataGridViewTextBoxColumn
-    Friend WithEvents AgeColumn As DataGridViewTextBoxColumn
-    Friend WithEvents GivenByColumn As DataGridViewTextBoxColumn
-    Friend WithEvents FullNameColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TypeOfClearanceColumn As DataGridViewTextBoxColumn
     Friend WithEvents Button1 As Button
     Friend WithEvents BunifuButton1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents InvoiceNumberColumn As DataGridViewTextBoxColumn
+    Friend WithEvents PurposeColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DateAndTimeColumn As DataGridViewTextBoxColumn
+    Friend WithEvents GivenByColumn As DataGridViewTextBoxColumn
+    Friend WithEvents FullNameColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TypeOfClearanceColumn As DataGridViewTextBoxColumn
 End Class
