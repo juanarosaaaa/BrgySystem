@@ -22,12 +22,32 @@ BrgySystem
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_archive_24px_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_edit_24px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_save_24px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_schedule_24px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:BrgySystem.My.Resources.Resources.icons8_search_24px">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:BrgySystem.My.Resources.Resources.icons8_search_24px1">
+<member name="P:BrgySystem.My.Resources.Resources.icons8_trash_24px">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

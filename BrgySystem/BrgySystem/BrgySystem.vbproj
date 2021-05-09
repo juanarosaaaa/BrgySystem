@@ -181,6 +181,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChildForms\BlotterSettlementSchedule.Designer.vb">
+      <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\BlotterSettlementSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ChildForms\ClearanceChildForm.Designer.vb">
       <DependentUpon>ClearanceChildForm.vb</DependentUpon>
     </Compile>
@@ -205,6 +211,8 @@
     <Compile Include="ChildForms\ResidentsChildForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DataGridViewActionButtonEvent.vb" />
+    <Compile Include="DataGridViewImages.vb" />
     <Compile Include="FormsInsideMainForms\Activities.Designer.vb">
       <DependentUpon>Activities.vb</DependentUpon>
     </Compile>
@@ -271,6 +279,12 @@
     <Compile Include="FormsInsideMainForms\Settings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +309,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ChildForms\BlotterSettlementSchedule.resx">
+      <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\ClearanceChildForm.resx">
       <DependentUpon>ClearanceChildForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -340,15 +357,18 @@
     <EmbeddedResource Include="FormsInsideMainForms\Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -356,6 +376,29 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\Bunifu.UI.WinForms.BunifuButton.BunifuButton+BorderEdges.datasource" />
+    <None Include="My Project\DataSources\Bunifu.UI.WinForms.BunifuButton.BunifuButton+BorderStyles.datasource" />
+    <None Include="My Project\DataSources\Bunifu.UI.WinForms.BunifuButton.BunifuButton+BunifuButtonActionList.datasource" />
+    <None Include="My Project\DataSources\Bunifu.UI.WinForms.BunifuButton.BunifuButton+BunifuDesigner.datasource" />
+    <None Include="My Project\DataSources\Bunifu.UI.WinForms.BunifuButton.BunifuButton+ButtonStates.datasource" />
+    <None Include="My Project\DataSources\Bunifu.UI.WinForms.BunifuButton.BunifuButton+state.datasource" />
+    <None Include="My Project\DataSources\Bunifu.UI.WinForms.BunifuButton.BunifuButton+StateProperties.datasource" />
+    <None Include="My Project\DataSources\Bunifu.UI.WinForms.BunifuButton.BunifuButton.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Extensions.ColorExtensions.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.ITransitionType.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.Transition+Args.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.Transition.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionElement.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionType_Acceleration.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionType_Bounce.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionType_CriticalDamping.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionType_Deceleration.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionType_EaseInEaseOut.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionType_Flash.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionType_Linear.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionType_ThrowAndCatch.datasource" />
+    <None Include="My Project\DataSources\Utilities.BunifuButton.Transitions.TransitionType_UserDefined.datasource" />
+    <None Include="My Project\DataSources\{FE3C441D-DF9D-407b-917D-0B4471A8296C}.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -368,7 +411,28 @@
     <None Include="Resources\icons8_search_24px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8_search_24px1.png" />
+    <None Include="Resources\deleteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_save_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_edit_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_trash_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_schedule_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_archive_24px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_password_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_28px_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
