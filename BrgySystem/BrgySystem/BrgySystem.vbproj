@@ -211,6 +211,30 @@
     <Compile Include="ChildForms\ResidentsChildForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChildForms\SettingsbackupAndRestoreForm.Designer.vb">
+      <DependentUpon>SettingsbackupAndRestoreForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\SettingsbackupAndRestoreForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\SettingsBarangayDetailsForm.Designer.vb">
+      <DependentUpon>SettingsBarangayDetailsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\SettingsBarangayDetailsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\SettingsMissionVissionForm.Designer.vb">
+      <DependentUpon>SettingsMissionVissionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\SettingsMissionVissionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\SettingsOrganizationChart.Designer.vb">
+      <DependentUpon>SettingsOrganizationChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\SettingsOrganizationChart.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ChildForms\UpdateStatusOfSettlementBlotter.Designer.vb">
       <DependentUpon>UpdateStatusOfSettlementBlotter.vb</DependentUpon>
     </Compile>
@@ -323,6 +347,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\ResidentsChildForm.resx">
       <DependentUpon>ResidentsChildForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\SettingsbackupAndRestoreForm.resx">
+      <DependentUpon>SettingsbackupAndRestoreForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\SettingsOrganizationChart.resx">
+      <DependentUpon>SettingsOrganizationChart.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\UpdateStatusOfSettlementBlotter.resx">
       <DependentUpon>UpdateStatusOfSettlementBlotter.vb</DependentUpon>

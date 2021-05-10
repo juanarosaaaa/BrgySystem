@@ -156,6 +156,15 @@
         RK5CYII=
 </value>
   </data>
+  <data name="BunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAPUAAAAtCAYAAAB23C0nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7dMxEYAwAMDAKqll8FcZ7AUEYIDcDz9lzpjn
+        XvO8b6Bgr3fqrwD8lakhxtQQY2qIMTXEmBpiTA0xpoYYU0OMqSHG1BBjaogxNcSYGmJMDTGmhhhTQ4yp
+        IcbUEGNqiDE1xJgaYkwNMaaGGFNDjKkhxtQQY2qIMTXEmBpiTA0xpoYYU0OMqSHG1BBjaogxNcSYGmJM
+        DTGmhhhTQ4ypIcbUEDPmsa+vAPzQsa8HHcYXxBolX8AAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="Activities_Button.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPUAAAAtCAYAAAB23C0nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

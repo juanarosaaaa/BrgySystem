@@ -246,7 +246,7 @@ Partial Class Archive
         Me.TableGridView.EnableHeadersVisualStyles = False
         Me.TableGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.TableGridView.HeaderBgColor = System.Drawing.Color.Empty
+        Me.TableGridView.HeaderBackColor = System.Drawing.Color.Empty
         Me.TableGridView.HeaderForeColor = System.Drawing.Color.White
         Me.TableGridView.Location = New System.Drawing.Point(7, 49)
         Me.TableGridView.Name = "TableGridView"
@@ -458,7 +458,7 @@ Partial Class Archive
         Me.BunifuDataGridView1.EnableHeadersVisualStyles = False
         Me.BunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.BunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty
+        Me.BunifuDataGridView1.HeaderBackColor = System.Drawing.Color.Empty
         Me.BunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White
         Me.BunifuDataGridView1.Location = New System.Drawing.Point(6, 49)
         Me.BunifuDataGridView1.Name = "BunifuDataGridView1"
@@ -641,7 +641,7 @@ Partial Class Archive
         Me.BunifuDataGridView2.EnableHeadersVisualStyles = False
         Me.BunifuDataGridView2.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuDataGridView2.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.BunifuDataGridView2.HeaderBgColor = System.Drawing.Color.Empty
+        Me.BunifuDataGridView2.HeaderBackColor = System.Drawing.Color.Empty
         Me.BunifuDataGridView2.HeaderForeColor = System.Drawing.Color.White
         Me.BunifuDataGridView2.Location = New System.Drawing.Point(7, 49)
         Me.BunifuDataGridView2.Name = "BunifuDataGridView2"
