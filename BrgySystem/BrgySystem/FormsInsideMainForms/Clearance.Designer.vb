@@ -95,7 +95,7 @@ Partial Class Clearance
         Me.TableDataGridView.EnableHeadersVisualStyles = False
         Me.TableDataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableDataGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.TableDataGridView.HeaderBgColor = System.Drawing.Color.Empty
+        Me.TableDataGridView.HeaderBackColor = System.Drawing.Color.Empty
         Me.TableDataGridView.HeaderForeColor = System.Drawing.Color.White
         Me.TableDataGridView.Location = New System.Drawing.Point(12, 75)
         Me.TableDataGridView.Name = "TableDataGridView"

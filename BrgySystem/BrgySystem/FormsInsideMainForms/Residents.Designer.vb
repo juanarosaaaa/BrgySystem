@@ -98,7 +98,7 @@ Partial Class Residents
         Me.TableGridView.EnableHeadersVisualStyles = False
         Me.TableGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.TableGridView.HeaderBgColor = System.Drawing.Color.Empty
+        Me.TableGridView.HeaderBackColor = System.Drawing.Color.Empty
         Me.TableGridView.HeaderForeColor = System.Drawing.Color.White
         Me.TableGridView.Location = New System.Drawing.Point(12, 73)
         Me.TableGridView.Name = "TableGridView"
