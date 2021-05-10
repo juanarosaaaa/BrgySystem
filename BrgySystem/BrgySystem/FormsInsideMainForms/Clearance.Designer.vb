@@ -32,10 +32,6 @@ Partial Class Clearance
         Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.TableDataGridView = New Bunifu.UI.WinForms.BunifuDataGridView()
-        Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.InvoiceNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PurposeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DateAndTimeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,6 +39,10 @@ Partial Class Clearance
         Me.FullNameColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TypeOfClearanceColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.deleteButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.TableDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -95,7 +95,7 @@ Partial Class Clearance
         Me.TableDataGridView.EnableHeadersVisualStyles = False
         Me.TableDataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableDataGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.TableDataGridView.HeaderBackColor = System.Drawing.Color.Empty
+        Me.TableDataGridView.HeaderBgColor = System.Drawing.Color.Empty
         Me.TableDataGridView.HeaderForeColor = System.Drawing.Color.White
         Me.TableDataGridView.Location = New System.Drawing.Point(12, 75)
         Me.TableDataGridView.Name = "TableDataGridView"
@@ -105,6 +105,44 @@ Partial Class Clearance
         Me.TableDataGridView.Size = New System.Drawing.Size(1083, 620)
         Me.TableDataGridView.TabIndex = 0
         Me.TableDataGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light
+        '
+        'InvoiceNumberColumn
+        '
+        Me.InvoiceNumberColumn.HeaderText = "INVOICE NO."
+        Me.InvoiceNumberColumn.Name = "InvoiceNumberColumn"
+        '
+        'PurposeColumn
+        '
+        Me.PurposeColumn.HeaderText = "PURPOSE"
+        Me.PurposeColumn.Name = "PurposeColumn"
+        '
+        'DateAndTimeColumn
+        '
+        Me.DateAndTimeColumn.HeaderText = "DATE"
+        Me.DateAndTimeColumn.Name = "DateAndTimeColumn"
+        '
+        'GivenByColumn
+        '
+        Me.GivenByColumn.HeaderText = "GIVEN BY"
+        Me.GivenByColumn.Name = "GivenByColumn"
+        '
+        'FullNameColumn
+        '
+        Me.FullNameColumn.HeaderText = "FULLNAME"
+        Me.FullNameColumn.Name = "FullNameColumn"
+        '
+        'TypeOfClearanceColumn
+        '
+        Me.TypeOfClearanceColumn.HeaderText = "TYPE"
+        Me.TypeOfClearanceColumn.Name = "TypeOfClearanceColumn"
+        '
+        'deleteButtonColumn
+        '
+        Me.deleteButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.deleteButtonColumn.HeaderText = ""
+        Me.deleteButtonColumn.MinimumWidth = 25
+        Me.deleteButtonColumn.Name = "deleteButtonColumn"
+        Me.deleteButtonColumn.Width = 25
         '
         'BunifuButton1
         '
@@ -153,7 +191,7 @@ Partial Class Clearance
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(278, 12)
+        Me.BunifuButton1.Location = New System.Drawing.Point(281, 13)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 1
@@ -198,7 +236,7 @@ Partial Class Clearance
         'Button1
         '
         Me.Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.Button1.Location = New System.Drawing.Point(243, 13)
+        Me.Button1.Location = New System.Drawing.Point(248, 13)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(29, 35)
         Me.Button1.TabIndex = 4
@@ -267,7 +305,7 @@ Partial Class Clearance
         Me.BunifuTextBox1.SelectionLength = 0
         Me.BunifuTextBox1.SelectionStart = 0
         Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(260, 37)
+        Me.BunifuTextBox1.Size = New System.Drawing.Size(239, 37)
         Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox1.TabIndex = 6
         Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -287,44 +325,6 @@ Partial Class Clearance
         Me.Label1.Size = New System.Drawing.Size(268, 16)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Status of residents, this is a place holder text"
-        '
-        'InvoiceNumberColumn
-        '
-        Me.InvoiceNumberColumn.HeaderText = "INVOICE NO."
-        Me.InvoiceNumberColumn.Name = "InvoiceNumberColumn"
-        '
-        'PurposeColumn
-        '
-        Me.PurposeColumn.HeaderText = "PURPOSE"
-        Me.PurposeColumn.Name = "PurposeColumn"
-        '
-        'DateAndTimeColumn
-        '
-        Me.DateAndTimeColumn.HeaderText = "DATE"
-        Me.DateAndTimeColumn.Name = "DateAndTimeColumn"
-        '
-        'GivenByColumn
-        '
-        Me.GivenByColumn.HeaderText = "GIVEN BY"
-        Me.GivenByColumn.Name = "GivenByColumn"
-        '
-        'FullNameColumn
-        '
-        Me.FullNameColumn.HeaderText = "FULLNAME"
-        Me.FullNameColumn.Name = "FullNameColumn"
-        '
-        'TypeOfClearanceColumn
-        '
-        Me.TypeOfClearanceColumn.HeaderText = "TYPE"
-        Me.TypeOfClearanceColumn.Name = "TypeOfClearanceColumn"
-        '
-        'deleteButtonColumn
-        '
-        Me.deleteButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.deleteButtonColumn.HeaderText = ""
-        Me.deleteButtonColumn.MinimumWidth = 25
-        Me.deleteButtonColumn.Name = "deleteButtonColumn"
-        Me.deleteButtonColumn.Width = 25
         '
         'Clearance
         '

@@ -32,9 +32,6 @@ Partial Class Residents
         Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Me.TableGridView = New Bunifu.UI.WinForms.BunifuDataGridView()
-        Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.FullnameColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SexColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AgeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -46,6 +43,9 @@ Partial Class Residents
         Me.editButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
         Me.deleteButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
         Me.archiveButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.TableGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -98,7 +98,7 @@ Partial Class Residents
         Me.TableGridView.EnableHeadersVisualStyles = False
         Me.TableGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.TableGridView.HeaderBackColor = System.Drawing.Color.Empty
+        Me.TableGridView.HeaderBgColor = System.Drawing.Color.Empty
         Me.TableGridView.HeaderForeColor = System.Drawing.Color.White
         Me.TableGridView.Location = New System.Drawing.Point(12, 73)
         Me.TableGridView.Name = "TableGridView"
@@ -108,6 +108,74 @@ Partial Class Residents
         Me.TableGridView.Size = New System.Drawing.Size(1083, 628)
         Me.TableGridView.TabIndex = 1
         Me.TableGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light
+        '
+        'FullnameColumn
+        '
+        Me.FullnameColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.FullnameColumn.Frozen = True
+        Me.FullnameColumn.HeaderText = "FULLNAME"
+        Me.FullnameColumn.Name = "FullnameColumn"
+        Me.FullnameColumn.Width = 155
+        '
+        'SexColumn
+        '
+        Me.SexColumn.HeaderText = "SEX"
+        Me.SexColumn.MinimumWidth = 50
+        Me.SexColumn.Name = "SexColumn"
+        '
+        'AgeColumn
+        '
+        Me.AgeColumn.HeaderText = "AGE"
+        Me.AgeColumn.Name = "AgeColumn"
+        '
+        'MaritalStatusColumn
+        '
+        Me.MaritalStatusColumn.HeaderText = "MARITAL STATUS"
+        Me.MaritalStatusColumn.Name = "MaritalStatusColumn"
+        '
+        'ContactColumn
+        '
+        Me.ContactColumn.HeaderText = "CONTACT"
+        Me.ContactColumn.Name = "ContactColumn"
+        '
+        'OccupationColumn
+        '
+        Me.OccupationColumn.HeaderText = "OCCUPATION"
+        Me.OccupationColumn.Name = "OccupationColumn"
+        '
+        'voterColumn
+        '
+        Me.voterColumn.HeaderText = "VOTER"
+        Me.voterColumn.Name = "voterColumn"
+        '
+        'AddressColumn
+        '
+        Me.AddressColumn.HeaderText = "ADDRESS"
+        Me.AddressColumn.Name = "AddressColumn"
+        '
+        'editButtonColumn
+        '
+        Me.editButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.editButtonColumn.HeaderText = ""
+        Me.editButtonColumn.MinimumWidth = 25
+        Me.editButtonColumn.Name = "editButtonColumn"
+        Me.editButtonColumn.Width = 25
+        '
+        'deleteButtonColumn
+        '
+        Me.deleteButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.deleteButtonColumn.HeaderText = ""
+        Me.deleteButtonColumn.MinimumWidth = 25
+        Me.deleteButtonColumn.Name = "deleteButtonColumn"
+        Me.deleteButtonColumn.Width = 25
+        '
+        'archiveButtonColumn
+        '
+        Me.archiveButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.archiveButtonColumn.HeaderText = ""
+        Me.archiveButtonColumn.MinimumWidth = 25
+        Me.archiveButtonColumn.Name = "archiveButtonColumn"
+        Me.archiveButtonColumn.Width = 25
         '
         'BunifuTextBox1
         '
@@ -136,7 +204,7 @@ Partial Class Residents
         Me.BunifuTextBox1.IconRight = Nothing
         Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox1.Lines = New String(-1) {}
-        Me.BunifuTextBox1.Location = New System.Drawing.Point(835, 28)
+        Me.BunifuTextBox1.Location = New System.Drawing.Point(832, 28)
         Me.BunifuTextBox1.MaxLength = 32767
         Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox1.Modified = False
@@ -172,7 +240,7 @@ Partial Class Residents
         Me.BunifuTextBox1.SelectionLength = 0
         Me.BunifuTextBox1.SelectionStart = 0
         Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(260, 37)
+        Me.BunifuTextBox1.Size = New System.Drawing.Size(237, 37)
         Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox1.TabIndex = 4
         Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -280,74 +348,6 @@ Partial Class Residents
         Me.Button1.Size = New System.Drawing.Size(29, 35)
         Me.Button1.TabIndex = 5
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'FullnameColumn
-        '
-        Me.FullnameColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.FullnameColumn.Frozen = True
-        Me.FullnameColumn.HeaderText = "FULLNAME"
-        Me.FullnameColumn.Name = "FullnameColumn"
-        Me.FullnameColumn.Width = 155
-        '
-        'SexColumn
-        '
-        Me.SexColumn.HeaderText = "SEX"
-        Me.SexColumn.MinimumWidth = 50
-        Me.SexColumn.Name = "SexColumn"
-        '
-        'AgeColumn
-        '
-        Me.AgeColumn.HeaderText = "AGE"
-        Me.AgeColumn.Name = "AgeColumn"
-        '
-        'MaritalStatusColumn
-        '
-        Me.MaritalStatusColumn.HeaderText = "MARITAL STATUS"
-        Me.MaritalStatusColumn.Name = "MaritalStatusColumn"
-        '
-        'ContactColumn
-        '
-        Me.ContactColumn.HeaderText = "CONTACT"
-        Me.ContactColumn.Name = "ContactColumn"
-        '
-        'OccupationColumn
-        '
-        Me.OccupationColumn.HeaderText = "OCCUPATION"
-        Me.OccupationColumn.Name = "OccupationColumn"
-        '
-        'voterColumn
-        '
-        Me.voterColumn.HeaderText = "VOTER"
-        Me.voterColumn.Name = "voterColumn"
-        '
-        'AddressColumn
-        '
-        Me.AddressColumn.HeaderText = "ADDRESS"
-        Me.AddressColumn.Name = "AddressColumn"
-        '
-        'editButtonColumn
-        '
-        Me.editButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.editButtonColumn.HeaderText = ""
-        Me.editButtonColumn.MinimumWidth = 25
-        Me.editButtonColumn.Name = "editButtonColumn"
-        Me.editButtonColumn.Width = 25
-        '
-        'deleteButtonColumn
-        '
-        Me.deleteButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.deleteButtonColumn.HeaderText = ""
-        Me.deleteButtonColumn.MinimumWidth = 25
-        Me.deleteButtonColumn.Name = "deleteButtonColumn"
-        Me.deleteButtonColumn.Width = 25
-        '
-        'archiveButtonColumn
-        '
-        Me.archiveButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.archiveButtonColumn.HeaderText = ""
-        Me.archiveButtonColumn.MinimumWidth = 25
-        Me.archiveButtonColumn.Name = "archiveButtonColumn"
-        Me.archiveButtonColumn.Width = 25
         '
         'Residents
         '

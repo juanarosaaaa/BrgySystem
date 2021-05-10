@@ -126,6 +126,9 @@
   <metadata name="deleteButtonColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="archiveButtonColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -138,11 +141,11 @@
   </data>
   <data name="BunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAARwAAAAjCAYAAABGr7UsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACsSURBVHhe7dQxDQMxAARB80fll2EERgDkZclNAHirGema
-        A7ADILXW+sw5f2ZmN7Ybc3Izxj4AbtmNObkRHOAuwQEyggNkBAfICA6QERwgIzhARnCAjOAAGcEBMoID
-        ZAQHyAgOkBEcICM4QEZwgIzgABnBATKCA2QEB8gIDpARHCAjOEBGcICM4AAZwQEyggNkBAfICA6QERwg
-        8xec53m++zAzu7HdmJMbgMIYLxY6EIg8igD5AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAQIAAAAjCAYAAAB/yAR3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACUSURBVHhe7dSxDQMxDARB9l+VBJXxZbgA+2go+hY4A1zC
+        nFsAf+ecZ631NbNZ69+/GajqAzBP//7NgBDAVEIACAEgBEAIASAEgBAAIQSAEABCAIQQAEIACAEQQgAI
+        ASAEQAgBIASAEAAhBIAQAEIAhBAAQgAIARBCAAgBIARACAEgBMArBHvvTx/MbNb6928GgNmqfgNz24JJ
+        HFZsAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

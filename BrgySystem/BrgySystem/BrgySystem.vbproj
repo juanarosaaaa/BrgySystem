@@ -211,6 +211,12 @@
     <Compile Include="ChildForms\ResidentsChildForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChildForms\UpdateStatusOfSettlementBlotter.Designer.vb">
+      <DependentUpon>UpdateStatusOfSettlementBlotter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\UpdateStatusOfSettlementBlotter.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DataGridViewActionButtonEvent.vb" />
     <Compile Include="DataGridViewImages.vb" />
     <Compile Include="FormsInsideMainForms\Activities.Designer.vb">
@@ -259,12 +265,6 @@
       <DependentUpon>Purok.vb</DependentUpon>
     </Compile>
     <Compile Include="FormsInsideMainForms\Purok.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormsInsideMainForms\Record.Designer.vb">
-      <DependentUpon>Record.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormsInsideMainForms\Record.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsInsideMainForms\Residents.Designer.vb">
@@ -324,6 +324,9 @@
     <EmbeddedResource Include="ChildForms\ResidentsChildForm.resx">
       <DependentUpon>ResidentsChildForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\UpdateStatusOfSettlementBlotter.resx">
+      <DependentUpon>UpdateStatusOfSettlementBlotter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Activities.resx">
       <DependentUpon>Activities.vb</DependentUpon>
     </EmbeddedResource>
@@ -347,9 +350,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Purok.resx">
       <DependentUpon>Purok.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormsInsideMainForms\Record.resx">
-      <DependentUpon>Record.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Residents.resx">
       <DependentUpon>Residents.vb</DependentUpon>
@@ -433,6 +433,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_user_28px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_restore_page_24px_4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

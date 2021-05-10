@@ -24,10 +24,6 @@
         showPanelDisplayOf(Blotter)
     End Sub
 
-    Private Sub Record_Button_Click(sender As Object, e As EventArgs) Handles Record_Button.Click
-        showPanelDisplayOf(Record)
-    End Sub
-
     Private Sub Archive_Button_Click(sender As Object, e As EventArgs) Handles Archive_Button.Click
         showPanelDisplayOf(Archive)
     End Sub
@@ -51,4 +47,11 @@
         MainPanel.Controls.Add(panelDisplay)
         panelDisplay.Show()
     End Sub
+
+    Private Sub fORMClosed(sender As Object, e As System.Windows.Forms.FormClosedEventArgs) Handles Me.Closed
+        Me.Dispose()
+        GC.SuppressFinalize(Me)
+        Application.Exit()
+    End Sub
+
 End Class

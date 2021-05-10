@@ -61,6 +61,10 @@ Partial Class ResidentsChildForm
         Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim BorderEdges3 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim BorderEdges4 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim StateProperties33 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties34 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties35 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties36 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox2 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox3 = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -86,6 +90,9 @@ Partial Class ResidentsChildForm
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel6 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuButton4 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.BunifuLabel7 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuTextBox7 = New Bunifu.UI.WinForms.BunifuTextBox()
         CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -152,7 +159,7 @@ Partial Class ResidentsChildForm
         Me.BunifuTextBox1.SelectionLength = 0
         Me.BunifuTextBox1.SelectionStart = 0
         Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(338, 41)
+        Me.BunifuTextBox1.Size = New System.Drawing.Size(260, 41)
         Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox1.TabIndex = 0
         Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -190,7 +197,7 @@ Partial Class ResidentsChildForm
         Me.BunifuTextBox2.IconRight = Nothing
         Me.BunifuTextBox2.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox2.Lines = New String(-1) {}
-        Me.BunifuTextBox2.Location = New System.Drawing.Point(359, 43)
+        Me.BunifuTextBox2.Location = New System.Drawing.Point(278, 43)
         Me.BunifuTextBox2.MaxLength = 32767
         Me.BunifuTextBox2.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox2.Modified = False
@@ -226,7 +233,7 @@ Partial Class ResidentsChildForm
         Me.BunifuTextBox2.SelectionLength = 0
         Me.BunifuTextBox2.SelectionStart = 0
         Me.BunifuTextBox2.ShortcutsEnabled = True
-        Me.BunifuTextBox2.Size = New System.Drawing.Size(338, 41)
+        Me.BunifuTextBox2.Size = New System.Drawing.Size(260, 41)
         Me.BunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox2.TabIndex = 1
         Me.BunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -264,7 +271,7 @@ Partial Class ResidentsChildForm
         Me.BunifuTextBox3.IconRight = Nothing
         Me.BunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox3.Lines = New String(-1) {}
-        Me.BunifuTextBox3.Location = New System.Drawing.Point(705, 43)
+        Me.BunifuTextBox3.Location = New System.Drawing.Point(547, 43)
         Me.BunifuTextBox3.MaxLength = 32767
         Me.BunifuTextBox3.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox3.Modified = False
@@ -300,7 +307,7 @@ Partial Class ResidentsChildForm
         Me.BunifuTextBox3.SelectionLength = 0
         Me.BunifuTextBox3.SelectionStart = 0
         Me.BunifuTextBox3.ShortcutsEnabled = True
-        Me.BunifuTextBox3.Size = New System.Drawing.Size(337, 41)
+        Me.BunifuTextBox3.Size = New System.Drawing.Size(223, 41)
         Me.BunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox3.TabIndex = 2
         Me.BunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1214,11 +1221,113 @@ Partial Class ResidentsChildForm
         Me.BunifuButton4.TextPadding = New System.Windows.Forms.Padding(0)
         Me.BunifuButton4.UseDefaultRadiusAndThickness = True
         '
+        'ComboBox6
+        '
+        Me.ComboBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Location = New System.Drawing.Point(14, 364)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(260, 32)
+        Me.ComboBox6.TabIndex = 26
+        '
+        'BunifuLabel7
+        '
+        Me.BunifuLabel7.AllowParentOverrides = False
+        Me.BunifuLabel7.AutoEllipsis = False
+        Me.BunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel7.Location = New System.Drawing.Point(14, 340)
+        Me.BunifuLabel7.Name = "BunifuLabel7"
+        Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel7.Size = New System.Drawing.Size(45, 21)
+        Me.BunifuLabel7.TabIndex = 27
+        Me.BunifuLabel7.Text = "Senior"
+        Me.BunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuTextBox7
+        '
+        Me.BunifuTextBox7.AcceptsReturn = False
+        Me.BunifuTextBox7.AcceptsTab = False
+        Me.BunifuTextBox7.AnimationSpeed = 200
+        Me.BunifuTextBox7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.BunifuTextBox7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.BunifuTextBox7.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuTextBox7.BackgroundImage = CType(resources.GetObject("BunifuTextBox7.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextBox7.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.BunifuTextBox7.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuTextBox7.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuTextBox7.BorderColorIdle = System.Drawing.Color.Silver
+        Me.BunifuTextBox7.BorderRadius = 1
+        Me.BunifuTextBox7.BorderThickness = 1
+        Me.BunifuTextBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.BunifuTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuTextBox7.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.BunifuTextBox7.DefaultText = ""
+        Me.BunifuTextBox7.FillColor = System.Drawing.Color.White
+        Me.BunifuTextBox7.HideSelection = True
+        Me.BunifuTextBox7.IconLeft = Nothing
+        Me.BunifuTextBox7.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuTextBox7.IconPadding = 10
+        Me.BunifuTextBox7.IconRight = Nothing
+        Me.BunifuTextBox7.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuTextBox7.Lines = New String(-1) {}
+        Me.BunifuTextBox7.Location = New System.Drawing.Point(776, 43)
+        Me.BunifuTextBox7.MaxLength = 32767
+        Me.BunifuTextBox7.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.BunifuTextBox7.Modified = False
+        Me.BunifuTextBox7.Multiline = False
+        Me.BunifuTextBox7.Name = "BunifuTextBox7"
+        StateProperties33.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties33.FillColor = System.Drawing.Color.Empty
+        StateProperties33.ForeColor = System.Drawing.Color.Empty
+        StateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.BunifuTextBox7.OnActiveState = StateProperties33
+        StateProperties34.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties34.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties34.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties34.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.BunifuTextBox7.OnDisabledState = StateProperties34
+        StateProperties35.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties35.FillColor = System.Drawing.Color.Empty
+        StateProperties35.ForeColor = System.Drawing.Color.Empty
+        StateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.BunifuTextBox7.OnHoverState = StateProperties35
+        StateProperties36.BorderColor = System.Drawing.Color.Silver
+        StateProperties36.FillColor = System.Drawing.Color.White
+        StateProperties36.ForeColor = System.Drawing.Color.Empty
+        StateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.BunifuTextBox7.OnIdleState = StateProperties36
+        Me.BunifuTextBox7.Padding = New System.Windows.Forms.Padding(3)
+        Me.BunifuTextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.BunifuTextBox7.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.BunifuTextBox7.PlaceholderText = "Highest Educational Attainment"
+        Me.BunifuTextBox7.ReadOnly = False
+        Me.BunifuTextBox7.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.BunifuTextBox7.SelectedText = ""
+        Me.BunifuTextBox7.SelectionLength = 0
+        Me.BunifuTextBox7.SelectionStart = 0
+        Me.BunifuTextBox7.ShortcutsEnabled = True
+        Me.BunifuTextBox7.Size = New System.Drawing.Size(262, 41)
+        Me.BunifuTextBox7.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.BunifuTextBox7.TabIndex = 28
+        Me.BunifuTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.BunifuTextBox7.TextMarginBottom = 0
+        Me.BunifuTextBox7.TextMarginLeft = 3
+        Me.BunifuTextBox7.TextMarginTop = 0
+        Me.BunifuTextBox7.TextPlaceholder = "Highest Educational Attainment"
+        Me.BunifuTextBox7.UseSystemPasswordChar = False
+        Me.BunifuTextBox7.WordWrap = True
+        '
         'ResidentsChildForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1050, 562)
+        Me.Controls.Add(Me.BunifuTextBox7)
+        Me.Controls.Add(Me.BunifuLabel7)
+        Me.Controls.Add(Me.ComboBox6)
         Me.Controls.Add(Me.BunifuButton4)
         Me.Controls.Add(Me.BunifuLabel6)
         Me.Controls.Add(Me.BunifuLabel5)
@@ -1279,4 +1388,7 @@ Partial Class ResidentsChildForm
     Friend WithEvents BunifuLabel5 As BunifuLabel
     Friend WithEvents BunifuLabel6 As BunifuLabel
     Friend WithEvents BunifuButton4 As BunifuButton.BunifuButton
+    Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents BunifuLabel7 As BunifuLabel
+    Friend WithEvents BunifuTextBox7 As BunifuTextBox
 End Class

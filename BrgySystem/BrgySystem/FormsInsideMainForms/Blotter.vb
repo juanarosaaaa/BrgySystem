@@ -1,7 +1,10 @@
 ﻿Public Class Blotter
     Private Sub CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles TableGridView.CellContentClick
         If (DataGridViewActionButtonEvent.buttonOf_IsClick("settlementscheduleButtonColumn", TableGridView, e)) Then
-            MsgBox(True)
+            BlotterSettlementSchedule.ShowDialog()
+        End If
+        If (DataGridViewActionButtonEvent.buttonOf_IsClick("updateButtonColumn", TableGridView, e)) Then
+            UpdateStatusOfSettlementBlotter.ShowDialog()
         End If
 
     End Sub

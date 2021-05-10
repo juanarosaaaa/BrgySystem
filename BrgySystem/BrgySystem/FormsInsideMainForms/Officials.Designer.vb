@@ -44,6 +44,7 @@ Partial Class Officials
         Me.ContactColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.editButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
         Me.deleteButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.archiveButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.TableGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -66,7 +67,7 @@ Partial Class Officials
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.TableGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.TableGridView.ColumnHeadersHeight = 40
-        Me.TableGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nameColumn, Me.AgeColumn, Me.termColumn, Me.PositionColumn, Me.SexColumn, Me.StatusColumn, Me.ContactColumn, Me.editButtonColumn, Me.deleteButtonColumn})
+        Me.TableGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nameColumn, Me.AgeColumn, Me.termColumn, Me.PositionColumn, Me.SexColumn, Me.StatusColumn, Me.ContactColumn, Me.editButtonColumn, Me.deleteButtonColumn, Me.archiveButtonColumn})
         Me.TableGridView.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableGridView.CurrentTheme.AlternatingRowsStyle.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
         Me.TableGridView.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black
@@ -96,7 +97,7 @@ Partial Class Officials
         Me.TableGridView.EnableHeadersVisualStyles = False
         Me.TableGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TableGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.TableGridView.HeaderBackColor = System.Drawing.Color.Empty
+        Me.TableGridView.HeaderBgColor = System.Drawing.Color.Empty
         Me.TableGridView.HeaderForeColor = System.Drawing.Color.White
         Me.TableGridView.Location = New System.Drawing.Point(12, 74)
         Me.TableGridView.Name = "TableGridView"
@@ -179,7 +180,7 @@ Partial Class Officials
         Me.BunifuTextBox1.SelectionLength = 0
         Me.BunifuTextBox1.SelectionStart = 0
         Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(266, 37)
+        Me.BunifuTextBox1.Size = New System.Drawing.Size(240, 37)
         Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox1.TabIndex = 2
         Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -330,6 +331,14 @@ Partial Class Officials
         Me.deleteButtonColumn.Name = "deleteButtonColumn"
         Me.deleteButtonColumn.Width = 25
         '
+        'archiveButtonColumn
+        '
+        Me.archiveButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.archiveButtonColumn.HeaderText = ""
+        Me.archiveButtonColumn.MinimumWidth = 25
+        Me.archiveButtonColumn.Name = "archiveButtonColumn"
+        Me.archiveButtonColumn.Width = 25
+        '
         'Officials
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -360,4 +369,5 @@ Partial Class Officials
     Friend WithEvents ContactColumn As DataGridViewTextBoxColumn
     Friend WithEvents editButtonColumn As DataGridViewImageColumn
     Friend WithEvents deleteButtonColumn As DataGridViewImageColumn
+    Friend WithEvents archiveButtonColumn As DataGridViewImageColumn
 End Class

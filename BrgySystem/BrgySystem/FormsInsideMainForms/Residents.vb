@@ -1,6 +1,6 @@
 ﻿Public Class Residents
     Private Sub BunifuButton1_Click(sender As Object, e As EventArgs) Handles BunifuButton1.Click
-        ResidentsChildForm.Show()
+        ResidentsChildForm.ShowDialog()
     End Sub
 
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles TableGridView.CellFormatting

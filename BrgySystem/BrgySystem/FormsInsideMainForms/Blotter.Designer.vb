@@ -85,6 +85,17 @@ Partial Class Blotter
         Dim StateProperties55 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties56 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.TableGridView = New Bunifu.UI.WinForms.BunifuDataGridView()
+        Me.blotterNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.reportedResidentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.detailsColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.typeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dateAndTimeOfIncidentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dateAndTimeOfFilledColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.complainantColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.statusColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.updateButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.settlementscheduleButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.printButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
         Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -120,17 +131,6 @@ Partial Class Blotter
         Me.BunifuTextBox3 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox2 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.blotterNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.reportedResidentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.detailsColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.typeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dateAndTimeOfIncidentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dateAndTimeOfFilledColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.complainantColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.statusColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.updateButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.settlementscheduleButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.printButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.TableGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -190,9 +190,73 @@ Partial Class Blotter
         Me.TableGridView.RowHeadersVisible = False
         Me.TableGridView.RowTemplate.Height = 40
         Me.TableGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.TableGridView.Size = New System.Drawing.Size(1084, 380)
+        Me.TableGridView.Size = New System.Drawing.Size(1084, 366)
         Me.TableGridView.TabIndex = 5
         Me.TableGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light
+        '
+        'blotterNumberColumn
+        '
+        Me.blotterNumberColumn.HeaderText = "BLOTTER NO:"
+        Me.blotterNumberColumn.Name = "blotterNumberColumn"
+        '
+        'reportedResidentColumn
+        '
+        Me.reportedResidentColumn.HeaderText = "REPORTED RESIDENT"
+        Me.reportedResidentColumn.Name = "reportedResidentColumn"
+        '
+        'detailsColumn
+        '
+        Me.detailsColumn.HeaderText = "DETAILS"
+        Me.detailsColumn.Name = "detailsColumn"
+        '
+        'typeColumn
+        '
+        Me.typeColumn.HeaderText = "TYPE"
+        Me.typeColumn.Name = "typeColumn"
+        '
+        'dateAndTimeOfIncidentColumn
+        '
+        Me.dateAndTimeOfIncidentColumn.HeaderText = "DATE OF INCIDENT"
+        Me.dateAndTimeOfIncidentColumn.Name = "dateAndTimeOfIncidentColumn"
+        '
+        'dateAndTimeOfFilledColumn
+        '
+        Me.dateAndTimeOfFilledColumn.HeaderText = "DATE OF FILLED"
+        Me.dateAndTimeOfFilledColumn.Name = "dateAndTimeOfFilledColumn"
+        '
+        'complainantColumn
+        '
+        Me.complainantColumn.HeaderText = "COMPLAINANT"
+        Me.complainantColumn.Name = "complainantColumn"
+        '
+        'statusColumn
+        '
+        Me.statusColumn.HeaderText = "STATUS"
+        Me.statusColumn.Name = "statusColumn"
+        '
+        'updateButtonColumn
+        '
+        Me.updateButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.updateButtonColumn.HeaderText = ""
+        Me.updateButtonColumn.MinimumWidth = 25
+        Me.updateButtonColumn.Name = "updateButtonColumn"
+        Me.updateButtonColumn.Width = 25
+        '
+        'settlementscheduleButtonColumn
+        '
+        Me.settlementscheduleButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.settlementscheduleButtonColumn.HeaderText = ""
+        Me.settlementscheduleButtonColumn.MinimumWidth = 25
+        Me.settlementscheduleButtonColumn.Name = "settlementscheduleButtonColumn"
+        Me.settlementscheduleButtonColumn.Width = 25
+        '
+        'printButtonColumn
+        '
+        Me.printButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.printButtonColumn.HeaderText = ""
+        Me.printButtonColumn.MinimumWidth = 25
+        Me.printButtonColumn.Name = "printButtonColumn"
+        Me.printButtonColumn.Width = 25
         '
         'BunifuLabel1
         '
@@ -491,7 +555,7 @@ Partial Class Blotter
         Me.BunifuButton3.IdleIconLeftImage = Nothing
         Me.BunifuButton3.IdleIconRightImage = Nothing
         Me.BunifuButton3.IndicateFocus = False
-        Me.BunifuButton3.Location = New System.Drawing.Point(900, 310)
+        Me.BunifuButton3.Location = New System.Drawing.Point(900, 311)
         Me.BunifuButton3.Name = "BunifuButton3"
         Me.BunifuButton3.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton3.OnDisabledState.BorderRadius = 1
@@ -580,7 +644,7 @@ Partial Class Blotter
         Me.BunifuButton2.IdleIconLeftImage = Nothing
         Me.BunifuButton2.IdleIconRightImage = Nothing
         Me.BunifuButton2.IndicateFocus = False
-        Me.BunifuButton2.Location = New System.Drawing.Point(734, 310)
+        Me.BunifuButton2.Location = New System.Drawing.Point(734, 311)
         Me.BunifuButton2.Name = "BunifuButton2"
         Me.BunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton2.OnDisabledState.BorderRadius = 1
@@ -797,7 +861,7 @@ Partial Class Blotter
         Me.BunifuTextBox12.IconRight = Nothing
         Me.BunifuTextBox12.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox12.Lines = New String(-1) {}
-        Me.BunifuTextBox12.Location = New System.Drawing.Point(347, 227)
+        Me.BunifuTextBox12.Location = New System.Drawing.Point(345, 227)
         Me.BunifuTextBox12.MaxLength = 32767
         Me.BunifuTextBox12.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox12.Modified = False
@@ -871,7 +935,7 @@ Partial Class Blotter
         Me.BunifuTextBox11.IconRight = Nothing
         Me.BunifuTextBox11.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox11.Lines = New String(-1) {}
-        Me.BunifuTextBox11.Location = New System.Drawing.Point(347, 173)
+        Me.BunifuTextBox11.Location = New System.Drawing.Point(346, 173)
         Me.BunifuTextBox11.MaxLength = 32767
         Me.BunifuTextBox11.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox11.Modified = False
@@ -936,7 +1000,7 @@ Partial Class Blotter
         Me.BunifuDatePicker1.IconColor = System.Drawing.Color.Gray
         Me.BunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right
         Me.BunifuDatePicker1.LeftTextMargin = 5
-        Me.BunifuDatePicker1.Location = New System.Drawing.Point(459, 173)
+        Me.BunifuDatePicker1.Location = New System.Drawing.Point(455, 173)
         Me.BunifuDatePicker1.MinimumSize = New System.Drawing.Size(4, 32)
         Me.BunifuDatePicker1.Name = "BunifuDatePicker1"
         Me.BunifuDatePicker1.Size = New System.Drawing.Size(208, 32)
@@ -1265,7 +1329,7 @@ Partial Class Blotter
         Me.BunifuTextBox6.IconRight = Nothing
         Me.BunifuTextBox6.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox6.Lines = New String(-1) {}
-        Me.BunifuTextBox6.Location = New System.Drawing.Point(126, 227)
+        Me.BunifuTextBox6.Location = New System.Drawing.Point(125, 226)
         Me.BunifuTextBox6.MaxLength = 32767
         Me.BunifuTextBox6.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox6.Modified = False
@@ -1681,70 +1745,6 @@ Partial Class Blotter
         Me.BunifuTextBox1.TextPlaceholder = "Enter text"
         Me.BunifuTextBox1.UseSystemPasswordChar = False
         Me.BunifuTextBox1.WordWrap = True
-        '
-        'blotterNumberColumn
-        '
-        Me.blotterNumberColumn.HeaderText = "BLOTTER NO:"
-        Me.blotterNumberColumn.Name = "blotterNumberColumn"
-        '
-        'reportedResidentColumn
-        '
-        Me.reportedResidentColumn.HeaderText = "REPORTED RESIDENT"
-        Me.reportedResidentColumn.Name = "reportedResidentColumn"
-        '
-        'detailsColumn
-        '
-        Me.detailsColumn.HeaderText = "DETAILS"
-        Me.detailsColumn.Name = "detailsColumn"
-        '
-        'typeColumn
-        '
-        Me.typeColumn.HeaderText = "TYPE"
-        Me.typeColumn.Name = "typeColumn"
-        '
-        'dateAndTimeOfIncidentColumn
-        '
-        Me.dateAndTimeOfIncidentColumn.HeaderText = "DATE OF INCIDENT"
-        Me.dateAndTimeOfIncidentColumn.Name = "dateAndTimeOfIncidentColumn"
-        '
-        'dateAndTimeOfFilledColumn
-        '
-        Me.dateAndTimeOfFilledColumn.HeaderText = "DATE OF FILLED"
-        Me.dateAndTimeOfFilledColumn.Name = "dateAndTimeOfFilledColumn"
-        '
-        'complainantColumn
-        '
-        Me.complainantColumn.HeaderText = "COMPLAINANT"
-        Me.complainantColumn.Name = "complainantColumn"
-        '
-        'statusColumn
-        '
-        Me.statusColumn.HeaderText = "STATUS"
-        Me.statusColumn.Name = "statusColumn"
-        '
-        'updateButtonColumn
-        '
-        Me.updateButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.updateButtonColumn.HeaderText = ""
-        Me.updateButtonColumn.MinimumWidth = 25
-        Me.updateButtonColumn.Name = "updateButtonColumn"
-        Me.updateButtonColumn.Width = 25
-        '
-        'settlementscheduleButtonColumn
-        '
-        Me.settlementscheduleButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.settlementscheduleButtonColumn.HeaderText = ""
-        Me.settlementscheduleButtonColumn.MinimumWidth = 25
-        Me.settlementscheduleButtonColumn.Name = "settlementscheduleButtonColumn"
-        Me.settlementscheduleButtonColumn.Width = 25
-        '
-        'printButtonColumn
-        '
-        Me.printButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.printButtonColumn.HeaderText = ""
-        Me.printButtonColumn.MinimumWidth = 25
-        Me.printButtonColumn.Name = "printButtonColumn"
-        Me.printButtonColumn.Width = 25
         '
         'Blotter
         '

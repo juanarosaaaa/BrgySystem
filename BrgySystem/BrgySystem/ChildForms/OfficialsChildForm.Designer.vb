@@ -43,6 +43,10 @@ Partial Class OfficialsChildForm
         Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim BorderEdges3 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim BorderEdges4 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim StateProperties17 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties18 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties19 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties20 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox2 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox3 = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -60,6 +64,7 @@ Partial Class OfficialsChildForm
         Me.BunifuButton2 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.BunifuButton4 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Me.BunifuTextBox5 = New Bunifu.UI.WinForms.BunifuTextBox()
         CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -872,11 +877,86 @@ Partial Class OfficialsChildForm
         Me.BunifuButton4.TextPadding = New System.Windows.Forms.Padding(0)
         Me.BunifuButton4.UseDefaultRadiusAndThickness = True
         '
+        'BunifuTextBox5
+        '
+        Me.BunifuTextBox5.AcceptsReturn = False
+        Me.BunifuTextBox5.AcceptsTab = False
+        Me.BunifuTextBox5.AnimationSpeed = 200
+        Me.BunifuTextBox5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.BunifuTextBox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.BunifuTextBox5.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuTextBox5.BackgroundImage = CType(resources.GetObject("BunifuTextBox5.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuTextBox5.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.BunifuTextBox5.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BunifuTextBox5.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BunifuTextBox5.BorderColorIdle = System.Drawing.Color.Silver
+        Me.BunifuTextBox5.BorderRadius = 1
+        Me.BunifuTextBox5.BorderThickness = 1
+        Me.BunifuTextBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.BunifuTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuTextBox5.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.BunifuTextBox5.DefaultText = ""
+        Me.BunifuTextBox5.FillColor = System.Drawing.Color.White
+        Me.BunifuTextBox5.HideSelection = True
+        Me.BunifuTextBox5.IconLeft = Nothing
+        Me.BunifuTextBox5.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuTextBox5.IconPadding = 10
+        Me.BunifuTextBox5.IconRight = Nothing
+        Me.BunifuTextBox5.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuTextBox5.Lines = New String(-1) {}
+        Me.BunifuTextBox5.Location = New System.Drawing.Point(16, 253)
+        Me.BunifuTextBox5.MaxLength = 32767
+        Me.BunifuTextBox5.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.BunifuTextBox5.Modified = False
+        Me.BunifuTextBox5.Multiline = False
+        Me.BunifuTextBox5.Name = "BunifuTextBox5"
+        StateProperties17.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties17.FillColor = System.Drawing.Color.Empty
+        StateProperties17.ForeColor = System.Drawing.Color.Empty
+        StateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.BunifuTextBox5.OnActiveState = StateProperties17
+        StateProperties18.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties18.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.BunifuTextBox5.OnDisabledState = StateProperties18
+        StateProperties19.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties19.FillColor = System.Drawing.Color.Empty
+        StateProperties19.ForeColor = System.Drawing.Color.Empty
+        StateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.BunifuTextBox5.OnHoverState = StateProperties19
+        StateProperties20.BorderColor = System.Drawing.Color.Silver
+        StateProperties20.FillColor = System.Drawing.Color.White
+        StateProperties20.ForeColor = System.Drawing.Color.Empty
+        StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.BunifuTextBox5.OnIdleState = StateProperties20
+        Me.BunifuTextBox5.Padding = New System.Windows.Forms.Padding(3)
+        Me.BunifuTextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.BunifuTextBox5.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.BunifuTextBox5.PlaceholderText = "Highest Educational Attainment"
+        Me.BunifuTextBox5.ReadOnly = False
+        Me.BunifuTextBox5.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.BunifuTextBox5.SelectedText = ""
+        Me.BunifuTextBox5.SelectionLength = 0
+        Me.BunifuTextBox5.SelectionStart = 0
+        Me.BunifuTextBox5.ShortcutsEnabled = True
+        Me.BunifuTextBox5.Size = New System.Drawing.Size(361, 44)
+        Me.BunifuTextBox5.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.BunifuTextBox5.TabIndex = 21
+        Me.BunifuTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.BunifuTextBox5.TextMarginBottom = 0
+        Me.BunifuTextBox5.TextMarginLeft = 3
+        Me.BunifuTextBox5.TextMarginTop = 0
+        Me.BunifuTextBox5.TextPlaceholder = "Highest Educational Attainment"
+        Me.BunifuTextBox5.UseSystemPasswordChar = False
+        Me.BunifuTextBox5.WordWrap = True
+        '
         'OfficialsChildForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(721, 680)
+        Me.Controls.Add(Me.BunifuTextBox5)
         Me.Controls.Add(Me.BunifuButton4)
         Me.Controls.Add(Me.BunifuButton3)
         Me.Controls.Add(Me.BunifuButton2)
@@ -922,4 +1002,5 @@ Partial Class OfficialsChildForm
     Friend WithEvents BunifuButton2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents BunifuButton1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents BunifuButton4 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
+    Friend WithEvents BunifuTextBox5 As Bunifu.UI.WinForms.BunifuTextBox
 End Class
