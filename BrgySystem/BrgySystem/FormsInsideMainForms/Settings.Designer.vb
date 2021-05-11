@@ -2466,7 +2466,7 @@ Partial Class Settings
         Me.BunifuImageButton1.FadeWhenInactive = False
         Me.BunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal
         Me.BunifuImageButton1.Image = Global.BrgySystem.My.Resources.Resources.icons8_information_50px_1
-        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.ActiveImage = Nothing
         Me.BunifuImageButton1.ImageLocation = Nothing
         Me.BunifuImageButton1.ImageMargin = 40
         Me.BunifuImageButton1.ImageSize = New System.Drawing.Size(35, 37)
@@ -2483,7 +2483,7 @@ Partial Class Settings
         Me.BunifuImageButton1.TabIndex = 4
         Me.BunifuImageButton1.ToolTipText = ""
         Me.BunifuImageButton1.WaitOnLoad = False
-        Me.BunifuImageButton1.Zoom = 40
+        Me.BunifuImageButton1.ImageMargin = 40
         Me.BunifuImageButton1.ZoomSpeed = 10
         '
         'Guna2Button1

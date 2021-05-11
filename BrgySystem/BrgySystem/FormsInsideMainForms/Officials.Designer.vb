@@ -22,91 +22,31 @@ Partial Class Officials
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Officials))
         Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
-        Me.TableGridView = New Bunifu.UI.WinForms.BunifuDataGridView()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
-        Me.nameColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AgeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.termColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PositionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SexColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StatusColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContactColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.editButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.deleteButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.archiveButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
-        CType(Me.TableGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.name_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.age_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.term_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.position_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.status_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.contact_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.editButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.archiveButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TableGridView
-        '
-        Me.TableGridView.AllowCustomTheming = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
-        Me.TableGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.TableGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.TableGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TableGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.TableGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 11.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(204, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TableGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.TableGridView.ColumnHeadersHeight = 40
-        Me.TableGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nameColumn, Me.AgeColumn, Me.termColumn, Me.PositionColumn, Me.SexColumn, Me.StatusColumn, Me.ContactColumn, Me.editButtonColumn, Me.deleteButtonColumn, Me.archiveButtonColumn})
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black
-        Me.TableGridView.CurrentTheme.BackColor = System.Drawing.Color.White
-        Me.TableGridView.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue
-        Me.TableGridView.CurrentTheme.HeaderStyle.Font = New System.Drawing.Font("Segoe UI Semibold", 11.75!, System.Drawing.FontStyle.Bold)
-        Me.TableGridView.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.TableGridView.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.TableGridView.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White
-        Me.TableGridView.CurrentTheme.Name = Nothing
-        Me.TableGridView.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.TableGridView.CurrentTheme.RowsStyle.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.TableGridView.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black
-        Me.TableGridView.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TableGridView.DefaultCellStyle = DataGridViewCellStyle3
-        Me.TableGridView.EnableHeadersVisualStyles = False
-        Me.TableGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.TableGridView.HeaderBackColor = System.Drawing.Color.Empty
-        Me.TableGridView.HeaderForeColor = System.Drawing.Color.White
-        Me.TableGridView.Location = New System.Drawing.Point(12, 74)
-        Me.TableGridView.Name = "TableGridView"
-        Me.TableGridView.RowHeadersVisible = False
-        Me.TableGridView.RowTemplate.Height = 40
-        Me.TableGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.TableGridView.Size = New System.Drawing.Size(1085, 639)
-        Me.TableGridView.TabIndex = 0
-        Me.TableGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light
         '
         'Button1
         '
@@ -280,94 +220,152 @@ Partial Class Officials
         Me.BunifuButton1.TextPadding = New System.Windows.Forms.Padding(0)
         Me.BunifuButton1.UseDefaultRadiusAndThickness = True
         '
-        'nameColumn
+        'Guna2DataGridView1
         '
-        Me.nameColumn.HeaderText = "NAME"
-        Me.nameColumn.Name = "nameColumn"
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.Guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.Guna2DataGridView1.ColumnHeadersHeight = 21
+        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.name_Column, Me.age_Column, Me.term_Column, Me.position_Column, Me.sex_Column, Me.status_Column, Me.contact_Column, Me.editButton_Column, Me.deleteButton_Column, Me.archiveButton_Column})
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Guna2DataGridView1.EnableHeadersVisualStyles = False
+        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(12, 94)
+        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
+        Me.Guna2DataGridView1.RowHeadersVisible = False
+        Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(1084, 608)
+        Me.Guna2DataGridView1.TabIndex = 5
+        Me.Guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21
+        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'AgeColumn
+        'name_Column
         '
-        Me.AgeColumn.HeaderText = "AGE"
-        Me.AgeColumn.Name = "AgeColumn"
+        Me.name_Column.HeaderText = "NAME"
+        Me.name_Column.Name = "name_Column"
         '
-        'termColumn
+        'age_Column
         '
-        Me.termColumn.HeaderText = "TERM"
-        Me.termColumn.Name = "termColumn"
+        Me.age_Column.HeaderText = "AGE"
+        Me.age_Column.Name = "age_Column"
         '
-        'PositionColumn
+        'term_Column
         '
-        Me.PositionColumn.HeaderText = "POSITION"
-        Me.PositionColumn.Name = "PositionColumn"
+        Me.term_Column.HeaderText = "TERM"
+        Me.term_Column.Name = "term_Column"
         '
-        'SexColumn
+        'position_Column
         '
-        Me.SexColumn.HeaderText = "SEX"
-        Me.SexColumn.Name = "SexColumn"
+        Me.position_Column.HeaderText = "POSITION"
+        Me.position_Column.Name = "position_Column"
         '
-        'StatusColumn
+        'sex_Column
         '
-        Me.StatusColumn.HeaderText = "STATUS"
-        Me.StatusColumn.Name = "StatusColumn"
+        Me.sex_Column.HeaderText = "SEX"
+        Me.sex_Column.Name = "sex_Column"
         '
-        'ContactColumn
+        'status_Column
         '
-        Me.ContactColumn.HeaderText = "CONTACT"
-        Me.ContactColumn.Name = "ContactColumn"
+        Me.status_Column.HeaderText = "STATUS"
+        Me.status_Column.Name = "status_Column"
         '
-        'editButtonColumn
+        'contact_Column
         '
-        Me.editButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.editButtonColumn.HeaderText = ""
-        Me.editButtonColumn.MinimumWidth = 25
-        Me.editButtonColumn.Name = "editButtonColumn"
-        Me.editButtonColumn.Width = 25
+        Me.contact_Column.HeaderText = "CONTACT"
+        Me.contact_Column.Name = "contact_Column"
         '
-        'deleteButtonColumn
+        'editButton_Column
         '
-        Me.deleteButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.deleteButtonColumn.HeaderText = ""
-        Me.deleteButtonColumn.MinimumWidth = 25
-        Me.deleteButtonColumn.Name = "deleteButtonColumn"
-        Me.deleteButtonColumn.Width = 25
+        Me.editButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.editButton_Column.HeaderText = ""
+        Me.editButton_Column.MinimumWidth = 25
+        Me.editButton_Column.Name = "editButton_Column"
+        Me.editButton_Column.Width = 25
         '
-        'archiveButtonColumn
+        'deleteButton_Column
         '
-        Me.archiveButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.archiveButtonColumn.HeaderText = ""
-        Me.archiveButtonColumn.MinimumWidth = 25
-        Me.archiveButtonColumn.Name = "archiveButtonColumn"
-        Me.archiveButtonColumn.Width = 25
+        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.deleteButton_Column.HeaderText = ""
+        Me.deleteButton_Column.MinimumWidth = 25
+        Me.deleteButton_Column.Name = "deleteButton_Column"
+        Me.deleteButton_Column.Width = 25
+        '
+        'archiveButton_Column
+        '
+        Me.archiveButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.archiveButton_Column.HeaderText = ""
+        Me.archiveButton_Column.MinimumWidth = 25
+        Me.archiveButton_Column.Name = "archiveButton_Column"
+        Me.archiveButton_Column.Width = 25
         '
         'Officials
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1108, 728)
+        Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BunifuTextBox1)
         Me.Controls.Add(Me.BunifuButton1)
-        Me.Controls.Add(Me.TableGridView)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Officials"
         Me.Text = "Officials"
-        CType(Me.TableGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents TableGridView As Bunifu.UI.WinForms.BunifuDataGridView
     Friend WithEvents BunifuButton1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents nameColumn As DataGridViewTextBoxColumn
-    Friend WithEvents AgeColumn As DataGridViewTextBoxColumn
-    Friend WithEvents termColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PositionColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SexColumn As DataGridViewTextBoxColumn
-    Friend WithEvents StatusColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ContactColumn As DataGridViewTextBoxColumn
-    Friend WithEvents editButtonColumn As DataGridViewImageColumn
-    Friend WithEvents deleteButtonColumn As DataGridViewImageColumn
-    Friend WithEvents archiveButtonColumn As DataGridViewImageColumn
+    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents name_Column As DataGridViewTextBoxColumn
+    Friend WithEvents age_Column As DataGridViewTextBoxColumn
+    Friend WithEvents term_Column As DataGridViewTextBoxColumn
+    Friend WithEvents position_Column As DataGridViewTextBoxColumn
+    Friend WithEvents sex_Column As DataGridViewTextBoxColumn
+    Friend WithEvents status_Column As DataGridViewTextBoxColumn
+    Friend WithEvents contact_Column As DataGridViewTextBoxColumn
+    Friend WithEvents editButton_Column As DataGridViewImageColumn
+    Friend WithEvents deleteButton_Column As DataGridViewImageColumn
+    Friend WithEvents archiveButton_Column As DataGridViewImageColumn
 End Class

@@ -244,12 +244,6 @@
     </Compile>
     <Compile Include="DataGridViewActionButtonEvent.vb" />
     <Compile Include="DataGridViewImages.vb" />
-    <Compile Include="FormsInsideMainForms\Activities.Designer.vb">
-      <DependentUpon>Activities.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormsInsideMainForms\Activities.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormsInsideMainForms\Archive.Designer.vb">
       <DependentUpon>Archive.vb</DependentUpon>
     </Compile>
@@ -284,6 +278,12 @@
       <DependentUpon>Officials.vb</DependentUpon>
     </Compile>
     <Compile Include="FormsInsideMainForms\Officials.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsInsideMainForms\OrganizationalChart.Designer.vb">
+      <DependentUpon>OrganizationalChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormsInsideMainForms\OrganizationalChart.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsInsideMainForms\Purok.Designer.vb">
@@ -364,9 +364,6 @@
     <EmbeddedResource Include="ChildForms\UpdateStatusOfSettlementBlotter.resx">
       <DependentUpon>UpdateStatusOfSettlementBlotter.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsInsideMainForms\Activities.resx">
-      <DependentUpon>Activities.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Archive.resx">
       <DependentUpon>Archive.vb</DependentUpon>
     </EmbeddedResource>
@@ -384,6 +381,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Officials.resx">
       <DependentUpon>Officials.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsInsideMainForms\OrganizationalChart.resx">
+      <DependentUpon>OrganizationalChart.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Purok.resx">
       <DependentUpon>Purok.vb</DependentUpon>

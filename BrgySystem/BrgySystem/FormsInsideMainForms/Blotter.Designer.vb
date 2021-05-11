@@ -22,9 +22,6 @@ Partial Class Blotter
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Blotter))
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
@@ -84,18 +81,9 @@ Partial Class Blotter
         Dim StateProperties54 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties55 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties56 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Me.TableGridView = New Bunifu.UI.WinForms.BunifuDataGridView()
-        Me.blotterNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.reportedResidentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.detailsColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.typeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dateAndTimeOfIncidentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dateAndTimeOfFilledColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.complainantColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.statusColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.updateButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.settlementscheduleButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.printButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -131,132 +119,20 @@ Partial Class Blotter
         Me.BunifuTextBox3 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox2 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
-        CType(Me.TableGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.blotter_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.reportedResident_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.details_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.type_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dateOfIndident_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dateFilled_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.complainant_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.status_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.updateButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.settlementScheduleButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.printButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TableGridView
-        '
-        Me.TableGridView.AllowCustomTheming = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
-        Me.TableGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.TableGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.TableGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TableGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.TableGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 11.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(204, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TableGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.TableGridView.ColumnHeadersHeight = 40
-        Me.TableGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.blotterNumberColumn, Me.reportedResidentColumn, Me.detailsColumn, Me.typeColumn, Me.dateAndTimeOfIncidentColumn, Me.dateAndTimeOfFilledColumn, Me.complainantColumn, Me.statusColumn, Me.updateButtonColumn, Me.settlementscheduleButtonColumn, Me.printButtonColumn})
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black
-        Me.TableGridView.CurrentTheme.BackColor = System.Drawing.Color.White
-        Me.TableGridView.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue
-        Me.TableGridView.CurrentTheme.HeaderStyle.Font = New System.Drawing.Font("Segoe UI Semibold", 11.75!, System.Drawing.FontStyle.Bold)
-        Me.TableGridView.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.TableGridView.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.TableGridView.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White
-        Me.TableGridView.CurrentTheme.Name = Nothing
-        Me.TableGridView.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.TableGridView.CurrentTheme.RowsStyle.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.TableGridView.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black
-        Me.TableGridView.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TableGridView.DefaultCellStyle = DataGridViewCellStyle3
-        Me.TableGridView.EnableHeadersVisualStyles = False
-        Me.TableGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue
-        Me.TableGridView.HeaderBackColor = System.Drawing.Color.Empty
-        Me.TableGridView.HeaderForeColor = System.Drawing.Color.White
-        Me.TableGridView.Location = New System.Drawing.Point(12, 350)
-        Me.TableGridView.Name = "TableGridView"
-        Me.TableGridView.RowHeadersVisible = False
-        Me.TableGridView.RowTemplate.Height = 40
-        Me.TableGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.TableGridView.Size = New System.Drawing.Size(1084, 366)
-        Me.TableGridView.TabIndex = 5
-        Me.TableGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light
-        '
-        'blotterNumberColumn
-        '
-        Me.blotterNumberColumn.HeaderText = "BLOTTER NO:"
-        Me.blotterNumberColumn.Name = "blotterNumberColumn"
-        '
-        'reportedResidentColumn
-        '
-        Me.reportedResidentColumn.HeaderText = "REPORTED RESIDENT"
-        Me.reportedResidentColumn.Name = "reportedResidentColumn"
-        '
-        'detailsColumn
-        '
-        Me.detailsColumn.HeaderText = "DETAILS"
-        Me.detailsColumn.Name = "detailsColumn"
-        '
-        'typeColumn
-        '
-        Me.typeColumn.HeaderText = "TYPE"
-        Me.typeColumn.Name = "typeColumn"
-        '
-        'dateAndTimeOfIncidentColumn
-        '
-        Me.dateAndTimeOfIncidentColumn.HeaderText = "DATE OF INCIDENT"
-        Me.dateAndTimeOfIncidentColumn.Name = "dateAndTimeOfIncidentColumn"
-        '
-        'dateAndTimeOfFilledColumn
-        '
-        Me.dateAndTimeOfFilledColumn.HeaderText = "DATE OF FILLED"
-        Me.dateAndTimeOfFilledColumn.Name = "dateAndTimeOfFilledColumn"
-        '
-        'complainantColumn
-        '
-        Me.complainantColumn.HeaderText = "COMPLAINANT"
-        Me.complainantColumn.Name = "complainantColumn"
-        '
-        'statusColumn
-        '
-        Me.statusColumn.HeaderText = "STATUS"
-        Me.statusColumn.Name = "statusColumn"
-        '
-        'updateButtonColumn
-        '
-        Me.updateButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.updateButtonColumn.HeaderText = ""
-        Me.updateButtonColumn.MinimumWidth = 25
-        Me.updateButtonColumn.Name = "updateButtonColumn"
-        Me.updateButtonColumn.Width = 25
-        '
-        'settlementscheduleButtonColumn
-        '
-        Me.settlementscheduleButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.settlementscheduleButtonColumn.HeaderText = ""
-        Me.settlementscheduleButtonColumn.MinimumWidth = 25
-        Me.settlementscheduleButtonColumn.Name = "settlementscheduleButtonColumn"
-        Me.settlementscheduleButtonColumn.Width = 25
-        '
-        'printButtonColumn
-        '
-        Me.printButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.printButtonColumn.HeaderText = ""
-        Me.printButtonColumn.MinimumWidth = 25
-        Me.printButtonColumn.Name = "printButtonColumn"
-        Me.printButtonColumn.Width = 25
         '
         'BunifuLabel1
         '
@@ -1746,11 +1622,135 @@ Partial Class Blotter
         Me.BunifuTextBox1.UseSystemPasswordChar = False
         Me.BunifuTextBox1.WordWrap = True
         '
+        'Guna2DataGridView1
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.Guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.Guna2DataGridView1.ColumnHeadersHeight = 40
+        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.blotter_Column, Me.reportedResident_Column, Me.details_Column, Me.type_Column, Me.dateOfIndident_Column, Me.dateFilled_Column, Me.complainant_Column, Me.status_Column, Me.updateButton_Column, Me.settlementScheduleButton_Column, Me.printButton_Column})
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Guna2DataGridView1.EnableHeadersVisualStyles = False
+        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(9, 349)
+        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
+        Me.Guna2DataGridView1.RowHeadersVisible = False
+        Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(1091, 367)
+        Me.Guna2DataGridView1.TabIndex = 83
+        Me.Guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 40
+        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'blotter_Column
+        '
+        Me.blotter_Column.HeaderText = "BLOTTER NO"
+        Me.blotter_Column.Name = "blotter_Column"
+        '
+        'reportedResident_Column
+        '
+        Me.reportedResident_Column.HeaderText = "REPORTED RESIDENT"
+        Me.reportedResident_Column.Name = "reportedResident_Column"
+        '
+        'details_Column
+        '
+        Me.details_Column.HeaderText = "DETAILS"
+        Me.details_Column.Name = "details_Column"
+        '
+        'type_Column
+        '
+        Me.type_Column.HeaderText = "TYPE"
+        Me.type_Column.Name = "type_Column"
+        '
+        'dateOfIndident_Column
+        '
+        Me.dateOfIndident_Column.HeaderText = "DATE OF INCIDENT"
+        Me.dateOfIndident_Column.Name = "dateOfIndident_Column"
+        '
+        'dateFilled_Column
+        '
+        Me.dateFilled_Column.HeaderText = "DATE OF FILLED"
+        Me.dateFilled_Column.Name = "dateFilled_Column"
+        '
+        'complainant_Column
+        '
+        Me.complainant_Column.HeaderText = "COMPLAINANT"
+        Me.complainant_Column.Name = "complainant_Column"
+        '
+        'status_Column
+        '
+        Me.status_Column.HeaderText = "STATUS"
+        Me.status_Column.Name = "status_Column"
+        '
+        'updateButton_Column
+        '
+        Me.updateButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.updateButton_Column.HeaderText = ""
+        Me.updateButton_Column.MinimumWidth = 25
+        Me.updateButton_Column.Name = "updateButton_Column"
+        Me.updateButton_Column.Width = 25
+        '
+        'settlementScheduleButton_Column
+        '
+        Me.settlementScheduleButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.settlementScheduleButton_Column.HeaderText = ""
+        Me.settlementScheduleButton_Column.MinimumWidth = 25
+        Me.settlementScheduleButton_Column.Name = "settlementScheduleButton_Column"
+        Me.settlementScheduleButton_Column.Width = 25
+        '
+        'printButton_Column
+        '
+        Me.printButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.printButton_Column.HeaderText = ""
+        Me.printButton_Column.MinimumWidth = 25
+        Me.printButton_Column.Name = "printButton_Column"
+        Me.printButton_Column.Width = 25
+        '
         'Blotter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1108, 728)
+        Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BunifuButton3)
         Me.Controls.Add(Me.BunifuButton2)
@@ -1782,14 +1782,13 @@ Partial Class Blotter
         Me.Controls.Add(Me.BunifuTextBox4)
         Me.Controls.Add(Me.BunifuLabel2)
         Me.Controls.Add(Me.BunifuLabel1)
-        Me.Controls.Add(Me.TableGridView)
         Me.Controls.Add(Me.BunifuTextBox3)
         Me.Controls.Add(Me.BunifuTextBox2)
         Me.Controls.Add(Me.BunifuTextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Blotter"
         Me.Text = "Blotter"
-        CType(Me.TableGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1798,7 +1797,6 @@ Partial Class Blotter
     Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuTextBox2 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuTextBox3 As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents TableGridView As Bunifu.UI.WinForms.BunifuDataGridView
     Friend WithEvents BunifuLabel1 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel2 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuTextBox4 As Bunifu.UI.WinForms.BunifuTextBox
@@ -1831,15 +1829,16 @@ Partial Class Blotter
     Friend WithEvents BunifuButton3 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
-    Friend WithEvents blotterNumberColumn As DataGridViewTextBoxColumn
-    Friend WithEvents reportedResidentColumn As DataGridViewTextBoxColumn
-    Friend WithEvents detailsColumn As DataGridViewTextBoxColumn
-    Friend WithEvents typeColumn As DataGridViewTextBoxColumn
-    Friend WithEvents dateAndTimeOfIncidentColumn As DataGridViewTextBoxColumn
-    Friend WithEvents dateAndTimeOfFilledColumn As DataGridViewTextBoxColumn
-    Friend WithEvents complainantColumn As DataGridViewTextBoxColumn
-    Friend WithEvents statusColumn As DataGridViewTextBoxColumn
-    Friend WithEvents updateButtonColumn As DataGridViewImageColumn
-    Friend WithEvents settlementscheduleButtonColumn As DataGridViewImageColumn
-    Friend WithEvents printButtonColumn As DataGridViewImageColumn
+    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents blotter_Column As DataGridViewTextBoxColumn
+    Friend WithEvents reportedResident_Column As DataGridViewTextBoxColumn
+    Friend WithEvents details_Column As DataGridViewTextBoxColumn
+    Friend WithEvents type_Column As DataGridViewTextBoxColumn
+    Friend WithEvents dateOfIndident_Column As DataGridViewTextBoxColumn
+    Friend WithEvents dateFilled_Column As DataGridViewTextBoxColumn
+    Friend WithEvents complainant_Column As DataGridViewTextBoxColumn
+    Friend WithEvents status_Column As DataGridViewTextBoxColumn
+    Friend WithEvents updateButton_Column As DataGridViewImageColumn
+    Friend WithEvents settlementScheduleButton_Column As DataGridViewImageColumn
+    Friend WithEvents printButton_Column As DataGridViewImageColumn
 End Class

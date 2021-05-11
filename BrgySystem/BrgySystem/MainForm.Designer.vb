@@ -37,7 +37,7 @@ Partial Class MainForm
         Me.BunifuPanel1 = New Bunifu.UI.WinForms.BunifuPanel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuImageButton1 = New Bunifu.UI.WinForms.BunifuImageButton()
-        Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Me.OrganizationalChartButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.Officials_Button = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.Archive_Button = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.Logout_Button = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
@@ -59,7 +59,7 @@ Partial Class MainForm
         Me.MainPanel.BorderColor = System.Drawing.Color.Transparent
         Me.MainPanel.BorderRadius = 3
         Me.MainPanel.BorderThickness = 1
-        Me.MainPanel.Location = New System.Drawing.Point(243, -1)
+        Me.MainPanel.Location = New System.Drawing.Point(242, 2)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.ShowBorders = True
         Me.MainPanel.Size = New System.Drawing.Size(1108, 728)
@@ -75,7 +75,7 @@ Partial Class MainForm
         Me.BunifuPanel1.BorderThickness = 1
         Me.BunifuPanel1.Controls.Add(Me.BunifuLabel3)
         Me.BunifuPanel1.Controls.Add(Me.BunifuImageButton1)
-        Me.BunifuPanel1.Controls.Add(Me.BunifuButton1)
+        Me.BunifuPanel1.Controls.Add(Me.OrganizationalChartButton)
         Me.BunifuPanel1.Controls.Add(Me.Officials_Button)
         Me.BunifuPanel1.Controls.Add(Me.Archive_Button)
         Me.BunifuPanel1.Controls.Add(Me.Logout_Button)
@@ -142,94 +142,94 @@ Partial Class MainForm
         Me.BunifuImageButton1.Zoom = 40
         Me.BunifuImageButton1.ZoomSpeed = 10
         '
-        'BunifuButton1
+        'OrganizationalChartButton
         '
-        Me.BunifuButton1.AllowAnimations = True
-        Me.BunifuButton1.AllowMouseEffects = True
-        Me.BunifuButton1.AllowToggling = False
-        Me.BunifuButton1.AnimationSpeed = 200
-        Me.BunifuButton1.AutoGenerateColors = False
-        Me.BunifuButton1.AutoRoundBorders = False
-        Me.BunifuButton1.AutoSizeLeftIcon = True
-        Me.BunifuButton1.AutoSizeRightIcon = True
-        Me.BunifuButton1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuButton1.BackColor1 = System.Drawing.Color.DodgerBlue
-        Me.BunifuButton1.BackgroundImage = CType(resources.GetObject("BunifuButton1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.ButtonText = "ORGANIZATIONAL CHART"
-        Me.BunifuButton1.ButtonTextMarginLeft = 0
-        Me.BunifuButton1.ColorContrastOnClick = 45
-        Me.BunifuButton1.ColorContrastOnHover = 45
-        Me.BunifuButton1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.OrganizationalChartButton.AllowAnimations = True
+        Me.OrganizationalChartButton.AllowMouseEffects = True
+        Me.OrganizationalChartButton.AllowToggling = False
+        Me.OrganizationalChartButton.AnimationSpeed = 200
+        Me.OrganizationalChartButton.AutoGenerateColors = False
+        Me.OrganizationalChartButton.AutoRoundBorders = False
+        Me.OrganizationalChartButton.AutoSizeLeftIcon = True
+        Me.OrganizationalChartButton.AutoSizeRightIcon = True
+        Me.OrganizationalChartButton.BackColor = System.Drawing.Color.Transparent
+        Me.OrganizationalChartButton.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.OrganizationalChartButton.BackgroundImage = CType(resources.GetObject("OrganizationalChartButton.BackgroundImage"), System.Drawing.Image)
+        Me.OrganizationalChartButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.OrganizationalChartButton.ButtonText = "ORGANIZATIONAL CHART"
+        Me.OrganizationalChartButton.ButtonTextMarginLeft = 0
+        Me.OrganizationalChartButton.ColorContrastOnClick = 45
+        Me.OrganizationalChartButton.ColorContrastOnHover = 45
+        Me.OrganizationalChartButton.Cursor = System.Windows.Forms.Cursors.Default
         BorderEdges1.BottomLeft = True
         BorderEdges1.BottomRight = True
         BorderEdges1.TopLeft = True
         BorderEdges1.TopRight = True
-        Me.BunifuButton1.CustomizableEdges = BorderEdges1
-        Me.BunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.BunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuButton1.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
-        Me.BunifuButton1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.BunifuButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.BunifuButton1.ForeColor = System.Drawing.Color.White
-        Me.BunifuButton1.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default
-        Me.BunifuButton1.IconLeftPadding = New System.Windows.Forms.Padding(11, 3, 3, 3)
-        Me.BunifuButton1.IconMarginLeft = 11
-        Me.BunifuButton1.IconPadding = 10
-        Me.BunifuButton1.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Default
-        Me.BunifuButton1.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
-        Me.BunifuButton1.IconSize = 25
-        Me.BunifuButton1.IdleBorderColor = System.Drawing.Color.DodgerBlue
-        Me.BunifuButton1.IdleBorderRadius = 1
-        Me.BunifuButton1.IdleBorderThickness = 1
-        Me.BunifuButton1.IdleFillColor = System.Drawing.Color.DodgerBlue
-        Me.BunifuButton1.IdleIconLeftImage = Nothing
-        Me.BunifuButton1.IdleIconRightImage = Nothing
-        Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(3, 595)
-        Me.BunifuButton1.Name = "BunifuButton1"
-        Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BunifuButton1.OnDisabledState.BorderRadius = 1
-        Me.BunifuButton1.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.OnDisabledState.BorderThickness = 1
-        Me.BunifuButton1.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuButton1.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
-        Me.BunifuButton1.OnDisabledState.IconLeftImage = Nothing
-        Me.BunifuButton1.OnDisabledState.IconRightImage = Nothing
-        Me.BunifuButton1.onHoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuButton1.onHoverState.BorderRadius = 1
-        Me.BunifuButton1.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.onHoverState.BorderThickness = 1
-        Me.BunifuButton1.onHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuButton1.onHoverState.ForeColor = System.Drawing.Color.White
-        Me.BunifuButton1.onHoverState.IconLeftImage = Nothing
-        Me.BunifuButton1.onHoverState.IconRightImage = Nothing
-        Me.BunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
-        Me.BunifuButton1.OnIdleState.BorderRadius = 1
-        Me.BunifuButton1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.OnIdleState.BorderThickness = 1
-        Me.BunifuButton1.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
-        Me.BunifuButton1.OnIdleState.ForeColor = System.Drawing.Color.White
-        Me.BunifuButton1.OnIdleState.IconLeftImage = Nothing
-        Me.BunifuButton1.OnIdleState.IconRightImage = Nothing
-        Me.BunifuButton1.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuButton1.OnPressedState.BorderRadius = 1
-        Me.BunifuButton1.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.OnPressedState.BorderThickness = 1
-        Me.BunifuButton1.OnPressedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White
-        Me.BunifuButton1.OnPressedState.IconLeftImage = Nothing
-        Me.BunifuButton1.OnPressedState.IconRightImage = Nothing
-        Me.BunifuButton1.Size = New System.Drawing.Size(245, 45)
-        Me.BunifuButton1.TabIndex = 12
-        Me.BunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
-        Me.BunifuButton1.TextMarginLeft = 0
-        Me.BunifuButton1.TextPadding = New System.Windows.Forms.Padding(0)
-        Me.BunifuButton1.UseDefaultRadiusAndThickness = True
+        Me.OrganizationalChartButton.CustomizableEdges = BorderEdges1
+        Me.OrganizationalChartButton.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.OrganizationalChartButton.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.OrganizationalChartButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.OrganizationalChartButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.OrganizationalChartButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
+        Me.OrganizationalChartButton.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.OrganizationalChartButton.ForeColor = System.Drawing.Color.White
+        Me.OrganizationalChartButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.OrganizationalChartButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
+        Me.OrganizationalChartButton.IconLeftPadding = New System.Windows.Forms.Padding(11, 3, 3, 3)
+        Me.OrganizationalChartButton.IconMarginLeft = 11
+        Me.OrganizationalChartButton.IconPadding = 10
+        Me.OrganizationalChartButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.OrganizationalChartButton.IconRightCursor = System.Windows.Forms.Cursors.Default
+        Me.OrganizationalChartButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
+        Me.OrganizationalChartButton.IconSize = 25
+        Me.OrganizationalChartButton.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.OrganizationalChartButton.IdleBorderRadius = 1
+        Me.OrganizationalChartButton.IdleBorderThickness = 1
+        Me.OrganizationalChartButton.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.OrganizationalChartButton.IdleIconLeftImage = Nothing
+        Me.OrganizationalChartButton.IdleIconRightImage = Nothing
+        Me.OrganizationalChartButton.IndicateFocus = False
+        Me.OrganizationalChartButton.Location = New System.Drawing.Point(3, 595)
+        Me.OrganizationalChartButton.Name = "OrganizationalChartButton"
+        Me.OrganizationalChartButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.OrganizationalChartButton.OnDisabledState.BorderRadius = 1
+        Me.OrganizationalChartButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.OrganizationalChartButton.OnDisabledState.BorderThickness = 1
+        Me.OrganizationalChartButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.OrganizationalChartButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.OrganizationalChartButton.OnDisabledState.IconLeftImage = Nothing
+        Me.OrganizationalChartButton.OnDisabledState.IconRightImage = Nothing
+        Me.OrganizationalChartButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.OrganizationalChartButton.onHoverState.BorderRadius = 1
+        Me.OrganizationalChartButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.OrganizationalChartButton.onHoverState.BorderThickness = 1
+        Me.OrganizationalChartButton.onHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.OrganizationalChartButton.onHoverState.ForeColor = System.Drawing.Color.White
+        Me.OrganizationalChartButton.onHoverState.IconLeftImage = Nothing
+        Me.OrganizationalChartButton.onHoverState.IconRightImage = Nothing
+        Me.OrganizationalChartButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.OrganizationalChartButton.OnIdleState.BorderRadius = 1
+        Me.OrganizationalChartButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.OrganizationalChartButton.OnIdleState.BorderThickness = 1
+        Me.OrganizationalChartButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.OrganizationalChartButton.OnIdleState.ForeColor = System.Drawing.Color.White
+        Me.OrganizationalChartButton.OnIdleState.IconLeftImage = Nothing
+        Me.OrganizationalChartButton.OnIdleState.IconRightImage = Nothing
+        Me.OrganizationalChartButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.OrganizationalChartButton.OnPressedState.BorderRadius = 1
+        Me.OrganizationalChartButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.OrganizationalChartButton.OnPressedState.BorderThickness = 1
+        Me.OrganizationalChartButton.OnPressedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.OrganizationalChartButton.OnPressedState.ForeColor = System.Drawing.Color.White
+        Me.OrganizationalChartButton.OnPressedState.IconLeftImage = Nothing
+        Me.OrganizationalChartButton.OnPressedState.IconRightImage = Nothing
+        Me.OrganizationalChartButton.Size = New System.Drawing.Size(245, 45)
+        Me.OrganizationalChartButton.TabIndex = 12
+        Me.OrganizationalChartButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.OrganizationalChartButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
+        Me.OrganizationalChartButton.TextMarginLeft = 0
+        Me.OrganizationalChartButton.TextPadding = New System.Windows.Forms.Padding(0)
+        Me.OrganizationalChartButton.UseDefaultRadiusAndThickness = True
         '
         'Officials_Button
         '
@@ -1077,7 +1077,7 @@ Partial Class MainForm
     Friend WithEvents Settings_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents Archive_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents MainPanel As Bunifu.UI.WinForms.BunifuPanel
-    Friend WithEvents BunifuButton1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
+    Friend WithEvents OrganizationalChartButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents BunifuLabel3 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuImageButton1 As Bunifu.UI.WinForms.BunifuImageButton
 End Class

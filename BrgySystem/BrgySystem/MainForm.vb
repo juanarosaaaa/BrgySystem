@@ -41,10 +41,11 @@
 
     End Sub
 
-    Private Sub Activities_Button_Click(sender As Object, e As EventArgs)
-        Activities.Dispose()
-        showPanelDisplayOf(Activities)
+    Private Sub OrganizationalChartButton_Click(sender As Object, e As EventArgs) Handles OrganizationalChartButton.Click
+        OrganizationalChart.Dispose()
+        showPanelDisplayOf(OrganizationalChart)
     End Sub
+
 
     Private Sub Logout_Button_Click(sender As Object, e As EventArgs) Handles Logout_Button.Click
         Logout.Dispose()
@@ -67,5 +68,6 @@
         GC.SuppressFinalize(Me)
         Application.Exit()
     End Sub
+
 
 End Class
