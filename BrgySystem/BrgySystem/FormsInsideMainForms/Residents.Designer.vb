@@ -349,7 +349,7 @@ Partial Class Residents
         Me.Controls.Add(Me.BunifuButton1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Residents"
-        Me.Text = "Residents"
+        Me.Text = "Civil Status"
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

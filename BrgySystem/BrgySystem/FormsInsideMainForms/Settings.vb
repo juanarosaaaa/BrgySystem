@@ -23,8 +23,8 @@
 
 
 
-    Private Sub DashboardButtonClick(sender As Object, e As EventArgs) Handles DashboardButton.Click
-        MainForm.Dashboard_Button_Click(sender, e)
+    Private Sub AccountSettingsButtonClick(sender As Object, e As EventArgs) Handles AccountSettingsButton.Click
+        showPanelDisplayOf(SettingsAccountSettingsForm)
     End Sub
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load

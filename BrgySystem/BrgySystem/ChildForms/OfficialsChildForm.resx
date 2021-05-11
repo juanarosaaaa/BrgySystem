@@ -297,4 +297,7 @@
         4wPcG2yTFi0/hwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="BunifuLabel5.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
 </root>

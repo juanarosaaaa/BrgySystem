@@ -1065,9 +1065,9 @@ Partial Class ResidentsChildForm
         Me.BunifuLabel2.Location = New System.Drawing.Point(280, 179)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel2.Size = New System.Drawing.Size(96, 21)
+        Me.BunifuLabel2.Size = New System.Drawing.Size(77, 21)
         Me.BunifuLabel2.TabIndex = 20
-        Me.BunifuLabel2.Text = "Marital Status"
+        Me.BunifuLabel2.Text = "Civil Status"
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '

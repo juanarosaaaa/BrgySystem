@@ -65,6 +65,8 @@ Partial Class OfficialsChildForm
         Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.BunifuButton4 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.BunifuTextBox5 = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.Guna2ComboBox4 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -416,7 +418,7 @@ Partial Class OfficialsChildForm
         Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
         Me.Guna2ComboBox1.ItemHeight = 30
         Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(399, 103)
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(399, 102)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
         Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
         Me.Guna2ComboBox1.Size = New System.Drawing.Size(310, 36)
@@ -428,7 +430,7 @@ Partial Class OfficialsChildForm
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.CursorType = Nothing
         Me.BunifuLabel1.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel1.Location = New System.Drawing.Point(399, 86)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(399, 85)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel1.Size = New System.Drawing.Size(72, 17)
@@ -443,7 +445,7 @@ Partial Class OfficialsChildForm
         Me.BunifuLabel3.AutoEllipsis = False
         Me.BunifuLabel3.CursorType = Nothing
         Me.BunifuLabel3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel3.Location = New System.Drawing.Point(399, 139)
+        Me.BunifuLabel3.Location = New System.Drawing.Point(399, 138)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel3.Size = New System.Drawing.Size(30, 17)
@@ -484,7 +486,7 @@ Partial Class OfficialsChildForm
         Me.Guna2ComboBox3.HoverState.Parent = Me.Guna2ComboBox3
         Me.Guna2ComboBox3.ItemHeight = 30
         Me.Guna2ComboBox3.ItemsAppearance.Parent = Me.Guna2ComboBox3
-        Me.Guna2ComboBox3.Location = New System.Drawing.Point(399, 211)
+        Me.Guna2ComboBox3.Location = New System.Drawing.Point(399, 205)
         Me.Guna2ComboBox3.Name = "Guna2ComboBox3"
         Me.Guna2ComboBox3.ShadowDecoration.Parent = Me.Guna2ComboBox3
         Me.Guna2ComboBox3.Size = New System.Drawing.Size(310, 36)
@@ -496,7 +498,7 @@ Partial Class OfficialsChildForm
         Me.BunifuLabel4.AutoEllipsis = False
         Me.BunifuLabel4.CursorType = Nothing
         Me.BunifuLabel4.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel4.Location = New System.Drawing.Point(399, 192)
+        Me.BunifuLabel4.Location = New System.Drawing.Point(399, 188)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel4.Size = New System.Drawing.Size(59, 17)
@@ -510,12 +512,12 @@ Partial Class OfficialsChildForm
         Me.BunifuPictureBox1.AllowFocused = False
         Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BunifuPictureBox1.AutoSizeHeight = True
-        Me.BunifuPictureBox1.BorderRadius = 136
+        Me.BunifuPictureBox1.BorderRadius = 116
         Me.BunifuPictureBox1.Image = CType(resources.GetObject("BunifuPictureBox1.Image"), System.Drawing.Image)
         Me.BunifuPictureBox1.IsCircle = True
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(417, 280)
+        Me.BunifuPictureBox1.Location = New System.Drawing.Point(437, 300)
         Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
-        Me.BunifuPictureBox1.Size = New System.Drawing.Size(272, 272)
+        Me.BunifuPictureBox1.Size = New System.Drawing.Size(233, 233)
         Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox1.TabIndex = 15
         Me.BunifuPictureBox1.TabStop = False
@@ -568,7 +570,7 @@ Partial Class OfficialsChildForm
         Me.BunifuButton3.IdleIconLeftImage = Nothing
         Me.BunifuButton3.IdleIconRightImage = Nothing
         Me.BunifuButton3.IndicateFocus = False
-        Me.BunifuButton3.Location = New System.Drawing.Point(566, 608)
+        Me.BunifuButton3.Location = New System.Drawing.Point(567, 584)
         Me.BunifuButton3.Name = "BunifuButton3"
         Me.BunifuButton3.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton3.OnDisabledState.BorderRadius = 1
@@ -657,7 +659,7 @@ Partial Class OfficialsChildForm
         Me.BunifuButton2.IdleIconLeftImage = Nothing
         Me.BunifuButton2.IdleIconRightImage = Nothing
         Me.BunifuButton2.IndicateFocus = False
-        Me.BunifuButton2.Location = New System.Drawing.Point(417, 608)
+        Me.BunifuButton2.Location = New System.Drawing.Point(418, 584)
         Me.BunifuButton2.Name = "BunifuButton2"
         Me.BunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton2.OnDisabledState.BorderRadius = 1
@@ -746,7 +748,7 @@ Partial Class OfficialsChildForm
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(417, 563)
+        Me.BunifuButton1.Location = New System.Drawing.Point(418, 539)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 1
@@ -951,6 +953,40 @@ Partial Class OfficialsChildForm
         Me.BunifuTextBox5.UseSystemPasswordChar = False
         Me.BunifuTextBox5.WordWrap = True
         '
+        'Guna2ComboBox4
+        '
+        Me.Guna2ComboBox4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox4.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox4.FocusedState.Parent = Me.Guna2ComboBox4
+        Me.Guna2ComboBox4.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.Guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox4.HoverState.Parent = Me.Guna2ComboBox4
+        Me.Guna2ComboBox4.ItemHeight = 30
+        Me.Guna2ComboBox4.ItemsAppearance.Parent = Me.Guna2ComboBox4
+        Me.Guna2ComboBox4.Location = New System.Drawing.Point(399, 258)
+        Me.Guna2ComboBox4.Name = "Guna2ComboBox4"
+        Me.Guna2ComboBox4.ShadowDecoration.Parent = Me.Guna2ComboBox4
+        Me.Guna2ComboBox4.Size = New System.Drawing.Size(310, 36)
+        Me.Guna2ComboBox4.TabIndex = 13
+        '
+        'BunifuLabel5
+        '
+        Me.BunifuLabel5.AllowParentOverrides = False
+        Me.BunifuLabel5.AutoEllipsis = False
+        Me.BunifuLabel5.CursorType = Nothing
+        Me.BunifuLabel5.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel5.Location = New System.Drawing.Point(399, 241)
+        Me.BunifuLabel5.Name = "BunifuLabel5"
+        Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel5.Size = New System.Drawing.Size(44, 17)
+        Me.BunifuLabel5.TabIndex = 14
+        Me.BunifuLabel5.Text = "TERM:"
+        Me.BunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
         'OfficialsChildForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -962,7 +998,9 @@ Partial Class OfficialsChildForm
         Me.Controls.Add(Me.BunifuButton2)
         Me.Controls.Add(Me.BunifuButton1)
         Me.Controls.Add(Me.BunifuPictureBox1)
+        Me.Controls.Add(Me.BunifuLabel5)
         Me.Controls.Add(Me.BunifuLabel4)
+        Me.Controls.Add(Me.Guna2ComboBox4)
         Me.Controls.Add(Me.Guna2ComboBox3)
         Me.Controls.Add(Me.Guna2ComboBox2)
         Me.Controls.Add(Me.BunifuLabel3)
@@ -1003,4 +1041,6 @@ Partial Class OfficialsChildForm
     Friend WithEvents BunifuButton1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents BunifuButton4 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents BunifuTextBox5 As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents Guna2ComboBox4 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents BunifuLabel5 As Bunifu.UI.WinForms.BunifuLabel
 End Class

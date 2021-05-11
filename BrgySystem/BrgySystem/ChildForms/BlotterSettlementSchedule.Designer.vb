@@ -257,10 +257,10 @@ Partial Class BlotterSettlementSchedule
         Me.BunifuDatePicker1.IconColor = System.Drawing.Color.Gray
         Me.BunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right
         Me.BunifuDatePicker1.LeftTextMargin = 5
-        Me.BunifuDatePicker1.Location = New System.Drawing.Point(562, 57)
+        Me.BunifuDatePicker1.Location = New System.Drawing.Point(564, 56)
         Me.BunifuDatePicker1.MinimumSize = New System.Drawing.Size(4, 35)
         Me.BunifuDatePicker1.Name = "BunifuDatePicker1"
-        Me.BunifuDatePicker1.Size = New System.Drawing.Size(150, 35)
+        Me.BunifuDatePicker1.Size = New System.Drawing.Size(225, 35)
         Me.BunifuDatePicker1.TabIndex = 4
         '
         'BunifuLabel3
@@ -269,7 +269,7 @@ Partial Class BlotterSettlementSchedule
         Me.BunifuLabel3.AutoEllipsis = False
         Me.BunifuLabel3.CursorType = Nothing
         Me.BunifuLabel3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel3.Location = New System.Drawing.Point(721, 37)
+        Me.BunifuLabel3.Location = New System.Drawing.Point(795, 38)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel3.Size = New System.Drawing.Size(40, 19)
@@ -305,7 +305,7 @@ Partial Class BlotterSettlementSchedule
         Me.BunifuTextBox3.IconRight = Nothing
         Me.BunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox3.Lines = New String(-1) {}
-        Me.BunifuTextBox3.Location = New System.Drawing.Point(720, 55)
+        Me.BunifuTextBox3.Location = New System.Drawing.Point(795, 55)
         Me.BunifuTextBox3.MaxLength = 32767
         Me.BunifuTextBox3.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox3.Modified = False
@@ -341,7 +341,7 @@ Partial Class BlotterSettlementSchedule
         Me.BunifuTextBox3.SelectionLength = 0
         Me.BunifuTextBox3.SelectionStart = 0
         Me.BunifuTextBox3.ShortcutsEnabled = True
-        Me.BunifuTextBox3.Size = New System.Drawing.Size(153, 37)
+        Me.BunifuTextBox3.Size = New System.Drawing.Size(78, 37)
         Me.BunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox3.TabIndex = 5
         Me.BunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -536,7 +536,7 @@ Partial Class BlotterSettlementSchedule
         Me.BunifuLabel4.AutoEllipsis = False
         Me.BunifuLabel4.CursorType = Nothing
         Me.BunifuLabel4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel4.Location = New System.Drawing.Point(562, 38)
+        Me.BunifuLabel4.Location = New System.Drawing.Point(562, 36)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel4.Size = New System.Drawing.Size(43, 19)
@@ -574,11 +574,11 @@ Partial Class BlotterSettlementSchedule
         Me.DataGridView.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView.EnableHeadersVisualStyles = False
         Me.DataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DataGridView.Location = New System.Drawing.Point(11, 197)
+        Me.DataGridView.Location = New System.Drawing.Point(12, 169)
         Me.DataGridView.Name = "DataGridView"
         Me.DataGridView.RowHeadersVisible = False
         Me.DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView.Size = New System.Drawing.Size(860, 361)
+        Me.DataGridView.Size = New System.Drawing.Size(860, 388)
         Me.DataGridView.TabIndex = 85
         Me.DataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.DataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White

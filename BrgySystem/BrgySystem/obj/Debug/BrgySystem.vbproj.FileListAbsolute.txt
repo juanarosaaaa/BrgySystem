@@ -217,3 +217,5 @@ C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\D
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.SettingsBarangayDetailsForm.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.SettingsMissionVissionForm.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.OrganizationalChart.resources
+C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\MySql.Data.DLL
+C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.SettingsAccountSettingsForm.resources

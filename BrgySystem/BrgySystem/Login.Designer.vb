@@ -108,7 +108,7 @@ Partial Class Login
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox2.OnIdleState = StateProperties4
         Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(3)
-        Me.BunifuTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.BunifuTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.BunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox2.PlaceholderText = ""
         Me.BunifuTextBox2.ReadOnly = False
@@ -125,7 +125,7 @@ Partial Class Login
         Me.BunifuTextBox2.TextMarginLeft = 3
         Me.BunifuTextBox2.TextMarginTop = 0
         Me.BunifuTextBox2.TextPlaceholder = ""
-        Me.BunifuTextBox2.UseSystemPasswordChar = False
+        Me.BunifuTextBox2.UseSystemPasswordChar = True
         Me.BunifuTextBox2.WordWrap = True
         '
         'BunifuTextBox1
