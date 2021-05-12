@@ -224,16 +224,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="checkInputValidity.vb" />
+    <Compile Include="ChildForms\AddNewBlotterForm.Designer.vb">
+      <DependentUpon>AddNewBlotterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\AddNewBlotterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ChildForms\BlotterSettlementSchedule.Designer.vb">
       <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\BlotterSettlementSchedule.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\ClearanceChildForm.Designer.vb">
-      <DependentUpon>ClearanceChildForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\ClearanceChildForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChildForms\OfficialsChildForm.Designer.vb">
@@ -379,11 +379,11 @@
     <Compile Include="Residents.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ChildForms\AddNewBlotterForm.resx">
+      <DependentUpon>AddNewBlotterForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\BlotterSettlementSchedule.resx">
       <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\ClearanceChildForm.resx">
-      <DependentUpon>ClearanceChildForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\OfficialsChildForm.resx">
       <DependentUpon>OfficialsChildForm.vb</DependentUpon>

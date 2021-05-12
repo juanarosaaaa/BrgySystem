@@ -15,5 +15,7 @@
         DataGridViewImages.setImageAtButtonColumnOf("printButton_Column", Guna2DataGridView1, e, My.Resources.icons8_save_24px)
     End Sub
 
+    Private Sub BunifuTextBox6_TextChanged(sender As Object, e As EventArgs)
 
+    End Sub
 End Class

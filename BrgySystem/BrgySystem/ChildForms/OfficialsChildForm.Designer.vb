@@ -851,7 +851,7 @@ Partial Class OfficialsChildForm
         Me.BunifuButton4.IdleIconLeftImage = Nothing
         Me.BunifuButton4.IdleIconRightImage = Nothing
         Me.BunifuButton4.IndicateFocus = False
-        Me.BunifuButton4.Location = New System.Drawing.Point(16, 27)
+        Me.BunifuButton4.Location = New System.Drawing.Point(18, 27)
         Me.BunifuButton4.Name = "BunifuButton4"
         Me.BunifuButton4.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton4.OnDisabledState.BorderRadius = 1
