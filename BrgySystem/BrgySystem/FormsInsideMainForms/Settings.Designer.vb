@@ -41,6 +41,7 @@ Partial Class Settings
         Me.MainPanelSetting.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MainPanelSetting.AutoSize = True
         Me.MainPanelSetting.BackgroundColor = System.Drawing.Color.Silver
         Me.MainPanelSetting.BackgroundImage = CType(resources.GetObject("MainPanelSetting.BackgroundImage"), System.Drawing.Image)
         Me.MainPanelSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -521,6 +522,7 @@ Partial Class Settings
         Me.Text = "Settings"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
