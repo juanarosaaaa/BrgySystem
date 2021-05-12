@@ -22,9 +22,17 @@ Partial Class SettingsMissionVissionForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.SuspendLayout()
+        '
+        'SettingsMissionVissionForm
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Name = "SettingsMissionVissionForm"
         Me.Text = "SettingsMissionVissionForm"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

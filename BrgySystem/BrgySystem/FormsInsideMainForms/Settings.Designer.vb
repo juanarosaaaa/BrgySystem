@@ -47,10 +47,11 @@ Partial Class Settings
         Me.MainPanelSetting.BorderColor = System.Drawing.Color.Transparent
         Me.MainPanelSetting.BorderRadius = 3
         Me.MainPanelSetting.BorderThickness = 1
-        Me.MainPanelSetting.Location = New System.Drawing.Point(203, 3)
+        Me.MainPanelSetting.Location = New System.Drawing.Point(271, 4)
+        Me.MainPanelSetting.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MainPanelSetting.Name = "MainPanelSetting"
         Me.MainPanelSetting.ShowBorders = True
-        Me.MainPanelSetting.Size = New System.Drawing.Size(905, 726)
+        Me.MainPanelSetting.Size = New System.Drawing.Size(1207, 894)
         Me.MainPanelSetting.TabIndex = 2
         '
         'BunifuPanel1
@@ -67,10 +68,11 @@ Partial Class Settings
         Me.BunifuPanel1.Controls.Add(Me.OrganizationChart)
         Me.BunifuPanel1.Controls.Add(Me.BackupAndRestoreButton)
         Me.BunifuPanel1.Controls.Add(Me.BunifuButton1)
-        Me.BunifuPanel1.Location = New System.Drawing.Point(0, 3)
+        Me.BunifuPanel1.Location = New System.Drawing.Point(0, 4)
+        Me.BunifuPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuPanel1.Name = "BunifuPanel1"
         Me.BunifuPanel1.ShowBorders = True
-        Me.BunifuPanel1.Size = New System.Drawing.Size(207, 726)
+        Me.BunifuPanel1.Size = New System.Drawing.Size(276, 894)
         Me.BunifuPanel1.TabIndex = 1
         '
         'BarangayDetailsButton
@@ -84,7 +86,7 @@ Partial Class Settings
         Me.BarangayDetailsButton.AutoSizeLeftIcon = True
         Me.BarangayDetailsButton.AutoSizeRightIcon = True
         Me.BarangayDetailsButton.BackColor = System.Drawing.Color.Transparent
-        Me.BarangayDetailsButton.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.BarangayDetailsButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BarangayDetailsButton.BackgroundImage = CType(resources.GetObject("BarangayDetailsButton.BackgroundImage"), System.Drawing.Image)
         Me.BarangayDetailsButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BarangayDetailsButton.ButtonText = "BARANGAY DETAILS"
@@ -113,14 +115,15 @@ Partial Class Settings
         Me.BarangayDetailsButton.IconRightCursor = System.Windows.Forms.Cursors.Default
         Me.BarangayDetailsButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.BarangayDetailsButton.IconSize = 25
-        Me.BarangayDetailsButton.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.BarangayDetailsButton.IdleBorderColor = System.Drawing.Color.Transparent
         Me.BarangayDetailsButton.IdleBorderRadius = 1
         Me.BarangayDetailsButton.IdleBorderThickness = 1
-        Me.BarangayDetailsButton.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.BarangayDetailsButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BarangayDetailsButton.IdleIconLeftImage = Nothing
         Me.BarangayDetailsButton.IdleIconRightImage = Nothing
         Me.BarangayDetailsButton.IndicateFocus = False
-        Me.BarangayDetailsButton.Location = New System.Drawing.Point(0, 100)
+        Me.BarangayDetailsButton.Location = New System.Drawing.Point(0, 123)
+        Me.BarangayDetailsButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BarangayDetailsButton.Name = "BarangayDetailsButton"
         Me.BarangayDetailsButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BarangayDetailsButton.OnDisabledState.BorderRadius = 1
@@ -138,11 +141,11 @@ Partial Class Settings
         Me.BarangayDetailsButton.onHoverState.ForeColor = System.Drawing.Color.White
         Me.BarangayDetailsButton.onHoverState.IconLeftImage = Nothing
         Me.BarangayDetailsButton.onHoverState.IconRightImage = Nothing
-        Me.BarangayDetailsButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.BarangayDetailsButton.OnIdleState.BorderColor = System.Drawing.Color.Transparent
         Me.BarangayDetailsButton.OnIdleState.BorderRadius = 1
         Me.BarangayDetailsButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BarangayDetailsButton.OnIdleState.BorderThickness = 1
-        Me.BarangayDetailsButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.BarangayDetailsButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BarangayDetailsButton.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.BarangayDetailsButton.OnIdleState.IconLeftImage = Nothing
         Me.BarangayDetailsButton.OnIdleState.IconRightImage = Nothing
@@ -154,7 +157,7 @@ Partial Class Settings
         Me.BarangayDetailsButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BarangayDetailsButton.OnPressedState.IconLeftImage = Nothing
         Me.BarangayDetailsButton.OnPressedState.IconRightImage = Nothing
-        Me.BarangayDetailsButton.Size = New System.Drawing.Size(207, 36)
+        Me.BarangayDetailsButton.Size = New System.Drawing.Size(276, 44)
         Me.BarangayDetailsButton.TabIndex = 6
         Me.BarangayDetailsButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BarangayDetailsButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -169,10 +172,11 @@ Partial Class Settings
         Me.BunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel1.Location = New System.Drawing.Point(61, 9)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(81, 11)
+        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(90, 21)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(109, 27)
         Me.BunifuLabel1.TabIndex = 5
         Me.BunifuLabel1.Text = "SETTINGS"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -189,7 +193,7 @@ Partial Class Settings
         Me.MissionVisionzButton.AutoSizeLeftIcon = True
         Me.MissionVisionzButton.AutoSizeRightIcon = True
         Me.MissionVisionzButton.BackColor = System.Drawing.Color.Transparent
-        Me.MissionVisionzButton.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.MissionVisionzButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.MissionVisionzButton.BackgroundImage = CType(resources.GetObject("MissionVisionzButton.BackgroundImage"), System.Drawing.Image)
         Me.MissionVisionzButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.MissionVisionzButton.ButtonText = "MISSION/VISION"
@@ -218,14 +222,15 @@ Partial Class Settings
         Me.MissionVisionzButton.IconRightCursor = System.Windows.Forms.Cursors.Default
         Me.MissionVisionzButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.MissionVisionzButton.IconSize = 25
-        Me.MissionVisionzButton.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.MissionVisionzButton.IdleBorderColor = System.Drawing.Color.Transparent
         Me.MissionVisionzButton.IdleBorderRadius = 1
         Me.MissionVisionzButton.IdleBorderThickness = 1
-        Me.MissionVisionzButton.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.MissionVisionzButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.MissionVisionzButton.IdleIconLeftImage = Nothing
         Me.MissionVisionzButton.IdleIconRightImage = Nothing
         Me.MissionVisionzButton.IndicateFocus = False
-        Me.MissionVisionzButton.Location = New System.Drawing.Point(-3, 182)
+        Me.MissionVisionzButton.Location = New System.Drawing.Point(-4, 224)
+        Me.MissionVisionzButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MissionVisionzButton.Name = "MissionVisionzButton"
         Me.MissionVisionzButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.MissionVisionzButton.OnDisabledState.BorderRadius = 1
@@ -243,11 +248,11 @@ Partial Class Settings
         Me.MissionVisionzButton.onHoverState.ForeColor = System.Drawing.Color.White
         Me.MissionVisionzButton.onHoverState.IconLeftImage = Nothing
         Me.MissionVisionzButton.onHoverState.IconRightImage = Nothing
-        Me.MissionVisionzButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.MissionVisionzButton.OnIdleState.BorderColor = System.Drawing.Color.Transparent
         Me.MissionVisionzButton.OnIdleState.BorderRadius = 1
         Me.MissionVisionzButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.MissionVisionzButton.OnIdleState.BorderThickness = 1
-        Me.MissionVisionzButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.MissionVisionzButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.MissionVisionzButton.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.MissionVisionzButton.OnIdleState.IconLeftImage = Nothing
         Me.MissionVisionzButton.OnIdleState.IconRightImage = Nothing
@@ -259,7 +264,7 @@ Partial Class Settings
         Me.MissionVisionzButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.MissionVisionzButton.OnPressedState.IconLeftImage = Nothing
         Me.MissionVisionzButton.OnPressedState.IconRightImage = Nothing
-        Me.MissionVisionzButton.Size = New System.Drawing.Size(207, 36)
+        Me.MissionVisionzButton.Size = New System.Drawing.Size(276, 44)
         Me.MissionVisionzButton.TabIndex = 4
         Me.MissionVisionzButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.MissionVisionzButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -278,7 +283,7 @@ Partial Class Settings
         Me.OrganizationChart.AutoSizeLeftIcon = True
         Me.OrganizationChart.AutoSizeRightIcon = True
         Me.OrganizationChart.BackColor = System.Drawing.Color.Transparent
-        Me.OrganizationChart.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.OrganizationChart.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.OrganizationChart.BackgroundImage = CType(resources.GetObject("OrganizationChart.BackgroundImage"), System.Drawing.Image)
         Me.OrganizationChart.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.OrganizationChart.ButtonText = "ORGANIZATION CHART"
@@ -307,14 +312,15 @@ Partial Class Settings
         Me.OrganizationChart.IconRightCursor = System.Windows.Forms.Cursors.Default
         Me.OrganizationChart.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.OrganizationChart.IconSize = 25
-        Me.OrganizationChart.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.OrganizationChart.IdleBorderColor = System.Drawing.Color.Transparent
         Me.OrganizationChart.IdleBorderRadius = 1
         Me.OrganizationChart.IdleBorderThickness = 1
-        Me.OrganizationChart.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.OrganizationChart.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.OrganizationChart.IdleIconLeftImage = Nothing
         Me.OrganizationChart.IdleIconRightImage = Nothing
         Me.OrganizationChart.IndicateFocus = False
-        Me.OrganizationChart.Location = New System.Drawing.Point(0, 224)
+        Me.OrganizationChart.Location = New System.Drawing.Point(0, 276)
+        Me.OrganizationChart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.OrganizationChart.Name = "OrganizationChart"
         Me.OrganizationChart.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.OrganizationChart.OnDisabledState.BorderRadius = 1
@@ -332,11 +338,11 @@ Partial Class Settings
         Me.OrganizationChart.onHoverState.ForeColor = System.Drawing.Color.White
         Me.OrganizationChart.onHoverState.IconLeftImage = Nothing
         Me.OrganizationChart.onHoverState.IconRightImage = Nothing
-        Me.OrganizationChart.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.OrganizationChart.OnIdleState.BorderColor = System.Drawing.Color.Transparent
         Me.OrganizationChart.OnIdleState.BorderRadius = 1
         Me.OrganizationChart.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.OrganizationChart.OnIdleState.BorderThickness = 1
-        Me.OrganizationChart.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.OrganizationChart.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.OrganizationChart.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.OrganizationChart.OnIdleState.IconLeftImage = Nothing
         Me.OrganizationChart.OnIdleState.IconRightImage = Nothing
@@ -348,7 +354,7 @@ Partial Class Settings
         Me.OrganizationChart.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.OrganizationChart.OnPressedState.IconLeftImage = Nothing
         Me.OrganizationChart.OnPressedState.IconRightImage = Nothing
-        Me.OrganizationChart.Size = New System.Drawing.Size(207, 36)
+        Me.OrganizationChart.Size = New System.Drawing.Size(276, 44)
         Me.OrganizationChart.TabIndex = 3
         Me.OrganizationChart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.OrganizationChart.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -367,7 +373,7 @@ Partial Class Settings
         Me.BackupAndRestoreButton.AutoSizeLeftIcon = True
         Me.BackupAndRestoreButton.AutoSizeRightIcon = True
         Me.BackupAndRestoreButton.BackColor = System.Drawing.Color.Transparent
-        Me.BackupAndRestoreButton.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.BackupAndRestoreButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BackupAndRestoreButton.BackgroundImage = CType(resources.GetObject("BackupAndRestoreButton.BackgroundImage"), System.Drawing.Image)
         Me.BackupAndRestoreButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BackupAndRestoreButton.ButtonText = "BACKUP AND RESTORE"
@@ -396,14 +402,15 @@ Partial Class Settings
         Me.BackupAndRestoreButton.IconRightCursor = System.Windows.Forms.Cursors.Default
         Me.BackupAndRestoreButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.BackupAndRestoreButton.IconSize = 25
-        Me.BackupAndRestoreButton.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.BackupAndRestoreButton.IdleBorderColor = System.Drawing.Color.Transparent
         Me.BackupAndRestoreButton.IdleBorderRadius = 1
         Me.BackupAndRestoreButton.IdleBorderThickness = 1
-        Me.BackupAndRestoreButton.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.BackupAndRestoreButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BackupAndRestoreButton.IdleIconLeftImage = Nothing
         Me.BackupAndRestoreButton.IdleIconRightImage = Nothing
         Me.BackupAndRestoreButton.IndicateFocus = False
-        Me.BackupAndRestoreButton.Location = New System.Drawing.Point(-3, 140)
+        Me.BackupAndRestoreButton.Location = New System.Drawing.Point(-4, 172)
+        Me.BackupAndRestoreButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BackupAndRestoreButton.Name = "BackupAndRestoreButton"
         Me.BackupAndRestoreButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BackupAndRestoreButton.OnDisabledState.BorderRadius = 1
@@ -421,11 +428,11 @@ Partial Class Settings
         Me.BackupAndRestoreButton.onHoverState.ForeColor = System.Drawing.Color.White
         Me.BackupAndRestoreButton.onHoverState.IconLeftImage = Nothing
         Me.BackupAndRestoreButton.onHoverState.IconRightImage = Nothing
-        Me.BackupAndRestoreButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.BackupAndRestoreButton.OnIdleState.BorderColor = System.Drawing.Color.Transparent
         Me.BackupAndRestoreButton.OnIdleState.BorderRadius = 1
         Me.BackupAndRestoreButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BackupAndRestoreButton.OnIdleState.BorderThickness = 1
-        Me.BackupAndRestoreButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.BackupAndRestoreButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BackupAndRestoreButton.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.BackupAndRestoreButton.OnIdleState.IconLeftImage = Nothing
         Me.BackupAndRestoreButton.OnIdleState.IconRightImage = Nothing
@@ -437,7 +444,7 @@ Partial Class Settings
         Me.BackupAndRestoreButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BackupAndRestoreButton.OnPressedState.IconLeftImage = Nothing
         Me.BackupAndRestoreButton.OnPressedState.IconRightImage = Nothing
-        Me.BackupAndRestoreButton.Size = New System.Drawing.Size(207, 36)
+        Me.BackupAndRestoreButton.Size = New System.Drawing.Size(276, 44)
         Me.BackupAndRestoreButton.TabIndex = 1
         Me.BackupAndRestoreButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BackupAndRestoreButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -456,7 +463,7 @@ Partial Class Settings
         Me.BunifuButton1.AutoSizeLeftIcon = True
         Me.BunifuButton1.AutoSizeRightIcon = True
         Me.BunifuButton1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuButton1.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton1.BackgroundImage = CType(resources.GetObject("BunifuButton1.BackgroundImage"), System.Drawing.Image)
         Me.BunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BunifuButton1.ButtonText = "DASHBOARD"
@@ -485,14 +492,15 @@ Partial Class Settings
         Me.BunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Default
         Me.BunifuButton1.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.BunifuButton1.IconSize = 25
-        Me.BunifuButton1.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.IdleBorderColor = System.Drawing.Color.Transparent
         Me.BunifuButton1.IdleBorderRadius = 1
         Me.BunifuButton1.IdleBorderThickness = 1
-        Me.BunifuButton1.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(0, 61)
+        Me.BunifuButton1.Location = New System.Drawing.Point(0, 75)
+        Me.BunifuButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 1
@@ -510,11 +518,11 @@ Partial Class Settings
         Me.BunifuButton1.onHoverState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton1.onHoverState.IconLeftImage = Nothing
         Me.BunifuButton1.onHoverState.IconRightImage = Nothing
-        Me.BunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.Transparent
         Me.BunifuButton1.OnIdleState.BorderRadius = 1
         Me.BunifuButton1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BunifuButton1.OnIdleState.BorderThickness = 1
-        Me.BunifuButton1.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton1.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton1.OnIdleState.IconLeftImage = Nothing
         Me.BunifuButton1.OnIdleState.IconRightImage = Nothing
@@ -526,7 +534,7 @@ Partial Class Settings
         Me.BunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton1.OnPressedState.IconLeftImage = Nothing
         Me.BunifuButton1.OnPressedState.IconRightImage = Nothing
-        Me.BunifuButton1.Size = New System.Drawing.Size(207, 36)
+        Me.BunifuButton1.Size = New System.Drawing.Size(276, 44)
         Me.BunifuButton1.TabIndex = 0
         Me.BunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -536,12 +544,14 @@ Partial Class Settings
         '
         'Settings
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1108, 728)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1477, 896)
         Me.Controls.Add(Me.MainPanelSetting)
         Me.Controls.Add(Me.BunifuPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Settings"
         Me.Text = "Settings"
         Me.BunifuPanel1.ResumeLayout(False)

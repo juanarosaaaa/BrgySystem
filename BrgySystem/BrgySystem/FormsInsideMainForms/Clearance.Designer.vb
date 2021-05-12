@@ -48,7 +48,7 @@ Partial Class Clearance
         '
         'TableDataGridView
         '
-        Me.TableDataGridView.AllowCustomTheming = False
+        Me.TableDataGridView.AllowCustomTheming = True
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
         Me.TableDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
@@ -57,7 +57,7 @@ Partial Class Clearance
         Me.TableDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.TableDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 11.75!, System.Drawing.FontStyle.Bold)
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -73,7 +73,7 @@ Partial Class Clearance
         Me.TableDataGridView.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.TableDataGridView.CurrentTheme.BackColor = System.Drawing.Color.White
         Me.TableDataGridView.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableDataGridView.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue
+        Me.TableDataGridView.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.TableDataGridView.CurrentTheme.HeaderStyle.Font = New System.Drawing.Font("Segoe UI Semibold", 11.75!, System.Drawing.FontStyle.Bold)
         Me.TableDataGridView.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.TableDataGridView.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -94,46 +94,54 @@ Partial Class Clearance
         Me.TableDataGridView.DefaultCellStyle = DataGridViewCellStyle3
         Me.TableDataGridView.EnableHeadersVisualStyles = False
         Me.TableDataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableDataGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue
+        Me.TableDataGridView.HeaderBackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.TableDataGridView.HeaderBgColor = System.Drawing.Color.Empty
         Me.TableDataGridView.HeaderForeColor = System.Drawing.Color.White
-        Me.TableDataGridView.Location = New System.Drawing.Point(12, 75)
+        Me.TableDataGridView.Location = New System.Drawing.Point(16, 92)
+        Me.TableDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableDataGridView.Name = "TableDataGridView"
         Me.TableDataGridView.RowHeadersVisible = False
+        Me.TableDataGridView.RowHeadersWidth = 51
         Me.TableDataGridView.RowTemplate.Height = 40
         Me.TableDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.TableDataGridView.Size = New System.Drawing.Size(1083, 620)
+        Me.TableDataGridView.Size = New System.Drawing.Size(1444, 763)
         Me.TableDataGridView.TabIndex = 0
         Me.TableDataGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light
         '
         'InvoiceNumberColumn
         '
         Me.InvoiceNumberColumn.HeaderText = "INVOICE NO."
+        Me.InvoiceNumberColumn.MinimumWidth = 6
         Me.InvoiceNumberColumn.Name = "InvoiceNumberColumn"
         '
         'PurposeColumn
         '
         Me.PurposeColumn.HeaderText = "PURPOSE"
+        Me.PurposeColumn.MinimumWidth = 6
         Me.PurposeColumn.Name = "PurposeColumn"
         '
         'DateAndTimeColumn
         '
         Me.DateAndTimeColumn.HeaderText = "DATE"
+        Me.DateAndTimeColumn.MinimumWidth = 6
         Me.DateAndTimeColumn.Name = "DateAndTimeColumn"
         '
         'GivenByColumn
         '
         Me.GivenByColumn.HeaderText = "GIVEN BY"
+        Me.GivenByColumn.MinimumWidth = 6
         Me.GivenByColumn.Name = "GivenByColumn"
         '
         'FullNameColumn
         '
         Me.FullNameColumn.HeaderText = "FULLNAME"
+        Me.FullNameColumn.MinimumWidth = 6
         Me.FullNameColumn.Name = "FullNameColumn"
         '
         'TypeOfClearanceColumn
         '
         Me.TypeOfClearanceColumn.HeaderText = "TYPE"
+        Me.TypeOfClearanceColumn.MinimumWidth = 6
         Me.TypeOfClearanceColumn.Name = "TypeOfClearanceColumn"
         '
         'deleteButtonColumn
@@ -155,7 +163,7 @@ Partial Class Clearance
         Me.BunifuButton1.AutoSizeLeftIcon = True
         Me.BunifuButton1.AutoSizeRightIcon = True
         Me.BunifuButton1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuButton1.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton1.BackgroundImage = CType(resources.GetObject("BunifuButton1.BackgroundImage"), System.Drawing.Image)
         Me.BunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BunifuButton1.ButtonText = "Add New"
@@ -184,14 +192,15 @@ Partial Class Clearance
         Me.BunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Default
         Me.BunifuButton1.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.BunifuButton1.IconSize = 25
-        Me.BunifuButton1.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.IdleBorderColor = System.Drawing.Color.Transparent
         Me.BunifuButton1.IdleBorderRadius = 1
         Me.BunifuButton1.IdleBorderThickness = 1
-        Me.BunifuButton1.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(281, 13)
+        Me.BunifuButton1.Location = New System.Drawing.Point(375, 16)
+        Me.BunifuButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 1
@@ -209,11 +218,11 @@ Partial Class Clearance
         Me.BunifuButton1.onHoverState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton1.onHoverState.IconLeftImage = Nothing
         Me.BunifuButton1.onHoverState.IconRightImage = Nothing
-        Me.BunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.Transparent
         Me.BunifuButton1.OnIdleState.BorderRadius = 1
         Me.BunifuButton1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BunifuButton1.OnIdleState.BorderThickness = 1
-        Me.BunifuButton1.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton1.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton1.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton1.OnIdleState.IconLeftImage = Nothing
         Me.BunifuButton1.OnIdleState.IconRightImage = Nothing
@@ -225,7 +234,7 @@ Partial Class Clearance
         Me.BunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton1.OnPressedState.IconLeftImage = Nothing
         Me.BunifuButton1.OnPressedState.IconRightImage = Nothing
-        Me.BunifuButton1.Size = New System.Drawing.Size(98, 34)
+        Me.BunifuButton1.Size = New System.Drawing.Size(131, 42)
         Me.BunifuButton1.TabIndex = 5
         Me.BunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -236,9 +245,10 @@ Partial Class Clearance
         'Button1
         '
         Me.Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.Button1.Location = New System.Drawing.Point(248, 13)
+        Me.Button1.Location = New System.Drawing.Point(331, 16)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(29, 35)
+        Me.Button1.Size = New System.Drawing.Size(39, 43)
         Me.Button1.TabIndex = 4
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -269,7 +279,8 @@ Partial Class Clearance
         Me.BunifuTextBox1.IconRight = Nothing
         Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox1.Lines = New String(-1) {}
-        Me.BunifuTextBox1.Location = New System.Drawing.Point(12, 12)
+        Me.BunifuTextBox1.Location = New System.Drawing.Point(16, 15)
+        Me.BunifuTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuTextBox1.MaxLength = 32767
         Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox1.Modified = False
@@ -295,7 +306,7 @@ Partial Class Clearance
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox1.OnIdleState = StateProperties4
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3)
+        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox1.PlaceholderText = "Search"
@@ -305,7 +316,7 @@ Partial Class Clearance
         Me.BunifuTextBox1.SelectionLength = 0
         Me.BunifuTextBox1.SelectionStart = 0
         Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(239, 37)
+        Me.BunifuTextBox1.Size = New System.Drawing.Size(319, 46)
         Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox1.TabIndex = 6
         Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -320,23 +331,27 @@ Partial Class Clearance
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 52)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(17, 64)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(268, 16)
+        Me.Label1.Size = New System.Drawing.Size(346, 20)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Status of residents, this is a place holder text"
         '
         'Clearance
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1108, 728)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1477, 896)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BunifuTextBox1)
         Me.Controls.Add(Me.BunifuButton1)
         Me.Controls.Add(Me.TableDataGridView)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Clearance"
         Me.Text = "Clearance"
         CType(Me.TableDataGridView, System.ComponentModel.ISupportInitialize).EndInit()

@@ -118,34 +118,38 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 26.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 26.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BunifuTextBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAYEAAAAlCAYAAACko1VoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC/SURBVHhe7dVBDcQwEARB80dlyzAORgAksuTPYegqaT4L
-        YHsAELf3/s05XzMza+z8/ZuAMc4BgI7z928CRACgRgQAwkQAIEwEAMJEACBMBADCRAAgTAQAwkQAIEwE
-        AMJEACBMBADCRAAgTAQAwkQAIEwEAMJEACBMBADCRAAgTAQAwkQAIEwEAMJEACBMBADCRAAgTAQAwkQA
-        IEwEAMJEACBMBADCRAAgTAQAwv4isNZ6zsHMzBo7f/8mAICmMT6zxkgXlen/LAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAgEAAAAuCAYAAACxg8qrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD+SURBVHhe7dZBDQMxEARB80dlyzACIwBysuRPKFxXSfNZ
+        AtsDAAjbe3/mnD8zMzN7/87fvwkwxjkAAA3n798EEAEAUCICACBKBABAlAgAgCgRAABRIgAAokQAAESJ
+        AACIEgEAECUCACBKBABAlAgAgCgRAABRIgAAokQAAESJAACIEgEAECUCACBKBABAlAgAgCgRAABRIgAA
+        okQAAESJAACIEgEAECUCACBKBABAlAgAgCgRAABRIgAAokQAAESJAACIEgEAECUCACBKBABAlAgAgCgR
+        AABRIgAAokQAAESJAACIEgEAEPUXAWut7zmYmZnZ+3f+/k0AAKBnjAe6EtQlp0KRmwAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="BunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAYEAAAAlCAYAAACko1VoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC/SURBVHhe7dVBDcQwEARB80dlyzAORgAksuTPYegqaT4L
-        YHsAELf3/s05XzMza+z8/ZuAMc4BgI7z928CRACgRgQAwkQAIEwEAMJEACBMBADCRAAgTAQAwkQAIEwE
-        AMJEACBMBADCRAAgTAQAwkQAIEwEAMJEACBMBADCRAAgTAQAwkQAIEwEAMJEACBMBADCRAAgTAQAwkQA
-        IEwEAMJEACBMBADCRAAgTAQAwv4isNZ6zsHMzBo7f/8mAICmMT6zxkgXlen/LAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAgEAAAAuCAYAAACxg8qrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD+SURBVHhe7dZBDQMxEARB80dlyzACIwBysuRPKFxXSfNZ
+        AtsDAAjbe3/mnD8zMzN7/87fvwkwxjkAAA3n798EEAEAUCICACBKBABAlAgAgCgRAABRIgAAokQAAESJ
+        AACIEgEAECUCACBKBABAlAgAgCgRAABRIgAAokQAAESJAACIEgEAECUCACBKBABAlAgAgCgRAABRIgAA
+        okQAAESJAACIEgEAECUCACBKBABAlAgAgCgRAABRIgAAokQAAESJAACIEgEAECUCACBKBABAlAgAgCgR
+        AABRIgAAokQAAESJAACIEgEAEPUXAWut7zmYmZnZ+3f+/k0AAKBnjAe6EtQlp0KRmwAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="BunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVHhe7dKxAUBAAMBAk/zK7GcM/WMAFdJdcVXaLGOb
-        +9jOE/4z93uspwDfGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuE
-        sUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFILGOdx1OA19Z5XLF9Eabs0yP2
-        AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAMgAAAAwCAYAAABUmTXqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACnSURBVHhe7dNBEYNAAAAxpJ0jKgEHCANPhTK8YLoK8oiE
+        TOu8jdMCvIxfkGX97F/g4bwhCPwjCARBIAgCQRAIgkAQBIIgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAI
+        BEEgCAJBEAiCQBAEgiAQBIEgCARBIAgCQRAIgkAQBIIgEASBIAgEQSAIAkEQCIJAEASCIBAEgSAIBEEg
+        CAJBEAh3kHElAR62cQBfDaQeB00WjwAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

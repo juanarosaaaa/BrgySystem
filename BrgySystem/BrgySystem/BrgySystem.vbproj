@@ -351,6 +351,12 @@
     <EmbeddedResource Include="ChildForms\SettingsbackupAndRestoreForm.resx">
       <DependentUpon>SettingsbackupAndRestoreForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\SettingsBarangayDetailsForm.resx">
+      <DependentUpon>SettingsBarangayDetailsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\SettingsMissionVissionForm.resx">
+      <DependentUpon>SettingsMissionVissionForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\SettingsOrganizationChart.resx">
       <DependentUpon>SettingsOrganizationChart.vb</DependentUpon>
     </EmbeddedResource>
