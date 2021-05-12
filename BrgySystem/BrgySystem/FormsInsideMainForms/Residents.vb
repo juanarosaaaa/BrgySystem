@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Residents
+Public Class MyResidents
     Private Sub BunifuButton1_Click(sender As Object, e As EventArgs) Handles BunifuButton1.Click
         ResidentsChildForm.ShowDialog()
     End Sub
@@ -16,6 +16,8 @@ Public Class Residents
     End Sub
 
     Private Sub Residents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
 
     End Sub
 End Class

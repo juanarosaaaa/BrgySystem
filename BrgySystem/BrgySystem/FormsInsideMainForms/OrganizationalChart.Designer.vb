@@ -75,7 +75,6 @@ Partial Class OrganizationalChart
         Dim StateProperties50 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties51 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties52 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuPictureBox1 = New Bunifu.UI.WinForms.BunifuPictureBox()
@@ -115,7 +114,8 @@ Partial Class OrganizationalChart
         Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel9 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel13 = New Bunifu.UI.WinForms.BunifuLabel()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BunifuPictureBox14 = New Bunifu.UI.WinForms.BunifuPictureBox()
         CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuPictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,18 +129,9 @@ Partial Class OrganizationalChart
         CType(Me.BunifuPictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuPictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuPictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuPictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-10, -5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1122, 737)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'BunifuLabel1
         '
@@ -235,7 +226,6 @@ Partial Class OrganizationalChart
         'BunifuPictureBox1
         '
         Me.BunifuPictureBox1.AllowFocused = False
-        Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BunifuPictureBox1.AutoSizeHeight = True
         Me.BunifuPictureBox1.BorderRadius = 30
         Me.BunifuPictureBox1.Image = CType(resources.GetObject("BunifuPictureBox1.Image"), System.Drawing.Image)
@@ -1508,6 +1498,33 @@ Partial Class OrganizationalChart
         Me.BunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-10, -5)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1122, 737)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'BunifuPictureBox14
+        '
+        Me.BunifuPictureBox14.AllowFocused = False
+        Me.BunifuPictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.BunifuPictureBox14.AutoSizeHeight = True
+        Me.BunifuPictureBox14.BorderRadius = 30
+        Me.BunifuPictureBox14.Image = CType(resources.GetObject("BunifuPictureBox14.Image"), System.Drawing.Image)
+        Me.BunifuPictureBox14.IsCircle = True
+        Me.BunifuPictureBox14.Location = New System.Drawing.Point(533, 2)
+        Me.BunifuPictureBox14.Name = "BunifuPictureBox14"
+        Me.BunifuPictureBox14.Size = New System.Drawing.Size(61, 61)
+        Me.BunifuPictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuPictureBox14.TabIndex = 3
+        Me.BunifuPictureBox14.TabStop = False
+        Me.BunifuPictureBox14.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle
+        '
         'OrganizationalChart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1524,6 +1541,7 @@ Partial Class OrganizationalChart
         Me.Controls.Add(Me.BunifuPictureBox5)
         Me.Controls.Add(Me.BunifuPictureBox3)
         Me.Controls.Add(Me.BunifuPictureBox6)
+        Me.Controls.Add(Me.BunifuPictureBox14)
         Me.Controls.Add(Me.BunifuPictureBox2)
         Me.Controls.Add(Me.BunifuTextBox7)
         Me.Controls.Add(Me.BunifuTextBox12)
@@ -1556,7 +1574,6 @@ Partial Class OrganizationalChart
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "OrganizationalChart"
         Me.Text = "OrganizationalChart"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuPictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1570,12 +1587,12 @@ Partial Class OrganizationalChart
         CType(Me.BunifuPictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuPictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuPictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuPictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BunifuLabel1 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuPictureBox1 As Bunifu.UI.WinForms.BunifuPictureBox
@@ -1615,4 +1632,6 @@ Partial Class OrganizationalChart
     Friend WithEvents BunifuLabel10 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel9 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel13 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BunifuPictureBox14 As Bunifu.UI.WinForms.BunifuPictureBox
 End Class

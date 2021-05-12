@@ -38,6 +38,9 @@ Partial Class Settings
         '
         'MainPanelSetting
         '
+        Me.MainPanelSetting.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.MainPanelSetting.BackgroundColor = System.Drawing.Color.Silver
         Me.MainPanelSetting.BackgroundImage = CType(resources.GetObject("MainPanelSetting.BackgroundImage"), System.Drawing.Image)
         Me.MainPanelSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -55,6 +58,7 @@ Partial Class Settings
         Me.BarangayDetailsButton.AllowAnimations = True
         Me.BarangayDetailsButton.AllowMouseEffects = True
         Me.BarangayDetailsButton.AllowToggling = False
+        Me.BarangayDetailsButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BarangayDetailsButton.AnimationSpeed = 200
         Me.BarangayDetailsButton.AutoGenerateColors = False
         Me.BarangayDetailsButton.AutoRoundBorders = False
@@ -144,6 +148,7 @@ Partial Class Settings
         Me.AccountSettingsButton.AllowAnimations = True
         Me.AccountSettingsButton.AllowMouseEffects = True
         Me.AccountSettingsButton.AllowToggling = False
+        Me.AccountSettingsButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.AccountSettingsButton.AnimationSpeed = 200
         Me.AccountSettingsButton.AutoGenerateColors = False
         Me.AccountSettingsButton.AutoRoundBorders = False
@@ -233,6 +238,7 @@ Partial Class Settings
         Me.MissionVisionzButton.AllowAnimations = True
         Me.MissionVisionzButton.AllowMouseEffects = True
         Me.MissionVisionzButton.AllowToggling = False
+        Me.MissionVisionzButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.MissionVisionzButton.AnimationSpeed = 200
         Me.MissionVisionzButton.AutoGenerateColors = False
         Me.MissionVisionzButton.AutoRoundBorders = False
@@ -322,6 +328,7 @@ Partial Class Settings
         Me.BackupAndRestoreButton.AllowAnimations = True
         Me.BackupAndRestoreButton.AllowMouseEffects = True
         Me.BackupAndRestoreButton.AllowToggling = False
+        Me.BackupAndRestoreButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BackupAndRestoreButton.AnimationSpeed = 200
         Me.BackupAndRestoreButton.AutoGenerateColors = False
         Me.BackupAndRestoreButton.AutoRoundBorders = False
@@ -411,6 +418,7 @@ Partial Class Settings
         Me.OrganizationChart.AllowAnimations = True
         Me.OrganizationChart.AllowMouseEffects = True
         Me.OrganizationChart.AllowToggling = False
+        Me.OrganizationChart.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.OrganizationChart.AnimationSpeed = 200
         Me.OrganizationChart.AutoGenerateColors = False
         Me.OrganizationChart.AutoRoundBorders = False
@@ -499,6 +507,8 @@ Partial Class Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1108, 728)
         Me.Controls.Add(Me.MissionVisionzButton)
         Me.Controls.Add(Me.BackupAndRestoreButton)
@@ -509,6 +519,7 @@ Partial Class Settings
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Settings"
         Me.Text = "Settings"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
 
     End Sub

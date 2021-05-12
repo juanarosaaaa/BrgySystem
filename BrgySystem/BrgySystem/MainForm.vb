@@ -6,8 +6,8 @@
         showPanelDisplayOf(Dashboard)
     End Sub
     Private Sub Residents_Button_Click(sender As Object, e As EventArgs) Handles Residents_Button.Click
-        Residents.Dispose()
-        showPanelDisplayOf(Residents)
+        MyResidents.Dispose()
+        showPanelDisplayOf(MyResidents)
     End Sub
 
     Private Sub Purok_Button_Click(sender As Object, e As EventArgs) Handles Purok_Button.Click
@@ -17,6 +17,7 @@
 
     Private Sub Clearance_Button_Click(sender As Object, e As EventArgs) Handles Clearance_Button.Click
         Clearance.Dispose()
+      
         showPanelDisplayOf(Clearance)
     End Sub
 
@@ -47,10 +48,7 @@
     End Sub
 
 
-    Private Sub Logout_Button_Click(sender As Object, e As EventArgs) Handles Logout_Button.Click
-        Logout.Dispose()
-        showPanelDisplayOf(Logout)
-    End Sub
+
 
 
     Sub showPanelDisplayOf(panelDisplay As Form)
@@ -58,6 +56,7 @@
 
         MainPanel.Controls.Clear()
         panelDisplay.TopLevel = False
+        panelDisplay.WindowState = FormWindowState.Maximized
         MainPanel.Controls.Add(panelDisplay)
         panelDisplay.Show()
 
@@ -69,5 +68,11 @@
         Application.Exit()
     End Sub
 
+    Private Sub MainPanel_Click(sender As Object, e As EventArgs) Handles MainPanel.Click
 
+    End Sub
+
+    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

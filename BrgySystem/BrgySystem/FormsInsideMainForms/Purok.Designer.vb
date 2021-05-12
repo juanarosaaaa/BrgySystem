@@ -45,6 +45,7 @@ Partial Class Purok
         '
         'Button1
         '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
         Me.Button1.Location = New System.Drawing.Point(1066, 37)
         Me.Button1.Name = "Button1"
@@ -145,6 +146,7 @@ Partial Class Purok
         '
         Me.BunifuTextBox1.AcceptsReturn = False
         Me.BunifuTextBox1.AcceptsTab = False
+        Me.BunifuTextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuTextBox1.AnimationSpeed = 200
         Me.BunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
         Me.BunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
@@ -220,6 +222,9 @@ Partial Class Purok
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.Guna2DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.White
@@ -312,6 +317,8 @@ Partial Class Purok
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1108, 728)
         Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Controls.Add(Me.Button1)
@@ -320,6 +327,7 @@ Partial Class Purok
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Purok"
         Me.Text = "Purok"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

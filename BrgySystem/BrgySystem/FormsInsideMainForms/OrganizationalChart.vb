@@ -8,7 +8,7 @@
 
     End Sub
 
-    Private Sub BunifuPictureBox1_Click(sender As Object, e As EventArgs) Handles BunifuPictureBox2.Click, BunifuPictureBox1.Click, BunifuPictureBox6.Click, BunifuPictureBox5.Click, BunifuPictureBox4.Click, BunifuPictureBox3.Click, BunifuPictureBox9.Click, BunifuPictureBox8.Click, BunifuPictureBox7.Click, BunifuPictureBox13.Click, BunifuPictureBox12.Click, BunifuPictureBox11.Click, BunifuPictureBox10.Click
+    Private Sub BunifuPictureBox1_Click(sender As Object, e As EventArgs) Handles BunifuPictureBox2.Click, BunifuPictureBox1.Click, BunifuPictureBox6.Click, BunifuPictureBox5.Click, BunifuPictureBox4.Click, BunifuPictureBox3.Click, BunifuPictureBox9.Click, BunifuPictureBox8.Click, BunifuPictureBox7.Click, BunifuPictureBox13.Click, BunifuPictureBox12.Click, BunifuPictureBox11.Click, BunifuPictureBox10.Click, BunifuPictureBox14.Click
 
     End Sub
 

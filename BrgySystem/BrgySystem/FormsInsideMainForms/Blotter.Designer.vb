@@ -137,6 +137,8 @@ Partial Class Blotter
         'BunifuLabel1
         '
         Me.BunifuLabel1.AllowParentOverrides = False
+        Me.BunifuLabel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
@@ -243,10 +245,12 @@ Partial Class Blotter
         'BunifuLabel8
         '
         Me.BunifuLabel8.AllowParentOverrides = False
+        Me.BunifuLabel8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuLabel8.AutoEllipsis = False
         Me.BunifuLabel8.CursorType = Nothing
         Me.BunifuLabel8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel8.Location = New System.Drawing.Point(346, 55)
+        Me.BunifuLabel8.Location = New System.Drawing.Point(346, 54)
         Me.BunifuLabel8.Name = "BunifuLabel8"
         Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel8.Size = New System.Drawing.Size(196, 19)
@@ -258,6 +262,8 @@ Partial Class Blotter
         'BunifuLabel9
         '
         Me.BunifuLabel9.AllowParentOverrides = False
+        Me.BunifuLabel9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuLabel9.AutoEllipsis = False
         Me.BunifuLabel9.CursorType = Nothing
         Me.BunifuLabel9.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -273,6 +279,8 @@ Partial Class Blotter
         'BunifuLabel10
         '
         Me.BunifuLabel10.AllowParentOverrides = False
+        Me.BunifuLabel10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuLabel10.AutoEllipsis = False
         Me.BunifuLabel10.CursorType = Nothing
         Me.BunifuLabel10.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -333,6 +341,7 @@ Partial Class Blotter
         'BunifuLabel14
         '
         Me.BunifuLabel14.AllowParentOverrides = False
+        Me.BunifuLabel14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuLabel14.AutoEllipsis = False
         Me.BunifuLabel14.CursorType = Nothing
         Me.BunifuLabel14.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -347,6 +356,7 @@ Partial Class Blotter
         '
         'RichTextBox2
         '
+        Me.RichTextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RichTextBox2.Location = New System.Drawing.Point(682, 123)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.Size = New System.Drawing.Size(414, 185)
@@ -356,6 +366,7 @@ Partial Class Blotter
         'BunifuLabel15
         '
         Me.BunifuLabel15.AllowParentOverrides = False
+        Me.BunifuLabel15.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuLabel15.AutoEllipsis = False
         Me.BunifuLabel15.CursorType = Nothing
         Me.BunifuLabel15.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -377,6 +388,7 @@ Partial Class Blotter
         '
         'Button1
         '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
         Me.Button1.Location = New System.Drawing.Point(1067, 3)
         Me.Button1.Name = "Button1"
@@ -389,6 +401,7 @@ Partial Class Blotter
         Me.BunifuButton3.AllowAnimations = True
         Me.BunifuButton3.AllowMouseEffects = True
         Me.BunifuButton3.AllowToggling = False
+        Me.BunifuButton3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuButton3.AnimationSpeed = 200
         Me.BunifuButton3.AutoGenerateColors = False
         Me.BunifuButton3.AutoRoundBorders = False
@@ -478,6 +491,7 @@ Partial Class Blotter
         Me.BunifuButton2.AllowAnimations = True
         Me.BunifuButton2.AllowMouseEffects = True
         Me.BunifuButton2.AllowToggling = False
+        Me.BunifuButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuButton2.AnimationSpeed = 200
         Me.BunifuButton2.AutoGenerateColors = False
         Me.BunifuButton2.AutoRoundBorders = False
@@ -566,6 +580,7 @@ Partial Class Blotter
         '
         Me.BunifuTextBox14.AcceptsReturn = False
         Me.BunifuTextBox14.AcceptsTab = False
+        Me.BunifuTextBox14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuTextBox14.AnimationSpeed = 200
         Me.BunifuTextBox14.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
         Me.BunifuTextBox14.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
@@ -663,7 +678,7 @@ Partial Class Blotter
         Me.BunifuTextBox13.IconRight = Nothing
         Me.BunifuTextBox13.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox13.Lines = New String(-1) {}
-        Me.BunifuTextBox13.Location = New System.Drawing.Point(345, 276)
+        Me.BunifuTextBox13.Location = New System.Drawing.Point(348, 276)
         Me.BunifuTextBox13.MaxLength = 32767
         Me.BunifuTextBox13.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox13.Modified = False
@@ -737,7 +752,7 @@ Partial Class Blotter
         Me.BunifuTextBox12.IconRight = Nothing
         Me.BunifuTextBox12.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox12.Lines = New String(-1) {}
-        Me.BunifuTextBox12.Location = New System.Drawing.Point(345, 227)
+        Me.BunifuTextBox12.Location = New System.Drawing.Point(348, 227)
         Me.BunifuTextBox12.MaxLength = 32767
         Me.BunifuTextBox12.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox12.Modified = False
@@ -811,7 +826,7 @@ Partial Class Blotter
         Me.BunifuTextBox11.IconRight = Nothing
         Me.BunifuTextBox11.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox11.Lines = New String(-1) {}
-        Me.BunifuTextBox11.Location = New System.Drawing.Point(346, 173)
+        Me.BunifuTextBox11.Location = New System.Drawing.Point(348, 173)
         Me.BunifuTextBox11.MaxLength = 32767
         Me.BunifuTextBox11.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox11.Modified = False
@@ -876,7 +891,7 @@ Partial Class Blotter
         Me.BunifuDatePicker1.IconColor = System.Drawing.Color.Gray
         Me.BunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right
         Me.BunifuDatePicker1.LeftTextMargin = 5
-        Me.BunifuDatePicker1.Location = New System.Drawing.Point(455, 173)
+        Me.BunifuDatePicker1.Location = New System.Drawing.Point(459, 173)
         Me.BunifuDatePicker1.MinimumSize = New System.Drawing.Size(4, 32)
         Me.BunifuDatePicker1.Name = "BunifuDatePicker1"
         Me.BunifuDatePicker1.Size = New System.Drawing.Size(208, 32)
@@ -909,7 +924,7 @@ Partial Class Blotter
         Me.BunifuTextBox10.IconRight = Nothing
         Me.BunifuTextBox10.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox10.Lines = New String(-1) {}
-        Me.BunifuTextBox10.Location = New System.Drawing.Point(346, 122)
+        Me.BunifuTextBox10.Location = New System.Drawing.Point(348, 122)
         Me.BunifuTextBox10.MaxLength = 32767
         Me.BunifuTextBox10.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox10.Modified = False
@@ -983,7 +998,7 @@ Partial Class Blotter
         Me.BunifuTextBox9.IconRight = Nothing
         Me.BunifuTextBox9.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox9.Lines = New String(-1) {}
-        Me.BunifuTextBox9.Location = New System.Drawing.Point(345, 73)
+        Me.BunifuTextBox9.Location = New System.Drawing.Point(349, 72)
         Me.BunifuTextBox9.MaxLength = 32767
         Me.BunifuTextBox9.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox9.Modified = False
@@ -1552,6 +1567,7 @@ Partial Class Blotter
         '
         Me.BunifuTextBox1.AcceptsReturn = False
         Me.BunifuTextBox1.AcceptsTab = False
+        Me.BunifuTextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuTextBox1.AnimationSpeed = 200
         Me.BunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
         Me.BunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
@@ -1626,6 +1642,9 @@ Partial Class Blotter
         '
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.Guna2DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.White
@@ -1749,6 +1768,8 @@ Partial Class Blotter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1108, 728)
         Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Controls.Add(Me.Button1)
@@ -1788,6 +1809,7 @@ Partial Class Blotter
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Blotter"
         Me.Text = "Blotter"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
