@@ -22,4 +22,16 @@
     End Sub
 
 
+
+    Private Sub AccountSettingsButtonClick(sender As Object, e As EventArgs) Handles AccountSettingsButton.Click
+        showPanelDisplayOf(SettingsAccountSettingsForm)
+    End Sub
+
+    Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
+        MsgBox(True)
+    End Sub
 End Class

@@ -48,6 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.0.6\lib\Bunifu.Licensing.dll</HintPath>
     </Reference>
@@ -144,11 +147,24 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuUserControl, Version=5.0.6.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.0.6\lib\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\Documents\MySql.Data.DLL</HintPath>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.25\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="Renci.SshNet, Version=2020.0.1.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>..\packages\SSH.NET.2020.0.1\lib\net40\Renci.SshNet.dll</HintPath>
@@ -157,15 +173,41 @@
       <HintPath>..\packages\Renci.SshNet.Async.1.4.0\lib\net40\Renci.SshNet.Async.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.25\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.25\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -181,6 +223,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="checkInputValidity.vb" />
     <Compile Include="ChildForms\BlotterSettlementSchedule.Designer.vb">
       <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
     </Compile>
@@ -209,6 +252,12 @@
       <DependentUpon>ResidentsChildForm.vb</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\ResidentsChildForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\SettingsAccountSettingsForm.Designer.vb">
+      <DependentUpon>SettingsAccountSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\SettingsAccountSettingsForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChildForms\SettingsbackupAndRestoreForm.Designer.vb">
@@ -241,14 +290,9 @@
     <Compile Include="ChildForms\UpdateStatusOfSettlementBlotter.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Connection.vb" />
     <Compile Include="DataGridViewActionButtonEvent.vb" />
     <Compile Include="DataGridViewImages.vb" />
-    <Compile Include="FormsInsideMainForms\Activities.Designer.vb">
-      <DependentUpon>Activities.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormsInsideMainForms\Activities.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormsInsideMainForms\Archive.Designer.vb">
       <DependentUpon>Archive.vb</DependentUpon>
     </Compile>
@@ -273,16 +317,16 @@
     <Compile Include="FormsInsideMainForms\Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsInsideMainForms\Logout.Designer.vb">
-      <DependentUpon>Logout.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormsInsideMainForms\Logout.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormsInsideMainForms\Officials.Designer.vb">
       <DependentUpon>Officials.vb</DependentUpon>
     </Compile>
     <Compile Include="FormsInsideMainForms\Officials.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsInsideMainForms\OrganizationalChart.Designer.vb">
+      <DependentUpon>OrganizationalChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormsInsideMainForms\OrganizationalChart.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsInsideMainForms\Purok.Designer.vb">
@@ -331,6 +375,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="MyPurok.vb" />
+    <Compile Include="Residents.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ChildForms\BlotterSettlementSchedule.resx">
@@ -348,6 +394,9 @@
     <EmbeddedResource Include="ChildForms\ResidentsChildForm.resx">
       <DependentUpon>ResidentsChildForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\SettingsAccountSettingsForm.resx">
+      <DependentUpon>SettingsAccountSettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\SettingsbackupAndRestoreForm.resx">
       <DependentUpon>SettingsbackupAndRestoreForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -363,9 +412,6 @@
     <EmbeddedResource Include="ChildForms\UpdateStatusOfSettlementBlotter.resx">
       <DependentUpon>UpdateStatusOfSettlementBlotter.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsInsideMainForms\Activities.resx">
-      <DependentUpon>Activities.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Archive.resx">
       <DependentUpon>Archive.vb</DependentUpon>
     </EmbeddedResource>
@@ -378,11 +424,11 @@
     <EmbeddedResource Include="FormsInsideMainForms\Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsInsideMainForms\Logout.resx">
-      <DependentUpon>Logout.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Officials.resx">
       <DependentUpon>Officials.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsInsideMainForms\OrganizationalChart.resx">
+      <DependentUpon>OrganizationalChart.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Purok.resx">
       <DependentUpon>Purok.vb</DependentUpon>
@@ -475,6 +521,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_restore_page_24px_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_leadership_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_leadership_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_leadership_50px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_administrator_male_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_information_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_people_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_house_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_leadership_30px.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
