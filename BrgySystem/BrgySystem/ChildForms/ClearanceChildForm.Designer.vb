@@ -192,6 +192,7 @@ Partial Class ClearanceChildForm
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.TabPage1.Controls.Add(Me.RichTextBox2)
         Me.TabPage1.Controls.Add(Me.BunifuButton3)
         Me.TabPage1.Controls.Add(Me.BunifuButton2)
@@ -219,13 +220,13 @@ Partial Class ClearanceChildForm
         Me.TabPage1.Controls.Add(Me.BunifuLabel10)
         Me.TabPage1.Controls.Add(Me.BunifuLabel11)
         Me.TabPage1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage1.ForeColor = System.Drawing.Color.White
         Me.TabPage1.Location = New System.Drawing.Point(4, 28)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(1047, 497)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "BARANGAY CLEARANCE"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'RichTextBox2
         '
@@ -246,7 +247,7 @@ Partial Class ClearanceChildForm
         Me.BunifuButton3.AutoSizeLeftIcon = True
         Me.BunifuButton3.AutoSizeRightIcon = True
         Me.BunifuButton3.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuButton3.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton3.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton3.BackgroundImage = CType(resources.GetObject("BunifuButton3.BackgroundImage"), System.Drawing.Image)
         Me.BunifuButton3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BunifuButton3.ButtonText = "CLEAR"
@@ -275,10 +276,10 @@ Partial Class ClearanceChildForm
         Me.BunifuButton3.IconRightCursor = System.Windows.Forms.Cursors.Default
         Me.BunifuButton3.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.BunifuButton3.IconSize = 25
-        Me.BunifuButton3.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton3.IdleBorderColor = System.Drawing.Color.Transparent
         Me.BunifuButton3.IdleBorderRadius = 1
         Me.BunifuButton3.IdleBorderThickness = 1
-        Me.BunifuButton3.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton3.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton3.IdleIconLeftImage = Nothing
         Me.BunifuButton3.IdleIconRightImage = Nothing
         Me.BunifuButton3.IndicateFocus = False
@@ -300,11 +301,11 @@ Partial Class ClearanceChildForm
         Me.BunifuButton3.onHoverState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton3.onHoverState.IconLeftImage = Nothing
         Me.BunifuButton3.onHoverState.IconRightImage = Nothing
-        Me.BunifuButton3.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton3.OnIdleState.BorderColor = System.Drawing.Color.Transparent
         Me.BunifuButton3.OnIdleState.BorderRadius = 1
         Me.BunifuButton3.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BunifuButton3.OnIdleState.BorderThickness = 1
-        Me.BunifuButton3.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton3.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton3.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton3.OnIdleState.IconLeftImage = Nothing
         Me.BunifuButton3.OnIdleState.IconRightImage = Nothing
@@ -335,7 +336,7 @@ Partial Class ClearanceChildForm
         Me.BunifuButton2.AutoSizeLeftIcon = True
         Me.BunifuButton2.AutoSizeRightIcon = True
         Me.BunifuButton2.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuButton2.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton2.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton2.BackgroundImage = CType(resources.GetObject("BunifuButton2.BackgroundImage"), System.Drawing.Image)
         Me.BunifuButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BunifuButton2.ButtonText = "SAVE"
@@ -364,10 +365,10 @@ Partial Class ClearanceChildForm
         Me.BunifuButton2.IconRightCursor = System.Windows.Forms.Cursors.Default
         Me.BunifuButton2.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.BunifuButton2.IconSize = 25
-        Me.BunifuButton2.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton2.IdleBorderColor = System.Drawing.Color.Transparent
         Me.BunifuButton2.IdleBorderRadius = 1
         Me.BunifuButton2.IdleBorderThickness = 1
-        Me.BunifuButton2.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton2.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton2.IdleIconLeftImage = Nothing
         Me.BunifuButton2.IdleIconRightImage = Nothing
         Me.BunifuButton2.IndicateFocus = False
@@ -389,11 +390,11 @@ Partial Class ClearanceChildForm
         Me.BunifuButton2.onHoverState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton2.onHoverState.IconLeftImage = Nothing
         Me.BunifuButton2.onHoverState.IconRightImage = Nothing
-        Me.BunifuButton2.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton2.OnIdleState.BorderColor = System.Drawing.Color.Transparent
         Me.BunifuButton2.OnIdleState.BorderRadius = 1
         Me.BunifuButton2.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BunifuButton2.OnIdleState.BorderThickness = 1
-        Me.BunifuButton2.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.BunifuButton2.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuButton2.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton2.OnIdleState.IconLeftImage = Nothing
         Me.BunifuButton2.OnIdleState.IconRightImage = Nothing
@@ -419,6 +420,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel26.AutoEllipsis = False
         Me.BunifuLabel26.CursorType = Nothing
         Me.BunifuLabel26.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel26.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel26.Location = New System.Drawing.Point(591, 27)
         Me.BunifuLabel26.Name = "BunifuLabel26"
         Me.BunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -458,6 +460,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel25.AutoEllipsis = False
         Me.BunifuLabel25.CursorType = Nothing
         Me.BunifuLabel25.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel25.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel25.Location = New System.Drawing.Point(77, 303)
         Me.BunifuLabel25.Name = "BunifuLabel25"
         Me.BunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -473,6 +476,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.CursorType = Nothing
         Me.BunifuLabel1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel1.Location = New System.Drawing.Point(109, 412)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -488,6 +492,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel2.AutoEllipsis = False
         Me.BunifuLabel2.CursorType = Nothing
         Me.BunifuLabel2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel2.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel2.Location = New System.Drawing.Point(88, 375)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -725,6 +730,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel3.AutoEllipsis = False
         Me.BunifuLabel3.CursorType = Nothing
         Me.BunifuLabel3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel3.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel3.Location = New System.Drawing.Point(86, 338)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -814,6 +820,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel4.AutoEllipsis = False
         Me.BunifuLabel4.CursorType = Nothing
         Me.BunifuLabel4.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel4.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel4.Location = New System.Drawing.Point(86, 265)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1273,6 +1280,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel5.AutoEllipsis = False
         Me.BunifuLabel5.CursorType = Nothing
         Me.BunifuLabel5.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel5.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel5.Location = New System.Drawing.Point(120, 227)
         Me.BunifuLabel5.Name = "BunifuLabel5"
         Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1288,6 +1296,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel6.AutoEllipsis = False
         Me.BunifuLabel6.CursorType = Nothing
         Me.BunifuLabel6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel6.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel6.Location = New System.Drawing.Point(41, 152)
         Me.BunifuLabel6.Name = "BunifuLabel6"
         Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1303,6 +1312,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel8.AutoEllipsis = False
         Me.BunifuLabel8.CursorType = Nothing
         Me.BunifuLabel8.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel8.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel8.Location = New System.Drawing.Point(95, 191)
         Me.BunifuLabel8.Name = "BunifuLabel8"
         Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1318,6 +1328,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel9.AutoEllipsis = False
         Me.BunifuLabel9.CursorType = Nothing
         Me.BunifuLabel9.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel9.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel9.Location = New System.Drawing.Point(20, 74)
         Me.BunifuLabel9.Name = "BunifuLabel9"
         Me.BunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1333,6 +1344,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel10.AutoEllipsis = False
         Me.BunifuLabel10.CursorType = Nothing
         Me.BunifuLabel10.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel10.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel10.Location = New System.Drawing.Point(87, 114)
         Me.BunifuLabel10.Name = "BunifuLabel10"
         Me.BunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1349,6 +1361,7 @@ Partial Class ClearanceChildForm
         Me.BunifuLabel11.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel11.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel11.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel11.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel11.Location = New System.Drawing.Point(107, 36)
         Me.BunifuLabel11.Name = "BunifuLabel11"
         Me.BunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -2713,6 +2726,7 @@ Partial Class ClearanceChildForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1048, 536)
         Me.Controls.Add(Me.TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D

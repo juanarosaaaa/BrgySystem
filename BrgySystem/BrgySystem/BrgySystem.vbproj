@@ -405,6 +405,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\SettingsMissionVissionForm.resx">
       <DependentUpon>SettingsMissionVissionForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\SettingsOrganizationChart.resx">
       <DependentUpon>SettingsOrganizationChart.vb</DependentUpon>
