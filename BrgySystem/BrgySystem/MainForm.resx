@@ -120,8 +120,8 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MainPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAABcUAAAOECAYAAABgg1nmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAByPSURBVHhe7dixTcNQAEVRl2zxIY4dSkbJCJQZg81BVtwg
+        iVBORw0KGgoAAAANSUhEUgAABcUAAAODCAYAAAB9hmleAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAByHSURBVHhe7dixTcNQAEVRl2zxIY4dSkbJCJQZg81BVtwg
         ZYJ/z5NO9ya4i5mZmZmZmZmZmZlZbrdxe18/th8AAAAAAJjJPvbPM4U/t43t63rZfwEAAAAAYEbrut/P
         JL4sRyl/dQIAAAAAgBkcHfxM4qI4AAAAAABzE8UBAAAAAMgQxQEAAAAAyBDFAQAAAADIEMUBAAAAAMgQ
         xQEAAAAAyBDFAQAAAADIEMUBAAAAAMgQxQEAAAAAyBDFAQAAAADIEMUBAAAAAMgQxQEAAAAAyBDFAQAA
@@ -242,12 +242,9 @@
         AADIEMUBAAAAAMgQxQEAAAAAyBDFAQAAAADIEMUBAAAAAMgQxQEAAAAAyBDFAQAAAADIEMUBAAAAAMgQ
         xQEAAAAAyBDFAQAAAADIEMUBAAAAAMgQxQEAAAAAyBDFAQAAAADIEMUBAAAAAMgQxQEAAAAAyBDFAQAA
         AADIEMUBAAAAAMgQxQEAAAAAyBDFAQAAAADIEMUBAAAAAMgQxQEAAAAAyBDFAQAAAADIEMUBAAAAAMgQ
-        xQEAAAAAyBDFAQAAAADIEMUBAAAAAMj4H8XX/f7qBAAAAAAAc7g+ziT+3HbZvo9SDgAAAAAAMzmC+Bjj
-        7czhZmZmZmZmZmZmZmaFLcsffnDa8XRsNFcAAAAASUVORK5CYII=
+        xQEAAAAAyBDFAQAAAADI+B/F1/3+6gQAAAAAAHO4Ps4k/tx22b6PUg4AAAAAADM5gvgY4+3M4WZmZmZm
+        ZmZmZmZmhS3LHwu5r/yseI6DAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="BunifuLabel2.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Black'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="BunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -305,7 +302,7 @@
 </value>
   </data>
   <data name="BunifuLabel3.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="BunifuImageButton1.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -808,7 +805,7 @@
 </value>
   </data>
   <data name="BunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Black'; font-size: 18pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 24pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="Residents_Button.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

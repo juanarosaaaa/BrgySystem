@@ -75,8 +75,4 @@
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-
-    Private Sub BunifuLabel2_Click(sender As Object, e As EventArgs) Handles BunifuLabel2.Click
-        Me.Close()
-    End Sub
 End Class
