@@ -5,9 +5,7 @@
 
     End Sub
 
-    Private Sub BunifuButton1_Click(sender As Object, e As EventArgs) Handles BunifuButton1.Click
-        ClearanceChildForm.ShowDialog()
-    End Sub
+
 
     Private Sub Clearance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
