@@ -1,5 +1,5 @@
 ﻿Public Class SettingsMissionVissionForm
-    Private Sub RichTextBox2_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox2.TextChanged
-
+    Private Sub SettingsMissionVissionForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        RemainThisSizeOfTheForm.ToTheSizeOfTheSetting(Me)
     End Sub
 End Class

@@ -744,12 +744,12 @@ Partial Class ResidentsChildForm
         Me.BunifuPictureBox1.AllowFocused = False
         Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BunifuPictureBox1.AutoSizeHeight = True
-        Me.BunifuPictureBox1.BorderRadius = 136
+        Me.BunifuPictureBox1.BorderRadius = 109
         Me.BunifuPictureBox1.Image = CType(resources.GetObject("BunifuPictureBox1.Image"), System.Drawing.Image)
         Me.BunifuPictureBox1.IsCircle = True
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(707, 165)
+        Me.BunifuPictureBox1.Location = New System.Drawing.Point(739, 201)
         Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
-        Me.BunifuPictureBox1.Size = New System.Drawing.Size(272, 272)
+        Me.BunifuPictureBox1.Size = New System.Drawing.Size(218, 218)
         Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox1.TabIndex = 13
         Me.BunifuPictureBox1.TabStop = False
@@ -1051,7 +1051,7 @@ Partial Class ResidentsChildForm
         Me.BunifuLabel1.Location = New System.Drawing.Point(14, 287)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(42, 19)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(41, 21)
         Me.BunifuLabel1.TabIndex = 19
         Me.BunifuLabel1.Text = "Purok"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1067,7 +1067,7 @@ Partial Class ResidentsChildForm
         Me.BunifuLabel2.Location = New System.Drawing.Point(280, 179)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel2.Size = New System.Drawing.Size(81, 19)
+        Me.BunifuLabel2.Size = New System.Drawing.Size(77, 21)
         Me.BunifuLabel2.TabIndex = 20
         Me.BunifuLabel2.Text = "Civil Status"
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1083,7 +1083,7 @@ Partial Class ResidentsChildForm
         Me.BunifuLabel3.Location = New System.Drawing.Point(14, 233)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel3.Size = New System.Drawing.Size(38, 19)
+        Me.BunifuLabel3.Size = New System.Drawing.Size(38, 21)
         Me.BunifuLabel3.TabIndex = 21
         Me.BunifuLabel3.Text = "Voter"
         Me.BunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1099,7 +1099,7 @@ Partial Class ResidentsChildForm
         Me.BunifuLabel4.Location = New System.Drawing.Point(280, 234)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel4.Size = New System.Drawing.Size(40, 19)
+        Me.BunifuLabel4.Size = New System.Drawing.Size(39, 21)
         Me.BunifuLabel4.TabIndex = 22
         Me.BunifuLabel4.Text = "Suffix"
         Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1115,7 +1115,7 @@ Partial Class ResidentsChildForm
         Me.BunifuLabel5.Location = New System.Drawing.Point(12, 179)
         Me.BunifuLabel5.Name = "BunifuLabel5"
         Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel5.Size = New System.Drawing.Size(28, 19)
+        Me.BunifuLabel5.Size = New System.Drawing.Size(24, 21)
         Me.BunifuLabel5.TabIndex = 23
         Me.BunifuLabel5.Text = "Sex"
         Me.BunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1132,7 +1132,7 @@ Partial Class ResidentsChildForm
         Me.BunifuLabel6.Location = New System.Drawing.Point(280, 287)
         Me.BunifuLabel6.Name = "BunifuLabel6"
         Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel6.Size = New System.Drawing.Size(64, 19)
+        Me.BunifuLabel6.Size = New System.Drawing.Size(63, 21)
         Me.BunifuLabel6.TabIndex = 24
         Me.BunifuLabel6.Text = "Birthdate"
         Me.BunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1247,7 +1247,7 @@ Partial Class ResidentsChildForm
         Me.BunifuLabel7.Location = New System.Drawing.Point(14, 340)
         Me.BunifuLabel7.Name = "BunifuLabel7"
         Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel7.Size = New System.Drawing.Size(47, 19)
+        Me.BunifuLabel7.Size = New System.Drawing.Size(45, 21)
         Me.BunifuLabel7.TabIndex = 27
         Me.BunifuLabel7.Text = "Senior"
         Me.BunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1361,6 +1361,7 @@ Partial Class ResidentsChildForm
         Me.Controls.Add(Me.BunifuTextBox3)
         Me.Controls.Add(Me.BunifuTextBox2)
         Me.Controls.Add(Me.BunifuTextBox1)
+        Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Name = "ResidentsChildForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

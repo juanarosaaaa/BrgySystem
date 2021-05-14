@@ -68,11 +68,15 @@
         Application.Exit()
     End Sub
 
-    Private Sub MainPanel_Click(sender As Object, e As EventArgs) Handles MainPanel.Click
+    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
     End Sub
 
-    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Logout_Button_Click(sender As Object, e As EventArgs) Handles Logout_Button.Click
+
+    End Sub
+
+    Private Sub MainPanel_Click(sender As Object, e As EventArgs) Handles MainPanel.Click
 
     End Sub
 End Class

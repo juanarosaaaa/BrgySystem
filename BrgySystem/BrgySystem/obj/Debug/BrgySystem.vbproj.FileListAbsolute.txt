@@ -489,3 +489,4 @@ C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\De
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.vbproj.CopyComplete
+C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.ClearanceChildForm.resources

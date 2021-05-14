@@ -17,6 +17,7 @@
     Sub showPanelDisplayOf(panelDisplay As Form)
         MainPanelSetting.Controls.Clear()
         panelDisplay.TopLevel = False
+        panelDisplay.WindowState = FormWindowState.Maximized
         MainPanelSetting.Controls.Add(panelDisplay)
         panelDisplay.Show()
     End Sub
@@ -24,7 +25,9 @@
 
 
     Private Sub AccountSettingsButtonClick(sender As Object, e As EventArgs) Handles AccountSettingsButton.Click
+
         showPanelDisplayOf(SettingsAccountSettingsForm)
+        SettingsAccountSettingsForm.WindowState = FormWindowState.Maximized
     End Sub
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
