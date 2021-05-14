@@ -59,8 +59,8 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuPictureBox1 = New Bunifu.UI.WinForms.BunifuPictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.BunifuButton2 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.BunifuButton2 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -113,7 +113,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(652, 290)
+        Me.BunifuButton1.Location = New System.Drawing.Point(665, 267)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 1
@@ -147,7 +147,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton1.OnPressedState.IconLeftImage = Nothing
         Me.BunifuButton1.OnPressedState.IconRightImage = Nothing
-        Me.BunifuButton1.Size = New System.Drawing.Size(218, 32)
+        Me.BunifuButton1.Size = New System.Drawing.Size(195, 32)
         Me.BunifuButton1.TabIndex = 11
         Me.BunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -644,13 +644,13 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuPictureBox1.AllowFocused = False
         Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox1.AutoSizeHeight = True
-        Me.BunifuPictureBox1.BorderRadius = 109
+        Me.BunifuPictureBox1.BorderRadius = 97
         Me.BunifuPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.BunifuPictureBox1.Image = CType(resources.GetObject("BunifuPictureBox1.Image"), System.Drawing.Image)
         Me.BunifuPictureBox1.IsCircle = True
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(652, 66)
+        Me.BunifuPictureBox1.Location = New System.Drawing.Point(665, 66)
         Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
-        Me.BunifuPictureBox1.Size = New System.Drawing.Size(218, 218)
+        Me.BunifuPictureBox1.Size = New System.Drawing.Size(195, 195)
         Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox1.TabIndex = 10
         Me.BunifuPictureBox1.TabStop = False
@@ -673,6 +673,32 @@ Partial Class SettingsBarangayDetailsForm
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Change Barangay Information"
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706!))
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox7, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel3, 0, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox6, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel4, 0, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox4, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox3, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel5, 0, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox1, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel7, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel8, 0, 0)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(34, 42)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 5
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(588, 242)
+        Me.TableLayoutPanel1.TabIndex = 16
         '
         'BunifuButton2
         '
@@ -763,32 +789,6 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuButton2.TextMarginLeft = 0
         Me.BunifuButton2.TextPadding = New System.Windows.Forms.Padding(0)
         Me.BunifuButton2.UseDefaultRadiusAndThickness = True
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706!))
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox7, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel3, 0, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox6, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel4, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox4, 1, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox3, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel5, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox1, 1, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel7, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel8, 0, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(34, 42)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 5
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(588, 242)
-        Me.TableLayoutPanel1.TabIndex = 16
         '
         'SettingsBarangayDetailsForm
         '

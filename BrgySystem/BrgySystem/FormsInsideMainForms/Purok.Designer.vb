@@ -47,7 +47,7 @@ Partial Class Purok
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.Button1.Location = New System.Drawing.Point(1066, 37)
+        Me.Button1.Location = New System.Drawing.Point(1082, 37)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(29, 35)
         Me.Button1.TabIndex = 3
@@ -170,7 +170,7 @@ Partial Class Purok
         Me.BunifuTextBox1.IconRight = Nothing
         Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox1.Lines = New String(-1) {}
-        Me.BunifuTextBox1.Location = New System.Drawing.Point(812, 37)
+        Me.BunifuTextBox1.Location = New System.Drawing.Point(828, 37)
         Me.BunifuTextBox1.MaxLength = 32767
         Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox1.Modified = False
@@ -255,7 +255,7 @@ Partial Class Purok
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.RowHeadersVisible = False
         Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(1083, 608)
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(1099, 646)
         Me.Guna2DataGridView1.TabIndex = 4
         Me.Guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -320,7 +320,7 @@ Partial Class Purok
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1108, 728)
+        Me.ClientSize = New System.Drawing.Size(1124, 766)
         Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BunifuButton1)

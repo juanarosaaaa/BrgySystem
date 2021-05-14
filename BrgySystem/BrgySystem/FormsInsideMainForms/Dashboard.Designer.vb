@@ -49,7 +49,7 @@ Partial Class Dashboard
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1108, 728)
+        Me.ClientSize = New System.Drawing.Size(1124, 766)
         Me.Controls.Add(Me.BunifuLabel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Dashboard"

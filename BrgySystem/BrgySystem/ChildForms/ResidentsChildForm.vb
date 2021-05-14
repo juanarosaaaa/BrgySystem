@@ -1,5 +1,5 @@
 ﻿Public Class ResidentsChildForm
-    Private Sub BunifuTextBox1_TextChanged(sender As Object, e As EventArgs) Handles BunifuTextBox1.TextChanged
+    Private Sub BunifuLabel9_Click(sender As Object, e As EventArgs) Handles BunifuLabel9.Click
 
     End Sub
 End Class

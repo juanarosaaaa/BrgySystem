@@ -614,7 +614,7 @@ Partial Class BlotterSettlementSchedule
         '
         'fullname_Column
         '
-        Me.fullname_Column.HeaderText = "FULLNAME"
+        Me.fullname_Column.HeaderText = "FULL NAME"
         Me.fullname_Column.Name = "fullname_Column"
         '
         'schedule_Column

@@ -51,7 +51,7 @@ Partial Class Settings
         Me.MainPanelSetting.Location = New System.Drawing.Point(-1, 90)
         Me.MainPanelSetting.Name = "MainPanelSetting"
         Me.MainPanelSetting.ShowBorders = True
-        Me.MainPanelSetting.Size = New System.Drawing.Size(1111, 639)
+        Me.MainPanelSetting.Size = New System.Drawing.Size(1127, 677)
         Me.MainPanelSetting.TabIndex = 2
         '
         'BarangayDetailsButton
@@ -102,7 +102,7 @@ Partial Class Settings
         Me.BarangayDetailsButton.IdleIconLeftImage = Nothing
         Me.BarangayDetailsButton.IdleIconRightImage = Nothing
         Me.BarangayDetailsButton.IndicateFocus = False
-        Me.BarangayDetailsButton.Location = New System.Drawing.Point(269, 48)
+        Me.BarangayDetailsButton.Location = New System.Drawing.Point(277, 48)
         Me.BarangayDetailsButton.Name = "BarangayDetailsButton"
         Me.BarangayDetailsButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BarangayDetailsButton.OnDisabledState.BorderRadius = 1
@@ -192,7 +192,7 @@ Partial Class Settings
         Me.AccountSettingsButton.IdleIconLeftImage = Nothing
         Me.AccountSettingsButton.IdleIconRightImage = Nothing
         Me.AccountSettingsButton.IndicateFocus = False
-        Me.AccountSettingsButton.Location = New System.Drawing.Point(73, 48)
+        Me.AccountSettingsButton.Location = New System.Drawing.Point(81, 48)
         Me.AccountSettingsButton.Name = "AccountSettingsButton"
         Me.AccountSettingsButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.AccountSettingsButton.OnDisabledState.BorderRadius = 1
@@ -282,7 +282,7 @@ Partial Class Settings
         Me.MissionVisionzButton.IdleIconLeftImage = Nothing
         Me.MissionVisionzButton.IdleIconRightImage = Nothing
         Me.MissionVisionzButton.IndicateFocus = False
-        Me.MissionVisionzButton.Location = New System.Drawing.Point(857, 48)
+        Me.MissionVisionzButton.Location = New System.Drawing.Point(865, 48)
         Me.MissionVisionzButton.Name = "MissionVisionzButton"
         Me.MissionVisionzButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.MissionVisionzButton.OnDisabledState.BorderRadius = 1
@@ -372,7 +372,7 @@ Partial Class Settings
         Me.BackupAndRestoreButton.IdleIconLeftImage = Nothing
         Me.BackupAndRestoreButton.IdleIconRightImage = Nothing
         Me.BackupAndRestoreButton.IndicateFocus = False
-        Me.BackupAndRestoreButton.Location = New System.Drawing.Point(661, 48)
+        Me.BackupAndRestoreButton.Location = New System.Drawing.Point(669, 48)
         Me.BackupAndRestoreButton.Name = "BackupAndRestoreButton"
         Me.BackupAndRestoreButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BackupAndRestoreButton.OnDisabledState.BorderRadius = 1
@@ -462,7 +462,7 @@ Partial Class Settings
         Me.OrganizationChart.IdleIconLeftImage = Nothing
         Me.OrganizationChart.IdleIconRightImage = Nothing
         Me.OrganizationChart.IndicateFocus = False
-        Me.OrganizationChart.Location = New System.Drawing.Point(465, 48)
+        Me.OrganizationChart.Location = New System.Drawing.Point(473, 48)
         Me.OrganizationChart.Name = "OrganizationChart"
         Me.OrganizationChart.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.OrganizationChart.OnDisabledState.BorderRadius = 1
@@ -511,7 +511,7 @@ Partial Class Settings
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1108, 728)
+        Me.ClientSize = New System.Drawing.Size(1124, 766)
         Me.Controls.Add(Me.MissionVisionzButton)
         Me.Controls.Add(Me.BackupAndRestoreButton)
         Me.Controls.Add(Me.OrganizationChart)
