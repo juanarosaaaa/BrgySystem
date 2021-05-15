@@ -13,5 +13,7 @@
         DataGridViewImages.setImageAtButtonColumnOf("archiveButton_Column", Guna2DataGridView1, e, My.Resources.icons8_archive_24px_1)
     End Sub
 
+    Private Sub Purok_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class
