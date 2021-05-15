@@ -46,7 +46,6 @@ Partial Class MainForm
         Dim BorderEdges9 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim BorderEdges10 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Me.MainPanel = New Bunifu.UI.WinForms.BunifuPanel()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BunifuTextBox3 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox2 = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -61,9 +60,8 @@ Partial Class MainForm
         Me.Archive_Button = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.OrganizationalChartButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.Clearance_Button = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
-        Me.Logout_Button = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.Settings_Button = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
-        Me.TableLayoutPanel1.SuspendLayout()
+        Me.Logout_Button = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.GroupBox1.SuspendLayout()
         CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -79,56 +77,19 @@ Partial Class MainForm
         Me.MainPanel.BorderColor = System.Drawing.Color.Transparent
         Me.MainPanel.BorderRadius = 3
         Me.MainPanel.BorderThickness = 1
-        Me.MainPanel.Location = New System.Drawing.Point(242, 2)
+        Me.MainPanel.Location = New System.Drawing.Point(242, 7)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.ShowBorders = True
-        Me.MainPanel.Size = New System.Drawing.Size(1124, 766)
+        Me.MainPanel.Size = New System.Drawing.Size(1112, 758)
         Me.MainPanel.TabIndex = 1
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel1, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Residents_Button, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Blotter_Button, 0, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.Purok_Button, 0, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.Officials_Button, 0, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.Dashboard_Button, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Archive_Button, 0, 8)
-        Me.TableLayoutPanel1.Controls.Add(Me.OrganizationalChartButton, 0, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.Clearance_Button, 0, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.Logout_Button, 0, 11)
-        Me.TableLayoutPanel1.Controls.Add(Me.Settings_Button, 0, 10)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(-2, 1)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 13
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.508533!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.33447!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.849829!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.361774!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.679181!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.679181!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.337884!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.508533!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.508533!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.337884!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.167235!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.726962!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 131.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(246, 767)
-        Me.TableLayoutPanel1.TabIndex = 0
         '
         'GroupBox1
         '
-        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.BunifuTextBox3)
         Me.GroupBox1.Controls.Add(Me.BunifuTextBox2)
         Me.GroupBox1.Controls.Add(Me.BunifuTextBox1)
         Me.GroupBox1.Controls.Add(Me.BunifuPictureBox1)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 50)
+        Me.GroupBox1.Location = New System.Drawing.Point(2, 45)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(240, 82)
         Me.GroupBox1.TabIndex = 16
@@ -378,16 +339,15 @@ Partial Class MainForm
         'BunifuLabel1
         '
         Me.BunifuLabel1.AllowParentOverrides = False
-        Me.BunifuLabel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.Font = New System.Drawing.Font("Times New Roman", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel1.Location = New System.Drawing.Point(14, 3)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(12, 7)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(217, 41)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(217, 36)
         Me.BunifuLabel1.TabIndex = 0
         Me.BunifuLabel1.Text = "Barangay System"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -398,8 +358,6 @@ Partial Class MainForm
         Me.Residents_Button.AllowAnimations = True
         Me.Residents_Button.AllowMouseEffects = True
         Me.Residents_Button.AllowToggling = False
-        Me.Residents_Button.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Residents_Button.AnimationSpeed = 200
         Me.Residents_Button.AutoGenerateColors = False
         Me.Residents_Button.AutoRoundBorders = False
@@ -442,7 +400,7 @@ Partial Class MainForm
         Me.Residents_Button.IdleIconLeftImage = Nothing
         Me.Residents_Button.IdleIconRightImage = Nothing
         Me.Residents_Button.IndicateFocus = False
-        Me.Residents_Button.Location = New System.Drawing.Point(3, 190)
+        Me.Residents_Button.Location = New System.Drawing.Point(1, 179)
         Me.Residents_Button.Name = "Residents_Button"
         Me.Residents_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Residents_Button.OnDisabledState.BorderRadius = 1
@@ -476,7 +434,7 @@ Partial Class MainForm
         Me.Residents_Button.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.Residents_Button.OnPressedState.IconLeftImage = Nothing
         Me.Residents_Button.OnPressedState.IconRightImage = Nothing
-        Me.Residents_Button.Size = New System.Drawing.Size(240, 42)
+        Me.Residents_Button.Size = New System.Drawing.Size(241, 37)
         Me.Residents_Button.TabIndex = 2
         Me.Residents_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Residents_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -489,8 +447,6 @@ Partial Class MainForm
         Me.Blotter_Button.AllowAnimations = True
         Me.Blotter_Button.AllowMouseEffects = True
         Me.Blotter_Button.AllowToggling = False
-        Me.Blotter_Button.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Blotter_Button.AnimationSpeed = 200
         Me.Blotter_Button.AutoGenerateColors = False
         Me.Blotter_Button.AutoRoundBorders = False
@@ -533,7 +489,7 @@ Partial Class MainForm
         Me.Blotter_Button.IdleIconLeftImage = Nothing
         Me.Blotter_Button.IdleIconRightImage = Nothing
         Me.Blotter_Button.IndicateFocus = False
-        Me.Blotter_Button.Location = New System.Drawing.Point(3, 385)
+        Me.Blotter_Button.Location = New System.Drawing.Point(1, 344)
         Me.Blotter_Button.Name = "Blotter_Button"
         Me.Blotter_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Blotter_Button.OnDisabledState.BorderRadius = 1
@@ -567,7 +523,7 @@ Partial Class MainForm
         Me.Blotter_Button.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.Blotter_Button.OnPressedState.IconLeftImage = Nothing
         Me.Blotter_Button.OnPressedState.IconRightImage = Nothing
-        Me.Blotter_Button.Size = New System.Drawing.Size(240, 38)
+        Me.Blotter_Button.Size = New System.Drawing.Size(241, 35)
         Me.Blotter_Button.TabIndex = 6
         Me.Blotter_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Blotter_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -580,8 +536,6 @@ Partial Class MainForm
         Me.Purok_Button.AllowAnimations = True
         Me.Purok_Button.AllowMouseEffects = True
         Me.Purok_Button.AllowToggling = False
-        Me.Purok_Button.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Purok_Button.AnimationSpeed = 200
         Me.Purok_Button.AutoGenerateColors = False
         Me.Purok_Button.AutoRoundBorders = False
@@ -624,7 +578,7 @@ Partial Class MainForm
         Me.Purok_Button.IdleIconLeftImage = Nothing
         Me.Purok_Button.IdleIconRightImage = Nothing
         Me.Purok_Button.IndicateFocus = False
-        Me.Purok_Button.Location = New System.Drawing.Point(3, 291)
+        Me.Purok_Button.Location = New System.Drawing.Point(1, 262)
         Me.Purok_Button.Name = "Purok_Button"
         Me.Purok_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Purok_Button.OnDisabledState.BorderRadius = 1
@@ -658,7 +612,7 @@ Partial Class MainForm
         Me.Purok_Button.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.Purok_Button.OnPressedState.IconLeftImage = Nothing
         Me.Purok_Button.OnPressedState.IconRightImage = Nothing
-        Me.Purok_Button.Size = New System.Drawing.Size(240, 39)
+        Me.Purok_Button.Size = New System.Drawing.Size(241, 38)
         Me.Purok_Button.TabIndex = 3
         Me.Purok_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Purok_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -671,8 +625,6 @@ Partial Class MainForm
         Me.Officials_Button.AllowAnimations = True
         Me.Officials_Button.AllowMouseEffects = True
         Me.Officials_Button.AllowToggling = False
-        Me.Officials_Button.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Officials_Button.AnimationSpeed = 200
         Me.Officials_Button.AutoGenerateColors = False
         Me.Officials_Button.AutoRoundBorders = False
@@ -715,7 +667,7 @@ Partial Class MainForm
         Me.Officials_Button.IdleIconLeftImage = Nothing
         Me.Officials_Button.IdleIconRightImage = Nothing
         Me.Officials_Button.IndicateFocus = False
-        Me.Officials_Button.Location = New System.Drawing.Point(3, 243)
+        Me.Officials_Button.Location = New System.Drawing.Point(1, 220)
         Me.Officials_Button.Name = "Officials_Button"
         Me.Officials_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Officials_Button.OnDisabledState.BorderRadius = 1
@@ -749,7 +701,7 @@ Partial Class MainForm
         Me.Officials_Button.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.Officials_Button.OnPressedState.IconLeftImage = Nothing
         Me.Officials_Button.OnPressedState.IconRightImage = Nothing
-        Me.Officials_Button.Size = New System.Drawing.Size(240, 39)
+        Me.Officials_Button.Size = New System.Drawing.Size(241, 38)
         Me.Officials_Button.TabIndex = 5
         Me.Officials_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Officials_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -762,8 +714,6 @@ Partial Class MainForm
         Me.Dashboard_Button.AllowAnimations = True
         Me.Dashboard_Button.AllowMouseEffects = True
         Me.Dashboard_Button.AllowToggling = False
-        Me.Dashboard_Button.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Dashboard_Button.AnimationSpeed = 200
         Me.Dashboard_Button.AutoGenerateColors = False
         Me.Dashboard_Button.AutoRoundBorders = False
@@ -806,7 +756,7 @@ Partial Class MainForm
         Me.Dashboard_Button.IdleIconLeftImage = Nothing
         Me.Dashboard_Button.IdleIconRightImage = Nothing
         Me.Dashboard_Button.IndicateFocus = False
-        Me.Dashboard_Button.Location = New System.Drawing.Point(3, 141)
+        Me.Dashboard_Button.Location = New System.Drawing.Point(1, 138)
         Me.Dashboard_Button.Name = "Dashboard_Button"
         Me.Dashboard_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Dashboard_Button.OnDisabledState.BorderRadius = 1
@@ -840,7 +790,7 @@ Partial Class MainForm
         Me.Dashboard_Button.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.Dashboard_Button.OnPressedState.IconLeftImage = Nothing
         Me.Dashboard_Button.OnPressedState.IconRightImage = Nothing
-        Me.Dashboard_Button.Size = New System.Drawing.Size(240, 40)
+        Me.Dashboard_Button.Size = New System.Drawing.Size(241, 37)
         Me.Dashboard_Button.TabIndex = 1
         Me.Dashboard_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Dashboard_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -853,8 +803,6 @@ Partial Class MainForm
         Me.Archive_Button.AllowAnimations = True
         Me.Archive_Button.AllowMouseEffects = True
         Me.Archive_Button.AllowToggling = False
-        Me.Archive_Button.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Archive_Button.AnimationSpeed = 200
         Me.Archive_Button.AutoGenerateColors = False
         Me.Archive_Button.AutoRoundBorders = False
@@ -897,7 +845,7 @@ Partial Class MainForm
         Me.Archive_Button.IdleIconLeftImage = Nothing
         Me.Archive_Button.IdleIconRightImage = Nothing
         Me.Archive_Button.IndicateFocus = False
-        Me.Archive_Button.Location = New System.Drawing.Point(3, 432)
+        Me.Archive_Button.Location = New System.Drawing.Point(1, 383)
         Me.Archive_Button.Name = "Archive_Button"
         Me.Archive_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Archive_Button.OnDisabledState.BorderRadius = 1
@@ -931,7 +879,7 @@ Partial Class MainForm
         Me.Archive_Button.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.Archive_Button.OnPressedState.IconLeftImage = Nothing
         Me.Archive_Button.OnPressedState.IconRightImage = Nothing
-        Me.Archive_Button.Size = New System.Drawing.Size(240, 38)
+        Me.Archive_Button.Size = New System.Drawing.Size(241, 37)
         Me.Archive_Button.TabIndex = 11
         Me.Archive_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Archive_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -944,8 +892,6 @@ Partial Class MainForm
         Me.OrganizationalChartButton.AllowAnimations = True
         Me.OrganizationalChartButton.AllowMouseEffects = True
         Me.OrganizationalChartButton.AllowToggling = False
-        Me.OrganizationalChartButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.OrganizationalChartButton.AnimationSpeed = 200
         Me.OrganizationalChartButton.AutoGenerateColors = False
         Me.OrganizationalChartButton.AutoRoundBorders = False
@@ -988,7 +934,7 @@ Partial Class MainForm
         Me.OrganizationalChartButton.IdleIconLeftImage = Nothing
         Me.OrganizationalChartButton.IdleIconRightImage = Nothing
         Me.OrganizationalChartButton.IndicateFocus = False
-        Me.OrganizationalChartButton.Location = New System.Drawing.Point(3, 479)
+        Me.OrganizationalChartButton.Location = New System.Drawing.Point(1, 424)
         Me.OrganizationalChartButton.Name = "OrganizationalChartButton"
         Me.OrganizationalChartButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.OrganizationalChartButton.OnDisabledState.BorderRadius = 1
@@ -1022,7 +968,7 @@ Partial Class MainForm
         Me.OrganizationalChartButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.OrganizationalChartButton.OnPressedState.IconLeftImage = Nothing
         Me.OrganizationalChartButton.OnPressedState.IconRightImage = Nothing
-        Me.OrganizationalChartButton.Size = New System.Drawing.Size(240, 37)
+        Me.OrganizationalChartButton.Size = New System.Drawing.Size(241, 37)
         Me.OrganizationalChartButton.TabIndex = 12
         Me.OrganizationalChartButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.OrganizationalChartButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -1035,8 +981,6 @@ Partial Class MainForm
         Me.Clearance_Button.AllowAnimations = True
         Me.Clearance_Button.AllowMouseEffects = True
         Me.Clearance_Button.AllowToggling = False
-        Me.Clearance_Button.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Clearance_Button.AnimationSpeed = 200
         Me.Clearance_Button.AutoGenerateColors = False
         Me.Clearance_Button.AutoRoundBorders = False
@@ -1079,7 +1023,7 @@ Partial Class MainForm
         Me.Clearance_Button.IdleIconLeftImage = Nothing
         Me.Clearance_Button.IdleIconRightImage = Nothing
         Me.Clearance_Button.IndicateFocus = False
-        Me.Clearance_Button.Location = New System.Drawing.Point(3, 339)
+        Me.Clearance_Button.Location = New System.Drawing.Point(1, 304)
         Me.Clearance_Button.Name = "Clearance_Button"
         Me.Clearance_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Clearance_Button.OnDisabledState.BorderRadius = 1
@@ -1113,7 +1057,7 @@ Partial Class MainForm
         Me.Clearance_Button.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.Clearance_Button.OnPressedState.IconLeftImage = Nothing
         Me.Clearance_Button.OnPressedState.IconRightImage = Nothing
-        Me.Clearance_Button.Size = New System.Drawing.Size(240, 37)
+        Me.Clearance_Button.Size = New System.Drawing.Size(241, 36)
         Me.Clearance_Button.TabIndex = 4
         Me.Clearance_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Clearance_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -1121,104 +1065,11 @@ Partial Class MainForm
         Me.Clearance_Button.TextPadding = New System.Windows.Forms.Padding(0)
         Me.Clearance_Button.UseDefaultRadiusAndThickness = True
         '
-        'Logout_Button
-        '
-        Me.Logout_Button.AllowAnimations = True
-        Me.Logout_Button.AllowMouseEffects = True
-        Me.Logout_Button.AllowToggling = False
-        Me.Logout_Button.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Logout_Button.AnimationSpeed = 200
-        Me.Logout_Button.AutoGenerateColors = False
-        Me.Logout_Button.AutoRoundBorders = False
-        Me.Logout_Button.AutoSizeLeftIcon = True
-        Me.Logout_Button.AutoSizeRightIcon = True
-        Me.Logout_Button.BackColor = System.Drawing.Color.Transparent
-        Me.Logout_Button.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Logout_Button.BackgroundImage = CType(resources.GetObject("Logout_Button.BackgroundImage"), System.Drawing.Image)
-        Me.Logout_Button.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.Logout_Button.ButtonText = "LOGOUT"
-        Me.Logout_Button.ButtonTextMarginLeft = 0
-        Me.Logout_Button.ColorContrastOnClick = 45
-        Me.Logout_Button.ColorContrastOnHover = 45
-        Me.Logout_Button.Cursor = System.Windows.Forms.Cursors.Default
-        BorderEdges9.BottomLeft = True
-        BorderEdges9.BottomRight = True
-        BorderEdges9.TopLeft = True
-        BorderEdges9.TopRight = True
-        Me.Logout_Button.CustomizableEdges = BorderEdges9
-        Me.Logout_Button.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.Logout_Button.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Logout_Button.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Logout_Button.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
-        Me.Logout_Button.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.Logout_Button.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Logout_Button.ForeColor = System.Drawing.Color.White
-        Me.Logout_Button.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Logout_Button.IconLeftCursor = System.Windows.Forms.Cursors.Default
-        Me.Logout_Button.IconLeftPadding = New System.Windows.Forms.Padding(11, 3, 3, 3)
-        Me.Logout_Button.IconMarginLeft = 11
-        Me.Logout_Button.IconPadding = 10
-        Me.Logout_Button.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Logout_Button.IconRightCursor = System.Windows.Forms.Cursors.Default
-        Me.Logout_Button.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
-        Me.Logout_Button.IconSize = 25
-        Me.Logout_Button.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.Logout_Button.IdleBorderRadius = 1
-        Me.Logout_Button.IdleBorderThickness = 1
-        Me.Logout_Button.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Logout_Button.IdleIconLeftImage = Nothing
-        Me.Logout_Button.IdleIconRightImage = Nothing
-        Me.Logout_Button.IndicateFocus = False
-        Me.Logout_Button.Location = New System.Drawing.Point(3, 570)
-        Me.Logout_Button.Name = "Logout_Button"
-        Me.Logout_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Logout_Button.OnDisabledState.BorderRadius = 1
-        Me.Logout_Button.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.Logout_Button.OnDisabledState.BorderThickness = 1
-        Me.Logout_Button.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Logout_Button.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
-        Me.Logout_Button.OnDisabledState.IconLeftImage = Nothing
-        Me.Logout_Button.OnDisabledState.IconRightImage = Nothing
-        Me.Logout_Button.onHoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Logout_Button.onHoverState.BorderRadius = 1
-        Me.Logout_Button.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.Logout_Button.onHoverState.BorderThickness = 1
-        Me.Logout_Button.onHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Logout_Button.onHoverState.ForeColor = System.Drawing.Color.White
-        Me.Logout_Button.onHoverState.IconLeftImage = Nothing
-        Me.Logout_Button.onHoverState.IconRightImage = Nothing
-        Me.Logout_Button.OnIdleState.BorderColor = System.Drawing.Color.Transparent
-        Me.Logout_Button.OnIdleState.BorderRadius = 1
-        Me.Logout_Button.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.Logout_Button.OnIdleState.BorderThickness = 1
-        Me.Logout_Button.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Logout_Button.OnIdleState.ForeColor = System.Drawing.Color.White
-        Me.Logout_Button.OnIdleState.IconLeftImage = Nothing
-        Me.Logout_Button.OnIdleState.IconRightImage = Nothing
-        Me.Logout_Button.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.Logout_Button.OnPressedState.BorderRadius = 1
-        Me.Logout_Button.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.Logout_Button.OnPressedState.BorderThickness = 1
-        Me.Logout_Button.OnPressedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.Logout_Button.OnPressedState.ForeColor = System.Drawing.Color.White
-        Me.Logout_Button.OnPressedState.IconLeftImage = Nothing
-        Me.Logout_Button.OnPressedState.IconRightImage = Nothing
-        Me.Logout_Button.Size = New System.Drawing.Size(240, 42)
-        Me.Logout_Button.TabIndex = 8
-        Me.Logout_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Logout_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
-        Me.Logout_Button.TextMarginLeft = 0
-        Me.Logout_Button.TextPadding = New System.Windows.Forms.Padding(0)
-        Me.Logout_Button.UseDefaultRadiusAndThickness = True
-        '
         'Settings_Button
         '
         Me.Settings_Button.AllowAnimations = True
         Me.Settings_Button.AllowMouseEffects = True
         Me.Settings_Button.AllowToggling = False
-        Me.Settings_Button.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Settings_Button.AnimationSpeed = 200
         Me.Settings_Button.AutoGenerateColors = False
         Me.Settings_Button.AutoRoundBorders = False
@@ -1233,11 +1084,11 @@ Partial Class MainForm
         Me.Settings_Button.ColorContrastOnClick = 45
         Me.Settings_Button.ColorContrastOnHover = 45
         Me.Settings_Button.Cursor = System.Windows.Forms.Cursors.Default
-        BorderEdges10.BottomLeft = True
-        BorderEdges10.BottomRight = True
-        BorderEdges10.TopLeft = True
-        BorderEdges10.TopRight = True
-        Me.Settings_Button.CustomizableEdges = BorderEdges10
+        BorderEdges9.BottomLeft = True
+        BorderEdges9.BottomRight = True
+        BorderEdges9.TopLeft = True
+        BorderEdges9.TopRight = True
+        Me.Settings_Button.CustomizableEdges = BorderEdges9
         Me.Settings_Button.DialogResult = System.Windows.Forms.DialogResult.None
         Me.Settings_Button.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Settings_Button.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -1261,7 +1112,7 @@ Partial Class MainForm
         Me.Settings_Button.IdleIconLeftImage = Nothing
         Me.Settings_Button.IdleIconRightImage = Nothing
         Me.Settings_Button.IndicateFocus = False
-        Me.Settings_Button.Location = New System.Drawing.Point(3, 525)
+        Me.Settings_Button.Location = New System.Drawing.Point(1, 465)
         Me.Settings_Button.Name = "Settings_Button"
         Me.Settings_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Settings_Button.OnDisabledState.BorderRadius = 1
@@ -1295,13 +1146,102 @@ Partial Class MainForm
         Me.Settings_Button.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.Settings_Button.OnPressedState.IconLeftImage = Nothing
         Me.Settings_Button.OnPressedState.IconRightImage = Nothing
-        Me.Settings_Button.Size = New System.Drawing.Size(240, 36)
+        Me.Settings_Button.Size = New System.Drawing.Size(241, 35)
         Me.Settings_Button.TabIndex = 10
         Me.Settings_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Settings_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
         Me.Settings_Button.TextMarginLeft = 0
         Me.Settings_Button.TextPadding = New System.Windows.Forms.Padding(0)
         Me.Settings_Button.UseDefaultRadiusAndThickness = True
+        '
+        'Logout_Button
+        '
+        Me.Logout_Button.AllowAnimations = True
+        Me.Logout_Button.AllowMouseEffects = True
+        Me.Logout_Button.AllowToggling = False
+        Me.Logout_Button.AnimationSpeed = 200
+        Me.Logout_Button.AutoGenerateColors = False
+        Me.Logout_Button.AutoRoundBorders = False
+        Me.Logout_Button.AutoSizeLeftIcon = True
+        Me.Logout_Button.AutoSizeRightIcon = True
+        Me.Logout_Button.BackColor = System.Drawing.Color.Transparent
+        Me.Logout_Button.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Logout_Button.BackgroundImage = CType(resources.GetObject("Logout_Button.BackgroundImage"), System.Drawing.Image)
+        Me.Logout_Button.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.Logout_Button.ButtonText = "LOGOUT"
+        Me.Logout_Button.ButtonTextMarginLeft = 0
+        Me.Logout_Button.ColorContrastOnClick = 45
+        Me.Logout_Button.ColorContrastOnHover = 45
+        Me.Logout_Button.Cursor = System.Windows.Forms.Cursors.Default
+        BorderEdges10.BottomLeft = True
+        BorderEdges10.BottomRight = True
+        BorderEdges10.TopLeft = True
+        BorderEdges10.TopRight = True
+        Me.Logout_Button.CustomizableEdges = BorderEdges10
+        Me.Logout_Button.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Logout_Button.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Logout_Button.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Logout_Button.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.Logout_Button.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
+        Me.Logout_Button.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Logout_Button.ForeColor = System.Drawing.Color.White
+        Me.Logout_Button.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Logout_Button.IconLeftCursor = System.Windows.Forms.Cursors.Default
+        Me.Logout_Button.IconLeftPadding = New System.Windows.Forms.Padding(11, 3, 3, 3)
+        Me.Logout_Button.IconMarginLeft = 11
+        Me.Logout_Button.IconPadding = 10
+        Me.Logout_Button.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Logout_Button.IconRightCursor = System.Windows.Forms.Cursors.Default
+        Me.Logout_Button.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
+        Me.Logout_Button.IconSize = 25
+        Me.Logout_Button.IdleBorderColor = System.Drawing.Color.Transparent
+        Me.Logout_Button.IdleBorderRadius = 1
+        Me.Logout_Button.IdleBorderThickness = 1
+        Me.Logout_Button.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Logout_Button.IdleIconLeftImage = Nothing
+        Me.Logout_Button.IdleIconRightImage = Nothing
+        Me.Logout_Button.IndicateFocus = False
+        Me.Logout_Button.Location = New System.Drawing.Point(1, 504)
+        Me.Logout_Button.Name = "Logout_Button"
+        Me.Logout_Button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Logout_Button.OnDisabledState.BorderRadius = 1
+        Me.Logout_Button.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.Logout_Button.OnDisabledState.BorderThickness = 1
+        Me.Logout_Button.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Logout_Button.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.Logout_Button.OnDisabledState.IconLeftImage = Nothing
+        Me.Logout_Button.OnDisabledState.IconRightImage = Nothing
+        Me.Logout_Button.onHoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Logout_Button.onHoverState.BorderRadius = 1
+        Me.Logout_Button.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.Logout_Button.onHoverState.BorderThickness = 1
+        Me.Logout_Button.onHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Logout_Button.onHoverState.ForeColor = System.Drawing.Color.White
+        Me.Logout_Button.onHoverState.IconLeftImage = Nothing
+        Me.Logout_Button.onHoverState.IconRightImage = Nothing
+        Me.Logout_Button.OnIdleState.BorderColor = System.Drawing.Color.Transparent
+        Me.Logout_Button.OnIdleState.BorderRadius = 1
+        Me.Logout_Button.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.Logout_Button.OnIdleState.BorderThickness = 1
+        Me.Logout_Button.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Logout_Button.OnIdleState.ForeColor = System.Drawing.Color.White
+        Me.Logout_Button.OnIdleState.IconLeftImage = Nothing
+        Me.Logout_Button.OnIdleState.IconRightImage = Nothing
+        Me.Logout_Button.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.Logout_Button.OnPressedState.BorderRadius = 1
+        Me.Logout_Button.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.Logout_Button.OnPressedState.BorderThickness = 1
+        Me.Logout_Button.OnPressedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.Logout_Button.OnPressedState.ForeColor = System.Drawing.Color.White
+        Me.Logout_Button.OnPressedState.IconLeftImage = Nothing
+        Me.Logout_Button.OnPressedState.IconRightImage = Nothing
+        Me.Logout_Button.Size = New System.Drawing.Size(241, 42)
+        Me.Logout_Button.TabIndex = 8
+        Me.Logout_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Logout_Button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Logout_Button.TextMarginLeft = 0
+        Me.Logout_Button.TextPadding = New System.Windows.Forms.Padding(0)
+        Me.Logout_Button.UseDefaultRadiusAndThickness = True
         '
         'MainForm
         '
@@ -1310,19 +1250,29 @@ Partial Class MainForm
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1366, 768)
-        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.Logout_Button)
+        Me.Controls.Add(Me.Settings_Button)
+        Me.Controls.Add(Me.Archive_Button)
+        Me.Controls.Add(Me.BunifuLabel1)
+        Me.Controls.Add(Me.OrganizationalChartButton)
         Me.Controls.Add(Me.MainPanel)
+        Me.Controls.Add(Me.Residents_Button)
+        Me.Controls.Add(Me.Blotter_Button)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Clearance_Button)
+        Me.Controls.Add(Me.Dashboard_Button)
+        Me.Controls.Add(Me.Purok_Button)
+        Me.Controls.Add(Me.Officials_Button)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Dashboard_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
@@ -1332,15 +1282,14 @@ Partial Class MainForm
     Friend WithEvents Clearance_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents Officials_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents Blotter_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
-    Friend WithEvents Logout_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents Settings_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents Archive_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents MainPanel As Bunifu.UI.WinForms.BunifuPanel
     Friend WithEvents OrganizationalChartButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuPictureBox1 As Bunifu.UI.WinForms.BunifuPictureBox
     Friend WithEvents BunifuTextBox3 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuTextBox2 As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents Logout_Button As Bunifu.UI.WinForms.BunifuButton.BunifuButton
 End Class
