@@ -255,7 +255,7 @@ Partial Class Login
         Me.LoginButton.IdleIconLeftImage = Nothing
         Me.LoginButton.IdleIconRightImage = Nothing
         Me.LoginButton.IndicateFocus = False
-        Me.LoginButton.Location = New System.Drawing.Point(130, 209)
+        Me.LoginButton.Location = New System.Drawing.Point(122, 209)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.LoginButton.OnDisabledState.BorderRadius = 1
@@ -289,7 +289,7 @@ Partial Class Login
         Me.LoginButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.LoginButton.OnPressedState.IconLeftImage = Nothing
         Me.LoginButton.OnPressedState.IconRightImage = Nothing
-        Me.LoginButton.Size = New System.Drawing.Size(150, 39)
+        Me.LoginButton.Size = New System.Drawing.Size(168, 41)
         Me.LoginButton.TabIndex = 0
         Me.LoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LoginButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center

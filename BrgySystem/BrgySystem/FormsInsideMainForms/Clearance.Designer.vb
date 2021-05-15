@@ -22,9 +22,6 @@ Partial Class Clearance
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Clearance))
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -79,29 +76,10 @@ Partial Class Clearance
         Dim StateProperties50 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties51 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties52 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.invoice_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.purpose_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.date_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.givenBy_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.typeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.BunifuLabel26 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel15 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel16 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel22 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel17 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel25 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel9 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel6 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.BunifuTextBox11 = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -137,10 +115,32 @@ Partial Class Clearance
         Me.BunifuLabel14 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel18 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.invoice_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.purpose_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.date_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.givenBy_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.typeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.BunifuLabel26 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel15 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel16 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel22 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel17 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel25 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel9 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel6 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -155,331 +155,6 @@ Partial Class Clearance
         Me.GroupBox1.Size = New System.Drawing.Size(1119, 759)
         Me.GroupBox1.TabIndex = 96
         Me.GroupBox1.TabStop = False
-        '
-        'Guna2DataGridView1
-        '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.Guna2DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.Guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.Guna2DataGridView1.ColumnHeadersHeight = 21
-        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.invoice_Column, Me.purpose_Column, Me.date_Column, Me.givenBy_Column, Me.fullname_Column, Me.typeColumn, Me.deleteButton_Column})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Guna2DataGridView1.EnableHeadersVisualStyles = False
-        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(5, 326)
-        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
-        Me.Guna2DataGridView1.RowHeadersVisible = False
-        Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(1108, 427)
-        Me.Guna2DataGridView1.TabIndex = 8
-        Me.Guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21
-        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'invoice_Column
-        '
-        Me.invoice_Column.HeaderText = "INVOICE NO."
-        Me.invoice_Column.Name = "invoice_Column"
-        '
-        'purpose_Column
-        '
-        Me.purpose_Column.HeaderText = "PURPOSE"
-        Me.purpose_Column.Name = "purpose_Column"
-        '
-        'date_Column
-        '
-        Me.date_Column.HeaderText = "DATE"
-        Me.date_Column.Name = "date_Column"
-        '
-        'givenBy_Column
-        '
-        Me.givenBy_Column.HeaderText = "GIVEN BY"
-        Me.givenBy_Column.Name = "givenBy_Column"
-        '
-        'fullname_Column
-        '
-        Me.fullname_Column.HeaderText = "FULLNAME"
-        Me.fullname_Column.Name = "fullname_Column"
-        '
-        'typeColumn
-        '
-        Me.typeColumn.HeaderText = "TYPE"
-        Me.typeColumn.Name = "typeColumn"
-        '
-        'deleteButton_Column
-        '
-        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.deleteButton_Column.HeaderText = ""
-        Me.deleteButton_Column.MinimumWidth = 25
-        Me.deleteButton_Column.Name = "deleteButton_Column"
-        Me.deleteButton_Column.Width = 25
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(-2, 0)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 1
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1125, 765)
-        Me.TableLayoutPanel1.TabIndex = 97
-        '
-        'BunifuLabel26
-        '
-        Me.BunifuLabel26.AllowParentOverrides = False
-        Me.BunifuLabel26.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BunifuLabel26.AutoEllipsis = False
-        Me.BunifuLabel26.CursorType = Nothing
-        Me.BunifuLabel26.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel26.Location = New System.Drawing.Point(53, 202)
-        Me.BunifuLabel26.Name = "BunifuLabel26"
-        Me.BunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel26.Size = New System.Drawing.Size(71, 21)
-        Me.BunifuLabel26.TabIndex = 73
-        Me.BunifuLabel26.Text = "Issued at:"
-        Me.BunifuLabel26.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel26.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel15
-        '
-        Me.BunifuLabel15.AllowParentOverrides = False
-        Me.BunifuLabel15.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel15.AutoEllipsis = False
-        Me.BunifuLabel15.CursorType = Nothing
-        Me.BunifuLabel15.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel15.Location = New System.Drawing.Point(81, 168)
-        Me.BunifuLabel15.Name = "BunifuLabel15"
-        Me.BunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel15.Size = New System.Drawing.Size(43, 21)
-        Me.BunifuLabel15.TabIndex = 69
-        Me.BunifuLabel15.Text = "Total:"
-        Me.BunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel16
-        '
-        Me.BunifuLabel16.AllowParentOverrides = False
-        Me.BunifuLabel16.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel16.AutoEllipsis = False
-        Me.BunifuLabel16.CursorType = Nothing
-        Me.BunifuLabel16.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel16.Location = New System.Drawing.Point(60, 127)
-        Me.BunifuLabel16.Name = "BunifuLabel16"
-        Me.BunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel16.Size = New System.Drawing.Size(64, 21)
-        Me.BunifuLabel16.TabIndex = 68
-        Me.BunifuLabel16.Text = "Amount:"
-        Me.BunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel22
-        '
-        Me.BunifuLabel22.AllowParentOverrides = False
-        Me.BunifuLabel22.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel22.AutoEllipsis = False
-        Me.BunifuLabel22.Cursor = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel22.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel22.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel22.Location = New System.Drawing.Point(10, 9)
-        Me.BunifuLabel22.Name = "BunifuLabel22"
-        Me.BunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel22.Size = New System.Drawing.Size(114, 21)
-        Me.BunifuLabel22.TabIndex = 52
-        Me.BunifuLabel22.Text = "Business Type:"
-        Me.BunifuLabel22.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel22.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel17
-        '
-        Me.BunifuLabel17.AllowParentOverrides = False
-        Me.BunifuLabel17.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel17.AutoEllipsis = False
-        Me.BunifuLabel17.CursorType = Nothing
-        Me.BunifuLabel17.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel17.Location = New System.Drawing.Point(58, 86)
-        Me.BunifuLabel17.Name = "BunifuLabel17"
-        Me.BunifuLabel17.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel17.Size = New System.Drawing.Size(66, 21)
-        Me.BunifuLabel17.TabIndex = 64
-        Me.BunifuLabel17.Text = "Purpose:"
-        Me.BunifuLabel17.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel17.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel25
-        '
-        Me.BunifuLabel25.AllowParentOverrides = False
-        Me.BunifuLabel25.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel25.AutoEllipsis = False
-        Me.BunifuLabel25.CursorType = Nothing
-        Me.BunifuLabel25.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel25.Location = New System.Drawing.Point(47, 47)
-        Me.BunifuLabel25.Name = "BunifuLabel25"
-        Me.BunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel25.Size = New System.Drawing.Size(77, 21)
-        Me.BunifuLabel25.TabIndex = 70
-        Me.BunifuLabel25.Text = "Issued on:"
-        Me.BunifuLabel25.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel25.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel11
-        '
-        Me.BunifuLabel11.AllowParentOverrides = False
-        Me.BunifuLabel11.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel11.AutoEllipsis = False
-        Me.BunifuLabel11.Cursor = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel11.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel11.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel11.Location = New System.Drawing.Point(81, 9)
-        Me.BunifuLabel11.Name = "BunifuLabel11"
-        Me.BunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel11.Size = New System.Drawing.Size(47, 21)
-        Me.BunifuLabel11.TabIndex = 50
-        Me.BunifuLabel11.Text = "Name:"
-        Me.BunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel9
-        '
-        Me.BunifuLabel9.AllowParentOverrides = False
-        Me.BunifuLabel9.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel9.AutoEllipsis = False
-        Me.BunifuLabel9.CursorType = Nothing
-        Me.BunifuLabel9.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel9.Location = New System.Drawing.Point(3, 48)
-        Me.BunifuLabel9.Name = "BunifuLabel9"
-        Me.BunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel9.Size = New System.Drawing.Size(134, 21)
-        Me.BunifuLabel9.TabIndex = 52
-        Me.BunifuLabel9.Text = "Transact Number:"
-        Me.BunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel10
-        '
-        Me.BunifuLabel10.AllowParentOverrides = False
-        Me.BunifuLabel10.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel10.AutoEllipsis = False
-        Me.BunifuLabel10.CursorType = Nothing
-        Me.BunifuLabel10.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel10.Location = New System.Drawing.Point(61, 87)
-        Me.BunifuLabel10.Name = "BunifuLabel10"
-        Me.BunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel10.Size = New System.Drawing.Size(67, 21)
-        Me.BunifuLabel10.TabIndex = 51
-        Me.BunifuLabel10.Text = "Address:"
-        Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel6
-        '
-        Me.BunifuLabel6.AllowParentOverrides = False
-        Me.BunifuLabel6.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel6.AutoEllipsis = False
-        Me.BunifuLabel6.CursorType = Nothing
-        Me.BunifuLabel6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel6.Location = New System.Drawing.Point(15, 128)
-        Me.BunifuLabel6.Name = "BunifuLabel6"
-        Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel6.Size = New System.Drawing.Size(113, 21)
-        Me.BunifuLabel6.TabIndex = 54
-        Me.BunifuLabel6.Text = "Date and Time:"
-        Me.BunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel8
-        '
-        Me.BunifuLabel8.AllowParentOverrides = False
-        Me.BunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel8.AutoEllipsis = False
-        Me.BunifuLabel8.CursorType = Nothing
-        Me.BunifuLabel8.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel8.Location = New System.Drawing.Point(69, 170)
-        Me.BunifuLabel8.Name = "BunifuLabel8"
-        Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel8.Size = New System.Drawing.Size(59, 21)
-        Me.BunifuLabel8.TabIndex = 53
-        Me.BunifuLabel8.Text = "Gender:"
-        Me.BunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel5
-        '
-        Me.BunifuLabel5.AllowParentOverrides = False
-        Me.BunifuLabel5.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel5.AutoEllipsis = False
-        Me.BunifuLabel5.CursorType = Nothing
-        Me.BunifuLabel5.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel5.Location = New System.Drawing.Point(94, 212)
-        Me.BunifuLabel5.Name = "BunifuLabel5"
-        Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel5.Size = New System.Drawing.Size(34, 21)
-        Me.BunifuLabel5.TabIndex = 55
-        Me.BunifuLabel5.Text = "Age:"
-        Me.BunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel4
-        '
-        Me.BunifuLabel4.AllowParentOverrides = False
-        Me.BunifuLabel4.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel4.AutoEllipsis = False
-        Me.BunifuLabel4.CursorType = Nothing
-        Me.BunifuLabel4.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel4.Location = New System.Drawing.Point(61, 253)
-        Me.BunifuLabel4.Name = "BunifuLabel4"
-        Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel4.Size = New System.Drawing.Size(67, 21)
-        Me.BunifuLabel4.TabIndex = 62
-        Me.BunifuLabel4.Text = "Quantity:"
-        Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
         'GroupBox2
         '
@@ -573,7 +248,7 @@ Partial Class Clearance
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(818, 284)
+        Me.BunifuButton1.Location = New System.Drawing.Point(818, 281)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 1
@@ -1922,6 +1597,331 @@ Partial Class Clearance
         Me.BunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'Guna2DataGridView1
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.Guna2DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.Guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.Guna2DataGridView1.ColumnHeadersHeight = 21
+        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.invoice_Column, Me.purpose_Column, Me.date_Column, Me.givenBy_Column, Me.fullname_Column, Me.typeColumn, Me.deleteButton_Column})
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Guna2DataGridView1.EnableHeadersVisualStyles = False
+        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(5, 326)
+        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
+        Me.Guna2DataGridView1.RowHeadersVisible = False
+        Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(1108, 427)
+        Me.Guna2DataGridView1.TabIndex = 8
+        Me.Guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21
+        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'invoice_Column
+        '
+        Me.invoice_Column.HeaderText = "INVOICE NO."
+        Me.invoice_Column.Name = "invoice_Column"
+        '
+        'purpose_Column
+        '
+        Me.purpose_Column.HeaderText = "PURPOSE"
+        Me.purpose_Column.Name = "purpose_Column"
+        '
+        'date_Column
+        '
+        Me.date_Column.HeaderText = "DATE"
+        Me.date_Column.Name = "date_Column"
+        '
+        'givenBy_Column
+        '
+        Me.givenBy_Column.HeaderText = "GIVEN BY"
+        Me.givenBy_Column.Name = "givenBy_Column"
+        '
+        'fullname_Column
+        '
+        Me.fullname_Column.HeaderText = "FULLNAME"
+        Me.fullname_Column.Name = "fullname_Column"
+        '
+        'typeColumn
+        '
+        Me.typeColumn.HeaderText = "TYPE"
+        Me.typeColumn.Name = "typeColumn"
+        '
+        'deleteButton_Column
+        '
+        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.deleteButton_Column.HeaderText = ""
+        Me.deleteButton_Column.MinimumWidth = 25
+        Me.deleteButton_Column.Name = "deleteButton_Column"
+        Me.deleteButton_Column.Width = 25
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel1.ColumnCount = 1
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(-2, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 1
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1125, 765)
+        Me.TableLayoutPanel1.TabIndex = 97
+        '
+        'BunifuLabel26
+        '
+        Me.BunifuLabel26.AllowParentOverrides = False
+        Me.BunifuLabel26.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuLabel26.AutoEllipsis = False
+        Me.BunifuLabel26.CursorType = Nothing
+        Me.BunifuLabel26.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel26.Location = New System.Drawing.Point(53, 202)
+        Me.BunifuLabel26.Name = "BunifuLabel26"
+        Me.BunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel26.Size = New System.Drawing.Size(71, 21)
+        Me.BunifuLabel26.TabIndex = 73
+        Me.BunifuLabel26.Text = "Issued at:"
+        Me.BunifuLabel26.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel26.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel15
+        '
+        Me.BunifuLabel15.AllowParentOverrides = False
+        Me.BunifuLabel15.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel15.AutoEllipsis = False
+        Me.BunifuLabel15.CursorType = Nothing
+        Me.BunifuLabel15.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel15.Location = New System.Drawing.Point(81, 168)
+        Me.BunifuLabel15.Name = "BunifuLabel15"
+        Me.BunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel15.Size = New System.Drawing.Size(43, 21)
+        Me.BunifuLabel15.TabIndex = 69
+        Me.BunifuLabel15.Text = "Total:"
+        Me.BunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel16
+        '
+        Me.BunifuLabel16.AllowParentOverrides = False
+        Me.BunifuLabel16.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel16.AutoEllipsis = False
+        Me.BunifuLabel16.CursorType = Nothing
+        Me.BunifuLabel16.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel16.Location = New System.Drawing.Point(60, 127)
+        Me.BunifuLabel16.Name = "BunifuLabel16"
+        Me.BunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel16.Size = New System.Drawing.Size(64, 21)
+        Me.BunifuLabel16.TabIndex = 68
+        Me.BunifuLabel16.Text = "Amount:"
+        Me.BunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel22
+        '
+        Me.BunifuLabel22.AllowParentOverrides = False
+        Me.BunifuLabel22.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel22.AutoEllipsis = False
+        Me.BunifuLabel22.Cursor = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel22.CursorType = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel22.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel22.Location = New System.Drawing.Point(10, 9)
+        Me.BunifuLabel22.Name = "BunifuLabel22"
+        Me.BunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel22.Size = New System.Drawing.Size(114, 21)
+        Me.BunifuLabel22.TabIndex = 52
+        Me.BunifuLabel22.Text = "Business Type:"
+        Me.BunifuLabel22.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel22.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel17
+        '
+        Me.BunifuLabel17.AllowParentOverrides = False
+        Me.BunifuLabel17.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel17.AutoEllipsis = False
+        Me.BunifuLabel17.CursorType = Nothing
+        Me.BunifuLabel17.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel17.Location = New System.Drawing.Point(58, 86)
+        Me.BunifuLabel17.Name = "BunifuLabel17"
+        Me.BunifuLabel17.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel17.Size = New System.Drawing.Size(66, 21)
+        Me.BunifuLabel17.TabIndex = 64
+        Me.BunifuLabel17.Text = "Purpose:"
+        Me.BunifuLabel17.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel17.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel25
+        '
+        Me.BunifuLabel25.AllowParentOverrides = False
+        Me.BunifuLabel25.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel25.AutoEllipsis = False
+        Me.BunifuLabel25.CursorType = Nothing
+        Me.BunifuLabel25.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel25.Location = New System.Drawing.Point(47, 47)
+        Me.BunifuLabel25.Name = "BunifuLabel25"
+        Me.BunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel25.Size = New System.Drawing.Size(77, 21)
+        Me.BunifuLabel25.TabIndex = 70
+        Me.BunifuLabel25.Text = "Issued on:"
+        Me.BunifuLabel25.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel25.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel11
+        '
+        Me.BunifuLabel11.AllowParentOverrides = False
+        Me.BunifuLabel11.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel11.AutoEllipsis = False
+        Me.BunifuLabel11.Cursor = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel11.CursorType = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel11.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel11.Location = New System.Drawing.Point(81, 9)
+        Me.BunifuLabel11.Name = "BunifuLabel11"
+        Me.BunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel11.Size = New System.Drawing.Size(47, 21)
+        Me.BunifuLabel11.TabIndex = 50
+        Me.BunifuLabel11.Text = "Name:"
+        Me.BunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel9
+        '
+        Me.BunifuLabel9.AllowParentOverrides = False
+        Me.BunifuLabel9.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel9.AutoEllipsis = False
+        Me.BunifuLabel9.CursorType = Nothing
+        Me.BunifuLabel9.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel9.Location = New System.Drawing.Point(3, 48)
+        Me.BunifuLabel9.Name = "BunifuLabel9"
+        Me.BunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel9.Size = New System.Drawing.Size(134, 21)
+        Me.BunifuLabel9.TabIndex = 52
+        Me.BunifuLabel9.Text = "Transact Number:"
+        Me.BunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel10
+        '
+        Me.BunifuLabel10.AllowParentOverrides = False
+        Me.BunifuLabel10.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel10.AutoEllipsis = False
+        Me.BunifuLabel10.CursorType = Nothing
+        Me.BunifuLabel10.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel10.Location = New System.Drawing.Point(61, 87)
+        Me.BunifuLabel10.Name = "BunifuLabel10"
+        Me.BunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel10.Size = New System.Drawing.Size(67, 21)
+        Me.BunifuLabel10.TabIndex = 51
+        Me.BunifuLabel10.Text = "Address:"
+        Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel6
+        '
+        Me.BunifuLabel6.AllowParentOverrides = False
+        Me.BunifuLabel6.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel6.AutoEllipsis = False
+        Me.BunifuLabel6.CursorType = Nothing
+        Me.BunifuLabel6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel6.Location = New System.Drawing.Point(15, 128)
+        Me.BunifuLabel6.Name = "BunifuLabel6"
+        Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel6.Size = New System.Drawing.Size(113, 21)
+        Me.BunifuLabel6.TabIndex = 54
+        Me.BunifuLabel6.Text = "Date and Time:"
+        Me.BunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel8
+        '
+        Me.BunifuLabel8.AllowParentOverrides = False
+        Me.BunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel8.AutoEllipsis = False
+        Me.BunifuLabel8.CursorType = Nothing
+        Me.BunifuLabel8.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel8.Location = New System.Drawing.Point(69, 170)
+        Me.BunifuLabel8.Name = "BunifuLabel8"
+        Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel8.Size = New System.Drawing.Size(59, 21)
+        Me.BunifuLabel8.TabIndex = 53
+        Me.BunifuLabel8.Text = "Gender:"
+        Me.BunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel5
+        '
+        Me.BunifuLabel5.AllowParentOverrides = False
+        Me.BunifuLabel5.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel5.AutoEllipsis = False
+        Me.BunifuLabel5.CursorType = Nothing
+        Me.BunifuLabel5.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel5.Location = New System.Drawing.Point(94, 212)
+        Me.BunifuLabel5.Name = "BunifuLabel5"
+        Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel5.Size = New System.Drawing.Size(34, 21)
+        Me.BunifuLabel5.TabIndex = 55
+        Me.BunifuLabel5.Text = "Age:"
+        Me.BunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel4
+        '
+        Me.BunifuLabel4.AllowParentOverrides = False
+        Me.BunifuLabel4.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel4.AutoEllipsis = False
+        Me.BunifuLabel4.CursorType = Nothing
+        Me.BunifuLabel4.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel4.Location = New System.Drawing.Point(61, 253)
+        Me.BunifuLabel4.Name = "BunifuLabel4"
+        Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel4.Size = New System.Drawing.Size(67, 21)
+        Me.BunifuLabel4.TabIndex = 62
+        Me.BunifuLabel4.Text = "Quantity:"
+        Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
         'Clearance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1936,10 +1936,10 @@ Partial Class Clearance
         Me.Text = "Clearance"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

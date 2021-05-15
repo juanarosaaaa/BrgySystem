@@ -16,24 +16,7 @@ Public Class Login
     End Sub
 
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
-
-        Dim command As New MySqlCommand("SELECT `Username`, `Password` FROM `login` where Username = '" & userNameTextBox.Text.Trim & "' and Password = '" & passwordTextBox.Text.Trim & "'", ConnectionDB.getConnection)
-
-
-        Dim adapter As New MySqlDataAdapter(command)
-        Dim table As New DataTable
-
-        adapter.Fill(table)
-        If (table.Rows.Count > 0) Then
-            My.Settings.UserNotLoggedOut = True
-            MainForm.Show()
-            Me.Close()
-            closeConnection()
-        Else
-            MessageBox.Show("Username or Password is Incorrect.", "WARNING!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        End If
-        'if user logged out then 
-        ' load this form 
-        ' else continue
+        Dim login As BarangayAccount = New MyLogin
+        login.authenticateLogin(Me, userNameTextBox.Text.Trim, passwordTextBox.Text.Trim)
     End Sub
 End Class
