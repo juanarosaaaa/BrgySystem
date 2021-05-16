@@ -277,7 +277,7 @@
     </Compile>
     <Compile Include="Classes\MyLogin.vb" />
     <Compile Include="Classes\MyPurok.vb" />
-    <Compile Include="ConnectionDB.vb" />
+    <Compile Include="Classes\ConnectionDB.vb" />
     <Compile Include="Classes\DataGridViewActionButtonEvent.vb" />
     <Compile Include="Classes\DataGridViewImages.vb" />
     <Compile Include="FormsInsideMainForms\Archive.Designer.vb">
@@ -334,10 +334,6 @@
     <Compile Include="FormsInsideMainForms\Settings.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\BarangayAccount.vb" />
-    <Compile Include="Interfaces\BarangayPurok.vb" />
-    <Compile Include="Interfaces\SettingActionButton.vb" />
-    <Compile Include="Interfaces\SettingImageAtDataGridView.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -367,7 +363,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Residents.vb" />
     <Compile Include="RemainThisSizeOfTheForm.vb" />
   </ItemGroup>
   <ItemGroup>

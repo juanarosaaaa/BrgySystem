@@ -1,6 +1,6 @@
 ﻿Public Class Blotter
-    Dim SettinggridViewImage As SettingImageAtDataGridView = New DataGridViewImages
-    Dim SettingAction As SettingActionButton = New DataGridViewActionButtonEvent
+    Dim SettinggridViewImage As New DataGridViewImages
+    Dim SettingAction As New DataGridViewActionButtonEvent
     Private Sub CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
         If (SettingAction.buttonOf_IsClick("settlementScheduleButton_Column", Guna2DataGridView1, e)) Then
             BlotterSettlementSchedule.ShowDialog()

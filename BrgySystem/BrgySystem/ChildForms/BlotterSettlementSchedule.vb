@@ -1,6 +1,6 @@
 ﻿Public Class BlotterSettlementSchedule
-    Dim SettinggridView As SettingImageAtDataGridView = New DataGridViewImages
-    Dim SettingAction As SettingActionButton = New DataGridViewActionButtonEvent
+    Dim SettinggridView As New DataGridViewImages
+    Dim SettingAction As New DataGridViewActionButtonEvent
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles DataGridView.CellFormatting
 
         SettinggridView.setImageAtButtonColumnOf("update_Button_Column", DataGridView, e, My.Resources.icons8_edit_24px)

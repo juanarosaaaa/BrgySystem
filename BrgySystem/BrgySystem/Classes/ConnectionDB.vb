@@ -8,12 +8,9 @@ Module ConnectionDB
 
 
     Private myconnection As MySqlConnection = New MySqlConnection("server=localhost;user id=root;database=barangay_system")
-    Private resultSet As Integer
 
-    Private adapter As MySqlDataAdapter
-    Private datatable As DataTable = New DataTable
+
     Private stateOfConnection As ConnectionState
-
 
     Public Sub openConnection()
         Try

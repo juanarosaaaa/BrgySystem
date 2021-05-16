@@ -16,7 +16,7 @@ Public Class Login
     End Sub
 
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
-        Dim login As BarangayAccount = New MyLogin
+        Dim login As New MyLogin
         login.authenticateLogin(Me, userNameTextBox.Text.Trim, passwordTextBox.Text.Trim)
     End Sub
 End Class

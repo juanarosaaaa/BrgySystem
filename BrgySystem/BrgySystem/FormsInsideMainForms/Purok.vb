@@ -1,13 +1,24 @@
 ﻿Public Class Purok
-    Dim SettinggridViewImage As SettingImageAtDataGridView = New DataGridViewImages
-    Dim SettingAction As SettingActionButton = New DataGridViewActionButtonEvent
-    Private Sub BunifuDataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PurokGridView.CellContentClick
-        SettingAction.buttonOf_IsClick("editButton_Column", PurokGridView, e)
+    Dim SettinggridViewImage As New DataGridViewImages
+    Dim SettingAction As New DataGridViewActionButtonEvent
+    Private var As MyPurok = New MyPurok
+    Private Sub BunifuDataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PurokGridView.CellClick
+        If SettingAction.buttonOf_IsClick("editButton_Column", PurokGridView, e) Then
+            PurokChildForm.AddPurokTextBox.Text = PurokGridView.SelectedCells(0).Value.ToString
+            PurokChildForm.AddPurokBttn.Enabled = False
+            closeConnection()
+            PurokChildForm.ShowDialog()
+
+
+        ElseIf (SettingAction.buttonOf_IsClick("deleteButton_Column", PurokGridView, e)) Then
+            MsgBox("delete")
+        ElseIf (SettingAction.buttonOf_IsClick("archiveButton_Column", PurokGridView, e)) Then
+            MsgBox("archive")
+        End If
+
     End Sub
 
-    Private Sub BunifuButton1_Click(sender As Object, e As EventArgs) Handles BunifuButton1.Click
-        PurokChildForm.ShowDialog()
-    End Sub
+
 
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles PurokGridView.CellFormatting
         SettinggridViewImage.setImageAtButtonColumnOf("editButton_Column", PurokGridView, e, My.Resources.icons8_edit_24px)
@@ -16,6 +27,14 @@
     End Sub
 
     Private Sub Purok_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        openConnection()
 
+        var.loadPurok(PurokGridView)
+    End Sub
+
+    Private Sub AddPurokButton_Click(sender As Object, e As EventArgs) Handles AddPurokButton.Click
+        closeConnection()
+        PurokChildForm.UpdateBttn.Enabled = False
+        PurokChildForm.ShowDialog()
     End Sub
 End Class

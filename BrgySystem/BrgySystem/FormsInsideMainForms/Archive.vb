@@ -1,8 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Archive
-    Dim SettinggridViewImage As SettingImageAtDataGridView = New DataGridViewImages
-    Dim SettingAction As SettingActionButton = New DataGridViewActionButtonEvent
+    Dim SettinggridViewImage As New DataGridViewImages
+    Dim SettingAction As New DataGridViewActionButtonEvent
     Private Sub ResidentsCellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ResidentsGridView.CellFormatting
         SettinggridViewImage.setImageAtButtonColumnOf("restore_Button_Column", ResidentsGridView, e, My.Resources.icons8_restore_page_24px_4)
         SettinggridViewImage.setImageAtButtonColumnOf("delete_Button_Column", ResidentsGridView, e, My.Resources.icons8_trash_24px)

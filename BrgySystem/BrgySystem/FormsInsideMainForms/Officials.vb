@@ -1,6 +1,6 @@
 ﻿Public Class Officials
-    Dim SettinggridViewImage As SettingImageAtDataGridView = New DataGridViewImages
-    Dim SettingAction As SettingActionButton = New DataGridViewActionButtonEvent
+    Dim SettinggridViewImage As New DataGridViewImages
+    Dim SettingAction As New DataGridViewActionButtonEvent
 
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles Guna2DataGridView1.CellFormatting
         SettinggridViewImage.setImageAtButtonColumnOf("editButton_Column", Guna2DataGridView1, e, My.Resources.icons8_edit_24px)
