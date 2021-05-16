@@ -71,6 +71,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuButton1.AllowAnimations = True
         Me.BunifuButton1.AllowMouseEffects = True
         Me.BunifuButton1.AllowToggling = False
+        Me.BunifuButton1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuButton1.AnimationSpeed = 200
         Me.BunifuButton1.AutoGenerateColors = False
         Me.BunifuButton1.AutoRoundBorders = False
@@ -113,7 +114,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(665, 267)
+        Me.BunifuButton1.Location = New System.Drawing.Point(760, 281)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 1
@@ -532,12 +533,13 @@ Partial Class SettingsBarangayDetailsForm
         'BunifuLabel6
         '
         Me.BunifuLabel6.AllowParentOverrides = False
+        Me.BunifuLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel6.AutoEllipsis = False
         Me.BunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel6.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel6.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel6.Location = New System.Drawing.Point(699, 39)
+        Me.BunifuLabel6.Location = New System.Drawing.Point(794, 53)
         Me.BunifuLabel6.Name = "BunifuLabel6"
         Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel6.Size = New System.Drawing.Size(136, 21)
@@ -642,13 +644,13 @@ Partial Class SettingsBarangayDetailsForm
         'BunifuPictureBox1
         '
         Me.BunifuPictureBox1.AllowFocused = False
-        Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuPictureBox1.AutoSizeHeight = True
         Me.BunifuPictureBox1.BorderRadius = 97
         Me.BunifuPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.BunifuPictureBox1.Image = CType(resources.GetObject("BunifuPictureBox1.Image"), System.Drawing.Image)
         Me.BunifuPictureBox1.IsCircle = True
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(665, 66)
+        Me.BunifuPictureBox1.Location = New System.Drawing.Point(760, 80)
         Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
         Me.BunifuPictureBox1.Size = New System.Drawing.Size(195, 195)
         Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -676,6 +678,7 @@ Partial Class SettingsBarangayDetailsForm
         '
         'TableLayoutPanel1
         '
+        Me.TableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706!))
@@ -689,7 +692,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox1, 1, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel7, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel8, 0, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(34, 42)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(129, 56)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))

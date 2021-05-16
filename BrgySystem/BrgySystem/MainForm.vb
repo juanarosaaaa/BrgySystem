@@ -12,6 +12,7 @@
 
     Private Sub Purok_Button_Click(sender As Object, e As EventArgs) Handles Purok_Button.Click
         Purok.Dispose()
+
         showPanelDisplayOf(Purok)
     End Sub
 
@@ -58,6 +59,7 @@
         panelDisplay.TopLevel = False
         panelDisplay.WindowState = FormWindowState.Maximized
         MainPanel.Controls.Add(panelDisplay)
+        closeConnection()
         panelDisplay.Show()
 
     End Sub

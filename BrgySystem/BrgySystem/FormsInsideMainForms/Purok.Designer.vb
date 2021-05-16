@@ -29,11 +29,14 @@ Partial Class Purok
         Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.SearchBarField = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.PurokGridView = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.purok_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.editButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
@@ -57,83 +60,87 @@ Partial Class Purok
         Me.Button1.TabIndex = 3
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'BunifuTextBox1
+        'SearchBarField
         '
-        Me.BunifuTextBox1.AcceptsReturn = False
-        Me.BunifuTextBox1.AcceptsTab = False
-        Me.BunifuTextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BunifuTextBox1.AnimationSpeed = 200
-        Me.BunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.BunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.BunifuTextBox1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuTextBox1.BackgroundImage = CType(resources.GetObject("BunifuTextBox1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuTextBox1.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.BunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuTextBox1.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox1.BorderRadius = 1
-        Me.BunifuTextBox1.BorderThickness = 1
-        Me.BunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.BunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.BunifuTextBox1.DefaultText = ""
-        Me.BunifuTextBox1.FillColor = System.Drawing.Color.White
-        Me.BunifuTextBox1.HideSelection = True
-        Me.BunifuTextBox1.IconLeft = Nothing
-        Me.BunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.IconPadding = 10
-        Me.BunifuTextBox1.IconRight = Nothing
-        Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.Lines = New String(-1) {}
-        Me.BunifuTextBox1.Location = New System.Drawing.Point(789, 9)
-        Me.BunifuTextBox1.MaxLength = 32767
-        Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.BunifuTextBox1.Modified = False
-        Me.BunifuTextBox1.Multiline = False
-        Me.BunifuTextBox1.Name = "BunifuTextBox1"
+        Me.SearchBarField.AcceptsReturn = False
+        Me.SearchBarField.AcceptsTab = False
+        Me.SearchBarField.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SearchBarField.AnimationSpeed = 200
+        Me.SearchBarField.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.SearchBarField.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.SearchBarField.BackColor = System.Drawing.Color.Transparent
+        Me.SearchBarField.BackgroundImage = CType(resources.GetObject("SearchBarField.BackgroundImage"), System.Drawing.Image)
+        Me.SearchBarField.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.SearchBarField.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.SearchBarField.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SearchBarField.BorderColorIdle = System.Drawing.Color.Silver
+        Me.SearchBarField.BorderRadius = 1
+        Me.SearchBarField.BorderThickness = 1
+        Me.SearchBarField.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.SearchBarField.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.SearchBarField.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.SearchBarField.DefaultText = ""
+        Me.SearchBarField.FillColor = System.Drawing.Color.White
+        Me.SearchBarField.HideSelection = True
+        Me.SearchBarField.IconLeft = Nothing
+        Me.SearchBarField.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.SearchBarField.IconPadding = 10
+        Me.SearchBarField.IconRight = Nothing
+        Me.SearchBarField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.SearchBarField.Lines = New String(-1) {}
+        Me.SearchBarField.Location = New System.Drawing.Point(789, 9)
+        Me.SearchBarField.MaxLength = 32767
+        Me.SearchBarField.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.SearchBarField.Modified = False
+        Me.SearchBarField.Multiline = False
+        Me.SearchBarField.Name = "SearchBarField"
         StateProperties1.BorderColor = System.Drawing.Color.DodgerBlue
         StateProperties1.FillColor = System.Drawing.Color.Empty
         StateProperties1.ForeColor = System.Drawing.Color.Empty
         StateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BunifuTextBox1.OnActiveState = StateProperties1
+        Me.SearchBarField.OnActiveState = StateProperties1
         StateProperties2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         StateProperties2.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         StateProperties2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         StateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.BunifuTextBox1.OnDisabledState = StateProperties2
+        Me.SearchBarField.OnDisabledState = StateProperties2
         StateProperties3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         StateProperties3.FillColor = System.Drawing.Color.Empty
         StateProperties3.ForeColor = System.Drawing.Color.Empty
         StateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BunifuTextBox1.OnHoverState = StateProperties3
+        Me.SearchBarField.OnHoverState = StateProperties3
         StateProperties4.BorderColor = System.Drawing.Color.Silver
         StateProperties4.FillColor = System.Drawing.Color.White
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BunifuTextBox1.OnIdleState = StateProperties4
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3)
-        Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.BunifuTextBox1.PlaceholderText = "SEARCH"
-        Me.BunifuTextBox1.ReadOnly = False
-        Me.BunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.BunifuTextBox1.SelectedText = ""
-        Me.BunifuTextBox1.SelectionLength = 0
-        Me.BunifuTextBox1.SelectionStart = 0
-        Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(299, 37)
-        Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.BunifuTextBox1.TabIndex = 1
-        Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.BunifuTextBox1.TextMarginBottom = 0
-        Me.BunifuTextBox1.TextMarginLeft = 3
-        Me.BunifuTextBox1.TextMarginTop = 0
-        Me.BunifuTextBox1.TextPlaceholder = "SEARCH"
-        Me.BunifuTextBox1.UseSystemPasswordChar = False
-        Me.BunifuTextBox1.WordWrap = True
+        Me.SearchBarField.OnIdleState = StateProperties4
+        Me.SearchBarField.Padding = New System.Windows.Forms.Padding(3)
+        Me.SearchBarField.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.SearchBarField.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.SearchBarField.PlaceholderText = "SEARCH"
+        Me.SearchBarField.ReadOnly = False
+        Me.SearchBarField.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.SearchBarField.SelectedText = ""
+        Me.SearchBarField.SelectionLength = 0
+        Me.SearchBarField.SelectionStart = 0
+        Me.SearchBarField.ShortcutsEnabled = True
+        Me.SearchBarField.Size = New System.Drawing.Size(299, 37)
+        Me.SearchBarField.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.SearchBarField.TabIndex = 1
+        Me.SearchBarField.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.SearchBarField.TextMarginBottom = 0
+        Me.SearchBarField.TextMarginLeft = 3
+        Me.SearchBarField.TextMarginTop = 0
+        Me.SearchBarField.TextPlaceholder = "SEARCH"
+        Me.SearchBarField.UseSystemPasswordChar = False
+        Me.SearchBarField.WordWrap = True
         '
         'PurokGridView
         '
+        Me.PurokGridView.AllowUserToAddRows = False
+        Me.PurokGridView.AllowUserToDeleteRows = False
+        Me.PurokGridView.AllowUserToOrderColumns = True
+        Me.PurokGridView.AllowUserToResizeRows = False
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         Me.PurokGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
@@ -156,21 +163,21 @@ Partial Class Purok
         Me.PurokGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.PurokGridView.ColumnHeadersHeight = 21
         Me.PurokGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.purok_Column, Me.editButton_Column, Me.deleteButton_Column, Me.archiveButton_Column})
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.PurokGridView.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.PurokGridView.DefaultCellStyle = DataGridViewCellStyle7
         Me.PurokGridView.EnableHeadersVisualStyles = False
         Me.PurokGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PurokGridView.Location = New System.Drawing.Point(4, 57)
+        Me.PurokGridView.Location = New System.Drawing.Point(4, 65)
         Me.PurokGridView.Name = "PurokGridView"
         Me.PurokGridView.RowHeadersVisible = False
         Me.PurokGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.PurokGridView.Size = New System.Drawing.Size(1106, 688)
+        Me.PurokGridView.Size = New System.Drawing.Size(1106, 680)
         Me.PurokGridView.TabIndex = 4
         Me.PurokGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.PurokGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -198,7 +205,6 @@ Partial Class Purok
         'purok_Column
         '
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.NullValue = "PUROK SAMPLE"
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.purok_Column.DefaultCellStyle = DataGridViewCellStyle3
         Me.purok_Column.HeaderText = "PUROK"
@@ -207,6 +213,8 @@ Partial Class Purok
         'editButton_Column
         '
         Me.editButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.editButton_Column.DefaultCellStyle = DataGridViewCellStyle4
         Me.editButton_Column.HeaderText = ""
         Me.editButton_Column.MinimumWidth = 25
         Me.editButton_Column.Name = "editButton_Column"
@@ -215,6 +223,8 @@ Partial Class Purok
         'deleteButton_Column
         '
         Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.deleteButton_Column.DefaultCellStyle = DataGridViewCellStyle5
         Me.deleteButton_Column.HeaderText = ""
         Me.deleteButton_Column.MinimumWidth = 25
         Me.deleteButton_Column.Name = "deleteButton_Column"
@@ -223,6 +233,8 @@ Partial Class Purok
         'archiveButton_Column
         '
         Me.archiveButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.archiveButton_Column.DefaultCellStyle = DataGridViewCellStyle6
         Me.archiveButton_Column.HeaderText = ""
         Me.archiveButton_Column.MinimumWidth = 25
         Me.archiveButton_Column.Name = "archiveButton_Column"
@@ -337,7 +349,7 @@ Partial Class Purok
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.BunifuTextBox1)
+        Me.GroupBox1.Controls.Add(Me.SearchBarField)
         Me.GroupBox1.Controls.Add(Me.PurokGridView)
         Me.GroupBox1.Controls.Add(Me.AddPurokButton)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -367,13 +379,13 @@ Partial Class Purok
 
     End Sub
     Friend WithEvents Button1 As Button
-    Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents SearchBarField As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents PurokGridView As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents AddPurokButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents purok_Column As DataGridViewTextBoxColumn
     Friend WithEvents editButton_Column As DataGridViewImageColumn
     Friend WithEvents deleteButton_Column As DataGridViewImageColumn
     Friend WithEvents archiveButton_Column As DataGridViewImageColumn
-    Friend WithEvents AddPurokButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents GroupBox1 As GroupBox
 End Class

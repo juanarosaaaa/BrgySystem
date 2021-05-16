@@ -23,90 +23,90 @@ Partial Class PurokChildForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PurokChildForm))
-        Dim StateProperties5 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties6 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties7 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties8 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim BorderEdges3 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
-        Dim BorderEdges4 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
-        Me.AddPurokTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
+        Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Me.PurokTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.AddPurokBttn = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.UpdateBttn = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.SuspendLayout()
         '
-        'AddPurokTextBox
+        'PurokTextBox
         '
-        Me.AddPurokTextBox.AcceptsReturn = False
-        Me.AddPurokTextBox.AcceptsTab = False
-        Me.AddPurokTextBox.AnimationSpeed = 200
-        Me.AddPurokTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.AddPurokTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.AddPurokTextBox.BackColor = System.Drawing.Color.Transparent
-        Me.AddPurokTextBox.BackgroundImage = CType(resources.GetObject("AddPurokTextBox.BackgroundImage"), System.Drawing.Image)
-        Me.AddPurokTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.AddPurokTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.AddPurokTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.AddPurokTextBox.BorderColorIdle = System.Drawing.Color.Silver
-        Me.AddPurokTextBox.BorderRadius = 1
-        Me.AddPurokTextBox.BorderThickness = 1
-        Me.AddPurokTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.AddPurokTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.AddPurokTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.AddPurokTextBox.DefaultText = ""
-        Me.AddPurokTextBox.FillColor = System.Drawing.Color.White
-        Me.AddPurokTextBox.HideSelection = True
-        Me.AddPurokTextBox.IconLeft = Nothing
-        Me.AddPurokTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.AddPurokTextBox.IconPadding = 10
-        Me.AddPurokTextBox.IconRight = Nothing
-        Me.AddPurokTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.AddPurokTextBox.Lines = New String(-1) {}
-        Me.AddPurokTextBox.Location = New System.Drawing.Point(7, 66)
-        Me.AddPurokTextBox.MaxLength = 32767
-        Me.AddPurokTextBox.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.AddPurokTextBox.Modified = False
-        Me.AddPurokTextBox.Multiline = False
-        Me.AddPurokTextBox.Name = "AddPurokTextBox"
-        StateProperties5.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties5.FillColor = System.Drawing.Color.Empty
-        StateProperties5.ForeColor = System.Drawing.Color.Empty
-        StateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.AddPurokTextBox.OnActiveState = StateProperties5
-        StateProperties6.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties6.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.AddPurokTextBox.OnDisabledState = StateProperties6
-        StateProperties7.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties7.FillColor = System.Drawing.Color.Empty
-        StateProperties7.ForeColor = System.Drawing.Color.Empty
-        StateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.AddPurokTextBox.OnHoverState = StateProperties7
-        StateProperties8.BorderColor = System.Drawing.Color.Silver
-        StateProperties8.FillColor = System.Drawing.Color.White
-        StateProperties8.ForeColor = System.Drawing.Color.Empty
-        StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.AddPurokTextBox.OnIdleState = StateProperties8
-        Me.AddPurokTextBox.Padding = New System.Windows.Forms.Padding(3)
-        Me.AddPurokTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.AddPurokTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.AddPurokTextBox.PlaceholderText = ""
-        Me.AddPurokTextBox.ReadOnly = False
-        Me.AddPurokTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.AddPurokTextBox.SelectedText = ""
-        Me.AddPurokTextBox.SelectionLength = 0
-        Me.AddPurokTextBox.SelectionStart = 0
-        Me.AddPurokTextBox.ShortcutsEnabled = True
-        Me.AddPurokTextBox.Size = New System.Drawing.Size(408, 36)
-        Me.AddPurokTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.AddPurokTextBox.TabIndex = 0
-        Me.AddPurokTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.AddPurokTextBox.TextMarginBottom = 0
-        Me.AddPurokTextBox.TextMarginLeft = 3
-        Me.AddPurokTextBox.TextMarginTop = 0
-        Me.AddPurokTextBox.TextPlaceholder = ""
-        Me.AddPurokTextBox.UseSystemPasswordChar = False
-        Me.AddPurokTextBox.WordWrap = True
+        Me.PurokTextBox.AcceptsReturn = False
+        Me.PurokTextBox.AcceptsTab = False
+        Me.PurokTextBox.AnimationSpeed = 200
+        Me.PurokTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.PurokTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.PurokTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.PurokTextBox.BackgroundImage = CType(resources.GetObject("PurokTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.PurokTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.PurokTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.PurokTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PurokTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.PurokTextBox.BorderRadius = 1
+        Me.PurokTextBox.BorderThickness = 1
+        Me.PurokTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.PurokTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.PurokTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.PurokTextBox.DefaultText = ""
+        Me.PurokTextBox.FillColor = System.Drawing.Color.White
+        Me.PurokTextBox.HideSelection = True
+        Me.PurokTextBox.IconLeft = Nothing
+        Me.PurokTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.PurokTextBox.IconPadding = 10
+        Me.PurokTextBox.IconRight = Nothing
+        Me.PurokTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.PurokTextBox.Lines = New String(-1) {}
+        Me.PurokTextBox.Location = New System.Drawing.Point(7, 66)
+        Me.PurokTextBox.MaxLength = 32767
+        Me.PurokTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.PurokTextBox.Modified = False
+        Me.PurokTextBox.Multiline = False
+        Me.PurokTextBox.Name = "PurokTextBox"
+        StateProperties1.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties1.FillColor = System.Drawing.Color.Empty
+        StateProperties1.ForeColor = System.Drawing.Color.Empty
+        StateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.PurokTextBox.OnActiveState = StateProperties1
+        StateProperties2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties2.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.PurokTextBox.OnDisabledState = StateProperties2
+        StateProperties3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties3.FillColor = System.Drawing.Color.Empty
+        StateProperties3.ForeColor = System.Drawing.Color.Empty
+        StateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.PurokTextBox.OnHoverState = StateProperties3
+        StateProperties4.BorderColor = System.Drawing.Color.Silver
+        StateProperties4.FillColor = System.Drawing.Color.White
+        StateProperties4.ForeColor = System.Drawing.Color.Empty
+        StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.PurokTextBox.OnIdleState = StateProperties4
+        Me.PurokTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.PurokTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.PurokTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.PurokTextBox.PlaceholderText = ""
+        Me.PurokTextBox.ReadOnly = False
+        Me.PurokTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.PurokTextBox.SelectedText = ""
+        Me.PurokTextBox.SelectionLength = 0
+        Me.PurokTextBox.SelectionStart = 0
+        Me.PurokTextBox.ShortcutsEnabled = True
+        Me.PurokTextBox.Size = New System.Drawing.Size(408, 36)
+        Me.PurokTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.PurokTextBox.TabIndex = 0
+        Me.PurokTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.PurokTextBox.TextMarginBottom = 0
+        Me.PurokTextBox.TextMarginLeft = 3
+        Me.PurokTextBox.TextMarginTop = 0
+        Me.PurokTextBox.TextPlaceholder = ""
+        Me.PurokTextBox.UseSystemPasswordChar = False
+        Me.PurokTextBox.WordWrap = True
         '
         'AddPurokBttn
         '
@@ -127,11 +127,11 @@ Partial Class PurokChildForm
         Me.AddPurokBttn.ColorContrastOnClick = 45
         Me.AddPurokBttn.ColorContrastOnHover = 45
         Me.AddPurokBttn.Cursor = System.Windows.Forms.Cursors.Default
-        BorderEdges3.BottomLeft = True
-        BorderEdges3.BottomRight = True
-        BorderEdges3.TopLeft = True
-        BorderEdges3.TopRight = True
-        Me.AddPurokBttn.CustomizableEdges = BorderEdges3
+        BorderEdges1.BottomLeft = True
+        BorderEdges1.BottomRight = True
+        BorderEdges1.TopLeft = True
+        BorderEdges1.TopRight = True
+        Me.AddPurokBttn.CustomizableEdges = BorderEdges1
         Me.AddPurokBttn.DialogResult = System.Windows.Forms.DialogResult.None
         Me.AddPurokBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.AddPurokBttn.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -216,11 +216,11 @@ Partial Class PurokChildForm
         Me.UpdateBttn.ColorContrastOnClick = 45
         Me.UpdateBttn.ColorContrastOnHover = 45
         Me.UpdateBttn.Cursor = System.Windows.Forms.Cursors.Default
-        BorderEdges4.BottomLeft = True
-        BorderEdges4.BottomRight = True
-        BorderEdges4.TopLeft = True
-        BorderEdges4.TopRight = True
-        Me.UpdateBttn.CustomizableEdges = BorderEdges4
+        BorderEdges2.BottomLeft = True
+        BorderEdges2.BottomRight = True
+        BorderEdges2.TopLeft = True
+        BorderEdges2.TopRight = True
+        Me.UpdateBttn.CustomizableEdges = BorderEdges2
         Me.UpdateBttn.DialogResult = System.Windows.Forms.DialogResult.None
         Me.UpdateBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.UpdateBttn.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -294,7 +294,7 @@ Partial Class PurokChildForm
         Me.ClientSize = New System.Drawing.Size(425, 175)
         Me.Controls.Add(Me.UpdateBttn)
         Me.Controls.Add(Me.AddPurokBttn)
-        Me.Controls.Add(Me.AddPurokTextBox)
+        Me.Controls.Add(Me.PurokTextBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MinimizeBox = False
         Me.Name = "PurokChildForm"
@@ -304,7 +304,7 @@ Partial Class PurokChildForm
 
     End Sub
 
-    Friend WithEvents AddPurokTextBox As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents PurokTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents AddPurokBttn As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents UpdateBttn As Bunifu.UI.WinForms.BunifuButton.BunifuButton
 End Class
