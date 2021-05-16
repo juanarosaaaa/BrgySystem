@@ -162,6 +162,9 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.25\lib\net452\MySql.Data.dll</HintPath>
@@ -224,34 +227,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="checkInputValidity.vb" />
-    <Compile Include="ChildForms\AddNewBlotterForm.Designer.vb">
-      <DependentUpon>AddNewBlotterForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\AddNewBlotterForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ChildForms\BlotterSettlementSchedule.Designer.vb">
       <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\BlotterSettlementSchedule.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\OfficialsChildForm.Designer.vb">
-      <DependentUpon>OfficialsChildForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\OfficialsChildForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ChildForms\PurokChildForm.Designer.vb">
       <DependentUpon>PurokChildForm.vb</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\PurokChildForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\ResidentsChildForm.Designer.vb">
-      <DependentUpon>ResidentsChildForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\ResidentsChildForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChildForms\SettingsAccountSettingsForm.Designer.vb">
@@ -290,9 +275,11 @@
     <Compile Include="ChildForms\UpdateStatusOfSettlementBlotter.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connection.vb" />
-    <Compile Include="DataGridViewActionButtonEvent.vb" />
-    <Compile Include="DataGridViewImages.vb" />
+    <Compile Include="Classes\MyLogin.vb" />
+    <Compile Include="Classes\MyPurok.vb" />
+    <Compile Include="ConnectionDB.vb" />
+    <Compile Include="Classes\DataGridViewActionButtonEvent.vb" />
+    <Compile Include="Classes\DataGridViewImages.vb" />
     <Compile Include="FormsInsideMainForms\Archive.Designer.vb">
       <DependentUpon>Archive.vb</DependentUpon>
     </Compile>
@@ -347,6 +334,10 @@
     <Compile Include="FormsInsideMainForms\Settings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaces\BarangayAccount.vb" />
+    <Compile Include="Interfaces\BarangayPurok.vb" />
+    <Compile Include="Interfaces\SettingActionButton.vb" />
+    <Compile Include="Interfaces\SettingImageAtDataGridView.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -364,6 +355,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -375,24 +367,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="MyPurok.vb" />
     <Compile Include="Residents.vb" />
+    <Compile Include="RemainThisSizeOfTheForm.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ChildForms\AddNewBlotterForm.resx">
-      <DependentUpon>AddNewBlotterForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\BlotterSettlementSchedule.resx">
       <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\OfficialsChildForm.resx">
-      <DependentUpon>OfficialsChildForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\PurokChildForm.resx">
       <DependentUpon>PurokChildForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\ResidentsChildForm.resx">
-      <DependentUpon>ResidentsChildForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\SettingsAccountSettingsForm.resx">
       <DependentUpon>SettingsAccountSettingsForm.vb</DependentUpon>

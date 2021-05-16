@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class PurokChildForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class PurokChildForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PurokChildForm))
         Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -28,185 +28,274 @@ Partial Class PurokChildForm
         Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
-        Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.BunifuButton1 = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Me.AddPurokTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.AddPurokBttn = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Me.UpdateBttn = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.SuspendLayout()
         '
-        'BunifuTextBox1
+        'AddPurokTextBox
         '
-        Me.BunifuTextBox1.AcceptsReturn = False
-        Me.BunifuTextBox1.AcceptsTab = False
-        Me.BunifuTextBox1.AnimationSpeed = 200
-        Me.BunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.BunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.BunifuTextBox1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuTextBox1.BackgroundImage = CType(resources.GetObject("BunifuTextBox1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuTextBox1.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.BunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuTextBox1.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox1.BorderRadius = 1
-        Me.BunifuTextBox1.BorderThickness = 1
-        Me.BunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.BunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.BunifuTextBox1.DefaultText = ""
-        Me.BunifuTextBox1.FillColor = System.Drawing.Color.White
-        Me.BunifuTextBox1.HideSelection = True
-        Me.BunifuTextBox1.IconLeft = Nothing
-        Me.BunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.IconPadding = 10
-        Me.BunifuTextBox1.IconRight = Nothing
-        Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.Lines = New String(-1) {}
-        Me.BunifuTextBox1.Location = New System.Drawing.Point(16, 64)
-        Me.BunifuTextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuTextBox1.MaxLength = 32767
-        Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.BunifuTextBox1.Modified = False
-        Me.BunifuTextBox1.Multiline = False
-        Me.BunifuTextBox1.Name = "BunifuTextBox1"
+        Me.AddPurokTextBox.AcceptsReturn = False
+        Me.AddPurokTextBox.AcceptsTab = False
+        Me.AddPurokTextBox.AnimationSpeed = 200
+        Me.AddPurokTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.AddPurokTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.AddPurokTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.AddPurokTextBox.BackgroundImage = CType(resources.GetObject("AddPurokTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.AddPurokTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.AddPurokTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.AddPurokTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.AddPurokTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.AddPurokTextBox.BorderRadius = 1
+        Me.AddPurokTextBox.BorderThickness = 1
+        Me.AddPurokTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.AddPurokTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.AddPurokTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.AddPurokTextBox.DefaultText = ""
+        Me.AddPurokTextBox.FillColor = System.Drawing.Color.White
+        Me.AddPurokTextBox.HideSelection = True
+        Me.AddPurokTextBox.IconLeft = Nothing
+        Me.AddPurokTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.AddPurokTextBox.IconPadding = 10
+        Me.AddPurokTextBox.IconRight = Nothing
+        Me.AddPurokTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.AddPurokTextBox.Lines = New String(-1) {}
+        Me.AddPurokTextBox.Location = New System.Drawing.Point(7, 66)
+        Me.AddPurokTextBox.MaxLength = 32767
+        Me.AddPurokTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.AddPurokTextBox.Modified = False
+        Me.AddPurokTextBox.Multiline = False
+        Me.AddPurokTextBox.Name = "AddPurokTextBox"
         StateProperties1.BorderColor = System.Drawing.Color.DodgerBlue
         StateProperties1.FillColor = System.Drawing.Color.Empty
         StateProperties1.ForeColor = System.Drawing.Color.Empty
         StateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BunifuTextBox1.OnActiveState = StateProperties1
+        Me.AddPurokTextBox.OnActiveState = StateProperties1
         StateProperties2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         StateProperties2.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         StateProperties2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         StateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.BunifuTextBox1.OnDisabledState = StateProperties2
+        Me.AddPurokTextBox.OnDisabledState = StateProperties2
         StateProperties3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         StateProperties3.FillColor = System.Drawing.Color.Empty
         StateProperties3.ForeColor = System.Drawing.Color.Empty
         StateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BunifuTextBox1.OnHoverState = StateProperties3
+        Me.AddPurokTextBox.OnHoverState = StateProperties3
         StateProperties4.BorderColor = System.Drawing.Color.Silver
         StateProperties4.FillColor = System.Drawing.Color.White
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BunifuTextBox1.OnIdleState = StateProperties4
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.BunifuTextBox1.PlaceholderText = "New purok name"
-        Me.BunifuTextBox1.ReadOnly = False
-        Me.BunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.BunifuTextBox1.SelectedText = ""
-        Me.BunifuTextBox1.SelectionLength = 0
-        Me.BunifuTextBox1.SelectionStart = 0
-        Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(525, 50)
-        Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.BunifuTextBox1.TabIndex = 3
-        Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.BunifuTextBox1.TextMarginBottom = 0
-        Me.BunifuTextBox1.TextMarginLeft = 3
-        Me.BunifuTextBox1.TextMarginTop = 0
-        Me.BunifuTextBox1.TextPlaceholder = "New purok name"
-        Me.BunifuTextBox1.UseSystemPasswordChar = False
-        Me.BunifuTextBox1.WordWrap = True
+        Me.AddPurokTextBox.OnIdleState = StateProperties4
+        Me.AddPurokTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.AddPurokTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.AddPurokTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.AddPurokTextBox.PlaceholderText = ""
+        Me.AddPurokTextBox.ReadOnly = False
+        Me.AddPurokTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.AddPurokTextBox.SelectedText = ""
+        Me.AddPurokTextBox.SelectionLength = 0
+        Me.AddPurokTextBox.SelectionStart = 0
+        Me.AddPurokTextBox.ShortcutsEnabled = True
+        Me.AddPurokTextBox.Size = New System.Drawing.Size(408, 36)
+        Me.AddPurokTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.AddPurokTextBox.TabIndex = 0
+        Me.AddPurokTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.AddPurokTextBox.TextMarginBottom = 0
+        Me.AddPurokTextBox.TextMarginLeft = 3
+        Me.AddPurokTextBox.TextMarginTop = 0
+        Me.AddPurokTextBox.TextPlaceholder = ""
+        Me.AddPurokTextBox.UseSystemPasswordChar = False
+        Me.AddPurokTextBox.WordWrap = True
         '
-        'BunifuButton1
+        'AddPurokBttn
         '
-        Me.BunifuButton1.AllowAnimations = True
-        Me.BunifuButton1.AllowMouseEffects = True
-        Me.BunifuButton1.AllowToggling = False
-        Me.BunifuButton1.AnimationSpeed = 200
-        Me.BunifuButton1.AutoGenerateColors = False
-        Me.BunifuButton1.AutoRoundBorders = False
-        Me.BunifuButton1.AutoSizeLeftIcon = True
-        Me.BunifuButton1.AutoSizeRightIcon = True
-        Me.BunifuButton1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuButton1.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuButton1.BackgroundImage = CType(resources.GetObject("BunifuButton1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.ButtonText = "ADD"
-        Me.BunifuButton1.ButtonTextMarginLeft = 0
-        Me.BunifuButton1.ColorContrastOnClick = 45
-        Me.BunifuButton1.ColorContrastOnHover = 45
-        Me.BunifuButton1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.AddPurokBttn.AllowAnimations = True
+        Me.AddPurokBttn.AllowMouseEffects = True
+        Me.AddPurokBttn.AllowToggling = False
+        Me.AddPurokBttn.AnimationSpeed = 200
+        Me.AddPurokBttn.AutoGenerateColors = False
+        Me.AddPurokBttn.AutoRoundBorders = False
+        Me.AddPurokBttn.AutoSizeLeftIcon = True
+        Me.AddPurokBttn.AutoSizeRightIcon = True
+        Me.AddPurokBttn.BackColor = System.Drawing.Color.Transparent
+        Me.AddPurokBttn.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.AddPurokBttn.BackgroundImage = CType(resources.GetObject("AddPurokBttn.BackgroundImage"), System.Drawing.Image)
+        Me.AddPurokBttn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.AddPurokBttn.ButtonText = "Add"
+        Me.AddPurokBttn.ButtonTextMarginLeft = 0
+        Me.AddPurokBttn.ColorContrastOnClick = 45
+        Me.AddPurokBttn.ColorContrastOnHover = 45
+        Me.AddPurokBttn.Cursor = System.Windows.Forms.Cursors.Default
         BorderEdges1.BottomLeft = True
         BorderEdges1.BottomRight = True
         BorderEdges1.TopLeft = True
         BorderEdges1.TopRight = True
-        Me.BunifuButton1.CustomizableEdges = BorderEdges1
-        Me.BunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.BunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuButton1.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
-        Me.BunifuButton1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.BunifuButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.BunifuButton1.ForeColor = System.Drawing.Color.White
-        Me.BunifuButton1.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default
-        Me.BunifuButton1.IconLeftPadding = New System.Windows.Forms.Padding(11, 3, 3, 3)
-        Me.BunifuButton1.IconMarginLeft = 11
-        Me.BunifuButton1.IconPadding = 10
-        Me.BunifuButton1.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Default
-        Me.BunifuButton1.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
-        Me.BunifuButton1.IconSize = 25
-        Me.BunifuButton1.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.BunifuButton1.IdleBorderRadius = 1
-        Me.BunifuButton1.IdleBorderThickness = 1
-        Me.BunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuButton1.IdleIconLeftImage = Nothing
-        Me.BunifuButton1.IdleIconRightImage = Nothing
-        Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(151, 128)
-        Me.BunifuButton1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuButton1.Name = "BunifuButton1"
-        Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BunifuButton1.OnDisabledState.BorderRadius = 1
-        Me.BunifuButton1.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.OnDisabledState.BorderThickness = 1
-        Me.BunifuButton1.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuButton1.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
-        Me.BunifuButton1.OnDisabledState.IconLeftImage = Nothing
-        Me.BunifuButton1.OnDisabledState.IconRightImage = Nothing
-        Me.BunifuButton1.onHoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuButton1.onHoverState.BorderRadius = 1
-        Me.BunifuButton1.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.onHoverState.BorderThickness = 1
-        Me.BunifuButton1.onHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuButton1.onHoverState.ForeColor = System.Drawing.Color.White
-        Me.BunifuButton1.onHoverState.IconLeftImage = Nothing
-        Me.BunifuButton1.onHoverState.IconRightImage = Nothing
-        Me.BunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.Transparent
-        Me.BunifuButton1.OnIdleState.BorderRadius = 1
-        Me.BunifuButton1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.OnIdleState.BorderThickness = 1
-        Me.BunifuButton1.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuButton1.OnIdleState.ForeColor = System.Drawing.Color.White
-        Me.BunifuButton1.OnIdleState.IconLeftImage = Nothing
-        Me.BunifuButton1.OnIdleState.IconRightImage = Nothing
-        Me.BunifuButton1.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuButton1.OnPressedState.BorderRadius = 1
-        Me.BunifuButton1.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.BunifuButton1.OnPressedState.BorderThickness = 1
-        Me.BunifuButton1.OnPressedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White
-        Me.BunifuButton1.OnPressedState.IconLeftImage = Nothing
-        Me.BunifuButton1.OnPressedState.IconRightImage = Nothing
-        Me.BunifuButton1.Size = New System.Drawing.Size(256, 47)
-        Me.BunifuButton1.TabIndex = 2
-        Me.BunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
-        Me.BunifuButton1.TextMarginLeft = 0
-        Me.BunifuButton1.TextPadding = New System.Windows.Forms.Padding(0)
-        Me.BunifuButton1.UseDefaultRadiusAndThickness = True
+        Me.AddPurokBttn.CustomizableEdges = BorderEdges1
+        Me.AddPurokBttn.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.AddPurokBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.AddPurokBttn.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.AddPurokBttn.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.AddPurokBttn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
+        Me.AddPurokBttn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.AddPurokBttn.ForeColor = System.Drawing.Color.White
+        Me.AddPurokBttn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.AddPurokBttn.IconLeftCursor = System.Windows.Forms.Cursors.Default
+        Me.AddPurokBttn.IconLeftPadding = New System.Windows.Forms.Padding(11, 3, 3, 3)
+        Me.AddPurokBttn.IconMarginLeft = 11
+        Me.AddPurokBttn.IconPadding = 10
+        Me.AddPurokBttn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.AddPurokBttn.IconRightCursor = System.Windows.Forms.Cursors.Default
+        Me.AddPurokBttn.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
+        Me.AddPurokBttn.IconSize = 25
+        Me.AddPurokBttn.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.AddPurokBttn.IdleBorderRadius = 1
+        Me.AddPurokBttn.IdleBorderThickness = 1
+        Me.AddPurokBttn.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.AddPurokBttn.IdleIconLeftImage = Nothing
+        Me.AddPurokBttn.IdleIconRightImage = Nothing
+        Me.AddPurokBttn.IndicateFocus = False
+        Me.AddPurokBttn.Location = New System.Drawing.Point(219, 117)
+        Me.AddPurokBttn.Name = "AddPurokBttn"
+        Me.AddPurokBttn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.AddPurokBttn.OnDisabledState.BorderRadius = 1
+        Me.AddPurokBttn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.AddPurokBttn.OnDisabledState.BorderThickness = 1
+        Me.AddPurokBttn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.AddPurokBttn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.AddPurokBttn.OnDisabledState.IconLeftImage = Nothing
+        Me.AddPurokBttn.OnDisabledState.IconRightImage = Nothing
+        Me.AddPurokBttn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.AddPurokBttn.onHoverState.BorderRadius = 1
+        Me.AddPurokBttn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.AddPurokBttn.onHoverState.BorderThickness = 1
+        Me.AddPurokBttn.onHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.AddPurokBttn.onHoverState.ForeColor = System.Drawing.Color.White
+        Me.AddPurokBttn.onHoverState.IconLeftImage = Nothing
+        Me.AddPurokBttn.onHoverState.IconRightImage = Nothing
+        Me.AddPurokBttn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.AddPurokBttn.OnIdleState.BorderRadius = 1
+        Me.AddPurokBttn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.AddPurokBttn.OnIdleState.BorderThickness = 1
+        Me.AddPurokBttn.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.AddPurokBttn.OnIdleState.ForeColor = System.Drawing.Color.White
+        Me.AddPurokBttn.OnIdleState.IconLeftImage = Nothing
+        Me.AddPurokBttn.OnIdleState.IconRightImage = Nothing
+        Me.AddPurokBttn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.AddPurokBttn.OnPressedState.BorderRadius = 1
+        Me.AddPurokBttn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.AddPurokBttn.OnPressedState.BorderThickness = 1
+        Me.AddPurokBttn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.AddPurokBttn.OnPressedState.ForeColor = System.Drawing.Color.White
+        Me.AddPurokBttn.OnPressedState.IconLeftImage = Nothing
+        Me.AddPurokBttn.OnPressedState.IconRightImage = Nothing
+        Me.AddPurokBttn.Size = New System.Drawing.Size(150, 34)
+        Me.AddPurokBttn.TabIndex = 1
+        Me.AddPurokBttn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.AddPurokBttn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
+        Me.AddPurokBttn.TextMarginLeft = 0
+        Me.AddPurokBttn.TextPadding = New System.Windows.Forms.Padding(0)
+        Me.AddPurokBttn.UseDefaultRadiusAndThickness = True
+        '
+        'UpdateBttn
+        '
+        Me.UpdateBttn.AllowAnimations = True
+        Me.UpdateBttn.AllowMouseEffects = True
+        Me.UpdateBttn.AllowToggling = False
+        Me.UpdateBttn.AnimationSpeed = 200
+        Me.UpdateBttn.AutoGenerateColors = False
+        Me.UpdateBttn.AutoRoundBorders = False
+        Me.UpdateBttn.AutoSizeLeftIcon = True
+        Me.UpdateBttn.AutoSizeRightIcon = True
+        Me.UpdateBttn.BackColor = System.Drawing.Color.Transparent
+        Me.UpdateBttn.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.UpdateBttn.BackgroundImage = CType(resources.GetObject("UpdateBttn.BackgroundImage"), System.Drawing.Image)
+        Me.UpdateBttn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.UpdateBttn.ButtonText = "Update"
+        Me.UpdateBttn.ButtonTextMarginLeft = 0
+        Me.UpdateBttn.ColorContrastOnClick = 45
+        Me.UpdateBttn.ColorContrastOnHover = 45
+        Me.UpdateBttn.Cursor = System.Windows.Forms.Cursors.Default
+        BorderEdges2.BottomLeft = True
+        BorderEdges2.BottomRight = True
+        BorderEdges2.TopLeft = True
+        BorderEdges2.TopRight = True
+        Me.UpdateBttn.CustomizableEdges = BorderEdges2
+        Me.UpdateBttn.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.UpdateBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.UpdateBttn.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.UpdateBttn.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.UpdateBttn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
+        Me.UpdateBttn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.UpdateBttn.ForeColor = System.Drawing.Color.White
+        Me.UpdateBttn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.UpdateBttn.IconLeftCursor = System.Windows.Forms.Cursors.Default
+        Me.UpdateBttn.IconLeftPadding = New System.Windows.Forms.Padding(11, 3, 3, 3)
+        Me.UpdateBttn.IconMarginLeft = 11
+        Me.UpdateBttn.IconPadding = 10
+        Me.UpdateBttn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.UpdateBttn.IconRightCursor = System.Windows.Forms.Cursors.Default
+        Me.UpdateBttn.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
+        Me.UpdateBttn.IconSize = 25
+        Me.UpdateBttn.IdleBorderColor = System.Drawing.Color.DodgerBlue
+        Me.UpdateBttn.IdleBorderRadius = 1
+        Me.UpdateBttn.IdleBorderThickness = 1
+        Me.UpdateBttn.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.UpdateBttn.IdleIconLeftImage = Nothing
+        Me.UpdateBttn.IdleIconRightImage = Nothing
+        Me.UpdateBttn.IndicateFocus = False
+        Me.UpdateBttn.Location = New System.Drawing.Point(63, 117)
+        Me.UpdateBttn.Name = "UpdateBttn"
+        Me.UpdateBttn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.UpdateBttn.OnDisabledState.BorderRadius = 1
+        Me.UpdateBttn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.UpdateBttn.OnDisabledState.BorderThickness = 1
+        Me.UpdateBttn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.UpdateBttn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.UpdateBttn.OnDisabledState.IconLeftImage = Nothing
+        Me.UpdateBttn.OnDisabledState.IconRightImage = Nothing
+        Me.UpdateBttn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.UpdateBttn.onHoverState.BorderRadius = 1
+        Me.UpdateBttn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.UpdateBttn.onHoverState.BorderThickness = 1
+        Me.UpdateBttn.onHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.UpdateBttn.onHoverState.ForeColor = System.Drawing.Color.White
+        Me.UpdateBttn.onHoverState.IconLeftImage = Nothing
+        Me.UpdateBttn.onHoverState.IconRightImage = Nothing
+        Me.UpdateBttn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.UpdateBttn.OnIdleState.BorderRadius = 1
+        Me.UpdateBttn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.UpdateBttn.OnIdleState.BorderThickness = 1
+        Me.UpdateBttn.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.UpdateBttn.OnIdleState.ForeColor = System.Drawing.Color.White
+        Me.UpdateBttn.OnIdleState.IconLeftImage = Nothing
+        Me.UpdateBttn.OnIdleState.IconRightImage = Nothing
+        Me.UpdateBttn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.UpdateBttn.OnPressedState.BorderRadius = 1
+        Me.UpdateBttn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.UpdateBttn.OnPressedState.BorderThickness = 1
+        Me.UpdateBttn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.UpdateBttn.OnPressedState.ForeColor = System.Drawing.Color.White
+        Me.UpdateBttn.OnPressedState.IconLeftImage = Nothing
+        Me.UpdateBttn.OnPressedState.IconRightImage = Nothing
+        Me.UpdateBttn.Size = New System.Drawing.Size(150, 34)
+        Me.UpdateBttn.TabIndex = 2
+        Me.UpdateBttn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.UpdateBttn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
+        Me.UpdateBttn.TextMarginLeft = 0
+        Me.UpdateBttn.TextPadding = New System.Windows.Forms.Padding(0)
+        Me.UpdateBttn.UseDefaultRadiusAndThickness = True
         '
         'PurokChildForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(557, 192)
-        Me.Controls.Add(Me.BunifuTextBox1)
-        Me.Controls.Add(Me.BunifuButton1)
+        Me.ClientSize = New System.Drawing.Size(425, 175)
+        Me.Controls.Add(Me.UpdateBttn)
+        Me.Controls.Add(Me.AddPurokBttn)
+        Me.Controls.Add(Me.AddPurokTextBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MinimizeBox = False
         Me.Name = "PurokChildForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -215,6 +304,7 @@ Partial Class PurokChildForm
 
     End Sub
 
-    Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents BunifuButton1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton
+    Friend WithEvents AddPurokTextBox As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents AddPurokBttn As Bunifu.UI.WinForms.BunifuButton.BunifuButton
+    Friend WithEvents UpdateBttn As Bunifu.UI.WinForms.BunifuButton.BunifuButton
 End Class

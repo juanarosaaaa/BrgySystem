@@ -120,20 +120,20 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAALUAAAAhCAYAAACfpOr8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVHhe7dxJEYAwAMBApNURSMBBhRVPHDOoyOxjHeSd
-        be5rvE6IGF/U5zyuGxLenkVNi6jJETU5oiZH1OSImhxRkyNqckRNjqjJETU5oiZH1OSImhxRkyNqckRN
-        jqjJETU5oiZH1OSImhxRkyNqckRNjqjJETU5oiZH1OSImpw/an9qQtZ4ABKvQCsUGolbAAAAAElFTkSu
-        QmCC
+        iVBORw0KGgoAAAANSUhEUgAAAJsAAAAjCAYAAACD+HiUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACKSURBVHhe7dw5EYBAAMBApJ0jkHAOEAaeeGawQKot1kHq
+        LPt6jMeEn403trlv5wW/ejoTGw2xkREbGbGRERsZsZERGxmxkREbGbGRERsZsZERGxmxkREbGbGRERsZ
+        sZERGxmxkREbGbGRERsZsZERGxmxkREbGbGRERsZsZERGxmxkflic54kcIwbtSdfmax6JqIAAAAASUVO
+        RK5CYII=
 </value>
   </data>
   <data name="BunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQIAAAAjCAYAAAB/yAR3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACUSURBVHhe7dSxDQMxDARB9l+VBJXxZbgA+2go+hY4A1zC
-        nFsAf+ecZ631NbNZ69+/GajqAzBP//7NgBDAVEIACAEgBEAIASAEgBAAIQSAEABCAIQQAEIACAEQQgAI
-        ASAEQAgBIASAEAAhBIAQAEIAhBAAQgAIARBCAAgBIARACAEgBMArBHvvTx/MbNb6928GgNmqfgNz24JJ
-        HFZsAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAASsAAAAlCAYAAAAa2c9wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVHhe7dRBCQQxAATB+FeVJTJOxgm4JZDPOUhDFcxn
+        BPQAyFhrfeacPzOz27b7dFI1xj4AbrT7dFIlVsC9xApIECsgQayABLECEsQKSBArIEGsgASxAhLECkgQ
+        KyBBrIAEsQISxApIECsgQayABLECEsQKSBArIEGsgASxAhLECkgQKyBBrIAEsQISxApIECsgQayABLEC
+        EsQKSBArIEGsgIS/WD3P892Hmdlt2306qQK43RgvvP3rWj9PeZ8AAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="purok_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

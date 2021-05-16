@@ -187,9 +187,7 @@ C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\D
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\Renci.SshNet.xml
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\Renci.SshNet.Async.xml
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.vbprojAssemblyReference.cache
-C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.OfficialsChildForm.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.PurokChildForm.resources
-C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.ResidentsChildForm.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.Archive.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.Blotter.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.Clearance.resources
@@ -363,7 +361,6 @@ C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\D
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.MyResidents.resources
-C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.AddNewBlotterForm.resources
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.vbprojAssemblyReference.cache
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.AddNewBlotterForm.resources
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.BlotterSettlementSchedule.resources
@@ -489,3 +486,4 @@ C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\De
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.vbproj.CopyComplete
+C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\MetroFramework.dll

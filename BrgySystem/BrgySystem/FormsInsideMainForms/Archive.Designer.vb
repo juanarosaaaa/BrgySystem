@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Archive
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,11 @@ Partial Class Archive
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Archive))
         Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -54,17 +53,10 @@ Partial Class Archive
         Dim StateProperties10 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties11 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties12 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.ResidentsGridView = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.age_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.religion_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.citizenship_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.address_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.restore_Button_Column = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.delete_Button_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
@@ -87,6 +79,14 @@ Partial Class Archive
         Me.deleteButtonColumnOfficials = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.BunifuTextBox3 = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.age_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.religion_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.citizenship_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.address_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.restore_Button_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.delete_Button_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.ResidentsGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,11 +105,10 @@ Partial Class Archive
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabControl1.Location = New System.Drawing.Point(16, 66)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 22)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1445, 815)
+        Me.TabControl1.Size = New System.Drawing.Size(1100, 732)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
@@ -119,10 +118,9 @@ Partial Class Archive
         Me.TabPage1.Controls.Add(Me.Button1)
         Me.TabPage1.Controls.Add(Me.BunifuTextBox1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 28)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage1.Size = New System.Drawing.Size(1437, 783)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1092, 700)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "RESIDENT'S ARCHIVE"
         '
@@ -159,14 +157,13 @@ Partial Class Archive
         Me.ResidentsGridView.DefaultCellStyle = DataGridViewCellStyle4
         Me.ResidentsGridView.EnableHeadersVisualStyles = False
         Me.ResidentsGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ResidentsGridView.Location = New System.Drawing.Point(11, 70)
-        Me.ResidentsGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ResidentsGridView.Location = New System.Drawing.Point(8, 57)
         Me.ResidentsGridView.Name = "ResidentsGridView"
         Me.ResidentsGridView.RowHeadersVisible = False
         Me.ResidentsGridView.RowTemplate.DividerHeight = 100
         Me.ResidentsGridView.RowTemplate.Height = 100
         Me.ResidentsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ResidentsGridView.Size = New System.Drawing.Size(1413, 698)
+        Me.ResidentsGridView.Size = New System.Drawing.Size(1076, 637)
         Me.ResidentsGridView.TabIndex = 3
         Me.ResidentsGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ResidentsGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -191,62 +188,13 @@ Partial Class Archive
         Me.ResidentsGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ResidentsGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'fullname_Column
-        '
-        DataGridViewCellStyle3.NullValue = "FULLNAME TEST"
-        Me.fullname_Column.DefaultCellStyle = DataGridViewCellStyle3
-        Me.fullname_Column.HeaderText = "FULLNAME"
-        Me.fullname_Column.Name = "fullname_Column"
-        '
-        'sex_Column
-        '
-        Me.sex_Column.HeaderText = "SEX"
-        Me.sex_Column.Name = "sex_Column"
-        '
-        'age_Column
-        '
-        Me.age_Column.HeaderText = "AGE"
-        Me.age_Column.Name = "age_Column"
-        '
-        'religion_Column
-        '
-        Me.religion_Column.HeaderText = "RELIGION"
-        Me.religion_Column.Name = "religion_Column"
-        '
-        'citizenship_Column
-        '
-        Me.citizenship_Column.HeaderText = "CITIZENSHIP"
-        Me.citizenship_Column.Name = "citizenship_Column"
-        '
-        'address_Column
-        '
-        Me.address_Column.HeaderText = "ADDRESS"
-        Me.address_Column.Name = "address_Column"
-        '
-        'restore_Button_Column
-        '
-        Me.restore_Button_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.restore_Button_Column.HeaderText = ""
-        Me.restore_Button_Column.MinimumWidth = 25
-        Me.restore_Button_Column.Name = "restore_Button_Column"
-        Me.restore_Button_Column.Width = 25
-        '
-        'delete_Button_Column
-        '
-        Me.delete_Button_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.delete_Button_Column.HeaderText = ""
-        Me.delete_Button_Column.MinimumWidth = 25
-        Me.delete_Button_Column.Name = "delete_Button_Column"
-        Me.delete_Button_Column.Width = 25
-        '
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.Button1.Location = New System.Drawing.Point(1384, 7)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(1054, 6)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(43, 46)
+        Me.Button1.Size = New System.Drawing.Size(32, 37)
         Me.Button1.TabIndex = 2
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -278,8 +226,7 @@ Partial Class Archive
         Me.BunifuTextBox1.IconRight = Nothing
         Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox1.Lines = New String(-1) {}
-        Me.BunifuTextBox1.Location = New System.Drawing.Point(1043, 7)
-        Me.BunifuTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox1.Location = New System.Drawing.Point(798, 6)
         Me.BunifuTextBox1.MaxLength = 32767
         Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox1.Modified = False
@@ -305,7 +252,7 @@ Partial Class Archive
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox1.OnIdleState = StateProperties4
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox1.PlaceholderText = "Search name"
@@ -315,7 +262,7 @@ Partial Class Archive
         Me.BunifuTextBox1.SelectionLength = 0
         Me.BunifuTextBox1.SelectionStart = 0
         Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(347, 46)
+        Me.BunifuTextBox1.Size = New System.Drawing.Size(260, 37)
         Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox1.TabIndex = 1
         Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -333,10 +280,9 @@ Partial Class Archive
         Me.TabPage2.Controls.Add(Me.Button2)
         Me.TabPage2.Controls.Add(Me.BunifuTextBox2)
         Me.TabPage2.Location = New System.Drawing.Point(4, 28)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage2.Size = New System.Drawing.Size(1437, 783)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(1092, 700)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "PUROK'S ARCHIVE"
         '
@@ -373,14 +319,13 @@ Partial Class Archive
         Me.PurokGridView.DefaultCellStyle = DataGridViewCellStyle8
         Me.PurokGridView.EnableHeadersVisualStyles = False
         Me.PurokGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PurokGridView.Location = New System.Drawing.Point(11, 75)
-        Me.PurokGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PurokGridView.Location = New System.Drawing.Point(8, 61)
         Me.PurokGridView.Name = "PurokGridView"
         Me.PurokGridView.RowHeadersVisible = False
         DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.PurokGridView.RowsDefaultCellStyle = DataGridViewCellStyle9
         Me.PurokGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.PurokGridView.Size = New System.Drawing.Size(1416, 656)
+        Me.PurokGridView.Size = New System.Drawing.Size(1062, 533)
         Me.PurokGridView.TabIndex = 5
         Me.PurokGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.PurokGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -432,10 +377,9 @@ Partial Class Archive
         '
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button2.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.Button2.Location = New System.Drawing.Point(1385, 7)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Location = New System.Drawing.Point(1039, 6)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(43, 46)
+        Me.Button2.Size = New System.Drawing.Size(32, 37)
         Me.Button2.TabIndex = 4
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -467,8 +411,7 @@ Partial Class Archive
         Me.BunifuTextBox2.IconRight = Nothing
         Me.BunifuTextBox2.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox2.Lines = New String(-1) {}
-        Me.BunifuTextBox2.Location = New System.Drawing.Point(1044, 7)
-        Me.BunifuTextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox2.Location = New System.Drawing.Point(783, 6)
         Me.BunifuTextBox2.MaxLength = 32767
         Me.BunifuTextBox2.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox2.Modified = False
@@ -494,7 +437,7 @@ Partial Class Archive
         StateProperties8.ForeColor = System.Drawing.Color.Empty
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox2.OnIdleState = StateProperties8
-        Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox2.PlaceholderText = "Search name"
@@ -504,7 +447,7 @@ Partial Class Archive
         Me.BunifuTextBox2.SelectionLength = 0
         Me.BunifuTextBox2.SelectionStart = 0
         Me.BunifuTextBox2.ShortcutsEnabled = True
-        Me.BunifuTextBox2.Size = New System.Drawing.Size(347, 46)
+        Me.BunifuTextBox2.Size = New System.Drawing.Size(260, 37)
         Me.BunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox2.TabIndex = 3
         Me.BunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -522,10 +465,9 @@ Partial Class Archive
         Me.TabPage3.Controls.Add(Me.Button3)
         Me.TabPage3.Controls.Add(Me.BunifuTextBox3)
         Me.TabPage3.Location = New System.Drawing.Point(4, 28)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage3.Size = New System.Drawing.Size(1437, 783)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(1092, 700)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "OFFICIAL'S ARCHIVE"
         '
@@ -562,12 +504,11 @@ Partial Class Archive
         Me.ArchiveGridView.DefaultCellStyle = DataGridViewCellStyle19
         Me.ArchiveGridView.EnableHeadersVisualStyles = False
         Me.ArchiveGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ArchiveGridView.Location = New System.Drawing.Point(13, 78)
-        Me.ArchiveGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ArchiveGridView.Location = New System.Drawing.Point(10, 63)
         Me.ArchiveGridView.Name = "ArchiveGridView"
         Me.ArchiveGridView.RowHeadersVisible = False
         Me.ArchiveGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ArchiveGridView.Size = New System.Drawing.Size(1408, 668)
+        Me.ArchiveGridView.Size = New System.Drawing.Size(1056, 543)
         Me.ArchiveGridView.TabIndex = 6
         Me.ArchiveGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ArchiveGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -666,10 +607,9 @@ Partial Class Archive
         '
         Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button3.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.Button3.Location = New System.Drawing.Point(1385, 7)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Location = New System.Drawing.Point(1039, 6)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(43, 46)
+        Me.Button3.Size = New System.Drawing.Size(32, 37)
         Me.Button3.TabIndex = 4
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -701,8 +641,7 @@ Partial Class Archive
         Me.BunifuTextBox3.IconRight = Nothing
         Me.BunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox3.Lines = New String(-1) {}
-        Me.BunifuTextBox3.Location = New System.Drawing.Point(1044, 7)
-        Me.BunifuTextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox3.Location = New System.Drawing.Point(783, 6)
         Me.BunifuTextBox3.MaxLength = 32767
         Me.BunifuTextBox3.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox3.Modified = False
@@ -728,7 +667,7 @@ Partial Class Archive
         StateProperties12.ForeColor = System.Drawing.Color.Empty
         StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox3.OnIdleState = StateProperties12
-        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox3.PlaceholderText = "Search name"
@@ -738,7 +677,7 @@ Partial Class Archive
         Me.BunifuTextBox3.SelectionLength = 0
         Me.BunifuTextBox3.SelectionStart = 0
         Me.BunifuTextBox3.ShortcutsEnabled = True
-        Me.BunifuTextBox3.Size = New System.Drawing.Size(347, 46)
+        Me.BunifuTextBox3.Size = New System.Drawing.Size(260, 37)
         Me.BunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox3.TabIndex = 3
         Me.BunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -749,15 +688,62 @@ Partial Class Archive
         Me.BunifuTextBox3.UseSystemPasswordChar = False
         Me.BunifuTextBox3.WordWrap = True
         '
+        'fullname_Column
+        '
+        DataGridViewCellStyle3.NullValue = "FULLNAME TEST"
+        Me.fullname_Column.DefaultCellStyle = DataGridViewCellStyle3
+        Me.fullname_Column.HeaderText = "FULL NAME"
+        Me.fullname_Column.Name = "fullname_Column"
+        '
+        'sex_Column
+        '
+        Me.sex_Column.HeaderText = "SEX"
+        Me.sex_Column.Name = "sex_Column"
+        '
+        'age_Column
+        '
+        Me.age_Column.HeaderText = "AGE"
+        Me.age_Column.Name = "age_Column"
+        '
+        'religion_Column
+        '
+        Me.religion_Column.HeaderText = "RELIGION"
+        Me.religion_Column.Name = "religion_Column"
+        '
+        'citizenship_Column
+        '
+        Me.citizenship_Column.HeaderText = "CITIZENSHIP"
+        Me.citizenship_Column.Name = "citizenship_Column"
+        '
+        'address_Column
+        '
+        Me.address_Column.HeaderText = "ADDRESS"
+        Me.address_Column.Name = "address_Column"
+        '
+        'restore_Button_Column
+        '
+        Me.restore_Button_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.restore_Button_Column.HeaderText = ""
+        Me.restore_Button_Column.MinimumWidth = 25
+        Me.restore_Button_Column.Name = "restore_Button_Column"
+        Me.restore_Button_Column.Width = 25
+        '
+        'delete_Button_Column
+        '
+        Me.delete_Button_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.delete_Button_Column.HeaderText = ""
+        Me.delete_Button_Column.MinimumWidth = 25
+        Me.delete_Button_Column.Name = "delete_Button_Column"
+        Me.delete_Button_Column.Width = 25
+        '
         'Archive
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1477, 896)
+        Me.ClientSize = New System.Drawing.Size(1124, 766)
         Me.Controls.Add(Me.TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Archive"
         Me.Text = "Archive"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -783,14 +769,6 @@ Partial Class Archive
     Friend WithEvents Button3 As Button
     Friend WithEvents BunifuTextBox3 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents ResidentsGridView As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents fullname_Column As DataGridViewTextBoxColumn
-    Friend WithEvents sex_Column As DataGridViewTextBoxColumn
-    Friend WithEvents age_Column As DataGridViewTextBoxColumn
-    Friend WithEvents religion_Column As DataGridViewTextBoxColumn
-    Friend WithEvents citizenship_Column As DataGridViewTextBoxColumn
-    Friend WithEvents address_Column As DataGridViewTextBoxColumn
-    Friend WithEvents restore_Button_Column As DataGridViewImageColumn
-    Friend WithEvents delete_Button_Column As DataGridViewImageColumn
     Friend WithEvents PurokGridView As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents purok_Column As DataGridViewTextBoxColumn
     Friend WithEvents restoreButton_Column As DataGridViewImageColumn
@@ -805,4 +783,12 @@ Partial Class Archive
     Friend WithEvents maritalStatusColumnOfficials As DataGridViewTextBoxColumn
     Friend WithEvents restoreButtonColumnOfficials As DataGridViewImageColumn
     Friend WithEvents deleteButtonColumnOfficials As DataGridViewImageColumn
+    Friend WithEvents fullname_Column As DataGridViewTextBoxColumn
+    Friend WithEvents sex_Column As DataGridViewTextBoxColumn
+    Friend WithEvents age_Column As DataGridViewTextBoxColumn
+    Friend WithEvents religion_Column As DataGridViewTextBoxColumn
+    Friend WithEvents citizenship_Column As DataGridViewTextBoxColumn
+    Friend WithEvents address_Column As DataGridViewTextBoxColumn
+    Friend WithEvents restore_Button_Column As DataGridViewImageColumn
+    Friend WithEvents delete_Button_Column As DataGridViewImageColumn
 End Class
