@@ -10,5 +10,5 @@ Public Class SearchBar
         gridview.DataSource = table
         closeConnection()
     End Sub
-    'SEARCHING DATA
+
 End Class

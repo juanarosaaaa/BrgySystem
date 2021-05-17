@@ -35,7 +35,7 @@ Partial Class Purok
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.SearchButton = New System.Windows.Forms.Button()
         Me.SearchBarField = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.PurokGridView = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.purok_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -50,15 +50,15 @@ Partial Class Purok
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'SearchButton
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.Button1.Location = New System.Drawing.Point(1082, 17)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(29, 37)
-        Me.Button1.TabIndex = 3
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.SearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
+        Me.SearchButton.Location = New System.Drawing.Point(1082, 17)
+        Me.SearchButton.Name = "SearchButton"
+        Me.SearchButton.Size = New System.Drawing.Size(29, 37)
+        Me.SearchButton.TabIndex = 3
+        Me.SearchButton.UseVisualStyleBackColor = True
         '
         'SearchBarField
         '
@@ -88,7 +88,7 @@ Partial Class Purok
         Me.SearchBarField.IconRight = Nothing
         Me.SearchBarField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.SearchBarField.Lines = New String(-1) {}
-        Me.SearchBarField.Location = New System.Drawing.Point(787, 17)
+        Me.SearchBarField.Location = New System.Drawing.Point(786, 17)
         Me.SearchBarField.MaxLength = 32767
         Me.SearchBarField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.SearchBarField.Modified = False
@@ -140,8 +140,7 @@ Partial Class Purok
         '
         Me.PurokGridView.AllowUserToAddRows = False
         Me.PurokGridView.AllowUserToDeleteRows = False
-        Me.PurokGridView.AllowUserToResizeColumns = False
-        Me.PurokGridView.AllowUserToResizeRows = False
+        Me.PurokGridView.AllowUserToOrderColumns = True
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         Me.PurokGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
@@ -358,7 +357,7 @@ Partial Class Purok
         Me.GroupBox1.Controls.Add(Me.SearchBarField)
         Me.GroupBox1.Controls.Add(Me.PurokGridView)
         Me.GroupBox1.Controls.Add(Me.AddPurokButton)
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.SearchButton)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(1115, 751)
@@ -384,7 +383,7 @@ Partial Class Purok
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As Button
+    Friend WithEvents SearchButton As Button
     Friend WithEvents SearchBarField As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents PurokGridView As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents AddPurokButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton

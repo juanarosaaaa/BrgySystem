@@ -7,7 +7,7 @@ Public Class Purok
     Private var As MyPurok = New MyPurok
     Private manage As loadGridViewValue = New ManageSystem
     Private foo As SearchValue = New SearchBar
-    Private startup As Boolean = False ' due to problems in threading textchanged event start first before load event
+    Private AlreadyStart As Boolean = False ' due to problems in threading textchanged event start first before load event
 
 
 
@@ -22,13 +22,12 @@ Public Class Purok
 
         ElseIf (SettingAction.buttonOf_IsClick("deleteButton_Column", PurokGridView, e)) Then
             var.deletePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
-            manage.loadGridViewOf("Purok", PurokGridView)
 
         ElseIf (SettingAction.buttonOf_IsClick("archiveButton_Column", PurokGridView, e)) Then
             var.archivePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
-            manage.loadGridViewOf("Purok", PurokGridView)
-        End If
 
+        End If
+        manage.loadGridViewOf("Purok", PurokGridView)
     End Sub
 
 
@@ -54,14 +53,17 @@ Public Class Purok
 
     Private Sub SearchBarTextChanged(sender As Object, e As EventArgs) Handles SearchBarField.TextChange
 
-        If (startup) Then
+        If (AlreadyStart) Then
             foo.searchValueIn("SELECT * FROM `Purok` WHERE PurokName Like '%" & SearchBarField.Text.Trim & "%'", PurokGridView)
         End If
 
     End Sub
 
     Private Sub SearchBarClick(sender As Object, e As EventArgs) Handles SearchBarField.Click
-        startup = True
+        AlreadyStart = True
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
+        foo.searchValueIn("SELECT * FROM `Purok` WHERE PurokName Like '%" & SearchBarField.Text.Trim & "%'", PurokGridView)
+    End Sub
 End Class

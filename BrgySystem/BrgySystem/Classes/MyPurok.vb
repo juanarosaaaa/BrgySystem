@@ -68,8 +68,8 @@ Public Class MyPurok
                 End If
             End If
         Catch duplicate As MySqlException
-            closeConnection()
-            purokdelete.deleteValueAt("DELETE FROM `purok` WHERE PurokName = '" & nameToArchive.Trim & "' ")
+            MessageBox.Show("Failed archiving Purok. A Purok '" & nameToArchive.ToUpper.Trim & "' already exist at the archive list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
         Finally
             closeConnection()
         End Try

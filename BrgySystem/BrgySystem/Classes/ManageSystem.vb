@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports Guna.UI2.WinForms
 Public Class ManageSystem
-    Implements InsertValue, DeleteValue, UpdateValue, ArchiveValue, loadGridViewValue
+    Implements InsertValue, DeleteValue, UpdateValue, ArchiveValue, loadGridViewValue, RestoreValue
 
     Public Function insertValue(query As String) As Boolean Implements InsertValue.insertValueAt
         openConnection()
@@ -13,7 +13,10 @@ Public Class ManageSystem
         Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
     End Function
 
-
+    Public Function RestoreValue(query As String) As Boolean Implements RestoreValue.RestoreValueAt
+        openConnection()
+        Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
+    End Function
 
 
     Public Function archiveValue(query As String) As Boolean Implements ArchiveValue.ArchiveValueAt
@@ -34,5 +37,10 @@ Public Class ManageSystem
 
         closeConnection()
     End Sub
+
+
+
+
+
 
 End Class

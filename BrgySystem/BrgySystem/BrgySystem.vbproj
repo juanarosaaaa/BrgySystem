@@ -277,6 +277,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Classes\ManageSystem.vb" />
+    <Compile Include="Classes\MyArchive.vb" />
     <Compile Include="Classes\MyLogin.vb" />
     <Compile Include="Classes\MyPurok.vb" />
     <Compile Include="Classes\ConnectionDB.vb" />
@@ -341,6 +342,7 @@
     <Compile Include="Interfaces\DeleteValue.vb" />
     <Compile Include="Interfaces\InsertValue.vb" />
     <Compile Include="Interfaces\loadGridViewValue.vb" />
+    <Compile Include="Interfaces\RestoreValue.vb" />
     <Compile Include="Interfaces\SearchValue.vb" />
     <Compile Include="Interfaces\UpdateValue.vb" />
     <Compile Include="Login.Designer.vb">
