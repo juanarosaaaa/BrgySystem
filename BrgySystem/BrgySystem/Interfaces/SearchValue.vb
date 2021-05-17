@@ -1,5 +1,5 @@
 ﻿Imports Guna.UI2.WinForms
 
 Public Interface SearchValue
-    Sub searchValueIn(tableName As String, valueYouSearchFor As String, gridview As Guna2DataGridView)
+    Sub searchValueIn(query As String, gridview As Guna2DataGridView)
 End Interface

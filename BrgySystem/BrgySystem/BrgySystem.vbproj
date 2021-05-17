@@ -340,7 +340,7 @@
     <Compile Include="Interfaces\ArchiveValue.vb" />
     <Compile Include="Interfaces\DeleteValue.vb" />
     <Compile Include="Interfaces\InsertValue.vb" />
-    <Compile Include="Interfaces\loadGridViewAt.vb" />
+    <Compile Include="Interfaces\loadGridViewValue.vb" />
     <Compile Include="Interfaces\SearchValue.vb" />
     <Compile Include="Interfaces\UpdateValue.vb" />
     <Compile Include="Login.Designer.vb">

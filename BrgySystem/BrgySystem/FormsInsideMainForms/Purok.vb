@@ -3,8 +3,13 @@ Imports MySql.Data.MySqlClient
 Public Class Purok
     Dim SettinggridViewImage As New DataGridViewImages
     Dim SettingAction As New DataGridViewActionButtonEvent
+
     Private var As MyPurok = New MyPurok
+    Private manage As loadGridViewValue = New ManageSystem
+    Private foo As SearchValue = New SearchBar
     Private startup As Boolean = False ' due to problems in threading textchanged event start first before load event
+
+
 
     Private Sub BunifuDataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PurokGridView.CellClick
         If SettingAction.buttonOf_IsClick("editButton_Column", PurokGridView, e) Then
@@ -17,10 +22,11 @@ Public Class Purok
 
         ElseIf (SettingAction.buttonOf_IsClick("deleteButton_Column", PurokGridView, e)) Then
             var.deletePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
-            var.loadPurok(PurokGridView)
+            manage.loadGridViewOf("Purok", PurokGridView)
 
         ElseIf (SettingAction.buttonOf_IsClick("archiveButton_Column", PurokGridView, e)) Then
-
+            var.archivePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
+            manage.loadGridViewOf("Purok", PurokGridView)
         End If
 
     End Sub
@@ -35,7 +41,7 @@ Public Class Purok
 
     Private Sub Purok_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PurokGridView.Columns("purok_Column").DataPropertyName = "PurokName"
-        var.loadPurok(PurokGridView)
+        manage.loadGridViewOf("Purok", PurokGridView)
 
     End Sub
 
@@ -49,9 +55,7 @@ Public Class Purok
     Private Sub SearchBarTextChanged(sender As Object, e As EventArgs) Handles SearchBarField.TextChange
 
         If (startup) Then
-            Dim foo As SearchValue = New SearchBar
-            foo.searchValueIn("Purok", SearchBarField.Text, PurokGridView)
-
+            foo.searchValueIn("SELECT * FROM `Purok` WHERE PurokName Like '%" & SearchBarField.Text.Trim & "%'", PurokGridView)
         End If
 
     End Sub

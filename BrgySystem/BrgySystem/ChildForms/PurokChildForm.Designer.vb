@@ -299,7 +299,6 @@ Partial Class PurokChildForm
         Me.MinimizeBox = False
         Me.Name = "PurokChildForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "ADD PUROK"
         Me.ResumeLayout(False)
 
     End Sub
