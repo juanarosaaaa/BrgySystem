@@ -276,11 +276,13 @@
     <Compile Include="ChildForms\UpdateStatusOfSettlementBlotter.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Classes\ManageSystem.vb" />
     <Compile Include="Classes\MyLogin.vb" />
     <Compile Include="Classes\MyPurok.vb" />
     <Compile Include="Classes\ConnectionDB.vb" />
     <Compile Include="Classes\DataGridViewActionButtonEvent.vb" />
     <Compile Include="Classes\DataGridViewImages.vb" />
+    <Compile Include="Classes\SearchBar.vb" />
     <Compile Include="FormsInsideMainForms\Archive.Designer.vb">
       <DependentUpon>Archive.vb</DependentUpon>
     </Compile>
@@ -335,6 +337,12 @@
     <Compile Include="FormsInsideMainForms\Settings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaces\ArchiveValue.vb" />
+    <Compile Include="Interfaces\DeleteValue.vb" />
+    <Compile Include="Interfaces\InsertValue.vb" />
+    <Compile Include="Interfaces\loadGridViewAt.vb" />
+    <Compile Include="Interfaces\SearchValue.vb" />
+    <Compile Include="Interfaces\UpdateValue.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>

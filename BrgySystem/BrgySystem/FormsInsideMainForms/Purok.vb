@@ -1,26 +1,26 @@
-﻿Public Class Purok
+﻿
+Imports MySql.Data.MySqlClient
+Public Class Purok
     Dim SettinggridViewImage As New DataGridViewImages
     Dim SettingAction As New DataGridViewActionButtonEvent
     Private var As MyPurok = New MyPurok
+    Private startup As Boolean = False ' due to problems in threading textchanged event start first before load event
+
     Private Sub BunifuDataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PurokGridView.CellClick
         If SettingAction.buttonOf_IsClick("editButton_Column", PurokGridView, e) Then
 
-            PurokChildForm.PurokTextBox.Text = PurokGridView.SelectedCells(0).Value.ToString
+            PurokChildForm.PurokTextBox.Text = PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue
             PurokChildForm.AddPurokBttn.Enabled = False
             PurokChildForm.UpdateBttn.Enabled = False
             PurokChildForm.changesInPurokText = True
-
             PurokChildForm.ShowDialog()
 
         ElseIf (SettingAction.buttonOf_IsClick("deleteButton_Column", PurokGridView, e)) Then
-
-            var.deletePurok(PurokGridView.SelectedCells(0).Value.ToString)
-            var.loadPurokGridView(PurokGridView)
-
-
+            var.deletePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
+            var.loadPurok(PurokGridView)
 
         ElseIf (SettingAction.buttonOf_IsClick("archiveButton_Column", PurokGridView, e)) Then
-            MsgBox("archive")
+
         End If
 
     End Sub
@@ -34,9 +34,8 @@
     End Sub
 
     Private Sub Purok_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-        var.loadPurokGridView(PurokGridView)
+        PurokGridView.Columns("purok_Column").DataPropertyName = "PurokName"
+        var.loadPurok(PurokGridView)
 
     End Sub
 
@@ -49,5 +48,16 @@
 
     Private Sub SearchBarTextChanged(sender As Object, e As EventArgs) Handles SearchBarField.TextChange
 
+        If (startup) Then
+            Dim foo As SearchValue = New SearchBar
+            foo.searchValueIn("Purok", SearchBarField.Text, PurokGridView)
+
+        End If
+
     End Sub
+
+    Private Sub SearchBarClick(sender As Object, e As EventArgs) Handles SearchBarField.Click
+        startup = True
+    End Sub
+
 End Class
