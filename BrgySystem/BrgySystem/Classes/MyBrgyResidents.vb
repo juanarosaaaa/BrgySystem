@@ -1,8 +1,13 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports Guna.UI2.WinForms
+Imports Bunifu.UI.WinForms
 Public Class MyBrgyResidents
     Private manage As DataManipulation = New ManageSystem
     Private Const residentsQuery As String = "SELECT FULLNAME,SEX,AGE,CIVIL_STATUS,OCCUPATION,VOTER,ADDRESS FROM `residents`"
+    Private result As Boolean
+
+
+
     Sub arrangeGridView(gridView As Guna2DataGridView)
         gridView.Columns("fullname_Column").DataPropertyName = "FULLNAME"
         gridView.Columns("sex_Column").DataPropertyName = "SEX"
@@ -37,22 +42,39 @@ Public Class MyBrgyResidents
 
 
 
-    Function isInputNullAt(txtbox As Bunifu.UI.WinForms.BunifuTextBox)
-        If (String.IsNullOrEmpty(txtbox.Text)) Then
-
+    Function isInputNullAt(val As Object)
+        If (InputIsNull(val.Text)) Then
+            MessageBox.Show("Please enter your " & val.AccessibleName & ".", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return True
         End If
     End Function
 
     Function oneOfTheInputsIsNull()
-        Dim arr() As String = {MyResidents.LastNameTextBox.Text, MyResidents.MiddleNameTextBox.Text, MyResidents.FirstNameTextBox.Text,
-        MyResidents.SuffixComboBox.Text, MyResidents.CitizenshipTextBox.Text, MyResidents.AddressTextBox.Text,
-        MyResidents.ReligionTextBOx.Text, MyResidents.HighestEducationAttainmentTextBox.Text, MyResidents.ContactTextBox.Text, MyResidents.OccupationTextBox.Text,
-        MyResidents.PurokTextBox.Text, MyResidents.BirthdateDatePicker.Value.Date, MyResidents.CivilStatusComboBox.Text, MyResidents.SexComboBox.Text, MyResidents.VoterComboBox.Text,
-        MyResidents.SeniorComboBox.Text}
+        result = False
+        Dim arr() As Object = {MyResidents.LastNameTextBox, MyResidents.MiddleNameTextBox, MyResidents.FirstNameTextBox,
+        MyResidents.SuffixComboBox, MyResidents.CitizenshipTextBox, MyResidents.AddressTextBox,
+        MyResidents.ReligionTextBOx, MyResidents.HighestEducationAttainmentTextBox, MyResidents.ContactTextBox, MyResidents.OccupationTextBox,
+        MyResidents.PurokTextBox, MyResidents.CivilStatusComboBox, MyResidents.SexComboBox, MyResidents.VoterComboBox,
+        MyResidents.SeniorComboBox}
 
-        For Each input As String In arr
-            Return String.IsNullOrEmpty(input)
+        For Each inputObjects As Object In arr
+            If (isInputNullAt(inputObjects)) Then
+                result = True
+                Exit For
+            End If
         Next
+
+        Return result
     End Function
+
+
+
+
+
+
+
+
+    'check if datapicker is date then error
+    'check if image is null
+
 End Class

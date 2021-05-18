@@ -227,7 +227,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="checkInputValidity.vb" />
+    <Compile Include="Classes\checkInputValidity.vb" />
     <Compile Include="ChildForms\BlotterSettlementSchedule.Designer.vb">
       <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
     </Compile>

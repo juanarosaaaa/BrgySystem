@@ -28,11 +28,11 @@ Public Class MyResidents
     End Sub
 
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
-        imageFile.saveImageAt("ResidentsImages")
+        'imageFile.saveImageAt("ResidentsImages")
+        'brgyResidents.oneOfTheInputsIsNull()
+        'MsgBox(imageFile.getImagePath) 'save to database as imagepath
         brgyResidents.oneOfTheInputsIsNull()
-        MsgBox(imageFile.getImagePath) 'save to database as imagepath
-
-        MsgBox(FirstNameTextBox.AccessibleName)
+        'MsgBox(FirstNameTextBox.AccessibleName)
     End Sub
 
     Private Sub SearchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
