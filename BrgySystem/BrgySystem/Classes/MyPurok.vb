@@ -3,17 +3,15 @@ Imports Guna.UI2.WinForms
 Imports Bunifu.UI.WinForms
 Public Class MyPurok
     Private Const purokQuery As String = "SELECT * FROM Purok"
-    Private purokinsert As InsertValue = New ManageSystem
-    Private purokupdate As UpdateValue = New ManageSystem
-    Private purokdelete As DeleteValue = New ManageSystem
-    Private purokArchive As ArchiveValue = New ManageSystem
+    Private manage As DataManipulation = New ManageSystem
+
     Sub addNewPurok(name As String)
         Try
 
 
             If (InputIsNull(name.Trim) Or ContainsSpecialChars(name.Trim)) Then
                 Throw New NoNullAllowedException
-            ElseIf (purokinsert.insertValueAt("INSERT INTO `purok` VALUES ('" & name.Trim & "')")) Then
+            ElseIf (manage.manipulateDataAt("INSERT INTO `purok` VALUES ('" & name.Trim & "')")) Then
                 MessageBox.Show("Purok '" & name.Trim.ToUpper & "' successfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
 
@@ -32,7 +30,7 @@ Public Class MyPurok
         Try
             If (InputIsNull(name.Trim) Or ContainsSpecialChars(name.Trim)) Then
                 Throw New NoNullAllowedException
-            ElseIf (purokupdate.updateValueAt("UPDATE `purok` SET PurokName = '" & name.Trim & "' WHERE PurokName = '" & Purok.PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue & "' ")) Then
+            ElseIf (manage.manipulateDataAt("UPDATE `purok` SET PurokName = '" & name.Trim & "' WHERE PurokName = '" & Purok.PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue & "' ")) Then
                 MessageBox.Show("Purok '" & Purok.PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue.ToString.ToUpper & "' successfully updated to '" & name.ToUpper & "' ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
 
@@ -49,7 +47,7 @@ Public Class MyPurok
     Sub deletePurok(name As String)
 
         If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Purok?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
-            If (purokdelete.deleteValueAt("DELETE FROM `purok` WHERE PurokName = '" & name.Trim & "' ")) Then
+            If (manage.manipulateDataAt("DELETE FROM `purok` WHERE PurokName = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Purok '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
         End If
@@ -63,7 +61,7 @@ Public Class MyPurok
 
         Try
             If (MessageBox.Show("Are you sure you want to archive '" & nameToArchive.ToUpper.Trim & "' Purok?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
-                If (purokArchive.ArchiveValueAt(query)) Then
+                If (manage.manipulateDataAt(query)) Then
                     MessageBox.Show("Purok '" & nameToArchive.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
             End If

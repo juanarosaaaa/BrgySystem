@@ -340,13 +340,9 @@
     <Compile Include="FormsInsideMainForms\Settings.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\ArchiveValue.vb" />
-    <Compile Include="Interfaces\DeleteValue.vb" />
-    <Compile Include="Interfaces\InsertValue.vb" />
+    <Compile Include="Interfaces\DataManipulation.vb" />
     <Compile Include="Interfaces\loadGridViewValue.vb" />
-    <Compile Include="Interfaces\RestoreValue.vb" />
     <Compile Include="Interfaces\SearchValue.vb" />
-    <Compile Include="Interfaces\UpdateValue.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>

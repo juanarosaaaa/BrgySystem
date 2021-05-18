@@ -32,7 +32,7 @@ Public Class ImageFileManager
         Return Path.Combine(uniqueValue, Path.GetFileName(imageName))
     End Function
 
-    Sub saveImage(fileName As String)
+    Sub saveImageAt(fileName As String)
         imagePath = Path.Combine(My.Application.Info.DirectoryPath.ToString + "\" & fileName & "", Path.GetFileName(imageName))
         pictureValue.Image.Save(imagePath)
 

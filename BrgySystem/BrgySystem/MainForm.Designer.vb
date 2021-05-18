@@ -77,10 +77,10 @@ Partial Class MainForm
         Me.MainPanel.BorderColor = System.Drawing.Color.Transparent
         Me.MainPanel.BorderRadius = 3
         Me.MainPanel.BorderThickness = 1
-        Me.MainPanel.Location = New System.Drawing.Point(242, 1)
+        Me.MainPanel.Location = New System.Drawing.Point(242, -1)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.ShowBorders = True
-        Me.MainPanel.Size = New System.Drawing.Size(1125, 764)
+        Me.MainPanel.Size = New System.Drawing.Size(1125, 769)
         Me.MainPanel.TabIndex = 1
         '
         'GroupBox1
@@ -1265,6 +1265,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.Officials_Button)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(1366, 768)
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

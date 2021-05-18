@@ -25,7 +25,8 @@ Public Class MyResidents
     End Sub
 
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
-        imageFile.saveImage("ResidentsImages")
+        imageFile.saveImageAt("ResidentsImages")
+
         MsgBox(imageFile.getImagePath) 'save to database
     End Sub
 End Class
