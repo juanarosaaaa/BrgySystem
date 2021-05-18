@@ -156,7 +156,7 @@ Partial Class MyResidents
         Me.SearchFieldTxtBox.IconRight = Nothing
         Me.SearchFieldTxtBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.SearchFieldTxtBox.Lines = New String(-1) {}
-        Me.SearchFieldTxtBox.Location = New System.Drawing.Point(848, 11)
+        Me.SearchFieldTxtBox.Location = New System.Drawing.Point(846, 11)
         Me.SearchFieldTxtBox.MaxLength = 32767
         Me.SearchFieldTxtBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.SearchFieldTxtBox.Modified = False
@@ -207,7 +207,7 @@ Partial Class MyResidents
         '
         Me.SearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.SearchButton.Location = New System.Drawing.Point(1084, 11)
+        Me.SearchButton.Location = New System.Drawing.Point(1078, 11)
         Me.SearchButton.Name = "SearchButton"
         Me.SearchButton.Size = New System.Drawing.Size(29, 32)
         Me.SearchButton.TabIndex = 5
@@ -380,6 +380,7 @@ Partial Class MyResidents
         '
         Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Controls.Add(Me.BirthdateDatePicker)
         Me.GroupBox2.Controls.Add(Me.ReligionTextBOx)
         Me.GroupBox2.Controls.Add(Me.SearchButton)
         Me.GroupBox2.Controls.Add(Me.UpdateButton)
@@ -395,7 +396,6 @@ Partial Class MyResidents
         Me.GroupBox2.Controls.Add(Me.ResidentsPictureBOx)
         Me.GroupBox2.Controls.Add(Me.CivilStatusComboBox)
         Me.GroupBox2.Controls.Add(Me.OccupationTextBox)
-        Me.GroupBox2.Controls.Add(Me.BirthdateDatePicker)
         Me.GroupBox2.Controls.Add(Me.HighestEducationAttainmentTextBox)
         Me.GroupBox2.Controls.Add(Me.ContactTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel7)
@@ -683,6 +683,8 @@ Partial Class MyResidents
         '
         Me.LastNameTextBox.AcceptsReturn = False
         Me.LastNameTextBox.AcceptsTab = False
+        Me.LastNameTextBox.AccessibleDescription = "Description sample"
+        Me.LastNameTextBox.AccessibleName = "Accessible name  sample"
         Me.LastNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.LastNameTextBox.AnimationSpeed = 200
         Me.LastNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None

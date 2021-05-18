@@ -6,7 +6,7 @@ Public Class ImageFileManager
     Private uniqueValue As String
     Private openPicFile As OpenFileDialog = New OpenFileDialog
     Private pictureValue As PictureBox = New PictureBox
-    Sub New(lastNameOfUser As String)
+    Sub New(lastNameOfUser As String) 
         uniqueValue = lastNameOfUser
     End Sub
 
@@ -18,22 +18,24 @@ Public Class ImageFileManager
     '5, insert image path and name 
     '6. add file filter only jpg,png --done
     Sub openImageFromFile(pic As PictureBox)
-
+        openPicFile.Filter = "Images|*.png;*.jpg;*.jpeg"
         If openPicFile.ShowDialog = DialogResult.OK Then
-            openPicFile.Filter = "Images|*.png;*.jpg;*.jpeg"
             imageName = openPicFile.FileName
             pictureValue = pic
-            pic.Image = Image.FromFile(imageName)
-
+            pictureValue.Image = Image.FromFile(imageName)
+        Else
+            imageName = " "
         End If
     End Sub
 
     Function getFileName()
-        Return Path.Combine(uniqueValue, Path.GetFileName(imageName))
+
+        Return Path.Combine(uniqueValue, Path.GetFileName(imageName.Trim))
+
     End Function
 
-    Sub saveImageAt(fileName As String)
-        imagePath = Path.Combine(My.Application.Info.DirectoryPath.ToString + "\" & fileName & "", Path.GetFileName(imageName))
+    Sub saveImageAt(folderName As String)
+        imagePath = Path.Combine(My.Application.Info.DirectoryPath.ToString + "\" & folderName & "", Path.GetFileName(imageName))
         pictureValue.Image.Save(imagePath)
 
     End Sub
