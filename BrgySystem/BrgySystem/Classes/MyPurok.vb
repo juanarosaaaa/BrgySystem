@@ -2,7 +2,7 @@
 Imports Guna.UI2.WinForms
 Imports Bunifu.UI.WinForms
 Public Class MyPurok
-
+    Private Const purokQuery As String = "SELECT * FROM Purok"
     Private purokinsert As InsertValue = New ManageSystem
     Private purokupdate As UpdateValue = New ManageSystem
     Private purokdelete As DeleteValue = New ManageSystem
@@ -74,5 +74,11 @@ Public Class MyPurok
             closeConnection()
         End Try
 
+
     End Sub
+
+    Function getAllPurokQuery() As String
+        Return purokQuery
+    End Function
+
 End Class

@@ -276,6 +276,8 @@
     <Compile Include="ChildForms\UpdateStatusOfSettlementBlotter.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Classes\ImageFileManager.vb" />
+    <Compile Include="Classes\MyBrgyResidents.vb" />
     <Compile Include="Classes\ManageSystem.vb" />
     <Compile Include="Classes\MyArchive.vb" />
     <Compile Include="Classes\MyLogin.vb" />
@@ -326,10 +328,10 @@
     <Compile Include="FormsInsideMainForms\Purok.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsInsideMainForms\Residents.Designer.vb">
-      <DependentUpon>Residents.vb</DependentUpon>
+    <Compile Include="FormsInsideMainForms\Resident.Designer.vb">
+      <DependentUpon>Resident.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormsInsideMainForms\Residents.vb">
+    <Compile Include="FormsInsideMainForms\Resident.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsInsideMainForms\Settings.Designer.vb">
@@ -423,8 +425,8 @@
     <EmbeddedResource Include="FormsInsideMainForms\Purok.resx">
       <DependentUpon>Purok.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsInsideMainForms\Residents.resx">
-      <DependentUpon>Residents.vb</DependentUpon>
+    <EmbeddedResource Include="FormsInsideMainForms\Resident.resx">
+      <DependentUpon>Resident.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>
@@ -536,7 +538,9 @@
   <ItemGroup>
     <None Include="Resources\icons8_leadership_30px.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\ResidentsImages\" />
+  </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>

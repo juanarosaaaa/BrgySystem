@@ -1,6 +1,7 @@
 ﻿
 Imports MySql.Data.MySqlClient
 Public Class Purok
+
     Dim SettinggridViewImage As New DataGridViewImages
     Dim SettingAction As New DataGridViewActionButtonEvent
 
@@ -27,7 +28,7 @@ Public Class Purok
             var.archivePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
 
         End If
-        manage.loadGridViewOf("Purok", PurokGridView)
+        manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
     End Sub
 
 
@@ -40,7 +41,7 @@ Public Class Purok
 
     Private Sub Purok_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PurokGridView.Columns("purok_Column").DataPropertyName = "PurokName"
-        manage.loadGridViewOf("Purok", PurokGridView)
+        manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
 
     End Sub
 

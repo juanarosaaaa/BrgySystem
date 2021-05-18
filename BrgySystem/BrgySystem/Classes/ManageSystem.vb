@@ -28,10 +28,10 @@ Public Class ManageSystem
         Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
 
     End Function
-    Public Sub loadGridViewAt(tableName As String, gridView As Guna2DataGridView) Implements loadGridViewValue.loadGridViewOf
+    Public Sub loadGridViewValueAt(query As String, gridView As Guna2DataGridView) Implements loadGridViewValue.loadGridViewValueOf
         openConnection()
         Dim table As New DataTable
-        Dim adapter As New MySqlDataAdapter("SELECT * FROM `" & tableName.Trim & "`", getConnection)
+        Dim adapter As New MySqlDataAdapter(query, getConnection)
         adapter.Fill(table)
         gridView.DataSource = table
 

@@ -7,6 +7,7 @@ Public Class Archive
     Private search As SearchValue = New SearchBar
     Private operation As New MyArchive
     Private AlreadyStart As Boolean = False
+    Private Const archivePurokQuery As String = "SELECT * FROM `archive_purok`"
     Private Sub ResidentsCellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ResidentsGridView.CellFormatting
         SettinggridViewImage.setImageAtButtonColumnOf("restore_Button_Column", ResidentsGridView, e, My.Resources.icons8_restore_page_24px_4)
         SettinggridViewImage.setImageAtButtonColumnOf("delete_Button_Column", ResidentsGridView, e, My.Resources.icons8_trash_24px)
@@ -27,7 +28,7 @@ Public Class Archive
 
     Private Sub Archive_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PurokGridView.Columns("purok_Column").DataPropertyName = "PurokName"
-        manage.loadGridViewOf("archive_Purok", PurokGridView)
+        manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
     End Sub
 
     Private Sub PurokGridViewCellIsClick(sender As Object, e As DataGridViewCellEventArgs) Handles PurokGridView.CellClick
@@ -38,7 +39,7 @@ Public Class Archive
             operation.deletePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
 
         End If
-        manage.loadGridViewOf("archive_Purok", PurokGridView)
+        manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
     End Sub
 
     Private Sub SearchFieldCLicked(sender As Object, e As EventArgs) Handles SearchField.Click
