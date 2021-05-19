@@ -8,31 +8,6 @@ Public Class ManageSystem
         Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
     End Function
 
-    'Public Function updatevalue(query As String) As Boolean Implements UpdateValue.updateValueAt
-    '    openConnection()
-    '    Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
-    'End Function
-
-    'Public Function RestoreValue(query As String) As Boolean Implements RestoreValue.RestoreValueAt
-    '    openConnection()
-    '    Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
-    'End Function
-
-
-    'Public Function archiveValue(query As String) As Boolean Implements ArchiveValue.ArchiveValueAt
-    '    openConnection()
-    '    Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
-    'End Function
-    'Public Function deletevalue(query As String) As Boolean Implements DeleteValue.deleteValueAt
-    '    openConnection()
-    '    Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
-
-
-
-
-
-
-
 
     Public Sub loadGridViewValueAt(query As String, gridView As Guna2DataGridView) Implements loadGridViewValue.loadGridViewValueOf
         openConnection()

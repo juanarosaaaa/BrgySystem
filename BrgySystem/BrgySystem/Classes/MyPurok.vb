@@ -9,7 +9,7 @@ Public Class MyPurok
         Try
 
 
-            If (InputIsNull(name.Trim) Or ContainsSpecialChars(name.Trim)) Then
+            If (InputIsNull(name.Trim) Or InputContainsSpecialCharacter(name.Trim) Or InputContainsNumber(name.Trim)) Then
                 Throw New NoNullAllowedException
             ElseIf (manage.manipulateDataAt("INSERT INTO `purok` VALUES ('" & name.Trim & "')")) Then
                 MessageBox.Show("Purok '" & name.Trim.ToUpper & "' successfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -28,7 +28,7 @@ Public Class MyPurok
     Sub updatePurokTo(name As String)
 
         Try
-            If (InputIsNull(name.Trim) Or ContainsSpecialChars(name.Trim)) Then
+            If (InputIsNull(name.Trim) Or InputContainsSpecialCharacter(name.Trim) Or InputContainsNumber(name.Trim)) Then
                 Throw New NoNullAllowedException
             ElseIf (manage.manipulateDataAt("UPDATE `purok` SET PurokName = '" & name.Trim & "' WHERE PurokName = '" & Purok.PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue & "' ")) Then
                 MessageBox.Show("Purok '" & Purok.PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue.ToString.ToUpper & "' successfully updated to '" & name.ToUpper & "' ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
