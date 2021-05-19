@@ -7,7 +7,7 @@ Public Class Purok
 
     Private var As MyPurok = New MyPurok
     Private manage As loadGridViewValue = New ManageSystem
-    Private foo As Search = New SearchingFeatureImplementation
+    Private foo As Search = New SearchingFeature_Implementation
     Private AlreadyStart As Boolean = False ' due to problems in threading textchanged event start first before load event. that's why text change throws an error 
 
 
@@ -23,13 +23,19 @@ Public Class Purok
 
         ElseIf (SettingAction.buttonOf_IsClick("deleteButton_Column", PurokGridView, e)) Then
             var.deletePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
-
+            foo.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", SearchBarField)
         ElseIf (SettingAction.buttonOf_IsClick("archiveButton_Column", PurokGridView, e)) Then
             var.archivePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
-
+            foo.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", SearchBarField)
         End If
         manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
     End Sub
+
+
+
+
+
+
 
 
 
@@ -39,11 +45,21 @@ Public Class Purok
         SettinggridViewImage.setImageAtButtonColumnOf("archiveButton_Column", PurokGridView, e, My.Resources.icons8_archive_24px_1)
     End Sub
 
+
+
+
+
+
+
     Private Sub Purok_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PurokGridView.Columns("purok_Column").DataPropertyName = "PurokName"
         manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
-
+        foo.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", SearchBarField)
     End Sub
+
+
+
+
 
     Private Sub AddPurokButton_Click(sender As Object, e As EventArgs) Handles AddPurokButton.Click
 
@@ -51,6 +67,11 @@ Public Class Purok
         PurokChildForm.changesInPurokText = False
         PurokChildForm.ShowDialog()
     End Sub
+
+
+
+
+
 
     Private Sub SearchBarTextChanged(sender As Object, e As EventArgs) Handles SearchBarField.TextChange
 
@@ -60,9 +81,19 @@ Public Class Purok
 
     End Sub
 
+
+
+
+
+
     Private Sub SearchBarClick(sender As Object, e As EventArgs) Handles SearchBarField.Click
         AlreadyStart = True
     End Sub
+
+
+
+
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
         foo.searchValueIn("SELECT * FROM `Purok` WHERE PurokName Like '%" & SearchBarField.Text.Trim & "%'", PurokGridView)

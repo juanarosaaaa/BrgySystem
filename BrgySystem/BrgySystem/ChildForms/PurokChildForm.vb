@@ -3,7 +3,7 @@ Public Class PurokChildForm
     Private var As MyPurok = New MyPurok
     Public changesInPurokText As Boolean
     Private manage As loadGridViewValue = New ManageSystem
-
+    Private searchVal As Search = New SearchingFeature_Implementation
     Private Sub AddPurokBttn_Click_1(sender As Object, e As EventArgs) Handles AddPurokBttn.Click
 
         var.addNewPurok(PurokTextBox.Text)
@@ -31,7 +31,7 @@ Public Class PurokChildForm
         UpdateBttn.Enabled = True
         AddPurokBttn.Enabled = True
         PurokTextBox.Clear()
-
+        searchVal.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", Purok.SearchBarField)
     End Sub
 
     Private Sub PuroktextChange(sender As Object, e As EventArgs) Handles PurokTextBox.TextChange

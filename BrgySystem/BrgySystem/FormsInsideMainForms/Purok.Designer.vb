@@ -88,7 +88,7 @@ Partial Class Purok
         Me.SearchBarField.IconRight = Nothing
         Me.SearchBarField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.SearchBarField.Lines = New String(-1) {}
-        Me.SearchBarField.Location = New System.Drawing.Point(786, 17)
+        Me.SearchBarField.Location = New System.Drawing.Point(799, 17)
         Me.SearchBarField.MaxLength = 32767
         Me.SearchBarField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.SearchBarField.Modified = False
@@ -124,7 +124,7 @@ Partial Class Purok
         Me.SearchBarField.SelectionLength = 0
         Me.SearchBarField.SelectionStart = 0
         Me.SearchBarField.ShortcutsEnabled = True
-        Me.SearchBarField.Size = New System.Drawing.Size(299, 37)
+        Me.SearchBarField.Size = New System.Drawing.Size(286, 37)
         Me.SearchBarField.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.SearchBarField.TabIndex = 1
         Me.SearchBarField.TabStop = False

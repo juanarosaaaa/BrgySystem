@@ -3,7 +3,7 @@ Imports Guna.UI2.WinForms
 Imports Bunifu.UI.WinForms
 Public Class MyResidents
 
-    Private search As Search = New SearchingFeatureImplementation
+    Private search As Search = New SearchingFeature_Implementation
     Private SettinggridViewImage As New DataGridViewImages
     Private SettingAction As New DataGridViewActionButtonEvent
     Private brgyResidents As New MyBrgyResidents
@@ -32,7 +32,7 @@ Public Class MyResidents
     Private Sub MyResidents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         brgyResidents.arrangeGridView(ResidentsGridView)
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForDataGridView, ResidentsGridView)
-        search.addDataSuggestionWhileSearchingAt("FULLNAME", "SELECT FULLNAME from `residents` where FULLNAME like '%" & SearchFieldTxtBox.Text & "%'", SearchFieldTxtBox)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
     End Sub
 
 
@@ -55,13 +55,13 @@ Public Class MyResidents
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
 
 
-        'Try
-        '    imageFile.saveImageAt("ResidentsImages")
-        '    search.addDataSuggestionWhileSearchingAt("FULLNAME", "SELECT FULLNAME from `residents` where FULLNAME like '%" & SearchFieldTxtBox.Text & "%'", SearchFieldTxtBox)
-        'Catch x As NoNullAllowedException
-        '    MessageBox.Show("Please select picture.", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        '    Exit Sub
-        'End Try
+        Try
+            imageFile.saveImageAt("ResidentsImages")
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        Catch X As NoNullAllowedException
+            MessageBox.Show("Please select picture.", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End Try
         brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
 
 
@@ -91,4 +91,10 @@ Public Class MyResidents
     Private Sub SearchFieldIsClicked(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.Click
         AlreadyStart = True
     End Sub
+
+    Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
+        search.searchValueIn(brgyResidents.getResidentsQueryForDataGridView + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+    End Sub
+
+
 End Class

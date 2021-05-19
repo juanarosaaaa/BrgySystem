@@ -172,11 +172,11 @@
   </data>
   <data name="ReligionTextBOx.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAL8AAAAgCAYAAABD2qmQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVHhe7dKxCcQwAARB9V+VhMr4MlyAjUDJ17AzcMnF
-        OyBt7/2bc75mhZ3eb/pjnAMqTu83ffHTIn6yxE+W+MkSP1niJ0v8ZImfLPGTJX6yxE+W+MkSP1niJ0v8
-        ZImfLPGTJX6yxE+W+MkSP1niJ0v8ZImfLPGTJX6yxE/WX/xrreccZoWd3m/6UDTGB8uWA9DMkMSwAAAA
-        AElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAMMAAAAgCAYAAACvr8yGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACHSURBVHhe7dOxDUIxEAXB678qf7kMyqAAkKUNoAbPSC+5
+        +HaAH3vv11rrY3bjzv+Xwsw5wK3O/5eCGLibGCBigIgBIgaIGCBigIgBIgaIGCBigIgBIgaIGCBigIgB
+        IgaIGCBigIgBIgaIGCBigIgBIgaIGCBigPzF8DzP+xzMbtz5/1IAZma+7Z/cF5EdK30AAAAASUVORK5C
+        YII=
 </value>
   </data>
   <data name="UpdateButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

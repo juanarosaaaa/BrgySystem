@@ -1,6 +1,6 @@
 ﻿Imports Bunifu.UI.WinForms
-
-Module checkInputValidity
+Imports MySql.Data.MySqlClient
+Module InputValidations
     Function InputContainsSpecialCharacter(value As String) As Boolean
         Return value.IndexOfAny("[~`!@#$%^&*()-+=|{}':;.,<>/?]".ToCharArray) <> -1
     End Function
@@ -24,4 +24,13 @@ Module checkInputValidity
     Function InputContainsLetter(value As String) As Boolean
         Return value.IndexOfAny("abcdefghijklmnopqrstyuvABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray) <> -1
     End Function
+
+
+    'Function isValueAlreadyExistAt() As Boolean
+    '    Dim datatable As New DataTable
+
+    '    Dim adapter As New MySqlDataAdapter("SELECT `Username`, `Password` FROM `login` where Username = '" & userName & "' and Password = '" & password & "'", ConnectionDB.getConnection)
+    '    adapter.Fill(datatable)
+    '    Return datatable.Rows.Count
+    'End Function
 End Module

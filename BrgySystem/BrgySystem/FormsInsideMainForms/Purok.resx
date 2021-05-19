@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="SearchBarField.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAASsAAAAlCAYAAAAa2c9wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVHhe7dRBCQQxAATB+FeVJTJOxgm4JZDPOUhDFcxn
-        BPQAyFhrfeacPzOz27b7dFI1xj4AbrT7dFIlVsC9xApIECsgQayABLECEsQKSBArIEGsgASxAhLECkgQ
-        KyBBrIAEsQISxApIECsgQayABLECEsQKSBArIEGsgASxAhLECkgQKyBBrIAEsQISxApIECsgQayABLEC
-        EsQKSBArIEGsgIS/WD3P892Hmdlt2306qQK43RgvvP3rWj9PeZ8AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAR4AAAAlCAYAAACUA4YMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACzSURBVHhe7dQxDQMxAARB80fll2EERgAksuQmALxpZqRr
+        DsAOgL9Ya73mnB8zs5vbrTnZGWMfALft1pzsCA/QEB4gJzxATniAnPAAOeEBcsID5IQHyAkPkBMeICc8
+        QE54gJzwADnhAXLCA+SEB8gJD5ATHiAnPEBOeICc8AA54QFywgPkhAfICQ+QEx4gJzxATniAnPAAOeEB
+        csID5IQHyP2E53me9z7MzG5ut+ZkB6A0xhfh0+k/7MRq/QAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="purok_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

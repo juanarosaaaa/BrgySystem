@@ -11,8 +11,8 @@ Public Class MyBrgyResidents
 
 
     Function insertQuery(imagename As String, imagepath As String) As String
-        'Dim fullname As String = "" & MyResidents.LastNameTextBox.Text + MyResidents.MiddleNameTextBox.Text + MyResidents.FirstNameTextBox.Text & ""
-        fullname = "mynameis"
+        fullname = "" & MyResidents.LastNameTextBox.Text + MyResidents.MiddleNameTextBox.Text + MyResidents.FirstNameTextBox.Text & ""
+
 
         Dim age As String = Date.Now.Year - MyResidents.BirthdateDatePicker.Value.Year
 
@@ -37,8 +37,8 @@ Public Class MyBrgyResidents
 
     'check purok,bdate,contact
     Sub addResidents(imageName As String, imagePath As String)
-        Try
-            If (IsInputValid()) Then
+
+        If (IsInputValid()) Then
                 Exit Sub
             ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
                 MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -48,9 +48,7 @@ Public Class MyBrgyResidents
                 MessageBox.Show("Resident Successfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
 
-        Catch duplicate As MySqlException
-            MessageBox.Show("Resident '" & fullname.Trim.ToUpper & "' already exist!", "FAILED TO ADD!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+
         closeConnection()
     End Sub
 

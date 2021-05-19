@@ -4,7 +4,7 @@ Public Class Archive
     Dim SettinggridViewImage As New DataGridViewImages
     Dim SettingAction As New DataGridViewActionButtonEvent
     Private manage As loadGridViewValue = New ManageSystem
-    Private search As Search = New SearchingFeatureImplementation
+    Private search As Search = New SearchingFeature_Implementation
     Private operation As New MyArchive
     Private AlreadyStart As Boolean = False
     Private Const archivePurokQuery As String = "SELECT * FROM `archive_purok`"
@@ -26,18 +26,27 @@ Public Class Archive
 
     End Sub
 
+
+
+
+
+
+
+
+
     Private Sub Archive_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PurokGridView.Columns("purok_Column").DataPropertyName = "PurokName"
         manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "archive_purok", SearchField)
     End Sub
 
     Private Sub PurokGridViewCellIsClick(sender As Object, e As DataGridViewCellEventArgs) Handles PurokGridView.CellClick
         If SettingAction.buttonOf_IsClick("restoreButton_Column", PurokGridView, e) Then
             operation.restoreData(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
-
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "archive_purok", SearchField)
         ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", PurokGridView, e) Then
             operation.deletePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
-
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "archive_purok", SearchField)
         End If
         manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
     End Sub
