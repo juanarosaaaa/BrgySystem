@@ -17,5 +17,4 @@
         SettinggridViewImage.setImageAtButtonColumnOf("printButton_Column", Guna2DataGridView1, e, My.Resources.icons8_save_24px)
     End Sub
 
-
 End Class

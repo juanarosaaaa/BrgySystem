@@ -19,4 +19,5 @@ Public Class Login
         Dim login As New MyLogin
         login.authenticateLogin(Me, userNameTextBox.Text.Trim, passwordTextBox.Text.Trim)
     End Sub
+
 End Class

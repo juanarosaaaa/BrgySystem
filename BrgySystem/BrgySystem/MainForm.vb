@@ -64,22 +64,11 @@
 
     End Sub
 
-
-
-    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
     Private Sub Logout_Button_Click(sender As Object, e As EventArgs) Handles Logout_Button.Click
         My.Settings.UserNotLoggedOut = False
         closeConnection()
         Application.Exit()
 
     End Sub
-
-
-
-
-
 
 End Class
