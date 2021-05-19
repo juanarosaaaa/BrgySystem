@@ -37,19 +37,35 @@ Public Class MyBrgyResidents
 
     'check purok,bdate,contact
     Sub addResidents(imageName As String, imagePath As String)
-
-        If (IsInputValid()) Then
+        Try
+            If (IsInputValid()) Then
                 Exit Sub
             ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
                 MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
             ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
                 MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
             ElseIf (manage.manipulateDataAt(insertQuery(imageName, imagePath))) Then
                 MessageBox.Show("Resident Successfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
 
+        Catch x As MySqlException
+            If isInputAlreadyExist("FULLNAME", "residents", fullname) Then
+                MessageBox.Show("Name '" & fullname.Trim.ToUpper & "' already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
+            ElseIf isInputAlreadyExist("CONTACT_NUMBER ", "residents", MyResidents.ContactTextBox.Text.Trim) Then
+                MessageBox.Show("Contact already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
+            ElseIf isInputAlreadyExist("ImageName  ", "residents", imageName) Then
+                MessageBox.Show("Image already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
 
-        closeConnection()
+            End If
+        Finally
+            closeConnection()
+        End Try
+
     End Sub
 
 
