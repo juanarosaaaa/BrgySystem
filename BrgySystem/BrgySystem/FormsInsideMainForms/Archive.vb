@@ -4,7 +4,7 @@ Public Class Archive
     Dim SettinggridViewImage As New DataGridViewImages
     Dim SettingAction As New DataGridViewActionButtonEvent
     Private manage As loadGridViewValue = New ManageSystem
-    Private search As SearchValue = New SearchBar
+    Private search As Search = New SearchingFeatureImplementation
     Private operation As New MyArchive
     Private AlreadyStart As Boolean = False
     Private Const archivePurokQuery As String = "SELECT * FROM `archive_purok`"

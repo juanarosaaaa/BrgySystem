@@ -7,7 +7,7 @@ Public Class Purok
 
     Private var As MyPurok = New MyPurok
     Private manage As loadGridViewValue = New ManageSystem
-    Private foo As SearchValue = New SearchBar
+    Private foo As Search = New SearchingFeatureImplementation
     Private AlreadyStart As Boolean = False ' due to problems in threading textchanged event start first before load event. that's why text change throws an error 
 
 

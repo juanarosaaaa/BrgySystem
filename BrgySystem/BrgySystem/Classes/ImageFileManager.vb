@@ -2,7 +2,7 @@
 Public Class ImageFileManager
 
     Private imagePath As String
-    Private imageName As String
+    Private imageName As String = ""
 
     Private openPicFile As OpenFileDialog = New OpenFileDialog()
     Private pictureValue As PictureBox = New PictureBox()
@@ -16,7 +16,7 @@ Public Class ImageFileManager
             pictureValue = pic
             pictureValue.Image = Image.FromFile(imageName)
         Else
-            imageName = " "
+           Exit sub
         End If
     End Sub
 
@@ -29,14 +29,12 @@ Public Class ImageFileManager
     Sub saveImageAt(folderName As String)
 
         If (String.IsNullOrEmpty(imageName)) Then
-            Throw New ArgumentNullException("No picture selected!")
+            Throw New NoNullAllowedException()
+            Exit Sub
         Else
             imagePath = Path.Combine(My.Application.Info.DirectoryPath.ToString + "\" & folderName & "", Path.GetFileName(imageName))
             pictureValue.Image.Save(imagePath)
         End If
-
-
-
 
 
     End Sub

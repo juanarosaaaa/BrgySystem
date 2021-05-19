@@ -227,7 +227,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\checkInputValidity.vb" />
+    <Compile Include="checkInputValidity.vb" />
     <Compile Include="ChildForms\BlotterSettlementSchedule.Designer.vb">
       <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
     </Compile>
@@ -285,7 +285,7 @@
     <Compile Include="Classes\ConnectionDB.vb" />
     <Compile Include="Classes\DataGridViewActionButtonEvent.vb" />
     <Compile Include="Classes\DataGridViewImages.vb" />
-    <Compile Include="Classes\SearchBar.vb" />
+    <Compile Include="Classes\SearchingFeatureImplementation.vb" />
     <Compile Include="FormsInsideMainForms\Archive.Designer.vb">
       <DependentUpon>Archive.vb</DependentUpon>
     </Compile>
@@ -342,7 +342,7 @@
     </Compile>
     <Compile Include="Interfaces\DataManipulation.vb" />
     <Compile Include="Interfaces\loadGridViewValue.vb" />
-    <Compile Include="Interfaces\SearchValue.vb" />
+    <Compile Include="Interfaces\Search.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
