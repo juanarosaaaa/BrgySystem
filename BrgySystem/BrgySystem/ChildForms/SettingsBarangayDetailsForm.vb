@@ -4,6 +4,6 @@
     End Sub
 
     Private Sub SettingsBarangayDetailsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        RemainSizeOfTheForm.ToTheSizeOfTheSetting(Me)
+        RemainThisSizeOfTheForm.ToTheSizeOfTheSetting(Me)
     End Sub
 End Class

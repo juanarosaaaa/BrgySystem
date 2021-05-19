@@ -1,5 +1,5 @@
 ﻿Public Class SettingsAccountSettingsForm
     Private Sub SettingsAccountSettingsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        RemainSizeOfTheForm.ToTheSizeOfTheSetting(Me)
+        RemainThisSizeOfTheForm.ToTheSizeOfTheSetting(Me)
     End Sub
 End Class
