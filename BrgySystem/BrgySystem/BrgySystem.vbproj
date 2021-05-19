@@ -227,7 +227,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InputValidations.vb" />
+    <Compile Include="Classes\InputValidation.vb" />
     <Compile Include="ChildForms\BlotterSettlementSchedule.Designer.vb">
       <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
     </Compile>
@@ -285,6 +285,7 @@
     <Compile Include="Classes\ConnectionDB.vb" />
     <Compile Include="Classes\DataGridViewActionButtonEvent.vb" />
     <Compile Include="Classes\DataGridViewImages.vb" />
+    <Compile Include="Classes\RemainSizeOfForm.vb" />
     <Compile Include="Classes\SearchingFeature_Implementation.vb" />
     <Compile Include="FormsInsideMainForms\Archive.Designer.vb">
       <DependentUpon>Archive.vb</DependentUpon>
@@ -372,7 +373,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="RemainThisSizeOfTheForm.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ChildForms\BlotterSettlementSchedule.resx">
