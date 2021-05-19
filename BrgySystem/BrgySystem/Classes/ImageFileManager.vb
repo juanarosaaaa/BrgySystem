@@ -3,18 +3,16 @@ Public Class ImageFileManager
 
     Private imagePath As String
     Private imageName As String
-    Private uniqueValue As String
-    Private openPicFile As OpenFileDialog = New OpenFileDialog
-    Private pictureValue As PictureBox = New PictureBox
-    Sub New(lastNameOfUser As String) 
-        uniqueValue = lastNameOfUser
-    End Sub
+
+    Private openPicFile As OpenFileDialog = New OpenFileDialog()
+    Private pictureValue As PictureBox = New PictureBox()
 
 
-    Sub openImageFromFile(pic As PictureBox)
+    Sub openImageFromPictureBox(pic As PictureBox)
         openPicFile.Filter = "Images|*.png;*.jpg;*.jpeg"
         If openPicFile.ShowDialog = DialogResult.OK Then
             imageName = openPicFile.FileName
+
             pictureValue = pic
             pictureValue.Image = Image.FromFile(imageName)
         Else
@@ -22,19 +20,28 @@ Public Class ImageFileManager
         End If
     End Sub
 
-    Function getFileName()
+    Function getImageName()
 
-        Return Path.Combine(uniqueValue, Path.GetFileName(imageName.Trim))
+        Return Path.GetFileName(imageName)
 
     End Function
 
     Sub saveImageAt(folderName As String)
-        imagePath = Path.Combine(My.Application.Info.DirectoryPath.ToString + "\" & folderName & "", Path.GetFileName(imageName))
-        pictureValue.Image.Save(imagePath)
+
+        If (String.IsNullOrEmpty(imageName)) Then
+            Throw New ArgumentNullException("No picture selected!")
+        Else
+            imagePath = Path.Combine(My.Application.Info.DirectoryPath.ToString + "\" & folderName & "", Path.GetFileName(imageName))
+            pictureValue.Image.Save(imagePath)
+        End If
+
+
+
+
 
     End Sub
 
-    Function getImagePath() As String
+    Function getImageFolderPath() As String
         Return imagePath
     End Function
 
