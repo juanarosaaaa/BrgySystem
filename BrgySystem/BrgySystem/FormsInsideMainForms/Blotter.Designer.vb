@@ -86,6 +86,17 @@ Partial Class Blotter
         Dim StateProperties56 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.blotter_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.reportedResident_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.details_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.type_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dateOfIndident_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dateFilled_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.complainant_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.status_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.updateButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.settlementScheduleButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.printButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -123,17 +134,6 @@ Partial Class Blotter
         Me.BunifuTextBox14 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.blotter_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.reportedResident_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.details_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.type_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dateOfIndident_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dateFilled_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.complainant_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.status_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.updateButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.settlementScheduleButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.printButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -171,7 +171,7 @@ Partial Class Blotter
         Me.Guna2DataGridView1.ColumnHeadersHeight = 40
         Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.blotter_Column, Me.reportedResident_Column, Me.details_Column, Me.type_Column, Me.dateOfIndident_Column, Me.dateFilled_Column, Me.complainant_Column, Me.status_Column, Me.updateButton_Column, Me.settlementScheduleButton_Column, Me.printButton_Column})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Lato", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -202,13 +202,77 @@ Partial Class Blotter
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 40
         Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Lato", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'blotter_Column
+        '
+        Me.blotter_Column.HeaderText = "Blotter No."
+        Me.blotter_Column.Name = "blotter_Column"
+        '
+        'reportedResident_Column
+        '
+        Me.reportedResident_Column.HeaderText = "Reported Resident"
+        Me.reportedResident_Column.Name = "reportedResident_Column"
+        '
+        'details_Column
+        '
+        Me.details_Column.HeaderText = "Details"
+        Me.details_Column.Name = "details_Column"
+        '
+        'type_Column
+        '
+        Me.type_Column.HeaderText = "Type of Incident"
+        Me.type_Column.Name = "type_Column"
+        '
+        'dateOfIndident_Column
+        '
+        Me.dateOfIndident_Column.HeaderText = "Date of Incident"
+        Me.dateOfIndident_Column.Name = "dateOfIndident_Column"
+        '
+        'dateFilled_Column
+        '
+        Me.dateFilled_Column.HeaderText = "Date Filled"
+        Me.dateFilled_Column.Name = "dateFilled_Column"
+        '
+        'complainant_Column
+        '
+        Me.complainant_Column.HeaderText = "Complainant"
+        Me.complainant_Column.Name = "complainant_Column"
+        '
+        'status_Column
+        '
+        Me.status_Column.HeaderText = "Status"
+        Me.status_Column.Name = "status_Column"
+        '
+        'updateButton_Column
+        '
+        Me.updateButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.updateButton_Column.HeaderText = ""
+        Me.updateButton_Column.MinimumWidth = 25
+        Me.updateButton_Column.Name = "updateButton_Column"
+        Me.updateButton_Column.Width = 25
+        '
+        'settlementScheduleButton_Column
+        '
+        Me.settlementScheduleButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.settlementScheduleButton_Column.HeaderText = ""
+        Me.settlementScheduleButton_Column.MinimumWidth = 25
+        Me.settlementScheduleButton_Column.Name = "settlementScheduleButton_Column"
+        Me.settlementScheduleButton_Column.Width = 25
+        '
+        'printButton_Column
+        '
+        Me.printButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.printButton_Column.HeaderText = ""
+        Me.printButton_Column.MinimumWidth = 25
+        Me.printButton_Column.Name = "printButton_Column"
+        Me.printButton_Column.Width = 25
         '
         'GroupBox1
         '
@@ -296,7 +360,7 @@ Partial Class Blotter
         Me.BunifuTextBox9.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox9.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox9.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox9.BorderRadius = 1
+        Me.BunifuTextBox9.BorderRadius = 31
         Me.BunifuTextBox9.BorderThickness = 1
         Me.BunifuTextBox9.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox9.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -586,7 +650,7 @@ Partial Class Blotter
         Me.BunifuTextBox2.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox2.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox2.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox2.BorderRadius = 1
+        Me.BunifuTextBox2.BorderRadius = 31
         Me.BunifuTextBox2.BorderThickness = 1
         Me.BunifuTextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -681,7 +745,7 @@ Partial Class Blotter
         Me.BunifuTextBox3.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox3.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox3.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox3.BorderRadius = 1
+        Me.BunifuTextBox3.BorderRadius = 31
         Me.BunifuTextBox3.BorderThickness = 1
         Me.BunifuTextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -775,9 +839,9 @@ Partial Class Blotter
         Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(64, 19)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(41, 19)
         Me.BunifuLabel1.TabIndex = 180
-        Me.BunifuLabel1.Text = "Fullname"
+        Me.BunifuLabel1.Text = "Name"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
@@ -795,7 +859,7 @@ Partial Class Blotter
         Me.BunifuTextBox13.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox13.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox13.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox13.BorderRadius = 1
+        Me.BunifuTextBox13.BorderRadius = 31
         Me.BunifuTextBox13.BorderThickness = 1
         Me.BunifuTextBox13.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox13.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -985,7 +1049,7 @@ Partial Class Blotter
         Me.BunifuTextBox12.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox12.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox12.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox12.BorderRadius = 1
+        Me.BunifuTextBox12.BorderRadius = 31
         Me.BunifuTextBox12.BorderThickness = 1
         Me.BunifuTextBox12.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -1062,7 +1126,7 @@ Partial Class Blotter
         Me.BunifuTextBox5.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox5.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox5.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox5.BorderRadius = 1
+        Me.BunifuTextBox5.BorderRadius = 31
         Me.BunifuTextBox5.BorderThickness = 1
         Me.BunifuTextBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -1114,7 +1178,7 @@ Partial Class Blotter
         Me.BunifuTextBox5.SelectionLength = 0
         Me.BunifuTextBox5.SelectionStart = 0
         Me.BunifuTextBox5.ShortcutsEnabled = True
-        Me.BunifuTextBox5.Size = New System.Drawing.Size(156, 39)
+        Me.BunifuTextBox5.Size = New System.Drawing.Size(150, 39)
         Me.BunifuTextBox5.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox5.TabIndex = 183
         Me.BunifuTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1157,7 +1221,7 @@ Partial Class Blotter
         Me.BunifuTextBox6.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox6.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox6.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox6.BorderRadius = 1
+        Me.BunifuTextBox6.BorderRadius = 31
         Me.BunifuTextBox6.BorderThickness = 1
         Me.BunifuTextBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -1234,7 +1298,7 @@ Partial Class Blotter
         Me.BunifuTextBox11.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox11.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox11.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox11.BorderRadius = 1
+        Me.BunifuTextBox11.BorderRadius = 31
         Me.BunifuTextBox11.BorderThickness = 1
         Me.BunifuTextBox11.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -1311,7 +1375,7 @@ Partial Class Blotter
         Me.BunifuTextBox7.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox7.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox7.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox7.BorderRadius = 1
+        Me.BunifuTextBox7.BorderRadius = 31
         Me.BunifuTextBox7.BorderThickness = 1
         Me.BunifuTextBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -1468,7 +1532,7 @@ Partial Class Blotter
         Me.BunifuTextBox10.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox10.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox10.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox10.BorderRadius = 1
+        Me.BunifuTextBox10.BorderRadius = 31
         Me.BunifuTextBox10.BorderThickness = 1
         Me.BunifuTextBox10.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -1545,7 +1609,7 @@ Partial Class Blotter
         Me.BunifuTextBox8.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox8.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox8.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox8.BorderRadius = 1
+        Me.BunifuTextBox8.BorderRadius = 31
         Me.BunifuTextBox8.BorderThickness = 1
         Me.BunifuTextBox8.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -1712,7 +1776,7 @@ Partial Class Blotter
         Me.BunifuTextBox14.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuTextBox14.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BunifuTextBox14.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox14.BorderRadius = 1
+        Me.BunifuTextBox14.BorderRadius = 31
         Me.BunifuTextBox14.BorderThickness = 1
         Me.BunifuTextBox14.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox14.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -1866,70 +1930,6 @@ Partial Class Blotter
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1500, 944)
         Me.TableLayoutPanel2.TabIndex = 148
-        '
-        'blotter_Column
-        '
-        Me.blotter_Column.HeaderText = "Blotter No."
-        Me.blotter_Column.Name = "blotter_Column"
-        '
-        'reportedResident_Column
-        '
-        Me.reportedResident_Column.HeaderText = "Reported Resident"
-        Me.reportedResident_Column.Name = "reportedResident_Column"
-        '
-        'details_Column
-        '
-        Me.details_Column.HeaderText = "Details"
-        Me.details_Column.Name = "details_Column"
-        '
-        'type_Column
-        '
-        Me.type_Column.HeaderText = "Type of Incident"
-        Me.type_Column.Name = "type_Column"
-        '
-        'dateOfIndident_Column
-        '
-        Me.dateOfIndident_Column.HeaderText = "Date of Incident"
-        Me.dateOfIndident_Column.Name = "dateOfIndident_Column"
-        '
-        'dateFilled_Column
-        '
-        Me.dateFilled_Column.HeaderText = "Date Filled"
-        Me.dateFilled_Column.Name = "dateFilled_Column"
-        '
-        'complainant_Column
-        '
-        Me.complainant_Column.HeaderText = "Complainant"
-        Me.complainant_Column.Name = "complainant_Column"
-        '
-        'status_Column
-        '
-        Me.status_Column.HeaderText = "Status"
-        Me.status_Column.Name = "status_Column"
-        '
-        'updateButton_Column
-        '
-        Me.updateButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.updateButton_Column.HeaderText = ""
-        Me.updateButton_Column.MinimumWidth = 25
-        Me.updateButton_Column.Name = "updateButton_Column"
-        Me.updateButton_Column.Width = 25
-        '
-        'settlementScheduleButton_Column
-        '
-        Me.settlementScheduleButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.settlementScheduleButton_Column.HeaderText = ""
-        Me.settlementScheduleButton_Column.MinimumWidth = 25
-        Me.settlementScheduleButton_Column.Name = "settlementScheduleButton_Column"
-        Me.settlementScheduleButton_Column.Width = 25
-        '
-        'printButton_Column
-        '
-        Me.printButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.printButton_Column.HeaderText = ""
-        Me.printButton_Column.MinimumWidth = 25
-        Me.printButton_Column.Name = "printButton_Column"
-        Me.printButton_Column.Width = 25
         '
         'Blotter
         '
