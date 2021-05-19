@@ -98,4 +98,6 @@ Public Class Purok
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
         foo.searchValueIn("SELECT * FROM `Purok` WHERE PurokName Like '%" & SearchBarField.Text.Trim & "%'", PurokGridView)
     End Sub
+
+
 End Class

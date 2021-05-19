@@ -4,6 +4,6 @@
     End Sub
 
     Private Sub SettingsbackupAndRestoreForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        RemainThisSizeOfTheForm.ToTheSizeOfTheSetting(Me)
+        RemainSizeOfTheForm.ToTheSizeOfTheSetting(Me)
     End Sub
 End Class
