@@ -24,8 +24,8 @@ Public Class MyResidents
     End Sub
 
 
-    Private Sub ResidentsGridViewCellClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ResidentsGridView.CellContentClick
 
+<<<<<<< HEAD
         If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
             'brgyResidents.getValuesFromDatabaseAndDisplayToInputs(ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue)
         ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
@@ -38,6 +38,10 @@ Public Class MyResidents
 
 
     End Sub
+=======
+
+
+>>>>>>> parent of 3da7177 (Fix bug in imagepath when inserting imagepath to DB mysql  ignores backslashes, and adding fullname txtbox to residents)
 
 
 
@@ -46,11 +50,20 @@ Public Class MyResidents
 
         brgyResidents.arrangeGridView(ResidentsGridView)
 
+<<<<<<< HEAD
         '  manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
 
+=======
+        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
+>>>>>>> parent of 3da7177 (Fix bug in imagepath when inserting imagepath to DB mysql  ignores backslashes, and adding fullname txtbox to residents)
     End Sub
+
+
+
 
 
 
@@ -63,8 +76,13 @@ Public Class MyResidents
     End Sub
 
 
+
+
+
+
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
 
+<<<<<<< HEAD
         'Try
         '    imageFile.saveImageAt("ResidentsImages")
         'Catch x As NoNullAllowedException
@@ -74,7 +92,21 @@ Public Class MyResidents
         'brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
         'search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         'manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+=======
+
+
+        'imageFile.saveImageAt("ResidentsImages")
+
+
+
+        'brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
+
+        ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+>>>>>>> parent of 3da7177 (Fix bug in imagepath when inserting imagepath to DB mysql  ignores backslashes, and adding fullname txtbox to residents)
     End Sub
+
+
+
 
 
 
@@ -89,6 +121,12 @@ Public Class MyResidents
         'End If
 
     End Sub
+
+
+
+
+
+
 
 
 
