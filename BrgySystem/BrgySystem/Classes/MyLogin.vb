@@ -8,7 +8,6 @@ Public Class MyLogin
             My.Settings.UserNotLoggedOut = True
             MainForm.Show()
             form.Close()
-            closeConnection()
 
         Else
             MessageBox.Show("Username or Password is Incorrect.", "WARNING!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -22,5 +21,6 @@ Public Class MyLogin
         Dim adapter As New MySqlDataAdapter("SELECT `Username`, `Password` FROM `login` where Username = '" & userName & "' and Password = '" & password & "'", ConnectionDB.getConnection)
         adapter.Fill(datatable)
         Return datatable.Rows.Count
+        close_Connection()
     End Function
 End Class

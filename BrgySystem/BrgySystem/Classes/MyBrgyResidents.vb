@@ -82,8 +82,8 @@ Public Class MyBrgyResidents
                 Exit Sub
 
             End If
-        Finally
-            closeConnection()
+
+
         End Try
 
     End Sub
@@ -131,37 +131,36 @@ Public Class MyBrgyResidents
     End Function
 
 
-<<<<<<< HEAD
+
     Sub getValuesFromDatabaseAndDisplayToInputs(name As String)
 
         Dim command As New MySqlCommand("SELECT * FROM `residents` WHERE FULLNAME = 'Mikocabaljasmin' ")
         Dim reader As MySqlDataReader
 
-        openConnection()
+        'openConnection()
         reader = command.ExecuteReader
         While reader.Read
-            MyResidents.FullNameTxtBox.Text = reader.GetString("FULLNAME ")
-            MyResidents.SuffixComboBox.Text = reader.GetString("SUFFIX ")
-            MyResidents.CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
-            MyResidents.AddressTextBox.Text = reader.GetString("ADDRESS")
-            MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
-            MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
-            MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
-            MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
-            MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
-            MyResidents.BirthdateDatePicker.Value = reader.GetMySqlDateTime("BIRTHDATE")
-            MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
-            MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("IMAGEPATH"))
-            MyResidents.SexComboBox.Text = reader.GetString("SEX ")
-            MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
-            MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
+            'MyResidents.FullNameTxtBox.Text = reader.GetString("FULLNAME ")
+            'MyResidents.SuffixComboBox.Text = reader.GetString("SUFFIX ")
+            'MyResidents.CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
+            'MyResidents.AddressTextBox.Text = reader.GetString("ADDRESS")
+            'MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
+            'MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
+            'MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
+            'MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
+            'MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
+            'MyResidents.BirthdateDatePicker.Value = reader.GetMySqlDateTime("BIRTHDATE")
+            'MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
+            'MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("IMAGEPATH"))
+            'MyResidents.SexComboBox.Text = reader.GetString("SEX ")
+            'MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
+            'MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
         End While
-        closeConnection()
+        '  closeConnection()
 
     End Sub
 
-=======
->>>>>>> parent of 3da7177 (Fix bug in imagepath when inserting imagepath to DB mysql  ignores backslashes, and adding fullname txtbox to residents)
+
     'check if datapicker is date.now then error
     'check if image is null
     'check if contact contains letter

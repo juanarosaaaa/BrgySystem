@@ -8,7 +8,7 @@
         panelDisplay.TopLevel = False
         panelDisplay.WindowState = FormWindowState.Maximized
         MainPanel.Controls.Add(panelDisplay)
-        'closeConnection()
+
         panelDisplay.Show()
 
     End Sub
@@ -62,7 +62,7 @@
 
     Private Sub Logout_Button_Click_1(sender As Object, e As EventArgs) Handles Logout_Button.Click
         My.Settings.UserNotLoggedOut = False
-        closeConnection()
+        close_Connection() 'check later
         Application.Exit()
 
     End Sub

@@ -4,18 +4,19 @@ Public Class ManageSystem
     Implements loadGridViewValue, DataManipulation
 
     Public Function manipulateDataAt(query As String) As Boolean Implements DataManipulation.manipulateDataAt
-        openConnection()
+        open_Connection()
         Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
+        close_Connection()
     End Function
 
 
     Public Sub loadGridViewValueOf(query As String, gridView As Guna2DataGridView) Implements loadGridViewValue.loadGridViewValueOf
-        openConnection()
+        open_Connection()
         Dim table As New DataTable
         Dim adapter As New MySqlDataAdapter(query, getConnection)
         adapter.Fill(table)
         gridView.DataSource = table
-        closeConnection()
+        close_Connection()
     End Sub
 
 

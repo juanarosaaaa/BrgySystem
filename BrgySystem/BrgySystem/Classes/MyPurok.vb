@@ -20,7 +20,7 @@ Public Class MyPurok
         Catch nullValues As NoNullAllowedException
             MessageBox.Show("Input is invalid! An input must not leave empty or contain special characters \/:*?`<>| ", "FAILED TO ADD!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
-            closeConnection()
+
         End Try
 
     End Sub
@@ -39,7 +39,7 @@ Public Class MyPurok
         Catch nullValues As NoNullAllowedException
             MessageBox.Show("Input is invalid! An input must not leave empty or contain special characters \/:*?`<>| ", "FAILED TO ADD!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
-            closeConnection()
+
         End Try
 
     End Sub
@@ -51,7 +51,7 @@ Public Class MyPurok
                 MessageBox.Show("Purok '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
         End If
-        closeConnection()
+
     End Sub
 
     Sub archivePurok(nameToArchive As String)
@@ -68,8 +68,8 @@ Public Class MyPurok
         Catch duplicate As MySqlException
             MessageBox.Show("Failed archiving Purok. A Purok '" & nameToArchive.ToUpper.Trim & "' already exist at the archive list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-        Finally
-            closeConnection()
+
+
         End Try
 
 

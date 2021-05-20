@@ -12,7 +12,7 @@ Module ConnectionDB
 
     Private stateOfConnection As ConnectionState
 
-    Public Sub openConnection()
+    Public Sub open_Connection()
         Try
             myconnection.Open()
             stateOfConnection = ConnectionState.Working
@@ -21,9 +21,9 @@ Module ConnectionDB
             stateOfConnection = ConnectionState.NotWorking
         End Try
     End Sub
-    Public Sub closeConnection()
-            myconnection.Close()
-        End Sub
+    Public Sub close_Connection()
+        myconnection.Close()
+    End Sub
 
     Public Function getConnectionState() As ConnectionState
         Return stateOfConnection
@@ -34,7 +34,7 @@ Module ConnectionDB
         If getConnectionState() = ConnectionState.NotWorking Then
             varForm.Dispose()
             Application.Exit()
-            closeConnection()
+            close_Connection()
         End If
     End Sub
 

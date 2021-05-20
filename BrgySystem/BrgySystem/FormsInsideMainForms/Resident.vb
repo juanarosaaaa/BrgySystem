@@ -25,23 +25,23 @@ Public Class MyResidents
 
 
 
-<<<<<<< HEAD
-        If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
-            'brgyResidents.getValuesFromDatabaseAndDisplayToInputs(ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue)
-        ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
+
+    'If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
+    ''brgyResidents.getValuesFromDatabaseAndDisplayToInputs(ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue)
+    'ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
 
 
-        ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
+    'ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
 
 
-        End If
+    'End If
 
 
-    End Sub
-=======
 
 
->>>>>>> parent of 3da7177 (Fix bug in imagepath when inserting imagepath to DB mysql  ignores backslashes, and adding fullname txtbox to residents)
+
+
+
 
 
 
@@ -50,16 +50,11 @@ Public Class MyResidents
 
         brgyResidents.arrangeGridView(ResidentsGridView)
 
-<<<<<<< HEAD
-        '  manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-        ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
-        ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
 
-=======
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
->>>>>>> parent of 3da7177 (Fix bug in imagepath when inserting imagepath to DB mysql  ignores backslashes, and adding fullname txtbox to residents)
+
     End Sub
 
 
@@ -70,8 +65,7 @@ Public Class MyResidents
 
     Private Sub BrowseButton_Click(sender As Object, e As EventArgs) Handles BrowseButton.Click
 
-        'imageFile.openImageFromPictureBox(ResidentsPictureBOx)
-
+        imageFile.openImageFromPictureBox(ResidentsPictureBOx)
 
     End Sub
 
@@ -82,27 +76,24 @@ Public Class MyResidents
 
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
 
-<<<<<<< HEAD
-        'Try
-        '    imageFile.saveImageAt("ResidentsImages")
-        'Catch x As NoNullAllowedException
-        '    MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        '    Exit Sub
-        'End Try
-        'brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
-        'search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
-        'manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-=======
 
-
-        'imageFile.saveImageAt("ResidentsImages")
+       Try
+        imageFile.saveImageAt("ResidentsImages")
+        Catch X As NoNullAllowedException
+        MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        Exit Sub
+        End Try
+        brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
 
 
 
-        'brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
 
-        ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
->>>>>>> parent of 3da7177 (Fix bug in imagepath when inserting imagepath to DB mysql  ignores backslashes, and adding fullname txtbox to residents)
+
+
+
+
     End Sub
 
 
@@ -113,12 +104,12 @@ Public Class MyResidents
 
 
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
-        'If AlreadyStart Then
-        '    search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
-        '    If (InputIsNull(SearchFieldTxtBox.Text.Trim)) Then
-        '        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-        '    End If
-        'End If
+        If AlreadyStart Then
+            search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+            If (InputIsNull(SearchFieldTxtBox.Text.Trim)) Then
+                manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+            End If
+        End If
 
     End Sub
 
@@ -135,7 +126,7 @@ Public Class MyResidents
     End Sub
 
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        ' search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+        search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
     End Sub
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click

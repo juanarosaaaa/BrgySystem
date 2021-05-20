@@ -23,9 +23,9 @@ Public Class Purok
 
         ElseIf (SettingAction.buttonOf_IsClick("deleteButton_Column", PurokGridView, e)) Then
             var.deletePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
-            foo.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", SearchBarField)
-            manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
 
+            manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
+            foo.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", SearchBarField)
 
         ElseIf (SettingAction.buttonOf_IsClick("archiveButton_Column", PurokGridView, e)) Then
 

@@ -7,7 +7,7 @@ Public Class PurokChildForm
     Private Sub AddPurokBttn_Click_1(sender As Object, e As EventArgs) Handles AddPurokBttn.Click
 
         var.addNewPurok(PurokTextBox.Text)
-        manage.loadGridViewValueOf(var.getAllPurokQuery, Purok.PurokGridView)
+        'manage.loadGridViewValueOf(var.getAllPurokQuery, Purok.PurokGridView)
 
         Me.Close()
 

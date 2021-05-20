@@ -3,13 +3,13 @@ Public Class Login
 
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        openConnection()
+        open_Connection()
         checkConnectionConnectivityInForm(Me)
 
         If (My.Settings.UserNotLoggedOut) Then
             MainForm.Show()
             Me.Close()
-            closeConnection()
+            close_Connection()
         End If
 
 
@@ -20,4 +20,7 @@ Public Class Login
         login.authenticateLogin(Me, userNameTextBox.Text.Trim, passwordTextBox.Text.Trim)
     End Sub
 
+    Private Sub BunifuLabel1_Click(sender As Object, e As EventArgs) Handles BunifuLabel1.Click
+
+    End Sub
 End Class

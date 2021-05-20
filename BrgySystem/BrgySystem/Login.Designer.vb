@@ -112,7 +112,7 @@ Partial Class Login
         StateProperties4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.passwordTextBox.OnIdleState = StateProperties4
-        Me.passwordTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.passwordTextBox.Padding = New System.Windows.Forms.Padding(3)
         Me.passwordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.passwordTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.passwordTextBox.PlaceholderText = "Password"
@@ -188,7 +188,7 @@ Partial Class Login
         StateProperties8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.userNameTextBox.OnIdleState = StateProperties8
-        Me.userNameTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.userNameTextBox.Padding = New System.Windows.Forms.Padding(3)
         Me.userNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.userNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.userNameTextBox.PlaceholderText = "Username"
