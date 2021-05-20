@@ -99,6 +99,10 @@ Partial Class MyResidents
         Me.SaveButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
 
 
+
+        Me.LastNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
+
+
         Me.LastNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
 
         Me.BrowseButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
@@ -128,6 +132,11 @@ Partial Class MyResidents
         Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
+
+
+
+        Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel9 = New Bunifu.UI.WinForms.BunifuLabel()
 
 
         Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -907,6 +916,83 @@ Partial Class MyResidents
         Me.LastNameTextBox.UseSystemPasswordChar = False
         Me.LastNameTextBox.WordWrap = True
 
+        '
+        'LastNameTextBox
+        '
+        Me.LastNameTextBox.AcceptsReturn = False
+        Me.LastNameTextBox.AcceptsTab = False
+        Me.LastNameTextBox.AccessibleDescription = ""
+        Me.LastNameTextBox.AccessibleName = "Last name"
+        Me.LastNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LastNameTextBox.AnimationSpeed = 200
+        Me.LastNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.LastNameTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.LastNameTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.LastNameTextBox.BackgroundImage = CType(resources.GetObject("LastNameTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.LastNameTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.LastNameTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.LastNameTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LastNameTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.LastNameTextBox.BorderRadius = 1
+        Me.LastNameTextBox.BorderThickness = 1
+        Me.LastNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.LastNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.LastNameTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.LastNameTextBox.DefaultText = ""
+        Me.LastNameTextBox.FillColor = System.Drawing.Color.White
+        Me.LastNameTextBox.HideSelection = True
+        Me.LastNameTextBox.IconLeft = Nothing
+        Me.LastNameTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.LastNameTextBox.IconPadding = 10
+        Me.LastNameTextBox.IconRight = Nothing
+        Me.LastNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.LastNameTextBox.Lines = New String(-1) {}
+        Me.LastNameTextBox.Location = New System.Drawing.Point(18, 70)
+        Me.LastNameTextBox.MaxLength = 32767
+        Me.LastNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.LastNameTextBox.Modified = False
+        Me.LastNameTextBox.Multiline = False
+        Me.LastNameTextBox.Name = "LastNameTextBox"
+        StateProperties13.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties13.FillColor = System.Drawing.Color.Empty
+        StateProperties13.ForeColor = System.Drawing.Color.Empty
+        StateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.LastNameTextBox.OnActiveState = StateProperties13
+        StateProperties14.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties14.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.LastNameTextBox.OnDisabledState = StateProperties14
+        StateProperties15.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties15.FillColor = System.Drawing.Color.Empty
+        StateProperties15.ForeColor = System.Drawing.Color.Empty
+        StateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.LastNameTextBox.OnHoverState = StateProperties15
+        StateProperties16.BorderColor = System.Drawing.Color.Silver
+        StateProperties16.FillColor = System.Drawing.Color.White
+        StateProperties16.ForeColor = System.Drawing.Color.Empty
+        StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.LastNameTextBox.OnIdleState = StateProperties16
+        Me.LastNameTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.LastNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.LastNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.LastNameTextBox.PlaceholderText = ""
+        Me.LastNameTextBox.ReadOnly = False
+        Me.LastNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.LastNameTextBox.SelectedText = ""
+        Me.LastNameTextBox.SelectionLength = 0
+        Me.LastNameTextBox.SelectionStart = 0
+        Me.LastNameTextBox.ShortcutsEnabled = True
+        Me.LastNameTextBox.Size = New System.Drawing.Size(146, 32)
+        Me.LastNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.LastNameTextBox.TabIndex = 65
+        Me.LastNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.LastNameTextBox.TextMarginBottom = 0
+        Me.LastNameTextBox.TextMarginLeft = 3
+        Me.LastNameTextBox.TextMarginTop = 0
+        Me.LastNameTextBox.TextPlaceholder = ""
+        Me.LastNameTextBox.UseSystemPasswordChar = False
+        Me.LastNameTextBox.WordWrap = True
         '
         'BrowseButton
         '

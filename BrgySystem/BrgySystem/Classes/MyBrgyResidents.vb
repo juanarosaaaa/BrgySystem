@@ -132,6 +132,7 @@ Public Class MyBrgyResidents
 
 
 
+
     Sub getValuesFromDatabaseAndDisplayToInputs(name As String)
 
         Dim command As New MySqlCommand("SELECT * FROM `residents` WHERE FULLNAME = 'Mikocabaljasmin' ")
@@ -159,6 +160,7 @@ Public Class MyBrgyResidents
         '  closeConnection()
 
     End Sub
+
 
 
     'check if datapicker is date.now then error

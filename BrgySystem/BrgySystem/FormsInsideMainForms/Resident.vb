@@ -26,6 +26,7 @@ Public Class MyResidents
 
 
 
+
     'If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
     ''brgyResidents.getValuesFromDatabaseAndDisplayToInputs(ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue)
     'ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
@@ -54,7 +55,6 @@ Public Class MyResidents
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
-
     End Sub
 
 
@@ -77,7 +77,7 @@ Public Class MyResidents
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
 
 
-       Try
+        Try
         imageFile.saveImageAt("ResidentsImages")
         Catch X As NoNullAllowedException
         MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -86,13 +86,6 @@ Public Class MyResidents
         brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-
-
-
-
-
-
-
 
     End Sub
 
