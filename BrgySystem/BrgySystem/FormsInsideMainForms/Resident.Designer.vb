@@ -40,6 +40,10 @@ Partial Class MyResidents
         Dim StateProperties12 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim StateProperties13 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties14 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties15 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties16 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges3 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim StateProperties17 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties18 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -61,10 +65,6 @@ Partial Class MyResidents
         Dim StateProperties34 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties35 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties36 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties13 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties14 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties15 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties16 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.ResidentsGridView = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -87,6 +87,7 @@ Partial Class MyResidents
         Me.ReligionTextBOx = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.UpdateButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.SaveButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Me.FullNameTxtBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BrowseButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.BunifuLabel15 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -112,7 +113,6 @@ Partial Class MyResidents
         Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.FullNameTxtBox = New Bunifu.UI.WinForms.BunifuTextBox()
         CType(Me.ResidentsGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -788,6 +788,83 @@ Partial Class MyResidents
         Me.SaveButton.TextMarginLeft = 0
         Me.SaveButton.TextPadding = New System.Windows.Forms.Padding(0)
         Me.SaveButton.UseDefaultRadiusAndThickness = True
+        '
+        'FullNameTxtBox
+        '
+        Me.FullNameTxtBox.AcceptsReturn = False
+        Me.FullNameTxtBox.AcceptsTab = False
+        Me.FullNameTxtBox.AccessibleDescription = ""
+        Me.FullNameTxtBox.AccessibleName = "Last name"
+        Me.FullNameTxtBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.FullNameTxtBox.AnimationSpeed = 200
+        Me.FullNameTxtBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.FullNameTxtBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.FullNameTxtBox.BackColor = System.Drawing.Color.Transparent
+        Me.FullNameTxtBox.BackgroundImage = CType(resources.GetObject("FullNameTxtBox.BackgroundImage"), System.Drawing.Image)
+        Me.FullNameTxtBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.FullNameTxtBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.FullNameTxtBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.FullNameTxtBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.FullNameTxtBox.BorderRadius = 1
+        Me.FullNameTxtBox.BorderThickness = 1
+        Me.FullNameTxtBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.FullNameTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.FullNameTxtBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.FullNameTxtBox.DefaultText = ""
+        Me.FullNameTxtBox.FillColor = System.Drawing.Color.White
+        Me.FullNameTxtBox.HideSelection = True
+        Me.FullNameTxtBox.IconLeft = Nothing
+        Me.FullNameTxtBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.FullNameTxtBox.IconPadding = 10
+        Me.FullNameTxtBox.IconRight = Nothing
+        Me.FullNameTxtBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.FullNameTxtBox.Lines = New String(-1) {}
+        Me.FullNameTxtBox.Location = New System.Drawing.Point(18, 70)
+        Me.FullNameTxtBox.MaxLength = 32767
+        Me.FullNameTxtBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.FullNameTxtBox.Modified = False
+        Me.FullNameTxtBox.Multiline = False
+        Me.FullNameTxtBox.Name = "FullNameTxtBox"
+        StateProperties13.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties13.FillColor = System.Drawing.Color.Empty
+        StateProperties13.ForeColor = System.Drawing.Color.Empty
+        StateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.FullNameTxtBox.OnActiveState = StateProperties13
+        StateProperties14.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties14.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.FullNameTxtBox.OnDisabledState = StateProperties14
+        StateProperties15.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties15.FillColor = System.Drawing.Color.Empty
+        StateProperties15.ForeColor = System.Drawing.Color.Empty
+        StateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.FullNameTxtBox.OnHoverState = StateProperties15
+        StateProperties16.BorderColor = System.Drawing.Color.Silver
+        StateProperties16.FillColor = System.Drawing.Color.White
+        StateProperties16.ForeColor = System.Drawing.Color.Empty
+        StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.FullNameTxtBox.OnIdleState = StateProperties16
+        Me.FullNameTxtBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.FullNameTxtBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.FullNameTxtBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.FullNameTxtBox.PlaceholderText = ""
+        Me.FullNameTxtBox.ReadOnly = False
+        Me.FullNameTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.FullNameTxtBox.SelectedText = ""
+        Me.FullNameTxtBox.SelectionLength = 0
+        Me.FullNameTxtBox.SelectionStart = 0
+        Me.FullNameTxtBox.ShortcutsEnabled = True
+        Me.FullNameTxtBox.Size = New System.Drawing.Size(485, 32)
+        Me.FullNameTxtBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.FullNameTxtBox.TabIndex = 65
+        Me.FullNameTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.FullNameTxtBox.TextMarginBottom = 0
+        Me.FullNameTxtBox.TextMarginLeft = 3
+        Me.FullNameTxtBox.TextMarginTop = 0
+        Me.FullNameTxtBox.TextPlaceholder = ""
+        Me.FullNameTxtBox.UseSystemPasswordChar = False
+        Me.FullNameTxtBox.WordWrap = True
         '
         'BrowseButton
         '
@@ -1575,83 +1652,6 @@ Partial Class MyResidents
         Me.BunifuLabel10.Text = "Highest educational attainment"
         Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'FullNameTxtBox
-        '
-        Me.FullNameTxtBox.AcceptsReturn = False
-        Me.FullNameTxtBox.AcceptsTab = False
-        Me.FullNameTxtBox.AccessibleDescription = ""
-        Me.FullNameTxtBox.AccessibleName = "Last name"
-        Me.FullNameTxtBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.FullNameTxtBox.AnimationSpeed = 200
-        Me.FullNameTxtBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.FullNameTxtBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.FullNameTxtBox.BackColor = System.Drawing.Color.Transparent
-        Me.FullNameTxtBox.BackgroundImage = CType(resources.GetObject("FullNameTxtBox.BackgroundImage"), System.Drawing.Image)
-        Me.FullNameTxtBox.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.FullNameTxtBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.FullNameTxtBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.FullNameTxtBox.BorderColorIdle = System.Drawing.Color.Silver
-        Me.FullNameTxtBox.BorderRadius = 1
-        Me.FullNameTxtBox.BorderThickness = 1
-        Me.FullNameTxtBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.FullNameTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.FullNameTxtBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.FullNameTxtBox.DefaultText = ""
-        Me.FullNameTxtBox.FillColor = System.Drawing.Color.White
-        Me.FullNameTxtBox.HideSelection = True
-        Me.FullNameTxtBox.IconLeft = Nothing
-        Me.FullNameTxtBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.FullNameTxtBox.IconPadding = 10
-        Me.FullNameTxtBox.IconRight = Nothing
-        Me.FullNameTxtBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.FullNameTxtBox.Lines = New String(-1) {}
-        Me.FullNameTxtBox.Location = New System.Drawing.Point(18, 70)
-        Me.FullNameTxtBox.MaxLength = 32767
-        Me.FullNameTxtBox.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.FullNameTxtBox.Modified = False
-        Me.FullNameTxtBox.Multiline = False
-        Me.FullNameTxtBox.Name = "FullNameTxtBox"
-        StateProperties13.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties13.FillColor = System.Drawing.Color.Empty
-        StateProperties13.ForeColor = System.Drawing.Color.Empty
-        StateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.FullNameTxtBox.OnActiveState = StateProperties13
-        StateProperties14.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties14.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.FullNameTxtBox.OnDisabledState = StateProperties14
-        StateProperties15.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties15.FillColor = System.Drawing.Color.Empty
-        StateProperties15.ForeColor = System.Drawing.Color.Empty
-        StateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.FullNameTxtBox.OnHoverState = StateProperties15
-        StateProperties16.BorderColor = System.Drawing.Color.Silver
-        StateProperties16.FillColor = System.Drawing.Color.White
-        StateProperties16.ForeColor = System.Drawing.Color.Empty
-        StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.FullNameTxtBox.OnIdleState = StateProperties16
-        Me.FullNameTxtBox.Padding = New System.Windows.Forms.Padding(3)
-        Me.FullNameTxtBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.FullNameTxtBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.FullNameTxtBox.PlaceholderText = ""
-        Me.FullNameTxtBox.ReadOnly = False
-        Me.FullNameTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.FullNameTxtBox.SelectedText = ""
-        Me.FullNameTxtBox.SelectionLength = 0
-        Me.FullNameTxtBox.SelectionStart = 0
-        Me.FullNameTxtBox.ShortcutsEnabled = True
-        Me.FullNameTxtBox.Size = New System.Drawing.Size(485, 32)
-        Me.FullNameTxtBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.FullNameTxtBox.TabIndex = 65
-        Me.FullNameTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.FullNameTxtBox.TextMarginBottom = 0
-        Me.FullNameTxtBox.TextMarginLeft = 3
-        Me.FullNameTxtBox.TextMarginTop = 0
-        Me.FullNameTxtBox.TextPlaceholder = ""
-        Me.FullNameTxtBox.UseSystemPasswordChar = False
-        Me.FullNameTxtBox.WordWrap = True
         '
         'MyResidents
         '

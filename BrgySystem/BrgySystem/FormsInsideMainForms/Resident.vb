@@ -27,8 +27,7 @@ Public Class MyResidents
     Private Sub ResidentsGridViewCellClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ResidentsGridView.CellContentClick
 
         If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
-
-
+            'brgyResidents.getValuesFromDatabaseAndDisplayToInputs(ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue)
         ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
 
 
@@ -37,9 +36,7 @@ Public Class MyResidents
 
         End If
 
-        'editButton_Column
-        'deleteButton_Column
-        'archiveButton_Column
+
     End Sub
 
 
@@ -49,9 +46,9 @@ Public Class MyResidents
 
         brgyResidents.arrangeGridView(ResidentsGridView)
 
-        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
-        search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
+        '  manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+        ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
 
     End Sub
 
@@ -60,7 +57,7 @@ Public Class MyResidents
 
     Private Sub BrowseButton_Click(sender As Object, e As EventArgs) Handles BrowseButton.Click
 
-        imageFile.openImageFromPictureBox(ResidentsPictureBOx)
+        'imageFile.openImageFromPictureBox(ResidentsPictureBOx)
 
 
     End Sub
@@ -68,15 +65,15 @@ Public Class MyResidents
 
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
 
-        Try
-            imageFile.saveImageAt("ResidentsImages")
-        Catch x As NoNullAllowedException
-            MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        End Try
-        brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
-        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
-        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+        'Try
+        '    imageFile.saveImageAt("ResidentsImages")
+        'Catch x As NoNullAllowedException
+        '    MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        '    Exit Sub
+        'End Try
+        'brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
+        'search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        'manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
     End Sub
 
 
@@ -84,12 +81,12 @@ Public Class MyResidents
 
 
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
-        If AlreadyStart Then
-            search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
-            If (InputIsNull(SearchFieldTxtBox.Text.Trim)) Then
-                manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-            End If
-        End If
+        'If AlreadyStart Then
+        '    search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+        '    If (InputIsNull(SearchFieldTxtBox.Text.Trim)) Then
+        '        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+        '    End If
+        'End If
 
     End Sub
 
@@ -100,12 +97,10 @@ Public Class MyResidents
     End Sub
 
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+        ' search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
     End Sub
 
-    Private Sub PurokTxtBoxTextChanged(sender As Object, e As EventArgs) Handles PurokTextBox.TextChange
-
+    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
+        brgyResidents.getValuesFromDatabaseAndDisplayToInputs("")
     End Sub
-
-
 End Class

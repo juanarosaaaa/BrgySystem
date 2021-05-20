@@ -130,29 +130,31 @@ Public Class MyBrgyResidents
     End Function
 
 
-    Sub getValuesFromDatabase()
-        openConnection()
-        Dim command As New MySqlCommand("SELECT * FROM `residents` WHERE = '" & MyResidents.ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue & "' ")
+    Sub getValuesFromDatabaseAndDisplayToInputs(name As String)
+
+        Dim command As New MySqlCommand("SELECT * FROM `residents` WHERE FULLNAME = 'Mikocabaljasmin' ")
         Dim reader As MySqlDataReader
+
+        openConnection()
         reader = command.ExecuteReader
         While reader.Read
-            MyResidents.FullNameTxtBox.Clear()
-            MyResidents.SuffixComboBox.Text = ""
-            MyResidents.CitizenshipTextBox.Clear()
-            MyResidents.AddressTextBox.Clear()
-            MyResidents.ReligionTextBOx.Clear()
-            MyResidents.HighestEducationAttainmentTextBox.Clear()
-            MyResidents.ContactTextBox.Clear()
-            MyResidents.OccupationTextBox.Clear()
-            MyResidents.PurokTextBox.Clear()
-            MyResidents.BirthdateDatePicker.Value = Date.Now
-            MyResidents.CivilStatusComboBox.Text = ""
-            MyResidents.ResidentsPictureBOx.Image = MyResidents.ResidentsPictureBOx.InitialImage
-            MyResidents.SexComboBox.Text = ""
-            MyResidents.VoterComboBox.Text = ""
-            MyResidents.SeniorComboBox.Text = ""
+            MyResidents.FullNameTxtBox.Text = reader.GetString("FULLNAME ")
+            MyResidents.SuffixComboBox.Text = reader.GetString("SUFFIX ")
+            MyResidents.CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
+            MyResidents.AddressTextBox.Text = reader.GetString("ADDRESS")
+            MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
+            MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
+            MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
+            MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
+            MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
+            MyResidents.BirthdateDatePicker.Value = reader.GetMySqlDateTime("BIRTHDATE")
+            MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
+            MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("IMAGEPATH"))
+            MyResidents.SexComboBox.Text = reader.GetString("SEX ")
+            MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
+            MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
         End While
-
+        closeConnection()
 
     End Sub
 

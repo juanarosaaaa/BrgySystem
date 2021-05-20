@@ -8,7 +8,7 @@
         panelDisplay.TopLevel = False
         panelDisplay.WindowState = FormWindowState.Maximized
         MainPanel.Controls.Add(panelDisplay)
-        closeConnection()
+        'closeConnection()
         panelDisplay.Show()
 
     End Sub

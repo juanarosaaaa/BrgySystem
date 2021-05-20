@@ -15,7 +15,6 @@ Public Class ManageSystem
         Dim adapter As New MySqlDataAdapter(query, getConnection)
         adapter.Fill(table)
         gridView.DataSource = table
-
         closeConnection()
     End Sub
 
