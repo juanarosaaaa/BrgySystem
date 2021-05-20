@@ -3,6 +3,8 @@ Imports Guna.UI2.WinForms
 Imports Bunifu.UI.WinForms
 Public Class MyResidents
 
+
+
     Private search As Search = New SearchingFeature_Implementation
     Private SettinggridViewImage As New DataGridViewImages
     Private SettingAction As New DataGridViewActionButtonEvent
@@ -30,7 +32,9 @@ Public Class MyResidents
 
 
     Private Sub MyResidents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         brgyResidents.arrangeGridView(ResidentsGridView)
+
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
     End Sub
@@ -45,6 +49,7 @@ Public Class MyResidents
 
         imageFile.openImageFromPictureBox(ResidentsPictureBOx)
 
+
     End Sub
 
 
@@ -55,16 +60,14 @@ Public Class MyResidents
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
 
 
-        Try
-            imageFile.saveImageAt("ResidentsImages")
-            search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
-        Catch X As NoNullAllowedException
-            MessageBox.Show("Please select picture.", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        End Try
-        brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
+
+        'imageFile.saveImageAt("ResidentsImages")
 
 
+
+        'brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
+
+        ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
     End Sub
 
 
@@ -77,7 +80,7 @@ Public Class MyResidents
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
         If AlreadyStart Then
             search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
-            If (String.IsNullOrEmpty(SearchFieldTxtBox.Text)) Then
+            If (InputIsNull(SearchFieldTxtBox.Text.Trim)) Then
                 manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
             End If
         End If

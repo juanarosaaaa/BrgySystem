@@ -12,11 +12,12 @@ Public Class ImageFileManager
         openPicFile.Filter = "Images|*.png;*.jpg;*.jpeg"
         If openPicFile.ShowDialog = DialogResult.OK Then
             imageName = openPicFile.FileName
-
+           
             pictureValue = pic
             pictureValue.Image = Image.FromFile(imageName)
         Else
-           Exit sub
+
+            Exit sub
         End If
     End Sub
 
