@@ -1,49 +1,49 @@
 ﻿Public Class MainForm
 
 
-    Public Sub Dashboard_Button_Click(sender As Object, e As EventArgs) Handles Dashboard_Button.Click
+    Public Sub Dashboard_Button_Click(sender As Object, e As EventArgs)
         Dashboard.Dispose()
         showPanelDisplayOf(Dashboard)
     End Sub
-    Private Sub Residents_Button_Click(sender As Object, e As EventArgs) Handles Residents_Button.Click
+    Private Sub Residents_Button_Click(sender As Object, e As EventArgs)
         MyResidents.Dispose()
         showPanelDisplayOf(MyResidents)
     End Sub
 
-    Private Sub Purok_Button_Click(sender As Object, e As EventArgs) Handles Purok_Button.Click
+    Private Sub Purok_Button_Click(sender As Object, e As EventArgs)
         Purok.Dispose()
 
         showPanelDisplayOf(Purok)
     End Sub
 
-    Private Sub Clearance_Button_Click(sender As Object, e As EventArgs) Handles Clearance_Button.Click
+    Private Sub Clearance_Button_Click(sender As Object, e As EventArgs)
         Clearance.Dispose()
 
         showPanelDisplayOf(Clearance)
     End Sub
 
-    Private Sub Officials_Button_Click(sender As Object, e As EventArgs) Handles Officials_Button.Click
+    Private Sub Officials_Button_Click(sender As Object, e As EventArgs)
         Officials.Dispose()
         showPanelDisplayOf(Officials)
     End Sub
 
-    Private Sub Blotter_Button_Click(sender As Object, e As EventArgs) Handles Blotter_Button.Click
+    Private Sub Blotter_Button_Click(sender As Object, e As EventArgs)
         Blotter.Dispose()
         showPanelDisplayOf(Blotter)
     End Sub
 
-    Private Sub Archive_Button_Click(sender As Object, e As EventArgs) Handles Archive_Button.Click
+    Private Sub Archive_Button_Click(sender As Object, e As EventArgs)
         Archive.Dispose()
         showPanelDisplayOf(Archive)
     End Sub
 
-    Private Sub Settings_Button_Click(sender As Object, e As EventArgs) Handles Settings_Button.Click
+    Private Sub Settings_Button_Click(sender As Object, e As EventArgs)
         Settings.Dispose()
         showPanelDisplayOf(Settings)
 
     End Sub
 
-    Private Sub OrganizationalChartButton_Click(sender As Object, e As EventArgs) Handles OrganizationalChartButton.Click
+    Private Sub OrganizationalChartButton_Click(sender As Object, e As EventArgs)
         OrganizationalChart.Dispose()
         showPanelDisplayOf(OrganizationalChart)
     End Sub
@@ -64,7 +64,7 @@
 
     End Sub
 
-    Private Sub Logout_Button_Click(sender As Object, e As EventArgs) Handles Logout_Button.Click
+    Private Sub Logout_Button_Click(sender As Object, e As EventArgs)
         My.Settings.UserNotLoggedOut = False
         closeConnection()
         Application.Exit()
