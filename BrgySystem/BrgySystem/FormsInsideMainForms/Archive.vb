@@ -45,7 +45,9 @@ Public Class Archive
             operation.restoreData(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
             search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "archive_purok", PurokArchiveSearchField)
             manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
+
         ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", PurokGridView, e) Then
+
             operation.deletePurok(PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue)
             search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "archive_purok", PurokArchiveSearchField)
             manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
@@ -65,7 +67,7 @@ Public Class Archive
     Private Sub PurokArchiveSearchField_TextChanged(sender As Object, e As EventArgs) Handles PurokArchiveSearchField.TextChange
         If (AlreadyStartAtPurokArchive) Then
             search.searchValueIn("SELECT * FROM `archive_purok` WHERE PurokName Like '%" & PurokArchiveSearchField.Text.Trim & "%'", PurokGridView)
-            If String.IsNullOrEmpty(PurokArchiveSearchField.Text.Trim) Then
+            If InputIsNull(PurokArchiveSearchField.Text.Trim) Then
                 manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
             End If
         End If
