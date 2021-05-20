@@ -37,6 +37,7 @@ Public Class MyResidents
 
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
     End Sub
 
 
@@ -103,5 +104,7 @@ Public Class MyResidents
         search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
     End Sub
 
+    Private Sub PurokTxtBoxTextChanged(sender As Object, e As EventArgs) Handles PurokTextBox.TextChange
 
+    End Sub
 End Class

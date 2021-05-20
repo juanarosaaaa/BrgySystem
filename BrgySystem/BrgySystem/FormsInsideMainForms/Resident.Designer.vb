@@ -88,7 +88,7 @@ Partial Class MyResidents
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.ResidentsPictureBOx = New Bunifu.UI.WinForms.BunifuPictureBox()
-        Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.PurokTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.SearchButton = New System.Windows.Forms.Button()
         Me.SearchFieldTxtBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BirthdateDatePicker = New Bunifu.UI.WinForms.BunifuDatePicker()
@@ -301,7 +301,7 @@ Partial Class MyResidents
         Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox2.Controls.Add(Me.ResidentsPictureBOx)
-        Me.GroupBox2.Controls.Add(Me.BunifuTextBox1)
+        Me.GroupBox2.Controls.Add(Me.PurokTextBox)
         Me.GroupBox2.Controls.Add(Me.SearchButton)
         Me.GroupBox2.Controls.Add(Me.SearchFieldTxtBox)
         Me.GroupBox2.Controls.Add(Me.BirthdateDatePicker)
@@ -362,80 +362,80 @@ Partial Class MyResidents
         Me.ResidentsPictureBOx.TabStop = False
         Me.ResidentsPictureBOx.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square
         '
-        'BunifuTextBox1
+        'PurokTextBox
         '
-        Me.BunifuTextBox1.AcceptsReturn = False
-        Me.BunifuTextBox1.AcceptsTab = False
-        Me.BunifuTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuTextBox1.AnimationSpeed = 200
-        Me.BunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.BunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.BunifuTextBox1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuTextBox1.BackgroundImage = CType(resources.GetObject("BunifuTextBox1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuTextBox1.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.BunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuTextBox1.BorderColorIdle = System.Drawing.Color.Silver
-        Me.BunifuTextBox1.BorderRadius = 1
-        Me.BunifuTextBox1.BorderThickness = 1
-        Me.BunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.BunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.BunifuTextBox1.DefaultText = ""
-        Me.BunifuTextBox1.FillColor = System.Drawing.Color.White
-        Me.BunifuTextBox1.HideSelection = True
-        Me.BunifuTextBox1.IconLeft = Nothing
-        Me.BunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.IconPadding = 10
-        Me.BunifuTextBox1.IconRight = Nothing
-        Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.Lines = New String(-1) {}
-        Me.BunifuTextBox1.Location = New System.Drawing.Point(403, 180)
-        Me.BunifuTextBox1.MaxLength = 32767
-        Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.BunifuTextBox1.Modified = False
-        Me.BunifuTextBox1.Multiline = False
-        Me.BunifuTextBox1.Name = "BunifuTextBox1"
+        Me.PurokTextBox.AcceptsReturn = False
+        Me.PurokTextBox.AcceptsTab = False
+        Me.PurokTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.PurokTextBox.AnimationSpeed = 200
+        Me.PurokTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.PurokTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.PurokTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.PurokTextBox.BackgroundImage = CType(resources.GetObject("PurokTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.PurokTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.PurokTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.PurokTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PurokTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.PurokTextBox.BorderRadius = 1
+        Me.PurokTextBox.BorderThickness = 1
+        Me.PurokTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.PurokTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.PurokTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.PurokTextBox.DefaultText = ""
+        Me.PurokTextBox.FillColor = System.Drawing.Color.White
+        Me.PurokTextBox.HideSelection = True
+        Me.PurokTextBox.IconLeft = Nothing
+        Me.PurokTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.PurokTextBox.IconPadding = 10
+        Me.PurokTextBox.IconRight = Nothing
+        Me.PurokTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.PurokTextBox.Lines = New String(-1) {}
+        Me.PurokTextBox.Location = New System.Drawing.Point(402, 180)
+        Me.PurokTextBox.MaxLength = 32767
+        Me.PurokTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.PurokTextBox.Modified = False
+        Me.PurokTextBox.Multiline = False
+        Me.PurokTextBox.Name = "PurokTextBox"
         StateProperties1.BorderColor = System.Drawing.Color.DodgerBlue
         StateProperties1.FillColor = System.Drawing.Color.Empty
         StateProperties1.ForeColor = System.Drawing.Color.Empty
         StateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BunifuTextBox1.OnActiveState = StateProperties1
+        Me.PurokTextBox.OnActiveState = StateProperties1
         StateProperties2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         StateProperties2.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         StateProperties2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         StateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.BunifuTextBox1.OnDisabledState = StateProperties2
+        Me.PurokTextBox.OnDisabledState = StateProperties2
         StateProperties3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         StateProperties3.FillColor = System.Drawing.Color.Empty
         StateProperties3.ForeColor = System.Drawing.Color.Empty
         StateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BunifuTextBox1.OnHoverState = StateProperties3
+        Me.PurokTextBox.OnHoverState = StateProperties3
         StateProperties4.BorderColor = System.Drawing.Color.Silver
         StateProperties4.FillColor = System.Drawing.Color.White
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BunifuTextBox1.OnIdleState = StateProperties4
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3)
-        Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.BunifuTextBox1.PlaceholderText = ""
-        Me.BunifuTextBox1.ReadOnly = False
-        Me.BunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.BunifuTextBox1.SelectedText = ""
-        Me.BunifuTextBox1.SelectionLength = 0
-        Me.BunifuTextBox1.SelectionStart = 0
-        Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(219, 32)
-        Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.BunifuTextBox1.TabIndex = 104
-        Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.BunifuTextBox1.TextMarginBottom = 0
-        Me.BunifuTextBox1.TextMarginLeft = 3
-        Me.BunifuTextBox1.TextMarginTop = 0
-        Me.BunifuTextBox1.TextPlaceholder = ""
-        Me.BunifuTextBox1.UseSystemPasswordChar = False
-        Me.BunifuTextBox1.WordWrap = True
+        Me.PurokTextBox.OnIdleState = StateProperties4
+        Me.PurokTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.PurokTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.PurokTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.PurokTextBox.PlaceholderText = ""
+        Me.PurokTextBox.ReadOnly = False
+        Me.PurokTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.PurokTextBox.SelectedText = ""
+        Me.PurokTextBox.SelectionLength = 0
+        Me.PurokTextBox.SelectionStart = 0
+        Me.PurokTextBox.ShortcutsEnabled = True
+        Me.PurokTextBox.Size = New System.Drawing.Size(219, 32)
+        Me.PurokTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.PurokTextBox.TabIndex = 104
+        Me.PurokTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.PurokTextBox.TextMarginBottom = 0
+        Me.PurokTextBox.TextMarginLeft = 3
+        Me.PurokTextBox.TextMarginTop = 0
+        Me.PurokTextBox.TextPlaceholder = ""
+        Me.PurokTextBox.UseSystemPasswordChar = False
+        Me.PurokTextBox.WordWrap = True
         '
         'SearchButton
         '
@@ -1164,8 +1164,8 @@ Partial Class MyResidents
         Me.CivilStatusComboBox.AccessibleName = "Civil Status"
         Me.CivilStatusComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.CivilStatusComboBox.AutoCompleteCustomSource.AddRange(New String() {"Married", "Widowed", "Seperated", "Divorced", "Single"})
-        Me.CivilStatusComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.CivilStatusComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.CivilStatusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CivilStatusComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CivilStatusComboBox.FormattingEnabled = True
         Me.CivilStatusComboBox.Items.AddRange(New Object() {"Married", "Widowed", "Seperated", "Divorced", "Single"})
@@ -1501,12 +1501,12 @@ Partial Class MyResidents
         Me.SeniorComboBox.AccessibleName = "Senior"
         Me.SeniorComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.SeniorComboBox.AutoCompleteCustomSource.AddRange(New String() {"Yes", "No"})
-        Me.SeniorComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.SeniorComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.SeniorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.SeniorComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SeniorComboBox.FormattingEnabled = True
         Me.SeniorComboBox.Items.AddRange(New Object() {"Yes", "No"})
-        Me.SeniorComboBox.Location = New System.Drawing.Point(525, 235)
+        Me.SeniorComboBox.Location = New System.Drawing.Point(531, 235)
         Me.SeniorComboBox.Name = "SeniorComboBox"
         Me.SeniorComboBox.Size = New System.Drawing.Size(122, 32)
         Me.SeniorComboBox.TabIndex = 94
@@ -1610,8 +1610,8 @@ Partial Class MyResidents
         Me.SuffixComboBox.AccessibleName = "Suffix"
         Me.SuffixComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.SuffixComboBox.AutoCompleteCustomSource.AddRange(New String() {"Sr.", "Jr.", "I", "II", "III"})
-        Me.SuffixComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
         Me.SuffixComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.SuffixComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.SuffixComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SuffixComboBox.FormattingEnabled = True
         Me.SuffixComboBox.Items.AddRange(New Object() {"Sr.", "Jr.", "I", "II", "III"})
@@ -1643,8 +1643,8 @@ Partial Class MyResidents
         Me.SexComboBox.AccessibleName = "Sex"
         Me.SexComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.SexComboBox.AutoCompleteCustomSource.AddRange(New String() {"Male ", "Female"})
-        Me.SexComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.SexComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.SexComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.SexComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SexComboBox.FormattingEnabled = True
         Me.SexComboBox.Items.AddRange(New Object() {"Male ", "Female"})
@@ -1675,12 +1675,12 @@ Partial Class MyResidents
         Me.VoterComboBox.AccessibleName = "Voter"
         Me.VoterComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.VoterComboBox.AutoCompleteCustomSource.AddRange(New String() {"Yes", "No"})
-        Me.VoterComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.VoterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.VoterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.VoterComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VoterComboBox.FormattingEnabled = True
         Me.VoterComboBox.Items.AddRange(New Object() {"Yes", "No"})
-        Me.VoterComboBox.Location = New System.Drawing.Point(401, 235)
+        Me.VoterComboBox.Location = New System.Drawing.Point(404, 235)
         Me.VoterComboBox.Name = "VoterComboBox"
         Me.VoterComboBox.Size = New System.Drawing.Size(122, 32)
         Me.VoterComboBox.TabIndex = 78
@@ -1928,6 +1928,6 @@ Partial Class MyResidents
     Friend WithEvents deleteButton_Column As DataGridViewImageColumn
     Friend WithEvents archiveButton_Column As DataGridViewImageColumn
     Friend WithEvents SearchFieldTxtBox As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents PurokTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents ResidentsPictureBOx As Bunifu.UI.WinForms.BunifuPictureBox
 End Class
