@@ -342,13 +342,13 @@
         D4kfEj8kfkj8kPgh8UPih8QPiR/64vvzE8e4AW2mqaovzkOrAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="LastNameTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="FullNameTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJIAAAAgCAYAAAD5eSHwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVHhe7dKxCQMxAARB9V+VHpXhMlyAjUCJw39vOAOX
-        XLwDMmut15zzY3Z3u52T0Rj7gCd2OycjIfGckEgIiYSQSAiJhJBICImEkEgIiYSQSAiJhJBICImEkEgI
-        iYSQSAiJhJBICImEkEgIiYSQSAiJhJBICImEkEgIicRPSNd1vfdhdne7nZMR/GuMLxgpQh+q3MV3AAAA
-        AElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAeUAAAAgCAYAAAAsYmDRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVHhe7dVBDcMwAARB80flyDAKowAaWfKnBJJ9zEj3
+        OQI7AICQtdZnzvkzMzOz57c7fJI8xj4AgHfsDp8kizIAvEmUASBClAEgQpQBIEKUASBClAEgQpQBIEKU
+        ASBClAEgQpQBIEKUASBClAEgQpQBIEKUASBClAEgQpQBIEKUASBClAEgQpQBIEKUASBClAEgQpQBIEKU
+        ASBClAEgQpQBIEKUASBClAEg4i/K13V992FmZmbPb3f4JBkAeN8YN88Kn80wsx05AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="BrowseButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -357,24 +357,6 @@
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABxSURBVHhe7dxBEYAwAMAwpM0RSMABwsATbHd1QR6R0G+3
         a7/HdMLPjRXDeR3PC782OxADLGKAiAEiBogYIGKAiAEiBogYIGKAiAEiBogYIGKAiAEiBogYIGKAiAEi
         BogYIGKAiAEiBogYIMVgLwn7PT4ahJ/1p/oZDQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="MiddleNameTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAgCAYAAAAIcnp9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVHhe7dKxDQIxAARB91+VXy6DMigAZMkJBXhJZqRL
-        Lt4Bf7HWes05P2Y3tzs7yY2xD7htd3aSEx0N0ZETHTnRkRMdOdGREx050ZETHTnRkRMdOdGREx050ZET
-        HTnRkRMdOdGREx050ZETHTnRkRMdOdGREx050ZETHbmf6J7nee/D7OZ2Zyc5KI3xBY8GVQS69CtIAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="FirstNameTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAALUAAAAgCAYAAABU+DlZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACQSURBVHhe7dKxCQMxAARB9V+VHpXhMlyAH4ESl6BlBi65
-        eAckrbU+c86f2c3bHZ+kx9gH3G53fJIWNQ2iJkfU5IiaHFGTI2pyRE2OqMkRNTmiJkfU5IiaHFGTI2py
-        RE2OqMkRNTmiJkfU5IiaHFGTI2pyRE2OqMkRNTmiJkfU5PxF/TzPdx9mN293fJKGkjFe0qNm+QFRXz4A
-        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="BunifuLabel15.BaseStylesheet" xml:space="preserve">
@@ -462,12 +444,6 @@
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="BunifuLabel10.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
-  </data>
-  <data name="BunifuLabel8.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
-  </data>
-  <data name="BunifuLabel9.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
 </root>

@@ -24,9 +24,23 @@ Public Class MyResidents
     End Sub
 
 
+    Private Sub ResidentsGridViewCellClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ResidentsGridView.CellContentClick
+
+        If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
 
 
+        ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
 
+
+        ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
+
+
+        End If
+
+        'editButton_Column
+        'deleteButton_Column
+        'archiveButton_Column
+    End Sub
 
 
 
@@ -38,10 +52,8 @@ Public Class MyResidents
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
+
     End Sub
-
-
-
 
 
 
@@ -54,25 +66,18 @@ Public Class MyResidents
     End Sub
 
 
-
-
-
-
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
 
-
-
-        'imageFile.saveImageAt("ResidentsImages")
-
-
-
-        'brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
-
-        ' search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        Try
+            imageFile.saveImageAt("ResidentsImages")
+        Catch x As NoNullAllowedException
+            MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End Try
+        brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
     End Sub
-
-
-
 
 
 
@@ -90,12 +95,6 @@ Public Class MyResidents
 
 
 
-
-
-
-
-
-
     Private Sub SearchFieldIsClicked(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.Click
         AlreadyStart = True
     End Sub
@@ -107,4 +106,6 @@ Public Class MyResidents
     Private Sub PurokTxtBoxTextChanged(sender As Object, e As EventArgs) Handles PurokTextBox.TextChange
 
     End Sub
+
+
 End Class
