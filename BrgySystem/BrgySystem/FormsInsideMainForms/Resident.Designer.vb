@@ -87,6 +87,7 @@ Partial Class MyResidents
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ResidentsPictureBOx = New Bunifu.UI.WinForms.BunifuPictureBox()
         Me.BunifuTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.SearchButton = New System.Windows.Forms.Button()
         Me.SearchFieldTxtBox = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -100,7 +101,6 @@ Partial Class MyResidents
         Me.FirstNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel15 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.ResidentsPictureBOx = New Bunifu.UI.WinForms.BunifuPictureBox()
         Me.CivilStatusComboBox = New System.Windows.Forms.ComboBox()
         Me.OccupationTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.HighestEducationAttainmentTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -300,6 +300,7 @@ Partial Class MyResidents
         '
         Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Controls.Add(Me.ResidentsPictureBOx)
         Me.GroupBox2.Controls.Add(Me.BunifuTextBox1)
         Me.GroupBox2.Controls.Add(Me.SearchButton)
         Me.GroupBox2.Controls.Add(Me.SearchFieldTxtBox)
@@ -313,7 +314,6 @@ Partial Class MyResidents
         Me.GroupBox2.Controls.Add(Me.FirstNameTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel15)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel2)
-        Me.GroupBox2.Controls.Add(Me.ResidentsPictureBOx)
         Me.GroupBox2.Controls.Add(Me.CivilStatusComboBox)
         Me.GroupBox2.Controls.Add(Me.OccupationTextBox)
         Me.GroupBox2.Controls.Add(Me.HighestEducationAttainmentTextBox)
@@ -344,6 +344,23 @@ Partial Class MyResidents
         Me.GroupBox2.TabIndex = 65
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "z"
+        '
+        'ResidentsPictureBOx
+        '
+        Me.ResidentsPictureBOx.AllowFocused = False
+        Me.ResidentsPictureBOx.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.ResidentsPictureBOx.AutoSizeHeight = True
+        Me.ResidentsPictureBOx.BorderRadius = 0
+        Me.ResidentsPictureBOx.Image = CType(resources.GetObject("ResidentsPictureBOx.Image"), System.Drawing.Image)
+        Me.ResidentsPictureBOx.InitialImage = CType(resources.GetObject("ResidentsPictureBOx.InitialImage"), System.Drawing.Image)
+        Me.ResidentsPictureBOx.IsCircle = True
+        Me.ResidentsPictureBOx.Location = New System.Drawing.Point(913, 53)
+        Me.ResidentsPictureBOx.Name = "ResidentsPictureBOx"
+        Me.ResidentsPictureBOx.Size = New System.Drawing.Size(194, 194)
+        Me.ResidentsPictureBOx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.ResidentsPictureBOx.TabIndex = 105
+        Me.ResidentsPictureBOx.TabStop = False
+        Me.ResidentsPictureBOx.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square
         '
         'BunifuTextBox1
         '
@@ -1142,23 +1159,6 @@ Partial Class MyResidents
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'ResidentsPictureBOx
-        '
-        Me.ResidentsPictureBOx.AccessibleName = "Resident's picture"
-        Me.ResidentsPictureBOx.AllowFocused = False
-        Me.ResidentsPictureBOx.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.ResidentsPictureBOx.AutoSizeHeight = True
-        Me.ResidentsPictureBOx.BorderRadius = 0
-        Me.ResidentsPictureBOx.Image = Global.BrgySystem.My.Resources.Resources.defaultImage
-        Me.ResidentsPictureBOx.IsCircle = True
-        Me.ResidentsPictureBOx.Location = New System.Drawing.Point(913, 52)
-        Me.ResidentsPictureBOx.Name = "ResidentsPictureBOx"
-        Me.ResidentsPictureBOx.Size = New System.Drawing.Size(194, 194)
-        Me.ResidentsPictureBOx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.ResidentsPictureBOx.TabIndex = 97
-        Me.ResidentsPictureBOx.TabStop = False
-        Me.ResidentsPictureBOx.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square
-        '
         'CivilStatusComboBox
         '
         Me.CivilStatusComboBox.AccessibleName = "Civil Status"
@@ -1892,7 +1892,6 @@ Partial Class MyResidents
     Friend WithEvents FirstNameTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel15 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel2 As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents ResidentsPictureBOx As Bunifu.UI.WinForms.BunifuPictureBox
     Friend WithEvents CivilStatusComboBox As ComboBox
     Friend WithEvents OccupationTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BirthdateDatePicker As Bunifu.UI.WinForms.BunifuDatePicker
@@ -1930,4 +1929,5 @@ Partial Class MyResidents
     Friend WithEvents archiveButton_Column As DataGridViewImageColumn
     Friend WithEvents SearchFieldTxtBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents ResidentsPictureBOx As Bunifu.UI.WinForms.BunifuPictureBox
 End Class
