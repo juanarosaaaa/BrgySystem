@@ -77,7 +77,11 @@ Public Class MyResidents
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
         If AlreadyStart Then
             search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+            If (String.IsNullOrEmpty(SearchFieldTxtBox.Text)) Then
+                manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+            End If
         End If
+
     End Sub
 
 

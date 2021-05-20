@@ -22,6 +22,11 @@ BrgySystem
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:BrgySystem.My.Resources.Resources.defaultImage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:BrgySystem.My.Resources.Resources.icons8_administrator_male_30px">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

@@ -156,7 +156,7 @@ Partial Class MyResidents
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.ResidentsGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.ResidentsGridView.ColumnHeadersHeight = 21
+        Me.ResidentsGridView.ColumnHeadersHeight = 40
         Me.ResidentsGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fullname_Column, Me.sex_Column, Me.age_Column, Me.civilStatus_Column, Me.occupation_Column, Me.voter_Column, Me.address_Column, Me.editButton_Column, Me.deleteButton_Column, Me.archiveButton_Column})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
@@ -168,10 +168,11 @@ Partial Class MyResidents
         Me.ResidentsGridView.DefaultCellStyle = DataGridViewCellStyle3
         Me.ResidentsGridView.EnableHeadersVisualStyles = False
         Me.ResidentsGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ResidentsGridView.Location = New System.Drawing.Point(6, 333)
+        Me.ResidentsGridView.Location = New System.Drawing.Point(2, 335)
         Me.ResidentsGridView.Name = "ResidentsGridView"
-        Me.ResidentsGridView.ReadOnly = True
         Me.ResidentsGridView.RowHeadersVisible = False
+        Me.ResidentsGridView.RowHeadersWidth = 47
+        Me.ResidentsGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.ResidentsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 427)
         Me.ResidentsGridView.TabIndex = 6
@@ -188,8 +189,8 @@ Partial Class MyResidents
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.ResidentsGridView.ThemeStyle.HeaderStyle.Height = 21
-        Me.ResidentsGridView.ThemeStyle.ReadOnly = True
+        Me.ResidentsGridView.ThemeStyle.HeaderStyle.Height = 40
+        Me.ResidentsGridView.ThemeStyle.ReadOnly = False
         Me.ResidentsGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
         Me.ResidentsGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.ResidentsGridView.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
@@ -681,6 +682,7 @@ Partial Class MyResidents
         '
         Me.BunifuTextBox1.AcceptsReturn = False
         Me.BunifuTextBox1.AcceptsTab = False
+        Me.BunifuTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuTextBox1.AnimationSpeed = 200
         Me.BunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
         Me.BunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
