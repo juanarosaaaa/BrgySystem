@@ -35,7 +35,7 @@ Public Class MyBrgyResidents
 
 
 
-    'check purok,bdate,contact
+
     Sub addResidents(imageName As String, imagePath As String)
         Try
             If (IsInputValid()) Then
@@ -47,7 +47,7 @@ Public Class MyBrgyResidents
                 MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Exit Sub
             ElseIf (manage.manipulateDataAt(insertQuery(imageName, imagePath))) Then
-                MessageBox.Show("Resident Successfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Resident successfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
 
         Catch x As MySqlException
@@ -69,7 +69,7 @@ Public Class MyBrgyResidents
     End Sub
 
 
-    Function getResidentsQueryForDataGridView() As String
+    Function getResidentsQueryForSelectedColumns() As String
         Return residentsQuery
     End Function
 

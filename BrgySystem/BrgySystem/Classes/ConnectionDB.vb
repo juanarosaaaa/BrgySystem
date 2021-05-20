@@ -17,7 +17,7 @@ Module ConnectionDB
             myconnection.Open()
             stateOfConnection = ConnectionState.Working
         Catch ex As MySql.Data.MySqlClient.MySqlException
-            MessageBox.Show("An error occured, please check the connection of the Database", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("An error occured, please check the connection of your Database", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             stateOfConnection = ConnectionState.NotWorking
         End Try
     End Sub

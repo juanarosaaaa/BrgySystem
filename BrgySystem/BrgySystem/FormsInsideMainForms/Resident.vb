@@ -31,7 +31,7 @@ Public Class MyResidents
 
     Private Sub MyResidents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         brgyResidents.arrangeGridView(ResidentsGridView)
-        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForDataGridView, ResidentsGridView)
+        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
     End Sub
 
@@ -76,7 +76,7 @@ Public Class MyResidents
 
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
         If AlreadyStart Then
-            search.searchValueIn(brgyResidents.getResidentsQueryForDataGridView + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+            search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
         End If
     End Sub
 
@@ -93,7 +93,7 @@ Public Class MyResidents
     End Sub
 
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        search.searchValueIn(brgyResidents.getResidentsQueryForDataGridView + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+        search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
     End Sub
 
 
