@@ -6,10 +6,4 @@
         SettinggridViewImage.setImageAtButtonColumnOf("viewButtonColumn", Guna2DataGridView1, e, My.Resources.icons8_edit_24px)
 
     End Sub
-
-
-
-
-
-
 End Class

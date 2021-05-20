@@ -64,4 +64,5 @@ Public Class Archive
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
         search.searchValueIn("SELECT * FROM `archive_purok` WHERE PurokName Like '%" & SearchField.Text.Trim & "%'", PurokGridView)
     End Sub
+
 End Class

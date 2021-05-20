@@ -362,11 +362,8 @@ C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\D
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.MyResidents.resources
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.vbprojAssemblyReference.cache
-C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.AddNewBlotterForm.resources
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.BlotterSettlementSchedule.resources
-C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.OfficialsChildForm.resources
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.PurokChildForm.resources
-C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.ResidentsChildForm.resources
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.SettingsAccountSettingsForm.resources
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.SettingsbackupAndRestoreForm.resources
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.SettingsBarangayDetailsForm.resources
@@ -487,3 +484,4 @@ C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\De
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.vbproj.CopyComplete
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\MetroFramework.dll
+C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\Debug\MetroFramework.dll
