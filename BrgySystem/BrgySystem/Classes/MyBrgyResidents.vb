@@ -18,7 +18,7 @@ Public Class MyBrgyResidents
 
         Return "INSERT INTO `residents` Values ('" & fullname & "','" & MyResidents.SuffixComboBox.Text & "','" & MyResidents.SexComboBox.Text & "',
                 '" & MyResidents.BirthdateDatePicker.Value.Date & "','" & age & "','" & MyResidents.OccupationTextBox.Text & "','" & MyResidents.ReligionTextBOx.Text & "','" & MyResidents.HighestEducationAttainmentTextBox.Text & "',
-                '" & MyResidents.PurokTextBox.Text & "','" & MyResidents.AddressTextBox.Text & "','" & MyResidents.CivilStatusComboBox.Text & "','" & MyResidents.VoterComboBox.Text & "','" & MyResidents.ContactTextBox.Text & "','" & MyResidents.CitizenshipTextBox.Text & "','" & imagepath & "','" & imagename & "',
+                '" & MyResidents.BunifuTextBox1.Text & "','" & MyResidents.AddressTextBox.Text & "','" & MyResidents.CivilStatusComboBox.Text & "','" & MyResidents.VoterComboBox.Text & "','" & MyResidents.ContactTextBox.Text & "','" & MyResidents.CitizenshipTextBox.Text & "','" & imagepath & "','" & imagename & "',
                 '" & MyResidents.SeniorComboBox.Text & "')"
     End Function
 
@@ -33,6 +33,22 @@ Public Class MyBrgyResidents
         gridView.Columns("address_Column").DataPropertyName = "ADDRESS"
     End Sub
 
+    Sub clearAllInputs()
+        MyResidents.LastNameTextBox.Clear()
+        MyResidents.MiddleNameTextBox.Clear()
+        MyResidents.FirstNameTextBox.Clear()
+        MyResidents.SuffixComboBox.Text = ""
+        MyResidents.CitizenshipTextBox.Clear()
+        MyResidents.AddressTextBox.Clear()
+        MyResidents.ReligionTextBOx.Clear()
+        MyResidents.HighestEducationAttainmentTextBox.Clear()
+        MyResidents.ContactTextBox.Clear()
+        MyResidents.OccupationTextBox.Clear()
+        MyResidents.BunifuTextBox1.Clear()
+        MyResidents.BirthdateDatePicker.Value = Date.Now
+        MyResidents.CivilStatusComboBox.Text = ""
+        MyResidents.ResidentsPictureBOx
+    End Sub
 
 
 
@@ -77,7 +93,7 @@ Public Class MyBrgyResidents
         result = False
 
         Dim arr() As Object = {MyResidents.LastNameTextBox, MyResidents.MiddleNameTextBox, MyResidents.FirstNameTextBox, MyResidents.SuffixComboBox, MyResidents.CitizenshipTextBox, MyResidents.AddressTextBox,
-        MyResidents.ReligionTextBOx, MyResidents.HighestEducationAttainmentTextBox, MyResidents.ContactTextBox, MyResidents.OccupationTextBox, MyResidents.PurokTextBox, MyResidents.CivilStatusComboBox, MyResidents.SexComboBox, MyResidents.VoterComboBox, MyResidents.SeniorComboBox}
+        MyResidents.ReligionTextBOx, MyResidents.HighestEducationAttainmentTextBox, MyResidents.ContactTextBox, MyResidents.OccupationTextBox, MyResidents.BunifuTextBox1, MyResidents.CivilStatusComboBox, MyResidents.SexComboBox, MyResidents.VoterComboBox, MyResidents.SeniorComboBox}
 
         For Each inputObjects As Object In arr
 
@@ -94,7 +110,7 @@ Public Class MyBrgyResidents
                 Exit Function
             End If
 
-            If inputObjects.Equals(MyResidents.ContactTextBox) Or inputObjects.Equals(MyResidents.AddressTextBox) Or inputObjects.Equals(MyResidents.PurokTextBox) Then
+            If inputObjects.Equals(MyResidents.ContactTextBox) Or inputObjects.Equals(MyResidents.AddressTextBox) Or inputObjects.Equals(MyResidents.BunifuTextBox1) Then
                 Continue For
             ElseIf InputContainsNumber(inputObjects.Text) Then
                 MessageBox.Show("Input is invalid! Your " & inputObjects.AccessibleName & " contains number.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
