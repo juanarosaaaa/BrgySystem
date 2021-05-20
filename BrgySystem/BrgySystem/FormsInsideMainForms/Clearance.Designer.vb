@@ -116,6 +116,13 @@ Partial Class Clearance
         Me.BunifuLabel18 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.invoice_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.purpose_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.date_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.givenBy_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.typeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.BunifuLabel26 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel15 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -130,13 +137,6 @@ Partial Class Clearance
         Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.invoice_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.purpose_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.date_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.givenBy_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.typeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1658,7 +1658,7 @@ Partial Class Clearance
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -1695,7 +1695,7 @@ Partial Class Clearance
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -1712,11 +1712,50 @@ Partial Class Clearance
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
+        'invoice_Column
+        '
+        Me.invoice_Column.HeaderText = "Invoice No."
+        Me.invoice_Column.Name = "invoice_Column"
+        '
+        'purpose_Column
+        '
+        Me.purpose_Column.HeaderText = "Purpose"
+        Me.purpose_Column.Name = "purpose_Column"
+        '
+        'date_Column
+        '
+        Me.date_Column.HeaderText = "Date"
+        Me.date_Column.Name = "date_Column"
+        '
+        'givenBy_Column
+        '
+        Me.givenBy_Column.HeaderText = "Given By"
+        Me.givenBy_Column.Name = "givenBy_Column"
+        '
+        'fullname_Column
+        '
+        Me.fullname_Column.HeaderText = "Name"
+        Me.fullname_Column.Name = "fullname_Column"
+        '
+        'typeColumn
+        '
+        Me.typeColumn.HeaderText = "Type"
+        Me.typeColumn.Name = "typeColumn"
+        '
+        'deleteButton_Column
+        '
+        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.deleteButton_Column.HeaderText = ""
+        Me.deleteButton_Column.MinimumWidth = 25
+        Me.deleteButton_Column.Name = "deleteButton_Column"
+        Me.deleteButton_Column.Width = 25
+        '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
@@ -1937,44 +1976,6 @@ Partial Class Clearance
         Me.BunifuLabel4.Text = "Quantity:"
         Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'invoice_Column
-        '
-        Me.invoice_Column.HeaderText = "Invoice No."
-        Me.invoice_Column.Name = "invoice_Column"
-        '
-        'purpose_Column
-        '
-        Me.purpose_Column.HeaderText = "Purpose"
-        Me.purpose_Column.Name = "purpose_Column"
-        '
-        'date_Column
-        '
-        Me.date_Column.HeaderText = "Date"
-        Me.date_Column.Name = "date_Column"
-        '
-        'givenBy_Column
-        '
-        Me.givenBy_Column.HeaderText = "Given By"
-        Me.givenBy_Column.Name = "givenBy_Column"
-        '
-        'fullname_Column
-        '
-        Me.fullname_Column.HeaderText = "Name"
-        Me.fullname_Column.Name = "fullname_Column"
-        '
-        'typeColumn
-        '
-        Me.typeColumn.HeaderText = "Type"
-        Me.typeColumn.Name = "typeColumn"
-        '
-        'deleteButton_Column
-        '
-        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.deleteButton_Column.HeaderText = ""
-        Me.deleteButton_Column.MinimumWidth = 25
-        Me.deleteButton_Column.Name = "deleteButton_Column"
-        Me.deleteButton_Column.Width = 25
         '
         'Clearance
         '
