@@ -47,7 +47,10 @@ Public Class MyBrgyResidents
         MyResidents.BunifuTextBox1.Clear()
         MyResidents.BirthdateDatePicker.Value = Date.Now
         MyResidents.CivilStatusComboBox.Text = ""
-        MyResidents.ResidentsPictureBOx
+        MyResidents.ResidentsPictureBOx.Image = My.Resources.defaultImage
+        MyResidents.SexComboBox.Text = ""
+        MyResidents.VoterComboBox.Text = ""
+        MyResidents.SeniorComboBox.Text = ""
     End Sub
 
 
@@ -75,6 +78,7 @@ Public Class MyBrgyResidents
                 Exit Sub
             ElseIf isInputAlreadyExist("ImageName  ", "residents", imageName) Then
                 MessageBox.Show("Image already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                clearAllInputs()
                 Exit Sub
 
             End If

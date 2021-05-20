@@ -720,16 +720,16 @@ Partial Class Officials
         Me.BunifuPictureBox1.AllowFocused = False
         Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuPictureBox1.AutoSizeHeight = True
-        Me.BunifuPictureBox1.BorderRadius = 95
-        Me.BunifuPictureBox1.Image = CType(resources.GetObject("BunifuPictureBox1.Image"), System.Drawing.Image)
+        Me.BunifuPictureBox1.BorderRadius = 0
+        Me.BunifuPictureBox1.Image = Global.BrgySystem.My.Resources.Resources.defaultImage
         Me.BunifuPictureBox1.IsCircle = True
         Me.BunifuPictureBox1.Location = New System.Drawing.Point(917, 51)
         Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
         Me.BunifuPictureBox1.Size = New System.Drawing.Size(190, 190)
-        Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.BunifuPictureBox1.TabIndex = 23
         Me.BunifuPictureBox1.TabStop = False
-        Me.BunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle
+        Me.BunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square
         '
         'BunifuLabel13
         '
