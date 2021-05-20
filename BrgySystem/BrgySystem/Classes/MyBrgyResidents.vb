@@ -83,6 +83,8 @@ Public Class MyBrgyResidents
 
             End If
 
+        Finally
+            closeConnection()
 
         End Try
 

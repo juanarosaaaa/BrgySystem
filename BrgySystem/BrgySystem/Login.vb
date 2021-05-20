@@ -3,13 +3,13 @@ Public Class Login
 
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        open_Connection()
+        openConnection()
         checkConnectionConnectivityInForm(Me)
 
         If (My.Settings.UserNotLoggedOut) Then
             MainForm.Show()
             Me.Close()
-            close_Connection()
+            closeConnection()
         End If
 
 

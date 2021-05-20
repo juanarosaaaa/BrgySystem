@@ -62,7 +62,7 @@
 
     Private Sub Logout_Button_Click_1(sender As Object, e As EventArgs) Handles Logout_Button.Click
         My.Settings.UserNotLoggedOut = False
-        close_Connection() 'check later
+        closeConnection() 'check later
         Application.Exit()
 
     End Sub

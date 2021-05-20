@@ -20,7 +20,7 @@ Public Class MyPurok
         Catch nullValues As NoNullAllowedException
             MessageBox.Show("Input is invalid! An input must not leave empty or contain special characters \/:*?`<>| ", "FAILED TO ADD!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
-
+            closeConnection()
         End Try
 
     End Sub
@@ -28,7 +28,7 @@ Public Class MyPurok
     Sub updatePurokTo(name As String)
 
         Try
-            If (InputIsNull(name.Trim) Or InputContainsSpecialCharacter(name.Trim) Or InputContainsNumber(name.Trim)) Then
+            If (InputIsNull(name.Trim) Or InputContainsSpecialCharacter(name.Trim)) Then
                 Throw New NoNullAllowedException
             ElseIf (manage.manipulateDataAt("UPDATE `purok` SET PurokName = '" & name.Trim & "' WHERE PurokName = '" & Purok.PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue & "' ")) Then
                 MessageBox.Show("Purok '" & Purok.PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue.ToString.ToUpper & "' successfully updated to '" & name.ToUpper & "' ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -39,7 +39,7 @@ Public Class MyPurok
         Catch nullValues As NoNullAllowedException
             MessageBox.Show("Input is invalid! An input must not leave empty or contain special characters \/:*?`<>| ", "FAILED TO ADD!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
-
+            closeConnection()
         End Try
 
     End Sub
@@ -51,7 +51,7 @@ Public Class MyPurok
                 MessageBox.Show("Purok '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
         End If
-
+        closeConnection()
     End Sub
 
     Sub archivePurok(nameToArchive As String)
@@ -68,7 +68,8 @@ Public Class MyPurok
         Catch duplicate As MySqlException
             MessageBox.Show("Failed archiving Purok. A Purok '" & nameToArchive.ToUpper.Trim & "' already exist at the archive list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-
+        Finally
+            closeConnection()
 
         End Try
 

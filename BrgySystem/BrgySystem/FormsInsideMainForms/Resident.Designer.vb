@@ -40,19 +40,7 @@ Partial Class MyResidents
         Dim StateProperties12 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
-        Dim StateProperties13 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties14 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties15 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties16 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges3 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
-        Dim StateProperties17 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties18 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties19 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties20 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties21 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties22 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties23 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties24 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties25 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties26 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties27 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -65,7 +53,6 @@ Partial Class MyResidents
         Dim StateProperties34 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties35 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties36 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-
         Dim StateProperties37 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties38 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties39 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -74,7 +61,18 @@ Partial Class MyResidents
         Dim StateProperties42 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties43 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties44 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-
+        Dim StateProperties13 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties14 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties15 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties16 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties17 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties18 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties19 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties20 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties21 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties22 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties23 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties24 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.ResidentsGridView = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -97,17 +95,7 @@ Partial Class MyResidents
         Me.ReligionTextBOx = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.UpdateButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.SaveButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
-
-
-
-        Me.LastNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
-
-
-        Me.LastNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
-
         Me.BrowseButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
-        Me.MiddleNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.FirstNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel15 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.CivilStatusComboBox = New System.Windows.Forms.ComboBox()
@@ -120,7 +108,6 @@ Partial Class MyResidents
         Me.CitizenshipTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel6 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.SuffixComboBox = New System.Windows.Forms.ComboBox()
-        Me.BunifuLabel12 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.SexComboBox = New System.Windows.Forms.ComboBox()
         Me.BunifuLabel16 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.VoterComboBox = New System.Windows.Forms.ComboBox()
@@ -132,16 +119,12 @@ Partial Class MyResidents
         Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
-
-
-
-        Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel12 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.LastNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel9 = New Bunifu.UI.WinForms.BunifuLabel()
-
-
         Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel9 = New Bunifu.UI.WinForms.BunifuLabel()
-
+        Me.MiddleNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.FirstNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         CType(Me.ResidentsGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -822,177 +805,6 @@ Partial Class MyResidents
         Me.SaveButton.TextMarginLeft = 0
         Me.SaveButton.TextPadding = New System.Windows.Forms.Padding(0)
         Me.SaveButton.UseDefaultRadiusAndThickness = True
-
-
-
-
-        'LastNameTextBox
-        '
-        Me.LastNameTextBox.AcceptsReturn = False
-        Me.LastNameTextBox.AcceptsTab = False
-        Me.LastNameTextBox.AccessibleDescription = ""
-        Me.LastNameTextBox.AccessibleName = "Last name"
-        Me.LastNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LastNameTextBox.AnimationSpeed = 200
-        Me.LastNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.LastNameTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.LastNameTextBox.BackColor = System.Drawing.Color.Transparent
-        Me.LastNameTextBox.BackgroundImage = CType(resources.GetObject("LastNameTextBox.BackgroundImage"), System.Drawing.Image)
-        Me.LastNameTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.LastNameTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.LastNameTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LastNameTextBox.BorderColorIdle = System.Drawing.Color.Silver
-        Me.LastNameTextBox.BorderRadius = 1
-        Me.LastNameTextBox.BorderThickness = 1
-        Me.LastNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.LastNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.LastNameTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.LastNameTextBox.DefaultText = ""
-        Me.LastNameTextBox.FillColor = System.Drawing.Color.White
-        Me.LastNameTextBox.HideSelection = True
-        Me.LastNameTextBox.IconLeft = Nothing
-        Me.LastNameTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.LastNameTextBox.IconPadding = 10
-        Me.LastNameTextBox.IconRight = Nothing
-        Me.LastNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.LastNameTextBox.Lines = New String(-1) {}
-        Me.LastNameTextBox.Location = New System.Drawing.Point(18, 70)
-        Me.LastNameTextBox.MaxLength = 32767
-        Me.LastNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.LastNameTextBox.Modified = False
-        Me.LastNameTextBox.Multiline = False
-        Me.LastNameTextBox.Name = "LastNameTextBox"
-
-        StateProperties13.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties13.FillColor = System.Drawing.Color.Empty
-        StateProperties13.ForeColor = System.Drawing.Color.Empty
-        StateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty
-
-
-
-        Me.LastNameTextBox.OnActiveState = StateProperties13
-
-        StateProperties14.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties14.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray
-
-
-
-
-        StateProperties15.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties15.FillColor = System.Drawing.Color.Empty
-        StateProperties15.ForeColor = System.Drawing.Color.Empty
-        StateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty
-
-
-
-        Me.LastNameTextBox.OnHoverState = StateProperties15
-
-        StateProperties16.BorderColor = System.Drawing.Color.Silver
-        StateProperties16.FillColor = System.Drawing.Color.White
-        StateProperties16.ForeColor = System.Drawing.Color.Empty
-        StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
-
-        Me.LastNameTextBox.OnIdleState = StateProperties16
-        Me.LastNameTextBox.Padding = New System.Windows.Forms.Padding(3)
-        Me.LastNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.LastNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.LastNameTextBox.PlaceholderText = ""
-        Me.LastNameTextBox.ReadOnly = False
-        Me.LastNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.LastNameTextBox.SelectedText = ""
-        Me.LastNameTextBox.SelectionLength = 0
-        Me.LastNameTextBox.SelectionStart = 0
-        Me.LastNameTextBox.ShortcutsEnabled = True
-        Me.LastNameTextBox.Size = New System.Drawing.Size(146, 32)
-        Me.LastNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.LastNameTextBox.TabIndex = 65
-        Me.LastNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.LastNameTextBox.TextMarginBottom = 0
-        Me.LastNameTextBox.TextMarginLeft = 3
-        Me.LastNameTextBox.TextMarginTop = 0
-        Me.LastNameTextBox.TextPlaceholder = ""
-        Me.LastNameTextBox.UseSystemPasswordChar = False
-        Me.LastNameTextBox.WordWrap = True
-
-        '
-        'LastNameTextBox
-        '
-        Me.LastNameTextBox.AcceptsReturn = False
-        Me.LastNameTextBox.AcceptsTab = False
-        Me.LastNameTextBox.AccessibleDescription = ""
-        Me.LastNameTextBox.AccessibleName = "Last name"
-        Me.LastNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LastNameTextBox.AnimationSpeed = 200
-        Me.LastNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.LastNameTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.LastNameTextBox.BackColor = System.Drawing.Color.Transparent
-        Me.LastNameTextBox.BackgroundImage = CType(resources.GetObject("LastNameTextBox.BackgroundImage"), System.Drawing.Image)
-        Me.LastNameTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.LastNameTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.LastNameTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LastNameTextBox.BorderColorIdle = System.Drawing.Color.Silver
-        Me.LastNameTextBox.BorderRadius = 1
-        Me.LastNameTextBox.BorderThickness = 1
-        Me.LastNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.LastNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.LastNameTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.LastNameTextBox.DefaultText = ""
-        Me.LastNameTextBox.FillColor = System.Drawing.Color.White
-        Me.LastNameTextBox.HideSelection = True
-        Me.LastNameTextBox.IconLeft = Nothing
-        Me.LastNameTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.LastNameTextBox.IconPadding = 10
-        Me.LastNameTextBox.IconRight = Nothing
-        Me.LastNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.LastNameTextBox.Lines = New String(-1) {}
-        Me.LastNameTextBox.Location = New System.Drawing.Point(18, 70)
-        Me.LastNameTextBox.MaxLength = 32767
-        Me.LastNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.LastNameTextBox.Modified = False
-        Me.LastNameTextBox.Multiline = False
-        Me.LastNameTextBox.Name = "LastNameTextBox"
-        StateProperties13.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties13.FillColor = System.Drawing.Color.Empty
-        StateProperties13.ForeColor = System.Drawing.Color.Empty
-        StateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.LastNameTextBox.OnActiveState = StateProperties13
-        StateProperties14.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties14.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.LastNameTextBox.OnDisabledState = StateProperties14
-        StateProperties15.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties15.FillColor = System.Drawing.Color.Empty
-        StateProperties15.ForeColor = System.Drawing.Color.Empty
-        StateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.LastNameTextBox.OnHoverState = StateProperties15
-        StateProperties16.BorderColor = System.Drawing.Color.Silver
-        StateProperties16.FillColor = System.Drawing.Color.White
-        StateProperties16.ForeColor = System.Drawing.Color.Empty
-        StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.LastNameTextBox.OnIdleState = StateProperties16
-        Me.LastNameTextBox.Padding = New System.Windows.Forms.Padding(3)
-        Me.LastNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.LastNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.LastNameTextBox.PlaceholderText = ""
-        Me.LastNameTextBox.ReadOnly = False
-        Me.LastNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.LastNameTextBox.SelectedText = ""
-        Me.LastNameTextBox.SelectionLength = 0
-        Me.LastNameTextBox.SelectionStart = 0
-        Me.LastNameTextBox.ShortcutsEnabled = True
-        Me.LastNameTextBox.Size = New System.Drawing.Size(146, 32)
-        Me.LastNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.LastNameTextBox.TabIndex = 65
-        Me.LastNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.LastNameTextBox.TextMarginBottom = 0
-        Me.LastNameTextBox.TextMarginLeft = 3
-        Me.LastNameTextBox.TextMarginTop = 0
-        Me.LastNameTextBox.TextPlaceholder = ""
-        Me.LastNameTextBox.UseSystemPasswordChar = False
-        Me.LastNameTextBox.WordWrap = True
         '
         'BrowseButton
         '
@@ -1083,158 +895,6 @@ Partial Class MyResidents
         Me.BrowseButton.TextMarginLeft = 0
         Me.BrowseButton.TextPadding = New System.Windows.Forms.Padding(0)
         Me.BrowseButton.UseDefaultRadiusAndThickness = True
-        '
-        'MiddleNameTextBox
-        '
-        Me.MiddleNameTextBox.AcceptsReturn = False
-        Me.MiddleNameTextBox.AcceptsTab = False
-        Me.MiddleNameTextBox.AccessibleName = "Middle name"
-        Me.MiddleNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.MiddleNameTextBox.AnimationSpeed = 200
-        Me.MiddleNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.MiddleNameTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.MiddleNameTextBox.BackColor = System.Drawing.Color.Transparent
-        Me.MiddleNameTextBox.BackgroundImage = CType(resources.GetObject("MiddleNameTextBox.BackgroundImage"), System.Drawing.Image)
-        Me.MiddleNameTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.MiddleNameTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.MiddleNameTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.MiddleNameTextBox.BorderColorIdle = System.Drawing.Color.Silver
-        Me.MiddleNameTextBox.BorderRadius = 1
-        Me.MiddleNameTextBox.BorderThickness = 1
-        Me.MiddleNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MiddleNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.MiddleNameTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.MiddleNameTextBox.DefaultText = ""
-        Me.MiddleNameTextBox.FillColor = System.Drawing.Color.White
-        Me.MiddleNameTextBox.HideSelection = True
-        Me.MiddleNameTextBox.IconLeft = Nothing
-        Me.MiddleNameTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.MiddleNameTextBox.IconPadding = 10
-        Me.MiddleNameTextBox.IconRight = Nothing
-        Me.MiddleNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.MiddleNameTextBox.Lines = New String(-1) {}
-        Me.MiddleNameTextBox.Location = New System.Drawing.Point(166, 70)
-        Me.MiddleNameTextBox.MaxLength = 32767
-        Me.MiddleNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.MiddleNameTextBox.Modified = False
-        Me.MiddleNameTextBox.Multiline = False
-        Me.MiddleNameTextBox.Name = "MiddleNameTextBox"
-        StateProperties17.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties17.FillColor = System.Drawing.Color.Empty
-        StateProperties17.ForeColor = System.Drawing.Color.Empty
-        StateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.MiddleNameTextBox.OnActiveState = StateProperties17
-        StateProperties18.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties18.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.MiddleNameTextBox.OnDisabledState = StateProperties18
-        StateProperties19.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties19.FillColor = System.Drawing.Color.Empty
-        StateProperties19.ForeColor = System.Drawing.Color.Empty
-        StateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.MiddleNameTextBox.OnHoverState = StateProperties19
-        StateProperties20.BorderColor = System.Drawing.Color.Silver
-        StateProperties20.FillColor = System.Drawing.Color.White
-        StateProperties20.ForeColor = System.Drawing.Color.Empty
-        StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.MiddleNameTextBox.OnIdleState = StateProperties20
-        Me.MiddleNameTextBox.Padding = New System.Windows.Forms.Padding(3)
-        Me.MiddleNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MiddleNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.MiddleNameTextBox.PlaceholderText = ""
-        Me.MiddleNameTextBox.ReadOnly = False
-        Me.MiddleNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.MiddleNameTextBox.SelectedText = ""
-        Me.MiddleNameTextBox.SelectionLength = 0
-        Me.MiddleNameTextBox.SelectionStart = 0
-        Me.MiddleNameTextBox.ShortcutsEnabled = True
-        Me.MiddleNameTextBox.Size = New System.Drawing.Size(157, 32)
-        Me.MiddleNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.MiddleNameTextBox.TabIndex = 66
-        Me.MiddleNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MiddleNameTextBox.TextMarginBottom = 0
-        Me.MiddleNameTextBox.TextMarginLeft = 3
-        Me.MiddleNameTextBox.TextMarginTop = 0
-        Me.MiddleNameTextBox.TextPlaceholder = ""
-        Me.MiddleNameTextBox.UseSystemPasswordChar = False
-        Me.MiddleNameTextBox.WordWrap = True
-        '
-        'FirstNameTextBox
-        '
-        Me.FirstNameTextBox.AcceptsReturn = False
-        Me.FirstNameTextBox.AcceptsTab = False
-        Me.FirstNameTextBox.AccessibleName = "First name"
-        Me.FirstNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.FirstNameTextBox.AnimationSpeed = 200
-        Me.FirstNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.FirstNameTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.FirstNameTextBox.BackColor = System.Drawing.Color.Transparent
-        Me.FirstNameTextBox.BackgroundImage = CType(resources.GetObject("FirstNameTextBox.BackgroundImage"), System.Drawing.Image)
-        Me.FirstNameTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.FirstNameTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.FirstNameTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.FirstNameTextBox.BorderColorIdle = System.Drawing.Color.Silver
-        Me.FirstNameTextBox.BorderRadius = 1
-        Me.FirstNameTextBox.BorderThickness = 1
-        Me.FirstNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.FirstNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.FirstNameTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.FirstNameTextBox.DefaultText = ""
-        Me.FirstNameTextBox.FillColor = System.Drawing.Color.White
-        Me.FirstNameTextBox.HideSelection = True
-        Me.FirstNameTextBox.IconLeft = Nothing
-        Me.FirstNameTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.FirstNameTextBox.IconPadding = 10
-        Me.FirstNameTextBox.IconRight = Nothing
-        Me.FirstNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.FirstNameTextBox.Lines = New String(-1) {}
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(325, 70)
-        Me.FirstNameTextBox.MaxLength = 32767
-        Me.FirstNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.FirstNameTextBox.Modified = False
-        Me.FirstNameTextBox.Multiline = False
-        Me.FirstNameTextBox.Name = "FirstNameTextBox"
-        StateProperties21.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties21.FillColor = System.Drawing.Color.Empty
-        StateProperties21.ForeColor = System.Drawing.Color.Empty
-        StateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.FirstNameTextBox.OnActiveState = StateProperties21
-        StateProperties22.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties22.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.FirstNameTextBox.OnDisabledState = StateProperties22
-        StateProperties23.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties23.FillColor = System.Drawing.Color.Empty
-        StateProperties23.ForeColor = System.Drawing.Color.Empty
-        StateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.FirstNameTextBox.OnHoverState = StateProperties23
-        StateProperties24.BorderColor = System.Drawing.Color.Silver
-        StateProperties24.FillColor = System.Drawing.Color.White
-        StateProperties24.ForeColor = System.Drawing.Color.Empty
-        StateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.FirstNameTextBox.OnIdleState = StateProperties24
-        Me.FirstNameTextBox.Padding = New System.Windows.Forms.Padding(3)
-        Me.FirstNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.FirstNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.FirstNameTextBox.PlaceholderText = ""
-        Me.FirstNameTextBox.ReadOnly = False
-        Me.FirstNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.FirstNameTextBox.SelectedText = ""
-        Me.FirstNameTextBox.SelectionLength = 0
-        Me.FirstNameTextBox.SelectionStart = 0
-        Me.FirstNameTextBox.ShortcutsEnabled = True
-        Me.FirstNameTextBox.Size = New System.Drawing.Size(181, 32)
-        Me.FirstNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.FirstNameTextBox.TabIndex = 67
-        Me.FirstNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.FirstNameTextBox.TextMarginBottom = 0
-        Me.FirstNameTextBox.TextMarginLeft = 3
-        Me.FirstNameTextBox.TextMarginTop = 0
-        Me.FirstNameTextBox.TextPlaceholder = ""
-        Me.FirstNameTextBox.UseSystemPasswordChar = False
-        Me.FirstNameTextBox.WordWrap = True
         '
         'BunifuLabel15
         '
@@ -1732,23 +1392,6 @@ Partial Class MyResidents
         Me.SuffixComboBox.Size = New System.Drawing.Size(173, 32)
         Me.SuffixComboBox.TabIndex = 73
         '
-        'BunifuLabel12
-        '
-        Me.BunifuLabel12.AllowParentOverrides = False
-        Me.BunifuLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel12.AutoEllipsis = False
-        Me.BunifuLabel12.CursorType = Nothing
-        Me.BunifuLabel12.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel12.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel12.Location = New System.Drawing.Point(21, 49)
-        Me.BunifuLabel12.Name = "BunifuLabel12"
-        Me.BunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel12.Size = New System.Drawing.Size(62, 19)
-        Me.BunifuLabel12.TabIndex = 92
-        Me.BunifuLabel12.Text = "Last name"
-        Me.BunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
         'SexComboBox
         '
         Me.SexComboBox.AccessibleName = "Sex"
@@ -1933,23 +1576,99 @@ Partial Class MyResidents
         Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-
-        'BunifuLabel8
+        'BunifuLabel12
         '
-        Me.BunifuLabel8.AllowParentOverrides = False
-        Me.BunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel8.AutoEllipsis = False
-        Me.BunifuLabel8.CursorType = Nothing
-        Me.BunifuLabel8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel8.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel8.Location = New System.Drawing.Point(325, 49)
-        Me.BunifuLabel8.Name = "BunifuLabel8"
-        Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel8.Size = New System.Drawing.Size(63, 19)
-        Me.BunifuLabel8.TabIndex = 84
-        Me.BunifuLabel8.Text = "First name"
-        Me.BunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.BunifuLabel12.AllowParentOverrides = False
+        Me.BunifuLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel12.AutoEllipsis = False
+        Me.BunifuLabel12.CursorType = Nothing
+        Me.BunifuLabel12.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel12.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel12.Location = New System.Drawing.Point(21, 49)
+        Me.BunifuLabel12.Name = "BunifuLabel12"
+        Me.BunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel12.Size = New System.Drawing.Size(62, 19)
+        Me.BunifuLabel12.TabIndex = 92
+        Me.BunifuLabel12.Text = "Last name"
+        Me.BunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'LastNameTextBox
+        '
+        Me.LastNameTextBox.AcceptsReturn = False
+        Me.LastNameTextBox.AcceptsTab = False
+        Me.LastNameTextBox.AccessibleDescription = ""
+        Me.LastNameTextBox.AccessibleName = "Last name"
+        Me.LastNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LastNameTextBox.AnimationSpeed = 200
+        Me.LastNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.LastNameTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.LastNameTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.LastNameTextBox.BackgroundImage = CType(resources.GetObject("LastNameTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.LastNameTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.LastNameTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.LastNameTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LastNameTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.LastNameTextBox.BorderRadius = 1
+        Me.LastNameTextBox.BorderThickness = 1
+        Me.LastNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.LastNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.LastNameTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.LastNameTextBox.DefaultText = ""
+        Me.LastNameTextBox.FillColor = System.Drawing.Color.White
+        Me.LastNameTextBox.HideSelection = True
+        Me.LastNameTextBox.IconLeft = Nothing
+        Me.LastNameTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.LastNameTextBox.IconPadding = 10
+        Me.LastNameTextBox.IconRight = Nothing
+        Me.LastNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.LastNameTextBox.Lines = New String(-1) {}
+        Me.LastNameTextBox.Location = New System.Drawing.Point(18, 70)
+        Me.LastNameTextBox.MaxLength = 32767
+        Me.LastNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.LastNameTextBox.Modified = False
+        Me.LastNameTextBox.Multiline = False
+        Me.LastNameTextBox.Name = "LastNameTextBox"
+        StateProperties13.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties13.FillColor = System.Drawing.Color.Empty
+        StateProperties13.ForeColor = System.Drawing.Color.Empty
+        StateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.LastNameTextBox.OnActiveState = StateProperties13
+        StateProperties14.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties14.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.LastNameTextBox.OnDisabledState = StateProperties14
+        StateProperties15.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties15.FillColor = System.Drawing.Color.Empty
+        StateProperties15.ForeColor = System.Drawing.Color.Empty
+        StateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.LastNameTextBox.OnHoverState = StateProperties15
+        StateProperties16.BorderColor = System.Drawing.Color.Silver
+        StateProperties16.FillColor = System.Drawing.Color.White
+        StateProperties16.ForeColor = System.Drawing.Color.Empty
+        StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.LastNameTextBox.OnIdleState = StateProperties16
+        Me.LastNameTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.LastNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.LastNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.LastNameTextBox.PlaceholderText = ""
+        Me.LastNameTextBox.ReadOnly = False
+        Me.LastNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.LastNameTextBox.SelectedText = ""
+        Me.LastNameTextBox.SelectionLength = 0
+        Me.LastNameTextBox.SelectionStart = 0
+        Me.LastNameTextBox.ShortcutsEnabled = True
+        Me.LastNameTextBox.Size = New System.Drawing.Size(146, 32)
+        Me.LastNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.LastNameTextBox.TabIndex = 65
+        Me.LastNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.LastNameTextBox.TextMarginBottom = 0
+        Me.LastNameTextBox.TextMarginLeft = 3
+        Me.LastNameTextBox.TextMarginTop = 0
+        Me.LastNameTextBox.TextPlaceholder = ""
+        Me.LastNameTextBox.UseSystemPasswordChar = False
+        Me.LastNameTextBox.WordWrap = True
         '
         'BunifuLabel9
         '
@@ -1968,7 +1687,175 @@ Partial Class MyResidents
         Me.BunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-
+        'BunifuLabel8
+        '
+        Me.BunifuLabel8.AllowParentOverrides = False
+        Me.BunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel8.AutoEllipsis = False
+        Me.BunifuLabel8.CursorType = Nothing
+        Me.BunifuLabel8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel8.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel8.Location = New System.Drawing.Point(325, 49)
+        Me.BunifuLabel8.Name = "BunifuLabel8"
+        Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel8.Size = New System.Drawing.Size(63, 19)
+        Me.BunifuLabel8.TabIndex = 84
+        Me.BunifuLabel8.Text = "First name"
+        Me.BunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'MiddleNameTextBox
+        '
+        Me.MiddleNameTextBox.AcceptsReturn = False
+        Me.MiddleNameTextBox.AcceptsTab = False
+        Me.MiddleNameTextBox.AccessibleName = "Middle name"
+        Me.MiddleNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.MiddleNameTextBox.AnimationSpeed = 200
+        Me.MiddleNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.MiddleNameTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.MiddleNameTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.MiddleNameTextBox.BackgroundImage = CType(resources.GetObject("MiddleNameTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.MiddleNameTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.MiddleNameTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.MiddleNameTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MiddleNameTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.MiddleNameTextBox.BorderRadius = 1
+        Me.MiddleNameTextBox.BorderThickness = 1
+        Me.MiddleNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.MiddleNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.MiddleNameTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.MiddleNameTextBox.DefaultText = ""
+        Me.MiddleNameTextBox.FillColor = System.Drawing.Color.White
+        Me.MiddleNameTextBox.HideSelection = True
+        Me.MiddleNameTextBox.IconLeft = Nothing
+        Me.MiddleNameTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.MiddleNameTextBox.IconPadding = 10
+        Me.MiddleNameTextBox.IconRight = Nothing
+        Me.MiddleNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.MiddleNameTextBox.Lines = New String(-1) {}
+        Me.MiddleNameTextBox.Location = New System.Drawing.Point(166, 70)
+        Me.MiddleNameTextBox.MaxLength = 32767
+        Me.MiddleNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.MiddleNameTextBox.Modified = False
+        Me.MiddleNameTextBox.Multiline = False
+        Me.MiddleNameTextBox.Name = "MiddleNameTextBox"
+        StateProperties17.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties17.FillColor = System.Drawing.Color.Empty
+        StateProperties17.ForeColor = System.Drawing.Color.Empty
+        StateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.MiddleNameTextBox.OnActiveState = StateProperties17
+        StateProperties18.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties18.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.MiddleNameTextBox.OnDisabledState = StateProperties18
+        StateProperties19.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties19.FillColor = System.Drawing.Color.Empty
+        StateProperties19.ForeColor = System.Drawing.Color.Empty
+        StateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.MiddleNameTextBox.OnHoverState = StateProperties19
+        StateProperties20.BorderColor = System.Drawing.Color.Silver
+        StateProperties20.FillColor = System.Drawing.Color.White
+        StateProperties20.ForeColor = System.Drawing.Color.Empty
+        StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.MiddleNameTextBox.OnIdleState = StateProperties20
+        Me.MiddleNameTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.MiddleNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MiddleNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.MiddleNameTextBox.PlaceholderText = ""
+        Me.MiddleNameTextBox.ReadOnly = False
+        Me.MiddleNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MiddleNameTextBox.SelectedText = ""
+        Me.MiddleNameTextBox.SelectionLength = 0
+        Me.MiddleNameTextBox.SelectionStart = 0
+        Me.MiddleNameTextBox.ShortcutsEnabled = True
+        Me.MiddleNameTextBox.Size = New System.Drawing.Size(157, 32)
+        Me.MiddleNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.MiddleNameTextBox.TabIndex = 66
+        Me.MiddleNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.MiddleNameTextBox.TextMarginBottom = 0
+        Me.MiddleNameTextBox.TextMarginLeft = 3
+        Me.MiddleNameTextBox.TextMarginTop = 0
+        Me.MiddleNameTextBox.TextPlaceholder = ""
+        Me.MiddleNameTextBox.UseSystemPasswordChar = False
+        Me.MiddleNameTextBox.WordWrap = True
+        '
+        'FirstNameTextBox
+        '
+        Me.FirstNameTextBox.AcceptsReturn = False
+        Me.FirstNameTextBox.AcceptsTab = False
+        Me.FirstNameTextBox.AccessibleName = "First name"
+        Me.FirstNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.FirstNameTextBox.AnimationSpeed = 200
+        Me.FirstNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.FirstNameTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.FirstNameTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.FirstNameTextBox.BackgroundImage = CType(resources.GetObject("FirstNameTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.FirstNameTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.FirstNameTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.FirstNameTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.FirstNameTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.FirstNameTextBox.BorderRadius = 1
+        Me.FirstNameTextBox.BorderThickness = 1
+        Me.FirstNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.FirstNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.FirstNameTextBox.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.FirstNameTextBox.DefaultText = ""
+        Me.FirstNameTextBox.FillColor = System.Drawing.Color.White
+        Me.FirstNameTextBox.HideSelection = True
+        Me.FirstNameTextBox.IconLeft = Nothing
+        Me.FirstNameTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.FirstNameTextBox.IconPadding = 10
+        Me.FirstNameTextBox.IconRight = Nothing
+        Me.FirstNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.FirstNameTextBox.Lines = New String(-1) {}
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(325, 70)
+        Me.FirstNameTextBox.MaxLength = 32767
+        Me.FirstNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.FirstNameTextBox.Modified = False
+        Me.FirstNameTextBox.Multiline = False
+        Me.FirstNameTextBox.Name = "FirstNameTextBox"
+        StateProperties21.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties21.FillColor = System.Drawing.Color.Empty
+        StateProperties21.ForeColor = System.Drawing.Color.Empty
+        StateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.FirstNameTextBox.OnActiveState = StateProperties21
+        StateProperties22.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties22.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.FirstNameTextBox.OnDisabledState = StateProperties22
+        StateProperties23.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties23.FillColor = System.Drawing.Color.Empty
+        StateProperties23.ForeColor = System.Drawing.Color.Empty
+        StateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.FirstNameTextBox.OnHoverState = StateProperties23
+        StateProperties24.BorderColor = System.Drawing.Color.Silver
+        StateProperties24.FillColor = System.Drawing.Color.White
+        StateProperties24.ForeColor = System.Drawing.Color.Empty
+        StateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.FirstNameTextBox.OnIdleState = StateProperties24
+        Me.FirstNameTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.FirstNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.FirstNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.FirstNameTextBox.PlaceholderText = ""
+        Me.FirstNameTextBox.ReadOnly = False
+        Me.FirstNameTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.FirstNameTextBox.SelectedText = ""
+        Me.FirstNameTextBox.SelectionLength = 0
+        Me.FirstNameTextBox.SelectionStart = 0
+        Me.FirstNameTextBox.ShortcutsEnabled = True
+        Me.FirstNameTextBox.Size = New System.Drawing.Size(181, 32)
+        Me.FirstNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.FirstNameTextBox.TabIndex = 67
+        Me.FirstNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.FirstNameTextBox.TextMarginBottom = 0
+        Me.FirstNameTextBox.TextMarginLeft = 3
+        Me.FirstNameTextBox.TextMarginTop = 0
+        Me.FirstNameTextBox.TextPlaceholder = ""
+        Me.FirstNameTextBox.UseSystemPasswordChar = False
+        Me.FirstNameTextBox.WordWrap = True
+        '
         'MyResidents
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1999,10 +1886,7 @@ Partial Class MyResidents
     Friend WithEvents ReligionTextBOx As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents UpdateButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents SaveButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton
-    Friend WithEvents LastNameTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BrowseButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton
-    Friend WithEvents MiddleNameTextBox As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents FirstNameTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel15 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel2 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents CivilStatusComboBox As ComboBox
@@ -2016,7 +1900,6 @@ Partial Class MyResidents
     Friend WithEvents CitizenshipTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel6 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents SuffixComboBox As ComboBox
-    Friend WithEvents BunifuLabel12 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents SexComboBox As ComboBox
     Friend WithEvents BunifuLabel16 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents VoterComboBox As ComboBox
@@ -2028,8 +1911,6 @@ Partial Class MyResidents
     Friend WithEvents BunifuLabel11 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel5 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel10 As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents BunifuLabel8 As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents BunifuLabel9 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents fullname_Column As DataGridViewTextBoxColumn
     Friend WithEvents sex_Column As DataGridViewTextBoxColumn
     Friend WithEvents age_Column As DataGridViewTextBoxColumn
@@ -2043,4 +1924,10 @@ Partial Class MyResidents
     Friend WithEvents SearchFieldTxtBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents PurokTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents ResidentsPictureBOx As Bunifu.UI.WinForms.BunifuPictureBox
+    Friend WithEvents LastNameTextBox As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents MiddleNameTextBox As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents FirstNameTextBox As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents BunifuLabel12 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents BunifuLabel8 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents BunifuLabel9 As Bunifu.UI.WinForms.BunifuLabel
 End Class

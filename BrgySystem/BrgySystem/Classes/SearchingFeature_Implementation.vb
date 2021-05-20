@@ -5,12 +5,12 @@ Public Class SearchingFeature_Implementation
 
     Implements Search
     Sub searchValueIn(query As String, gridview As Guna2DataGridView) Implements Search.searchValueIn
-        open_Connection()
+        openConnection()
         Dim table As New DataTable
         Dim adapter As New MySqlDataAdapter(query, getConnection)
         adapter.Fill(table)
         gridview.DataSource = table
-        close_Connection()
+        closeConnection()
     End Sub
 
 
@@ -21,13 +21,13 @@ Public Class SearchingFeature_Implementation
         Dim command As New MySqlCommand("SELECT " & columnName & " from " & tableName & " where " & columnName & " like '%" & searchField.Text & "%'", getConnection)
         Dim reader As MySqlDataReader
 
-        open_Connection()
+        openConnection()
         reader = command.ExecuteReader
         While reader.Read
             autoFill.Add(reader.GetString(columnName))
         End While
         searchField.AutoCompleteCustomSource = autoFill
-        close_Connection()
+        closeConnection()
     End Sub
 
 
