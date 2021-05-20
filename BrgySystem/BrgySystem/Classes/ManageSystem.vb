@@ -9,7 +9,7 @@ Public Class ManageSystem
     End Function
 
 
-    Public Sub loadGridViewValueAt(query As String, gridView As Guna2DataGridView) Implements loadGridViewValue.loadGridViewValueOf
+    Public Sub loadGridViewValueOf(query As String, gridView As Guna2DataGridView) Implements loadGridViewValue.loadGridViewValueOf
         openConnection()
         Dim table As New DataTable
         Dim adapter As New MySqlDataAdapter(query, getConnection)

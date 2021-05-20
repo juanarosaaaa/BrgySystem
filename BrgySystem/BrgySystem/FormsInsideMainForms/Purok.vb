@@ -78,7 +78,9 @@ Public Class Purok
         If (AlreadyStart) Then
             foo.searchValueIn("SELECT * FROM `Purok` WHERE PurokName Like '%" & SearchBarField.Text.Trim & "%'", PurokGridView)
         End If
-
+        If (String.IsNullOrEmpty(SearchBarField.Text)) Then
+            manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
+        End If
     End Sub
 
 
