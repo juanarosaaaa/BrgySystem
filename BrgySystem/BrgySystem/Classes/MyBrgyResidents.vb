@@ -17,23 +17,51 @@ Public Class MyBrgyResidents
 
     Function getInsertQuery(imagename As String, imagepath As String) As String
 
-        Dim path As String = imagepath.Replace("\", "\\")
+
         Dim age As String = Date.Now.Year - MyResidents.BirthdateDatePicker.Value.Year
 
-        Return "INSERT INTO `residents` Values ('" & MyResidents.Fullnametxtbox.Text.Trim & "','" & MyResidents.SuffixComboBox.Text & "','" & MyResidents.SexComboBox.Text & "',
-                '" & MyResidents.BirthdateDatePicker.Value.Date & "','" & age & "','" & MyResidents.OccupationTextBox.Text & "','" & MyResidents.ReligionTextBOx.Text & "','" & MyResidents.HighestEducationAttainmentTextBox.Text & "',
-                '" & MyResidents.PurokTextBox.Text & "','" & MyResidents.AddressTextBox.Text & "','" & MyResidents.CivilStatusComboBox.Text & "','" & MyResidents.VoterComboBox.Text & "','" & MyResidents.ContactTextBox.Text & "','" & MyResidents.CitizenshipTextBox.Text & "','" & path & "','" & imagename & "',
-                '" & MyResidents.SeniorComboBox.Text & "')"
+        Return "INSERT INTO `residents` Values ('" & MyResidents.Fullnametxtbox.Text.Trim & "',
+                                                '" & MyResidents.SuffixComboBox.Text & "',
+                                                '" & MyResidents.SexComboBox.Text & "',
+                                                '" & MyResidents.BirthdateDatePicker.Value.Date & "',
+                                                '" & age & "','" & MyResidents.OccupationTextBox.Text & "',
+                                                '" & MyResidents.ReligionTextBOx.Text & "',
+                                                '" & MyResidents.HighestEducationAttainmentTextBox.Text & "',
+                                                '" & MyResidents.PurokTextBox.Text & "',
+                                                '" & MyResidents.AddressTextBox.Text & "',
+                                                '" & MyResidents.CivilStatusComboBox.Text & "',
+                                                '" & MyResidents.VoterComboBox.Text & "',
+                                                '" & MyResidents.ContactTextBox.Text & "',
+                                                '" & MyResidents.CitizenshipTextBox.Text & "',
+                                                '" & imagePathManager.getImagePath(imagepath) & "',
+                                                '" & imagename & "',
+                                                '" & MyResidents.SeniorComboBox.Text & "')"
     End Function
 
 
 
 
-    Function updateQuery() As String
-        Return " UPDATE `residents` Set `FULLNAME`= '" & MyResidents.Fullnametxtbox.Text.Trim & "',`SUFFIX`=[value-2],`SEX`=[value-3],`BIRTHDATE`=[value-4],`AGE`=[value-5],
-            `OCCUPATION`=[value-6],`RELIGION`=[value-7],`Educational Attainment`=[value-8],`PUROK`=[value-9],`ADDRESS`=[value-10],
-            `CIVIL_STATUS`=[value-11],`REGISTERED_VOTER`=[value-12],`CONTACT_NUMBER`=[value-13],`CITIZENSHIP`=[value-14],`IMAGEPATH`=[value-15],
-            `ImageName`=[value-16],`SeniorCitizen`=[value-17] WHERE 1"
+    Function getUpdateQuery(fullnameFromSelectedRow As String, imagename As String, imagepath As String) As String
+        Dim age As String = Date.Now.Year - MyResidents.BirthdateDatePicker.Value.Year
+
+        Return " UPDATE `residents` Set `FULLNAME`= '" & MyResidents.Fullnametxtbox.Text.Trim & "',         
+                                        `SUFFIX`= '" & MyResidents.SuffixComboBox.Text & "',
+                                        `SEX`= '" & MyResidents.SexComboBox.Text & "',
+                                        `BIRTHDATE`= '" & MyResidents.BirthdateDatePicker.Value.Date & "' ,
+                                        `AGE`= '" & age & "',
+                                        `OCCUPATION`='" & MyResidents.OccupationTextBox.Text & "' ,
+                                        `RELIGION`= '" & MyResidents.ReligionTextBOx.Text & "',
+                                        `Educational Attainment`='" & MyResidents.HighestEducationAttainmentTextBox.Text & "',
+                                        `PUROK`= '" & MyResidents.PurokTextBox.Text & "',
+                                        `ADDRESS`= '" & MyResidents.AddressTextBox.Text & "',
+                                        `CIVIL_STATUS`= '" & MyResidents.CivilStatusComboBox.Text & "',
+                                        `REGISTERED_VOTER`= '" & MyResidents.VoterComboBox.Text & "',
+                                        `CONTACT_NUMBER`='" & MyResidents.ContactTextBox.Text & "',
+                                        `CITIZENSHIP`= '" & MyResidents.CitizenshipTextBox.Text & "' ,
+                                        `IMAGEPATH`= '" & imagePathManager.getImagePath(imagepath) & "',
+                                        `ImageName`= '" & imagename & "',
+                                        `SeniorCitizen`= '" & MyResidents.SeniorComboBox.Text & "' 
+                                         WHERE `FULLNAME` = '" & fullnameFromSelectedRow & "' "
     End Function
 
 
@@ -150,9 +178,9 @@ Public Class MyBrgyResidents
 
 
 
-    Sub getValuesFromDatabaseAndDisplayToInputs(name As String)
+    Sub getValuesFromDatabaseAndDisplayToInputs(nameOfTheSelectedRow As String)
         openConnection()
-        Dim command As New MySqlCommand("SELECT * from residents where Fullname = '" & name & "' ", getConnection)
+        Dim command As New MySqlCommand("SELECT * from residents where Fullname = '" & nameOfTheSelectedRow & "' ", getConnection)
         Dim reader As MySqlDataReader
         reader = command.ExecuteReader
         Try
@@ -173,23 +201,25 @@ Public Class MyBrgyResidents
                 MyResidents.SexComboBox.Text = reader.GetString("SEX")
                 MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
                 MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
+
                 imgname = reader.GetString("ImageName")
-                imgpath = reader.GetString("Imagepath")
+                imgpath = reader.GetString("ImagePath")
+
                 MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("Imagepath"))
             End While
-        Catch x As FileNotFoundException ' picture for resident miko not found. File might have been moved or deleted.
+        Catch x As FileNotFoundException
             MessageBox.Show("Picture for Resident '" & reader.GetString("FULLNAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
 
         closeConnection()
 
-
-
     End Sub
-    Function getImageNameFromSelectedRowValue() As String
+
+    Function getImageNameFromSelectedRowValue()
         Return imgname
     End Function
+
     Function getImagePathFromSelectedRowValue()
         Return imgpath
     End Function

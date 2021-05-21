@@ -13,7 +13,7 @@ Public Class MyResidents
     Private manage As loadGridViewValue = New ManageSystem
     Private AlreadyStart As Boolean = False
     Private Const folderImage As String = "ResidentsImages"
-
+    Private selectedNameInRow As String
 
 
 
@@ -43,9 +43,7 @@ Public Class MyResidents
 
 
     Private Sub BrowseButton_Click(sender As Object, e As EventArgs) Handles BrowseButton.Click
-
         imageFile.openImageFromPictureBox(ResidentsPictureBOx)
-
     End Sub
 
 
@@ -99,6 +97,14 @@ Public Class MyResidents
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
 
 
+
+        'imagename to save image
+        'imagename to check if it is already exist
+        'imagepath for database to save path
+        'imagepath for us to retrieve path to render image
+
+
+
         Try
             imageFile.saveImageAt("ResidentsImages")
         Catch X As NoNullAllowedException
@@ -106,17 +112,16 @@ Public Class MyResidents
             Exit Sub
         End Try
 
-        Dim message As String = "Resident '" & Fullnametxtbox.Text.Trim.ToUpper & "' successfully updated!"
-        ' Dim query As String = brgyResidents.getInsertQuery(imageFile.getImageName, imageFile.getImageFolderPath)
 
 
-        '  brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName)
+        Dim message As String = "Resident '" & selectedNameInRow & "' successfully updated!"
+        Dim query As String = brgyResidents.getUpdateQuery(selectedNameInRow, imageFile.getImageName, imageFile.getImageFolderPath)
+
+        brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
 
 
-        'MsgBox(brgyResidents.getImageNameFromSelectedRowValue())
-        ' MsgBox(brgyResidents.getImagePathFromSelectedRowValue())
     End Sub
 
     Private Sub ResdientsGridViewCellClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ResidentsGridView.CellClick
@@ -125,8 +130,12 @@ Public Class MyResidents
             SaveButton.Enabled = False
             UpdateButton.Enabled = True
             brgyResidents.clearAllInputs()
-            Dim selectedNameInRow As String = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
+            selectedNameInRow = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
             brgyResidents.getValuesFromDatabaseAndDisplayToInputs(selectedNameInRow)
+            imageFile.getImageNameFromSelectedRow(brgyResidents.getImagePathFromSelectedRowValue, ResidentsPictureBOx)
+
+
+
             'ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
             'ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
 
@@ -140,4 +149,6 @@ Public Class MyResidents
         SaveButton.Enabled = True
         UpdateButton.Enabled = False
     End Sub
+
+
 End Class
