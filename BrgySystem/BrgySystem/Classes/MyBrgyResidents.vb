@@ -7,16 +7,16 @@ Public Class MyBrgyResidents
     Private manage As DataManipulation = New ManageSystem
     Private Const residentsQuery As String = "SELECT FULLNAME,SEX,AGE,CIVIL_STATUS,OCCUPATION,REGISTERED_VOTER,ADDRESS FROM `residents`"
     Private result As Boolean
-    Dim fullname As String
+
 
 
     Function insertQuery(imagename As String, imagepath As String) As String
-        fullname = "" & MyResidents.LastNameTextBox.Text + MyResidents.MiddleNameTextBox.Text + MyResidents.FirstNameTextBox.Text & ""
+
 
 
         Dim age As String = Date.Now.Year - MyResidents.BirthdateDatePicker.Value.Year
 
-        Return "INSERT INTO `residents` Values ('" & fullname & "','" & MyResidents.SuffixComboBox.Text & "','" & MyResidents.SexComboBox.Text & "',
+        Return "INSERT INTO `residents` Values ('" & MyResidents.Fullnametxtbox.Text.Trim & "','" & MyResidents.SuffixComboBox.Text & "','" & MyResidents.SexComboBox.Text & "',
                 '" & MyResidents.BirthdateDatePicker.Value.Date & "','" & age & "','" & MyResidents.OccupationTextBox.Text & "','" & MyResidents.ReligionTextBOx.Text & "','" & MyResidents.HighestEducationAttainmentTextBox.Text & "',
                 '" & MyResidents.PurokTextBox.Text & "','" & MyResidents.AddressTextBox.Text & "','" & MyResidents.CivilStatusComboBox.Text & "','" & MyResidents.VoterComboBox.Text & "','" & MyResidents.ContactTextBox.Text & "','" & MyResidents.CitizenshipTextBox.Text & "','" & imagepath & "','" & imagename & "',
                 '" & MyResidents.SeniorComboBox.Text & "')"
@@ -34,9 +34,7 @@ Public Class MyBrgyResidents
     End Sub
 
     Sub clearAllInputs()
-        MyResidents.LastNameTextBox.Clear()
-        MyResidents.MiddleNameTextBox.Clear()
-        MyResidents.FirstNameTextBox.Clear()
+        MyResidents.Fullnametxtbox.Clear()
         MyResidents.SuffixComboBox.Text = ""
         MyResidents.CitizenshipTextBox.Clear()
         MyResidents.AddressTextBox.Clear()
@@ -70,8 +68,8 @@ Public Class MyBrgyResidents
             End If
 
         Catch x As MySqlException
-            If isInputAlreadyExist("FULLNAME", "residents", fullname) Then
-                MessageBox.Show("Name '" & fullname.Trim.ToUpper & "' already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            If isInputAlreadyExist("FULLNAME", "residents", MyResidents.Fullnametxtbox.Text.Trim) Then
+                MessageBox.Show("Name '" & MyResidents.Fullnametxtbox.Text.Trim.ToUpper & "' already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Exit Sub
             ElseIf isInputAlreadyExist("CONTACT_NUMBER ", "residents", MyResidents.ContactTextBox.Text.Trim) Then
                 MessageBox.Show("Contact already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -98,7 +96,7 @@ Public Class MyBrgyResidents
     Function IsInputValid()
         result = False
 
-        Dim arr() As Object = {MyResidents.LastNameTextBox, MyResidents.MiddleNameTextBox, MyResidents.FirstNameTextBox, MyResidents.SuffixComboBox, MyResidents.CitizenshipTextBox, MyResidents.AddressTextBox,
+        Dim arr() As Object = {MyResidents.Fullnametxtbox, MyResidents.SuffixComboBox, MyResidents.CitizenshipTextBox, MyResidents.AddressTextBox,
         MyResidents.ReligionTextBOx, MyResidents.HighestEducationAttainmentTextBox, MyResidents.ContactTextBox, MyResidents.OccupationTextBox, MyResidents.PurokTextBox, MyResidents.CivilStatusComboBox, MyResidents.SexComboBox, MyResidents.VoterComboBox, MyResidents.SeniorComboBox}
 
         For Each inputObjects As Object In arr
