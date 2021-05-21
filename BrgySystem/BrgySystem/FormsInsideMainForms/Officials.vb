@@ -8,5 +8,4 @@
         SettinggridViewImage.setImageAtButtonColumnOf("archiveButton_Column", Guna2DataGridView1, e, My.Resources.icons8_archive_24px_1)
     End Sub
 
-
 End Class
