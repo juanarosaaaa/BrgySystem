@@ -82,6 +82,8 @@ Public Class MyBrgyResidents
     End Sub
 
 
+
+
     Sub archiveResidents(resident As String)
         Dim query As String = "INSERT INTO archive_residents SELECT * from `residents` where Fullname = '" & resident & "';
                             DELETE FROM `residents` WHERE Fullname = '" & resident & "';"
