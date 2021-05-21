@@ -2,14 +2,24 @@
 Imports Guna.UI2.WinForms
 Imports Bunifu.UI.WinForms
 Imports System.IO
+
+Public Enum changes
+    fullnameTextBoxChanged
+    fullnameTextBoxNotChanged
+
+    contactTextBoxChanged
+    contactTextBoxNotChanged
+End Enum
 Public Class MyBrgyResidents
+
+
 
 
     Private manage As DataManipulation = New ManageSystem
     Private Const residentsQuery As String = "SELECT FULLNAME,SEX,AGE,CIVIL_STATUS,OCCUPATION,REGISTERED_VOTER,ADDRESS FROM `residents`"
     Private result As Boolean
     Private imgname, imgpath As String
-
+    Public isFullNameTextBoxModified, isContactTextBoxModified As changes
 
 
 
@@ -121,44 +131,67 @@ Public Class MyBrgyResidents
         MyResidents.PurokTextBox.Clear()
         MyResidents.BirthdateDatePicker.Value = Date.Now
         MyResidents.CivilStatusComboBox.SelectedIndex = -1
-        MyResidents.ResidentsPictureBOx.Image = MyResidents.ResidentsPictureBOx.InitialImage
+        MyResidents.ResidentsPictureBOx.Image = MyResidents.ResidentsPictureBOx.InitialImage 
+
+
         MyResidents.SexComboBox.SelectedIndex = -1
         MyResidents.VoterComboBox.SelectedIndex = -1
         MyResidents.SeniorComboBox.SelectedIndex = -1
+
+        isFullNameTextBoxModified = changes.fullnameTextBoxNotChanged
+        isContactTextBoxModified = changes.contactTextBoxNotChanged
+
+
     End Sub
 
 
 
-    Sub addOrUpdateResident(message As String, query As String, imageName As String)
+    Function addOrUpdateResident(message As String, query As String, imageName As String) As Boolean
+        Try
+            If (IsInputValid()) Then
+                Return False
+                Exit Function
+            ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
+                MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return False
+                Exit Function
+            ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
+                MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                clearAllInputs()
+                Return False
+                Exit Function
+            ElseIf (manage.manipulateDataAt(query)) Then
+                MessageBox.Show(message, "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Return True
+                Exit Function
+            Else
+                MessageBox.Show("An error occured. Failed to add new Resident!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return False
+                Exit Function
+            End If
+        Catch duplicate As MySqlException
 
-        If (IsInputValid()) Then
-            Exit Sub
-        ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
-            MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
-            MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        ElseIf isInputAlreadyExist("FULLNAME", "residents", MyResidents.Fullnametxtbox.Text.Trim) Then
-            MessageBox.Show("Name '" & MyResidents.Fullnametxtbox.Text.Trim.ToUpper & "' is already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        ElseIf isInputAlreadyExist("CONTACT_NUMBER ", "residents", MyResidents.ContactTextBox.Text.Trim) Then
-            MessageBox.Show("Contact is already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        ElseIf isInputAlreadyExist("ImageName  ", "residents", imageName) Then
-            MessageBox.Show("Image is already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            clearAllInputs()
-            Exit Sub
-        ElseIf (manage.manipulateDataAt(query)) Then
-            MessageBox.Show(message, "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            clearAllInputs()
-        Else
-            MessageBox.Show("An error occured. Failed to add new Resident!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
+            If isInputAlreadyExist("FULLNAME", "residents", MyResidents.Fullnametxtbox.Text.Trim) Then
+                MessageBox.Show("Name '" & MyResidents.Fullnametxtbox.Text.Trim.ToUpper & "' is already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return False
+                Exit Function
+            ElseIf isInputAlreadyExist("CONTACT_NUMBER ", "residents", MyResidents.ContactTextBox.Text.Trim) Then
+                MessageBox.Show("Contact is already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return False
+                Exit Function
+            ElseIf isInputAlreadyExist("ImageName  ", "residents", imageName) Then
+                MessageBox.Show("Image is already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return False
+                Exit Function
+            End If
 
+        Finally
             closeConnection()
+        End Try
 
-    End Sub
+
+        Return False
+    End Function
 
 
     Function getResidentsQueryForSelectedColumns() As String

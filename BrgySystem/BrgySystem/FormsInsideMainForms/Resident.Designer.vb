@@ -25,7 +25,6 @@ Partial Class MyResidents
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MyResidents))
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -66,6 +65,7 @@ Partial Class MyResidents
         Dim StateProperties34 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties35 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties36 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MyResidents))
         Me.ResidentsGridView = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -87,7 +87,6 @@ Partial Class MyResidents
         Me.PurokTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.SearchButton = New System.Windows.Forms.Button()
         Me.SearchFieldTxtBox = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.BirthdateDatePicker = New Bunifu.UI.WinForms.BunifuDatePicker()
         Me.ReligionTextBOx = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.UpdateButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.SaveButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
@@ -115,6 +114,7 @@ Partial Class MyResidents
         Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BirthdateDatePicker = New Bunifu.UI.WinForms.BunifuDatePicker()
         CType(Me.ResidentsGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -290,6 +290,7 @@ Partial Class MyResidents
         '
         Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Controls.Add(Me.BirthdateDatePicker)
         Me.GroupBox2.Controls.Add(Me.AddNewBttn)
         Me.GroupBox2.Controls.Add(Me.Fullnametxtbox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel8)
@@ -297,7 +298,6 @@ Partial Class MyResidents
         Me.GroupBox2.Controls.Add(Me.PurokTextBox)
         Me.GroupBox2.Controls.Add(Me.SearchButton)
         Me.GroupBox2.Controls.Add(Me.SearchFieldTxtBox)
-        Me.GroupBox2.Controls.Add(Me.BirthdateDatePicker)
         Me.GroupBox2.Controls.Add(Me.ReligionTextBOx)
         Me.GroupBox2.Controls.Add(Me.UpdateButton)
         Me.GroupBox2.Controls.Add(Me.SaveButton)
@@ -424,6 +424,7 @@ Partial Class MyResidents
         '
         Me.Fullnametxtbox.AcceptsReturn = False
         Me.Fullnametxtbox.AcceptsTab = False
+        Me.Fullnametxtbox.AccessibleName = "Full name"
         Me.Fullnametxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Fullnametxtbox.AnimationSpeed = 200
         Me.Fullnametxtbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
@@ -689,34 +690,6 @@ Partial Class MyResidents
         Me.SearchFieldTxtBox.TextPlaceholder = "Search"
         Me.SearchFieldTxtBox.UseSystemPasswordChar = False
         Me.SearchFieldTxtBox.WordWrap = True
-        '
-        'BirthdateDatePicker
-        '
-        Me.BirthdateDatePicker.AccessibleName = "Birthdate"
-        Me.BirthdateDatePicker.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BirthdateDatePicker.BackColor = System.Drawing.Color.Transparent
-        Me.BirthdateDatePicker.BorderRadius = 1
-        Me.BirthdateDatePicker.Color = System.Drawing.Color.Silver
-        Me.BirthdateDatePicker.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin
-        Me.BirthdateDatePicker.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left
-        Me.BirthdateDatePicker.DisabledColor = System.Drawing.Color.Gray
-        Me.BirthdateDatePicker.DisplayWeekNumbers = False
-        Me.BirthdateDatePicker.DPHeight = 0
-        Me.BirthdateDatePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
-        Me.BirthdateDatePicker.FillDatePicker = False
-        Me.BirthdateDatePicker.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BirthdateDatePicker.ForeColor = System.Drawing.Color.White
-        Me.BirthdateDatePicker.Icon = CType(resources.GetObject("BirthdateDatePicker.Icon"), System.Drawing.Image)
-        Me.BirthdateDatePicker.IconColor = System.Drawing.Color.Gray
-        Me.BirthdateDatePicker.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right
-        Me.BirthdateDatePicker.LeftTextMargin = 5
-        Me.BirthdateDatePicker.Location = New System.Drawing.Point(626, 180)
-        Me.BirthdateDatePicker.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
-        Me.BirthdateDatePicker.MinimumSize = New System.Drawing.Size(4, 32)
-        Me.BirthdateDatePicker.Name = "BirthdateDatePicker"
-        Me.BirthdateDatePicker.Size = New System.Drawing.Size(265, 32)
-        Me.BirthdateDatePicker.TabIndex = 69
-        Me.BirthdateDatePicker.Value = New Date(2021, 5, 19, 0, 0, 0, 0)
         '
         'ReligionTextBOx
         '
@@ -1744,6 +1717,31 @@ Partial Class MyResidents
         Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'BirthdateDatePicker
+        '
+        Me.BirthdateDatePicker.AccessibleName = "Birthdate"
+        Me.BirthdateDatePicker.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BirthdateDatePicker.BackColor = System.Drawing.Color.Transparent
+        Me.BirthdateDatePicker.BorderRadius = 1
+        Me.BirthdateDatePicker.Color = System.Drawing.Color.Silver
+        Me.BirthdateDatePicker.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin
+        Me.BirthdateDatePicker.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left
+        Me.BirthdateDatePicker.DisabledColor = System.Drawing.Color.Gray
+        Me.BirthdateDatePicker.DisplayWeekNumbers = False
+        Me.BirthdateDatePicker.DPHeight = 0
+        Me.BirthdateDatePicker.FillDatePicker = False
+        Me.BirthdateDatePicker.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BirthdateDatePicker.ForeColor = System.Drawing.Color.White
+        Me.BirthdateDatePicker.Icon = CType(resources.GetObject("BirthdateDatePicker.Icon"), System.Drawing.Image)
+        Me.BirthdateDatePicker.IconColor = System.Drawing.Color.Gray
+        Me.BirthdateDatePicker.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right
+        Me.BirthdateDatePicker.LeftTextMargin = 5
+        Me.BirthdateDatePicker.Location = New System.Drawing.Point(629, 180)
+        Me.BirthdateDatePicker.MinimumSize = New System.Drawing.Size(0, 32)
+        Me.BirthdateDatePicker.Name = "BirthdateDatePicker"
+        Me.BirthdateDatePicker.Size = New System.Drawing.Size(262, 32)
+        Me.BirthdateDatePicker.TabIndex = 109
+        '
         'MyResidents
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1779,7 +1777,6 @@ Partial Class MyResidents
     Friend WithEvents BunifuLabel2 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents CivilStatusComboBox As ComboBox
     Friend WithEvents OccupationTextBox As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents BirthdateDatePicker As Bunifu.UI.WinForms.BunifuDatePicker
     Friend WithEvents HighestEducationAttainmentTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents ContactTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel7 As Bunifu.UI.WinForms.BunifuLabel
@@ -1815,4 +1812,5 @@ Partial Class MyResidents
     Friend WithEvents Fullnametxtbox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel8 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents AddNewBttn As Bunifu.UI.WinForms.BunifuButton.BunifuButton
+    Friend WithEvents BirthdateDatePicker As Bunifu.UI.WinForms.BunifuDatePicker
 End Class
