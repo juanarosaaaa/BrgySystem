@@ -14,7 +14,7 @@ Public Class MyResidents
     Private AlreadyStart As Boolean = False
     Private Const folderImage As String = "ResidentsImages"
     Private selectedNameInRow As String
-
+    Public isFullNameModified, isContactModified As Boolean
 
 
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ResidentsGridView.CellFormatting
@@ -29,6 +29,8 @@ Public Class MyResidents
     Private Sub MyResidents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         brgyResidents.arrangeGridView(ResidentsGridView)
+        isFullNameModified = False
+        isContactModified = False
         UpdateButton.Enabled = False
 
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
@@ -54,6 +56,10 @@ Public Class MyResidents
 
 
         Try
+            If ResidentsPictureBOx.Image Is ResidentsPictureBOx.InitialImage Then
+                Throw New NoNullAllowedException
+            End If
+
             imageFile.saveImageAt("ResidentsImages")
         Catch X As NoNullAllowedException
             MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -61,9 +67,15 @@ Public Class MyResidents
         End Try
         Dim message As String = "Resident '" & Fullnametxtbox.Text.Trim.ToUpper & "' successfully added!"
         Dim query As String = brgyResidents.getInsertQuery(imageFile.getImageName, imageFile.getImageFolderPath)
-        brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName)
-        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
-        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+
+        If brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName) Then
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+            manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+
+            isFullNameModified = False
+            isContactModified = False
+        End If
+
 
     End Sub
 
@@ -96,30 +108,29 @@ Public Class MyResidents
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
 
-
-
-        'imagename to save image
-        'imagename to check if it is already exist
-        'imagepath for database to save path
-        'imagepath for us to retrieve path to render image
-
-
-
         Try
+
+            If ResidentsPictureBOx.Image Is ResidentsPictureBOx.InitialImage Then
+                Throw New NoNullAllowedException
+            End If
+
             imageFile.saveImageAt("ResidentsImages")
         Catch X As NoNullAllowedException
             MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End Try
 
-
-
         Dim message As String = "Resident '" & selectedNameInRow & "' successfully updated!"
         Dim query As String = brgyResidents.getUpdateQuery(selectedNameInRow, imageFile.getImageName, imageFile.getImageFolderPath)
 
-        brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName)
-        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
-        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+        If brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName) Then
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+            manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+            isFullNameModified = False
+            isContactModified = False
+
+        End If
+
 
 
     End Sub
@@ -127,19 +138,38 @@ Public Class MyResidents
     Private Sub ResdientsGridViewCellClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ResidentsGridView.CellClick
 
         If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
+
             SaveButton.Enabled = False
             UpdateButton.Enabled = True
-            brgyResidents.clearAllInputs()
+
             selectedNameInRow = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
             brgyResidents.getValuesFromDatabaseAndDisplayToInputs(selectedNameInRow)
             imageFile.getImageNameFromSelectedRow(brgyResidents.getImagePathFromSelectedRowValue, ResidentsPictureBOx)
 
+            isFullNameModified = False
+            isContactModified = False
+
+        ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
+
+            selectedNameInRow = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
+
+            brgyResidents.deleteResidents(selectedNameInRow)
+            manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "residents", SearchFieldTxtBox)
+
+            brgyResidents.clearAllInputs()
+            UpdateButton.Enabled = False
+
+        ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
+            selectedNameInRow = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
 
 
-            'ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
-            'ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
+            brgyResidents.archiveResidents(selectedNameInRow)
+            manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "residents", SearchFieldTxtBox)
+            brgyResidents.clearAllInputs()
 
-
+            UpdateButton.Enabled = False
         End If
 
     End Sub
@@ -150,4 +180,17 @@ Public Class MyResidents
         UpdateButton.Enabled = False
     End Sub
 
+
+
+    Private Sub FnameKeyDown(sender As Object, e As KeyEventArgs) Handles Fullnametxtbox.KeyDown
+
+        isFullNameModified = True
+
+
+    End Sub
+
+    Private Sub contactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
+
+        isContactModified = True
+    End Sub
 End Class
