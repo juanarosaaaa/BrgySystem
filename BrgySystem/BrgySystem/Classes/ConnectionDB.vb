@@ -22,8 +22,8 @@ Module ConnectionDB
         End Try
     End Sub
     Public Sub closeConnection()
-            myconnection.Close()
-        End Sub
+        myconnection.Close()
+    End Sub
 
     Public Function getConnectionState() As ConnectionState
         Return stateOfConnection

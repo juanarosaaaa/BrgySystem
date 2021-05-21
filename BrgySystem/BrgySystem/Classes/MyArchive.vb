@@ -16,7 +16,7 @@ Public Class MyArchive
         Catch duplicate As MySqlException
             MessageBox.Show("Failed restoring Purok. A Purok '" & nameToRestore.ToUpper.Trim & "' already exist at the Purok list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
-            closeConnection()
+
         End Try
 
 
@@ -29,7 +29,7 @@ Public Class MyArchive
                 MessageBox.Show("Purok '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
         End If
-        closeConnection()
+
     End Sub
 
 End Class

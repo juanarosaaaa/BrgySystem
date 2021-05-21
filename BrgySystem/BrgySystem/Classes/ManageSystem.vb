@@ -6,6 +6,7 @@ Public Class ManageSystem
     Public Function manipulateDataAt(query As String) As Boolean Implements DataManipulation.manipulateDataAt
         openConnection()
         Return New MySqlCommand(query, ConnectionDB.getConnection).ExecuteNonQuery
+
     End Function
 
 
@@ -15,7 +16,6 @@ Public Class ManageSystem
         Dim adapter As New MySqlDataAdapter(query, getConnection)
         adapter.Fill(table)
         gridView.DataSource = table
-
         closeConnection()
     End Sub
 

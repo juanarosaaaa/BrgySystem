@@ -20,4 +20,7 @@ Public Class Login
         login.authenticateLogin(Me, userNameTextBox.Text.Trim, passwordTextBox.Text.Trim)
     End Sub
 
+    Private Sub BunifuLabel1_Click(sender As Object, e As EventArgs) Handles BunifuLabel1.Click
+
+    End Sub
 End Class

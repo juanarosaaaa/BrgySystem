@@ -3,6 +3,8 @@ Imports Guna.UI2.WinForms
 Imports Bunifu.UI.WinForms
 Public Class MyResidents
 
+
+
     Private search As Search = New SearchingFeature_Implementation
     Private SettinggridViewImage As New DataGridViewImages
     Private SettingAction As New DataGridViewActionButtonEvent
@@ -11,7 +13,7 @@ Public Class MyResidents
     Private manage As loadGridViewValue = New ManageSystem
     Private AlreadyStart As Boolean = False
     Private Const folderImage As String = "ResidentsImages"
-
+    Private selectedNameInRow As String
 
 
 
@@ -24,15 +26,14 @@ Public Class MyResidents
 
 
 
-
-
-
-
-
     Private Sub MyResidents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         brgyResidents.arrangeGridView(ResidentsGridView)
+        UpdateButton.Enabled = False
+
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
     End Sub
 
 
@@ -42,11 +43,8 @@ Public Class MyResidents
 
 
     Private Sub BrowseButton_Click(sender As Object, e As EventArgs) Handles BrowseButton.Click
-
         imageFile.openImageFromPictureBox(ResidentsPictureBOx)
-
     End Sub
-
 
 
 
@@ -57,13 +55,15 @@ Public Class MyResidents
 
         Try
             imageFile.saveImageAt("ResidentsImages")
-            search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         Catch X As NoNullAllowedException
-            MessageBox.Show("Please select picture.", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End Try
-        brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
-
+        Dim message As String = "Resident '" & Fullnametxtbox.Text.Trim.ToUpper & "' successfully added!"
+        Dim query As String = brgyResidents.getInsertQuery(imageFile.getImageName, imageFile.getImageFolderPath)
+        brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
 
     End Sub
 
@@ -71,13 +71,11 @@ Public Class MyResidents
 
 
 
-
-
-
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
         If AlreadyStart Then
-            search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
-            If (String.IsNullOrEmpty(SearchFieldTxtBox.Text)) Then
+            Dim query As String = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'"
+            search.searchValueIn(query, ResidentsGridView)
+            If (InputIsNull(SearchFieldTxtBox.Text.Trim)) Then
                 manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
             End If
         End If
@@ -87,17 +85,69 @@ Public Class MyResidents
 
 
 
-
-
-
-
-
     Private Sub SearchFieldIsClicked(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.Click
         AlreadyStart = True
     End Sub
 
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+        Dim query As String = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'"
+        search.searchValueIn(query, ResidentsGridView)
+    End Sub
+
+    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
+
+
+
+        'imagename to save image
+        'imagename to check if it is already exist
+        'imagepath for database to save path
+        'imagepath for us to retrieve path to render image
+
+
+
+        Try
+            imageFile.saveImageAt("ResidentsImages")
+        Catch X As NoNullAllowedException
+            MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End Try
+
+
+
+        Dim message As String = "Resident '" & selectedNameInRow & "' successfully updated!"
+        Dim query As String = brgyResidents.getUpdateQuery(selectedNameInRow, imageFile.getImageName, imageFile.getImageFolderPath)
+
+        brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+
+
+    End Sub
+
+    Private Sub ResdientsGridViewCellClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ResidentsGridView.CellClick
+
+        If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
+            SaveButton.Enabled = False
+            UpdateButton.Enabled = True
+            brgyResidents.clearAllInputs()
+            selectedNameInRow = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
+            brgyResidents.getValuesFromDatabaseAndDisplayToInputs(selectedNameInRow)
+            imageFile.getImageNameFromSelectedRow(brgyResidents.getImagePathFromSelectedRowValue, ResidentsPictureBOx)
+
+
+
+            'ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
+            'ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
+
+
+        End If
+
+    End Sub
+
+    Private Sub AddNewBttn_Click(sender As Object, e As EventArgs) Handles AddNewBttn.Click
+        brgyResidents.clearAllInputs()
+        SaveButton.Enabled = True
+        UpdateButton.Enabled = False
     End Sub
 
 End Class
