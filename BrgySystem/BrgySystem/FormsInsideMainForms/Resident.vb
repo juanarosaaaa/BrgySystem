@@ -123,17 +123,7 @@ Public Class MyResidents
     End Sub
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
-        openConnection()
-
-        Dim command As New MySqlCommand("SELECT Purokname from Purok where Purokname like '%e%'", getConnection)
-        Dim reader As MySqlDataReader
-        reader = command.ExecuteReader
-        While reader.Read
-            AddressTextBox.Text = reader.GetString("Purokname")
-        End While
-        closeConnection()
-
-
+        brgyResidents.getValuesFromDatabaseAndDisplayToInputs("")
 
     End Sub
 End Class

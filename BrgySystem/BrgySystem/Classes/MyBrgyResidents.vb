@@ -12,13 +12,13 @@ Public Class MyBrgyResidents
 
     Function insertQuery(imagename As String, imagepath As String) As String
 
-
+        Dim path As String = imagepath.Replace("\", "\\")
 
         Dim age As String = Date.Now.Year - MyResidents.BirthdateDatePicker.Value.Year
 
         Return "INSERT INTO `residents` Values ('" & MyResidents.Fullnametxtbox.Text.Trim & "','" & MyResidents.SuffixComboBox.Text & "','" & MyResidents.SexComboBox.Text & "',
                 '" & MyResidents.BirthdateDatePicker.Value.Date & "','" & age & "','" & MyResidents.OccupationTextBox.Text & "','" & MyResidents.ReligionTextBOx.Text & "','" & MyResidents.HighestEducationAttainmentTextBox.Text & "',
-                '" & MyResidents.PurokTextBox.Text & "','" & MyResidents.AddressTextBox.Text & "','" & MyResidents.CivilStatusComboBox.Text & "','" & MyResidents.VoterComboBox.Text & "','" & MyResidents.ContactTextBox.Text & "','" & MyResidents.CitizenshipTextBox.Text & "','" & imagepath & "','" & imagename & "',
+                '" & MyResidents.PurokTextBox.Text & "','" & MyResidents.AddressTextBox.Text & "','" & MyResidents.CivilStatusComboBox.Text & "','" & MyResidents.VoterComboBox.Text & "','" & MyResidents.ContactTextBox.Text & "','" & MyResidents.CitizenshipTextBox.Text & "','" & path & "','" & imagename & "',
                 '" & MyResidents.SeniorComboBox.Text & "')"
     End Function
 
@@ -134,37 +134,37 @@ Public Class MyBrgyResidents
 
 
     Sub getValuesFromDatabaseAndDisplayToInputs(name As String)
+        openConnection()
 
-        Dim command As New MySqlCommand("SELECT * FROM `residents` WHERE FULLNAME = 'Mikocabaljasmin' ")
+        Dim command As New MySqlCommand("SELECT * from residents where Fullname = 'Marlon P' ", getConnection)
         Dim reader As MySqlDataReader
-
-        'openConnection()
         reader = command.ExecuteReader
         While reader.Read
-            'MyResidents.FullNameTxtBox.Text = reader.GetString("FULLNAME ")
-            'MyResidents.SuffixComboBox.Text = reader.GetString("SUFFIX ")
-            'MyResidents.CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
-            'MyResidents.AddressTextBox.Text = reader.GetString("ADDRESS")
-            'MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
-            'MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
-            'MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
-            'MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
-            'MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
-            'MyResidents.BirthdateDatePicker.Value = reader.GetMySqlDateTime("BIRTHDATE")
-            'MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
-            'MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("IMAGEPATH"))
-            'MyResidents.SexComboBox.Text = reader.GetString("SEX ")
-            'MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
-            'MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
+            MyResidents.Fullnametxtbox.Text = reader.GetString("FULLNAME")
+            MyResidents.SuffixComboBox.Text = reader.GetString("SUFFIX")
+            MyResidents.CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
+            MyResidents.AddressTextBox.Text = reader.GetString("ADDRESS")
+            MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
+            MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
+            MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
+
+            MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
+            MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
+            MyResidents.BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
+            MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
+
+            MyResidents.SexComboBox.Text = reader.GetString("SEX")
+            MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
+            MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
+
+
+
+            MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("Imagepath"))
         End While
-        '  closeConnection()
+        closeConnection()
+
+
 
     End Sub
-
-
-
-    'check if datapicker is date.now then error
-    'check if image is null
-    'check if contact contains letter
 
 End Class
