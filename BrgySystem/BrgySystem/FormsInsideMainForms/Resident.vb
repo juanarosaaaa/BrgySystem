@@ -96,23 +96,12 @@ Public Class MyResidents
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
 
-
-
-        'imagename to save image
-        'imagename to check if it is already exist
-        'imagepath for database to save path
-        'imagepath for us to retrieve path to render image
-
-
-
         Try
             imageFile.saveImageAt("ResidentsImages")
         Catch X As NoNullAllowedException
             MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End Try
-
-
 
         Dim message As String = "Resident '" & selectedNameInRow & "' successfully updated!"
         Dim query As String = brgyResidents.getUpdateQuery(selectedNameInRow, imageFile.getImageName, imageFile.getImageFolderPath)
@@ -131,13 +120,18 @@ Public Class MyResidents
             UpdateButton.Enabled = True
             brgyResidents.clearAllInputs()
             selectedNameInRow = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
+
             brgyResidents.getValuesFromDatabaseAndDisplayToInputs(selectedNameInRow)
             imageFile.getImageNameFromSelectedRow(brgyResidents.getImagePathFromSelectedRowValue, ResidentsPictureBOx)
+        ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
+            brgyResidents.clearAllInputs()
+            selectedNameInRow = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
 
+            brgyResidents.deleteResidents(selectedNameInRow)
+            manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "residents", SearchFieldTxtBox)
 
-
-            'ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
-            'ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
+        ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
 
 
         End If
@@ -151,4 +145,8 @@ Public Class MyResidents
     End Sub
 
 
+
+    Private Sub FnameKeyDown(sender As Object, e As KeyEventArgs) Handles Fullnametxtbox.KeyDown
+
+    End Sub
 End Class

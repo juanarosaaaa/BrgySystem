@@ -13,6 +13,8 @@ Public Class MyPurok
                 Throw New NoNullAllowedException
             ElseIf (manage.manipulateDataAt("INSERT INTO `purok` VALUES ('" & name.Trim & "')")) Then
                 MessageBox.Show("Purok '" & name.Trim.ToUpper & "' successfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("Failed to add new Purok!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
 
         Catch duplicate As MySqlException
@@ -32,6 +34,8 @@ Public Class MyPurok
                 Throw New NoNullAllowedException
             ElseIf (manage.manipulateDataAt("UPDATE `purok` SET PurokName = '" & name.Trim & "' WHERE PurokName = '" & Purok.PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue & "' ")) Then
                 MessageBox.Show("Purok '" & Purok.PurokGridView.CurrentRow.Cells("purok_Column").FormattedValue.ToString.ToUpper & "' successfully updated to '" & name.ToUpper & "' ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("Failed to update Purok! ", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
 
         Catch duplicate As MySqlException
@@ -49,6 +53,8 @@ Public Class MyPurok
         If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Purok?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
             If (manage.manipulateDataAt("DELETE FROM `purok` WHERE PurokName = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Purok '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("Failed to delete Purok!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
         closeConnection()
@@ -63,6 +69,8 @@ Public Class MyPurok
             If (MessageBox.Show("Are you sure you want to archive '" & nameToArchive.ToUpper.Trim & "' Purok?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
                 If (manage.manipulateDataAt(query)) Then
                     MessageBox.Show("Purok '" & nameToArchive.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    MessageBox.Show("Failed to archive Purok!", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             End If
         Catch duplicate As MySqlException

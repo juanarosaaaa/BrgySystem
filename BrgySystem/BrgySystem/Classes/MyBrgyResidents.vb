@@ -65,7 +65,39 @@ Public Class MyBrgyResidents
     End Function
 
 
+    Sub deleteResidents(resident As String)
 
+        If (MessageBox.Show("Are you sure you want to delete '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (manage.manipulateDataAt("DELETE FROM `residents` WHERE FULLNAME = '" & resident.Trim & "' ")) Then
+                MessageBox.Show("Resident '" & resident.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("Failed to delete Resident!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End If
+        closeConnection()
+    End Sub
+
+
+    Sub archiveResidents(resident As String)
+        Dim query As String = "INSERT INTO archive_residents SELECT * from `residents` where Fullname = '" & resident & "';
+                            DELETE FROM `residents` WHERE Fullname = '" & resident & "';"
+
+        Try
+            If (MessageBox.Show("Are you sure you want to archive '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+                If (manage.manipulateDataAt(query)) Then
+                    MessageBox.Show("Resident '" & resident.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    MessageBox.Show("Failed to archive Resident!", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+            End If
+        Catch duplicate As MySqlException
+            MessageBox.Show("Failed archiving Resident. A Resident '" & resident.ToUpper.Trim & "' already exist at the archive list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        Finally
+            closeConnection()
+
+        End Try
+    End Sub
 
     Sub arrangeGridView(gridView As Guna2DataGridView)
         gridView.Columns("fullname_Column").DataPropertyName = "FULLNAME"
@@ -98,38 +130,33 @@ Public Class MyBrgyResidents
 
 
     Sub addOrUpdateResident(message As String, query As String, imageName As String)
-        Try
-            If (IsInputValid()) Then
-                Exit Sub
-            ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
-                MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                Exit Sub
-            ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
-                MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                Exit Sub
-            ElseIf (manage.manipulateDataAt(query)) Then
-                MessageBox.Show(message, "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                clearAllInputs()
-            End If
 
-        Catch x As MySqlException
-            If isInputAlreadyExist("FULLNAME", "residents", MyResidents.Fullnametxtbox.Text.Trim) Then
-                MessageBox.Show("Name '" & MyResidents.Fullnametxtbox.Text.Trim.ToUpper & "' already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                Exit Sub
-            ElseIf isInputAlreadyExist("CONTACT_NUMBER ", "residents", MyResidents.ContactTextBox.Text.Trim) Then
-                MessageBox.Show("Contact already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                Exit Sub
-            ElseIf isInputAlreadyExist("ImageName  ", "residents", imageName) Then
-                MessageBox.Show("Image already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                clearAllInputs()
-                Exit Sub
+        If (IsInputValid()) Then
+            Exit Sub
+        ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
+            MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
+            MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        ElseIf isInputAlreadyExist("FULLNAME", "residents", MyResidents.Fullnametxtbox.Text.Trim) Then
+            MessageBox.Show("Name '" & MyResidents.Fullnametxtbox.Text.Trim.ToUpper & "' is already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        ElseIf isInputAlreadyExist("CONTACT_NUMBER ", "residents", MyResidents.ContactTextBox.Text.Trim) Then
+            MessageBox.Show("Contact is already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        ElseIf isInputAlreadyExist("ImageName  ", "residents", imageName) Then
+            MessageBox.Show("Image is already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            clearAllInputs()
+            Exit Sub
+        ElseIf (manage.manipulateDataAt(query)) Then
+            MessageBox.Show(message, "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            clearAllInputs()
+        Else
+            MessageBox.Show("An error occured. Failed to add new Resident!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
 
-            End If
-
-        Finally
             closeConnection()
-
-        End Try
 
     End Sub
 
