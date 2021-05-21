@@ -142,4 +142,5 @@ Public Class Archive
     Private Sub ResidentsArchiveSearchFieldIsClicked(sender As Object, e As EventArgs) Handles ResidentsArchiveSearchField.Click
         AlreadyStartAtResidentArchive = True
     End Sub
+
 End Class
