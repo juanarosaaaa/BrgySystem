@@ -160,6 +160,7 @@ Partial Class MyResidents
         Me.ResidentsGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ResidentsGridView.Location = New System.Drawing.Point(2, 335)
         Me.ResidentsGridView.Name = "ResidentsGridView"
+        Me.ResidentsGridView.ReadOnly = True
         Me.ResidentsGridView.RowHeadersVisible = False
         Me.ResidentsGridView.RowHeadersWidth = 47
         Me.ResidentsGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
@@ -180,7 +181,7 @@ Partial Class MyResidents
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.Height = 40
-        Me.ResidentsGridView.ThemeStyle.ReadOnly = False
+        Me.ResidentsGridView.ThemeStyle.ReadOnly = True
         Me.ResidentsGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
         Me.ResidentsGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.ResidentsGridView.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
