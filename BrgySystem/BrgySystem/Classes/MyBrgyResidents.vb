@@ -3,13 +3,7 @@ Imports Guna.UI2.WinForms
 Imports Bunifu.UI.WinForms
 Imports System.IO
 
-Public Enum changes
-    fullnameTextBoxChanged
-    fullnameTextBoxNotChanged
 
-    contactTextBoxChanged
-    contactTextBoxNotChanged
-End Enum
 Public Class MyBrgyResidents
 
 
@@ -19,7 +13,7 @@ Public Class MyBrgyResidents
     Private Const residentsQuery As String = "SELECT FULLNAME,SEX,AGE,CIVIL_STATUS,OCCUPATION,REGISTERED_VOTER,ADDRESS FROM `residents`"
     Private result As Boolean
     Private imgname, imgpath As String
-    Public isFullNameTextBoxModified, isContactTextBoxModified As changes
+
 
 
 
@@ -138,8 +132,8 @@ Public Class MyBrgyResidents
         MyResidents.VoterComboBox.SelectedIndex = -1
         MyResidents.SeniorComboBox.SelectedIndex = -1
 
-        isFullNameTextBoxModified = changes.fullnameTextBoxNotChanged
-        isContactTextBoxModified = changes.contactTextBoxNotChanged
+        MyResidents.isFullNameModified = False
+        MyResidents.isContactModified = False
 
 
     End Sub
@@ -157,11 +151,11 @@ Public Class MyBrgyResidents
                 Exit Function
             ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
                 MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                clearAllInputs()
                 Return False
                 Exit Function
             ElseIf (manage.manipulateDataAt(query)) Then
                 MessageBox.Show(message, "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                clearAllInputs()
                 Return True
                 Exit Function
             Else
@@ -171,15 +165,15 @@ Public Class MyBrgyResidents
             End If
         Catch duplicate As MySqlException
 
-            If isInputAlreadyExist("FULLNAME", "residents", MyResidents.Fullnametxtbox.Text.Trim) Then
+            If (isInputAlreadyExist("FULLNAME", "residents", MyResidents.Fullnametxtbox.Text.Trim) And MyResidents.isFullNameModified) Then
                 MessageBox.Show("Name '" & MyResidents.Fullnametxtbox.Text.Trim.ToUpper & "' is already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
                 Exit Function
-            ElseIf isInputAlreadyExist("CONTACT_NUMBER ", "residents", MyResidents.ContactTextBox.Text.Trim) Then
+            ElseIf (isInputAlreadyExist("CONTACT_NUMBER ", "residents", MyResidents.ContactTextBox.Text.Trim) And MyResidents.isContactModified) Then
                 MessageBox.Show("Contact is already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
                 Exit Function
-            ElseIf isInputAlreadyExist("ImageName  ", "residents", imageName) Then
+            Else isInputAlreadyExist("ImageName  ", "residents", imageName)
                 MessageBox.Show("Image is already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
                 Exit Function

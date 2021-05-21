@@ -14,7 +14,7 @@ Public Class MyResidents
     Private AlreadyStart As Boolean = False
     Private Const folderImage As String = "ResidentsImages"
     Private selectedNameInRow As String
-
+    Public isFullNameModified, isContactModified As Boolean
 
 
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ResidentsGridView.CellFormatting
@@ -29,10 +29,8 @@ Public Class MyResidents
     Private Sub MyResidents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         brgyResidents.arrangeGridView(ResidentsGridView)
-
-        brgyResidents.isFullNameTextBoxModified = changes.fullnameTextBoxNotChanged
-        brgyResidents.isContactTextBoxModified = changes.contactTextBoxNotChanged
-
+        isFullNameModified = False
+        isContactModified = False
         UpdateButton.Enabled = False
 
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
@@ -73,6 +71,9 @@ Public Class MyResidents
         If brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName) Then
             search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
             manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+
+            isFullNameModified = False
+            isContactModified = False
         End If
 
 
@@ -125,9 +126,8 @@ Public Class MyResidents
         If brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName) Then
             search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
             manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-
-            brgyResidents.isFullNameTextBoxModified = changes.fullnameTextBoxNotChanged
-            brgyResidents.isContactTextBoxModified = changes.contactTextBoxNotChanged
+            isFullNameModified = False
+            isContactModified = False
 
         End If
 
@@ -146,6 +146,8 @@ Public Class MyResidents
             brgyResidents.getValuesFromDatabaseAndDisplayToInputs(selectedNameInRow)
             imageFile.getImageNameFromSelectedRow(brgyResidents.getImagePathFromSelectedRowValue, ResidentsPictureBOx)
 
+            isFullNameModified = False
+            isContactModified = False
 
         ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
 
@@ -160,8 +162,8 @@ Public Class MyResidents
         ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
 
 
-            brgyResidents.isFullNameTextBoxModified = changes.fullnameTextBoxNotChanged
-            brgyResidents.isContactTextBoxModified = changes.contactTextBoxNotChanged
+            isFullNameModified = False
+            isContactModified = False
 
         End If
 
@@ -177,7 +179,13 @@ Public Class MyResidents
 
     Private Sub FnameKeyDown(sender As Object, e As KeyEventArgs) Handles Fullnametxtbox.KeyDown
 
-        brgyResidents.isFullNameTextBoxModified = changes.fullnameTextBoxChanged
+        isFullNameModified = True
 
+
+    End Sub
+
+    Private Sub contactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
+
+        isContactModified = True
     End Sub
 End Class
