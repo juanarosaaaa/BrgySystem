@@ -25,26 +25,26 @@ Partial Class Purok
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Purok))
         Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PurokGridView = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.SearchBarField = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.AddPurokButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Me.SearchButton = New System.Windows.Forms.Button()
         Me.purok_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.editButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.archiveButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.SearchBarField = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.AddPurokButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
-        Me.SearchButton = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PurokGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,10 +71,10 @@ Partial Class Purok
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.SearchButton)
         Me.GroupBox1.Controls.Add(Me.PurokGridView)
         Me.GroupBox1.Controls.Add(Me.SearchBarField)
         Me.GroupBox1.Controls.Add(Me.AddPurokButton)
-        Me.GroupBox1.Controls.Add(Me.SearchButton)
         Me.GroupBox1.Location = New System.Drawing.Point(4, 4)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
@@ -100,8 +100,8 @@ Partial Class Purok
         Me.PurokGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.PurokGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -110,7 +110,7 @@ Partial Class Purok
         Me.PurokGridView.ColumnHeadersHeight = 40
         Me.PurokGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.purok_Column, Me.editButton_Column, Me.deleteButton_Column, Me.archiveButton_Column})
         DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -137,63 +137,20 @@ Partial Class Purok
         Me.PurokGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
         Me.PurokGridView.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.PurokGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PurokGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PurokGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.PurokGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.PurokGridView.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.PurokGridView.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PurokGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.PurokGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.PurokGridView.ThemeStyle.HeaderStyle.Height = 40
         Me.PurokGridView.ThemeStyle.ReadOnly = True
-        Me.PurokGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.PurokGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.PurokGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.PurokGridView.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         Me.PurokGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.PurokGridView.ThemeStyle.RowsStyle.Height = 22
         Me.PurokGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PurokGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'purok_Column
-        '
-        Me.purok_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.NullValue = "asdasdasd"
-        Me.purok_Column.DefaultCellStyle = DataGridViewCellStyle3
-        Me.purok_Column.HeaderText = "PUROK"
-        Me.purok_Column.Name = "purok_Column"
-        Me.purok_Column.ReadOnly = True
-        '
-        'editButton_Column
-        '
-        Me.editButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.editButton_Column.DefaultCellStyle = DataGridViewCellStyle4
-        Me.editButton_Column.HeaderText = ""
-        Me.editButton_Column.MinimumWidth = 25
-        Me.editButton_Column.Name = "editButton_Column"
-        Me.editButton_Column.ReadOnly = True
-        Me.editButton_Column.Width = 25
-        '
-        'deleteButton_Column
-        '
-        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.deleteButton_Column.DefaultCellStyle = DataGridViewCellStyle5
-        Me.deleteButton_Column.HeaderText = ""
-        Me.deleteButton_Column.MinimumWidth = 25
-        Me.deleteButton_Column.Name = "deleteButton_Column"
-        Me.deleteButton_Column.ReadOnly = True
-        Me.deleteButton_Column.Width = 25
-        '
-        'archiveButton_Column
-        '
-        Me.archiveButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.archiveButton_Column.DefaultCellStyle = DataGridViewCellStyle6
-        Me.archiveButton_Column.HeaderText = ""
-        Me.archiveButton_Column.MinimumWidth = 25
-        Me.archiveButton_Column.Name = "archiveButton_Column"
-        Me.archiveButton_Column.ReadOnly = True
-        Me.archiveButton_Column.Width = 25
         '
         'SearchBarField
         '
@@ -209,11 +166,11 @@ Partial Class Purok
         Me.SearchBarField.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.SearchBarField.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.SearchBarField.BorderColorIdle = System.Drawing.Color.Silver
-        Me.SearchBarField.BorderRadius = 1
+        Me.SearchBarField.BorderRadius = 20
         Me.SearchBarField.BorderThickness = 1
         Me.SearchBarField.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.SearchBarField.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.SearchBarField.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.SearchBarField.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SearchBarField.DefaultText = ""
         Me.SearchBarField.FillColor = System.Drawing.Color.White
         Me.SearchBarField.HideSelection = True
@@ -253,14 +210,14 @@ Partial Class Purok
         Me.SearchBarField.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SearchBarField.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.SearchBarField.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.SearchBarField.PlaceholderText = "SEARCH"
+        Me.SearchBarField.PlaceholderText = "Search"
         Me.SearchBarField.ReadOnly = False
         Me.SearchBarField.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.SearchBarField.SelectedText = ""
         Me.SearchBarField.SelectionLength = 0
         Me.SearchBarField.SelectionStart = 0
         Me.SearchBarField.ShortcutsEnabled = True
-        Me.SearchBarField.Size = New System.Drawing.Size(381, 46)
+        Me.SearchBarField.Size = New System.Drawing.Size(381, 45)
         Me.SearchBarField.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.SearchBarField.TabIndex = 1
         Me.SearchBarField.TabStop = False
@@ -268,7 +225,7 @@ Partial Class Purok
         Me.SearchBarField.TextMarginBottom = 0
         Me.SearchBarField.TextMarginLeft = 3
         Me.SearchBarField.TextMarginTop = 0
-        Me.SearchBarField.TextPlaceholder = "SEARCH"
+        Me.SearchBarField.TextPlaceholder = "Search"
         Me.SearchBarField.UseSystemPasswordChar = False
         Me.SearchBarField.WordWrap = True
         '
@@ -279,11 +236,11 @@ Partial Class Purok
         Me.AddPurokButton.AllowToggling = False
         Me.AddPurokButton.AnimationSpeed = 200
         Me.AddPurokButton.AutoGenerateColors = False
-        Me.AddPurokButton.AutoRoundBorders = False
+        Me.AddPurokButton.AutoRoundBorders = True
         Me.AddPurokButton.AutoSizeLeftIcon = True
         Me.AddPurokButton.AutoSizeRightIcon = True
         Me.AddPurokButton.BackColor = System.Drawing.Color.Transparent
-        Me.AddPurokButton.BackColor1 = System.Drawing.Color.DodgerBlue
+        Me.AddPurokButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.AddPurokButton.BackgroundImage = CType(resources.GetObject("AddPurokButton.BackgroundImage"), System.Drawing.Image)
         Me.AddPurokButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.AddPurokButton.ButtonText = "Add Purok"
@@ -301,7 +258,7 @@ Partial Class Purok
         Me.AddPurokButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.AddPurokButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.AddPurokButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.AddPurokButton.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.AddPurokButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddPurokButton.ForeColor = System.Drawing.Color.White
         Me.AddPurokButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AddPurokButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -312,10 +269,10 @@ Partial Class Purok
         Me.AddPurokButton.IconRightCursor = System.Windows.Forms.Cursors.Default
         Me.AddPurokButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.AddPurokButton.IconSize = 25
-        Me.AddPurokButton.IdleBorderColor = System.Drawing.Color.DodgerBlue
-        Me.AddPurokButton.IdleBorderRadius = 1
+        Me.AddPurokButton.IdleBorderColor = System.Drawing.Color.Transparent
+        Me.AddPurokButton.IdleBorderRadius = 40
         Me.AddPurokButton.IdleBorderThickness = 1
-        Me.AddPurokButton.IdleFillColor = System.Drawing.Color.DodgerBlue
+        Me.AddPurokButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.AddPurokButton.IdleIconLeftImage = Nothing
         Me.AddPurokButton.IdleIconRightImage = Nothing
         Me.AddPurokButton.IndicateFocus = False
@@ -338,11 +295,11 @@ Partial Class Purok
         Me.AddPurokButton.onHoverState.ForeColor = System.Drawing.Color.White
         Me.AddPurokButton.onHoverState.IconLeftImage = Nothing
         Me.AddPurokButton.onHoverState.IconRightImage = Nothing
-        Me.AddPurokButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.AddPurokButton.OnIdleState.BorderColor = System.Drawing.Color.Transparent
         Me.AddPurokButton.OnIdleState.BorderRadius = 1
         Me.AddPurokButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.AddPurokButton.OnIdleState.BorderThickness = 1
-        Me.AddPurokButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.AddPurokButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.AddPurokButton.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.AddPurokButton.OnIdleState.IconLeftImage = Nothing
         Me.AddPurokButton.OnIdleState.IconRightImage = Nothing
@@ -366,12 +323,55 @@ Partial Class Purok
         '
         Me.SearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.SearchButton.Location = New System.Drawing.Point(1443, 21)
+        Me.SearchButton.Location = New System.Drawing.Point(1434, 21)
         Me.SearchButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SearchButton.Name = "SearchButton"
         Me.SearchButton.Size = New System.Drawing.Size(39, 46)
         Me.SearchButton.TabIndex = 3
         Me.SearchButton.UseVisualStyleBackColor = True
+        '
+        'purok_Column
+        '
+        Me.purok_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.NullValue = "asdasdasd"
+        Me.purok_Column.DefaultCellStyle = DataGridViewCellStyle3
+        Me.purok_Column.HeaderText = "Purok"
+        Me.purok_Column.Name = "purok_Column"
+        Me.purok_Column.ReadOnly = True
+        '
+        'editButton_Column
+        '
+        Me.editButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.editButton_Column.DefaultCellStyle = DataGridViewCellStyle4
+        Me.editButton_Column.HeaderText = ""
+        Me.editButton_Column.MinimumWidth = 25
+        Me.editButton_Column.Name = "editButton_Column"
+        Me.editButton_Column.ReadOnly = True
+        Me.editButton_Column.Width = 25
+        '
+        'deleteButton_Column
+        '
+        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.deleteButton_Column.DefaultCellStyle = DataGridViewCellStyle5
+        Me.deleteButton_Column.HeaderText = ""
+        Me.deleteButton_Column.MinimumWidth = 25
+        Me.deleteButton_Column.Name = "deleteButton_Column"
+        Me.deleteButton_Column.ReadOnly = True
+        Me.deleteButton_Column.Width = 25
+        '
+        'archiveButton_Column
+        '
+        Me.archiveButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.archiveButton_Column.DefaultCellStyle = DataGridViewCellStyle6
+        Me.archiveButton_Column.HeaderText = ""
+        Me.archiveButton_Column.MinimumWidth = 25
+        Me.archiveButton_Column.Name = "archiveButton_Column"
+        Me.archiveButton_Column.ReadOnly = True
+        Me.archiveButton_Column.Width = 25
         '
         'Purok
         '

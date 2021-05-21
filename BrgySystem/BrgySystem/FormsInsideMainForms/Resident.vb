@@ -99,6 +99,4 @@ Public Class MyResidents
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
         search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
     End Sub
-
-
 End Class

@@ -74,16 +74,6 @@ Partial Class MyResidents
         Dim StateProperties43 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties44 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.ResidentsGridView = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.age_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.civilStatus_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.occupation_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.voter_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.address_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.editButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.archiveButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -125,6 +115,16 @@ Partial Class MyResidents
         Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel9 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.age_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.civilStatus_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.occupation_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.voter_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.address_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.editButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.archiveButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.ResidentsGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -149,8 +149,8 @@ Partial Class MyResidents
         Me.ResidentsGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.ResidentsGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -159,7 +159,7 @@ Partial Class MyResidents
         Me.ResidentsGridView.ColumnHeadersHeight = 40
         Me.ResidentsGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fullname_Column, Me.sex_Column, Me.age_Column, Me.civilStatus_Column, Me.occupation_Column, Me.voter_Column, Me.address_Column, Me.editButton_Column, Me.deleteButton_Column, Me.archiveButton_Column})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -169,7 +169,7 @@ Partial Class MyResidents
         Me.ResidentsGridView.EnableHeadersVisualStyles = False
         Me.ResidentsGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ResidentsGridView.Location = New System.Drawing.Point(3, 412)
-        Me.ResidentsGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ResidentsGridView.Margin = New System.Windows.Forms.Padding(4)
         Me.ResidentsGridView.Name = "ResidentsGridView"
         Me.ResidentsGridView.RowHeadersVisible = False
         Me.ResidentsGridView.RowHeadersWidth = 47
@@ -185,89 +185,20 @@ Partial Class MyResidents
         Me.ResidentsGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
         Me.ResidentsGridView.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.ResidentsGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ResidentsGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ResidentsGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.ResidentsGridView.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.ResidentsGridView.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.ResidentsGridView.ThemeStyle.HeaderStyle.Height = 40
         Me.ResidentsGridView.ThemeStyle.ReadOnly = False
-        Me.ResidentsGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.ResidentsGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.ResidentsGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.ResidentsGridView.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         Me.ResidentsGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.ResidentsGridView.ThemeStyle.RowsStyle.Height = 22
         Me.ResidentsGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ResidentsGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'fullname_Column
-        '
-        Me.fullname_Column.HeaderText = "FULL NAME"
-        Me.fullname_Column.Name = "fullname_Column"
-        Me.fullname_Column.ReadOnly = True
-        '
-        'sex_Column
-        '
-        Me.sex_Column.HeaderText = "SEX"
-        Me.sex_Column.Name = "sex_Column"
-        Me.sex_Column.ReadOnly = True
-        '
-        'age_Column
-        '
-        Me.age_Column.HeaderText = "AGE"
-        Me.age_Column.Name = "age_Column"
-        Me.age_Column.ReadOnly = True
-        '
-        'civilStatus_Column
-        '
-        Me.civilStatus_Column.HeaderText = "CIVIL STATUS"
-        Me.civilStatus_Column.Name = "civilStatus_Column"
-        Me.civilStatus_Column.ReadOnly = True
-        '
-        'occupation_Column
-        '
-        Me.occupation_Column.HeaderText = "OCCUPATION"
-        Me.occupation_Column.Name = "occupation_Column"
-        Me.occupation_Column.ReadOnly = True
-        '
-        'voter_Column
-        '
-        Me.voter_Column.HeaderText = "VOTER"
-        Me.voter_Column.Name = "voter_Column"
-        Me.voter_Column.ReadOnly = True
-        '
-        'address_Column
-        '
-        Me.address_Column.HeaderText = "ADDRESS"
-        Me.address_Column.Name = "address_Column"
-        Me.address_Column.ReadOnly = True
-        '
-        'editButton_Column
-        '
-        Me.editButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.editButton_Column.HeaderText = ""
-        Me.editButton_Column.MinimumWidth = 25
-        Me.editButton_Column.Name = "editButton_Column"
-        Me.editButton_Column.ReadOnly = True
-        Me.editButton_Column.Width = 25
-        '
-        'deleteButton_Column
-        '
-        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.deleteButton_Column.HeaderText = ""
-        Me.deleteButton_Column.MinimumWidth = 25
-        Me.deleteButton_Column.Name = "deleteButton_Column"
-        Me.deleteButton_Column.ReadOnly = True
-        Me.deleteButton_Column.Width = 25
-        '
-        'archiveButton_Column
-        '
-        Me.archiveButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.archiveButton_Column.HeaderText = ""
-        Me.archiveButton_Column.MinimumWidth = 25
-        Me.archiveButton_Column.Name = "archiveButton_Column"
-        Me.archiveButton_Column.ReadOnly = True
-        Me.archiveButton_Column.Width = 25
         '
         'TableLayoutPanel1
         '
@@ -278,7 +209,7 @@ Partial Class MyResidents
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(1, -5)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -293,9 +224,9 @@ Partial Class MyResidents
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.ResidentsGridView)
         Me.GroupBox1.Location = New System.Drawing.Point(4, 4)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(1487, 941)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
@@ -344,9 +275,9 @@ Partial Class MyResidents
         Me.GroupBox2.Controls.Add(Me.BunifuLabel8)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel9)
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Size = New System.Drawing.Size(1487, 405)
         Me.GroupBox2.TabIndex = 65
         Me.GroupBox2.TabStop = False
@@ -381,7 +312,7 @@ Partial Class MyResidents
         Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox1.Lines = New String(-1) {}
         Me.BunifuTextBox1.Location = New System.Drawing.Point(537, 222)
-        Me.BunifuTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox1.MaxLength = 32767
         Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox1.Modified = False
@@ -407,7 +338,7 @@ Partial Class MyResidents
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox1.OnIdleState = StateProperties4
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox1.PlaceholderText = ""
@@ -433,7 +364,7 @@ Partial Class MyResidents
         Me.SearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
         Me.SearchButton.Location = New System.Drawing.Point(1437, 16)
-        Me.SearchButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SearchButton.Margin = New System.Windows.Forms.Padding(4)
         Me.SearchButton.Name = "SearchButton"
         Me.SearchButton.Size = New System.Drawing.Size(39, 41)
         Me.SearchButton.TabIndex = 5
@@ -468,7 +399,7 @@ Partial Class MyResidents
         Me.SearchFieldTxtBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.SearchFieldTxtBox.Lines = New String(-1) {}
         Me.SearchFieldTxtBox.Location = New System.Drawing.Point(1101, 16)
-        Me.SearchFieldTxtBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SearchFieldTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.SearchFieldTxtBox.MaxLength = 32767
         Me.SearchFieldTxtBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.SearchFieldTxtBox.Modified = False
@@ -494,7 +425,7 @@ Partial Class MyResidents
         StateProperties8.ForeColor = System.Drawing.Color.Empty
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.SearchFieldTxtBox.OnIdleState = StateProperties8
-        Me.SearchFieldTxtBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SearchFieldTxtBox.Padding = New System.Windows.Forms.Padding(4)
         Me.SearchFieldTxtBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.SearchFieldTxtBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.SearchFieldTxtBox.PlaceholderText = "Search"
@@ -529,14 +460,14 @@ Partial Class MyResidents
         Me.BirthdateDatePicker.DPHeight = 0
         Me.BirthdateDatePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
         Me.BirthdateDatePicker.FillDatePicker = False
-        Me.BirthdateDatePicker.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BirthdateDatePicker.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BirthdateDatePicker.ForeColor = System.Drawing.Color.White
         Me.BirthdateDatePicker.Icon = CType(resources.GetObject("BirthdateDatePicker.Icon"), System.Drawing.Image)
         Me.BirthdateDatePicker.IconColor = System.Drawing.Color.Gray
         Me.BirthdateDatePicker.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right
         Me.BirthdateDatePicker.LeftTextMargin = 5
         Me.BirthdateDatePicker.Location = New System.Drawing.Point(835, 222)
-        Me.BirthdateDatePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BirthdateDatePicker.Margin = New System.Windows.Forms.Padding(4)
         Me.BirthdateDatePicker.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
         Me.BirthdateDatePicker.MinimumSize = New System.Drawing.Size(4, 32)
         Me.BirthdateDatePicker.Name = "BirthdateDatePicker"
@@ -574,7 +505,7 @@ Partial Class MyResidents
         Me.ReligionTextBOx.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.ReligionTextBOx.Lines = New String(-1) {}
         Me.ReligionTextBOx.Location = New System.Drawing.Point(532, 153)
-        Me.ReligionTextBOx.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReligionTextBOx.Margin = New System.Windows.Forms.Padding(4)
         Me.ReligionTextBOx.MaxLength = 32767
         Me.ReligionTextBOx.MinimumSize = New System.Drawing.Size(1, 1)
         Me.ReligionTextBOx.Modified = False
@@ -600,7 +531,7 @@ Partial Class MyResidents
         StateProperties12.ForeColor = System.Drawing.Color.Empty
         StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.ReligionTextBOx.OnIdleState = StateProperties12
-        Me.ReligionTextBOx.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReligionTextBOx.Padding = New System.Windows.Forms.Padding(4)
         Me.ReligionTextBOx.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.ReligionTextBOx.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.ReligionTextBOx.PlaceholderText = ""
@@ -629,11 +560,11 @@ Partial Class MyResidents
         Me.UpdateButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.UpdateButton.AnimationSpeed = 200
         Me.UpdateButton.AutoGenerateColors = False
-        Me.UpdateButton.AutoRoundBorders = False
+        Me.UpdateButton.AutoRoundBorders = True
         Me.UpdateButton.AutoSizeLeftIcon = True
         Me.UpdateButton.AutoSizeRightIcon = True
         Me.UpdateButton.BackColor = System.Drawing.Color.Transparent
-        Me.UpdateButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.UpdateButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.UpdateButton.BackgroundImage = CType(resources.GetObject("UpdateButton.BackgroundImage"), System.Drawing.Image)
         Me.UpdateButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.UpdateButton.ButtonText = "Update"
@@ -651,7 +582,7 @@ Partial Class MyResidents
         Me.UpdateButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.UpdateButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.UpdateButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.UpdateButton.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.UpdateButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UpdateButton.ForeColor = System.Drawing.Color.White
         Me.UpdateButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.UpdateButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -663,14 +594,14 @@ Partial Class MyResidents
         Me.UpdateButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.UpdateButton.IconSize = 25
         Me.UpdateButton.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.UpdateButton.IdleBorderRadius = 1
+        Me.UpdateButton.IdleBorderRadius = 39
         Me.UpdateButton.IdleBorderThickness = 1
-        Me.UpdateButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.UpdateButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.UpdateButton.IdleIconLeftImage = Nothing
         Me.UpdateButton.IdleIconRightImage = Nothing
         Me.UpdateButton.IndicateFocus = False
         Me.UpdateButton.Location = New System.Drawing.Point(1217, 350)
-        Me.UpdateButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.UpdateButton.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateButton.Name = "UpdateButton"
         Me.UpdateButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.UpdateButton.OnDisabledState.BorderRadius = 1
@@ -692,7 +623,7 @@ Partial Class MyResidents
         Me.UpdateButton.OnIdleState.BorderRadius = 1
         Me.UpdateButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.UpdateButton.OnIdleState.BorderThickness = 1
-        Me.UpdateButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.UpdateButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.UpdateButton.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.UpdateButton.OnIdleState.IconLeftImage = Nothing
         Me.UpdateButton.OnIdleState.IconRightImage = Nothing
@@ -720,11 +651,11 @@ Partial Class MyResidents
         Me.SaveButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.SaveButton.AnimationSpeed = 200
         Me.SaveButton.AutoGenerateColors = False
-        Me.SaveButton.AutoRoundBorders = False
+        Me.SaveButton.AutoRoundBorders = True
         Me.SaveButton.AutoSizeLeftIcon = True
         Me.SaveButton.AutoSizeRightIcon = True
         Me.SaveButton.BackColor = System.Drawing.Color.Transparent
-        Me.SaveButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.SaveButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.SaveButton.BackgroundImage = CType(resources.GetObject("SaveButton.BackgroundImage"), System.Drawing.Image)
         Me.SaveButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.SaveButton.ButtonText = "Save"
@@ -742,7 +673,7 @@ Partial Class MyResidents
         Me.SaveButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.SaveButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.SaveButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.SaveButton.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.SaveButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SaveButton.ForeColor = System.Drawing.Color.White
         Me.SaveButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SaveButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -754,14 +685,14 @@ Partial Class MyResidents
         Me.SaveButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.SaveButton.IconSize = 25
         Me.SaveButton.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.SaveButton.IdleBorderRadius = 1
+        Me.SaveButton.IdleBorderRadius = 39
         Me.SaveButton.IdleBorderThickness = 1
-        Me.SaveButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.SaveButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.SaveButton.IdleIconLeftImage = Nothing
         Me.SaveButton.IdleIconRightImage = Nothing
         Me.SaveButton.IndicateFocus = False
         Me.SaveButton.Location = New System.Drawing.Point(1349, 350)
-        Me.SaveButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SaveButton.Margin = New System.Windows.Forms.Padding(4)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SaveButton.OnDisabledState.BorderRadius = 1
@@ -783,7 +714,7 @@ Partial Class MyResidents
         Me.SaveButton.OnIdleState.BorderRadius = 1
         Me.SaveButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.SaveButton.OnIdleState.BorderThickness = 1
-        Me.SaveButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.SaveButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.SaveButton.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.SaveButton.OnIdleState.IconLeftImage = Nothing
         Me.SaveButton.OnIdleState.IconRightImage = Nothing
@@ -834,7 +765,7 @@ Partial Class MyResidents
         Me.LastNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.LastNameTextBox.Lines = New String(-1) {}
         Me.LastNameTextBox.Location = New System.Drawing.Point(24, 86)
-        Me.LastNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LastNameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.LastNameTextBox.MaxLength = 32767
         Me.LastNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.LastNameTextBox.Modified = False
@@ -860,7 +791,7 @@ Partial Class MyResidents
         StateProperties16.ForeColor = System.Drawing.Color.Empty
         StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.LastNameTextBox.OnIdleState = StateProperties16
-        Me.LastNameTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LastNameTextBox.Padding = New System.Windows.Forms.Padding(4)
         Me.LastNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.LastNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.LastNameTextBox.PlaceholderText = ""
@@ -893,7 +824,7 @@ Partial Class MyResidents
         Me.BrowseButton.AutoSizeLeftIcon = True
         Me.BrowseButton.AutoSizeRightIcon = True
         Me.BrowseButton.BackColor = System.Drawing.Color.Transparent
-        Me.BrowseButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BrowseButton.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.BrowseButton.BackgroundImage = CType(resources.GetObject("BrowseButton.BackgroundImage"), System.Drawing.Image)
         Me.BrowseButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BrowseButton.ButtonText = "Browse"
@@ -911,7 +842,7 @@ Partial Class MyResidents
         Me.BrowseButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BrowseButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.BrowseButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.BrowseButton.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BrowseButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BrowseButton.ForeColor = System.Drawing.Color.White
         Me.BrowseButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BrowseButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -925,12 +856,12 @@ Partial Class MyResidents
         Me.BrowseButton.IdleBorderColor = System.Drawing.Color.Transparent
         Me.BrowseButton.IdleBorderRadius = 1
         Me.BrowseButton.IdleBorderThickness = 1
-        Me.BrowseButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BrowseButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.BrowseButton.IdleIconLeftImage = Nothing
         Me.BrowseButton.IdleIconRightImage = Nothing
         Me.BrowseButton.IndicateFocus = False
         Me.BrowseButton.Location = New System.Drawing.Point(1217, 308)
-        Me.BrowseButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BrowseButton.Margin = New System.Windows.Forms.Padding(4)
         Me.BrowseButton.Name = "BrowseButton"
         Me.BrowseButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BrowseButton.OnDisabledState.BorderRadius = 1
@@ -952,7 +883,7 @@ Partial Class MyResidents
         Me.BrowseButton.OnIdleState.BorderRadius = 1
         Me.BrowseButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
         Me.BrowseButton.OnIdleState.BorderThickness = 1
-        Me.BrowseButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BrowseButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.BrowseButton.OnIdleState.ForeColor = System.Drawing.Color.White
         Me.BrowseButton.OnIdleState.IconLeftImage = Nothing
         Me.BrowseButton.OnIdleState.IconRightImage = Nothing
@@ -1002,7 +933,7 @@ Partial Class MyResidents
         Me.MiddleNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.MiddleNameTextBox.Lines = New String(-1) {}
         Me.MiddleNameTextBox.Location = New System.Drawing.Point(221, 86)
-        Me.MiddleNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MiddleNameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.MiddleNameTextBox.MaxLength = 32767
         Me.MiddleNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.MiddleNameTextBox.Modified = False
@@ -1028,7 +959,7 @@ Partial Class MyResidents
         StateProperties20.ForeColor = System.Drawing.Color.Empty
         StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.MiddleNameTextBox.OnIdleState = StateProperties20
-        Me.MiddleNameTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MiddleNameTextBox.Padding = New System.Windows.Forms.Padding(4)
         Me.MiddleNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.MiddleNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.MiddleNameTextBox.PlaceholderText = ""
@@ -1079,7 +1010,7 @@ Partial Class MyResidents
         Me.FirstNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.FirstNameTextBox.Lines = New String(-1) {}
         Me.FirstNameTextBox.Location = New System.Drawing.Point(433, 86)
-        Me.FirstNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FirstNameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.FirstNameTextBox.MaxLength = 32767
         Me.FirstNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.FirstNameTextBox.Modified = False
@@ -1105,7 +1036,7 @@ Partial Class MyResidents
         StateProperties24.ForeColor = System.Drawing.Color.Empty
         StateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.FirstNameTextBox.OnIdleState = StateProperties24
-        Me.FirstNameTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FirstNameTextBox.Padding = New System.Windows.Forms.Padding(4)
         Me.FirstNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.FirstNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.FirstNameTextBox.PlaceholderText = ""
@@ -1132,13 +1063,13 @@ Partial Class MyResidents
         Me.BunifuLabel15.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel15.AutoEllipsis = False
         Me.BunifuLabel15.CursorType = Nothing
-        Me.BunifuLabel15.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel15.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel15.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel15.Location = New System.Drawing.Point(297, 196)
-        Me.BunifuLabel15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel15.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel15.Name = "BunifuLabel15"
         Me.BunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel15.Size = New System.Drawing.Size(70, 19)
+        Me.BunifuLabel15.Size = New System.Drawing.Size(79, 21)
         Me.BunifuLabel15.TabIndex = 90
         Me.BunifuLabel15.Text = "Occupation"
         Me.BunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1150,13 +1081,13 @@ Partial Class MyResidents
         Me.BunifuLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel2.AutoEllipsis = False
         Me.BunifuLabel2.CursorType = Nothing
-        Me.BunifuLabel2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel2.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel2.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel2.Location = New System.Drawing.Point(28, 263)
-        Me.BunifuLabel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel2.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel2.Size = New System.Drawing.Size(81, 19)
+        Me.BunifuLabel2.Size = New System.Drawing.Size(75, 21)
         Me.BunifuLabel2.TabIndex = 80
         Me.BunifuLabel2.Text = "Civil Status"
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1172,7 +1103,7 @@ Partial Class MyResidents
         Me.ResidentsPictureBOx.Image = Global.BrgySystem.My.Resources.Resources.defaultImage
         Me.ResidentsPictureBOx.IsCircle = True
         Me.ResidentsPictureBOx.Location = New System.Drawing.Point(1217, 64)
-        Me.ResidentsPictureBOx.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ResidentsPictureBOx.Margin = New System.Windows.Forms.Padding(4)
         Me.ResidentsPictureBOx.Name = "ResidentsPictureBOx"
         Me.ResidentsPictureBOx.Size = New System.Drawing.Size(259, 259)
         Me.ResidentsPictureBOx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1187,7 +1118,7 @@ Partial Class MyResidents
         Me.CivilStatusComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CivilStatusComboBox.FormattingEnabled = True
         Me.CivilStatusComboBox.Location = New System.Drawing.Point(24, 289)
-        Me.CivilStatusComboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CivilStatusComboBox.Margin = New System.Windows.Forms.Padding(4)
         Me.CivilStatusComboBox.Name = "CivilStatusComboBox"
         Me.CivilStatusComboBox.Size = New System.Drawing.Size(267, 32)
         Me.CivilStatusComboBox.TabIndex = 76
@@ -1222,7 +1153,7 @@ Partial Class MyResidents
         Me.OccupationTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.OccupationTextBox.Lines = New String(-1) {}
         Me.OccupationTextBox.Location = New System.Drawing.Point(295, 222)
-        Me.OccupationTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.OccupationTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.OccupationTextBox.MaxLength = 32767
         Me.OccupationTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.OccupationTextBox.Modified = False
@@ -1248,7 +1179,7 @@ Partial Class MyResidents
         StateProperties28.ForeColor = System.Drawing.Color.Empty
         StateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.OccupationTextBox.OnIdleState = StateProperties28
-        Me.OccupationTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.OccupationTextBox.Padding = New System.Windows.Forms.Padding(4)
         Me.OccupationTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.OccupationTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.OccupationTextBox.PlaceholderText = ""
@@ -1299,7 +1230,7 @@ Partial Class MyResidents
         Me.HighestEducationAttainmentTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.HighestEducationAttainmentTextBox.Lines = New String(-1) {}
         Me.HighestEducationAttainmentTextBox.Location = New System.Drawing.Point(795, 153)
-        Me.HighestEducationAttainmentTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.HighestEducationAttainmentTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.HighestEducationAttainmentTextBox.MaxLength = 32767
         Me.HighestEducationAttainmentTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.HighestEducationAttainmentTextBox.Modified = False
@@ -1325,7 +1256,7 @@ Partial Class MyResidents
         StateProperties32.ForeColor = System.Drawing.Color.Empty
         StateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.HighestEducationAttainmentTextBox.OnIdleState = StateProperties32
-        Me.HighestEducationAttainmentTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.HighestEducationAttainmentTextBox.Padding = New System.Windows.Forms.Padding(4)
         Me.HighestEducationAttainmentTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.HighestEducationAttainmentTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.HighestEducationAttainmentTextBox.PlaceholderText = ""
@@ -1376,7 +1307,7 @@ Partial Class MyResidents
         Me.ContactTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.ContactTextBox.Lines = New String(-1) {}
         Me.ContactTextBox.Location = New System.Drawing.Point(24, 222)
-        Me.ContactTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactTextBox.MaxLength = 32767
         Me.ContactTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.ContactTextBox.Modified = False
@@ -1402,7 +1333,7 @@ Partial Class MyResidents
         StateProperties36.ForeColor = System.Drawing.Color.Empty
         StateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.ContactTextBox.OnIdleState = StateProperties36
-        Me.ContactTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactTextBox.Padding = New System.Windows.Forms.Padding(4)
         Me.ContactTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.ContactTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.ContactTextBox.PlaceholderText = ""
@@ -1430,13 +1361,13 @@ Partial Class MyResidents
         Me.BunifuLabel7.AutoEllipsis = False
         Me.BunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel7.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel7.Location = New System.Drawing.Point(719, 262)
-        Me.BunifuLabel7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel7.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel7.Name = "BunifuLabel7"
         Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel7.Size = New System.Drawing.Size(47, 19)
+        Me.BunifuLabel7.Size = New System.Drawing.Size(43, 21)
         Me.BunifuLabel7.TabIndex = 95
         Me.BunifuLabel7.Text = "Senior"
         Me.BunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1472,7 +1403,7 @@ Partial Class MyResidents
         Me.AddressTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.AddressTextBox.Lines = New String(-1) {}
         Me.AddressTextBox.Location = New System.Drawing.Point(24, 153)
-        Me.AddressTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AddressTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.AddressTextBox.MaxLength = 32767
         Me.AddressTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.AddressTextBox.Modified = False
@@ -1498,7 +1429,7 @@ Partial Class MyResidents
         StateProperties40.ForeColor = System.Drawing.Color.Empty
         StateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.AddressTextBox.OnIdleState = StateProperties40
-        Me.AddressTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AddressTextBox.Padding = New System.Windows.Forms.Padding(4)
         Me.AddressTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.AddressTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.AddressTextBox.PlaceholderText = ""
@@ -1526,7 +1457,7 @@ Partial Class MyResidents
         Me.SeniorComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SeniorComboBox.FormattingEnabled = True
         Me.SeniorComboBox.Location = New System.Drawing.Point(700, 289)
-        Me.SeniorComboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SeniorComboBox.Margin = New System.Windows.Forms.Padding(4)
         Me.SeniorComboBox.Name = "SeniorComboBox"
         Me.SeniorComboBox.Size = New System.Drawing.Size(161, 32)
         Me.SeniorComboBox.TabIndex = 94
@@ -1561,7 +1492,7 @@ Partial Class MyResidents
         Me.CitizenshipTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.CitizenshipTextBox.Lines = New String(-1) {}
         Me.CitizenshipTextBox.Location = New System.Drawing.Point(915, 86)
-        Me.CitizenshipTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CitizenshipTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.CitizenshipTextBox.MaxLength = 32767
         Me.CitizenshipTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.CitizenshipTextBox.Modified = False
@@ -1587,7 +1518,7 @@ Partial Class MyResidents
         StateProperties44.ForeColor = System.Drawing.Color.Empty
         StateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.CitizenshipTextBox.OnIdleState = StateProperties44
-        Me.CitizenshipTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CitizenshipTextBox.Padding = New System.Windows.Forms.Padding(4)
         Me.CitizenshipTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.CitizenshipTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.CitizenshipTextBox.PlaceholderText = ""
@@ -1615,13 +1546,13 @@ Partial Class MyResidents
         Me.BunifuLabel6.AutoEllipsis = False
         Me.BunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel6.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel6.Location = New System.Drawing.Point(839, 194)
-        Me.BunifuLabel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel6.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel6.Name = "BunifuLabel6"
         Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel6.Size = New System.Drawing.Size(64, 19)
+        Me.BunifuLabel6.Size = New System.Drawing.Size(62, 21)
         Me.BunifuLabel6.TabIndex = 93
         Me.BunifuLabel6.Text = "Birthdate"
         Me.BunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1636,7 +1567,7 @@ Partial Class MyResidents
         Me.SuffixComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SuffixComboBox.FormattingEnabled = True
         Me.SuffixComboBox.Location = New System.Drawing.Point(679, 86)
-        Me.SuffixComboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SuffixComboBox.Margin = New System.Windows.Forms.Padding(4)
         Me.SuffixComboBox.MaxDropDownItems = 5
         Me.SuffixComboBox.Name = "SuffixComboBox"
         Me.SuffixComboBox.Size = New System.Drawing.Size(229, 32)
@@ -1648,13 +1579,13 @@ Partial Class MyResidents
         Me.BunifuLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel12.AutoEllipsis = False
         Me.BunifuLabel12.CursorType = Nothing
-        Me.BunifuLabel12.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel12.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel12.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel12.Location = New System.Drawing.Point(28, 60)
-        Me.BunifuLabel12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel12.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel12.Name = "BunifuLabel12"
         Me.BunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel12.Size = New System.Drawing.Size(62, 19)
+        Me.BunifuLabel12.Size = New System.Drawing.Size(69, 21)
         Me.BunifuLabel12.TabIndex = 92
         Me.BunifuLabel12.Text = "Last name"
         Me.BunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1667,7 +1598,7 @@ Partial Class MyResidents
         Me.SexComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SexComboBox.FormattingEnabled = True
         Me.SexComboBox.Location = New System.Drawing.Point(296, 289)
-        Me.SexComboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SexComboBox.Margin = New System.Windows.Forms.Padding(4)
         Me.SexComboBox.Name = "SexComboBox"
         Me.SexComboBox.Size = New System.Drawing.Size(235, 32)
         Me.SexComboBox.TabIndex = 77
@@ -1678,13 +1609,13 @@ Partial Class MyResidents
         Me.BunifuLabel16.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel16.AutoEllipsis = False
         Me.BunifuLabel16.CursorType = Nothing
-        Me.BunifuLabel16.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel16.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel16.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel16.Location = New System.Drawing.Point(539, 129)
-        Me.BunifuLabel16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel16.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel16.Name = "BunifuLabel16"
         Me.BunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel16.Size = New System.Drawing.Size(48, 19)
+        Me.BunifuLabel16.Size = New System.Drawing.Size(56, 21)
         Me.BunifuLabel16.TabIndex = 91
         Me.BunifuLabel16.Text = "Religion"
         Me.BunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1697,7 +1628,7 @@ Partial Class MyResidents
         Me.VoterComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VoterComboBox.FormattingEnabled = True
         Me.VoterComboBox.Location = New System.Drawing.Point(535, 289)
-        Me.VoterComboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.VoterComboBox.Margin = New System.Windows.Forms.Padding(4)
         Me.VoterComboBox.Name = "VoterComboBox"
         Me.VoterComboBox.Size = New System.Drawing.Size(161, 32)
         Me.VoterComboBox.TabIndex = 78
@@ -1709,13 +1640,13 @@ Partial Class MyResidents
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel1.Location = New System.Drawing.Point(535, 194)
-        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(42, 19)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(40, 21)
         Me.BunifuLabel1.TabIndex = 79
         Me.BunifuLabel1.Text = "Purok"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1727,13 +1658,13 @@ Partial Class MyResidents
         Me.BunifuLabel14.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel14.AutoEllipsis = False
         Me.BunifuLabel14.CursorType = Nothing
-        Me.BunifuLabel14.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel14.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel14.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel14.Location = New System.Drawing.Point(27, 129)
-        Me.BunifuLabel14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel14.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel14.Name = "BunifuLabel14"
         Me.BunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel14.Size = New System.Drawing.Size(51, 19)
+        Me.BunifuLabel14.Size = New System.Drawing.Size(55, 21)
         Me.BunifuLabel14.TabIndex = 89
         Me.BunifuLabel14.Text = "Address"
         Me.BunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1745,13 +1676,13 @@ Partial Class MyResidents
         Me.BunifuLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel3.AutoEllipsis = False
         Me.BunifuLabel3.CursorType = Nothing
-        Me.BunifuLabel3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel3.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel3.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel3.Location = New System.Drawing.Point(540, 263)
-        Me.BunifuLabel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel3.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel3.Size = New System.Drawing.Size(38, 19)
+        Me.BunifuLabel3.Size = New System.Drawing.Size(37, 21)
         Me.BunifuLabel3.TabIndex = 81
         Me.BunifuLabel3.Text = "Voter"
         Me.BunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1763,13 +1694,13 @@ Partial Class MyResidents
         Me.BunifuLabel13.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel13.AutoEllipsis = False
         Me.BunifuLabel13.CursorType = Nothing
-        Me.BunifuLabel13.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel13.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel13.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel13.Location = New System.Drawing.Point(919, 60)
-        Me.BunifuLabel13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel13.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel13.Name = "BunifuLabel13"
         Me.BunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel13.Size = New System.Drawing.Size(65, 19)
+        Me.BunifuLabel13.Size = New System.Drawing.Size(76, 21)
         Me.BunifuLabel13.TabIndex = 88
         Me.BunifuLabel13.Text = "Citizenship"
         Me.BunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1781,13 +1712,13 @@ Partial Class MyResidents
         Me.BunifuLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel4.AutoEllipsis = False
         Me.BunifuLabel4.CursorType = Nothing
-        Me.BunifuLabel4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel4.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel4.Location = New System.Drawing.Point(680, 58)
-        Me.BunifuLabel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel4.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel4.Size = New System.Drawing.Size(40, 19)
+        Me.BunifuLabel4.Size = New System.Drawing.Size(38, 21)
         Me.BunifuLabel4.TabIndex = 82
         Me.BunifuLabel4.Text = "Suffix"
         Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1799,13 +1730,13 @@ Partial Class MyResidents
         Me.BunifuLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel11.AutoEllipsis = False
         Me.BunifuLabel11.CursorType = Nothing
-        Me.BunifuLabel11.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel11.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel11.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel11.Location = New System.Drawing.Point(28, 196)
-        Me.BunifuLabel11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel11.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel11.Name = "BunifuLabel11"
         Me.BunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel11.Size = New System.Drawing.Size(48, 19)
+        Me.BunifuLabel11.Size = New System.Drawing.Size(53, 21)
         Me.BunifuLabel11.TabIndex = 87
         Me.BunifuLabel11.Text = "Contact"
         Me.BunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1817,13 +1748,13 @@ Partial Class MyResidents
         Me.BunifuLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel5.AutoEllipsis = False
         Me.BunifuLabel5.CursorType = Nothing
-        Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel5.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel5.Location = New System.Drawing.Point(295, 261)
-        Me.BunifuLabel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel5.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel5.Name = "BunifuLabel5"
         Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel5.Size = New System.Drawing.Size(28, 19)
+        Me.BunifuLabel5.Size = New System.Drawing.Size(23, 21)
         Me.BunifuLabel5.TabIndex = 83
         Me.BunifuLabel5.Text = "Sex"
         Me.BunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1835,13 +1766,13 @@ Partial Class MyResidents
         Me.BunifuLabel10.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel10.AutoEllipsis = False
         Me.BunifuLabel10.CursorType = Nothing
-        Me.BunifuLabel10.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel10.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel10.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel10.Location = New System.Drawing.Point(795, 129)
-        Me.BunifuLabel10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel10.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel10.Name = "BunifuLabel10"
         Me.BunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel10.Size = New System.Drawing.Size(182, 19)
+        Me.BunifuLabel10.Size = New System.Drawing.Size(215, 21)
         Me.BunifuLabel10.TabIndex = 86
         Me.BunifuLabel10.Text = "Highest educational attainment"
         Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1853,13 +1784,13 @@ Partial Class MyResidents
         Me.BunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel8.AutoEllipsis = False
         Me.BunifuLabel8.CursorType = Nothing
-        Me.BunifuLabel8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel8.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel8.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel8.Location = New System.Drawing.Point(433, 60)
-        Me.BunifuLabel8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel8.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel8.Name = "BunifuLabel8"
         Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel8.Size = New System.Drawing.Size(63, 19)
+        Me.BunifuLabel8.Size = New System.Drawing.Size(71, 21)
         Me.BunifuLabel8.TabIndex = 84
         Me.BunifuLabel8.Text = "First name"
         Me.BunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -1871,17 +1802,86 @@ Partial Class MyResidents
         Me.BunifuLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuLabel9.AutoEllipsis = False
         Me.BunifuLabel9.CursorType = Nothing
-        Me.BunifuLabel9.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel9.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel9.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel9.Location = New System.Drawing.Point(225, 60)
-        Me.BunifuLabel9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel9.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel9.Name = "BunifuLabel9"
         Me.BunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel9.Size = New System.Drawing.Size(79, 19)
+        Me.BunifuLabel9.Size = New System.Drawing.Size(90, 21)
         Me.BunifuLabel9.TabIndex = 85
         Me.BunifuLabel9.Text = "Middle name"
         Me.BunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'fullname_Column
+        '
+        Me.fullname_Column.HeaderText = "Full Name"
+        Me.fullname_Column.Name = "fullname_Column"
+        Me.fullname_Column.ReadOnly = True
+        '
+        'sex_Column
+        '
+        Me.sex_Column.HeaderText = "Sex"
+        Me.sex_Column.Name = "sex_Column"
+        Me.sex_Column.ReadOnly = True
+        '
+        'age_Column
+        '
+        Me.age_Column.HeaderText = "Age"
+        Me.age_Column.Name = "age_Column"
+        Me.age_Column.ReadOnly = True
+        '
+        'civilStatus_Column
+        '
+        Me.civilStatus_Column.HeaderText = "Civil Status"
+        Me.civilStatus_Column.Name = "civilStatus_Column"
+        Me.civilStatus_Column.ReadOnly = True
+        '
+        'occupation_Column
+        '
+        Me.occupation_Column.HeaderText = "Occupation"
+        Me.occupation_Column.Name = "occupation_Column"
+        Me.occupation_Column.ReadOnly = True
+        '
+        'voter_Column
+        '
+        Me.voter_Column.HeaderText = "Voter"
+        Me.voter_Column.Name = "voter_Column"
+        Me.voter_Column.ReadOnly = True
+        '
+        'address_Column
+        '
+        Me.address_Column.HeaderText = "Address"
+        Me.address_Column.Name = "address_Column"
+        Me.address_Column.ReadOnly = True
+        '
+        'editButton_Column
+        '
+        Me.editButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.editButton_Column.HeaderText = ""
+        Me.editButton_Column.MinimumWidth = 25
+        Me.editButton_Column.Name = "editButton_Column"
+        Me.editButton_Column.ReadOnly = True
+        Me.editButton_Column.Width = 25
+        '
+        'deleteButton_Column
+        '
+        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.deleteButton_Column.HeaderText = ""
+        Me.deleteButton_Column.MinimumWidth = 25
+        Me.deleteButton_Column.Name = "deleteButton_Column"
+        Me.deleteButton_Column.ReadOnly = True
+        Me.deleteButton_Column.Width = 25
+        '
+        'archiveButton_Column
+        '
+        Me.archiveButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.archiveButton_Column.HeaderText = ""
+        Me.archiveButton_Column.MinimumWidth = 25
+        Me.archiveButton_Column.Name = "archiveButton_Column"
+        Me.archiveButton_Column.ReadOnly = True
+        Me.archiveButton_Column.Width = 25
         '
         'MyResidents
         '
@@ -1893,7 +1893,7 @@ Partial Class MyResidents
         Me.ClientSize = New System.Drawing.Size(1499, 943)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MyResidents"
         Me.Text = "Civil Status"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -1946,6 +1946,8 @@ Partial Class MyResidents
     Friend WithEvents BunifuLabel10 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel8 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel9 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents SearchFieldTxtBox As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents fullname_Column As DataGridViewTextBoxColumn
     Friend WithEvents sex_Column As DataGridViewTextBoxColumn
     Friend WithEvents age_Column As DataGridViewTextBoxColumn
@@ -1956,6 +1958,4 @@ Partial Class MyResidents
     Friend WithEvents editButton_Column As DataGridViewImageColumn
     Friend WithEvents deleteButton_Column As DataGridViewImageColumn
     Friend WithEvents archiveButton_Column As DataGridViewImageColumn
-    Friend WithEvents SearchFieldTxtBox As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents BunifuTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
 End Class
