@@ -840,7 +840,7 @@ Partial Class MyResidents
         Me.BrowseButton.IdleIconLeftImage = Nothing
         Me.BrowseButton.IdleIconRightImage = Nothing
         Me.BrowseButton.IndicateFocus = False
-        Me.BrowseButton.Location = New System.Drawing.Point(913, 250)
+        Me.BrowseButton.Location = New System.Drawing.Point(913, 252)
         Me.BrowseButton.Name = "BrowseButton"
         Me.BrowseButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BrowseButton.OnDisabledState.BorderRadius = 1
@@ -1643,7 +1643,7 @@ Partial Class MyResidents
         Me.Fullnametxtbox.SelectionLength = 0
         Me.Fullnametxtbox.SelectionStart = 0
         Me.Fullnametxtbox.ShortcutsEnabled = True
-        Me.Fullnametxtbox.Size = New System.Drawing.Size(487, 31)
+        Me.Fullnametxtbox.Size = New System.Drawing.Size(487, 32)
         Me.Fullnametxtbox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.Fullnametxtbox.TabIndex = 107
         Me.Fullnametxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1701,7 +1701,7 @@ Partial Class MyResidents
         Me.AddNewBttn.IdleIconLeftImage = Nothing
         Me.AddNewBttn.IdleIconRightImage = Nothing
         Me.AddNewBttn.IndicateFocus = False
-        Me.AddNewBttn.Location = New System.Drawing.Point(20, 13)
+        Me.AddNewBttn.Location = New System.Drawing.Point(19, 13)
         Me.AddNewBttn.Name = "AddNewBttn"
         Me.AddNewBttn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.AddNewBttn.OnDisabledState.BorderRadius = 1

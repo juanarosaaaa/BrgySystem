@@ -29,7 +29,7 @@ Public Class MyResidents
     Private Sub MyResidents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         brgyResidents.arrangeGridView(ResidentsGridView)
-
+        UpdateButton.Enabled = False
 
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
@@ -56,12 +56,14 @@ Public Class MyResidents
 
 
         Try
-        imageFile.saveImageAt("ResidentsImages")
+            imageFile.saveImageAt("ResidentsImages")
         Catch X As NoNullAllowedException
-        MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        Exit Sub
+            MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
         End Try
-        brgyResidents.addResidents(imageFile.getImageName, imageFile.getImageFolderPath)
+        Dim message As String = "Resident '" & Fullnametxtbox.Text.Trim.ToUpper & "' successfully added!"
+        Dim query As String = brgyResidents.getInsertQuery(imageFile.getImageName, imageFile.getImageFolderPath)
+        brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
 
@@ -73,7 +75,8 @@ Public Class MyResidents
 
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
         If AlreadyStart Then
-            search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+            Dim query As String = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'"
+            search.searchValueIn(query, ResidentsGridView)
             If (InputIsNull(SearchFieldTxtBox.Text.Trim)) Then
                 manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
             End If
@@ -89,22 +92,42 @@ Public Class MyResidents
     End Sub
 
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
+        Dim query As String = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'"
+        search.searchValueIn(query, ResidentsGridView)
     End Sub
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
-        brgyResidents.getValuesFromDatabaseAndDisplayToInputs("")
 
+
+        Try
+            imageFile.saveImageAt("ResidentsImages")
+        Catch X As NoNullAllowedException
+            MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End Try
+
+        Dim message As String = "Resident '" & Fullnametxtbox.Text.Trim.ToUpper & "' successfully updated!"
+        ' Dim query As String = brgyResidents.getInsertQuery(imageFile.getImageName, imageFile.getImageFolderPath)
+
+
+        '  brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
+        manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+
+
+        'MsgBox(brgyResidents.getImageNameFromSelectedRowValue())
+        ' MsgBox(brgyResidents.getImagePathFromSelectedRowValue())
     End Sub
 
     Private Sub ResdientsGridViewCellClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ResidentsGridView.CellClick
 
         If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
+            SaveButton.Enabled = False
+            UpdateButton.Enabled = True
             brgyResidents.clearAllInputs()
-            brgyResidents.getValuesFromDatabaseAndDisplayToInputs(ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue)
+            Dim selectedNameInRow As String = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
+            brgyResidents.getValuesFromDatabaseAndDisplayToInputs(selectedNameInRow)
             'ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
-
-
             'ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
 
 
@@ -114,5 +137,7 @@ Public Class MyResidents
 
     Private Sub AddNewBttn_Click(sender As Object, e As EventArgs) Handles AddNewBttn.Click
         brgyResidents.clearAllInputs()
+        SaveButton.Enabled = True
+        UpdateButton.Enabled = False
     End Sub
 End Class

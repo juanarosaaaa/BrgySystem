@@ -1,19 +1,23 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports Guna.UI2.WinForms
 Imports Bunifu.UI.WinForms
+Imports System.IO
 Public Class MyBrgyResidents
 
 
     Private manage As DataManipulation = New ManageSystem
     Private Const residentsQuery As String = "SELECT FULLNAME,SEX,AGE,CIVIL_STATUS,OCCUPATION,REGISTERED_VOTER,ADDRESS FROM `residents`"
     Private result As Boolean
+    Private imgname, imgpath As String
 
 
 
-    Function insertQuery(imagename As String, imagepath As String) As String
+
+
+
+    Function getInsertQuery(imagename As String, imagepath As String) As String
 
         Dim path As String = imagepath.Replace("\", "\\")
-
         Dim age As String = Date.Now.Year - MyResidents.BirthdateDatePicker.Value.Year
 
         Return "INSERT INTO `residents` Values ('" & MyResidents.Fullnametxtbox.Text.Trim & "','" & MyResidents.SuffixComboBox.Text & "','" & MyResidents.SexComboBox.Text & "',
@@ -21,6 +25,18 @@ Public Class MyBrgyResidents
                 '" & MyResidents.PurokTextBox.Text & "','" & MyResidents.AddressTextBox.Text & "','" & MyResidents.CivilStatusComboBox.Text & "','" & MyResidents.VoterComboBox.Text & "','" & MyResidents.ContactTextBox.Text & "','" & MyResidents.CitizenshipTextBox.Text & "','" & path & "','" & imagename & "',
                 '" & MyResidents.SeniorComboBox.Text & "')"
     End Function
+
+
+
+
+    Function updateQuery() As String
+        Return " UPDATE `residents` Set `FULLNAME`= '" & MyResidents.Fullnametxtbox.Text.Trim & "',`SUFFIX`=[value-2],`SEX`=[value-3],`BIRTHDATE`=[value-4],`AGE`=[value-5],
+            `OCCUPATION`=[value-6],`RELIGION`=[value-7],`Educational Attainment`=[value-8],`PUROK`=[value-9],`ADDRESS`=[value-10],
+            `CIVIL_STATUS`=[value-11],`REGISTERED_VOTER`=[value-12],`CONTACT_NUMBER`=[value-13],`CITIZENSHIP`=[value-14],`IMAGEPATH`=[value-15],
+            `ImageName`=[value-16],`SeniorCitizen`=[value-17] WHERE 1"
+    End Function
+
+
 
 
     Sub arrangeGridView(gridView As Guna2DataGridView)
@@ -53,7 +69,7 @@ Public Class MyBrgyResidents
 
 
 
-    Sub addResidents(imageName As String, imagePath As String)
+    Sub addOrUpdateResident(message As String, query As String, imageName As String)
         Try
             If (IsInputValid()) Then
                 Exit Sub
@@ -63,8 +79,9 @@ Public Class MyBrgyResidents
             ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
                 MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Exit Sub
-            ElseIf (manage.manipulateDataAt(insertQuery(imageName, imagePath))) Then
-                MessageBox.Show("Resident successfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            ElseIf (manage.manipulateDataAt(query)) Then
+                MessageBox.Show(message, "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                clearAllInputs()
             End If
 
         Catch x As MySqlException
@@ -135,34 +152,45 @@ Public Class MyBrgyResidents
 
     Sub getValuesFromDatabaseAndDisplayToInputs(name As String)
         openConnection()
-
-        Dim command As New MySqlCommand("SELECT * from residents where Fullname = 'Marlon P' ", getConnection)
+        Dim command As New MySqlCommand("SELECT * from residents where Fullname = '" & name & "' ", getConnection)
         Dim reader As MySqlDataReader
         reader = command.ExecuteReader
-        While reader.Read
-            MyResidents.Fullnametxtbox.Text = reader.GetString("FULLNAME")
-            MyResidents.SuffixComboBox.Text = reader.GetString("SUFFIX")
-            MyResidents.CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
-            MyResidents.AddressTextBox.Text = reader.GetString("ADDRESS")
-            MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
-            MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
-            MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
-            MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
-            MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
-            MyResidents.BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
-            MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
-            MyResidents.SexComboBox.Text = reader.GetString("SEX")
-            MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
-            MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
+        Try
 
 
+            While reader.Read
+                MyResidents.Fullnametxtbox.Text = reader.GetString("FULLNAME")
+                MyResidents.SuffixComboBox.Text = reader.GetString("SUFFIX")
+                MyResidents.CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
+                MyResidents.AddressTextBox.Text = reader.GetString("ADDRESS")
+                MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
+                MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
+                MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
+                MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
+                MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
+                MyResidents.BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
+                MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
+                MyResidents.SexComboBox.Text = reader.GetString("SEX")
+                MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
+                MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
+                imgname = reader.GetString("ImageName")
+                imgpath = reader.GetString("Imagepath")
+                MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("Imagepath"))
+            End While
+        Catch x As FileNotFoundException ' picture for resident miko not found. File might have been moved or deleted.
+            MessageBox.Show("Picture for Resident '" & reader.GetString("FULLNAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
 
-            MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("Imagepath"))
-        End While
+
         closeConnection()
 
 
 
     End Sub
-
+    Function getImageNameFromSelectedRowValue() As String
+        Return imgname
+    End Function
+    Function getImagePathFromSelectedRowValue()
+        Return imgpath
+    End Function
 End Class
