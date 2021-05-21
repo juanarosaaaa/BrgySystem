@@ -148,6 +148,14 @@
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AddNewBttn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJEAAAAfCAYAAADnYi+LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB6SURBVHhe7dKhEYAwAMBAJunKsB9j4FsYAMER++JVbLZx
+        zHMca8E/83wmegvwnYnITERmIjITkZmIzERkJiIzEZmJyExEZiIyE5GZiMxEZCYiMxGZichMRGYiMhOR
+        mYjMRGQmIjMRmYnITERmIjITkW1jn9dbgE/2ed083+xhpxjCZgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="Fullnametxtbox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAecAAAAfCAYAAADduwWUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

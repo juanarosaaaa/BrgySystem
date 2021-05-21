@@ -26,27 +26,6 @@ Public Class MyResidents
 
 
 
-
-    'If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
-    ''brgyResidents.getValuesFromDatabaseAndDisplayToInputs(ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue)
-    'ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
-
-
-    'ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
-
-
-    'End If
-
-
-
-
-
-
-
-
-
-
-
     Private Sub MyResidents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         brgyResidents.arrangeGridView(ResidentsGridView)
@@ -73,7 +52,6 @@ Public Class MyResidents
 
 
 
-
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
 
 
@@ -93,9 +71,6 @@ Public Class MyResidents
 
 
 
-
-
-
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
         If AlreadyStart Then
             search.searchValueIn(brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'", ResidentsGridView)
@@ -105,11 +80,6 @@ Public Class MyResidents
         End If
 
     End Sub
-
-
-
-
-
 
 
 
@@ -125,5 +95,24 @@ Public Class MyResidents
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
         brgyResidents.getValuesFromDatabaseAndDisplayToInputs("")
 
+    End Sub
+
+    Private Sub ResdientsGridViewCellClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ResidentsGridView.CellClick
+
+        If SettingAction.buttonOf_IsClick("editButton_Column", ResidentsGridView, e) Then
+            brgyResidents.clearAllInputs()
+            brgyResidents.getValuesFromDatabaseAndDisplayToInputs(ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue)
+            'ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", ResidentsGridView, e) Then
+
+
+            'ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
+
+
+        End If
+
+    End Sub
+
+    Private Sub AddNewBttn_Click(sender As Object, e As EventArgs) Handles AddNewBttn.Click
+        brgyResidents.clearAllInputs()
     End Sub
 End Class

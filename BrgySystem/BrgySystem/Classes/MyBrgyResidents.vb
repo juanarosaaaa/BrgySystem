@@ -35,7 +35,7 @@ Public Class MyBrgyResidents
 
     Sub clearAllInputs()
         MyResidents.Fullnametxtbox.Clear()
-        MyResidents.SuffixComboBox.Text = ""
+        MyResidents.SuffixComboBox.SelectedIndex = -1
         MyResidents.CitizenshipTextBox.Clear()
         MyResidents.AddressTextBox.Clear()
         MyResidents.ReligionTextBOx.Clear()
@@ -44,11 +44,11 @@ Public Class MyBrgyResidents
         MyResidents.OccupationTextBox.Clear()
         MyResidents.PurokTextBox.Clear()
         MyResidents.BirthdateDatePicker.Value = Date.Now
-        MyResidents.CivilStatusComboBox.Text = ""
+        MyResidents.CivilStatusComboBox.SelectedIndex = -1
         MyResidents.ResidentsPictureBOx.Image = MyResidents.ResidentsPictureBOx.InitialImage
-        MyResidents.SexComboBox.Text = ""
-        MyResidents.VoterComboBox.Text = ""
-        MyResidents.SeniorComboBox.Text = ""
+        MyResidents.SexComboBox.SelectedIndex = -1
+        MyResidents.VoterComboBox.SelectedIndex = -1
+        MyResidents.SeniorComboBox.SelectedIndex = -1
     End Sub
 
 
@@ -147,12 +147,10 @@ Public Class MyBrgyResidents
             MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
             MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
             MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
-
             MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
             MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
             MyResidents.BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
             MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
-
             MyResidents.SexComboBox.Text = reader.GetString("SEX")
             MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
             MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
