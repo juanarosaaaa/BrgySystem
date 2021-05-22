@@ -326,7 +326,7 @@ Partial Class Blotter
         Me.GroupBox2.Controls.Add(Me.BunifuTextBox1)
         Me.GroupBox2.Location = New System.Drawing.Point(1, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1116, 359)
+        Me.GroupBox2.Size = New System.Drawing.Size(1116, 369)
         Me.GroupBox2.TabIndex = 148
         Me.GroupBox2.TabStop = False
         '
@@ -823,7 +823,7 @@ Partial Class Blotter
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel1.Location = New System.Drawing.Point(8, 49)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(8, 45)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel1.Size = New System.Drawing.Size(41, 21)
@@ -938,7 +938,7 @@ Partial Class Blotter
         Me.BunifuTextBox4.IconRight = Nothing
         Me.BunifuTextBox4.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox4.Lines = New String(-1) {}
-        Me.BunifuTextBox4.Location = New System.Drawing.Point(8, 171)
+        Me.BunifuTextBox4.Location = New System.Drawing.Point(8, 174)
         Me.BunifuTextBox4.MaxLength = 32767
         Me.BunifuTextBox4.MinimumSize = New System.Drawing.Size(2, 2)
         Me.BunifuTextBox4.Modified = False
@@ -993,7 +993,7 @@ Partial Class Blotter
         Me.BunifuLabel12.CursorType = Nothing
         Me.BunifuLabel12.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel12.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel12.Location = New System.Drawing.Point(344, 257)
+        Me.BunifuLabel12.Location = New System.Drawing.Point(344, 259)
         Me.BunifuLabel12.Name = "BunifuLabel12"
         Me.BunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel12.Size = New System.Drawing.Size(47, 21)
@@ -1049,7 +1049,7 @@ Partial Class Blotter
         Me.BunifuTextBox12.IconRight = Nothing
         Me.BunifuTextBox12.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox12.Lines = New String(-1) {}
-        Me.BunifuTextBox12.Location = New System.Drawing.Point(344, 276)
+        Me.BunifuTextBox12.Location = New System.Drawing.Point(344, 281)
         Me.BunifuTextBox12.MaxLength = 32767
         Me.BunifuTextBox12.MinimumSize = New System.Drawing.Size(2, 2)
         Me.BunifuTextBox12.Modified = False
@@ -1126,7 +1126,7 @@ Partial Class Blotter
         Me.BunifuTextBox5.IconRight = Nothing
         Me.BunifuTextBox5.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox5.Lines = New String(-1) {}
-        Me.BunifuTextBox5.Location = New System.Drawing.Point(8, 224)
+        Me.BunifuTextBox5.Location = New System.Drawing.Point(8, 228)
         Me.BunifuTextBox5.MaxLength = 32767
         Me.BunifuTextBox5.MinimumSize = New System.Drawing.Size(2, 2)
         Me.BunifuTextBox5.Modified = False
@@ -1181,7 +1181,7 @@ Partial Class Blotter
         Me.BunifuLabel11.CursorType = Nothing
         Me.BunifuLabel11.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel11.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel11.Location = New System.Drawing.Point(455, 204)
+        Me.BunifuLabel11.Location = New System.Drawing.Point(455, 205)
         Me.BunifuLabel11.Name = "BunifuLabel11"
         Me.BunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel11.Size = New System.Drawing.Size(32, 21)
@@ -1220,7 +1220,7 @@ Partial Class Blotter
         Me.BunifuTextBox6.IconRight = Nothing
         Me.BunifuTextBox6.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox6.Lines = New String(-1) {}
-        Me.BunifuTextBox6.Location = New System.Drawing.Point(344, 223)
+        Me.BunifuTextBox6.Location = New System.Drawing.Point(344, 227)
         Me.BunifuTextBox6.MaxLength = 32767
         Me.BunifuTextBox6.MinimumSize = New System.Drawing.Size(2, 2)
         Me.BunifuTextBox6.Modified = False
@@ -1297,7 +1297,7 @@ Partial Class Blotter
         Me.BunifuTextBox11.IconRight = Nothing
         Me.BunifuTextBox11.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox11.Lines = New String(-1) {}
-        Me.BunifuTextBox11.Location = New System.Drawing.Point(127, 224)
+        Me.BunifuTextBox11.Location = New System.Drawing.Point(127, 228)
         Me.BunifuTextBox11.MaxLength = 32767
         Me.BunifuTextBox11.MinimumSize = New System.Drawing.Size(2, 2)
         Me.BunifuTextBox11.Modified = False
@@ -1374,7 +1374,7 @@ Partial Class Blotter
         Me.BunifuTextBox7.IconRight = Nothing
         Me.BunifuTextBox7.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox7.Lines = New String(-1) {}
-        Me.BunifuTextBox7.Location = New System.Drawing.Point(198, 223)
+        Me.BunifuTextBox7.Location = New System.Drawing.Point(198, 227)
         Me.BunifuTextBox7.MaxLength = 32767
         Me.BunifuTextBox7.MinimumSize = New System.Drawing.Size(2, 2)
         Me.BunifuTextBox7.Modified = False
@@ -1440,7 +1440,7 @@ Partial Class Blotter
         Me.BunifuDatePicker1.IconColor = System.Drawing.Color.Gray
         Me.BunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right
         Me.BunifuDatePicker1.LeftTextMargin = 5
-        Me.BunifuDatePicker1.Location = New System.Drawing.Point(454, 224)
+        Me.BunifuDatePicker1.Location = New System.Drawing.Point(454, 228)
         Me.BunifuDatePicker1.MinimumSize = New System.Drawing.Size(4, 32)
         Me.BunifuDatePicker1.Name = "BunifuDatePicker1"
         Me.BunifuDatePicker1.Size = New System.Drawing.Size(216, 32)
@@ -1454,7 +1454,7 @@ Partial Class Blotter
         Me.BunifuLabel5.CursorType = Nothing
         Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel5.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel5.Location = New System.Drawing.Point(128, 206)
+        Me.BunifuLabel5.Location = New System.Drawing.Point(128, 205)
         Me.BunifuLabel5.Name = "BunifuLabel5"
         Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel5.Size = New System.Drawing.Size(27, 21)
@@ -1488,7 +1488,7 @@ Partial Class Blotter
         Me.BunifuLabel6.CursorType = Nothing
         Me.BunifuLabel6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel6.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel6.Location = New System.Drawing.Point(197, 206)
+        Me.BunifuLabel6.Location = New System.Drawing.Point(197, 205)
         Me.BunifuLabel6.Name = "BunifuLabel6"
         Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel6.Size = New System.Drawing.Size(75, 21)
@@ -1527,7 +1527,7 @@ Partial Class Blotter
         Me.BunifuTextBox10.IconRight = Nothing
         Me.BunifuTextBox10.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox10.Lines = New String(-1) {}
-        Me.BunifuTextBox10.Location = New System.Drawing.Point(344, 171)
+        Me.BunifuTextBox10.Location = New System.Drawing.Point(344, 174)
         Me.BunifuTextBox10.MaxLength = 32767
         Me.BunifuTextBox10.MinimumSize = New System.Drawing.Size(2, 2)
         Me.BunifuTextBox10.Modified = False
@@ -1604,7 +1604,7 @@ Partial Class Blotter
         Me.BunifuTextBox8.IconRight = Nothing
         Me.BunifuTextBox8.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox8.Lines = New String(-1) {}
-        Me.BunifuTextBox8.Location = New System.Drawing.Point(8, 276)
+        Me.BunifuTextBox8.Location = New System.Drawing.Point(8, 281)
         Me.BunifuTextBox8.MaxLength = 32767
         Me.BunifuTextBox8.MinimumSize = New System.Drawing.Size(2, 2)
         Me.BunifuTextBox8.Modified = False
@@ -1659,7 +1659,7 @@ Partial Class Blotter
         Me.BunifuLabel8.CursorType = Nothing
         Me.BunifuLabel8.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel8.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel8.Location = New System.Drawing.Point(344, 102)
+        Me.BunifuLabel8.Location = New System.Drawing.Point(344, 99)
         Me.BunifuLabel8.Name = "BunifuLabel8"
         Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel8.Size = New System.Drawing.Size(143, 21)
@@ -1676,7 +1676,7 @@ Partial Class Blotter
         Me.BunifuLabel7.CursorType = Nothing
         Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel7.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel7.Location = New System.Drawing.Point(8, 259)
+        Me.BunifuLabel7.Location = New System.Drawing.Point(8, 261)
         Me.BunifuLabel7.Name = "BunifuLabel7"
         Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel7.Size = New System.Drawing.Size(113, 21)
@@ -1693,7 +1693,7 @@ Partial Class Blotter
         Me.BunifuLabel16.CursorType = Nothing
         Me.BunifuLabel16.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel16.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel16.Location = New System.Drawing.Point(8, 206)
+        Me.BunifuLabel16.Location = New System.Drawing.Point(8, 205)
         Me.BunifuLabel16.Name = "BunifuLabel16"
         Me.BunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel16.Size = New System.Drawing.Size(23, 21)
@@ -1710,7 +1710,7 @@ Partial Class Blotter
         Me.BunifuLabel14.CursorType = Nothing
         Me.BunifuLabel14.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel14.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel14.Location = New System.Drawing.Point(344, 48)
+        Me.BunifuLabel14.Location = New System.Drawing.Point(344, 45)
         Me.BunifuLabel14.Name = "BunifuLabel14"
         Me.BunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel14.Size = New System.Drawing.Size(71, 21)
@@ -1727,7 +1727,7 @@ Partial Class Blotter
         Me.BunifuLabel17.CursorType = Nothing
         Me.BunifuLabel17.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel17.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel17.Location = New System.Drawing.Point(8, 100)
+        Me.BunifuLabel17.Location = New System.Drawing.Point(8, 99)
         Me.BunifuLabel17.Name = "BunifuLabel17"
         Me.BunifuLabel17.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel17.Size = New System.Drawing.Size(40, 21)
@@ -1909,7 +1909,7 @@ Partial Class Blotter
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1124, 766)
         Me.Controls.Add(Me.TableLayoutPanel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
