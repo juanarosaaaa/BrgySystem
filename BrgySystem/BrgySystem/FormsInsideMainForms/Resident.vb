@@ -16,6 +16,10 @@ Public Class MyResidents
     Private selectedNameInRow As String
     Public isFullNameModified, isContactModified As Boolean
     Dim searchingQueryForSelectedColumn As String
+
+
+
+
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ResidentsGridView.CellFormatting
         SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ResidentsGridView, e, My.Resources.icons8_trash_24px)
         SettinggridViewImage.setImageAtButtonColumnOf("archiveButton_Column", ResidentsGridView, e, My.Resources.icons8_archive_24px_1)
@@ -71,8 +75,7 @@ Public Class MyResidents
             search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
             manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
 
-            isFullNameModified = False
-            isContactModified = False
+
         End If
 
 
@@ -124,8 +127,7 @@ Public Class MyResidents
         If brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName) Then
             search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
             manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-            isFullNameModified = False
-            isContactModified = False
+            MsgBox(True)
 
         End If
 

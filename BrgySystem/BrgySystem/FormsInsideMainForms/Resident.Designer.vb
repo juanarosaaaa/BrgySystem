@@ -106,7 +106,6 @@ Partial Class MyResidents
         Me.SuffixComboBox = New System.Windows.Forms.ComboBox()
         Me.SexComboBox = New System.Windows.Forms.ComboBox()
         Me.BunifuLabel16 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.VoterComboBox = New System.Windows.Forms.ComboBox()
         Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel14 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -115,6 +114,7 @@ Partial Class MyResidents
         Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.VoterComboBox = New System.Windows.Forms.ComboBox()
         CType(Me.ResidentsGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -1605,21 +1605,6 @@ Partial Class MyResidents
         Me.BunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'VoterComboBox
-        '
-        Me.VoterComboBox.AccessibleName = "Voter"
-        Me.VoterComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.VoterComboBox.AutoCompleteCustomSource.AddRange(New String() {"Yes", "No"})
-        Me.VoterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
-        Me.VoterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.VoterComboBox.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VoterComboBox.FormattingEnabled = True
-        Me.VoterComboBox.Items.AddRange(New Object() {"Yes", "No"})
-        Me.VoterComboBox.Location = New System.Drawing.Point(689, 200)
-        Me.VoterComboBox.Name = "VoterComboBox"
-        Me.VoterComboBox.Size = New System.Drawing.Size(158, 33)
-        Me.VoterComboBox.TabIndex = 78
-        '
         'BunifuLabel1
         '
         Me.BunifuLabel1.AllowParentOverrides = False
@@ -1757,6 +1742,21 @@ Partial Class MyResidents
         Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'VoterComboBox
+        '
+        Me.VoterComboBox.AccessibleName = "Voter"
+        Me.VoterComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.VoterComboBox.AutoCompleteCustomSource.AddRange(New String() {"Yes", "No"})
+        Me.VoterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.VoterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.VoterComboBox.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VoterComboBox.FormattingEnabled = True
+        Me.VoterComboBox.Items.AddRange(New Object() {"Yes", "No"})
+        Me.VoterComboBox.Location = New System.Drawing.Point(689, 200)
+        Me.VoterComboBox.Name = "VoterComboBox"
+        Me.VoterComboBox.Size = New System.Drawing.Size(158, 33)
+        Me.VoterComboBox.TabIndex = 78
+        '
         'MyResidents
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1802,7 +1802,6 @@ Partial Class MyResidents
     Friend WithEvents SuffixComboBox As ComboBox
     Friend WithEvents SexComboBox As ComboBox
     Friend WithEvents BunifuLabel16 As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents VoterComboBox As ComboBox
     Friend WithEvents BunifuLabel1 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel14 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel3 As Bunifu.UI.WinForms.BunifuLabel
@@ -1828,4 +1827,5 @@ Partial Class MyResidents
     Friend WithEvents editButton_Column As DataGridViewImageColumn
     Friend WithEvents deleteButton_Column As DataGridViewImageColumn
     Friend WithEvents archiveButton_Column As DataGridViewImageColumn
+    Friend WithEvents VoterComboBox As ComboBox
 End Class

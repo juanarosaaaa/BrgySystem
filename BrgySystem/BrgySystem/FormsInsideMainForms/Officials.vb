@@ -1,13 +1,13 @@
 ﻿Public Class Officials
     Private SettinggridViewImage As New DataGridViewImages
     Private SettingAction As New DataGridViewActionButtonEvent
-    Private officials As New MyOfficials
+    Private officials_ As New MyOfficials
     Private manage As loadGridViewValue = New ManageSystem
     Private search As Search = New SearchingFeature_Implementation
     Private isAlreadyStart As Boolean = False
     Private searchingSelectedColumnsQuery As String
     Private imageFile As ImageFileManager = New ImageFileManager()
-
+    Public isNameModified, isContactModified As Boolean
 
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles OfficialsGridVIew.CellFormatting
         SettinggridViewImage.setImageAtButtonColumnOf("editButton_Column", OfficialsGridVIew, e, My.Resources.icons8_edit_24px)
@@ -16,8 +16,11 @@
     End Sub
 
     Private Sub Officials_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        officials.arrangeGridView()
-        manage.loadGridViewValueOf(officials.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
+        officials_.arrangeGridView()
+        isNameModified = False
+        isContactModified = False
+        UpdateButton.Enabled = False
+        manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Name", "officials", SearchfieldTExtBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
     End Sub
@@ -28,15 +31,18 @@
 
     Private Sub SearchfieldTExtBox_TextChanged(sender As Object, e As EventArgs) Handles SearchfieldTExtBox.TextChanged
         If isAlreadyStart Then
-            searchingSelectedColumnsQuery = officials.getOfficialsQueryValuesSelectedColumn + "WHERE NAME LIKE '%" & SearchfieldTExtBox.Text.Trim & "%' "
+            searchingSelectedColumnsQuery = officials_.getOfficialsQueryValuesSelectedColumn + "WHERE NAME LIKE '%" & SearchfieldTExtBox.Text.Trim & "%' "
             search.searchValueIn(searchingSelectedColumnsQuery, OfficialsGridVIew)
             If InputIsNull(SearchfieldTExtBox.Text.Trim) Then
-                manage.loadGridViewValueOf(officials.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
+                manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
             End If
         End If
 
     End Sub
 
+    Sub clearAllInputs()
+
+    End Sub
     Private Sub SearchbarButton_Click(sender As Object, e As EventArgs) Handles SearchbarButton.Click
         search.searchValueIn(searchingSelectedColumnsQuery, OfficialsGridVIew)
     End Sub
@@ -49,6 +55,8 @@
 
         If SettingAction.buttonOf_IsClick("editButton_Column", OfficialsGridVIew, e) Then
             MsgBox("editbutton is click")
+            isNameModified = False
+            isContactModified = False
         ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", OfficialsGridVIew, e) Then
             MsgBox("deleteButton_Column is click")
         ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", OfficialsGridVIew, e) Then
@@ -57,8 +65,41 @@
 
     End Sub
 
+    Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
+        Try
+            If OfficialsPictureBox.Image Is OfficialsPictureBox.InitialImage Then
+                Throw New NoNullAllowedException
+            End If
+            imageFile.saveImageAt("OfficialsImages")
+        Catch ex As NoNullAllowedException
+            MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End Try
 
+        Dim message As String = "Officials '" & FullnameTextBox.Text.Trim.ToUpper & "' successfully added!"
+        Dim query As String = officials_.getInsertQuery(imageFile.getImageName, imageFile.getImageFolderPath)
 
+        If officials_.addOrUpdateOfficials(message, query, imageFile.getImageName) Then
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("Name", "officials", SearchfieldTExtBox)
+            manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
 
+        End If
+    End Sub
 
+    Private Sub AddNewButton_Click(sender As Object, e As EventArgs) Handles AddNewButton.Click
+        isNameModified = False
+        isContactModified = False
+    End Sub
+
+    Private Sub FullnameKeyDown(sender As Object, e As KeyEventArgs) Handles FullnameTextBox.KeyDown
+        isNameModified = True
+    End Sub
+
+    Private Sub ContactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
+        isContactModified = True
+    End Sub
+
+    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
+
+    End Sub
 End Class

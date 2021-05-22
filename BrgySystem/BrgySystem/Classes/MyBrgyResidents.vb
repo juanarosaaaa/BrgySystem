@@ -11,7 +11,7 @@ Public Class MyBrgyResidents
 
     Private manage As DataManipulation = New ManageSystem
     Private Const residentsQuery As String = "SELECT FULLNAME,SEX,AGE,CIVIL_STATUS,OCCUPATION,REGISTERED_VOTER,ADDRESS FROM `residents`"
-    Private result As Boolean
+
     Private imgname, imgpath As String
 
 
@@ -195,7 +195,7 @@ Public Class MyBrgyResidents
     End Function
 
     Function IsInputValid()
-        result = False
+
 
         Dim arr() As Object = {MyResidents.Fullnametxtbox,
                                MyResidents.SuffixComboBox,
@@ -239,7 +239,7 @@ Public Class MyBrgyResidents
 
         Next
 
-        Return result
+        Return False
     End Function
 
 
