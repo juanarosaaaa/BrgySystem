@@ -30,7 +30,7 @@
         UpdateButton.Enabled = False
         manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Name", "officials", SearchfieldTExtBox)
-        search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTxtBox)
     End Sub
 
 
@@ -128,7 +128,26 @@
         End If
     End Sub
 
+    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
+        Try
+            If OfficialsPictureBox.Image Is OfficialsPictureBox.InitialImage Then
+                Throw New NoNullAllowedException
+            End If
+            imageFile.saveImageAt("OfficialsImages")
+        Catch ex As NoNullAllowedException
+            MessageBox.Show("No picture selected!", "INCOMPLETE DETAILS!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End Try
+        Dim message As String = "Officials '" & FullnameTextBox.Text.Trim.ToUpper & "' successfully updated!"
+        Dim query As String = officials_.getUpdateQuery(selectedResidentNameInROw, imageFile.getImageName, imageFile.getImageFolderPath)
 
+        If officials_.addOrUpdateOfficials(message, query, imageFile.getImageName) Then
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("NAME", "officials", SearchfieldTExtBox)
+            manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
+
+        End If
+
+    End Sub
 
 
 
@@ -143,9 +162,7 @@
         isNameModified = True
     End Sub
 
-    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
 
-    End Sub
 
     Private Sub ContactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
         isContactModified = True

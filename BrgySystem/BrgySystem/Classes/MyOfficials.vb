@@ -38,9 +38,36 @@ Public Class MyOfficials
                                                 '" & Officials.HighestEducationalAttainmentTextBox.Text & "',
                                                 '" & imagePathManager.getImagePath(imagePath) & "',
                                                 '" & Officials.ContactTextBox.Text & "',
-                                                '" & imageName & "')"
+                                                '" & imageName & "',
+                                                '" & Officials.PurokTxtBox.Text.Trim & "',
+                                                '" & Officials.AddressTextBox.Text.Trim & "')"
 
     End Function
+
+
+    Function getUpdateQuery(nameFromSelectedRow As String, imagename As String, imagepath As String) As String
+
+        Dim age As String = Date.Now.Year - Officials.BirthdateDatePicker.Value.Year
+
+        Return "UPDATE `officials` SET `Name`= '" & Officials.FullnameTextBox.Text.Trim & "',
+                                       `AGE`= '" & age & "',
+                                       `BIRTHDATE`= '" & Officials.BirthdateDatePicker.Value.Date & "',
+                                       `SEX`= '" & Officials.SexComboBox.Text & "',
+                                       `TERM`= '" & Officials.TermComboBox.Text & "',
+                                       `STATUS`= '" & Officials.StatusCombobox.Text & "',
+                                       `POSITION`= '" & Officials.PositionCombobox.Text & "',
+                                       `Citizenship`= '" & Officials.CitizenshipTextBox.Text & "',
+                                       `Educational Attainment`= '" & Officials.HighestEducationalAttainmentTextBox.Text & "',
+                                       `ImagePath`= '" & imagePathManager.getImagePath(imagepath) & "',
+                                       `CONTACT`= '" & Officials.ContactTextBox.Text & "',
+                                       `ImageName`= '" & imagename & "',
+                                       `Purok`= '" & Officials.PurokTxtBox.Text.Trim & "',
+                                       `Address`= '" & Officials.AddressTextBox.Text.Trim & "'
+                                        WHERE NAME = '" & nameFromSelectedRow & "'; "
+
+
+    End Function
+
 
     Sub clearAllInputs()
 
@@ -54,6 +81,9 @@ Public Class MyOfficials
         Officials.HighestEducationalAttainmentTextBox.Clear()
         Officials.OfficialsPictureBox.Image = Officials.OfficialsPictureBox.InitialImage
         Officials.ContactTextBox.Clear()
+        Officials.PurokTxtBox.Clear()
+        Officials.AddressTextBox.Clear()
+
 
         Officials.isNameModified = False
         Officials.isContactModified = False
@@ -121,8 +151,10 @@ Public Class MyOfficials
         Dim arr() As Object = {Officials.FullnameTextBox,
                                 Officials.ContactTextBox,
                                 Officials.HighestEducationalAttainmentTextBox,
-                                Officials.PurokTextBox,
-                                Officials.CitizenshipTextBox}
+                                Officials.PurokTxtBox,
+                                Officials.CitizenshipTextBox,
+                                Officials.PurokTxtBox,
+                                Officials.AddressTextBox}
 
         For Each inputObjects As Object In arr
 
@@ -139,7 +171,7 @@ Public Class MyOfficials
                 Exit Function
             End If
 
-            If inputObjects.Equals(Officials.ContactTextBox) Or inputObjects.Equals(Officials.PurokTextBox) Then
+            If inputObjects.Equals(Officials.ContactTextBox) Or inputObjects.Equals(Officials.PurokTxtBox) Or inputObjects.Equals(Officials.AddressTextBox) Then
                 Continue For
             ElseIf InputContainsNumber(inputObjects.Text) Then
                 MessageBox.Show("Input is invalid! Your " & inputObjects.AccessibleName & " contains number.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -177,6 +209,8 @@ Public Class MyOfficials
                 Officials.HighestEducationalAttainmentTextBox.Text = reader.GetString("Educational Attainment")
                 Officials.OfficialsPictureBox.Image = Image.FromFile(reader.GetString("ImagePath"))
                 Officials.ContactTextBox.Text = reader.GetString("CONTACT")
+                Officials.PurokTxtBox.Text = reader.GetString("Purok")
+                Officials.AddressTextBox.Text = reader.GetString("Address")
 
                 imgname = reader.GetString("ImageName")
                 imgpath = reader.GetString("ImagePath")
