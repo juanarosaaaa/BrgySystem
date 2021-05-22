@@ -15,8 +15,7 @@ Public Class MyResidents
     Private Const folderImage As String = "ResidentsImages"
     Private selectedNameInRow As String
     Public isFullNameModified, isContactModified As Boolean
-
-
+    Dim searchingQueryForSelectedColumn As String
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ResidentsGridView.CellFormatting
         SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ResidentsGridView, e, My.Resources.icons8_trash_24px)
         SettinggridViewImage.setImageAtButtonColumnOf("archiveButton_Column", ResidentsGridView, e, My.Resources.icons8_archive_24px_1)
@@ -85,8 +84,8 @@ Public Class MyResidents
 
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
         If AlreadyStart Then
-            Dim query As String = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'"
-            search.searchValueIn(query, ResidentsGridView)
+            searchingQueryForSelectedColumn = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '%" & SearchFieldTxtBox.Text.Trim & "%'"
+            search.searchValueIn(searchingQueryForSelectedColumn, ResidentsGridView)
             If (InputIsNull(SearchFieldTxtBox.Text.Trim)) Then
                 manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
             End If
@@ -102,8 +101,7 @@ Public Class MyResidents
     End Sub
 
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        Dim query As String = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '" & SearchFieldTxtBox.Text.Trim & "'"
-        search.searchValueIn(query, ResidentsGridView)
+        search.searchValueIn(searchingQueryForSelectedColumn, ResidentsGridView)
     End Sub
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
