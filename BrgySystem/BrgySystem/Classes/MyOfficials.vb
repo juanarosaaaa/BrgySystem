@@ -8,6 +8,11 @@ Imports System.IO
 Public Class MyOfficials
     Private getValuesQueryOfTheSelectedColumn As String = "SELECT NAME,AGE,TERM,POSITION,SEX,STATUS,CONTACT FROM `officials`"
     Private manage As DataManipulation = New ManageSystem
+    Private imgname, imgpath As String
+
+
+
+
     Sub arrangeGridView()
         Officials.OfficialsGridVIew.Columns("name_Column").DataPropertyName = "NAME"
         Officials.OfficialsGridVIew.Columns("age_Column").DataPropertyName = "AGE"
@@ -31,7 +36,7 @@ Public Class MyOfficials
                                                 '" & Officials.PositionCombobox.Text & "',
                                                 '" & Officials.CitizenshipTextBox.Text & "',
                                                 '" & Officials.HighestEducationalAttainmentTextBox.Text & "',
-                                                '" & imagePath & "',
+                                                '" & imagePathManager.getImagePath(imagePath) & "',
                                                 '" & Officials.ContactTextBox.Text & "',
                                                 '" & imageName & "')"
 
@@ -84,11 +89,11 @@ Public Class MyOfficials
                 MessageBox.Show("Name '" & Officials.FullnameTextBox.Text.Trim.ToUpper & "' is already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
                 Exit Function
-            ElseIf (isInputAlreadyExist("Contact ", "officials", Officials.ContactTextBox.Text.Trim) And Officials.isContactModified) Then
+            ElseIf (isInputAlreadyExist("Contact", "officials", Officials.ContactTextBox.Text.Trim) And Officials.isContactModified) Then
                 MessageBox.Show("Contact is already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
                 Exit Function
-            Else isInputAlreadyExist("ImageName  ", "residents", imageName)
+            Else isInputAlreadyExist("ImageName", "officials", imageName)
                 MessageBox.Show("Image is already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
                 Exit Function
@@ -151,7 +156,47 @@ Public Class MyOfficials
     End Function
 
 
+    Sub getValuesFromDatabaseAndDisplayToInputs(nameOfTheSelectedRow As String)
+
+        openConnection()
+        Dim command As New MySqlCommand("SELECT * from officials where NAME = '" & nameOfTheSelectedRow & "' ", getConnection)
+        Dim reader As MySqlDataReader
+        reader = command.ExecuteReader
+        Try
 
 
+            While reader.Read
 
+                Officials.FullnameTextBox.Text = reader.GetString("NAME")
+                Officials.BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
+                Officials.SexComboBox.Text = reader.GetString("SEX")
+                Officials.TermComboBox.Text = reader.GetString("TERM")
+                Officials.StatusCombobox.Text = reader.GetString("STATUS")
+                Officials.PositionCombobox.Text = reader.GetString("POSITION")
+                Officials.CitizenshipTextBox.Text = reader.GetString("Citizenship")
+                Officials.HighestEducationalAttainmentTextBox.Text = reader.GetString("Educational Attainment")
+                Officials.OfficialsPictureBox.Image = Image.FromFile(reader.GetString("ImagePath"))
+                Officials.ContactTextBox.Text = reader.GetString("CONTACT")
+
+                imgname = reader.GetString("ImageName")
+                imgpath = reader.GetString("ImagePath")
+
+
+            End While
+        Catch x As FileNotFoundException
+            MessageBox.Show("Picture for Official '" & reader.GetString("NAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+
+        closeConnection()
+
+    End Sub
+
+    Function getImageNameFromSelectedRowValue()
+        Return imgname
+    End Function
+
+    Function getImagePathFromSelectedRowValue()
+        Return imgpath
+    End Function
 End Class

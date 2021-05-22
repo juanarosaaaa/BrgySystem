@@ -128,7 +128,6 @@ Public Class MyResidents
         If brgyResidents.addOrUpdateResident(message, query, imageFile.getImageName) Then
             search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
             manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-            MsgBox(True)
 
         End If
 
