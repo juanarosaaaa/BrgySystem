@@ -15,7 +15,7 @@ Public Class MyResidents
     Private Const folderImage As String = "ResidentsImages"
     Private selectedNameInRow As String
     Public isFullNameModified, isContactModified As Boolean
-    Dim searchingQueryForSelectedColumn As String
+    Dim valueYouSearchFor As String
 
 
 
@@ -81,18 +81,19 @@ Public Class MyResidents
 
     End Sub
 
-
+    Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchFieldTxtBox.KeyDown
+        valueYouSearchFor = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '%" & SearchFieldTxtBox.Text.Trim & "%'"
+        search.searchValueIn(valueYouSearchFor, ResidentsGridView)
+    End Sub
 
 
 
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
-        If AlreadyStart Then
-            searchingQueryForSelectedColumn = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '%" & SearchFieldTxtBox.Text.Trim & "%'"
-            search.searchValueIn(searchingQueryForSelectedColumn, ResidentsGridView)
-            If (InputIsNull(SearchFieldTxtBox.Text.Trim)) Then
+
+        If (InputIsNull(SearchFieldTxtBox.Text.Trim) And AlreadyStart) And AlreadyStart Then
                 manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
             End If
-        End If
+
 
     End Sub
 
@@ -104,7 +105,7 @@ Public Class MyResidents
     End Sub
 
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        search.searchValueIn(searchingQueryForSelectedColumn, ResidentsGridView)
+        search.searchValueIn(valueYouSearchFor, ResidentsGridView)
     End Sub
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
@@ -188,6 +189,7 @@ Public Class MyResidents
 
 
     End Sub
+
 
     Private Sub contactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
 

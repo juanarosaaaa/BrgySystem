@@ -17,4 +17,9 @@
         SettinggridViewImage.setImageAtButtonColumnOf("printButton_Column", Guna2DataGridView1, e, My.Resources.icons8_save_24px)
     End Sub
 
+    Private Sub Keydown(sender As Object, e As KeyEventArgs) Handles BunifuTextBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            MsgBox(True)
+        End If
+    End Sub
 End Class

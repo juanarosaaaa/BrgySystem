@@ -79,11 +79,8 @@ Public Class Archive
     End Sub
 
     Private Sub PurokArchiveSearchField_TextChanged(sender As Object, e As EventArgs) Handles PurokArchiveSearchField.TextChange
-        If (AlreadyStartAtPurokArchive) Then
-            search.searchValueIn("SELECT PurokName FROM `archive_purok` WHERE PurokName Like '%" & PurokArchiveSearchField.Text.Trim & "%'", PurokGridView)
-            If InputIsNull(PurokArchiveSearchField.Text.Trim) Then
-                manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
-            End If
+        If InputIsNull(PurokArchiveSearchField.Text.Trim) And AlreadyStartAtPurokArchive Then
+            manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
         End If
     End Sub
 
@@ -91,15 +88,11 @@ Public Class Archive
         AlreadyStartAtPurokArchive = True
     End Sub
 
-
-
-
-
-
-
-
-
-
+    Private Sub PurokArchiveKeyDown(sender As Object, e As KeyEventArgs) Handles PurokArchiveSearchField.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            search.searchValueIn("SELECT * FROM `archive_purok` WHERE PurokName Like '%" & PurokArchiveSearchField.Text.Trim & "%'", PurokGridView)
+        End If
+    End Sub
 
 
 
@@ -131,16 +124,19 @@ Public Class Archive
 
 
     Private Sub ResidentsArchiveSearchFieldTextChanged(sender As Object, e As EventArgs) Handles ResidentsArchiveSearchField.TextChange
-        If (AlreadyStartAtResidentArchive) Then
-            search.searchValueIn(archiveResidentsQuery & "WHERE FULLNAME LIKE '%" & ResidentsArchiveSearchField.Text.Trim & "%'", ResidentsArchiveGridView)
-            If InputIsNull(ResidentsArchiveSearchField.Text.Trim) Then
-                manage.loadGridViewValueOf(archiveResidentsQuery, ResidentsArchiveGridView)
-            End If
+        If InputIsNull(ResidentsArchiveSearchField.Text.Trim) And AlreadyStartAtResidentArchive Then
+            manage.loadGridViewValueOf(archiveResidentsQuery, ResidentsArchiveGridView)
         End If
     End Sub
 
     Private Sub ResidentsArchiveSearchFieldIsClicked(sender As Object, e As EventArgs) Handles ResidentsArchiveSearchField.Click
         AlreadyStartAtResidentArchive = True
+    End Sub
+
+    Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles ResidentsArchiveSearchField.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            search.searchValueIn(archiveResidentsQuery & "WHERE FULLNAME LIKE '%" & ResidentsArchiveSearchField.Text.Trim & "%'", ResidentsArchiveGridView)
+        End If
     End Sub
 
 

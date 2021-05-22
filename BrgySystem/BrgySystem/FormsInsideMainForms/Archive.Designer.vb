@@ -105,10 +105,10 @@ Partial Class Archive
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.ItemSize = New System.Drawing.Size(180, 30)
-        Me.TabControl1.Location = New System.Drawing.Point(12, 22)
+        Me.TabControl1.Location = New System.Drawing.Point(3, 22)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1100, 732)
+        Me.TabControl1.Size = New System.Drawing.Size(1118, 732)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
@@ -282,7 +282,7 @@ Partial Class Archive
         Me.ResidentsArchiveSearchField.IconRight = Nothing
         Me.ResidentsArchiveSearchField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.ResidentsArchiveSearchField.Lines = New String(-1) {}
-        Me.ResidentsArchiveSearchField.Location = New System.Drawing.Point(804, 9)
+        Me.ResidentsArchiveSearchField.Location = New System.Drawing.Point(800, 9)
         Me.ResidentsArchiveSearchField.MaxLength = 32767
         Me.ResidentsArchiveSearchField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.ResidentsArchiveSearchField.Modified = False
@@ -338,7 +338,7 @@ Partial Class Archive
         Me.TabPage2.Location = New System.Drawing.Point(4, 34)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1092, 694)
+        Me.TabPage2.Size = New System.Drawing.Size(1110, 694)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Purok's Archive"
         '
@@ -346,7 +346,7 @@ Partial Class Archive
         '
         Me.PurokArchiveSearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PurokArchiveSearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.PurokArchiveSearchButton.Location = New System.Drawing.Point(1048, 9)
+        Me.PurokArchiveSearchButton.Location = New System.Drawing.Point(1066, 9)
         Me.PurokArchiveSearchButton.Name = "PurokArchiveSearchButton"
         Me.PurokArchiveSearchButton.Size = New System.Drawing.Size(38, 39)
         Me.PurokArchiveSearchButton.TabIndex = 4
@@ -381,7 +381,7 @@ Partial Class Archive
         Me.PurokArchiveSearchField.IconRight = Nothing
         Me.PurokArchiveSearchField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.PurokArchiveSearchField.Lines = New String(-1) {}
-        Me.PurokArchiveSearchField.Location = New System.Drawing.Point(800, 9)
+        Me.PurokArchiveSearchField.Location = New System.Drawing.Point(818, 9)
         Me.PurokArchiveSearchField.MaxLength = 32767
         Me.PurokArchiveSearchField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.PurokArchiveSearchField.Modified = False
@@ -471,7 +471,7 @@ Partial Class Archive
         DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.PurokGridView.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.PurokGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.PurokGridView.Size = New System.Drawing.Size(1100, 732)
+        Me.PurokGridView.Size = New System.Drawing.Size(1104, 637)
         Me.PurokGridView.TabIndex = 5
         Me.PurokGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.PurokGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -531,7 +531,7 @@ Partial Class Archive
         Me.TabPage3.Location = New System.Drawing.Point(4, 34)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1092, 694)
+        Me.TabPage3.Size = New System.Drawing.Size(1110, 694)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Official's Archive"
         '
@@ -540,7 +540,7 @@ Partial Class Archive
         Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.Button3.Location = New System.Drawing.Point(1048, 9)
+        Me.Button3.Location = New System.Drawing.Point(1066, 9)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(38, 39)
         Me.Button3.TabIndex = 4
@@ -588,7 +588,7 @@ Partial Class Archive
         Me.ArchiveGridView.RowHeadersVisible = False
         Me.ArchiveGridView.RowHeadersWidth = 40
         Me.ArchiveGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ArchiveGridView.Size = New System.Drawing.Size(1100, 641)
+        Me.ArchiveGridView.Size = New System.Drawing.Size(1111, 641)
         Me.ArchiveGridView.TabIndex = 6
         Me.ArchiveGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ArchiveGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -721,7 +721,7 @@ Partial Class Archive
         Me.OfficialsArchiveSearchField.IconRight = Nothing
         Me.OfficialsArchiveSearchField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.OfficialsArchiveSearchField.Lines = New String(-1) {}
-        Me.OfficialsArchiveSearchField.Location = New System.Drawing.Point(800, 9)
+        Me.OfficialsArchiveSearchField.Location = New System.Drawing.Point(818, 9)
         Me.OfficialsArchiveSearchField.MaxLength = 32767
         Me.OfficialsArchiveSearchField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.OfficialsArchiveSearchField.Modified = False

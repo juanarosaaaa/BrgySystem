@@ -5,7 +5,7 @@
     Private manage As loadGridViewValue = New ManageSystem
     Private search As Search = New SearchingFeature_Implementation
     Private isAlreadyStart As Boolean = False
-    Private searchingSelectedColumnsQuery As String
+    Private valueYouSearchFor As String
     Private imageFile As ImageFileManager = New ImageFileManager()
     Public isNameModified, isContactModified As Boolean
 
@@ -30,21 +30,22 @@
     End Sub
 
     Private Sub SearchfieldTExtBox_TextChanged(sender As Object, e As EventArgs) Handles SearchfieldTExtBox.TextChanged
-        If isAlreadyStart Then
-            searchingSelectedColumnsQuery = officials_.getOfficialsQueryValuesSelectedColumn + "WHERE NAME LIKE '%" & SearchfieldTExtBox.Text.Trim & "%' "
-            search.searchValueIn(searchingSelectedColumnsQuery, OfficialsGridVIew)
-            If InputIsNull(SearchfieldTExtBox.Text.Trim) Then
+
+        If InputIsNull(SearchfieldTExtBox.Text.Trim) And isAlreadyStart Then
                 manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
             End If
+
+
+    End Sub
+    Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchfieldTExtBox.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            valueYouSearchFor = officials_.getOfficialsQueryValuesSelectedColumn + "WHERE NAME LIKE '%" & SearchfieldTExtBox.Text.Trim & "%' "
+            search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
         End If
-
     End Sub
 
-    Sub clearAllInputs()
-
-    End Sub
     Private Sub SearchbarButton_Click(sender As Object, e As EventArgs) Handles SearchbarButton.Click
-        search.searchValueIn(searchingSelectedColumnsQuery, OfficialsGridVIew)
+        search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
     End Sub
 
     Private Sub BrowseButton_Click(sender As Object, e As EventArgs) Handles BrowseButton.Click
@@ -99,7 +100,7 @@
         isContactModified = True
     End Sub
 
-    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
 
-    End Sub
+
+
 End Class
