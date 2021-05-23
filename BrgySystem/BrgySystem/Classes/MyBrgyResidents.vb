@@ -97,7 +97,17 @@ Public Class MyBrgyResidents
                 End If
             End If
         Catch duplicate As MySqlException
-            MessageBox.Show("Failed archiving Resident. A Resident '" & resident.ToUpper.Trim & "' already exist at the archive list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            Dim residentName_IfImageExist As String = isInputAlreadyExistAtAnotherTable("FULLNAME", "archive_residents", "residents", "residents.ImageName", "archive_residents.ImageName")
+            Dim residentName_IfContactExist As String = isInputAlreadyExistAtAnotherTable("FULLNAME", "archive_residents", "residents", "residents.CONTACT_NUMBER", "archive_residents.CONTACT_NUMBER")
+
+            If residentName_IfImageExist.Length > 0 Then
+                MessageBox.Show("Failed archiving Resident. Resident '" & residentName_IfImageExist & "' from archive is already used this image.", "IMAGE ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            ElseIf residentName_IfContactExist.Length > 0 Then
+                MessageBox.Show("Failed archiving Resident. Resident '" & residentName_IfContactExist & "' from archive is already used this contact number.", "CONTACT ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                MessageBox.Show("Failed archiving Resident. Resident '" & resident.ToUpper.Trim & "' already exist at the archive list.", "NAME ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
 
         Finally
             closeConnection()
@@ -277,10 +287,10 @@ Public Class MyBrgyResidents
             End While
         Catch x As FileNotFoundException
             MessageBox.Show("Picture for Resident '" & reader.GetString("FULLNAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            closeConnection()
         End Try
 
-
-        closeConnection()
 
     End Sub
 

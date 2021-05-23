@@ -55,8 +55,18 @@ Public Class MyArchive
         Archive.ResidentsArchiveGridView.Columns("citizenship_Column").DataPropertyName = "CITIZENSHIP"
         Archive.ResidentsArchiveGridView.Columns("address_Column").DataPropertyName = "ADDRESS"
     End Sub
+    Sub arrangeOfficialsColumns()
+        Archive.ArchiveOfficialGridView.Columns("fullnameColumnOfficials").DataPropertyName = "NAME"
+        Archive.ArchiveOfficialGridView.Columns("status_ColumnOfficials").DataPropertyName = "STATUS"
+        Archive.ArchiveOfficialGridView.Columns("contact_ColumnOfficials").DataPropertyName = "CONTACT"
+        Archive.ArchiveOfficialGridView.Columns("positionColumnOfficials").DataPropertyName = "POSITION"
+        Archive.ArchiveOfficialGridView.Columns("termColumnOfficials").DataPropertyName = "TERM"
+        Archive.ArchiveOfficialGridView.Columns("sexColumnOfficials").DataPropertyName = "SEX"
+        Archive.ArchiveOfficialGridView.Columns("purokColumnOfficials").DataPropertyName = "Purok"
+        Archive.ArchiveOfficialGridView.Columns("ageColumnOfficials").DataPropertyName = "AGE"
 
 
+    End Sub
 
 
 

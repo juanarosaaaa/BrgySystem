@@ -106,6 +106,7 @@ Partial Class MyResidents
         Me.SuffixComboBox = New System.Windows.Forms.ComboBox()
         Me.SexComboBox = New System.Windows.Forms.ComboBox()
         Me.BunifuLabel16 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.VoterComboBox = New System.Windows.Forms.ComboBox()
         Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel14 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -114,7 +115,6 @@ Partial Class MyResidents
         Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.VoterComboBox = New System.Windows.Forms.ComboBox()
         CType(Me.ResidentsGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -158,14 +158,14 @@ Partial Class MyResidents
         Me.ResidentsGridView.DefaultCellStyle = DataGridViewCellStyle3
         Me.ResidentsGridView.EnableHeadersVisualStyles = False
         Me.ResidentsGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ResidentsGridView.Location = New System.Drawing.Point(2, 335)
+        Me.ResidentsGridView.Location = New System.Drawing.Point(2, 319)
         Me.ResidentsGridView.Name = "ResidentsGridView"
         Me.ResidentsGridView.ReadOnly = True
         Me.ResidentsGridView.RowHeadersVisible = False
         Me.ResidentsGridView.RowHeadersWidth = 47
         Me.ResidentsGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.ResidentsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 427)
+        Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 443)
         Me.ResidentsGridView.TabIndex = 6
         Me.ResidentsGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ResidentsGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -329,7 +329,7 @@ Partial Class MyResidents
         Me.GroupBox2.Controls.Add(Me.BunifuLabel10)
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1115, 329)
+        Me.GroupBox2.Size = New System.Drawing.Size(1115, 318)
         Me.GroupBox2.TabIndex = 65
         Me.GroupBox2.TabStop = False
         '
@@ -1605,6 +1605,21 @@ Partial Class MyResidents
         Me.BunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'VoterComboBox
+        '
+        Me.VoterComboBox.AccessibleName = "Voter"
+        Me.VoterComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.VoterComboBox.AutoCompleteCustomSource.AddRange(New String() {"Yes", "No"})
+        Me.VoterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.VoterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.VoterComboBox.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VoterComboBox.FormattingEnabled = True
+        Me.VoterComboBox.Items.AddRange(New Object() {"Yes", "No"})
+        Me.VoterComboBox.Location = New System.Drawing.Point(689, 200)
+        Me.VoterComboBox.Name = "VoterComboBox"
+        Me.VoterComboBox.Size = New System.Drawing.Size(158, 33)
+        Me.VoterComboBox.TabIndex = 78
+        '
         'BunifuLabel1
         '
         Me.BunifuLabel1.AllowParentOverrides = False
@@ -1741,21 +1756,6 @@ Partial Class MyResidents
         Me.BunifuLabel10.Text = "Highest educational attainment"
         Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'VoterComboBox
-        '
-        Me.VoterComboBox.AccessibleName = "Voter"
-        Me.VoterComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.VoterComboBox.AutoCompleteCustomSource.AddRange(New String() {"Yes", "No"})
-        Me.VoterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
-        Me.VoterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.VoterComboBox.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VoterComboBox.FormattingEnabled = True
-        Me.VoterComboBox.Items.AddRange(New Object() {"Yes", "No"})
-        Me.VoterComboBox.Location = New System.Drawing.Point(689, 200)
-        Me.VoterComboBox.Name = "VoterComboBox"
-        Me.VoterComboBox.Size = New System.Drawing.Size(158, 33)
-        Me.VoterComboBox.TabIndex = 78
         '
         'MyResidents
         '

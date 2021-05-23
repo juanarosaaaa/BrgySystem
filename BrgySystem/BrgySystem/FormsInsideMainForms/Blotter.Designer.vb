@@ -157,11 +157,12 @@ Partial Class Blotter
         Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
+        Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -171,7 +172,7 @@ Partial Class Blotter
         Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.blotter_Column, Me.reportedResident_Column, Me.details_Column, Me.type_Column, Me.dateOfIndident_Column, Me.dateFilled_Column, Me.complainant_Column, Me.status_Column, Me.updateButton_Column, Me.settlementScheduleButton_Column, Me.printButton_Column})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Lato", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.WhiteSmoke
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
@@ -195,14 +196,14 @@ Partial Class Blotter
         Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 40
         Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Lato", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -359,7 +360,7 @@ Partial Class Blotter
         Me.BunifuTextBox9.BorderThickness = 1
         Me.BunifuTextBox9.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox9.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox9.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox9.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox9.DefaultText = ""
         Me.BunifuTextBox9.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox9.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -482,7 +483,7 @@ Partial Class Blotter
         Me.BunifuButton2.IdleIconLeftImage = Nothing
         Me.BunifuButton2.IdleIconRightImage = Nothing
         Me.BunifuButton2.IndicateFocus = False
-        Me.BunifuButton2.Location = New System.Drawing.Point(891, 313)
+        Me.BunifuButton2.Location = New System.Drawing.Point(891, 316)
         Me.BunifuButton2.Name = "BunifuButton2"
         Me.BunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton2.OnDisabledState.BorderRadius = 41
@@ -572,7 +573,7 @@ Partial Class Blotter
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(1001, 313)
+        Me.BunifuButton1.Location = New System.Drawing.Point(1001, 316)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 41
@@ -619,11 +620,11 @@ Partial Class Blotter
         Me.RichTextBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.RichTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.RichTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox2.Font = New System.Drawing.Font("Lato", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox2.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.RichTextBox2.Location = New System.Drawing.Point(680, 120)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(428, 187)
+        Me.RichTextBox2.Size = New System.Drawing.Size(428, 193)
         Me.RichTextBox2.TabIndex = 206
         Me.RichTextBox2.Text = ""
         '
@@ -645,7 +646,7 @@ Partial Class Blotter
         Me.BunifuTextBox2.BorderThickness = 1
         Me.BunifuTextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox2.DefaultFont = New System.Drawing.Font("Lato", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox2.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox2.DefaultText = ""
         Me.BunifuTextBox2.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox2.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -739,7 +740,7 @@ Partial Class Blotter
         Me.BunifuTextBox3.BorderThickness = 1
         Me.BunifuTextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox3.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox3.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox3.DefaultText = ""
         Me.BunifuTextBox3.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox3.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -850,7 +851,7 @@ Partial Class Blotter
         Me.BunifuTextBox13.BorderThickness = 1
         Me.BunifuTextBox13.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox13.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox13.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox13.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox13.DefaultText = ""
         Me.BunifuTextBox13.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox13.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -927,7 +928,7 @@ Partial Class Blotter
         Me.BunifuTextBox4.BorderThickness = 1
         Me.BunifuTextBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox4.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox4.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox4.DefaultText = ""
         Me.BunifuTextBox4.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox4.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -1038,7 +1039,7 @@ Partial Class Blotter
         Me.BunifuTextBox12.BorderThickness = 1
         Me.BunifuTextBox12.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox12.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox12.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox12.DefaultText = ""
         Me.BunifuTextBox12.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox12.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -1115,7 +1116,7 @@ Partial Class Blotter
         Me.BunifuTextBox5.BorderThickness = 1
         Me.BunifuTextBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox5.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox5.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox5.DefaultText = ""
         Me.BunifuTextBox5.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox5.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -1209,7 +1210,7 @@ Partial Class Blotter
         Me.BunifuTextBox6.BorderThickness = 1
         Me.BunifuTextBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox6.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox6.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox6.DefaultText = ""
         Me.BunifuTextBox6.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox6.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -1286,7 +1287,7 @@ Partial Class Blotter
         Me.BunifuTextBox11.BorderThickness = 1
         Me.BunifuTextBox11.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox11.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox11.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox11.DefaultText = ""
         Me.BunifuTextBox11.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox11.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -1363,7 +1364,7 @@ Partial Class Blotter
         Me.BunifuTextBox7.BorderThickness = 1
         Me.BunifuTextBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox7.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox7.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox7.DefaultText = ""
         Me.BunifuTextBox7.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox7.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -1434,7 +1435,7 @@ Partial Class Blotter
         Me.BunifuDatePicker1.DPHeight = 0
         Me.BunifuDatePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
         Me.BunifuDatePicker1.FillDatePicker = False
-        Me.BunifuDatePicker1.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuDatePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuDatePicker1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BunifuDatePicker1.Icon = CType(resources.GetObject("BunifuDatePicker1.Icon"), System.Drawing.Image)
         Me.BunifuDatePicker1.IconColor = System.Drawing.Color.Gray
@@ -1516,7 +1517,7 @@ Partial Class Blotter
         Me.BunifuTextBox10.BorderThickness = 1
         Me.BunifuTextBox10.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox10.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox10.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox10.DefaultText = ""
         Me.BunifuTextBox10.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox10.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -1593,7 +1594,7 @@ Partial Class Blotter
         Me.BunifuTextBox8.BorderThickness = 1
         Me.BunifuTextBox8.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox8.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox8.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox8.DefaultText = ""
         Me.BunifuTextBox8.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox8.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -1713,9 +1714,9 @@ Partial Class Blotter
         Me.BunifuLabel14.Location = New System.Drawing.Point(344, 45)
         Me.BunifuLabel14.Name = "BunifuLabel14"
         Me.BunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel14.Size = New System.Drawing.Size(71, 21)
+        Me.BunifuLabel14.Size = New System.Drawing.Size(88, 21)
         Me.BunifuLabel14.TabIndex = 193
-        Me.BunifuLabel14.Text = "Complaint"
+        Me.BunifuLabel14.Text = "Complainant"
         Me.BunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel14.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
@@ -1754,7 +1755,7 @@ Partial Class Blotter
         Me.BunifuTextBox14.BorderThickness = 1
         Me.BunifuTextBox14.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox14.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox14.DefaultFont = New System.Drawing.Font("Lato", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox14.DefaultFont = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox14.DefaultText = ""
         Me.BunifuTextBox14.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.BunifuTextBox14.ForeColor = System.Drawing.Color.WhiteSmoke

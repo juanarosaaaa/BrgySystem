@@ -8,6 +8,11 @@ Imports System.IO
 Public Class MyOfficials
     Private getValuesQueryOfTheSelectedColumn As String = "SELECT NAME,AGE,TERM,POSITION,SEX,STATUS,CONTACT FROM `officials`"
     Private manage As DataManipulation = New ManageSystem
+    Private imgname, imgpath As String
+
+
+
+
     Sub arrangeGridView()
         Officials.OfficialsGridVIew.Columns("name_Column").DataPropertyName = "NAME"
         Officials.OfficialsGridVIew.Columns("age_Column").DataPropertyName = "AGE"
@@ -31,11 +36,38 @@ Public Class MyOfficials
                                                 '" & Officials.PositionCombobox.Text & "',
                                                 '" & Officials.CitizenshipTextBox.Text & "',
                                                 '" & Officials.HighestEducationalAttainmentTextBox.Text & "',
-                                                '" & imagePath & "',
+                                                '" & imagePathManager.getImagePath(imagePath) & "',
                                                 '" & Officials.ContactTextBox.Text & "',
-                                                '" & imageName & "')"
+                                                '" & imageName & "',
+                                                '" & Officials.PurokTxtBox.Text.Trim & "',
+                                                '" & Officials.AddressTextBox.Text.Trim & "')"
 
     End Function
+
+
+    Function getUpdateQuery(nameFromSelectedRow As String, imagename As String, imagepath As String) As String
+
+        Dim age As String = Date.Now.Year - Officials.BirthdateDatePicker.Value.Year
+
+        Return "UPDATE `officials` SET `Name`= '" & Officials.FullnameTextBox.Text.Trim & "',
+                                       `AGE`= '" & age & "',
+                                       `BIRTHDATE`= '" & Officials.BirthdateDatePicker.Value.Date & "',
+                                       `SEX`= '" & Officials.SexComboBox.Text & "',
+                                       `TERM`= '" & Officials.TermComboBox.Text & "',
+                                       `STATUS`= '" & Officials.StatusCombobox.Text & "',
+                                       `POSITION`= '" & Officials.PositionCombobox.Text & "',
+                                       `Citizenship`= '" & Officials.CitizenshipTextBox.Text & "',
+                                       `Educational Attainment`= '" & Officials.HighestEducationalAttainmentTextBox.Text & "',
+                                       `ImagePath`= '" & imagePathManager.getImagePath(imagepath) & "',
+                                       `CONTACT`= '" & Officials.ContactTextBox.Text & "',
+                                       `ImageName`= '" & imagename & "',
+                                       `Purok`= '" & Officials.PurokTxtBox.Text.Trim & "',
+                                       `Address`= '" & Officials.AddressTextBox.Text.Trim & "'
+                                        WHERE NAME = '" & nameFromSelectedRow & "'; "
+
+
+    End Function
+
 
     Sub clearAllInputs()
 
@@ -49,6 +81,9 @@ Public Class MyOfficials
         Officials.HighestEducationalAttainmentTextBox.Clear()
         Officials.OfficialsPictureBox.Image = Officials.OfficialsPictureBox.InitialImage
         Officials.ContactTextBox.Clear()
+        Officials.PurokTxtBox.Clear()
+        Officials.AddressTextBox.Clear()
+
 
         Officials.isNameModified = False
         Officials.isContactModified = False
@@ -84,11 +119,11 @@ Public Class MyOfficials
                 MessageBox.Show("Name '" & Officials.FullnameTextBox.Text.Trim.ToUpper & "' is already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
                 Exit Function
-            ElseIf (isInputAlreadyExist("Contact ", "officials", Officials.ContactTextBox.Text.Trim) And Officials.isContactModified) Then
+            ElseIf (isInputAlreadyExist("Contact", "officials", Officials.ContactTextBox.Text.Trim) And Officials.isContactModified) Then
                 MessageBox.Show("Contact is already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
                 Exit Function
-            Else isInputAlreadyExist("ImageName  ", "residents", imageName)
+            Else isInputAlreadyExist("ImageName", "officials", imageName)
                 MessageBox.Show("Image is already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
                 Exit Function
@@ -102,9 +137,37 @@ Public Class MyOfficials
         Return False
     End Function
 
+    Sub deleteOfficial(officialname As String)
+        If (MessageBox.Show("Are you sure you want to delete '" & officialname.ToUpper.Trim & "' Official?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (manage.manipulateDataAt("DELETE FROM `officials` WHERE NAME = '" & officialname.Trim & "' ")) Then
+                MessageBox.Show("Official '" & officialname.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("Failed to delete Official!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End If
+        closeConnection()
+    End Sub
 
+    Sub archiveOfficials(official As String)
+        Dim query As String = "INSERT INTO archive_officials SELECT * from `officials` where Name = '" & official & "';
+                            DELETE FROM `officials` WHERE Name = '" & official & "';"
 
+        Try
+            If (MessageBox.Show("Are you sure you want to archive '" & official.ToUpper.Trim & "' Official?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+                If (manage.manipulateDataAt(query)) Then
+                    MessageBox.Show("Official '" & official.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    MessageBox.Show("Failed to archive Official!", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+            End If
+        Catch duplicate As MySqlException
+            MessageBox.Show("Failed archiving Official. Official '" & official.ToUpper.Trim & "' already exist at the archive list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
+        Finally
+            closeConnection()
+
+        End Try
+    End Sub
 
     Function getOfficialsQueryValuesSelectedColumn() As String
         Return getValuesQueryOfTheSelectedColumn
@@ -116,8 +179,10 @@ Public Class MyOfficials
         Dim arr() As Object = {Officials.FullnameTextBox,
                                 Officials.ContactTextBox,
                                 Officials.HighestEducationalAttainmentTextBox,
-                                Officials.PurokTextBox,
-                                Officials.CitizenshipTextBox}
+                                Officials.PurokTxtBox,
+                                Officials.CitizenshipTextBox,
+                                Officials.PurokTxtBox,
+                                Officials.AddressTextBox}
 
         For Each inputObjects As Object In arr
 
@@ -134,7 +199,7 @@ Public Class MyOfficials
                 Exit Function
             End If
 
-            If inputObjects.Equals(Officials.ContactTextBox) Or inputObjects.Equals(Officials.PurokTextBox) Then
+            If inputObjects.Equals(Officials.ContactTextBox) Or inputObjects.Equals(Officials.PurokTxtBox) Or inputObjects.Equals(Officials.AddressTextBox) Then
                 Continue For
             ElseIf InputContainsNumber(inputObjects.Text) Then
                 MessageBox.Show("Input is invalid! Your " & inputObjects.AccessibleName & " contains number.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -151,7 +216,51 @@ Public Class MyOfficials
     End Function
 
 
+    Sub getValuesFromDatabaseAndDisplayToInputs(nameOfTheSelectedRow As String)
+
+        openConnection()
+        Dim command As New MySqlCommand("SELECT * from officials where NAME = '" & nameOfTheSelectedRow & "' ", getConnection)
+        Dim reader As MySqlDataReader
+        reader = command.ExecuteReader
+        Try
+
+
+            While reader.Read
+
+                Officials.FullnameTextBox.Text = reader.GetString("NAME")
+                Officials.BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
+                Officials.SexComboBox.Text = reader.GetString("SEX")
+                Officials.TermComboBox.Text = reader.GetString("TERM")
+                Officials.StatusCombobox.Text = reader.GetString("STATUS")
+                Officials.PositionCombobox.Text = reader.GetString("POSITION")
+                Officials.CitizenshipTextBox.Text = reader.GetString("Citizenship")
+                Officials.HighestEducationalAttainmentTextBox.Text = reader.GetString("Educational Attainment")
+                Officials.OfficialsPictureBox.Image = Image.FromFile(reader.GetString("ImagePath"))
+                Officials.ContactTextBox.Text = reader.GetString("CONTACT")
+                Officials.PurokTxtBox.Text = reader.GetString("Purok")
+                Officials.AddressTextBox.Text = reader.GetString("Address")
+
+                imgname = reader.GetString("ImageName")
+                imgpath = reader.GetString("ImagePath")
+
+
+            End While
+        Catch x As FileNotFoundException
+            MessageBox.Show("Picture for Official '" & reader.GetString("NAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            closeConnection()
+        End Try
 
 
 
+
+    End Sub
+
+    Function getImageNameFromSelectedRowValue()
+        Return imgname
+    End Function
+
+    Function getImagePathFromSelectedRowValue()
+        Return imgpath
+    End Function
 End Class

@@ -25,10 +25,28 @@ Module InputValidation
     End Function
 
     Function isInputAlreadyExist(columnName As String, tableName As String, input As String) As Boolean 'select fullname from  residents where fullname = 'therter'
+
         Dim datatable As New DataTable
         Dim adapter As New MySqlDataAdapter("SELECT " & columnName & " from  " & tableName & " where " & columnName & " = '" & input & "' ", ConnectionDB.getConnection)
         adapter.Fill(datatable)
         Return datatable.Rows.Count
+
+    End Function
+
+
+    Function isInputAlreadyExistAtAnotherTable(columnName_Tbl_B As String, table_b As String, thisTable As String, value_Tbl_A As String, value_Tbl_B As String) As String
+
+        Dim res As String = ""
+        Dim command As New MySqlCommand("SELECT " & columnName_Tbl_B & " FROM " & table_b & " WHERE  EXISTS (SELECT 1 FROM  " & thisTable & "  WHERE  " & value_Tbl_A & " =  " & value_Tbl_B & ") ", getConnection)
+        Dim reader As MySqlDataReader
+        reader = command.ExecuteReader
+
+        If reader.Read Then
+            res = reader.GetString(columnName_Tbl_B)
+        End If
+
+        reader.Close()
+        Return res
     End Function
 
 

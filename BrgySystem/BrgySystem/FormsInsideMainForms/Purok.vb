@@ -8,7 +8,7 @@ Public Class Purok
     Private var As MyPurok = New MyPurok
     Private manage As loadGridViewValue = New ManageSystem
     Private foo As Search = New SearchingFeature_Implementation
-    Private AlreadyStart As Boolean = False ' due to problems in threading textchanged event start first before load event. that's why text change throws an error 
+    Private alreadyStart As Boolean = False
 
 
 
@@ -81,30 +81,25 @@ Public Class Purok
 
     Private Sub SearchBarTextChanged(sender As Object, e As EventArgs) Handles SearchBarField.TextChange
 
-        If (AlreadyStart) Then
-            foo.searchValueIn("SELECT * FROM `Purok` WHERE PurokName Like '%" & SearchBarField.Text.Trim & "%'", PurokGridView)
-            If (InputIsNull(SearchBarField.Text.Trim)) Then
-                manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
-            End If
+        If (InputIsNull(SearchBarField.Text.Trim) And alreadyStart) Then
+            manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
         End If
 
     End Sub
 
 
-
-
-
-
     Private Sub SearchBarClick(sender As Object, e As EventArgs) Handles SearchBarField.Click
-        AlreadyStart = True
+        alreadyStart = True
     End Sub
-
-
-
-
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
         foo.searchValueIn("SELECT * FROM `Purok` WHERE PurokName Like '%" & SearchBarField.Text.Trim & "%'", PurokGridView)
+    End Sub
+
+    Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchBarField.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            foo.searchValueIn("SELECT * FROM `Purok` WHERE PurokName Like '%" & SearchBarField.Text.Trim & "%'", PurokGridView)
+        End If
     End Sub
 End Class

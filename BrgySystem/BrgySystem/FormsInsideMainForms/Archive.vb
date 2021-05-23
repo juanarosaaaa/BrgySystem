@@ -11,6 +11,11 @@ Public Class Archive
 
     Private Const archivePurokQuery As String = "SELECT PurokName FROM `archive_purok`"
     Private Const archiveResidentsQuery As String = "SELECT FULLNAME,SEX,AGE,RELIGION,CITIZENSHIP,ADDRESS FROM `archive_residents`"
+    Private Const archiveOfficialQuery As String = "SELECT NAME,STATUS,CONTACT,POSITION,TERM,SEX,PUROK,AGE from `archive_officials`"
+
+
+
+
 
     Private Sub ResidentsArchiveCellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ResidentsArchiveGridView.CellFormatting
         SettinggridViewImage.setImageAtButtonColumnOf("restoreofficials_ButtonColumn", ResidentsArchiveGridView, e, My.Resources.icons8_restore_page_24px_4)
@@ -21,32 +26,24 @@ Public Class Archive
         SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", PurokGridView, e, My.Resources.icons8_trash_24px)
     End Sub
 
-    Private Sub OfficialCellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ArchiveGridView.CellFormatting
+    Private Sub OfficialCellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ArchiveOfficialGridView.CellFormatting
 
-        SettinggridViewImage.setImageAtButtonColumnOf("restoreButtonColumnOfficials", ArchiveGridView, e, My.Resources.icons8_restore_page_24px_4)
-        SettinggridViewImage.setImageAtButtonColumnOf("deleteButtonColumnOfficials", ArchiveGridView, e, My.Resources.icons8_trash_24px)
+        SettinggridViewImage.setImageAtButtonColumnOf("restoreButtonColumnOfficials", ArchiveOfficialGridView, e, My.Resources.icons8_restore_page_24px_4)
+        SettinggridViewImage.setImageAtButtonColumnOf("deleteButtonColumnOfficials", ArchiveOfficialGridView, e, My.Resources.icons8_trash_24px)
 
     End Sub
-
-
-
-
-
-
-
-
-
-
 
     Private Sub Archive_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         archive.arrangePurokColumn()
         archive.arrangeResidentsColumn()
-
+        archive.arrangeOfficialsColumns()
         manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
         manage.loadGridViewValueOf(archiveResidentsQuery, ResidentsArchiveGridView)
+        manage.loadGridViewValueOf(archiveOfficialQuery, ArchiveOfficialGridView)
 
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "archive_purok", PurokArchiveSearchField)
-       search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "archive_residents", ResidentsArchiveSearchField)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "archive_residents", ResidentsArchiveSearchField)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("NAME", "archive_officials", OfficialsArchiveSearchField)
     End Sub
 
 
@@ -79,11 +76,8 @@ Public Class Archive
     End Sub
 
     Private Sub PurokArchiveSearchField_TextChanged(sender As Object, e As EventArgs) Handles PurokArchiveSearchField.TextChange
-        If (AlreadyStartAtPurokArchive) Then
-            search.searchValueIn("SELECT PurokName FROM `archive_purok` WHERE PurokName Like '%" & PurokArchiveSearchField.Text.Trim & "%'", PurokGridView)
-            If InputIsNull(PurokArchiveSearchField.Text.Trim) Then
-                manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
-            End If
+        If InputIsNull(PurokArchiveSearchField.Text.Trim) And AlreadyStartAtPurokArchive Then
+            manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
         End If
     End Sub
 
@@ -91,15 +85,11 @@ Public Class Archive
         AlreadyStartAtPurokArchive = True
     End Sub
 
-
-
-
-
-
-
-
-
-
+    Private Sub PurokArchiveKeyDown(sender As Object, e As KeyEventArgs) Handles PurokArchiveSearchField.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            search.searchValueIn("SELECT * FROM `archive_purok` WHERE PurokName Like '%" & PurokArchiveSearchField.Text.Trim & "%'", PurokGridView)
+        End If
+    End Sub
 
 
 
@@ -122,6 +112,8 @@ Public Class Archive
             search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "archive_residents", ResidentsArchiveSearchField)
             manage.loadGridViewValueOf(archiveResidentsQuery, ResidentsArchiveGridView)
         End If
+
+
     End Sub
 
     Private Sub ResidentsArchiveSearchButton_Click(sender As Object, e As EventArgs) Handles ResidentsArchiveSearchButton.Click
@@ -131,11 +123,8 @@ Public Class Archive
 
 
     Private Sub ResidentsArchiveSearchFieldTextChanged(sender As Object, e As EventArgs) Handles ResidentsArchiveSearchField.TextChange
-        If (AlreadyStartAtResidentArchive) Then
-            search.searchValueIn(archiveResidentsQuery & "WHERE FULLNAME LIKE '%" & ResidentsArchiveSearchField.Text.Trim & "%'", ResidentsArchiveGridView)
-            If InputIsNull(ResidentsArchiveSearchField.Text.Trim) Then
-                manage.loadGridViewValueOf(archiveResidentsQuery, ResidentsArchiveGridView)
-            End If
+        If InputIsNull(ResidentsArchiveSearchField.Text.Trim) And AlreadyStartAtResidentArchive Then
+            manage.loadGridViewValueOf(archiveResidentsQuery, ResidentsArchiveGridView)
         End If
     End Sub
 
@@ -143,5 +132,28 @@ Public Class Archive
         AlreadyStartAtResidentArchive = True
     End Sub
 
+    Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles ResidentsArchiveSearchField.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            search.searchValueIn(archiveResidentsQuery & "WHERE FULLNAME LIKE '%" & ResidentsArchiveSearchField.Text.Trim & "%'", ResidentsArchiveGridView)
+        End If
+    End Sub
 
+
+
+
+
+
+
+
+
+
+
+    Private Sub OfficialArchiveGridViewIsClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ArchiveOfficialGridView.CellClick
+        If SettingAction.buttonOf_IsClick("restoreButtonColumnOfficials", ArchiveOfficialGridView, e) Then
+            MsgBox(1)
+        ElseIf SettingAction.buttonOf_IsClick("deleteButtonColumnOfficials", ArchiveOfficialGridView, e) Then
+            MsgBox(2)
+        End If
+
+    End Sub
 End Class
