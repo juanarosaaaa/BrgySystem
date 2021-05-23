@@ -94,10 +94,22 @@
 
 
         ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", OfficialsGridVIew, e) Then
-            MsgBox("deleteButton_Column is click")
+            selectedResidentNameInROw = OfficialsGridVIew.CurrentRow.Cells("name_Column").FormattedValue
+
+            officials_.deleteOfficial(selectedResidentNameInROw)
+            manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("Name", "officials", SearchfieldTExtBox)
+            officials_.clearAllInputs()
+
             UpdateButton.Enabled = False
         ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", OfficialsGridVIew, e) Then
-            MsgBox("archiveButton_Column is click")
+            selectedResidentNameInROw = OfficialsGridVIew.CurrentRow.Cells("name_Column").FormattedValue
+
+            officials_.archiveOfficials(selectedResidentNameInROw)
+            manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("Name", "officials", SearchfieldTExtBox)
+            officials_.clearAllInputs()
+
             UpdateButton.Enabled = False
         End If
 

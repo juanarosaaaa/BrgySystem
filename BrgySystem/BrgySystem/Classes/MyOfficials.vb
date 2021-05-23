@@ -137,9 +137,37 @@ Public Class MyOfficials
         Return False
     End Function
 
+    Sub deleteOfficial(officialname As String)
+        If (MessageBox.Show("Are you sure you want to delete '" & officialname.ToUpper.Trim & "' Official?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (manage.manipulateDataAt("DELETE FROM `officials` WHERE NAME = '" & officialname.Trim & "' ")) Then
+                MessageBox.Show("Official '" & officialname.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("Failed to delete Official!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End If
+        closeConnection()
+    End Sub
 
+    Sub archiveOfficials(official As String)
+        Dim query As String = "INSERT INTO archive_officials SELECT * from `officials` where Name = '" & official & "';
+                            DELETE FROM `officials` WHERE Name = '" & official & "';"
 
+        Try
+            If (MessageBox.Show("Are you sure you want to archive '" & official.ToUpper.Trim & "' Official?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+                If (manage.manipulateDataAt(query)) Then
+                    MessageBox.Show("Official '" & official.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    MessageBox.Show("Failed to archive Official!", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+            End If
+        Catch duplicate As MySqlException
+            MessageBox.Show("Failed archiving Official. Official '" & official.ToUpper.Trim & "' already exist at the archive list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
+        Finally
+            closeConnection()
+
+        End Try
+    End Sub
 
     Function getOfficialsQueryValuesSelectedColumn() As String
         Return getValuesQueryOfTheSelectedColumn
@@ -219,10 +247,12 @@ Public Class MyOfficials
             End While
         Catch x As FileNotFoundException
             MessageBox.Show("Picture for Official '" & reader.GetString("NAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            closeConnection()
         End Try
 
 
-        closeConnection()
+
 
     End Sub
 

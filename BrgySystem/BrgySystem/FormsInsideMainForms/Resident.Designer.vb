@@ -158,14 +158,14 @@ Partial Class MyResidents
         Me.ResidentsGridView.DefaultCellStyle = DataGridViewCellStyle3
         Me.ResidentsGridView.EnableHeadersVisualStyles = False
         Me.ResidentsGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ResidentsGridView.Location = New System.Drawing.Point(2, 335)
+        Me.ResidentsGridView.Location = New System.Drawing.Point(2, 319)
         Me.ResidentsGridView.Name = "ResidentsGridView"
         Me.ResidentsGridView.ReadOnly = True
         Me.ResidentsGridView.RowHeadersVisible = False
         Me.ResidentsGridView.RowHeadersWidth = 47
         Me.ResidentsGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.ResidentsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 427)
+        Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 443)
         Me.ResidentsGridView.TabIndex = 6
         Me.ResidentsGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ResidentsGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -329,7 +329,7 @@ Partial Class MyResidents
         Me.GroupBox2.Controls.Add(Me.BunifuLabel10)
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1115, 329)
+        Me.GroupBox2.Size = New System.Drawing.Size(1115, 318)
         Me.GroupBox2.TabIndex = 65
         Me.GroupBox2.TabStop = False
         '

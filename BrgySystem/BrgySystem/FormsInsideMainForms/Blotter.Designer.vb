@@ -483,7 +483,7 @@ Partial Class Blotter
         Me.BunifuButton2.IdleIconLeftImage = Nothing
         Me.BunifuButton2.IdleIconRightImage = Nothing
         Me.BunifuButton2.IndicateFocus = False
-        Me.BunifuButton2.Location = New System.Drawing.Point(891, 313)
+        Me.BunifuButton2.Location = New System.Drawing.Point(891, 316)
         Me.BunifuButton2.Name = "BunifuButton2"
         Me.BunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton2.OnDisabledState.BorderRadius = 41
@@ -573,7 +573,7 @@ Partial Class Blotter
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(1001, 313)
+        Me.BunifuButton1.Location = New System.Drawing.Point(1001, 316)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 41
@@ -624,7 +624,7 @@ Partial Class Blotter
         Me.RichTextBox2.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.RichTextBox2.Location = New System.Drawing.Point(680, 120)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(428, 187)
+        Me.RichTextBox2.Size = New System.Drawing.Size(428, 193)
         Me.RichTextBox2.TabIndex = 206
         Me.RichTextBox2.Text = ""
         '
