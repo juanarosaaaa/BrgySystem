@@ -98,35 +98,39 @@ Public Class MyOfficials
             ElseIf InputContainsLetter(Officials.ContactTextBox.Text) Then
                 MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
-                Exit Function
+
             ElseIf isDateOrBirthdayInvalid(Officials.BirthdateDatePicker) Then
                 MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
-                Exit Function
+
+            ElseIf (Not isInputAlreadyExist("PurokName", "Purok", Officials.PurokTxtBox.Text.Trim)) Then
+                MessageBox.Show("Purok '" & Officials.PurokTxtBox.Text.Trim.ToUpper & "' does not exist in Purok list.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return False
+
             ElseIf (manage.manipulateDataAt(query)) Then
                 MessageBox.Show(message, "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 clearAllInputs()
                 Return True
-                Exit Function
+
             Else
                 MessageBox.Show("An error occured. Failed to add new Barangay Officials!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
-                Exit Function
+
             End If
         Catch duplicate As MySqlException
 
             If (isInputAlreadyExist("Name", "officials", Officials.FullnameTextBox.Text.Trim) And Officials.isNameModified) Then
                 MessageBox.Show("Name '" & Officials.FullnameTextBox.Text.Trim.ToUpper & "' is already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
-                Exit Function
+
             ElseIf (isInputAlreadyExist("Contact", "officials", Officials.ContactTextBox.Text.Trim) And Officials.isContactModified) Then
                 MessageBox.Show("Contact is already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
-                Exit Function
+
             Else isInputAlreadyExist("ImageName", "officials", imageName)
                 MessageBox.Show("Image is already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
-                Exit Function
+
             End If
 
         Finally

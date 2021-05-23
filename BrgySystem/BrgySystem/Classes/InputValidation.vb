@@ -24,7 +24,7 @@ Module InputValidation
         Return val.Value.Year >= Date.Now.Year
     End Function
 
-    Function isInputAlreadyExist(columnName As String, tableName As String, input As String) As Boolean 'select fullname from  residents where fullname = 'therter'
+    Function isInputAlreadyExist(columnName As String, tableName As String, input As String) As Boolean 'select PurokName from  Purok where PurokName = 'therter'
 
         Dim datatable As New DataTable
         Dim adapter As New MySqlDataAdapter("SELECT " & columnName & " from  " & tableName & " where " & columnName & " = '" & input & "' ", ConnectionDB.getConnection)
