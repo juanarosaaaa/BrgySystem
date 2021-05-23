@@ -552,7 +552,7 @@ Partial Class MyResidents
         Me.ResidentsPictureBOx.Image = CType(resources.GetObject("ResidentsPictureBOx.Image"), System.Drawing.Image)
         Me.ResidentsPictureBOx.InitialImage = CType(resources.GetObject("ResidentsPictureBOx.InitialImage"), System.Drawing.Image)
         Me.ResidentsPictureBOx.IsCircle = True
-        Me.ResidentsPictureBOx.Location = New System.Drawing.Point(911, 70)
+        Me.ResidentsPictureBOx.Location = New System.Drawing.Point(917, 79)
         Me.ResidentsPictureBOx.Name = "ResidentsPictureBOx"
         Me.ResidentsPictureBOx.Size = New System.Drawing.Size(158, 158)
         Me.ResidentsPictureBOx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1027,7 +1027,7 @@ Partial Class MyResidents
         Me.BrowseButton.IdleIconLeftImage = Nothing
         Me.BrowseButton.IdleIconRightImage = Nothing
         Me.BrowseButton.IndicateFocus = False
-        Me.BrowseButton.Location = New System.Drawing.Point(911, 227)
+        Me.BrowseButton.Location = New System.Drawing.Point(917, 236)
         Me.BrowseButton.Name = "BrowseButton"
         Me.BrowseButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BrowseButton.OnDisabledState.BorderRadius = 1

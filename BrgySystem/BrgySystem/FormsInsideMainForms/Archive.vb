@@ -8,7 +8,7 @@ Public Class Archive
     Private archive As New MyArchive
     Private AlreadyStartAtPurokArchive As Boolean = False
     Private AlreadyStartAtResidentArchive As Boolean = False
-
+    Private alreadyStartAtOfficialArchive As Boolean = False
     Private Const archivePurokQuery As String = "SELECT PurokName FROM `archive_purok`"
     Private Const archiveResidentsQuery As String = "SELECT FULLNAME,SEX,AGE,RELIGION,CITIZENSHIP,ADDRESS FROM `archive_residents`"
     Private Const archiveOfficialQuery As String = "SELECT NAME,STATUS,CONTACT,POSITION,TERM,SEX,PUROK,AGE from `archive_officials`"
@@ -67,9 +67,6 @@ Public Class Archive
         End If
 
     End Sub
-
-
-
 
     Private Sub PurokArchiveSearchButton_isClicked(sender As Object, e As EventArgs) Handles PurokArchiveSearchButton.Click
         search.searchValueIn("SELECT * FROM `archive_purok` WHERE PurokName Like '%" & PurokArchiveSearchField.Text.Trim & "%'", PurokGridView)
@@ -148,12 +145,41 @@ Public Class Archive
 
 
 
+
+
+
     Private Sub OfficialArchiveGridViewIsClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ArchiveOfficialGridView.CellClick
         If SettingAction.buttonOf_IsClick("restoreButtonColumnOfficials", ArchiveOfficialGridView, e) Then
-            MsgBox(1)
+            archive.restoreOfficials(ArchiveOfficialGridView.CurrentRow.Cells("fullnameColumnOfficials").FormattedValue)
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("NAME", "archive_officials", OfficialsArchiveSearchField)
+            manage.loadGridViewValueOf(archiveOfficialQuery, ArchiveOfficialGridView)
         ElseIf SettingAction.buttonOf_IsClick("deleteButtonColumnOfficials", ArchiveOfficialGridView, e) Then
-            MsgBox(2)
+            archive.deleteOfficials(ArchiveOfficialGridView.CurrentRow.Cells("fullnameColumnOfficials").FormattedValue)
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("NAME", "archive_officials", OfficialsArchiveSearchField)
+            manage.loadGridViewValueOf(archiveOfficialQuery, ArchiveOfficialGridView)
         End If
 
+    End Sub
+
+    Private Sub OfficialSearchButton_Click(sender As Object, e As EventArgs) Handles OfficialSearchButton.Click
+        alreadyStartAtOfficialArchive = True
+    End Sub
+
+
+
+    Private Sub ArchiveOfficialsSearchFieldTextChanged(sender As Object, e As EventArgs) Handles OfficialsArchiveSearchField.TextChange
+        If InputIsNull(OfficialsArchiveSearchField.Text.Trim) And alreadyStartAtOfficialArchive Then
+            manage.loadGridViewValueOf(archiveOfficialQuery, ArchiveOfficialGridView)
+        End If
+    End Sub
+
+    Private Sub ArchiveOfficialsSearchFieldClicked(sender As Object, e As EventArgs) Handles OfficialsArchiveSearchField.Click
+        alreadyStartAtOfficialArchive = True
+    End Sub
+
+    Private Sub ArchiveOfficialSearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles OfficialsArchiveSearchField.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            search.searchValueIn(archiveOfficialQuery & "WHERE Name LIKE '%" & OfficialsArchiveSearchField.Text.Trim & "%'", ArchiveOfficialGridView)
+        End If
     End Sub
 End Class

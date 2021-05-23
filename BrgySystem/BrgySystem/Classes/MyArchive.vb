@@ -65,7 +65,6 @@ Public Class MyArchive
         Archive.ArchiveOfficialGridView.Columns("purokColumnOfficials").DataPropertyName = "Purok"
         Archive.ArchiveOfficialGridView.Columns("ageColumnOfficials").DataPropertyName = "AGE"
 
-
     End Sub
 
 
@@ -116,6 +115,41 @@ Public Class MyArchive
 
 
 
+
+
+
+    Sub restoreOfficials(nameToRestore As String)
+        Dim query As String = "INSERT INTO `officials` SELECT * from archive_officials where NAME = '" & nameToRestore & "';
+                            DELETE FROM archive_officials WHERE NAME = '" & nameToRestore & "';"
+
+        Try
+            If (MessageBox.Show("Are you sure you want to restore '" & nameToRestore.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+                If (manipulate.manipulateDataAt(query)) Then
+                    MessageBox.Show("Barangay Official '" & nameToRestore.ToUpper.Trim & "' was restored successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    MessageBox.Show("An error occured. Failed to restore '" & nameToRestore.ToUpper.Trim & "' Barangay Official.", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+            End If
+        Catch duplicate As MySqlException
+            MessageBox.Show("Failed restoring Barangay Official. A Barangay Official '" & nameToRestore.ToUpper.Trim & "' already exist at the Barangay Officials list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            closeConnection()
+        End Try
+
+    End Sub
+
+
+    Sub deleteOfficials(name As String)
+
+        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (manipulate.manipulateDataAt("DELETE FROM `archive_officials` WHERE Name = '" & name.Trim & "' ")) Then
+                MessageBox.Show("Barangay Official '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("An error occured. Failed to delete Barangay Official '" & name & "'", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End If
+        closeConnection()
+    End Sub
 
 
 

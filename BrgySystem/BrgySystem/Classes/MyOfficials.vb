@@ -109,7 +109,7 @@ Public Class MyOfficials
                 Return True
                 Exit Function
             Else
-                MessageBox.Show("An error occured. Failed to add new Officials!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("An error occured. Failed to add new Barangay Officials!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
                 Exit Function
             End If
@@ -138,11 +138,11 @@ Public Class MyOfficials
     End Function
 
     Sub deleteOfficial(officialname As String)
-        If (MessageBox.Show("Are you sure you want to delete '" & officialname.ToUpper.Trim & "' Official?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+        If (MessageBox.Show("Are you sure you want to delete '" & officialname.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
             If (manage.manipulateDataAt("DELETE FROM `officials` WHERE NAME = '" & officialname.Trim & "' ")) Then
-                MessageBox.Show("Official '" & officialname.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Barangay Official '" & officialname.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
-                MessageBox.Show("Failed to delete Official!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Failed to delete Barangay Official!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
         closeConnection()
@@ -153,15 +153,25 @@ Public Class MyOfficials
                             DELETE FROM `officials` WHERE Name = '" & official & "';"
 
         Try
-            If (MessageBox.Show("Are you sure you want to archive '" & official.ToUpper.Trim & "' Official?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (MessageBox.Show("Are you sure you want to archive '" & official.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
                 If (manage.manipulateDataAt(query)) Then
-                    MessageBox.Show("Official '" & official.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MessageBox.Show("Barangay Official '" & official.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else
-                    MessageBox.Show("Failed to archive Official!", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show("Failed to archive Barangay Official!", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             End If
         Catch duplicate As MySqlException
-            MessageBox.Show("Failed archiving Official. Official '" & official.ToUpper.Trim & "' already exist at the archive list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            Dim officialName_IfImageExist As String = isInputAlreadyExistAtAnotherTable("Name", "archive_officials", "officials", "officials.ImageName", "archive_officials.ImageName")
+            Dim officialName_IfContactExist As String = isInputAlreadyExistAtAnotherTable("Name", "archive_officials", "officials", "officials.CONTACT", "archive_officials.CONTACT")
+
+            If officialName_IfImageExist.Length > 0 Then
+                MessageBox.Show("Failed archiving Barangay Official. Official '" & officialName_IfImageExist & "' from archive is already used this Image.", "IMAGE ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            ElseIf officialName_IfContactExist.Length > 0 Then
+                MessageBox.Show("Failed archiving Barangay Official. Official '" & officialName_IfImageExist & "' from archive is already used this Contact Number.", "IMAGE ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                MessageBox.Show("Failed archiving Barangay Official. Official '" & official.ToUpper.Trim & "' already exist at the archive list.", "NAME ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
 
         Finally
             closeConnection()
@@ -246,7 +256,7 @@ Public Class MyOfficials
 
             End While
         Catch x As FileNotFoundException
-            MessageBox.Show("Picture for Official '" & reader.GetString("NAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Picture for Barangay Official '" & reader.GetString("NAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
             closeConnection()
         End Try

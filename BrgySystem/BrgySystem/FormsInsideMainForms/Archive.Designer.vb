@@ -73,7 +73,7 @@ Partial Class Archive
         Me.restoreButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.OfficialSearchButton = New System.Windows.Forms.Button()
         Me.ArchiveOfficialGridView = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.fullnameColumnOfficials = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.status_ColumnOfficials = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -525,7 +525,7 @@ Partial Class Archive
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.TabPage3.Controls.Add(Me.Button3)
+        Me.TabPage3.Controls.Add(Me.OfficialSearchButton)
         Me.TabPage3.Controls.Add(Me.ArchiveOfficialGridView)
         Me.TabPage3.Controls.Add(Me.OfficialsArchiveSearchField)
         Me.TabPage3.Location = New System.Drawing.Point(4, 34)
@@ -535,16 +535,16 @@ Partial Class Archive
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Official's Archive"
         '
-        'Button3
+        'OfficialSearchButton
         '
-        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.Button3.Location = New System.Drawing.Point(1066, 9)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(38, 39)
-        Me.Button3.TabIndex = 4
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.OfficialSearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.OfficialSearchButton.FlatAppearance.BorderSize = 0
+        Me.OfficialSearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
+        Me.OfficialSearchButton.Location = New System.Drawing.Point(1066, 9)
+        Me.OfficialSearchButton.Name = "OfficialSearchButton"
+        Me.OfficialSearchButton.Size = New System.Drawing.Size(38, 39)
+        Me.OfficialSearchButton.TabIndex = 4
+        Me.OfficialSearchButton.UseVisualStyleBackColor = True
         '
         'ArchiveOfficialGridView
         '
@@ -724,7 +724,7 @@ Partial Class Archive
         Me.OfficialsArchiveSearchField.IconRight = Nothing
         Me.OfficialsArchiveSearchField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.OfficialsArchiveSearchField.Lines = New String(-1) {}
-        Me.OfficialsArchiveSearchField.Location = New System.Drawing.Point(818, 9)
+        Me.OfficialsArchiveSearchField.Location = New System.Drawing.Point(816, 9)
         Me.OfficialsArchiveSearchField.MaxLength = 32767
         Me.OfficialsArchiveSearchField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.OfficialsArchiveSearchField.Modified = False
@@ -801,7 +801,7 @@ Partial Class Archive
     Friend WithEvents ResidentsArchiveSearchField As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents PurokArchiveSearchButton As Button
     Friend WithEvents PurokArchiveSearchField As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents Button3 As Button
+    Friend WithEvents OfficialSearchButton As Button
     Friend WithEvents OfficialsArchiveSearchField As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents PurokGridView As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents ArchiveOfficialGridView As Guna.UI2.WinForms.Guna2DataGridView

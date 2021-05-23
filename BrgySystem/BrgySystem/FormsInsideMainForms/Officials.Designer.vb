@@ -416,7 +416,7 @@ Partial Class Officials
         '
         Me.AddressTextBox.AcceptsReturn = False
         Me.AddressTextBox.AcceptsTab = False
-        Me.AddressTextBox.AccessibleName = "Highest Educational Attainment"
+        Me.AddressTextBox.AccessibleName = "Address"
         Me.AddressTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.AddressTextBox.AnimationSpeed = 200
         Me.AddressTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
