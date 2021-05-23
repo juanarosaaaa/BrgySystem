@@ -282,6 +282,7 @@
     <Compile Include="Classes\ManageSystem.vb" />
     <Compile Include="Classes\MyArchive.vb" />
     <Compile Include="Classes\MyLogin.vb" />
+    <Compile Include="Classes\MyOfficials.vb" />
     <Compile Include="Classes\MyPurok.vb" />
     <Compile Include="Classes\ConnectionDB.vb" />
     <Compile Include="Classes\DataGridViewActionButtonEvent.vb" />

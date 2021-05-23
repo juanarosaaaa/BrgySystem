@@ -318,7 +318,7 @@ Partial Class Archive
         Me.ResidentsArchiveSearchField.SelectionLength = 0
         Me.ResidentsArchiveSearchField.SelectionStart = 0
         Me.ResidentsArchiveSearchField.ShortcutsEnabled = True
-        Me.ResidentsArchiveSearchField.Size = New System.Drawing.Size(260, 39)
+        Me.ResidentsArchiveSearchField.Size = New System.Drawing.Size(260, 42)
         Me.ResidentsArchiveSearchField.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.ResidentsArchiveSearchField.TabIndex = 1
         Me.ResidentsArchiveSearchField.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -417,7 +417,7 @@ Partial Class Archive
         Me.PurokArchiveSearchField.SelectionLength = 0
         Me.PurokArchiveSearchField.SelectionStart = 0
         Me.PurokArchiveSearchField.ShortcutsEnabled = True
-        Me.PurokArchiveSearchField.Size = New System.Drawing.Size(260, 39)
+        Me.PurokArchiveSearchField.Size = New System.Drawing.Size(260, 42)
         Me.PurokArchiveSearchField.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.PurokArchiveSearchField.TabIndex = 3
         Me.PurokArchiveSearchField.TextAlign = System.Windows.Forms.HorizontalAlignment.Left

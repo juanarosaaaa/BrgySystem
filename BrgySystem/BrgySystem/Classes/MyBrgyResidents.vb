@@ -11,7 +11,7 @@ Public Class MyBrgyResidents
 
     Private manage As DataManipulation = New ManageSystem
     Private Const residentsQuery As String = "SELECT FULLNAME,SEX,AGE,CIVIL_STATUS,OCCUPATION,REGISTERED_VOTER,ADDRESS FROM `residents`"
-    Private result As Boolean
+
     Private imgname, imgpath As String
 
 
@@ -195,10 +195,21 @@ Public Class MyBrgyResidents
     End Function
 
     Function IsInputValid()
-        result = False
 
-        Dim arr() As Object = {MyResidents.Fullnametxtbox, MyResidents.SuffixComboBox, MyResidents.CitizenshipTextBox, MyResidents.AddressTextBox,
-        MyResidents.ReligionTextBOx, MyResidents.HighestEducationAttainmentTextBox, MyResidents.ContactTextBox, MyResidents.OccupationTextBox, MyResidents.PurokTextBox, MyResidents.CivilStatusComboBox, MyResidents.SexComboBox, MyResidents.VoterComboBox, MyResidents.SeniorComboBox}
+
+        Dim arr() As Object = {MyResidents.Fullnametxtbox,
+                               MyResidents.SuffixComboBox,
+                               MyResidents.CitizenshipTextBox,
+                               MyResidents.AddressTextBox,
+                               MyResidents.ReligionTextBOx,
+                               MyResidents.HighestEducationAttainmentTextBox,
+                               MyResidents.ContactTextBox,
+                               MyResidents.OccupationTextBox,
+                               MyResidents.PurokTextBox,
+                               MyResidents.CivilStatusComboBox,
+                               MyResidents.SexComboBox,
+                               MyResidents.VoterComboBox,
+                               MyResidents.SeniorComboBox}
 
         For Each inputObjects As Object In arr
 
@@ -228,13 +239,14 @@ Public Class MyBrgyResidents
 
         Next
 
-        Return result
+        Return False
     End Function
 
 
 
 
     Sub getValuesFromDatabaseAndDisplayToInputs(nameOfTheSelectedRow As String)
+
         openConnection()
         Dim command As New MySqlCommand("SELECT * from residents where Fullname = '" & nameOfTheSelectedRow & "' ", getConnection)
         Dim reader As MySqlDataReader
