@@ -148,6 +148,8 @@ Public Class MyOfficials
         closeConnection()
     End Sub
 
+
+
     Sub archiveOfficials(official As String)
         Dim query As String = "INSERT INTO archive_officials SELECT * from `officials` where Name = '" & official & "';
                             DELETE FROM `officials` WHERE Name = '" & official & "';"
@@ -166,9 +168,9 @@ Public Class MyOfficials
             Dim officialName_IfContactExist As String = isInputAlreadyExistAtAnotherTable("Name", "archive_officials", "officials", "officials.CONTACT", "archive_officials.CONTACT")
 
             If officialName_IfImageExist.Length > 0 Then
-                MessageBox.Show("Failed archiving Barangay Official. Official '" & officialName_IfImageExist & "' from archive is already used this Image.", "IMAGE ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Failed archiving Barangay Official. Official '" & officialName_IfImageExist & "' from archive is already used this image.", "IMAGE ALREADY USED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ElseIf officialName_IfContactExist.Length > 0 Then
-                MessageBox.Show("Failed archiving Barangay Official. Official '" & officialName_IfImageExist & "' from archive is already used this Contact Number.", "IMAGE ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Failed archiving Barangay Official. Official '" & officialName_IfImageExist & "' from archive is already used this contact number.", "CONTACT NUMBER ALREADY USED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 MessageBox.Show("Failed archiving Barangay Official. Official '" & official.ToUpper.Trim & "' already exist at the archive list.", "NAME ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -178,6 +180,8 @@ Public Class MyOfficials
 
         End Try
     End Sub
+
+
 
     Function getOfficialsQueryValuesSelectedColumn() As String
         Return getValuesQueryOfTheSelectedColumn

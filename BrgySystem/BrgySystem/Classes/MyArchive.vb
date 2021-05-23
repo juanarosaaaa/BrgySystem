@@ -91,7 +91,18 @@ Public Class MyArchive
                 End If
             End If
         Catch duplicate As MySqlException
-            MessageBox.Show("Failed restoring Resident. A Resident '" & nameToRestore.ToUpper.Trim & "' already exist at the Resident's list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            Dim residentsName_IfImageExist As String = isInputAlreadyExistAtAnotherTable("FULLNAME", "residents", "archive_residents", "archive_residents.ImageName", "residents.ImageName")
+            Dim residentsName_IfContactExist As String = isInputAlreadyExistAtAnotherTable("FULLNAME", "residents", "archive_residents", "archive_residents.CONTACT_NUMBER", "residents.CONTACT_NUMBER")
+
+            If residentsName_IfImageExist.Length > 0 Then
+                MessageBox.Show("Failed restoring Resident. Resident '" & residentsName_IfImageExist & "' from Resident's list is already used this image.", "IMAGE ALREADY USED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            ElseIf residentsName_IfContactExist.Length > 0 Then
+                MessageBox.Show("Failed restoring Resident. Resident '" & residentsName_IfContactExist & "' from Resident's list is already used this contact number.", "CONTACT NUMBER ALREADY USED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                MessageBox.Show("Failed restoring Resident. Resident '" & nameToRestore.ToUpper.Trim & "' already exist at the Resident's list.", "NAME ALREADY USED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+
         Finally
             closeConnection()
         End Try
@@ -131,7 +142,23 @@ Public Class MyArchive
                 End If
             End If
         Catch duplicate As MySqlException
-            MessageBox.Show("Failed restoring Barangay Official. A Barangay Official '" & nameToRestore.ToUpper.Trim & "' already exist at the Barangay Officials list.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+
+            Dim officialName_IfImageExist As String = isInputAlreadyExistAtAnotherTable("Name", "officials", "archive_officials", "archive_officials.ImageName", "officials.ImageName")
+            Dim officialName_IfContactExist As String = isInputAlreadyExistAtAnotherTable("Name", "officials", "archive_officials", "archive_officials.CONTACT", "officials.CONTACT")
+
+            If officialName_IfImageExist.Length > 0 Then
+                MessageBox.Show("Failed restoring Barangay Official. Official '" & officialName_IfImageExist & "' from Barangay Official's list is already used this image.", "IMAGE ALREADY USED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            ElseIf officialName_IfContactExist.Length > 0 Then
+                MessageBox.Show("Failed restoring Barangay Official. Official '" & officialName_IfImageExist & "' from Barangay Official's list is already used this contact number.", "CONTACT NUMBER ALREADY USED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                MessageBox.Show("Failed restoring Barangay Official. Official '" & nameToRestore.ToUpper.Trim & "' already exist at the Barangay Official's list.", "NAME ALREADY EXIST!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+
+
+
+
+
         Finally
             closeConnection()
         End Try
