@@ -229,12 +229,6 @@
   <ItemGroup>
     <Compile Include="Classes\imagePathManager.vb" />
     <Compile Include="Classes\InputValidation.vb" />
-    <Compile Include="ChildForms\BlotterSettlementSchedule.Designer.vb">
-      <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\BlotterSettlementSchedule.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ChildForms\PurokChildForm.Designer.vb">
       <DependentUpon>PurokChildForm.vb</DependentUpon>
     </Compile>
@@ -293,12 +287,6 @@
       <DependentUpon>Archive.vb</DependentUpon>
     </Compile>
     <Compile Include="FormsInsideMainForms\Archive.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormsInsideMainForms\Blotter.Designer.vb">
-      <DependentUpon>Blotter.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormsInsideMainForms\Blotter.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsInsideMainForms\Clearance.Designer.vb">
@@ -377,9 +365,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ChildForms\BlotterSettlementSchedule.resx">
-      <DependentUpon>BlotterSettlementSchedule.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\PurokChildForm.resx">
       <DependentUpon>PurokChildForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -404,9 +389,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Archive.resx">
       <DependentUpon>Archive.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormsInsideMainForms\Blotter.resx">
-      <DependentUpon>Blotter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Clearance.resx">
       <DependentUpon>Clearance.vb</DependentUpon>
