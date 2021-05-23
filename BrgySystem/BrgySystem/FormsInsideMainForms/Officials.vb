@@ -174,7 +174,9 @@
         isNameModified = True
     End Sub
 
+    Private Sub GunaWinSwitch1_CheckedChanged(sender As Object, e As EventArgs)
 
+    End Sub
 
     Private Sub ContactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
         isContactModified = True

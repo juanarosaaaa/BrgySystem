@@ -150,6 +150,9 @@
     <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\..\Downloads\_Getintopc.com_Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
@@ -265,16 +268,11 @@
     <Compile Include="ChildForms\SettingsOrganizationChart.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\UpdateStatusOfSettlementBlotter.Designer.vb">
-      <DependentUpon>UpdateStatusOfSettlementBlotter.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\UpdateStatusOfSettlementBlotter.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Classes\ImageFileManager.vb" />
     <Compile Include="Classes\MyBrgyResidents.vb" />
     <Compile Include="Classes\ManageSystem.vb" />
     <Compile Include="Classes\MyArchive.vb" />
+    <Compile Include="Classes\MyClearance.vb" />
     <Compile Include="Classes\MyLogin.vb" />
     <Compile Include="Classes\MyOfficials.vb" />
     <Compile Include="Classes\MyPurok.vb" />
@@ -383,9 +381,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\SettingsOrganizationChart.resx">
       <DependentUpon>SettingsOrganizationChart.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\UpdateStatusOfSettlementBlotter.resx">
-      <DependentUpon>UpdateStatusOfSettlementBlotter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsInsideMainForms\Archive.resx">
       <DependentUpon>Archive.vb</DependentUpon>

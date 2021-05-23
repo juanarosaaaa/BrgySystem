@@ -155,7 +155,7 @@ Public Class MyBrgyResidents
     Function addOrUpdateResident(message As String, query As String, imageName As String) As Boolean
         Dim res As Boolean = False
         Try
-            If (IsInputValid()) Then
+            If (IsInputInValid()) Then
                 res = False
                 Exit Function
             ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
@@ -204,7 +204,7 @@ Public Class MyBrgyResidents
         Return residentsQuery
     End Function
 
-    Function IsInputValid()
+    Function IsInputInValid()
 
 
         Dim arr() As Object = {MyResidents.Fullnametxtbox,

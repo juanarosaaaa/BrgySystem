@@ -189,7 +189,6 @@ C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\D
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.vbprojAssemblyReference.cache
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.PurokChildForm.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.Archive.resources
-C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.Blotter.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.Clearance.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.Dashboard.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.Officials.resources
@@ -204,7 +203,6 @@ C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\D
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.exe
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.xml
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.pdb
-C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.BlotterSettlementSchedule.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.Login.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.UpdateStatusOfSettlementBlotter.resources
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.SettingsbackupAndRestoreForm.resources

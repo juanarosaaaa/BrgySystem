@@ -40,10 +40,7 @@
         showPanelDisplayOf(Clearance)
     End Sub
 
-    Private Sub Blotter_Button_Click_1(sender As Object, e As EventArgs) Handles Blotter_Button.Click
-        Blotter.Dispose()
-        showPanelDisplayOf(Blotter)
-    End Sub
+
 
     Private Sub Archive_Button_Click_1(sender As Object, e As EventArgs) Handles Archive_Button.Click
         Archive.Dispose()
@@ -66,4 +63,6 @@
         Application.Exit()
 
     End Sub
+
+
 End Class
