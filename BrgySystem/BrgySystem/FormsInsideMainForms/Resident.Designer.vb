@@ -168,7 +168,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 442)
+=======
+        Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 443)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 443)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -345,6 +349,7 @@ Partial Class MyResidents
         Me.GroupBox2.TabIndex = 65
         Me.GroupBox2.TabStop = False
         '
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -569,6 +574,8 @@ Partial Class MyResidents
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
+=======
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         'BirthdateDatePicker
         '
         Me.BirthdateDatePicker.AccessibleName = "Birthdate"
@@ -743,7 +750,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.Fullnametxtbox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.Fullnametxtbox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.Fullnametxtbox.Padding = New System.Windows.Forms.Padding(3)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -765,7 +776,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.Fullnametxtbox.Size = New System.Drawing.Size(381, 37)
+=======
+        Me.Fullnametxtbox.Size = New System.Drawing.Size(381, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.Fullnametxtbox.Size = New System.Drawing.Size(381, 42)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -817,7 +832,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.ResidentsPictureBOx.Size = New System.Drawing.Size(144, 144)
+=======
+        Me.ResidentsPictureBOx.Size = New System.Drawing.Size(158, 158)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.ResidentsPictureBOx.Size = New System.Drawing.Size(158, 158)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -864,7 +883,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.PurokTextBox.Location = New System.Drawing.Point(490, 200)
+=======
+        Me.PurokTextBox.Location = New System.Drawing.Point(490, 195)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.PurokTextBox.Location = New System.Drawing.Point(490, 195)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -902,7 +925,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.PurokTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.PurokTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.PurokTextBox.Padding = New System.Windows.Forms.Padding(3)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -924,7 +951,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.PurokTextBox.Size = New System.Drawing.Size(192, 37)
+=======
+        Me.PurokTextBox.Size = New System.Drawing.Size(192, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.PurokTextBox.Size = New System.Drawing.Size(192, 42)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1012,7 +1043,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.SearchFieldTxtBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.SearchFieldTxtBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.SearchFieldTxtBox.Padding = New System.Windows.Forms.Padding(3)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1101,7 +1136,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.ReligionTextBOx.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.ReligionTextBOx.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.ReligionTextBOx.Padding = New System.Windows.Forms.Padding(3)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1123,7 +1162,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.ReligionTextBOx.Size = New System.Drawing.Size(195, 37)
+=======
+        Me.ReligionTextBOx.Size = New System.Drawing.Size(195, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.ReligionTextBOx.Size = New System.Drawing.Size(195, 42)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1194,7 +1237,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.UpdateButton.Location = New System.Drawing.Point(889, 275)
+=======
+        Me.UpdateButton.Location = New System.Drawing.Point(889, 278)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.UpdateButton.Location = New System.Drawing.Point(889, 278)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1296,7 +1343,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.SaveButton.Location = New System.Drawing.Point(999, 275)
+=======
+        Me.SaveButton.Location = New System.Drawing.Point(999, 278)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.SaveButton.Location = New System.Drawing.Point(999, 278)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1398,7 +1449,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.BrowseButton.Location = New System.Drawing.Point(917, 229)
+=======
+        Me.BrowseButton.Location = New System.Drawing.Point(917, 236)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.BrowseButton.Location = New System.Drawing.Point(917, 236)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1444,7 +1499,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.BrowseButton.Size = New System.Drawing.Size(144, 34)
+=======
+        Me.BrowseButton.Size = New System.Drawing.Size(158, 28)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.BrowseButton.Size = New System.Drawing.Size(158, 28)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1544,7 +1603,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.OccupationTextBox.Location = New System.Drawing.Point(288, 200)
+=======
+        Me.OccupationTextBox.Location = New System.Drawing.Point(288, 195)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.OccupationTextBox.Location = New System.Drawing.Point(288, 195)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1582,7 +1645,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.OccupationTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.OccupationTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.OccupationTextBox.Padding = New System.Windows.Forms.Padding(3)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1604,7 +1671,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.OccupationTextBox.Size = New System.Drawing.Size(195, 37)
+=======
+        Me.OccupationTextBox.Size = New System.Drawing.Size(195, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.OccupationTextBox.Size = New System.Drawing.Size(195, 42)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1683,7 +1754,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.HighestEducationAttainmentTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.HighestEducationAttainmentTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.HighestEducationAttainmentTextBox.Padding = New System.Windows.Forms.Padding(3)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1705,7 +1780,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.HighestEducationAttainmentTextBox.Size = New System.Drawing.Size(266, 33)
+=======
+        Me.HighestEducationAttainmentTextBox.Size = New System.Drawing.Size(266, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.HighestEducationAttainmentTextBox.Size = New System.Drawing.Size(266, 42)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1758,7 +1837,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.ContactTextBox.Location = New System.Drawing.Point(85, 200)
+=======
+        Me.ContactTextBox.Location = New System.Drawing.Point(85, 195)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.ContactTextBox.Location = New System.Drawing.Point(85, 195)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1796,7 +1879,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.ContactTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.ContactTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.ContactTextBox.Padding = New System.Windows.Forms.Padding(3)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1818,7 +1905,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.ContactTextBox.Size = New System.Drawing.Size(201, 37)
+=======
+        Me.ContactTextBox.Size = New System.Drawing.Size(201, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.ContactTextBox.Size = New System.Drawing.Size(201, 42)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1915,7 +2006,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.AddressTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.AddressTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.AddressTextBox.Padding = New System.Windows.Forms.Padding(3)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -1937,7 +2032,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.AddressTextBox.Size = New System.Drawing.Size(379, 37)
+=======
+        Me.AddressTextBox.Size = New System.Drawing.Size(379, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.AddressTextBox.Size = New System.Drawing.Size(379, 42)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -2031,7 +2130,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.CitizenshipTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.CitizenshipTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.CitizenshipTextBox.Padding = New System.Windows.Forms.Padding(3)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
@@ -2053,7 +2156,11 @@ Partial Class MyResidents
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.CitizenshipTextBox.Size = New System.Drawing.Size(155, 33)
+=======
+        Me.CitizenshipTextBox.Size = New System.Drawing.Size(155, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 =======
         Me.CitizenshipTextBox.Size = New System.Drawing.Size(155, 42)
 >>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
