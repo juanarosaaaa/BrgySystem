@@ -65,7 +65,8 @@ Partial Class Dashboard
         Me.BunifuLabel1.CursorType = Nothing
         Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel1.Location = New System.Drawing.Point(23, 27)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(31, 33)
+        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel1.Size = New System.Drawing.Size(174, 50)
@@ -87,11 +88,11 @@ Partial Class Dashboard
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DeepPink
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.DodgerBlue
         Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(58, 109)
-        Me.BunifuGradientPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(77, 134)
+        Me.BunifuGradientPanel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
         Me.BunifuGradientPanel1.Quality = 10
-        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(256, 160)
+        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(341, 197)
         Me.BunifuGradientPanel1.TabIndex = 2
         '
         'BunifuLabel3
@@ -101,8 +102,8 @@ Partial Class Dashboard
         Me.BunifuLabel3.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel3.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel3.Location = New System.Drawing.Point(7, 49)
-        Me.BunifuLabel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel3.Location = New System.Drawing.Point(9, 60)
+        Me.BunifuLabel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel3.Size = New System.Drawing.Size(157, 21)
@@ -116,13 +117,13 @@ Partial Class Dashboard
         Me.BunifuPictureBox1.AllowFocused = False
         Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BunifuPictureBox1.AutoSizeHeight = True
-        Me.BunifuPictureBox1.BorderRadius = 37
+        Me.BunifuPictureBox1.BorderRadius = 50
         Me.BunifuPictureBox1.Image = CType(resources.GetObject("BunifuPictureBox1.Image"), System.Drawing.Image)
         Me.BunifuPictureBox1.IsCircle = True
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(172, 15)
-        Me.BunifuPictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuPictureBox1.Location = New System.Drawing.Point(229, 18)
+        Me.BunifuPictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
-        Me.BunifuPictureBox1.Size = New System.Drawing.Size(75, 75)
+        Me.BunifuPictureBox1.Size = New System.Drawing.Size(100, 100)
         Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox1.TabIndex = 1
         Me.BunifuPictureBox1.TabStop = False
@@ -135,8 +136,8 @@ Partial Class Dashboard
         Me.BunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel2.Font = New System.Drawing.Font("Segoe UI Semilight", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel2.Location = New System.Drawing.Point(14, 117)
-        Me.BunifuLabel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel2.Location = New System.Drawing.Point(19, 144)
+        Me.BunifuLabel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel2.Size = New System.Drawing.Size(190, 37)
@@ -158,11 +159,11 @@ Partial Class Dashboard
         Me.BunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.DeepPink
         Me.BunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.DodgerBlue
         Me.BunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.BunifuGradientPanel2.Location = New System.Drawing.Point(362, 109)
-        Me.BunifuGradientPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuGradientPanel2.Location = New System.Drawing.Point(483, 134)
+        Me.BunifuGradientPanel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel2.Name = "BunifuGradientPanel2"
         Me.BunifuGradientPanel2.Quality = 10
-        Me.BunifuGradientPanel2.Size = New System.Drawing.Size(256, 160)
+        Me.BunifuGradientPanel2.Size = New System.Drawing.Size(341, 197)
         Me.BunifuGradientPanel2.TabIndex = 3
         '
         'BunifuLabel4
@@ -171,8 +172,8 @@ Partial Class Dashboard
         Me.BunifuLabel4.AutoEllipsis = False
         Me.BunifuLabel4.CursorType = Nothing
         Me.BunifuLabel4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel4.Location = New System.Drawing.Point(11, 49)
-        Me.BunifuLabel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel4.Location = New System.Drawing.Point(15, 60)
+        Me.BunifuLabel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel4.Size = New System.Drawing.Size(157, 21)
@@ -186,13 +187,13 @@ Partial Class Dashboard
         Me.BunifuPictureBox2.AllowFocused = False
         Me.BunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BunifuPictureBox2.AutoSizeHeight = True
-        Me.BunifuPictureBox2.BorderRadius = 37
+        Me.BunifuPictureBox2.BorderRadius = 50
         Me.BunifuPictureBox2.Image = CType(resources.GetObject("BunifuPictureBox2.Image"), System.Drawing.Image)
         Me.BunifuPictureBox2.IsCircle = True
-        Me.BunifuPictureBox2.Location = New System.Drawing.Point(172, 15)
-        Me.BunifuPictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuPictureBox2.Location = New System.Drawing.Point(229, 18)
+        Me.BunifuPictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuPictureBox2.Name = "BunifuPictureBox2"
-        Me.BunifuPictureBox2.Size = New System.Drawing.Size(75, 75)
+        Me.BunifuPictureBox2.Size = New System.Drawing.Size(100, 100)
         Me.BunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox2.TabIndex = 1
         Me.BunifuPictureBox2.TabStop = False
@@ -204,8 +205,8 @@ Partial Class Dashboard
         Me.BunifuLabel5.AutoEllipsis = False
         Me.BunifuLabel5.CursorType = Nothing
         Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI Semilight", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel5.Location = New System.Drawing.Point(14, 117)
-        Me.BunifuLabel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel5.Location = New System.Drawing.Point(19, 144)
+        Me.BunifuLabel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel5.Name = "BunifuLabel5"
         Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel5.Size = New System.Drawing.Size(160, 37)
@@ -227,11 +228,11 @@ Partial Class Dashboard
         Me.BunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.DeepPink
         Me.BunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.DodgerBlue
         Me.BunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.BunifuGradientPanel3.Location = New System.Drawing.Point(58, 295)
-        Me.BunifuGradientPanel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuGradientPanel3.Location = New System.Drawing.Point(77, 363)
+        Me.BunifuGradientPanel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel3.Name = "BunifuGradientPanel3"
         Me.BunifuGradientPanel3.Quality = 10
-        Me.BunifuGradientPanel3.Size = New System.Drawing.Size(256, 160)
+        Me.BunifuGradientPanel3.Size = New System.Drawing.Size(341, 197)
         Me.BunifuGradientPanel3.TabIndex = 3
         '
         'BunifuLabel6
@@ -240,8 +241,8 @@ Partial Class Dashboard
         Me.BunifuLabel6.AutoEllipsis = False
         Me.BunifuLabel6.CursorType = Nothing
         Me.BunifuLabel6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel6.Location = New System.Drawing.Point(15, 57)
-        Me.BunifuLabel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel6.Location = New System.Drawing.Point(20, 70)
+        Me.BunifuLabel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel6.Name = "BunifuLabel6"
         Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel6.Size = New System.Drawing.Size(157, 21)
@@ -255,13 +256,13 @@ Partial Class Dashboard
         Me.BunifuPictureBox3.AllowFocused = False
         Me.BunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BunifuPictureBox3.AutoSizeHeight = True
-        Me.BunifuPictureBox3.BorderRadius = 37
+        Me.BunifuPictureBox3.BorderRadius = 50
         Me.BunifuPictureBox3.Image = CType(resources.GetObject("BunifuPictureBox3.Image"), System.Drawing.Image)
         Me.BunifuPictureBox3.IsCircle = True
-        Me.BunifuPictureBox3.Location = New System.Drawing.Point(172, 15)
-        Me.BunifuPictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuPictureBox3.Location = New System.Drawing.Point(229, 18)
+        Me.BunifuPictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuPictureBox3.Name = "BunifuPictureBox3"
-        Me.BunifuPictureBox3.Size = New System.Drawing.Size(75, 75)
+        Me.BunifuPictureBox3.Size = New System.Drawing.Size(100, 100)
         Me.BunifuPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox3.TabIndex = 1
         Me.BunifuPictureBox3.TabStop = False
@@ -273,8 +274,8 @@ Partial Class Dashboard
         Me.BunifuLabel7.AutoEllipsis = False
         Me.BunifuLabel7.CursorType = Nothing
         Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI Semilight", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel7.Location = New System.Drawing.Point(14, 117)
-        Me.BunifuLabel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel7.Location = New System.Drawing.Point(19, 144)
+        Me.BunifuLabel7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel7.Name = "BunifuLabel7"
         Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel7.Size = New System.Drawing.Size(150, 37)
@@ -295,11 +296,11 @@ Partial Class Dashboard
         Me.BunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.DeepPink
         Me.BunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.DodgerBlue
         Me.BunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.BunifuGradientPanel4.Location = New System.Drawing.Point(737, 109)
-        Me.BunifuGradientPanel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuGradientPanel4.Location = New System.Drawing.Point(983, 134)
+        Me.BunifuGradientPanel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel4.Name = "BunifuGradientPanel4"
         Me.BunifuGradientPanel4.Quality = 10
-        Me.BunifuGradientPanel4.Size = New System.Drawing.Size(338, 283)
+        Me.BunifuGradientPanel4.Size = New System.Drawing.Size(451, 348)
         Me.BunifuGradientPanel4.TabIndex = 4
         '
         'BunifuLabel12
@@ -308,8 +309,8 @@ Partial Class Dashboard
         Me.BunifuLabel12.AutoEllipsis = False
         Me.BunifuLabel12.CursorType = Nothing
         Me.BunifuLabel12.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel12.Location = New System.Drawing.Point(94, 109)
-        Me.BunifuLabel12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel12.Location = New System.Drawing.Point(125, 134)
+        Me.BunifuLabel12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel12.Name = "BunifuLabel12"
         Me.BunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel12.Size = New System.Drawing.Size(140, 84)
@@ -325,8 +326,8 @@ Partial Class Dashboard
         Me.BunifuLabel8.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel8.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel8.Font = New System.Drawing.Font("Segoe UI Semilight", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel8.Location = New System.Drawing.Point(30, 23)
-        Me.BunifuLabel8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel8.Location = New System.Drawing.Point(40, 28)
+        Me.BunifuLabel8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel8.Name = "BunifuLabel8"
         Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel8.Size = New System.Drawing.Size(87, 37)
@@ -346,11 +347,11 @@ Partial Class Dashboard
         Me.BunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.DeepPink
         Me.BunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.DodgerBlue
         Me.BunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.BunifuGradientPanel5.Location = New System.Drawing.Point(737, 412)
-        Me.BunifuGradientPanel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuGradientPanel5.Location = New System.Drawing.Point(983, 507)
+        Me.BunifuGradientPanel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel5.Name = "BunifuGradientPanel5"
         Me.BunifuGradientPanel5.Quality = 10
-        Me.BunifuGradientPanel5.Size = New System.Drawing.Size(338, 283)
+        Me.BunifuGradientPanel5.Size = New System.Drawing.Size(451, 348)
         Me.BunifuGradientPanel5.TabIndex = 4
         '
         'BunifuLabel10
@@ -359,8 +360,8 @@ Partial Class Dashboard
         Me.BunifuLabel10.AutoEllipsis = False
         Me.BunifuLabel10.CursorType = Nothing
         Me.BunifuLabel10.Font = New System.Drawing.Font("Segoe UI Semilight", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel10.Location = New System.Drawing.Point(30, 25)
-        Me.BunifuLabel10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel10.Location = New System.Drawing.Point(40, 31)
+        Me.BunifuLabel10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel10.Name = "BunifuLabel10"
         Me.BunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel10.Size = New System.Drawing.Size(70, 37)
@@ -382,11 +383,11 @@ Partial Class Dashboard
         Me.BunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.DeepPink
         Me.BunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.DodgerBlue
         Me.BunifuGradientPanel6.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.BunifuGradientPanel6.Location = New System.Drawing.Point(362, 295)
-        Me.BunifuGradientPanel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuGradientPanel6.Location = New System.Drawing.Point(483, 363)
+        Me.BunifuGradientPanel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel6.Name = "BunifuGradientPanel6"
         Me.BunifuGradientPanel6.Quality = 10
-        Me.BunifuGradientPanel6.Size = New System.Drawing.Size(256, 160)
+        Me.BunifuGradientPanel6.Size = New System.Drawing.Size(341, 197)
         Me.BunifuGradientPanel6.TabIndex = 2
         '
         'BunifuLabel9
@@ -395,8 +396,8 @@ Partial Class Dashboard
         Me.BunifuLabel9.AutoEllipsis = False
         Me.BunifuLabel9.CursorType = Nothing
         Me.BunifuLabel9.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel9.Location = New System.Drawing.Point(11, 57)
-        Me.BunifuLabel9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel9.Location = New System.Drawing.Point(15, 70)
+        Me.BunifuLabel9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel9.Name = "BunifuLabel9"
         Me.BunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel9.Size = New System.Drawing.Size(157, 21)
@@ -410,13 +411,13 @@ Partial Class Dashboard
         Me.BunifuPictureBox4.AllowFocused = False
         Me.BunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BunifuPictureBox4.AutoSizeHeight = True
-        Me.BunifuPictureBox4.BorderRadius = 37
+        Me.BunifuPictureBox4.BorderRadius = 50
         Me.BunifuPictureBox4.Image = CType(resources.GetObject("BunifuPictureBox4.Image"), System.Drawing.Image)
         Me.BunifuPictureBox4.IsCircle = True
-        Me.BunifuPictureBox4.Location = New System.Drawing.Point(172, 15)
-        Me.BunifuPictureBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuPictureBox4.Location = New System.Drawing.Point(229, 18)
+        Me.BunifuPictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuPictureBox4.Name = "BunifuPictureBox4"
-        Me.BunifuPictureBox4.Size = New System.Drawing.Size(75, 75)
+        Me.BunifuPictureBox4.Size = New System.Drawing.Size(100, 100)
         Me.BunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox4.TabIndex = 1
         Me.BunifuPictureBox4.TabStop = False
@@ -428,8 +429,8 @@ Partial Class Dashboard
         Me.BunifuLabel11.AutoEllipsis = False
         Me.BunifuLabel11.CursorType = Nothing
         Me.BunifuLabel11.Font = New System.Drawing.Font("Segoe UI Semilight", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel11.Location = New System.Drawing.Point(14, 117)
-        Me.BunifuLabel11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuLabel11.Location = New System.Drawing.Point(19, 144)
+        Me.BunifuLabel11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuLabel11.Name = "BunifuLabel11"
         Me.BunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel11.Size = New System.Drawing.Size(115, 37)
@@ -445,13 +446,13 @@ Partial Class Dashboard
         Me.BunifuCircleProgress1.AnimationSpeed = 1
         Me.BunifuCircleProgress1.BackColor = System.Drawing.Color.Transparent
         Me.BunifuCircleProgress1.CircleMargin = 10
-        Me.BunifuCircleProgress1.Font = New System.Drawing.Font("Segoe UI Black", 39.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCircleProgress1.Font = New System.Drawing.Font("Segoe UI Black", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCircleProgress1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuCircleProgress1.IsPercentage = True
         Me.BunifuCircleProgress1.LineProgressThickness = 10
         Me.BunifuCircleProgress1.LineThickness = 10
-        Me.BunifuCircleProgress1.Location = New System.Drawing.Point(73, 509)
-        Me.BunifuCircleProgress1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BunifuCircleProgress1.Location = New System.Drawing.Point(97, 626)
+        Me.BunifuCircleProgress1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuCircleProgress1.Name = "BunifuCircleProgress1"
         Me.BunifuCircleProgress1.ProgressAnimationSpeed = 200
         Me.BunifuCircleProgress1.ProgressBackColor = System.Drawing.Color.Gainsboro
@@ -461,7 +462,7 @@ Partial Class Dashboard
         Me.BunifuCircleProgress1.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid
         Me.BunifuCircleProgress1.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round
         Me.BunifuCircleProgress1.SecondaryFont = New System.Drawing.Font("Lato", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCircleProgress1.Size = New System.Drawing.Size(138, 138)
+        Me.BunifuCircleProgress1.Size = New System.Drawing.Size(184, 184)
         Me.BunifuCircleProgress1.SubScriptColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.BunifuCircleProgress1.SubScriptMargin = New System.Windows.Forms.Padding(5, -20, 0, 0)
         Me.BunifuCircleProgress1.SubScriptText = ".00"
@@ -477,12 +478,12 @@ Partial Class Dashboard
         '
         'Dashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1124, 766)
+        Me.ClientSize = New System.Drawing.Size(1499, 943)
         Me.Controls.Add(Me.BunifuCircleProgress1)
         Me.Controls.Add(Me.BunifuGradientPanel5)
         Me.Controls.Add(Me.BunifuGradientPanel4)
@@ -492,6 +493,7 @@ Partial Class Dashboard
         Me.Controls.Add(Me.BunifuGradientPanel1)
         Me.Controls.Add(Me.BunifuLabel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Dashboard"
         Me.Text = "Dashboard"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BunifuLabel2.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(245, 245, 245); text-align: left; }</value>
   </data>
   <data name="RichTextBox1.Text" xml:space="preserve">
     <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
   </data>
   <data name="BunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(245, 245, 245); text-align: left; }</value>
   </data>
   <data name="RichTextBox2.Text" xml:space="preserve">
     <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
@@ -132,11 +132,19 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAMQAAAAsCAYAAAA6sReEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACXSURBVHhe7dNLEYNAAECxSltHRQIOELZ44jftzPNADpGQ
-        z/ad47ICc9wh1m3ZD3i964IQ8CcEhBAQQkAIASEEhBAQQkAIASEEhBAQQkAIASEEhBAQQkAIASEEhBAQ
-        QkAIASEEhBAQQkAIASEEhBAQQkAIASEEhBAQQkAIASEEhBAQQkAIASEEhBAQQkAIAfELMZ4U8HpznGc4
-        CXjrcqtIAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAANcAAAAuCAYAAAC74IxkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKgSURBVHhe7d2vk9NAGMbxSiTyJBKJPInEAUk64EAikSfP
+        IZGdJCISyZ+APIk8iUR2hmQ5eeTZLL2569veZpvyo/2+M58z2Usq8s7uvt3dzqaOvG6fyrzq3ua1Owf+
+        ZcN7Oryzb5rrB+E1/vsxb7qTvHLvitJ9KWp3DRyCrHZfi6p9/2px9Si86n8ulO3+AxgfDDgwl0q08Orv
+        L7LSvSCpcIz6YeO3omxfh1SYLjT8Y+gHDEPGrPzxOKTGbvGycqdZ5b5bDwKOUumWGsWFFEkLdYNZ2V6Z
+        DwCOXepcTIll3hDASlZ3ZyFl4sIPBemxgCjRQ0TV9pljAfHUEc2r7klIoc1R1O2FdQMAm6lUv3WFh7o3
+        6x8BRNhW4OALYiCdplNm76Wss/4BQLy8ch9CSt1Ef+HybkMAI5Vueav3UoXQbAhgNG1fCamluVZ3ZjUC
+        kKJdhNSi/A5MSYUNn1gaH1oNAKTzK+eZbwHT8/Mu/bEuAkin3fqsfgf2wK+W58tjYHo6WYoyPLAHPrk0
+        NrQuAkjnk4uCBjA9X9BQPd66CGAX3bPZ82b50L4IINVqZ7J2UVoNAIynbf+rlfHag2I1AjBeVneffGIp
+        dNqT1QhAgrvHXnPiE7A7DQlVxwhpNURe//xoNQYwQtV+Dil1E8o2ei8gnT+/sOlOQkrdDtYZAuk0+gup
+        tB4qH9J7AeNt7bV+h5ZDqaF1AwAbxP4wnv+dY+sGANaYZxVuC6qHQASrOhgTOiLKvCEAn1jm8dWxQQUR
+        WLe1Mjgm/J6v0i2thwDHxBf7YosXsaEvmZWtVBJxvNrFveX2XUI3z2vX2A8HDlA/t9L5niEF9h9+k2Xf
+        PWp5Pb0ZDk6fUNqqv9eeKiZUMdG8bODOgf+RtubrHV5b1Z4Us9kvzpmmlVTj6wUAAAAASUVORK5CYII=
 </value>
   </data>
 </root>
