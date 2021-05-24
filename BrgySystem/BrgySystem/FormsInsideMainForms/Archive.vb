@@ -114,7 +114,7 @@ Public Class Archive
     End Sub
 
     Private Sub ResidentsArchiveSearchButton_Click(sender As Object, e As EventArgs) Handles ResidentsArchiveSearchButton.Click
-        search.searchValueIn("SELECT * FROM `archive_residents` WHERE FULLNAME Like '%" & ResidentsArchiveSearchField.Text.Trim & "%'", ResidentsArchiveGridView)
+        search.searchValueIn(archiveResidentsQuery & " WHERE FULLNAME Like '%" & ResidentsArchiveSearchField.Text.Trim & "%'", ResidentsArchiveGridView)
     End Sub
 
 
@@ -182,6 +182,6 @@ Public Class Archive
     End Sub
 
     Private Sub OfficialSearchButton_Click_1(sender As Object, e As EventArgs) Handles OfficialSearchButton.Click
-        alreadyStartAtOfficialArchive = True
+        search.searchValueIn(archiveOfficialQuery & "WHERE Name LIKE '%" & OfficialsArchiveSearchField.Text.Trim & "%'", ArchiveOfficialGridView)
     End Sub
 End Class

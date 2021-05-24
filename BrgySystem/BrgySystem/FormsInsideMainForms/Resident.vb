@@ -82,14 +82,19 @@ Public Class MyResidents
     End Sub
 
     Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchFieldTxtBox.KeyDown
-        valueYouSearchFor = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '%" & SearchFieldTxtBox.Text.Trim & "%'"
+        If e.KeyCode = Keys.Enter Then
+            search.searchValueIn(valueYouSearchFor, ResidentsGridView)
+        End If
+
+    End Sub
+
+    Private Sub Searchbuttonclicked(sender As Object, e As EventArgs) Handles SearchButton.Click
         search.searchValueIn(valueYouSearchFor, ResidentsGridView)
     End Sub
 
 
-
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
-
+        valueYouSearchFor = brgyResidents.getResidentsQueryForSelectedColumns + "WHERE FULLNAME LIKE '%" & SearchFieldTxtBox.Text.Trim & "%'"
         If (InputIsNull(SearchFieldTxtBox.Text.Trim) And AlreadyStart) And AlreadyStart Then
             manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         End If
@@ -104,9 +109,7 @@ Public Class MyResidents
         AlreadyStart = True
     End Sub
 
-    Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        search.searchValueIn(valueYouSearchFor, ResidentsGridView)
-    End Sub
+
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
 
@@ -188,6 +191,7 @@ Public Class MyResidents
 
 
     End Sub
+
 
 
     Private Sub contactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown

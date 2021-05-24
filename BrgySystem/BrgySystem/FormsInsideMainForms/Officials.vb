@@ -46,18 +46,20 @@
 
 
     Private Sub SearchfieldTExtBox_TextChanged(sender As Object, e As EventArgs) Handles SearchfieldTExtBox.TextChanged
+        valueYouSearchFor = officials_.getOfficialsQueryValuesSelectedColumn + "WHERE NAME LIKE '%" & SearchfieldTExtBox.Text.Trim & "%' "
         If InputIsNull(SearchfieldTExtBox.Text.Trim) And isAlreadyStart Then
             manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
         End If
     End Sub
 
 
-
+    Private Sub SearchButtonCLicked(sender As Object, e As EventArgs) Handles OfficialSearchButton.Click
+        search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
+    End Sub
 
 
     Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchfieldTExtBox.KeyDown
         If e.KeyCode = Keys.Enter Then
-            valueYouSearchFor = officials_.getOfficialsQueryValuesSelectedColumn + "WHERE NAME LIKE '%" & SearchfieldTExtBox.Text.Trim & "%' "
             search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
         End If
     End Sub
@@ -176,9 +178,7 @@
 
     End Sub
 
-    Private Sub SearchButtonCLicked(sender As Object, e As EventArgs) Handles OfficialSearchButton.Click
-        search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
-    End Sub
+
 
     Private Sub ContactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
         isContactModified = True
