@@ -204,7 +204,11 @@ Partial Class OrganizationalChart
         StateProperties4.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox1.OnIdleState = StateProperties4
+<<<<<<< HEAD
         Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox1.PlaceholderText = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
@@ -313,7 +317,11 @@ Partial Class OrganizationalChart
         StateProperties8.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox2.OnIdleState = StateProperties8
+<<<<<<< HEAD
         Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox2.PlaceholderText = "Enter text"
@@ -323,7 +331,11 @@ Partial Class OrganizationalChart
         Me.BunifuTextBox2.SelectionLength = 0
         Me.BunifuTextBox2.SelectionStart = 0
         Me.BunifuTextBox2.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.BunifuTextBox2.Size = New System.Drawing.Size(355, 41)
+=======
+        Me.BunifuTextBox2.Size = New System.Drawing.Size(355, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox2.TabIndex = 2
         Me.BunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -422,7 +434,11 @@ Partial Class OrganizationalChart
         StateProperties12.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox3.OnIdleState = StateProperties12
+<<<<<<< HEAD
         Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox3.PlaceholderText = "Enter text"
@@ -432,7 +448,11 @@ Partial Class OrganizationalChart
         Me.BunifuTextBox3.SelectionLength = 0
         Me.BunifuTextBox3.SelectionStart = 0
         Me.BunifuTextBox3.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.BunifuTextBox3.Size = New System.Drawing.Size(355, 41)
+=======
+        Me.BunifuTextBox3.Size = New System.Drawing.Size(355, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox3.TabIndex = 2
         Me.BunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -531,7 +551,11 @@ Partial Class OrganizationalChart
         StateProperties16.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox4.OnIdleState = StateProperties16
+<<<<<<< HEAD
         Me.BunifuTextBox4.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox4.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox4.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox4.PlaceholderText = "Enter text"
@@ -541,7 +565,11 @@ Partial Class OrganizationalChart
         Me.BunifuTextBox4.SelectionLength = 0
         Me.BunifuTextBox4.SelectionStart = 0
         Me.BunifuTextBox4.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.BunifuTextBox4.Size = New System.Drawing.Size(355, 41)
+=======
+        Me.BunifuTextBox4.Size = New System.Drawing.Size(355, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox4.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox4.TabIndex = 2
         Me.BunifuTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -624,7 +652,11 @@ Partial Class OrganizationalChart
         StateProperties20.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox7.OnIdleState = StateProperties20
+<<<<<<< HEAD
         Me.BunifuTextBox7.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox7.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox7.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox7.PlaceholderText = "Enter text"
@@ -634,7 +666,11 @@ Partial Class OrganizationalChart
         Me.BunifuTextBox7.SelectionLength = 0
         Me.BunifuTextBox7.SelectionStart = 0
         Me.BunifuTextBox7.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.BunifuTextBox7.Size = New System.Drawing.Size(355, 41)
+=======
+        Me.BunifuTextBox7.Size = New System.Drawing.Size(355, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox7.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox7.TabIndex = 2
         Me.BunifuTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -716,7 +752,11 @@ Partial Class OrganizationalChart
         StateProperties24.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox11.OnIdleState = StateProperties24
+<<<<<<< HEAD
         Me.BunifuTextBox11.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox11.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox11.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox11.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox11.PlaceholderText = "Enter text"
@@ -808,7 +848,11 @@ Partial Class OrganizationalChart
         StateProperties28.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox12.OnIdleState = StateProperties28
+<<<<<<< HEAD
         Me.BunifuTextBox12.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox12.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox12.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox12.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox12.PlaceholderText = "Enter text"
@@ -818,7 +862,11 @@ Partial Class OrganizationalChart
         Me.BunifuTextBox12.SelectionLength = 0
         Me.BunifuTextBox12.SelectionStart = 0
         Me.BunifuTextBox12.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.BunifuTextBox12.Size = New System.Drawing.Size(355, 41)
+=======
+        Me.BunifuTextBox12.Size = New System.Drawing.Size(355, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox12.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox12.TabIndex = 2
         Me.BunifuTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -985,7 +1033,11 @@ Partial Class OrganizationalChart
         StateProperties32.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox16.OnIdleState = StateProperties32
+<<<<<<< HEAD
         Me.BunifuTextBox16.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox16.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox16.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox16.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox16.PlaceholderText = "Enter text"
@@ -1095,7 +1147,11 @@ Partial Class OrganizationalChart
         StateProperties36.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox15.OnIdleState = StateProperties36
+<<<<<<< HEAD
         Me.BunifuTextBox15.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox15.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox15.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox15.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox15.PlaceholderText = "Enter text"
@@ -1203,7 +1259,11 @@ Partial Class OrganizationalChart
         StateProperties40.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox5.OnIdleState = StateProperties40
+<<<<<<< HEAD
         Me.BunifuTextBox5.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox5.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox5.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox5.PlaceholderText = "Enter text"
@@ -1213,7 +1273,11 @@ Partial Class OrganizationalChart
         Me.BunifuTextBox5.SelectionLength = 0
         Me.BunifuTextBox5.SelectionStart = 0
         Me.BunifuTextBox5.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.BunifuTextBox5.Size = New System.Drawing.Size(355, 41)
+=======
+        Me.BunifuTextBox5.Size = New System.Drawing.Size(355, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox5.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox5.TabIndex = 2
         Me.BunifuTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1362,7 +1426,11 @@ Partial Class OrganizationalChart
         StateProperties44.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox14.OnIdleState = StateProperties44
+<<<<<<< HEAD
         Me.BunifuTextBox14.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox14.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox14.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox14.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox14.PlaceholderText = "Enter text"
@@ -1455,7 +1523,11 @@ Partial Class OrganizationalChart
         StateProperties48.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox6.OnIdleState = StateProperties48
+<<<<<<< HEAD
         Me.BunifuTextBox6.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox6.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox6.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox6.PlaceholderText = "Enter text"
@@ -1564,7 +1636,11 @@ Partial Class OrganizationalChart
         StateProperties52.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties52.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox8.OnIdleState = StateProperties52
+<<<<<<< HEAD
         Me.BunifuTextBox8.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.BunifuTextBox8.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BunifuTextBox8.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox8.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox8.PlaceholderText = "Enter text"

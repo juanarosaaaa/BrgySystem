@@ -80,11 +80,6 @@ Partial Class MyResidents
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.SeniorComboBox = New Bunifu.UI.WinForms.BunifuDropdown()
-        Me.VoterComboBox = New Bunifu.UI.WinForms.BunifuDropdown()
-        Me.CivilStatusComboBox = New Bunifu.UI.WinForms.BunifuDropdown()
-        Me.SexComboBox = New Bunifu.UI.WinForms.BunifuDropdown()
-        Me.SuffixComboBox = New Bunifu.UI.WinForms.BunifuDropdown()
         Me.BirthdateDatePicker = New Bunifu.UI.WinForms.BunifuDatePicker()
         Me.AddNewBttn = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.Fullnametxtbox = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -99,14 +94,19 @@ Partial Class MyResidents
         Me.BrowseButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.BunifuLabel15 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.CivilStatusComboBox = New System.Windows.Forms.ComboBox()
         Me.OccupationTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.HighestEducationAttainmentTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.ContactTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel7 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.AddressTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.SeniorComboBox = New System.Windows.Forms.ComboBox()
         Me.CitizenshipTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel6 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.SuffixComboBox = New System.Windows.Forms.ComboBox()
+        Me.SexComboBox = New System.Windows.Forms.ComboBox()
         Me.BunifuLabel16 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.VoterComboBox = New System.Windows.Forms.ComboBox()
         Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel14 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -165,7 +165,11 @@ Partial Class MyResidents
         Me.ResidentsGridView.RowHeadersWidth = 47
         Me.ResidentsGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.ResidentsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+<<<<<<< HEAD
         Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 442)
+=======
+        Me.ResidentsGridView.Size = New System.Drawing.Size(1105, 443)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.ResidentsGridView.TabIndex = 6
         Me.ResidentsGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ResidentsGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -292,11 +296,6 @@ Partial Class MyResidents
         Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.GroupBox2.Controls.Add(Me.SeniorComboBox)
-        Me.GroupBox2.Controls.Add(Me.VoterComboBox)
-        Me.GroupBox2.Controls.Add(Me.CivilStatusComboBox)
-        Me.GroupBox2.Controls.Add(Me.SexComboBox)
-        Me.GroupBox2.Controls.Add(Me.SuffixComboBox)
         Me.GroupBox2.Controls.Add(Me.BirthdateDatePicker)
         Me.GroupBox2.Controls.Add(Me.AddNewBttn)
         Me.GroupBox2.Controls.Add(Me.Fullnametxtbox)
@@ -311,14 +310,19 @@ Partial Class MyResidents
         Me.GroupBox2.Controls.Add(Me.BrowseButton)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel15)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel2)
+        Me.GroupBox2.Controls.Add(Me.CivilStatusComboBox)
         Me.GroupBox2.Controls.Add(Me.OccupationTextBox)
         Me.GroupBox2.Controls.Add(Me.HighestEducationAttainmentTextBox)
         Me.GroupBox2.Controls.Add(Me.ContactTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel7)
         Me.GroupBox2.Controls.Add(Me.AddressTextBox)
+        Me.GroupBox2.Controls.Add(Me.SeniorComboBox)
         Me.GroupBox2.Controls.Add(Me.CitizenshipTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel6)
+        Me.GroupBox2.Controls.Add(Me.SuffixComboBox)
+        Me.GroupBox2.Controls.Add(Me.SexComboBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel16)
+        Me.GroupBox2.Controls.Add(Me.VoterComboBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel1)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel14)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel3)
@@ -333,6 +337,7 @@ Partial Class MyResidents
         Me.GroupBox2.TabIndex = 65
         Me.GroupBox2.TabStop = False
         '
+<<<<<<< HEAD
         'SeniorComboBox
         '
         Me.SeniorComboBox.BackColor = System.Drawing.Color.Transparent
@@ -548,6 +553,8 @@ Partial Class MyResidents
         Me.SuffixComboBox.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left
         Me.SuffixComboBox.TextLeftMargin = 5
         '
+=======
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         'BirthdateDatePicker
         '
         Me.BirthdateDatePicker.AccessibleName = "Birthdate"
@@ -719,7 +726,11 @@ Partial Class MyResidents
         StateProperties4.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.Fullnametxtbox.OnIdleState = StateProperties4
+<<<<<<< HEAD
         Me.Fullnametxtbox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.Fullnametxtbox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.Fullnametxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Fullnametxtbox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.Fullnametxtbox.PlaceholderText = ""
@@ -729,7 +740,11 @@ Partial Class MyResidents
         Me.Fullnametxtbox.SelectionLength = 0
         Me.Fullnametxtbox.SelectionStart = 0
         Me.Fullnametxtbox.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.Fullnametxtbox.Size = New System.Drawing.Size(381, 37)
+=======
+        Me.Fullnametxtbox.Size = New System.Drawing.Size(381, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.Fullnametxtbox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.Fullnametxtbox.TabIndex = 107
         Me.Fullnametxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -769,7 +784,11 @@ Partial Class MyResidents
         Me.ResidentsPictureBOx.IsCircle = True
         Me.ResidentsPictureBOx.Location = New System.Drawing.Point(917, 79)
         Me.ResidentsPictureBOx.Name = "ResidentsPictureBOx"
+<<<<<<< HEAD
         Me.ResidentsPictureBOx.Size = New System.Drawing.Size(144, 144)
+=======
+        Me.ResidentsPictureBOx.Size = New System.Drawing.Size(158, 158)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.ResidentsPictureBOx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.ResidentsPictureBOx.TabIndex = 105
         Me.ResidentsPictureBOx.TabStop = False
@@ -804,7 +823,11 @@ Partial Class MyResidents
         Me.PurokTextBox.IconRight = Nothing
         Me.PurokTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.PurokTextBox.Lines = New String(-1) {}
+<<<<<<< HEAD
         Me.PurokTextBox.Location = New System.Drawing.Point(490, 200)
+=======
+        Me.PurokTextBox.Location = New System.Drawing.Point(490, 195)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.PurokTextBox.MaxLength = 32767
         Me.PurokTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.PurokTextBox.Modified = False
@@ -830,7 +853,11 @@ Partial Class MyResidents
         StateProperties8.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.PurokTextBox.OnIdleState = StateProperties8
+<<<<<<< HEAD
         Me.PurokTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.PurokTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.PurokTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.PurokTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.PurokTextBox.PlaceholderText = ""
@@ -840,7 +867,11 @@ Partial Class MyResidents
         Me.PurokTextBox.SelectionLength = 0
         Me.PurokTextBox.SelectionStart = 0
         Me.PurokTextBox.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.PurokTextBox.Size = New System.Drawing.Size(192, 37)
+=======
+        Me.PurokTextBox.Size = New System.Drawing.Size(192, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.PurokTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.PurokTextBox.TabIndex = 104
         Me.PurokTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -916,7 +947,11 @@ Partial Class MyResidents
         StateProperties12.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.SearchFieldTxtBox.OnIdleState = StateProperties12
+<<<<<<< HEAD
         Me.SearchFieldTxtBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.SearchFieldTxtBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.SearchFieldTxtBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.SearchFieldTxtBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.SearchFieldTxtBox.PlaceholderText = "Search"
@@ -993,7 +1028,11 @@ Partial Class MyResidents
         StateProperties16.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.ReligionTextBOx.OnIdleState = StateProperties16
+<<<<<<< HEAD
         Me.ReligionTextBOx.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.ReligionTextBOx.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.ReligionTextBOx.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.ReligionTextBOx.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.ReligionTextBOx.PlaceholderText = ""
@@ -1003,7 +1042,11 @@ Partial Class MyResidents
         Me.ReligionTextBOx.SelectionLength = 0
         Me.ReligionTextBOx.SelectionStart = 0
         Me.ReligionTextBOx.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.ReligionTextBOx.Size = New System.Drawing.Size(195, 37)
+=======
+        Me.ReligionTextBOx.Size = New System.Drawing.Size(195, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.ReligionTextBOx.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.ReligionTextBOx.TabIndex = 74
         Me.ReligionTextBOx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1062,7 +1105,11 @@ Partial Class MyResidents
         Me.UpdateButton.IdleIconLeftImage = Nothing
         Me.UpdateButton.IdleIconRightImage = Nothing
         Me.UpdateButton.IndicateFocus = False
+<<<<<<< HEAD
         Me.UpdateButton.Location = New System.Drawing.Point(889, 275)
+=======
+        Me.UpdateButton.Location = New System.Drawing.Point(889, 278)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.UpdateButton.Name = "UpdateButton"
         Me.UpdateButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.UpdateButton.OnDisabledState.BorderRadius = 1
@@ -1152,7 +1199,11 @@ Partial Class MyResidents
         Me.SaveButton.IdleIconLeftImage = Nothing
         Me.SaveButton.IdleIconRightImage = Nothing
         Me.SaveButton.IndicateFocus = False
+<<<<<<< HEAD
         Me.SaveButton.Location = New System.Drawing.Point(999, 275)
+=======
+        Me.SaveButton.Location = New System.Drawing.Point(999, 278)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SaveButton.OnDisabledState.BorderRadius = 1
@@ -1242,7 +1293,11 @@ Partial Class MyResidents
         Me.BrowseButton.IdleIconLeftImage = Nothing
         Me.BrowseButton.IdleIconRightImage = Nothing
         Me.BrowseButton.IndicateFocus = False
+<<<<<<< HEAD
         Me.BrowseButton.Location = New System.Drawing.Point(917, 229)
+=======
+        Me.BrowseButton.Location = New System.Drawing.Point(917, 236)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BrowseButton.Name = "BrowseButton"
         Me.BrowseButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BrowseButton.OnDisabledState.BorderRadius = 1
@@ -1276,7 +1331,11 @@ Partial Class MyResidents
         Me.BrowseButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BrowseButton.OnPressedState.IconLeftImage = Nothing
         Me.BrowseButton.OnPressedState.IconRightImage = Nothing
+<<<<<<< HEAD
         Me.BrowseButton.Size = New System.Drawing.Size(144, 34)
+=======
+        Me.BrowseButton.Size = New System.Drawing.Size(158, 28)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.BrowseButton.TabIndex = 98
         Me.BrowseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BrowseButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -1318,6 +1377,22 @@ Partial Class MyResidents
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'CivilStatusComboBox
+        '
+        Me.CivilStatusComboBox.AccessibleName = "Civil Status"
+        Me.CivilStatusComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CivilStatusComboBox.AutoCompleteCustomSource.AddRange(New String() {"Married", "Widowed", "Seperated", "Divorced", "Single"})
+        Me.CivilStatusComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.CivilStatusComboBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.CivilStatusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CivilStatusComboBox.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CivilStatusComboBox.FormattingEnabled = True
+        Me.CivilStatusComboBox.Items.AddRange(New Object() {"Married", "Widowed", "Seperated", "Divorced", "Single"})
+        Me.CivilStatusComboBox.Location = New System.Drawing.Point(667, 132)
+        Me.CivilStatusComboBox.Name = "CivilStatusComboBox"
+        Me.CivilStatusComboBox.Size = New System.Drawing.Size(180, 33)
+        Me.CivilStatusComboBox.TabIndex = 76
+        '
         'OccupationTextBox
         '
         Me.OccupationTextBox.AcceptsReturn = False
@@ -1348,7 +1423,11 @@ Partial Class MyResidents
         Me.OccupationTextBox.IconRight = Nothing
         Me.OccupationTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.OccupationTextBox.Lines = New String(-1) {}
+<<<<<<< HEAD
         Me.OccupationTextBox.Location = New System.Drawing.Point(288, 200)
+=======
+        Me.OccupationTextBox.Location = New System.Drawing.Point(288, 195)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.OccupationTextBox.MaxLength = 32767
         Me.OccupationTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.OccupationTextBox.Modified = False
@@ -1374,7 +1453,11 @@ Partial Class MyResidents
         StateProperties20.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.OccupationTextBox.OnIdleState = StateProperties20
+<<<<<<< HEAD
         Me.OccupationTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.OccupationTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.OccupationTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.OccupationTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.OccupationTextBox.PlaceholderText = ""
@@ -1384,7 +1467,11 @@ Partial Class MyResidents
         Me.OccupationTextBox.SelectionLength = 0
         Me.OccupationTextBox.SelectionStart = 0
         Me.OccupationTextBox.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.OccupationTextBox.Size = New System.Drawing.Size(195, 37)
+=======
+        Me.OccupationTextBox.Size = New System.Drawing.Size(195, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.OccupationTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.OccupationTextBox.TabIndex = 75
         Me.OccupationTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1451,7 +1538,11 @@ Partial Class MyResidents
         StateProperties24.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.HighestEducationAttainmentTextBox.OnIdleState = StateProperties24
+<<<<<<< HEAD
         Me.HighestEducationAttainmentTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.HighestEducationAttainmentTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.HighestEducationAttainmentTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.HighestEducationAttainmentTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.HighestEducationAttainmentTextBox.PlaceholderText = ""
@@ -1461,7 +1552,11 @@ Partial Class MyResidents
         Me.HighestEducationAttainmentTextBox.SelectionLength = 0
         Me.HighestEducationAttainmentTextBox.SelectionStart = 0
         Me.HighestEducationAttainmentTextBox.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.HighestEducationAttainmentTextBox.Size = New System.Drawing.Size(266, 33)
+=======
+        Me.HighestEducationAttainmentTextBox.Size = New System.Drawing.Size(266, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.HighestEducationAttainmentTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.HighestEducationAttainmentTextBox.TabIndex = 96
         Me.HighestEducationAttainmentTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1502,7 +1597,11 @@ Partial Class MyResidents
         Me.ContactTextBox.IconRight = Nothing
         Me.ContactTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.ContactTextBox.Lines = New String(-1) {}
+<<<<<<< HEAD
         Me.ContactTextBox.Location = New System.Drawing.Point(85, 200)
+=======
+        Me.ContactTextBox.Location = New System.Drawing.Point(85, 195)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.ContactTextBox.MaxLength = 32767
         Me.ContactTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.ContactTextBox.Modified = False
@@ -1528,7 +1627,11 @@ Partial Class MyResidents
         StateProperties28.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.ContactTextBox.OnIdleState = StateProperties28
+<<<<<<< HEAD
         Me.ContactTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.ContactTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.ContactTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.ContactTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.ContactTextBox.PlaceholderText = ""
@@ -1538,7 +1641,11 @@ Partial Class MyResidents
         Me.ContactTextBox.SelectionLength = 0
         Me.ContactTextBox.SelectionStart = 0
         Me.ContactTextBox.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.ContactTextBox.Size = New System.Drawing.Size(201, 37)
+=======
+        Me.ContactTextBox.Size = New System.Drawing.Size(201, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.ContactTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.ContactTextBox.TabIndex = 70
         Me.ContactTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1623,7 +1730,11 @@ Partial Class MyResidents
         StateProperties32.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.AddressTextBox.OnIdleState = StateProperties32
+<<<<<<< HEAD
         Me.AddressTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.AddressTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.AddressTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.AddressTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.AddressTextBox.PlaceholderText = ""
@@ -1633,7 +1744,11 @@ Partial Class MyResidents
         Me.AddressTextBox.SelectionLength = 0
         Me.AddressTextBox.SelectionStart = 0
         Me.AddressTextBox.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.AddressTextBox.Size = New System.Drawing.Size(379, 37)
+=======
+        Me.AddressTextBox.Size = New System.Drawing.Size(379, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.AddressTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.AddressTextBox.TabIndex = 71
         Me.AddressTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1643,6 +1758,21 @@ Partial Class MyResidents
         Me.AddressTextBox.TextPlaceholder = ""
         Me.AddressTextBox.UseSystemPasswordChar = False
         Me.AddressTextBox.WordWrap = True
+        '
+        'SeniorComboBox
+        '
+        Me.SeniorComboBox.AccessibleName = "Senior"
+        Me.SeniorComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.SeniorComboBox.AutoCompleteCustomSource.AddRange(New String() {"Yes", "No"})
+        Me.SeniorComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.SeniorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SeniorComboBox.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SeniorComboBox.FormattingEnabled = True
+        Me.SeniorComboBox.Items.AddRange(New Object() {"Yes", "No"})
+        Me.SeniorComboBox.Location = New System.Drawing.Point(723, 262)
+        Me.SeniorComboBox.Name = "SeniorComboBox"
+        Me.SeniorComboBox.Size = New System.Drawing.Size(124, 33)
+        Me.SeniorComboBox.TabIndex = 94
         '
         'CitizenshipTextBox
         '
@@ -1700,7 +1830,11 @@ Partial Class MyResidents
         StateProperties36.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.CitizenshipTextBox.OnIdleState = StateProperties36
+<<<<<<< HEAD
         Me.CitizenshipTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+=======
+        Me.CitizenshipTextBox.Padding = New System.Windows.Forms.Padding(3)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.CitizenshipTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.CitizenshipTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.CitizenshipTextBox.PlaceholderText = ""
@@ -1710,7 +1844,11 @@ Partial Class MyResidents
         Me.CitizenshipTextBox.SelectionLength = 0
         Me.CitizenshipTextBox.SelectionStart = 0
         Me.CitizenshipTextBox.ShortcutsEnabled = True
+<<<<<<< HEAD
         Me.CitizenshipTextBox.Size = New System.Drawing.Size(155, 33)
+=======
+        Me.CitizenshipTextBox.Size = New System.Drawing.Size(155, 42)
+>>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         Me.CitizenshipTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.CitizenshipTextBox.TabIndex = 72
         Me.CitizenshipTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1739,6 +1877,39 @@ Partial Class MyResidents
         Me.BunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'SuffixComboBox
+        '
+        Me.SuffixComboBox.AccessibleName = "Suffix"
+        Me.SuffixComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.SuffixComboBox.AutoCompleteCustomSource.AddRange(New String() {"None", "Sr", "Jr", "I", "II", "III"})
+        Me.SuffixComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.SuffixComboBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.SuffixComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SuffixComboBox.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SuffixComboBox.FormattingEnabled = True
+        Me.SuffixComboBox.Items.AddRange(New Object() {"None", "Sr", "Jr", "I", "II", "III"})
+        Me.SuffixComboBox.Location = New System.Drawing.Point(471, 76)
+        Me.SuffixComboBox.MaxDropDownItems = 5
+        Me.SuffixComboBox.Name = "SuffixComboBox"
+        Me.SuffixComboBox.Size = New System.Drawing.Size(173, 33)
+        Me.SuffixComboBox.TabIndex = 73
+        '
+        'SexComboBox
+        '
+        Me.SexComboBox.AccessibleName = "Sex"
+        Me.SexComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.SexComboBox.AutoCompleteCustomSource.AddRange(New String() {"Male ", "Female"})
+        Me.SexComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.SexComboBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.SexComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SexComboBox.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SexComboBox.FormattingEnabled = True
+        Me.SexComboBox.Items.AddRange(New Object() {"Male ", "Female"})
+        Me.SexComboBox.Location = New System.Drawing.Point(650, 76)
+        Me.SexComboBox.Name = "SexComboBox"
+        Me.SexComboBox.Size = New System.Drawing.Size(197, 33)
+        Me.SexComboBox.TabIndex = 77
+        '
         'BunifuLabel16
         '
         Me.BunifuLabel16.AllowParentOverrides = False
@@ -1755,6 +1926,21 @@ Partial Class MyResidents
         Me.BunifuLabel16.Text = "Religion"
         Me.BunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'VoterComboBox
+        '
+        Me.VoterComboBox.AccessibleName = "Voter"
+        Me.VoterComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.VoterComboBox.AutoCompleteCustomSource.AddRange(New String() {"Yes", "No"})
+        Me.VoterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.VoterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.VoterComboBox.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VoterComboBox.FormattingEnabled = True
+        Me.VoterComboBox.Items.AddRange(New Object() {"Yes", "No"})
+        Me.VoterComboBox.Location = New System.Drawing.Point(689, 200)
+        Me.VoterComboBox.Name = "VoterComboBox"
+        Me.VoterComboBox.Size = New System.Drawing.Size(158, 33)
+        Me.VoterComboBox.TabIndex = 78
         '
         'BunifuLabel1
         '
@@ -1926,13 +2112,17 @@ Partial Class MyResidents
     Friend WithEvents BrowseButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents BunifuLabel15 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel2 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents CivilStatusComboBox As ComboBox
     Friend WithEvents OccupationTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents HighestEducationAttainmentTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents ContactTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel7 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents AddressTextBox As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents SeniorComboBox As ComboBox
     Friend WithEvents CitizenshipTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel6 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents SuffixComboBox As ComboBox
+    Friend WithEvents SexComboBox As ComboBox
     Friend WithEvents BunifuLabel16 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel1 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel14 As Bunifu.UI.WinForms.BunifuLabel
@@ -1959,9 +2149,5 @@ Partial Class MyResidents
     Friend WithEvents editButton_Column As DataGridViewImageColumn
     Friend WithEvents deleteButton_Column As DataGridViewImageColumn
     Friend WithEvents archiveButton_Column As DataGridViewImageColumn
-    Friend WithEvents SuffixComboBox As Bunifu.UI.WinForms.BunifuDropdown
-    Friend WithEvents CivilStatusComboBox As Bunifu.UI.WinForms.BunifuDropdown
-    Friend WithEvents SexComboBox As Bunifu.UI.WinForms.BunifuDropdown
-    Friend WithEvents SeniorComboBox As Bunifu.UI.WinForms.BunifuDropdown
-    Friend WithEvents VoterComboBox As Bunifu.UI.WinForms.BunifuDropdown
+    Friend WithEvents VoterComboBox As ComboBox
 End Class
