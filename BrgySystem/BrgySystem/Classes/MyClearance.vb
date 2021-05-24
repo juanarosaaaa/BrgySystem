@@ -10,17 +10,17 @@ Public Class MyClearance
     Private manage As DataManipulation = New ManageSystem
     Sub arrangeGridView()
 
-        Clearance.ClearanceGridView.Columns("transact_Col").DataPropertyName = "TransactNo"
+        Clearance.ClearanceDataGridView.Columns("name_column").DataPropertyName = "Fullname"
+        Clearance.ClearanceDataGridView.Columns("TransactNo_Col").DataPropertyName = "TransactNo"
 
-        Clearance.ClearanceGridView.Columns("fullname_Column").DataPropertyName = "Fullname"
 
-        Clearance.ClearanceGridView.Columns("purpose_Column").DataPropertyName = "Purpose"
+        Clearance.ClearanceDataGridView.Columns("purpose_Col").DataPropertyName = "Purpose"
 
-        Clearance.ClearanceGridView.Columns("date_Column").DataPropertyName = "DateAndTime"
+        Clearance.ClearanceDataGridView.Columns("Date_col").DataPropertyName = "DateAndTime"
 
-        Clearance.ClearanceGridView.Columns("givenBy_Column").DataPropertyName = "Given_By"
+        Clearance.ClearanceDataGridView.Columns("Givenby_Column1").DataPropertyName = "Given_By"
 
-        Clearance.ClearanceGridView.Columns("type_Column").DataPropertyName = "Type"
+        Clearance.ClearanceDataGridView.Columns("Type_Col").DataPropertyName = "Type"
 
 
     End Sub

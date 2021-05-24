@@ -1,5 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
-
+Imports Guna.UI.WinForms
+Imports Guna.UI2.WinForms
 Public Class ManageSystem
     Implements loadGridViewValue, DataManipulation
 
@@ -9,7 +10,7 @@ Public Class ManageSystem
     End Function
 
 
-    Public Sub loadGridViewValueOf(allValuesQuery As String, gridView As Guid) Implements loadGridViewValue.loadGridViewValueOf
+    Public Sub loadGridViewValueOf(allValuesQuery As String, gridView As Guna2DataGridView) Implements loadGridViewValue.loadGridViewValueOf
         openConnection()
         Dim table As New DataTable
         Dim adapter As New MySqlDataAdapter(allValuesQuery, getConnection)

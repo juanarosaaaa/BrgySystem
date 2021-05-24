@@ -481,3 +481,7 @@ C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\De
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\obj\Debug\BrgySystem.vbproj.CopyComplete
 C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\MetroFramework.dll
 C:\Users\jann rose tiongco\Desktop\Final\BrgySystem\BrgySystem\BrgySystem\bin\Debug\MetroFramework.dll
+C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\Guna.UI.dll
+C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\Bunifu.Dataviz.WinForms.dll
+C:\Users\Admin\Desktop\FinalsRepoJannRose\BrgySystem\BrgySystem\BrgySystem\bin\Debug\Bunifu.Dataviz.WinForms.xml

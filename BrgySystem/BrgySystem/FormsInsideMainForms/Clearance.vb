@@ -8,8 +8,8 @@
     Private valueYouSearchFor As String
     Public isBusinessNamemodified, isTransactNumberModified As Boolean
 
-    Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ClearanceGridView.CellFormatting
-        SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ClearanceGridView, e, My.Resources.icons8_trash_24px)
+    Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ClearanceDataGridView.CellFormatting
+        SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ClearanceDataGridView, e, My.Resources.icons8_trash_24px)
         'SettinggridViewImage.setImageAtButtonColumnOf("viewButtonColumn", ClearanceGridView, e, My.Resources.icons8_edit_24px)
 
     End Sub
@@ -38,7 +38,7 @@
         isBusinessNamemodified = False
         isTransactNumberModified = False
         clearance.arrangeGridView()
-        manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
+        manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceDataGridView)
 
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldtextBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "residents", nameTextBox)
@@ -81,13 +81,13 @@
     Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchFieldtextBox.KeyDown
         If e.KeyCode = Keys.Enter Then
             valueYouSearchFor = clearance.getClearanceValuesSelectedColumn + "where Fullname Like '%" & SearchFieldtextBox.Text.Trim & "%'"
-            search.searchValueIn(valueYouSearchFor, ClearanceGridView)
+            search.searchValueIn(valueYouSearchFor, ClearanceDataGridView)
         End If
     End Sub
 
 
     Private Sub SearchButtonClicked(sender As Object, e As EventArgs) Handles Button1.Click
-        search.searchValueIn(valueYouSearchFor, ClearanceGridView)
+        search.searchValueIn(valueYouSearchFor, ClearanceDataGridView)
     End Sub
 
 
@@ -109,8 +109,8 @@
         End If
     End Sub
 
-    Private Sub ClearanceGridViewClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ClearanceGridView.CellClick
-        If SettingAction.buttonOf_IsClick("deleteButton_Column", ClearanceGridView, e) Then
+    Private Sub ClearanceGridViewClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ClearanceDataGridView.CellClick
+        If SettingAction.buttonOf_IsClick("deleteButton_Column", ClearanceDataGridView, e) Then
             isBusinessNamemodified = False
             isTransactNumberModified = False
         End If
