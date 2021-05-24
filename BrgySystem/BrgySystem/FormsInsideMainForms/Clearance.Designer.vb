@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Clearance
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Clearance
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Clearance))
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
@@ -78,7 +78,6 @@ Partial Class Clearance
         Dim StateProperties52 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -105,11 +104,11 @@ Partial Class Clearance
         Me.BunifuLabel19 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.AgeTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel21 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.Quantity = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.QuantityTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.TransactionNumberTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel13 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.addressTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.GenderTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.SexTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel14 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel18 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -181,11 +180,11 @@ Partial Class Clearance
         Me.GroupBox2.Controls.Add(Me.BunifuLabel19)
         Me.GroupBox2.Controls.Add(Me.AgeTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel21)
-        Me.GroupBox2.Controls.Add(Me.Quantity)
+        Me.GroupBox2.Controls.Add(Me.QuantityTextBox)
         Me.GroupBox2.Controls.Add(Me.TransactionNumberTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel13)
         Me.GroupBox2.Controls.Add(Me.addressTextBox)
-        Me.GroupBox2.Controls.Add(Me.GenderTextBox)
+        Me.GroupBox2.Controls.Add(Me.SexTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel14)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel18)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel3)
@@ -1193,82 +1192,82 @@ Partial Class Clearance
         Me.BunifuLabel21.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel21.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'Quantity
+        'QuantityTextBox
         '
-        Me.Quantity.AcceptsReturn = False
-        Me.Quantity.AcceptsTab = False
-        Me.Quantity.AccessibleName = "Quantity"
-        Me.Quantity.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Quantity.AnimationSpeed = 200
-        Me.Quantity.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.Quantity.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.Quantity.BackColor = System.Drawing.Color.Transparent
-        Me.Quantity.BackgroundImage = CType(resources.GetObject("Quantity.BackgroundImage"), System.Drawing.Image)
-        Me.Quantity.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.Quantity.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Quantity.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Quantity.BorderColorIdle = System.Drawing.Color.Silver
-        Me.Quantity.BorderRadius = 20
-        Me.Quantity.BorderThickness = 1
-        Me.Quantity.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.Quantity.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Quantity.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Quantity.DefaultText = ""
-        Me.Quantity.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Quantity.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Quantity.HideSelection = True
-        Me.Quantity.IconLeft = Nothing
-        Me.Quantity.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.Quantity.IconPadding = 10
-        Me.Quantity.IconRight = Nothing
-        Me.Quantity.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.Quantity.Lines = New String(-1) {}
-        Me.Quantity.Location = New System.Drawing.Point(339, 263)
-        Me.Quantity.MaxLength = 32767
-        Me.Quantity.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.Quantity.Modified = False
-        Me.Quantity.Multiline = False
-        Me.Quantity.Name = "Quantity"
+        Me.QuantityTextBox.AcceptsReturn = False
+        Me.QuantityTextBox.AcceptsTab = False
+        Me.QuantityTextBox.AccessibleName = "Quantity"
+        Me.QuantityTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.QuantityTextBox.AnimationSpeed = 200
+        Me.QuantityTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.QuantityTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.QuantityTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.QuantityTextBox.BackgroundImage = CType(resources.GetObject("QuantityTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.QuantityTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.QuantityTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.QuantityTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.QuantityTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.QuantityTextBox.BorderRadius = 20
+        Me.QuantityTextBox.BorderThickness = 1
+        Me.QuantityTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.QuantityTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.QuantityTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QuantityTextBox.DefaultText = ""
+        Me.QuantityTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.QuantityTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.QuantityTextBox.HideSelection = True
+        Me.QuantityTextBox.IconLeft = Nothing
+        Me.QuantityTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.QuantityTextBox.IconPadding = 10
+        Me.QuantityTextBox.IconRight = Nothing
+        Me.QuantityTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.QuantityTextBox.Lines = New String(-1) {}
+        Me.QuantityTextBox.Location = New System.Drawing.Point(339, 263)
+        Me.QuantityTextBox.MaxLength = 32767
+        Me.QuantityTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.QuantityTextBox.Modified = False
+        Me.QuantityTextBox.Multiline = False
+        Me.QuantityTextBox.Name = "QuantityTextBox"
         StateProperties37.BorderColor = System.Drawing.Color.DodgerBlue
         StateProperties37.FillColor = System.Drawing.Color.Empty
         StateProperties37.ForeColor = System.Drawing.Color.Empty
         StateProperties37.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.Quantity.OnActiveState = StateProperties37
+        Me.QuantityTextBox.OnActiveState = StateProperties37
         StateProperties38.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         StateProperties38.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         StateProperties38.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         StateProperties38.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.Quantity.OnDisabledState = StateProperties38
+        Me.QuantityTextBox.OnDisabledState = StateProperties38
         StateProperties39.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         StateProperties39.FillColor = System.Drawing.Color.Empty
         StateProperties39.ForeColor = System.Drawing.Color.Empty
         StateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.Quantity.OnHoverState = StateProperties39
+        Me.QuantityTextBox.OnHoverState = StateProperties39
         StateProperties40.BorderColor = System.Drawing.Color.Silver
         StateProperties40.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         StateProperties40.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.Quantity.OnIdleState = StateProperties40
-        Me.Quantity.Padding = New System.Windows.Forms.Padding(3)
-        Me.Quantity.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Quantity.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.Quantity.PlaceholderText = ""
-        Me.Quantity.ReadOnly = False
-        Me.Quantity.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.Quantity.SelectedText = ""
-        Me.Quantity.SelectionLength = 0
-        Me.Quantity.SelectionStart = 0
-        Me.Quantity.ShortcutsEnabled = True
-        Me.Quantity.Size = New System.Drawing.Size(143, 42)
-        Me.Quantity.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.Quantity.TabIndex = 109
-        Me.Quantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Quantity.TextMarginBottom = 0
-        Me.Quantity.TextMarginLeft = 3
-        Me.Quantity.TextMarginTop = 0
-        Me.Quantity.TextPlaceholder = ""
-        Me.Quantity.UseSystemPasswordChar = False
-        Me.Quantity.WordWrap = True
+        Me.QuantityTextBox.OnIdleState = StateProperties40
+        Me.QuantityTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.QuantityTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.QuantityTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.QuantityTextBox.PlaceholderText = ""
+        Me.QuantityTextBox.ReadOnly = False
+        Me.QuantityTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.QuantityTextBox.SelectedText = ""
+        Me.QuantityTextBox.SelectionLength = 0
+        Me.QuantityTextBox.SelectionStart = 0
+        Me.QuantityTextBox.ShortcutsEnabled = True
+        Me.QuantityTextBox.Size = New System.Drawing.Size(143, 42)
+        Me.QuantityTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.QuantityTextBox.TabIndex = 109
+        Me.QuantityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.QuantityTextBox.TextMarginBottom = 0
+        Me.QuantityTextBox.TextMarginLeft = 3
+        Me.QuantityTextBox.TextMarginTop = 0
+        Me.QuantityTextBox.TextPlaceholder = ""
+        Me.QuantityTextBox.UseSystemPasswordChar = False
+        Me.QuantityTextBox.WordWrap = True
         '
         'TransactionNumberTextBox
         '
@@ -1441,82 +1440,82 @@ Partial Class Clearance
         Me.addressTextBox.UseSystemPasswordChar = False
         Me.addressTextBox.WordWrap = True
         '
-        'GenderTextBox
+        'SexTextBox
         '
-        Me.GenderTextBox.AcceptsReturn = False
-        Me.GenderTextBox.AcceptsTab = False
-        Me.GenderTextBox.AccessibleName = "Gender"
-        Me.GenderTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GenderTextBox.AnimationSpeed = 200
-        Me.GenderTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.GenderTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.GenderTextBox.BackColor = System.Drawing.Color.Transparent
-        Me.GenderTextBox.BackgroundImage = CType(resources.GetObject("GenderTextBox.BackgroundImage"), System.Drawing.Image)
-        Me.GenderTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.GenderTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.GenderTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GenderTextBox.BorderColorIdle = System.Drawing.Color.Silver
-        Me.GenderTextBox.BorderRadius = 20
-        Me.GenderTextBox.BorderThickness = 1
-        Me.GenderTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.GenderTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GenderTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GenderTextBox.DefaultText = ""
-        Me.GenderTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GenderTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.GenderTextBox.HideSelection = True
-        Me.GenderTextBox.IconLeft = Nothing
-        Me.GenderTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.GenderTextBox.IconPadding = 10
-        Me.GenderTextBox.IconRight = Nothing
-        Me.GenderTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.GenderTextBox.Lines = New String(-1) {}
-        Me.GenderTextBox.Location = New System.Drawing.Point(84, 263)
-        Me.GenderTextBox.MaxLength = 32767
-        Me.GenderTextBox.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.GenderTextBox.Modified = False
-        Me.GenderTextBox.Multiline = False
-        Me.GenderTextBox.Name = "GenderTextBox"
+        Me.SexTextBox.AcceptsReturn = False
+        Me.SexTextBox.AcceptsTab = False
+        Me.SexTextBox.AccessibleName = "Gender"
+        Me.SexTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.SexTextBox.AnimationSpeed = 200
+        Me.SexTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.SexTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.SexTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.SexTextBox.BackgroundImage = CType(resources.GetObject("SexTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.SexTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.SexTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.SexTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SexTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.SexTextBox.BorderRadius = 20
+        Me.SexTextBox.BorderThickness = 1
+        Me.SexTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.SexTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.SexTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SexTextBox.DefaultText = ""
+        Me.SexTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.SexTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.SexTextBox.HideSelection = True
+        Me.SexTextBox.IconLeft = Nothing
+        Me.SexTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.SexTextBox.IconPadding = 10
+        Me.SexTextBox.IconRight = Nothing
+        Me.SexTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.SexTextBox.Lines = New String(-1) {}
+        Me.SexTextBox.Location = New System.Drawing.Point(84, 263)
+        Me.SexTextBox.MaxLength = 32767
+        Me.SexTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.SexTextBox.Modified = False
+        Me.SexTextBox.Multiline = False
+        Me.SexTextBox.Name = "SexTextBox"
         StateProperties49.BorderColor = System.Drawing.Color.DodgerBlue
         StateProperties49.FillColor = System.Drawing.Color.Empty
         StateProperties49.ForeColor = System.Drawing.Color.Empty
         StateProperties49.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.GenderTextBox.OnActiveState = StateProperties49
+        Me.SexTextBox.OnActiveState = StateProperties49
         StateProperties50.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         StateProperties50.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         StateProperties50.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         StateProperties50.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.GenderTextBox.OnDisabledState = StateProperties50
+        Me.SexTextBox.OnDisabledState = StateProperties50
         StateProperties51.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         StateProperties51.FillColor = System.Drawing.Color.Empty
         StateProperties51.ForeColor = System.Drawing.Color.Empty
         StateProperties51.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.GenderTextBox.OnHoverState = StateProperties51
+        Me.SexTextBox.OnHoverState = StateProperties51
         StateProperties52.BorderColor = System.Drawing.Color.Silver
         StateProperties52.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         StateProperties52.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties52.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.GenderTextBox.OnIdleState = StateProperties52
-        Me.GenderTextBox.Padding = New System.Windows.Forms.Padding(3)
-        Me.GenderTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GenderTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.GenderTextBox.PlaceholderText = ""
-        Me.GenderTextBox.ReadOnly = False
-        Me.GenderTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.GenderTextBox.SelectedText = ""
-        Me.GenderTextBox.SelectionLength = 0
-        Me.GenderTextBox.SelectionStart = 0
-        Me.GenderTextBox.ShortcutsEnabled = True
-        Me.GenderTextBox.Size = New System.Drawing.Size(131, 42)
-        Me.GenderTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.GenderTextBox.TabIndex = 104
-        Me.GenderTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.GenderTextBox.TextMarginBottom = 0
-        Me.GenderTextBox.TextMarginLeft = 3
-        Me.GenderTextBox.TextMarginTop = 0
-        Me.GenderTextBox.TextPlaceholder = ""
-        Me.GenderTextBox.UseSystemPasswordChar = False
-        Me.GenderTextBox.WordWrap = True
+        Me.SexTextBox.OnIdleState = StateProperties52
+        Me.SexTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.SexTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.SexTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.SexTextBox.PlaceholderText = ""
+        Me.SexTextBox.ReadOnly = False
+        Me.SexTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.SexTextBox.SelectedText = ""
+        Me.SexTextBox.SelectionLength = 0
+        Me.SexTextBox.SelectionStart = 0
+        Me.SexTextBox.ShortcutsEnabled = True
+        Me.SexTextBox.Size = New System.Drawing.Size(131, 42)
+        Me.SexTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.SexTextBox.TabIndex = 104
+        Me.SexTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.SexTextBox.TextMarginBottom = 0
+        Me.SexTextBox.TextMarginLeft = 3
+        Me.SexTextBox.TextMarginTop = 0
+        Me.SexTextBox.TextPlaceholder = ""
+        Me.SexTextBox.UseSystemPasswordChar = False
+        Me.SexTextBox.WordWrap = True
         '
         'BunifuLabel14
         '
@@ -1595,23 +1594,23 @@ Partial Class Clearance
         Me.ClearanceGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.ClearanceGridView.ColumnHeadersHeight = 40
         Me.ClearanceGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fullname_Column, Me.transact_Col, Me.purpose_Column, Me.date_Column, Me.givenBy_Column, Me.type_Column, Me.deleteButton_Column})
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ClearanceGridView.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ClearanceGridView.DefaultCellStyle = DataGridViewCellStyle3
         Me.ClearanceGridView.EnableHeadersVisualStyles = False
         Me.ClearanceGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClearanceGridView.Location = New System.Drawing.Point(6, 364)
+        Me.ClearanceGridView.Location = New System.Drawing.Point(6, 557)
         Me.ClearanceGridView.Name = "ClearanceGridView"
         Me.ClearanceGridView.ReadOnly = True
         Me.ClearanceGridView.RowHeadersVisible = False
         Me.ClearanceGridView.RowTemplate.Height = 25
         Me.ClearanceGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ClearanceGridView.Size = New System.Drawing.Size(1106, 396)
+        Me.ClearanceGridView.Size = New System.Drawing.Size(1106, 203)
         Me.ClearanceGridView.TabIndex = 8
         Me.ClearanceGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ClearanceGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -1675,13 +1674,11 @@ Partial Class Clearance
         'deleteButton_Column
         '
         Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.deleteButton_Column.DefaultCellStyle = DataGridViewCellStyle3
         Me.deleteButton_Column.HeaderText = ""
-        Me.deleteButton_Column.MinimumWidth = 25
+        Me.deleteButton_Column.MinimumWidth = 30
         Me.deleteButton_Column.Name = "deleteButton_Column"
         Me.deleteButton_Column.ReadOnly = True
-        Me.deleteButton_Column.Width = 25
+        Me.deleteButton_Column.Width = 30
         '
         'TableLayoutPanel1
         '
@@ -1971,11 +1968,11 @@ Partial Class Clearance
     Friend WithEvents BunifuLabel19 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents AgeTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel21 As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents Quantity As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents QuantityTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents TransactionNumberTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel13 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents addressTextBox As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents GenderTextBox As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents SexTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel14 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel18 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel3 As Bunifu.UI.WinForms.BunifuLabel

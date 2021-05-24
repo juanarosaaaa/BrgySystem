@@ -153,41 +153,41 @@ Public Class MyBrgyResidents
 
 
     Function addOrUpdateResident(message As String, query As String, imageName As String) As Boolean
-        Dim res As Boolean = False
+
         Try
             If (IsInputInValid()) Then
-                res = False
+                Return False
                 Exit Function
             ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
                 MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                res = False
+                Return False
             ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
                 MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                res = False
+                Return False
             ElseIf (Not isInputAlreadyExist("PurokName", "Purok", MyResidents.PurokTextBox.Text.Trim)) Then
                 MessageBox.Show("Purok '" & MyResidents.PurokTextBox.Text.Trim.ToUpper & "' does not exist in Purok list.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                res = False
+                Return False
             ElseIf (manage.manipulateDataAt(query)) Then
                 MessageBox.Show(message, "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 clearAllInputs()
-                res = True
+                Return True
             Else
                 MessageBox.Show("An error occured. Failed to add new Resident!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                res = False
+                Return False
             End If
         Catch duplicate As MySqlException
 
             If (isInputAlreadyExist("FULLNAME", "residents", MyResidents.Fullnametxtbox.Text.Trim) And MyResidents.isFullNameModified) Then
                 MessageBox.Show("Name '" & MyResidents.Fullnametxtbox.Text.Trim.ToUpper & "' is already exist.", "INVALID FULL NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                res = False
+                Return False
 
             ElseIf (isInputAlreadyExist("CONTACT_NUMBER", "residents", MyResidents.ContactTextBox.Text.Trim) And MyResidents.isContactModified) Then
                 MessageBox.Show("Contact is already used.", "INVALID CONTACT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                res = False
+                Return False
 
             Else isInputAlreadyExist("ImageName", "residents", imageName)
                 MessageBox.Show("Image is already used.", "INVALID IMAGE!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                res = False
+                Return False
 
             End If
 
