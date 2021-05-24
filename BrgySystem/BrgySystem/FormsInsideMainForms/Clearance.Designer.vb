@@ -81,7 +81,16 @@ Partial Class Clearance
         Dim StateProperties52 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.ClearanceGridView = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Transact_Col = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.purpose_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.date_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.givenBy_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.typeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.BunifuLabel29 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel23 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.SearchButton = New System.Windows.Forms.Button()
         Me.addButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.TotalTextbox = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -110,7 +119,7 @@ Partial Class Clearance
         Me.TransactionNumber_TextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel13 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.AddressTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.GenderTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.SexTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel14 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel18 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -128,13 +137,6 @@ Partial Class Clearance
         Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Transact_Col = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.purpose_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.date_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.givenBy_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.typeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.deleteButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GroupBox1.SuspendLayout()
         CType(Me.ClearanceGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -190,12 +192,12 @@ Partial Class Clearance
         Me.ClearanceGridView.DefaultCellStyle = DataGridViewCellStyle3
         Me.ClearanceGridView.EnableHeadersVisualStyles = False
         Me.ClearanceGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClearanceGridView.Location = New System.Drawing.Point(4, 320)
+        Me.ClearanceGridView.Location = New System.Drawing.Point(2, 349)
         Me.ClearanceGridView.Name = "ClearanceGridView"
         Me.ClearanceGridView.ReadOnly = True
         Me.ClearanceGridView.RowHeadersVisible = False
         Me.ClearanceGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ClearanceGridView.Size = New System.Drawing.Size(1111, 437)
+        Me.ClearanceGridView.Size = New System.Drawing.Size(1117, 412)
         Me.ClearanceGridView.TabIndex = 131
         Me.ClearanceGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ClearanceGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -220,10 +222,57 @@ Partial Class Clearance
         Me.ClearanceGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClearanceGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
+        'fullname_Column
+        '
+        Me.fullname_Column.HeaderText = "Full name"
+        Me.fullname_Column.Name = "fullname_Column"
+        Me.fullname_Column.ReadOnly = True
+        '
+        'Transact_Col
+        '
+        Me.Transact_Col.HeaderText = "Transaction No."
+        Me.Transact_Col.Name = "Transact_Col"
+        Me.Transact_Col.ReadOnly = True
+        '
+        'purpose_Column
+        '
+        Me.purpose_Column.HeaderText = "Purpose"
+        Me.purpose_Column.Name = "purpose_Column"
+        Me.purpose_Column.ReadOnly = True
+        '
+        'date_Column
+        '
+        Me.date_Column.HeaderText = "Date"
+        Me.date_Column.Name = "date_Column"
+        Me.date_Column.ReadOnly = True
+        '
+        'givenBy_Column
+        '
+        Me.givenBy_Column.HeaderText = "Given by"
+        Me.givenBy_Column.Name = "givenBy_Column"
+        Me.givenBy_Column.ReadOnly = True
+        '
+        'typeColumn
+        '
+        Me.typeColumn.HeaderText = "Type"
+        Me.typeColumn.Name = "typeColumn"
+        Me.typeColumn.ReadOnly = True
+        '
+        'deleteButton_Column
+        '
+        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.deleteButton_Column.HeaderText = ""
+        Me.deleteButton_Column.MinimumWidth = 30
+        Me.deleteButton_Column.Name = "deleteButton_Column"
+        Me.deleteButton_Column.ReadOnly = True
+        Me.deleteButton_Column.Width = 30
+        '
         'GroupBox2
         '
         Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Controls.Add(Me.BunifuLabel29)
+        Me.GroupBox2.Controls.Add(Me.BunifuLabel23)
         Me.GroupBox2.Controls.Add(Me.SearchButton)
         Me.GroupBox2.Controls.Add(Me.addButton)
         Me.GroupBox2.Controls.Add(Me.TotalTextbox)
@@ -252,23 +301,58 @@ Partial Class Clearance
         Me.GroupBox2.Controls.Add(Me.TransactionNumber_TextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel13)
         Me.GroupBox2.Controls.Add(Me.AddressTextBox)
-        Me.GroupBox2.Controls.Add(Me.GenderTextBox)
+        Me.GroupBox2.Controls.Add(Me.SexTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel14)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel18)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel3)
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1119, 320)
+        Me.GroupBox2.Size = New System.Drawing.Size(1119, 350)
         Me.GroupBox2.TabIndex = 97
         Me.GroupBox2.TabStop = False
+        '
+        'BunifuLabel29
+        '
+        Me.BunifuLabel29.AllowParentOverrides = False
+        Me.BunifuLabel29.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel29.AutoEllipsis = False
+        Me.BunifuLabel29.CursorType = Nothing
+        Me.BunifuLabel29.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel29.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel29.Location = New System.Drawing.Point(574, 265)
+        Me.BunifuLabel29.Name = "BunifuLabel29"
+        Me.BunifuLabel29.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel29.Size = New System.Drawing.Size(14, 32)
+        Me.BunifuLabel29.TabIndex = 131
+        Me.BunifuLabel29.Text = "₱"
+        Me.BunifuLabel29.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel29.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel23
+        '
+        Me.BunifuLabel23.AllowParentOverrides = False
+        Me.BunifuLabel23.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel23.AutoEllipsis = False
+        Me.BunifuLabel23.Cursor = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel23.CursorType = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel23.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel23.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel23.Location = New System.Drawing.Point(782, 265)
+        Me.BunifuLabel23.Name = "BunifuLabel23"
+        Me.BunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel23.Size = New System.Drawing.Size(14, 32)
+        Me.BunifuLabel23.TabIndex = 131
+        Me.BunifuLabel23.Text = "₱"
+        Me.BunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
         'SearchButton
         '
         Me.SearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.SearchButton.Location = New System.Drawing.Point(1083, 10)
+        Me.SearchButton.Location = New System.Drawing.Point(1080, 10)
         Me.SearchButton.Name = "SearchButton"
-        Me.SearchButton.Size = New System.Drawing.Size(29, 42)
+        Me.SearchButton.Size = New System.Drawing.Size(29, 36)
         Me.SearchButton.TabIndex = 120
         Me.SearchButton.UseVisualStyleBackColor = True
         '
@@ -320,7 +404,7 @@ Partial Class Clearance
         Me.addButton.IdleIconLeftImage = Nothing
         Me.addButton.IdleIconRightImage = Nothing
         Me.addButton.IndicateFocus = False
-        Me.addButton.Location = New System.Drawing.Point(959, 279)
+        Me.addButton.Location = New System.Drawing.Point(868, 307)
         Me.addButton.Name = "addButton"
         Me.addButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.addButton.OnDisabledState.BorderRadius = 41
@@ -391,7 +475,7 @@ Partial Class Clearance
         Me.TotalTextbox.IconRight = Nothing
         Me.TotalTextbox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.TotalTextbox.Lines = New String(-1) {}
-        Me.TotalTextbox.Location = New System.Drawing.Point(690, 271)
+        Me.TotalTextbox.Location = New System.Drawing.Point(800, 260)
         Me.TotalTextbox.MaxLength = 32767
         Me.TotalTextbox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.TotalTextbox.Modified = False
@@ -427,7 +511,7 @@ Partial Class Clearance
         Me.TotalTextbox.SelectionLength = 0
         Me.TotalTextbox.SelectionStart = 0
         Me.TotalTextbox.ShortcutsEnabled = True
-        Me.TotalTextbox.Size = New System.Drawing.Size(212, 42)
+        Me.TotalTextbox.Size = New System.Drawing.Size(173, 42)
         Me.TotalTextbox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.TotalTextbox.TabIndex = 126
         Me.TotalTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -468,7 +552,7 @@ Partial Class Clearance
         Me.AmountTextbox.IconRight = Nothing
         Me.AmountTextbox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.AmountTextbox.Lines = New String(-1) {}
-        Me.AmountTextbox.Location = New System.Drawing.Point(503, 271)
+        Me.AmountTextbox.Location = New System.Drawing.Point(594, 260)
         Me.AmountTextbox.MaxLength = 32767
         Me.AmountTextbox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.AmountTextbox.Modified = False
@@ -504,7 +588,7 @@ Partial Class Clearance
         Me.AmountTextbox.SelectionLength = 0
         Me.AmountTextbox.SelectionStart = 0
         Me.AmountTextbox.ShortcutsEnabled = True
-        Me.AmountTextbox.Size = New System.Drawing.Size(181, 42)
+        Me.AmountTextbox.Size = New System.Drawing.Size(176, 42)
         Me.AmountTextbox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.AmountTextbox.TabIndex = 125
         Me.AmountTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -545,7 +629,7 @@ Partial Class Clearance
         Me.PurposeTextBox.IconRight = Nothing
         Me.PurposeTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.PurposeTextBox.Lines = New String(-1) {}
-        Me.PurposeTextBox.Location = New System.Drawing.Point(632, 146)
+        Me.PurposeTextBox.Location = New System.Drawing.Point(703, 135)
         Me.PurposeTextBox.MaxLength = 32767
         Me.PurposeTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.PurposeTextBox.Modified = False
@@ -622,7 +706,7 @@ Partial Class Clearance
         Me.BusinessTypeTextBox.IconRight = Nothing
         Me.BusinessTypeTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BusinessTypeTextBox.Lines = New String(-1) {}
-        Me.BusinessTypeTextBox.Location = New System.Drawing.Point(715, 83)
+        Me.BusinessTypeTextBox.Location = New System.Drawing.Point(786, 72)
         Me.BusinessTypeTextBox.MaxLength = 32767
         Me.BusinessTypeTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BusinessTypeTextBox.Modified = False
@@ -676,7 +760,7 @@ Partial Class Clearance
         Me.BunifuLabel1.CursorType = Nothing
         Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel1.Location = New System.Drawing.Point(13, 19)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(156, 20)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel1.Size = New System.Drawing.Size(103, 21)
@@ -693,7 +777,7 @@ Partial Class Clearance
         Me.BunifuLabel7.CursorType = Nothing
         Me.BunifuLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel7.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel7.Location = New System.Drawing.Point(85, 185)
+        Me.BunifuLabel7.Location = New System.Drawing.Point(156, 174)
         Me.BunifuLabel7.Name = "BunifuLabel7"
         Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel7.Size = New System.Drawing.Size(59, 20)
@@ -715,11 +799,12 @@ Partial Class Clearance
         Me.BrgyClearanceComboBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.BrgyClearanceComboBox.HoverState.Parent = Me.BrgyClearanceComboBox
         Me.BrgyClearanceComboBox.ItemHeight = 25
+        Me.BrgyClearanceComboBox.Items.AddRange(New Object() {"Barangay Clearance", "Barangay Business Clearance"})
         Me.BrgyClearanceComboBox.ItemsAppearance.Parent = Me.BrgyClearanceComboBox
-        Me.BrgyClearanceComboBox.Location = New System.Drawing.Point(133, 14)
+        Me.BrgyClearanceComboBox.Location = New System.Drawing.Point(265, 15)
         Me.BrgyClearanceComboBox.Name = "BrgyClearanceComboBox"
         Me.BrgyClearanceComboBox.ShadowDecoration.Parent = Me.BrgyClearanceComboBox
-        Me.BrgyClearanceComboBox.Size = New System.Drawing.Size(211, 31)
+        Me.BrgyClearanceComboBox.Size = New System.Drawing.Size(290, 31)
         Me.BrgyClearanceComboBox.TabIndex = 128
         '
         'BusinessNameTextBOx
@@ -752,7 +837,7 @@ Partial Class Clearance
         Me.BusinessNameTextBOx.IconRight = Nothing
         Me.BusinessNameTextBOx.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BusinessNameTextBOx.Lines = New String(-1) {}
-        Me.BusinessNameTextBOx.Location = New System.Drawing.Point(504, 83)
+        Me.BusinessNameTextBOx.Location = New System.Drawing.Point(575, 72)
         Me.BusinessNameTextBOx.MaxLength = 32767
         Me.BusinessNameTextBOx.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BusinessNameTextBOx.Modified = False
@@ -807,7 +892,7 @@ Partial Class Clearance
         Me.BunifuLabel28.CursorType = Nothing
         Me.BunifuLabel28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel28.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel28.Location = New System.Drawing.Point(503, 185)
+        Me.BunifuLabel28.Location = New System.Drawing.Point(574, 179)
         Me.BunifuLabel28.Name = "BunifuLabel28"
         Me.BunifuLabel28.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel28.Size = New System.Drawing.Size(66, 20)
@@ -881,7 +966,7 @@ Partial Class Clearance
         Me.SearchFieldTextBox.SelectionLength = 0
         Me.SearchFieldTextBox.SelectionStart = 0
         Me.SearchFieldTextBox.ShortcutsEnabled = True
-        Me.SearchFieldTextBox.Size = New System.Drawing.Size(256, 42)
+        Me.SearchFieldTextBox.Size = New System.Drawing.Size(256, 36)
         Me.SearchFieldTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.SearchFieldTextBox.TabIndex = 122
         Me.SearchFieldTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -900,7 +985,7 @@ Partial Class Clearance
         Me.IssuedAtTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.IssuedAtTextBox.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IssuedAtTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.IssuedAtTextBox.Location = New System.Drawing.Point(503, 212)
+        Me.IssuedAtTextBox.Location = New System.Drawing.Point(574, 201)
         Me.IssuedAtTextBox.Name = "IssuedAtTextBox"
         Me.IssuedAtTextBox.Size = New System.Drawing.Size(398, 31)
         Me.IssuedAtTextBox.TabIndex = 119
@@ -914,7 +999,7 @@ Partial Class Clearance
         Me.BunifuLabel27.CursorType = Nothing
         Me.BunifuLabel27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel27.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel27.Location = New System.Drawing.Point(690, 250)
+        Me.BunifuLabel27.Location = New System.Drawing.Point(805, 239)
         Me.BunifuLabel27.Name = "BunifuLabel27"
         Me.BunifuLabel27.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel27.Size = New System.Drawing.Size(35, 20)
@@ -929,7 +1014,7 @@ Partial Class Clearance
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(181, 65)
+        Me.Label1.Location = New System.Drawing.Point(252, 54)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(268, 16)
         Me.Label1.TabIndex = 127
@@ -943,7 +1028,7 @@ Partial Class Clearance
         Me.BunifuLabel2.CursorType = Nothing
         Me.BunifuLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel2.Location = New System.Drawing.Point(344, 249)
+        Me.BunifuLabel2.Location = New System.Drawing.Point(415, 238)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel2.Size = New System.Drawing.Size(59, 20)
@@ -982,7 +1067,7 @@ Partial Class Clearance
         Me.FullNameTextBox.IconRight = Nothing
         Me.FullNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.FullNameTextBox.Lines = New String(-1) {}
-        Me.FullNameTextBox.Location = New System.Drawing.Point(85, 83)
+        Me.FullNameTextBox.Location = New System.Drawing.Point(156, 72)
         Me.FullNameTextBox.MaxLength = 32767
         Me.FullNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.FullNameTextBox.Modified = False
@@ -1037,7 +1122,7 @@ Partial Class Clearance
         Me.BunifuLabel24.CursorType = Nothing
         Me.BunifuLabel24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel24.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel24.Location = New System.Drawing.Point(504, 251)
+        Me.BunifuLabel24.Location = New System.Drawing.Point(601, 241)
         Me.BunifuLabel24.Name = "BunifuLabel24"
         Me.BunifuLabel24.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel24.Size = New System.Drawing.Size(56, 20)
@@ -1076,7 +1161,7 @@ Partial Class Clearance
         Me.DateAndTimeTextBox.IconRight = Nothing
         Me.DateAndTimeTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.DateAndTimeTextBox.Lines = New String(-1) {}
-        Me.DateAndTimeTextBox.Location = New System.Drawing.Point(396, 146)
+        Me.DateAndTimeTextBox.Location = New System.Drawing.Point(467, 135)
         Me.DateAndTimeTextBox.MaxLength = 32767
         Me.DateAndTimeTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.DateAndTimeTextBox.Modified = False
@@ -1131,7 +1216,7 @@ Partial Class Clearance
         Me.BunifuLabel20.CursorType = Nothing
         Me.BunifuLabel20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel20.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel20.Location = New System.Drawing.Point(632, 126)
+        Me.BunifuLabel20.Location = New System.Drawing.Point(703, 115)
         Me.BunifuLabel20.Name = "BunifuLabel20"
         Me.BunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel20.Size = New System.Drawing.Size(59, 20)
@@ -1148,7 +1233,7 @@ Partial Class Clearance
         Me.BunifuLabel12.CursorType = Nothing
         Me.BunifuLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel12.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel12.Location = New System.Drawing.Point(396, 126)
+        Me.BunifuLabel12.Location = New System.Drawing.Point(467, 115)
         Me.BunifuLabel12.Name = "BunifuLabel12"
         Me.BunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel12.Size = New System.Drawing.Size(104, 20)
@@ -1166,7 +1251,7 @@ Partial Class Clearance
         Me.BunifuLabel19.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel19.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel19.Location = New System.Drawing.Point(715, 63)
+        Me.BunifuLabel19.Location = New System.Drawing.Point(786, 52)
         Me.BunifuLabel19.Name = "BunifuLabel19"
         Me.BunifuLabel19.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel19.Size = New System.Drawing.Size(103, 20)
@@ -1205,7 +1290,7 @@ Partial Class Clearance
         Me.AgeTextBox.IconRight = Nothing
         Me.AgeTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.AgeTextBox.Lines = New String(-1) {}
-        Me.AgeTextBox.Location = New System.Drawing.Point(222, 271)
+        Me.AgeTextBox.Location = New System.Drawing.Point(293, 260)
         Me.AgeTextBox.MaxLength = 32767
         Me.AgeTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.AgeTextBox.Modified = False
@@ -1261,7 +1346,7 @@ Partial Class Clearance
         Me.BunifuLabel21.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel21.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel21.Location = New System.Drawing.Point(504, 63)
+        Me.BunifuLabel21.Location = New System.Drawing.Point(575, 52)
         Me.BunifuLabel21.Name = "BunifuLabel21"
         Me.BunifuLabel21.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel21.Size = New System.Drawing.Size(111, 20)
@@ -1300,7 +1385,7 @@ Partial Class Clearance
         Me.QuantityTextBox.IconRight = Nothing
         Me.QuantityTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.QuantityTextBox.Lines = New String(-1) {}
-        Me.QuantityTextBox.Location = New System.Drawing.Point(340, 271)
+        Me.QuantityTextBox.Location = New System.Drawing.Point(411, 260)
         Me.QuantityTextBox.MaxLength = 32767
         Me.QuantityTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.QuantityTextBox.Modified = False
@@ -1377,7 +1462,7 @@ Partial Class Clearance
         Me.TransactionNumber_TextBox.IconRight = Nothing
         Me.TransactionNumber_TextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.TransactionNumber_TextBox.Lines = New String(-1) {}
-        Me.TransactionNumber_TextBox.Location = New System.Drawing.Point(87, 146)
+        Me.TransactionNumber_TextBox.Location = New System.Drawing.Point(158, 135)
         Me.TransactionNumber_TextBox.MaxLength = 32767
         Me.TransactionNumber_TextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.TransactionNumber_TextBox.Modified = False
@@ -1432,12 +1517,12 @@ Partial Class Clearance
         Me.BunifuLabel13.CursorType = Nothing
         Me.BunifuLabel13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel13.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel13.Location = New System.Drawing.Point(85, 249)
+        Me.BunifuLabel13.Location = New System.Drawing.Point(156, 238)
         Me.BunifuLabel13.Name = "BunifuLabel13"
         Me.BunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel13.Size = New System.Drawing.Size(54, 20)
+        Me.BunifuLabel13.Size = New System.Drawing.Size(27, 20)
         Me.BunifuLabel13.TabIndex = 101
-        Me.BunifuLabel13.Text = "Gender"
+        Me.BunifuLabel13.Text = "Sex"
         Me.BunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
@@ -1471,7 +1556,7 @@ Partial Class Clearance
         Me.AddressTextBox.IconRight = Nothing
         Me.AddressTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.AddressTextBox.Lines = New String(-1) {}
-        Me.AddressTextBox.Location = New System.Drawing.Point(85, 206)
+        Me.AddressTextBox.Location = New System.Drawing.Point(156, 195)
         Me.AddressTextBox.MaxLength = 32767
         Me.AddressTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.AddressTextBox.Modified = False
@@ -1518,82 +1603,82 @@ Partial Class Clearance
         Me.AddressTextBox.UseSystemPasswordChar = False
         Me.AddressTextBox.WordWrap = True
         '
-        'GenderTextBox
+        'SexTextBox
         '
-        Me.GenderTextBox.AcceptsReturn = False
-        Me.GenderTextBox.AcceptsTab = False
-        Me.GenderTextBox.AccessibleName = "Gender"
-        Me.GenderTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GenderTextBox.AnimationSpeed = 200
-        Me.GenderTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.GenderTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.GenderTextBox.BackColor = System.Drawing.Color.Transparent
-        Me.GenderTextBox.BackgroundImage = CType(resources.GetObject("GenderTextBox.BackgroundImage"), System.Drawing.Image)
-        Me.GenderTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.GenderTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.GenderTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GenderTextBox.BorderColorIdle = System.Drawing.Color.Silver
-        Me.GenderTextBox.BorderRadius = 20
-        Me.GenderTextBox.BorderThickness = 1
-        Me.GenderTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.GenderTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GenderTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GenderTextBox.DefaultText = ""
-        Me.GenderTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GenderTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.GenderTextBox.HideSelection = True
-        Me.GenderTextBox.IconLeft = Nothing
-        Me.GenderTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.GenderTextBox.IconPadding = 10
-        Me.GenderTextBox.IconRight = Nothing
-        Me.GenderTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.GenderTextBox.Lines = New String(-1) {}
-        Me.GenderTextBox.Location = New System.Drawing.Point(85, 271)
-        Me.GenderTextBox.MaxLength = 32767
-        Me.GenderTextBox.MinimumSize = New System.Drawing.Size(1, 1)
-        Me.GenderTextBox.Modified = False
-        Me.GenderTextBox.Multiline = False
-        Me.GenderTextBox.Name = "GenderTextBox"
+        Me.SexTextBox.AcceptsReturn = False
+        Me.SexTextBox.AcceptsTab = False
+        Me.SexTextBox.AccessibleName = "Gender"
+        Me.SexTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.SexTextBox.AnimationSpeed = 200
+        Me.SexTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.SexTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.SexTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.SexTextBox.BackgroundImage = CType(resources.GetObject("SexTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.SexTextBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.SexTextBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.SexTextBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SexTextBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.SexTextBox.BorderRadius = 20
+        Me.SexTextBox.BorderThickness = 1
+        Me.SexTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.SexTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.SexTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SexTextBox.DefaultText = ""
+        Me.SexTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.SexTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.SexTextBox.HideSelection = True
+        Me.SexTextBox.IconLeft = Nothing
+        Me.SexTextBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.SexTextBox.IconPadding = 10
+        Me.SexTextBox.IconRight = Nothing
+        Me.SexTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.SexTextBox.Lines = New String(-1) {}
+        Me.SexTextBox.Location = New System.Drawing.Point(156, 260)
+        Me.SexTextBox.MaxLength = 32767
+        Me.SexTextBox.MinimumSize = New System.Drawing.Size(1, 1)
+        Me.SexTextBox.Modified = False
+        Me.SexTextBox.Multiline = False
+        Me.SexTextBox.Name = "SexTextBox"
         StateProperties49.BorderColor = System.Drawing.Color.DodgerBlue
         StateProperties49.FillColor = System.Drawing.Color.Empty
         StateProperties49.ForeColor = System.Drawing.Color.Empty
         StateProperties49.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.GenderTextBox.OnActiveState = StateProperties49
+        Me.SexTextBox.OnActiveState = StateProperties49
         StateProperties50.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         StateProperties50.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         StateProperties50.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         StateProperties50.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.GenderTextBox.OnDisabledState = StateProperties50
+        Me.SexTextBox.OnDisabledState = StateProperties50
         StateProperties51.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
         StateProperties51.FillColor = System.Drawing.Color.Empty
         StateProperties51.ForeColor = System.Drawing.Color.Empty
         StateProperties51.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.GenderTextBox.OnHoverState = StateProperties51
+        Me.SexTextBox.OnHoverState = StateProperties51
         StateProperties52.BorderColor = System.Drawing.Color.Silver
         StateProperties52.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         StateProperties52.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties52.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.GenderTextBox.OnIdleState = StateProperties52
-        Me.GenderTextBox.Padding = New System.Windows.Forms.Padding(3)
-        Me.GenderTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GenderTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.GenderTextBox.PlaceholderText = ""
-        Me.GenderTextBox.ReadOnly = False
-        Me.GenderTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.GenderTextBox.SelectedText = ""
-        Me.GenderTextBox.SelectionLength = 0
-        Me.GenderTextBox.SelectionStart = 0
-        Me.GenderTextBox.ShortcutsEnabled = True
-        Me.GenderTextBox.Size = New System.Drawing.Size(131, 42)
-        Me.GenderTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.GenderTextBox.TabIndex = 104
-        Me.GenderTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.GenderTextBox.TextMarginBottom = 0
-        Me.GenderTextBox.TextMarginLeft = 3
-        Me.GenderTextBox.TextMarginTop = 0
-        Me.GenderTextBox.TextPlaceholder = ""
-        Me.GenderTextBox.UseSystemPasswordChar = False
-        Me.GenderTextBox.WordWrap = True
+        Me.SexTextBox.OnIdleState = StateProperties52
+        Me.SexTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.SexTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.SexTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.SexTextBox.PlaceholderText = ""
+        Me.SexTextBox.ReadOnly = False
+        Me.SexTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.SexTextBox.SelectedText = ""
+        Me.SexTextBox.SelectionLength = 0
+        Me.SexTextBox.SelectionStart = 0
+        Me.SexTextBox.ShortcutsEnabled = True
+        Me.SexTextBox.Size = New System.Drawing.Size(131, 42)
+        Me.SexTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.SexTextBox.TabIndex = 104
+        Me.SexTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.SexTextBox.TextMarginBottom = 0
+        Me.SexTextBox.TextMarginLeft = 3
+        Me.SexTextBox.TextMarginTop = 0
+        Me.SexTextBox.TextPlaceholder = ""
+        Me.SexTextBox.UseSystemPasswordChar = False
+        Me.SexTextBox.WordWrap = True
         '
         'BunifuLabel14
         '
@@ -1603,7 +1688,7 @@ Partial Class Clearance
         Me.BunifuLabel14.CursorType = Nothing
         Me.BunifuLabel14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel14.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel14.Location = New System.Drawing.Point(225, 249)
+        Me.BunifuLabel14.Location = New System.Drawing.Point(296, 238)
         Me.BunifuLabel14.Name = "BunifuLabel14"
         Me.BunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel14.Size = New System.Drawing.Size(29, 20)
@@ -1620,7 +1705,7 @@ Partial Class Clearance
         Me.BunifuLabel18.CursorType = Nothing
         Me.BunifuLabel18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel18.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel18.Location = New System.Drawing.Point(85, 126)
+        Me.BunifuLabel18.Location = New System.Drawing.Point(156, 115)
         Me.BunifuLabel18.Name = "BunifuLabel18"
         Me.BunifuLabel18.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel18.Size = New System.Drawing.Size(143, 20)
@@ -1638,7 +1723,7 @@ Partial Class Clearance
         Me.BunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel3.Location = New System.Drawing.Point(85, 63)
+        Me.BunifuLabel3.Location = New System.Drawing.Point(156, 52)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel3.Size = New System.Drawing.Size(42, 20)
@@ -1873,51 +1958,6 @@ Partial Class Clearance
         Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'fullname_Column
-        '
-        Me.fullname_Column.HeaderText = "Full name"
-        Me.fullname_Column.Name = "fullname_Column"
-        Me.fullname_Column.ReadOnly = True
-        '
-        'Transact_Col
-        '
-        Me.Transact_Col.HeaderText = "Transaction No."
-        Me.Transact_Col.Name = "Transact_Col"
-        Me.Transact_Col.ReadOnly = True
-        '
-        'purpose_Column
-        '
-        Me.purpose_Column.HeaderText = "Purpose"
-        Me.purpose_Column.Name = "purpose_Column"
-        Me.purpose_Column.ReadOnly = True
-        '
-        'date_Column
-        '
-        Me.date_Column.HeaderText = "Date"
-        Me.date_Column.Name = "date_Column"
-        Me.date_Column.ReadOnly = True
-        '
-        'givenBy_Column
-        '
-        Me.givenBy_Column.HeaderText = "Given by"
-        Me.givenBy_Column.Name = "givenBy_Column"
-        Me.givenBy_Column.ReadOnly = True
-        '
-        'typeColumn
-        '
-        Me.typeColumn.HeaderText = "Type"
-        Me.typeColumn.Name = "typeColumn"
-        Me.typeColumn.ReadOnly = True
-        '
-        'deleteButton_Column
-        '
-        Me.deleteButton_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.deleteButton_Column.HeaderText = ""
-        Me.deleteButton_Column.MinimumWidth = 30
-        Me.deleteButton_Column.Name = "deleteButton_Column"
-        Me.deleteButton_Column.ReadOnly = True
-        Me.deleteButton_Column.Width = 30
-        '
         'Clearance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1984,7 +2024,7 @@ Partial Class Clearance
     Friend WithEvents TransactionNumber_TextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel13 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents AddressTextBox As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents GenderTextBox As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents SexTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel14 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel18 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel3 As Bunifu.UI.WinForms.BunifuLabel
@@ -1996,4 +2036,6 @@ Partial Class Clearance
     Friend WithEvents givenBy_Column As DataGridViewTextBoxColumn
     Friend WithEvents typeColumn As DataGridViewTextBoxColumn
     Friend WithEvents deleteButton_Column As DataGridViewImageColumn
+    Friend WithEvents BunifuLabel29 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents BunifuLabel23 As Bunifu.UI.WinForms.BunifuLabel
 End Class

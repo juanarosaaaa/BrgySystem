@@ -81,7 +81,11 @@
 
 
 
-
+    Private Sub FullNameTextBoxKeyDown(sender As Object, e As KeyEventArgs) Handles FullNameTextBox.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            clearance.setInputValuesFrom(FullNameTextBox.Text.Trim)
+        End If
+    End Sub
 
     Private Sub NameTextBoxIsClick(sender As Object, e As EventArgs) Handles FullNameTextBox.Click
         IsAlreadyStartAtName = True
@@ -91,7 +95,7 @@
 
         If InputIsNull(FullNameTextBox.Text.Trim) And IsAlreadyStartAtName Then
             AddressTextBox.Clear()
-            GenderTextBox.Clear()
+            SexTextBox.Clear()
             AgeTextBox.Clear()
         End If
     End Sub
@@ -102,6 +106,8 @@
             isTransactNumberModified = False
         End If
     End Sub
+
+
 
     Private Sub TransactionNumTxtBoxTextChanged(sender As Object, e As KeyEventArgs) Handles TransactionNumber_TextBox.KeyDown
         isTransactNumberModified = True

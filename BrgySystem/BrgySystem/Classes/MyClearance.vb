@@ -25,7 +25,7 @@ Public Class MyClearance
         Return "INSERT INTO `clearance` VALUES ('" & Clearance.TransactionNumber_TextBox.Text.Trim & "',
 '" & Clearance.FullNameTextBox.Text.Trim & "',
 '" & Clearance.AddressTextBox.Text.Trim & "',
-'" & Clearance.GenderTextBox.Text & "',
+'" & Clearance.SexTextBox.Text & "',
 '" & Clearance.AgeTextBox.Text & "', 
 '" & Clearance.QuantityTextBox.Text & "',
 '" & Clearance.DateAndTimeTextBox.Text & "',
@@ -83,6 +83,31 @@ Public Class MyClearance
 
     End Function
 
+    Sub setInputValuesFrom(name As String)
+        openConnection()
+        Dim command As New MySqlCommand("SELECT ADDRESS,AGE,SEX FROM `residents` WHERE FULLNAME = '" & name.Trim & "'", getConnection)
+        Dim reader As MySqlDataReader
+        reader = command.ExecuteReader
+
+        Try
+            While reader.Read
+                With Clearance
+                    .AddressTextBox.Text = reader.GetString("ADDRESS")
+                    .AgeTextBox.Text = reader.GetString("AGE")
+                    .SexTextBox.Text = reader.GetString("SEX")
+                End With
+            End While
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            closeConnection()
+        End Try
+    End Sub
+
+
+
 
     Function addClearance(query As String) As Boolean
         Try
@@ -95,10 +120,10 @@ Public Class MyClearance
             ElseIf InputContainsLetter(Clearance.QuantityTextBox.Text) Then
                 MessageBox.Show("Quantity contains letter!", "Quantity Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
-            ElseIf InputContainsLetter(Clearance.AmountTextBox.Text) Then
+            ElseIf InputContainsLetter(Clearance.AmountTextbox.Text) Then
                 MessageBox.Show("Cash Amount contains letter!", "Cash Amount Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
-            ElseIf InputContainsLetter(Clearance.TotalTextBox.Text) Then
+            ElseIf InputContainsLetter(Clearance.TotalTextbox.Text) Then
                 MessageBox.Show("Total Amount contains letter!", "Total Amount  Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", Clearance.FullNameTextBox.Text.Trim)) Then
                 MessageBox.Show("Unknown Resident. Resident '" & Clearance.FullNameTextBox.Text.Trim.ToUpper & "' does not exist in Resident's list.", "INVALID Resident!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -112,8 +137,8 @@ Public Class MyClearance
                 Return False
             End If
         Catch duplicate As MySqlException
-            If isInputAlreadyExist("Business Name", "clearance", Clearance.businessNameTextBox.Text.Trim) And Clearance.isBusinessNamemodified Then
-                MessageBox.Show("Business Name '" & Clearance.businessNameTextBox.Text.Trim.ToUpper & "' is already used.", "INVALID BUSINESS NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            If isInputAlreadyExist("Business Name", "clearance", Clearance.BusinessNameTextBOx.Text.Trim) And Clearance.isBusinessNamemodified Then
+                MessageBox.Show("Business Name '" & Clearance.BusinessNameTextBOx.Text.Trim.ToUpper & "' is already used.", "INVALID BUSINESS NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
             ElseIf isInputAlreadyExist("TransactNo", "clearance", Clearance.TransactionNumber_TextBox.Text.Trim) And Clearance.isTransactNumberModified Then
                 MessageBox.Show("Transaction Number '" & Clearance.TransactionNumber_TextBox.Text.Trim.ToUpper & "' is already exist.", "INVALID TRANSACTION NUMBER!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -136,7 +161,7 @@ Public Class MyClearance
             .PurposeTextBox.Clear()
             .AddressTextBox.Clear()
             .IssuedAtTextBox.Clear()
-            .GenderTextBox.Clear()
+            .SexTextBox.Clear()
             .AgeTextBox.Clear()
 
             .isBusinessNamemodified = False

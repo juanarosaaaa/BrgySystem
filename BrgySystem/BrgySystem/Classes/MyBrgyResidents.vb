@@ -271,26 +271,32 @@ Public Class MyBrgyResidents
 
 
             While reader.Read
-                MyResidents.Fullnametxtbox.Text = reader.GetString("FULLNAME")
-                MyResidents.SuffixComboBox.Text = reader.GetString("SUFFIX")
-                MyResidents.CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
-                MyResidents.AddressTextBox.Text = reader.GetString("ADDRESS")
-                MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
-                MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
-                MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
-                MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
-                MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
-                MyResidents.BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
-                MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
-                MyResidents.SexComboBox.Text = reader.GetString("SEX")
-                MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
-                MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
 
-                imgname = reader.GetString("ImageName")
-                imgpath = reader.GetString("ImagePath")
+                With MyResidents
 
-                MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("Imagepath"))
+                    .Fullnametxtbox.Text = reader.GetString("FULLNAME")
+                    .SuffixComboBox.Text = reader.GetString("SUFFIX")
+                    .CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
+                    .AddressTextBox.Text = reader.GetString("ADDRESS")
+                    .ReligionTextBOx.Text = reader.GetString("RELIGION")
+                    .HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
+                    .ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
+                    .OccupationTextBox.Text = reader.GetString("OCCUPATION")
+                    .PurokTextBox.Text = reader.GetString("PUROK")
+                    .BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
+                    .CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
+                    .SexComboBox.Text = reader.GetString("SEX")
+                    .VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
+                    .SeniorComboBox.Text = reader.GetString("SeniorCitizen")
+
+                    imgname = reader.GetString("ImageName")
+                    imgpath = reader.GetString("ImagePath")
+
+
+                    MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("Imagepath"))
+                End With
             End While
+
         Catch x As FileNotFoundException
             MessageBox.Show("Picture for Resident '" & reader.GetString("FULLNAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
