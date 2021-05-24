@@ -1,7 +1,11 @@
-﻿Public Class Clearance
+﻿
+Public Class Clearance
+
+
     Dim SettinggridViewImage As New DataGridViewImages
     Dim SettingAction As New DataGridViewActionButtonEvent
     Private clearance As MyClearance = New MyClearance
+
     Private manage As loadGridViewValue = New ManageSystem
     Private search As Search = New SearchingFeature_Implementation
     Private isAlreadyStartSearchField, IsAlreadyStartAtName As Boolean
@@ -27,20 +31,18 @@
         End If
     End Sub
 
-    Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
 
-    End Sub
 
 
 
     Private Sub Clearance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        LabelStatus.Visible = False
         isBusinessNamemodified = False
         isTransactNumberModified = False
-
+        BrgyClearanceComboBox.SelectedIndex = 0
         clearance.arrangeGridView()
         manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
-
+        TransactionNumber_TextBox.Text = clearance.getGeneratedTransactionNumber()
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldTextBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "residents", FullNameTextBox)
     End Sub
@@ -54,7 +56,7 @@
 
 
 
-    Private Sub SearchFieldIsClick(sender As Object, e As EventArgs) Handles SearchFieldtextBox.Click
+    Private Sub SearchFieldIsClick(sender As Object, e As EventArgs) Handles SearchFieldTextBox.Click
         isAlreadyStartSearchField = True
     End Sub
 
@@ -65,7 +67,7 @@
         End If
     End Sub
 
-    Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchFieldtextBox.KeyDown
+    Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchFieldTextBox.KeyDown
         If e.KeyCode = Keys.Enter Then
             search.searchValueIn(valueYouSearchFor, ClearanceGridView)
         End If
@@ -84,6 +86,10 @@
     Private Sub FullNameTextBoxKeyDown(sender As Object, e As KeyEventArgs) Handles FullNameTextBox.KeyDown
         If e.KeyCode = Keys.Enter Then
             clearance.setInputValuesFrom(FullNameTextBox.Text.Trim)
+            If (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
+                LabelStatus.Visible = True
+                LabelStatus.Text = "Resident '" & FullNameTextBox.Text.Trim.ToUpper & "' does not exist in resident's list."
+            End If
         End If
     End Sub
 
@@ -92,22 +98,39 @@
     End Sub
 
     Private Sub nameTextBoxtTExtChanged(sender As Object, e As EventArgs) Handles FullNameTextBox.TextChange
+        If IsAlreadyStartAtName Then
+            clearance.setInputValuesFrom(FullNameTextBox.Text.Trim)
+            If InputIsNull(FullNameTextBox.Text.Trim) Then
+                AddressTextBox.Clear()
+                SexTextBox.Clear()
+                AgeTextBox.Clear()
+                LabelStatus.Visible = False
+            ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
+                LabelStatus.Visible = True
+                LabelStatus.Text = "Resident name does not exist in residents list!"
 
-        If InputIsNull(FullNameTextBox.Text.Trim) And IsAlreadyStartAtName Then
-            AddressTextBox.Clear()
-            SexTextBox.Clear()
-            AgeTextBox.Clear()
+            Else
+                LabelStatus.Visible = False
+            End If
+
         End If
     End Sub
 
     Private Sub ClearanceGridViewClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ClearanceGridView.CellClick
         If SettingAction.buttonOf_IsClick("deleteButton_Column", ClearanceGridView, e) Then
+            clearance.deleteClearance(ClearanceGridView.CurrentRow.Cells("fullname_Column").FormattedValue)
+            manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldTextBox)
+            clearance.clearAllInputs()
+
             isBusinessNamemodified = False
             isTransactNumberModified = False
         End If
     End Sub
 
-
+    Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
+        DateAndTimeTextBox.Text = Date.Now
+    End Sub
 
     Private Sub TransactionNumTxtBoxTextChanged(sender As Object, e As KeyEventArgs) Handles TransactionNumber_TextBox.KeyDown
         isTransactNumberModified = True

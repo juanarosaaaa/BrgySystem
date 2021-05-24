@@ -11,9 +11,7 @@
     Private Sub OrganizationChart_Click(sender As Object, e As EventArgs) Handles OrganizationChart.Click
         showPanelDisplayOf(SettingsOrganizationChart)
     End Sub
-    Private Sub BackupAndRestoreButton_Click(sender As Object, e As EventArgs) Handles BackupAndRestoreButton.Click
-        showPanelDisplayOf(SettingsbackupAndRestoreForm)
-    End Sub
+
     Sub showPanelDisplayOf(panelDisplay As Form)
         MainPanelSetting.Controls.Clear()
         panelDisplay.TopLevel = False

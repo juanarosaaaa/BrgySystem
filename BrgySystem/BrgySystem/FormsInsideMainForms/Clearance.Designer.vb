@@ -22,6 +22,7 @@ Partial Class Clearance
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -105,7 +106,6 @@ Partial Class Clearance
         Me.SearchFieldTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.IssuedAtTextBox = New System.Windows.Forms.RichTextBox()
         Me.BunifuLabel27 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.FullNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel24 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -137,6 +137,8 @@ Partial Class Clearance
         Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.LabelStatus = New System.Windows.Forms.Label()
+        Me.Timer = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.ClearanceGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -287,7 +289,7 @@ Partial Class Clearance
         Me.GroupBox2.Controls.Add(Me.SearchFieldTextBox)
         Me.GroupBox2.Controls.Add(Me.IssuedAtTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel27)
-        Me.GroupBox2.Controls.Add(Me.Label1)
+        Me.GroupBox2.Controls.Add(Me.LabelStatus)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel2)
         Me.GroupBox2.Controls.Add(Me.FullNameTextBox)
         Me.GroupBox2.Controls.Add(Me.BunifuLabel24)
@@ -777,7 +779,7 @@ Partial Class Clearance
         Me.BunifuLabel7.CursorType = Nothing
         Me.BunifuLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel7.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel7.Location = New System.Drawing.Point(156, 174)
+        Me.BunifuLabel7.Location = New System.Drawing.Point(156, 176)
         Me.BunifuLabel7.Name = "BunifuLabel7"
         Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel7.Size = New System.Drawing.Size(59, 20)
@@ -1008,18 +1010,6 @@ Partial Class Clearance
         Me.BunifuLabel27.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel27.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'Label1
-        '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(252, 54)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(268, 16)
-        Me.Label1.TabIndex = 127
-        Me.Label1.Text = "Status of residents, this is a place holder text"
-        '
         'BunifuLabel2
         '
         Me.BunifuLabel2.AllowParentOverrides = False
@@ -1152,6 +1142,7 @@ Partial Class Clearance
         Me.DateAndTimeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.DateAndTimeTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateAndTimeTextBox.DefaultText = ""
+        Me.DateAndTimeTextBox.Enabled = False
         Me.DateAndTimeTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.DateAndTimeTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.DateAndTimeTextBox.HideSelection = True
@@ -1281,6 +1272,7 @@ Partial Class Clearance
         Me.AgeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.AgeTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AgeTextBox.DefaultText = ""
+        Me.AgeTextBox.Enabled = False
         Me.AgeTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.AgeTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.AgeTextBox.HideSelection = True
@@ -1453,6 +1445,7 @@ Partial Class Clearance
         Me.TransactionNumber_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TransactionNumber_TextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TransactionNumber_TextBox.DefaultText = ""
+        Me.TransactionNumber_TextBox.Enabled = False
         Me.TransactionNumber_TextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.TransactionNumber_TextBox.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.TransactionNumber_TextBox.HideSelection = True
@@ -1556,7 +1549,7 @@ Partial Class Clearance
         Me.AddressTextBox.IconRight = Nothing
         Me.AddressTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.AddressTextBox.Lines = New String(-1) {}
-        Me.AddressTextBox.Location = New System.Drawing.Point(156, 195)
+        Me.AddressTextBox.Location = New System.Drawing.Point(156, 197)
         Me.AddressTextBox.MaxLength = 32767
         Me.AddressTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.AddressTextBox.Modified = False
@@ -1624,6 +1617,7 @@ Partial Class Clearance
         Me.SexTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.SexTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SexTextBox.DefaultText = ""
+        Me.SexTextBox.Enabled = False
         Me.SexTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.SexTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.SexTextBox.HideSelection = True
@@ -1958,6 +1952,23 @@ Partial Class Clearance
         Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'LabelStatus
+        '
+        Me.LabelStatus.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LabelStatus.AutoSize = True
+        Me.LabelStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelStatus.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.LabelStatus.Location = New System.Drawing.Point(252, 54)
+        Me.LabelStatus.Name = "LabelStatus"
+        Me.LabelStatus.Size = New System.Drawing.Size(268, 16)
+        Me.LabelStatus.TabIndex = 127
+        Me.LabelStatus.Text = "Status of residents, this is a place holder text"
+        '
+        'Timer
+        '
+        Me.Timer.Enabled = True
+        Me.Timer.Interval = 1000
+        '
         'Clearance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2010,7 +2021,6 @@ Partial Class Clearance
     Friend WithEvents SearchButton As Button
     Friend WithEvents IssuedAtTextBox As RichTextBox
     Friend WithEvents BunifuLabel27 As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents Label1 As Label
     Friend WithEvents BunifuLabel2 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents FullNameTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel24 As Bunifu.UI.WinForms.BunifuLabel
@@ -2038,4 +2048,6 @@ Partial Class Clearance
     Friend WithEvents deleteButton_Column As DataGridViewImageColumn
     Friend WithEvents BunifuLabel29 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuLabel23 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents LabelStatus As Label
+    Friend WithEvents Timer As Timer
 End Class
