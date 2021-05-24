@@ -90,6 +90,7 @@ Public Class MyArchive
                     MessageBox.Show("An error occured. Failed to restore '" & nameToRestore.ToUpper.Trim & "' Resident.", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             End If
+
         Catch duplicate As MySqlException
 
             Dim residentsName_IfImageExist As String = isInputAlreadyExistAtAnotherTable("FULLNAME", "residents", "archive_residents", "archive_residents.ImageName", "residents.ImageName")
@@ -133,19 +134,32 @@ Public Class MyArchive
         Dim query As String = "INSERT INTO `officials` SELECT * from archive_officials where NAME = '" & nameToRestore & "';
                             DELETE FROM archive_officials WHERE NAME = '" & nameToRestore & "';"
 
+
+
+
         Try
+            openConnection()
+            Dim officialBarangayCaptain_IfPositionExist As String = isInputAlreadyExistAtAnotherTable("Name", "officials", "archive_officials", "archive_officials.POSITION", "officials.POSITION")
+            closeConnection()
+
             If (MessageBox.Show("Are you sure you want to restore '" & nameToRestore.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
-                If (manipulate.manipulateDataAt(query)) Then
+
+                If officialBarangayCaptain_IfPositionExist.Length > 0 Then
+                    MessageBox.Show("Failed restoring Barangay Official. '" & officialBarangayCaptain_IfPositionExist & "' from Barangay Official's list is already assigned as Barangay Captain.", "BARANGAY POSITION IS INVALID!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf (manipulate.manipulateDataAt(query)) Then
                     MessageBox.Show("Barangay Official '" & nameToRestore.ToUpper.Trim & "' was restored successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else
                     MessageBox.Show("An error occured. Failed to restore '" & nameToRestore.ToUpper.Trim & "' Barangay Official.", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
+
             End If
         Catch duplicate As MySqlException
 
 
             Dim officialName_IfImageExist As String = isInputAlreadyExistAtAnotherTable("Name", "officials", "archive_officials", "archive_officials.ImageName", "officials.ImageName")
             Dim officialName_IfContactExist As String = isInputAlreadyExistAtAnotherTable("Name", "officials", "archive_officials", "archive_officials.CONTACT", "officials.CONTACT")
+
+
 
             If officialName_IfImageExist.Length > 0 Then
                 MessageBox.Show("Failed restoring Barangay Official. Official '" & officialName_IfImageExist & "' from Barangay Official's list is already used this image.", "IMAGE ALREADY USED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
