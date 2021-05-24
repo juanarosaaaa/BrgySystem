@@ -24,6 +24,9 @@ Module InputValidation
         Return val.Value.Year >= Date.Now.Year
     End Function
 
+    Function isContactNumberInvalid(contact As String) As Boolean
+        Return contact.Length <> 11
+    End Function
     Function isInputAlreadyExist(columnName As String, tableName As String, input As String) As Boolean 'select PurokName from  Purok where PurokName = 'therter'
 
         Dim datatable As New DataTable

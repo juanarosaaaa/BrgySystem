@@ -146,7 +146,7 @@ Public Class MyOfficials
     End Function
 
     Sub deleteOfficial(officialname As String)
-        If (MessageBox.Show("Are you sure you want to delete '" & officialname.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+        If (MessageBox.Show("Are you sure you want to delete '" & officialname.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manage.manipulateDataAt("DELETE FROM `officials` WHERE NAME = '" & officialname.Trim & "' ")) Then
                 MessageBox.Show("Barangay Official '" & officialname.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
@@ -163,7 +163,7 @@ Public Class MyOfficials
                             DELETE FROM `officials` WHERE Name = '" & official & "';"
 
         Try
-            If (MessageBox.Show("Are you sure you want to archive '" & official.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (MessageBox.Show("Are you sure you want to archive '" & official.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to archive?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
                 If (manage.manipulateDataAt(query)) Then
                     MessageBox.Show("Barangay Official '" & official.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else

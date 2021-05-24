@@ -41,7 +41,7 @@ Public Class MyPurok
         Catch duplicate As MySqlException
             MessageBox.Show("Purok '" & name.Trim.ToUpper & "' already exist!", "FAILED TO ADD!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Catch nullValues As NoNullAllowedException
-            MessageBox.Show("Input is invalid! An input must not leave empty or contain special characters \/:*?`<>| ", "FAILED TO ADD!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Input is invalid! An input must not leave empty or contain special characters \/:*?`<>| ", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
             closeConnection()
         End Try
@@ -50,7 +50,7 @@ Public Class MyPurok
 
     Sub deletePurok(name As String)
 
-        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Purok?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Purok?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manage.manipulateDataAt("DELETE FROM `purok` WHERE PurokName = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Purok '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
@@ -66,7 +66,7 @@ Public Class MyPurok
                             DELETE FROM purok WHERE PurokName = '" & nameToArchive & "';"
 
         Try
-            If (MessageBox.Show("Are you sure you want to archive '" & nameToArchive.ToUpper.Trim & "' Purok?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (MessageBox.Show("Are you sure you want to archive '" & nameToArchive.ToUpper.Trim & "' Purok?", "Are you sure you want to archive?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
                 If (manage.manipulateDataAt(query)) Then
                     MessageBox.Show("Purok '" & nameToArchive.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else

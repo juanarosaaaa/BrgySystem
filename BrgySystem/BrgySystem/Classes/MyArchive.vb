@@ -8,7 +8,7 @@ Public Class MyArchive
                             DELETE FROM archive_purok WHERE PurokName = '" & nameToRestore & "';"
 
         Try
-            If (MessageBox.Show("Are you sure you want to restore '" & nameToRestore.ToUpper.Trim & "' Purok?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (MessageBox.Show("Are you sure you want to restore '" & nameToRestore.ToUpper.Trim & "' Purok?", "Are you sure you want to restore?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
                 If (manipulate.manipulateDataAt(query)) Then
                     MessageBox.Show("Purok '" & nameToRestore.ToUpper.Trim & "' was restored successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else
@@ -26,7 +26,7 @@ Public Class MyArchive
     End Sub
     Overloads Sub deletePurok(name As String)
 
-        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Purok?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Purok?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manipulate.manipulateDataAt("DELETE FROM `archive_purok` WHERE PurokName = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Purok '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
@@ -83,7 +83,7 @@ Public Class MyArchive
                             DELETE FROM archive_residents WHERE FULLNAME = '" & nameToRestore & "';"
 
         Try
-            If (MessageBox.Show("Are you sure you want to restore '" & nameToRestore.ToUpper.Trim & "' Resident?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (MessageBox.Show("Are you sure you want to restore '" & nameToRestore.ToUpper.Trim & "' Resident?", "Are you sure you want to restore?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
                 If (manipulate.manipulateDataAt(query)) Then
                     MessageBox.Show("Resident '" & nameToRestore.ToUpper.Trim & "' was restored successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else
@@ -112,7 +112,7 @@ Public Class MyArchive
 
     Sub deleteResidents(name As String)
 
-        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Resident?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Resident?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manipulate.manipulateDataAt("DELETE FROM `archive_residents` WHERE FULLNAME = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Resident '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
@@ -142,7 +142,7 @@ Public Class MyArchive
             Dim officialBarangayCaptain_IfPositionExist As String = isInputAlreadyExistAtAnotherTable("Name", "officials", "archive_officials", "archive_officials.POSITION", "officials.POSITION")
             closeConnection()
 
-            If (MessageBox.Show("Are you sure you want to restore '" & nameToRestore.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (MessageBox.Show("Are you sure you want to restore '" & nameToRestore.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to restore?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
 
                 If officialBarangayCaptain_IfPositionExist.Length > 0 Then
                     MessageBox.Show("Failed restoring Barangay Official. '" & officialBarangayCaptain_IfPositionExist & "' from Barangay Official's list is already assigned as Barangay Captain.", "BARANGAY POSITION IS INVALID!", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -182,7 +182,7 @@ Public Class MyArchive
 
     Sub deleteOfficials(name As String)
 
-        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manipulate.manipulateDataAt("DELETE FROM `archive_officials` WHERE Name = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Barangay Official '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else

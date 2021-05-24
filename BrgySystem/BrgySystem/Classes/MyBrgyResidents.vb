@@ -71,7 +71,7 @@ Public Class MyBrgyResidents
 
     Sub deleteResidents(resident As String)
 
-        If (MessageBox.Show("Are you sure you want to delete '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+        If (MessageBox.Show("Are you sure you want to delete '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manage.manipulateDataAt("DELETE FROM `residents` WHERE FULLNAME = '" & resident.Trim & "' ")) Then
                 MessageBox.Show("Resident '" & resident.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
@@ -89,7 +89,7 @@ Public Class MyBrgyResidents
                             DELETE FROM `residents` WHERE Fullname = '" & resident & "';"
 
         Try
-            If (MessageBox.Show("Are you sure you want to archive '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (MessageBox.Show("Are you sure you want to archive '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to archive?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
                 If (manage.manipulateDataAt(query)) Then
                     MessageBox.Show("Resident '" & resident.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else
@@ -172,7 +172,7 @@ Public Class MyBrgyResidents
                 clearAllInputs()
                 Return True
             Else
-                MessageBox.Show("An error occured. Failed to add new Resident!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("An error occured. Failed to add/update Resident.", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
             End If
         Catch duplicate As MySqlException
@@ -230,7 +230,7 @@ Public Class MyBrgyResidents
                 Exit For
                 Exit Function
             ElseIf (InputContainsSpecialCharacter(inputObjects.Text)) Then
-                MessageBox.Show("Input is invalid. Your '" & inputObjects.AccessibleName & "' field contains special characters ^&*()-+=|{}':;.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("Input is invalid. Your '" & inputObjects.AccessibleName & "' field contains special characters ^&*()-+=|{}':;.", "INVALID", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return True
                 Exit For
                 Exit Function
@@ -239,7 +239,7 @@ Public Class MyBrgyResidents
             If inputObjects.Equals(MyResidents.ContactTextBox) Or inputObjects.Equals(MyResidents.AddressTextBox) Or inputObjects.Equals(MyResidents.PurokTextBox) Then
                 Continue For
             ElseIf InputContainsNumber(inputObjects.Text) Then
-                MessageBox.Show("Input is invalid! Your " & inputObjects.AccessibleName & " contains number.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("Input is invalid! Your " & inputObjects.AccessibleName & " contains number.", "INVALID", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return True
                 Exit For
                 Exit Function
