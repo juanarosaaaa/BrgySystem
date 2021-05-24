@@ -6,21 +6,16 @@ Imports System.IO
 
 
 Public Class MyClearance
-    Private getValuesQueryOftheSelectedColumn As String = "SELECT `TransactNo`,`Fullname`,`Purpose`,`DateAndTime`,`Given_By`,`Type` FROM `clearance` "
+    Private getValuesQueryOftheSelectedColumn As String = "SELECT `Fullname`,`TransactNo`,`Purpose`,`DateAndTime`,`Given_By`,`Type` FROM `clearance` "
     Private manage As DataManipulation = New ManageSystem
     Sub arrangeGridView()
 
-        Clearance.ClearanceGridView.Columns("name_column").DataPropertyName = "Fullname"
-        Clearance.ClearanceGridView.Columns("TransactNo_Col").DataPropertyName = "TransactNo"
-
-
-        Clearance.ClearanceGridView.Columns("purpose_Col").DataPropertyName = "Purpose"
-
-        Clearance.ClearanceGridView.Columns("Date_col").DataPropertyName = "DateAndTime"
-
-        Clearance.ClearanceGridView.Columns("Givenby_Column1").DataPropertyName = "Given_By"
-
-        Clearance.ClearanceGridView.Columns("Type_Col").DataPropertyName = "Type"
+        Clearance.ClearanceGridView.Columns("fullname_Column").DataPropertyName = "Fullname"
+        Clearance.ClearanceGridView.Columns("Transact_Col").DataPropertyName = "TransactNo"
+        Clearance.ClearanceGridView.Columns("purpose_Column").DataPropertyName = "Purpose"
+        Clearance.ClearanceGridView.Columns("date_Column").DataPropertyName = "DateAndTime"
+        Clearance.ClearanceGridView.Columns("givenBy_Column").DataPropertyName = "Given_By"
+        Clearance.ClearanceGridView.Columns("typeColumn").DataPropertyName = "Type"
 
 
     End Sub

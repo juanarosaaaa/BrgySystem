@@ -9,7 +9,7 @@
     Public isBusinessNamemodified, isTransactNumberModified As Boolean
 
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ClearanceGridView.CellFormatting
-        SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ClearanceGridView, e, My.Resources.icons8_trash_24px)
+        ' SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ClearanceGridView, e, My.Resources.icons8_trash_24px)
         'SettinggridViewImage.setImageAtButtonColumnOf("viewButtonColumn", ClearanceGridView, e, My.Resources.icons8_edit_24px)
 
     End Sub
@@ -37,10 +37,11 @@
 
         isBusinessNamemodified = False
         isTransactNumberModified = False
+
         clearance.arrangeGridView()
         manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
 
-        search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldtextBox)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldTextBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "residents", FullNameTextBox)
     End Sub
 
