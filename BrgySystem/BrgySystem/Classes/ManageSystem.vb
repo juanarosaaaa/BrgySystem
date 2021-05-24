@@ -1,5 +1,4 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports Guna.UI.WinForms
 Imports Guna.UI2.WinForms
 Public Class ManageSystem
     Implements loadGridViewValue, DataManipulation

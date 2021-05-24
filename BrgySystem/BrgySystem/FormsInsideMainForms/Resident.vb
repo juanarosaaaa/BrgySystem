@@ -91,8 +91,8 @@ Public Class MyResidents
     Private Sub searchFieldTextChanged(sender As Object, e As EventArgs) Handles SearchFieldTxtBox.TextChange
 
         If (InputIsNull(SearchFieldTxtBox.Text.Trim) And AlreadyStart) And AlreadyStart Then
-                manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-            End If
+            manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
+        End If
 
 
     End Sub

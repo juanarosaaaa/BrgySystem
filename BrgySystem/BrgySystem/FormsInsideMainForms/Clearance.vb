@@ -8,21 +8,21 @@
     Private valueYouSearchFor As String
     Public isBusinessNamemodified, isTransactNumberModified As Boolean
 
-    Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ClearanceDataGridView.CellFormatting
-        SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ClearanceDataGridView, e, My.Resources.icons8_trash_24px)
+    Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ClearanceGridView.CellFormatting
+        SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ClearanceGridView, e, My.Resources.icons8_trash_24px)
         'SettinggridViewImage.setImageAtButtonColumnOf("viewButtonColumn", ClearanceGridView, e, My.Resources.icons8_edit_24px)
 
     End Sub
 
-    Private Sub BrgyClearanceTypeComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles BrgyClearanceTypeComboBox.SelectedIndexChanged
-        If BrgyClearanceTypeComboBox.SelectedIndex = 0 Then
-            businessNameTextBox.Enabled = False
+    Private Sub BrgyClearanceTypeComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles BrgyClearanceComboBox.SelectedIndexChanged
+        If BrgyClearanceComboBox.SelectedIndex = 0 Then
+            BusinessNameTextBOx.Enabled = False
             BusinessTypeTextBox.Enabled = False
-            businessNameTextBox.Clear()
+            BusinessNameTextBOx.Clear()
             BusinessTypeTextBox.Clear()
-        ElseIf BrgyClearanceTypeComboBox.SelectedIndex = 1 Then
+        ElseIf BrgyClearanceComboBox.SelectedIndex = 1 Then
 
-            businessNameTextBox.Enabled = True
+            BusinessNameTextBOx.Enabled = True
             BusinessTypeTextBox.Enabled = True
         End If
     End Sub
@@ -38,10 +38,10 @@
         isBusinessNamemodified = False
         isTransactNumberModified = False
         clearance.arrangeGridView()
-        manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceDataGridView)
+        manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
 
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldtextBox)
-        search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "residents", nameTextBox)
+        search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "residents", FullNameTextBox)
     End Sub
 
 
@@ -81,13 +81,13 @@
     Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchFieldtextBox.KeyDown
         If e.KeyCode = Keys.Enter Then
             valueYouSearchFor = clearance.getClearanceValuesSelectedColumn + "where Fullname Like '%" & SearchFieldtextBox.Text.Trim & "%'"
-            search.searchValueIn(valueYouSearchFor, ClearanceDataGridView)
+            search.searchValueIn(valueYouSearchFor, ClearanceGridView)
         End If
     End Sub
 
 
-    Private Sub SearchButtonClicked(sender As Object, e As EventArgs) Handles Button1.Click
-        search.searchValueIn(valueYouSearchFor, ClearanceDataGridView)
+    Private Sub SearchButtonClicked(sender As Object, e As EventArgs) Handles SearchButton.Click
+        search.searchValueIn(valueYouSearchFor, ClearanceGridView)
     End Sub
 
 
@@ -97,26 +97,26 @@
 
 
 
-    Private Sub NameTextBoxIsClick(sender As Object, e As EventArgs) Handles nameTextBox.Click
+    Private Sub NameTextBoxIsClick(sender As Object, e As EventArgs) Handles FullNameTextBox.Click
         IsAlreadyStartAtName = True
     End Sub
 
-    Private Sub nameTextBoxtTExtChanged(sender As Object, e As EventArgs) Handles nameTextBox.TextChange
-        If InputIsNull(nameTextBox.Text.Trim) And IsAlreadyStartAtName Then
-            addressTextBox.Clear()
-            SexTextBox.Clear()
+    Private Sub nameTextBoxtTExtChanged(sender As Object, e As EventArgs) Handles FullNameTextBox.TextChange
+        If InputIsNull(FullNameTextBox.Text.Trim) And IsAlreadyStartAtName Then
+            AddressTextBox.Clear()
+            GenderTextBox.Clear()
             AgeTextBox.Clear()
         End If
     End Sub
 
-    Private Sub ClearanceGridViewClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ClearanceDataGridView.CellClick
-        If SettingAction.buttonOf_IsClick("deleteButton_Column", ClearanceDataGridView, e) Then
+    Private Sub ClearanceGridViewClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ClearanceGridView.CellClick
+        If SettingAction.buttonOf_IsClick("deleteButton_Column", ClearanceGridView, e) Then
             isBusinessNamemodified = False
             isTransactNumberModified = False
         End If
     End Sub
 
-    Private Sub TransactionNumTxtBoxTextChanged(sender As Object, e As KeyEventArgs) Handles TransactionNumberTextBox.KeyDown
+    Private Sub TransactionNumTxtBoxTextChanged(sender As Object, e As KeyEventArgs) Handles TransactionNumber_TextBox.KeyDown
         isTransactNumberModified = True
     End Sub
 
@@ -124,7 +124,7 @@
         isBusinessNamemodified = True
     End Sub
 
-    Private Sub NameTextBoxKeyDown(sender As Object, e As KeyEventArgs) Handles nameTextBox.KeyDown
+    Private Sub NameTextBoxKeyDown(sender As Object, e As KeyEventArgs) Handles FullNameTextBox.KeyDown
         If e.KeyCode = Keys.Enter Then
             'show inputs
         End If

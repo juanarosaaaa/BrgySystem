@@ -161,9 +161,7 @@ Public Class Archive
 
     End Sub
 
-    Private Sub OfficialSearchButton_Click(sender As Object, e As EventArgs) Handles OfficialSearchButton.Click
-        alreadyStartAtOfficialArchive = True
-    End Sub
+
 
 
 
@@ -181,5 +179,9 @@ Public Class Archive
         If e.KeyCode = Keys.Enter Then
             search.searchValueIn(archiveOfficialQuery & "WHERE Name LIKE '%" & OfficialsArchiveSearchField.Text.Trim & "%'", ArchiveOfficialGridView)
         End If
+    End Sub
+
+    Private Sub OfficialSearchButton_Click_1(sender As Object, e As EventArgs) Handles OfficialSearchButton.Click
+        alreadyStartAtOfficialArchive = True
     End Sub
 End Class

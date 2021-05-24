@@ -179,26 +179,6 @@
   </data>
   <data name="Fullnametxtbox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        iVBORw0KGgoAAAANSUhEUgAAAX0AAAAlCAYAAACu0zl/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALuSURBVHhe7d0/SJRhHMDxd7zRKQKXM9BEHXToiBxyKEkE
-        O9DiHAqXQiKKSCKioaVCUgQjKKKy+VTeP/d4J2dpk2NDe+DQksgphoEOb8/vfCKOHoy2e+79/uAziM97
-        bt/3fN737vUYhmEYpjqrq6spLReGBRVF0edisbS5trYWAwDqg3RZ+hxG0Ufd6zGtyST8/0YfeEEtLW1N
-        Tc/sZEdycd+5gbizOxMfaz4BAKgT0mXp8+DF4fjx08ndglKVUql0zaT83yNniSAMF1++el1p6+ix/hEA
-        QH1qae2Kn0w+29bv/Nd1z4+btNtHgq//Tdi4NHp13/ZiAAA39A8MxfMLixu662mT+L9H3uETfABoDLLt
-        I/v9JvG1I3v4sqVjOxAA4KaJew9+KKUemdQfjg5+Si7asocPAI2lOX0yzufnt3Tn203yq9Efk6u+tgMA
-        AG67Pn7zQBWLMyb5nif3d8rtPrbFAAC3Zc70xQWlvprke55SS996TvVaFwMA3CZbPCsrHw5M8j2vXC7v
-        yb2dtsUAAPfJp3dN8j1PfrAtAgA0BqIPAAlC9AEgQYg+ACQI0QeABCH6AJAgRB8AEoToA0CCEH0ASBCi
-        DwAJQvQBIEGIPgAkCNEHgASpib585aZ89aZtIQDAfTXRLxZLm53dGetCAID7aqIfRtF6/8CQdSEAwG3y
-        kCx5WJZJfvUhKg/vTtz/aVsMAHDb5dErcaGg8ib51Qejpxd9v8K+PgA0ntnnL7Z157Mm+Yfj+/7U7TsT
-        u7YDAABuyg6P7vtBUDKp/zP6LJDy/eBL79nz1gMBAG5p6+iJwzD6rvveZFJfO/oX7fn5hU3Z9Le9AADA
-        DRL8d3Pvt3TX+0zi7aMXnI6iaGP8xi0u7AKAgwaHRvbNO/yjg/979MKUDv/sm7dzFbnqK2cM2wsDAOpD
-        S2tXnB3JxVPTMztBEHzSHbdv6Rw1cpaQ23yWl5d35MZ+AEB9KpfLe2FYULrbOZNwhmEYJtnjeb8A+lou
-        K1aIF3QAAAAASUVORK5CYII=
-=======
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         iVBORw0KGgoAAAANSUhEUgAAAX0AAAAqCAYAAABfhYuqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMGSURBVHhe7d1PSBRRHMDxd9yjpwi8aKCJenAPSuQhDyWJ
         YAtarIfCSyERRSQR0aFLhaQsGEERlZ1XZf7s210Za+3ksUP3wIOXRFYxDPQwvacvYulhdNvZ9/3B5yC+
@@ -214,10 +194,6 @@
         B0H4XfW9yaS+dtQvOvILi5t60992AgBAMujgv5//sKW6PmASbx+14EwYhuuTN2/zYBcAEmh4ZGzf3OEf
         H/zfoxamVPjn3r6br+qnvvqKYTsxAKA+tLZ1x5mxbDwzm9vxff+z6rh9S+e40VcJ/ZrP8vLyjn6xHwBQ
         n6Io2guCglTdzpqEMwzDMG6PEL8ADmUIAYHDKV4AAAAASUVORK5CYII=
-<<<<<<< HEAD
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 </value>
   </data>
   <data name="BunifuLabel8.BaseStylesheet" xml:space="preserve">
@@ -363,25 +339,6 @@
   </data>
   <data name="PurokTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        iVBORw0KGgoAAAANSUhEUgAAAMAAAAAlCAYAAAAUVeY2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKrSURBVHhe7d0/aBNRHAfwN2Z0EqFLFNSiDnawiB3MoGIp
-        1ECrJIPSRSkiihhExMFFpVgpVARF1DonDfcnL7mQauLk6OAudHCxlLQoCulwvm/6RA6fSrfee98ffIbS
-        d+3y/SX3LrnfCRaL9Zdqt9sZpRAENRmG4YdGI1rpdDox0XaFjCKrQRi+VdmdUnboOG+t1IGnZb2+Ovto
-        bj0/WYhzJ0bjg4eH450De4i2LWQUWR07MxHfezDztSZlN4qiizrW/y90jB8E1afPnnf3HRgy/hOitNi9
-        91B8f+bhmnpHeK+yvUvH3FwIv3r7WD5bvNAz/TGitDo1Oh5XFqvLKuNZHfc/C6/8DD/ZCqdG2B/ouCcL
-        5/w47TEdSGSL0s3b36SUd3XsN0uFP4MNL8/5yXYD2f1xuVxZVZkf1PHvN8AUdsymA4hsc2n6yoZsNOZ0
-        /IXANVNcNjItJrLN8LFcXJPyk46/EFLWPw8dGTEuJrINToOWlt5s6PgL0Wq1vuN6qWkxkY3wqbGOvxD4
-        wbSIyFZsAHIaG4CcxgYgp7EByGlsAHIaG4CcxgYgp7EByGlsAHIaG4CcxgYgp7EByGmJBsBXQ/EVUdNC
-        IhslGgDDhDjzh1ySaADMTMHYCNNCItvg5i/cBKbj378h5s6N0q0fpsVEtjlXPB/XarKs49+/KT5b9bwu
-        9wHkgvnHT9ZU5vM6/pvled7steslToYgq+Unij3P9yMd+9+F2UCe538cOX7SeCBR2mHuVRCEX1TWzROj
-        1S8Gy5XFFU6IINsg/K8WXmMgVk7H3VxqwVEMyJ2+fJWbYrLC2PhkT7/y/zv8v0otzKgmmH/xcqGLHTNH
-        JlLaYMwPnmuB51v4vv9OZXrrD8pAx+ByUbPZXMcHB0RpgVlXeLKRynBBx5nFYiVLiJ9GvTYwQUr6IAAA
-        AABJRU5ErkJggg==
-=======
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         iVBORw0KGgoAAAANSUhEUgAAAMAAAAAqCAYAAADlA1TjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK9SURBVHhe7d0xaFNBHMfxN2Z0EqFLFNSiDnawiB3soGIp
         1ECrpIPSRSkiihhExMFFpVgpVARF1DonDe+95JqUVBMnRwd3oYOLpaRFUUiH5/3TEwmeSrfm7vuHz1B6
@@ -396,10 +353,6 @@
         pPVCoNvJ8Oc4Ln3RWbcfm6R/0ZsvzK8wJhGukfC/mnstU6EHTdztpRcclVNiJi9fZVMMJwyPjLXMK/+/
         w/+r9MKUboLZFy/nmrJj5twAdBuZdSuHO8ohj1EUvdOZ3vppkdIx8rhocXFxXT44ALqFDHyW4311hrMm
         zhRFdVYQ/ASm/jAJPz8ZcQAAAABJRU5ErkJggg==
-<<<<<<< HEAD
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 </value>
   </data>
   <data name="SearchFieldTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -422,25 +375,6 @@
   </data>
   <data name="ReligionTextBOx.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        iVBORw0KGgoAAAANSUhEUgAAAMMAAAAlCAYAAAD/Yl01AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVHhe7d0/aBNhGMfxGzs6idAlCmpRBztYxA5mULEU
-        aqBVkkHpohQRRQwi4uCiUqwUKoIiap3ThvuTN0lJtXFydHAXOrhYSloUhXQ43yd9RIJv1Y65fB/4DKXv
-        tcvz4+695J7zKIr6j1paWuqxsmFYMlEUfahUqiv1ej0GOoH0q/RtGEVvbR+PWzu0tbdX9sDTplxenXo0
-        vZ4Zy8bpE0PxwcMD8c7ePUBHkH6Vvh0+MxrfezD5tWRMo1qtXtQW/3dJeoIwLD599ryx70C/858AnWj3
-        3kPx/cmHa/ZM8d72+S5teXdJEOxpZfls7kLT9ceAJDg1NBLPzReXbb+ntPX/LDkjEAR0A7l8kv2Etn57
-        yR5BLo1cBwJJlL95+5sx5q5GYLNsEHpks8weAd2kN7U/LhTmVm3/92kUWmEYl9226wAgyS5NXNkwlcq0
-        RsHz5D6s3H5yLQaSbOBYOi4Z80mj4HnGlD/3Hxl0LgaSTC6VFhffbGgUPK9Wq32Xe7CuxUDSyafVGgXP
-        kx9ci4BuQBgARRgARRgARRgARRgARRgARRgARRgARRgARRgARRgARRgA1RYG+QqrfJXVtRBIurYwyLAl
-        ZiKhW7WFQebIyPgM10IgyeShNnm4TaPQerjnzo38rR+uxUCSncudj0slU9AotAYCpIq+32DfgG4z8/jJ
-        mu3/jEZhs3zfn7p2Pc+EDHSNzGiu6QdBVSPwu2R2ku8HHwePn3QeCCSJzAgLw+iL7Xv3ZG77i77C3PwK
-        kzKQZBKEV7OvZXhYWlvfXXbBURk+PHH5KhtqJM7wyFhTzwh/D8Kvsgt7bCBmXrycbchum7GT6GQyBkne
-        MSLvGgmC4J3t7+2/tETSI7edFhYW1uWDCaATyVwwefuU7eestjZFUVuX5/0EqCTMYG0tEz0AAAAASUVO
-        RK5CYII=
-=======
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         iVBORw0KGgoAAAANSUhEUgAAAMMAAAAqCAYAAAAONO/gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK0SURBVHhe7d0/aFNRFMfxN3Z0EqFLFNSiDnawiB3MoGIp
         1ECrJIPSRSkiihhExMFFpVgpVARF1DqnDe9PbpKSauPk6OAudHCxlLQoCunwvCc9IsFbtWNevgc+Q+l9
@@ -455,10 +389,6 @@
         oy+2791HW9lf9BXm5lcYNYkkkyC8mn0t07fT2vrusguOyuk9E5evsqFG4gyPjDX1jvD3IPwqu7DHBmLm
         xcvZhuy2ObcBnUzmCMshnXJYZxAE72x/b//UT0mPvHZaWFhYlw8mgE4kg7Xl+Gbbz1ltbYqiti7P+wmC
         69oH3OLHWgAAAABJRU5ErkJggg==
-<<<<<<< HEAD
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 </value>
   </data>
   <data name="UpdateButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -491,24 +421,10 @@
   </data>
   <data name="BrowseButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        iVBORw0KGgoAAAANSUhEUgAAAJAAAAAiCAYAAACwRFDGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVHhe7dwxDcMwAADBQjOHFFB4GKblOW2lEkh+veEY
-        /PyvY65xzH3CfWt8A9rne+4L7vq1IyAeExCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAk
-        AiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIjkH5DBFE+t8QEnBIeD72amNQAAAABJRU5E
-        rkJggg==
-=======
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAcCAYAAACQ/QaoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB9SURBVHhe7dwxDcMwAADBQjOHFFB4GKblOW2lYvAvNxyD
         n/91zTWuuW84Z41vePt+z/3AKb/mhMdxwiMhPBLCIyE8EsIjITwSwiMhPBLCIyE8EsIjITwSwiMhPBLC
         IyE8EsIjITwSwiMhPBLCIyE8EsIjITwS//AsLDhtjQ8nriywhxYdggAAAABJRU5ErkJggg==
-<<<<<<< HEAD
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 </value>
   </data>
   <data name="BunifuLabel15.BaseStylesheet" xml:space="preserve">
@@ -519,25 +435,6 @@
   </data>
   <data name="OccupationTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        iVBORw0KGgoAAAANSUhEUgAAAMMAAAAlCAYAAAD/Yl01AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVHhe7d0/aBNhGMfxGzs6idAlCmpRBztYxA5mULEU
-        aqBVkkHpohQRRQwi4uCiUqwUKoIiap3ThvuTN0lJtXFydHAXOrhYSloUhXQ43yd9RIJv1Y65fB/4DKXv
-        tcvz4+695J7zKIr6j1paWuqxsmFYMlEUfahUqiv1ej0GOoH0q/RtGEVvbR+PWzu0tbdX9sDTplxenXo0
-        vZ4Zy8bpE0PxwcMD8c7ePUBHkH6Vvh0+MxrfezD5tWRMo1qtXtQW/3dJeoIwLD599ryx70C/858AnWj3
-        3kPx/cmHa/ZM8d72+S5teXdJEOxpZfls7kLT9ceAJDg1NBLPzReXbb+ntPX/LDkjEAR0A7l8kv2Etn57
-        yR5BLo1cBwJJlL95+5sx5q5GYLNsEHpks8weAd2kN7U/LhTmVm3/92kUWmEYl9226wAgyS5NXNkwlcq0
-        RsHz5D6s3H5yLQaSbOBYOi4Z80mj4HnGlD/3Hxl0LgaSTC6VFhffbGgUPK9Wq32Xe7CuxUDSyafVGgXP
-        kx9ci4BuQBgARRgARRgARRgARRgARRgARRgARRgARRgARRgARRgARRgA1RYG+QqrfJXVtRBIurYwyLAl
-        ZiKhW7WFQebIyPgM10IgyeShNnm4TaPQerjnzo38rR+uxUCSncudj0slU9AotAYCpIq+32DfgG4z8/jJ
-        mu3/jEZhs3zfn7p2Pc+EDHSNzGiu6QdBVSPwu2R2ku8HHwePn3QeCCSJzAgLw+iL7Xv3ZG77i77C3PwK
-        kzKQZBKEV7OvZXhYWlvfXXbBURk+PHH5KhtqJM7wyFhTzwh/D8Kvsgt7bCBmXrycbchum7GT6GQyBkne
-        MSLvGgmC4J3t7+2/tETSI7edFhYW1uWDCaATyVwwefuU7eestjZFUVuX5/0EqCTMYG0tEz0AAAAASUVO
-        RK5CYII=
-=======
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         iVBORw0KGgoAAAANSUhEUgAAAMMAAAAqCAYAAAAONO/gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK0SURBVHhe7d0/aFNRFMfxN3Z0EqFLFNSiDnawiB3MoGIp
         1ECrJIPSRSkiihhExMFFpVgpVARF1DqnDe9PbpKSauPk6OAudHCxlLQoCunwvCc9IsFbtWNevgc+Q+l9
@@ -552,33 +449,10 @@
         oy+2791HW9lf9BXm5lcYNYkkkyC8mn0t07fT2vrusguOyuk9E5evsqFG4gyPjDX1jvD3IPwqu7DHBmLm
         xcvZhuy2ObcBnUzmCMshnXJYZxAE72x/b//UT0mPvHZaWFhYlw8mgE4kg7Xl+Gbbz1ltbYqiti7P+wmC
         69oH3OLHWgAAAABJRU5ErkJggg==
-<<<<<<< HEAD
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 </value>
   </data>
   <data name="HighestEducationAttainmentTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        iVBORw0KGgoAAAANSUhEUgAAAQoAAAAhCAYAAAAh1+WIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKxSURBVHhe7d0/aBNhGMfxGzM6idClCmpRBztYxA5mULEU
-        aqBVkkHpohQRRQwi4uCiUqwUKoIiap2ThrtL3vwh1cTJ0cFd6OBiKWlRFNLhfJ/0LRJ98ahOzft94DOU
-        vtdOz4+79+6e8yiKov6rGo1GQkuHYUkVi8UPlUp1udlsRgC2N+ll6emwWHyre3xS22HafmulDzytyuWV
-        mUeza6mJdJQ8MRIdPDwU7ezbA2Cbk16Wnh49Mx7dezD9taRUq1qtXjTtH1+SLEEYFp4+e97ad2DQ+k8A
-        9Jbdew9F96cfruozjPc6A3aZOLCXhIQ+HVk6m7nQtv0xAL3t1MhYlF8oLOks6Dex8GfJmQQhAbhNLklk
-        /8LEQnfJnoRcbtgOBOCW7M3b35RSd008bJQOiYRsXLInAUD09e+Pcrn8is6GARMTnaCYlJ1P2wEA3HRp
-        6sq6qlRmTUx4ntxLldsktsUA3DR0LBmVlPpkYsLzlCp/HjwybF0MwE1y+bG4+GbdxITn1ev173If1bYY
-        gLvkKU4TE54nP9gWAXAbQQEgFkEBIBZBASAWQQEgFkEBIBZBASAWQQEgFkEBIFZXUMhjmvK4pm0hAHd1
-        BYUM2mQeJoDfdQWFzMmTEVi2hQDcJC+KygujJiY6L4XduZG99cO2GICbzmXOR6WSypmY6Ayu6S/4fot9
-        CgCb5h4/WdXZkDIxsVG+789cu55lyhWAKDWeaftBUDXx8KtkbqbvBx+Hj5+0HgjADTI7NwyLX3Qm2L8e
-        pn8xkMsvLDPtCnCThMSr+dcyVDdpYsFeesFR+QjQ1OWrbG4CDhkdm2ibM4m/h8Rm6YUJHRZzL17Ot2Tn
-        kzH+QG+SEZjybWH5xnAQBO9072/9Y8WSLHJ7pFarrcmDFwB6i8zLDcOS0r2eNm1PURT1L+V5PwGmuC2v
-        1VsFmQAAAABJRU5ErkJggg==
-=======
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         iVBORw0KGgoAAAANSUhEUgAAAQoAAAAqCAYAAABLEBVLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALaSURBVHhe7d0/aJNBGMfxd+zYSYQuVVCLOtjBInawg4ql
         UAONkgxKF6WIKGIQEQcXlWJLoSIootY5aXj/5JqUVFsnRwd3oYOLpaRBUWiH13vaKxI9eqhTe98HPkPp
@@ -593,33 +467,10 @@
         hvKrYRTVTDz8KhlUHIbRx94Tp6wXAvCDDCuP4+SLzoR2Ew+tpf/RVSxNLzFeEPCThMSrqdcyxbzPxIK9
         9IJjSZIsjly5xuYm4JGBweyquZPYOiQ2Sy9s02Ex+eLlVEN2PiVlbB8MYHuTmcOZbC4dG59oRlH0Tve+
         /XFjq5Jkkdcjs7OzTfnhBYCdRQaUx3FF6V7PmbanKIr6lwqCn0d/kh1mx6hcAAAAAElFTkSuQmCC
-<<<<<<< HEAD
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 </value>
   </data>
   <data name="ContactTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        iVBORw0KGgoAAAANSUhEUgAAAMkAAAAlCAYAAADoQM38AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKrSURBVHhe7d0xaBNRHMfxGzM6idClFtSiDnawiB3MoGIp
-        1EKrJIPSRSkiilhExMFFpVgpVARF1DonDXeXvCYh1cTJ0cFd6OBiKWlRFNLhfP/2iQQfPoJT875/+Ayl
-        79rl/+PuXXL/CyiK+o+q1+spLRPHJVUsFj+Wy5XVRqORADuZ9LH0c1wsvtP9PantMi3fWekDz6ilpbXZ
-        x3MbYxOZJH1yODl0ZDDZ3dMH7GjSx9LPI2fHk/sPZ76VlGpWKpVLpvXdJamK4rjw7PmL5v6DA9Z/AnST
-        vfsOJw9mHq3rM8sH3f97TBTsJQHRp6GVc9mLLdsfA7rZ6eHRJL9YWNE56DWR+LvkDEJA4DO5DJP9iolE
-        e8keRC6xbAcCPpm+dee7UuqeicZ26YCkZJPOHgToS3p6DyS5XH5N56LfRGQrJJOyy7cdAPjo8tTVTVUu
-        z5mIBIHcL5bbYbbFgI8Gj6eTklKfTUSCQKmlLwNHh6yLAR/JJdfy8ttNE5EgqNVqP+ResW0x4Cv5dN5E
-        JAjkB9siwGeEBHAgJIADIQEcCAngQEgAB0ICOBASwIGQAA6EBHAgJIADIQEcCAng0BYS+UqwfDXYthDw
-        VVtIZFgXM7WAdm0hkXlDMk7FthDwkTyEKA8jmohsPXR19+b07Z+2xYCPzmcvJKWSypmIbA2C6C2EYZN9
-        CbBt/snTdZ2LMROR7QrDcPb6jWkmpsB7Y+PZVhhFFRONPyWzt8Iw+jR04pT1QMAHMnsujotfdR7sk+b1
-        L/pz+cVVJqfARxKQ1wtvZChd2kTCXnrBMRmaPXXlGht5eGNkdKJlziD/Dsjv0gtTOijzL18tNGWXz/hT
-        dCMZoyXv3pF38ERR9F73fecv85FUyW2warW6IR+sAN1E5s3JW9x0n2dMy1MU1XkFwS8Kk/jPsfbahAAA
-        AABJRU5ErkJggg==
-=======
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         iVBORw0KGgoAAAANSUhEUgAAAMkAAAAqCAYAAAAZFn8pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK8SURBVHhe7d0xaFNBHMfxN2Z0EqFLLahFHexgETuYQcVS
         qIVWSQali1JEFLGIiIOLSrFSqAiKqHVOGt57yTUJqSZOjg7uQgcXS0mLopAOz/u3JxI8PIJTc98/fIbS
@@ -634,10 +485,6 @@
         rBcCPpCh8XFc/KrzYD8iTv+iP5dfXGXkKXwkAXm98EamyadNJOylFxyT066mrlxjIw9vjIxOtMwd5N8B
         +V16YUoHZf7lq4Wm7PI5twTdSOZfy6G5cnhuFEXvdd93fgqvpEpeg1Wr1Q35YAXoJjIoXo5f132eMS1P
         UVTnFQS/AHnJLiG5RmycAAAAAElFTkSuQmCC
-<<<<<<< HEAD
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 </value>
   </data>
   <data name="BunifuLabel7.BaseStylesheet" xml:space="preserve">
@@ -645,26 +492,6 @@
   </data>
   <data name="AddressTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        iVBORw0KGgoAAAANSUhEUgAAAXsAAAAlCAYAAACjzUk4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALsSURBVHhe7d1BSBRRGMDxOe7RUwReNNBEPeghiTzkoSQR
-        bEGL9VB4KSSiiCQiOnSpkBTBCIqo7LwqszP73JW11k4eO3QPPHRJZBXDQA/T+/RFLD2MTu7z/T/4HcQ3
-        6+0/65vZnYBhGIbxfMrlckrLRFFexXH8uVAori0vLycAgMMlPZYuR3H8UXd6RKsz6f6/0QdeUAsL6xOT
-        U5vpoUzSc64vaevoSo7VnwAAHDLpsXS5/+Jg8vjp+FZeqUqxWLxmEv7vkbNDLormX756XWlu7bT+EQBA
-        bWlsak+ejD/b0O/0V3THj5uk20dCr/8tWL00fHXH9mIAgNrW2zeQzM7Nr+qeN5i0/z3yjp7QA4DbZHtH
-        9vNN2qtH9uhl68Z2IADALWP3HvxQSj0yid8fHfqUXIxljx4Ajob6hpNJNju7rvveYlK/F/sRuZprOwAA
-        4Kbrozd3VaEwZVIfBHKfpty+Y1sMAHBT15meJK/UV5P6IFBq4VvnqW7rYgCAm2QrZ2npw65JfRCUSqVt
-        uUfTthgA4C75tK1JfRDID7ZFAAC3EXsA8ACxBwAPEHsA8ACxBwAPEHsA8ACxBwAPEHsA8ACxBwAPEHsA
-        8ACxBwAPEHsA8ACxBwAPVMVevgJTvgrTthAA4K6q2BcKxbW2ji7rQgCAu6piH8XxSm/fgHUhAMBN8lAq
-        eTiVSf3ew0se3h27/9O2GADgpsvDV5J8XmVN6vceON4wH4YV9u0B4OiYfv5iQ/c9bVK/P2EYTty+M7Zl
-        OwAA4Jb04PBOmMsVTeL/jK5/KgxzX7rPnrceCABwQ3NrZxJF8Xfd9TqT+OrRv2jJzs6tyaa+7QUAALVN
-        Qv9u5v267nmPSbt99ILTcRyvjt64xQVbAHBI/8DQjnlHf3Dof49emNLBn37zdqYiV3PlTGF7YQDA4Wps
-        ak/SQ5lkYnJqM5fLfdL9tm/dHDRydpDbdhYXFzflxnwAQG0plUrbUZRXutcZk26GYRjGzwmCXxPYyfyO
-        J72eAAAAAElFTkSuQmCC
-=======
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         iVBORw0KGgoAAAANSUhEUgAAAXsAAAAqCAYAAABSm/vtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMFSURBVHhe7d1BSBRRHIDxd9yjpwi8aKCJenAPSuQhDyWJ
         YAtarIfCSyERRSQR0aFLhWQIRlBEZedVmZ3Zt7sy1trJY4fugQcviaxiGOhhei9fxNLD6OQ+3/eH30F8
@@ -680,32 +507,10 @@
         Rt9U1xtM4mtH/aItNze/rjf1bScAANQ3Hfp3s+83VM/7TNrtoxaciqJodfz6TR7YAoBDBodGds0d/cGh
         /z1qYUoFf+bN29mqfpqrrxS2EwMADldzS2eSGckmU8+mt/L5/CfVb/vWzUGjrw76tZ3FxcUt/WI+AKC+
         xHG8E4YFqXqdNelmGIZh/BwhfgICE5aefusSlwAAAABJRU5ErkJggg==
-<<<<<<< HEAD
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 </value>
   </data>
   <data name="CitizenshipTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        iVBORw0KGgoAAAANSUhEUgAAAJsAAAAhCAYAAADOMNmfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKPSURBVHhe7dw/aBNhHMbxd8zoJEKXKKhFHexgETuYQcVS
-        qIFWSQali1JEFDGIiIOLSrFSaBEUUeucNNy/N7mQauLk6OAudHCxlLQoCunw+j7pKxJ8qY13nh2eH3yG
-        0jft8uVyl9x7gsPZFtNoNFJazvMC6fv++2o1XG42m4oI0AO68Hz/je5kQtth0ult9AtPy0plZfrRzFp2
-        PKcyJ4bVwcODamffHqIO9IAuRs6MqXsPpr4EUrbCMLxoEvrzoE7X88pPnj5r7TswYP0nRDa79x5S96ce
-        ruoj3Tvd0S6TlH0Qmj4sLp3NX2jb/hjRVpwaHlWlhfKS7ilt0vp9cERjaBQHvL3ifM6k1T04R8Nbp+2F
-        RH+jcPP2VynlXZPYxujQUrgY4DkaxakvvV8Vi6UV3Ve/Sa0T2wSuJmwvIIri0uSVdVmtzpjUhMDnJLh8
-        tS0mimLwWEYFUn40qQkhZeXTwJEh62KiKPBWurj4et2kJkS9Xv+Gz0hsi4miwrcNJjUh8INtEVEcGBsl
-        hrFRYhgbJYaxUWIYGyWGsVFiGBslhrFRYrpiw9cJ+FrBtpAoqq7YsHGB+wvoX+mKDfeM41Ze20KiKHCD
-        B270MKl1voi/c6Nw67ttMVEU5/LnVRDIokmtc/Nkuuw4LZ63Udxm5x6v6r6yJrWNcRxn+tr1Au/Wpdhk
-        x/Jtx3VDk9ivwT4Ex3E/DB0/aX0hUS+wn8Xz/M+6K/suef2L/mJpYZl37VIUCO3l/CtsdMmYtOyjFxzF
-        RuXJy1d5wUA9Gxkdb5sj2uah/Ry9MKWDm33+Yr6Fqwlu8aPNYEsBngeD58K4rvtW99P7A2ZQJy5ba7Xa
-        Gj6YI7LBHhY86Ur3kjPpcDj/c4T4AV5vwctqC/+hAAAAAElFTkSuQmCC
-=======
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
         iVBORw0KGgoAAAANSUhEUgAAAJsAAAAqCAYAAACk9ylcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKvSURBVHhe7d0/aBNhHMbxd8zoJEKXKKhFHexgETuYQcVS
         qIFWSQali1JEFDGIiIOLSrFSaBEUUeucNNy/N7mQauLk6OAudHCxlLQoCulwvk/6igRfauOdrx2eFz5D
@@ -720,10 +525,6 @@
         Z9WVefSp+kZ/sbSwzFEMFAdCezn/CtOLMjot81IbjmL65OTlq7xhoJ6NjI639Rlt89B+LrUxpYKbff5i
         voW7Cc5to81gTgyGfGPYt+u6b1U/vU8NR524ba3Vamt4Y47IBIOJ8O8LVC85nQ4X1/9cQvwA16P+8G3l
         2r8AAAAASUVORK5CYII=
-<<<<<<< HEAD
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
-=======
->>>>>>> parent of 6681cbb (Change fonts and colors of ChildForms)
 </value>
   </data>
   <data name="BunifuLabel6.BaseStylesheet" xml:space="preserve">

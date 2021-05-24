@@ -47,6 +47,7 @@ Partial Class MainForm
         Me.Settings_Button = New Guna.UI2.WinForms.Guna2Button()
         Me.OrganizationalChartButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Archive_Button = New Guna.UI2.WinForms.Guna2Button()
+        Me.Blotter_Button = New Guna.UI2.WinForms.Guna2Button()
         Me.Clearance_Button = New Guna.UI2.WinForms.Guna2Button()
         Me.Purok_Button = New Guna.UI2.WinForms.Guna2Button()
         Me.Officials_Button = New Guna.UI2.WinForms.Guna2Button()
@@ -377,7 +378,7 @@ Partial Class MainForm
         Me.Settings_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Settings_Button.ForeColor = System.Drawing.Color.White
         Me.Settings_Button.HoverState.Parent = Me.Settings_Button
-        Me.Settings_Button.Location = New System.Drawing.Point(0, 527)
+        Me.Settings_Button.Location = New System.Drawing.Point(0, 578)
         Me.Settings_Button.Name = "Settings_Button"
         Me.Settings_Button.ShadowDecoration.Parent = Me.Settings_Button
         Me.Settings_Button.Size = New System.Drawing.Size(241, 45)
@@ -391,7 +392,7 @@ Partial Class MainForm
         Me.OrganizationalChartButton.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OrganizationalChartButton.ForeColor = System.Drawing.Color.White
         Me.OrganizationalChartButton.HoverState.Parent = Me.OrganizationalChartButton
-        Me.OrganizationalChartButton.Location = New System.Drawing.Point(0, 476)
+        Me.OrganizationalChartButton.Location = New System.Drawing.Point(0, 527)
         Me.OrganizationalChartButton.Name = "OrganizationalChartButton"
         Me.OrganizationalChartButton.ShadowDecoration.Parent = Me.OrganizationalChartButton
         Me.OrganizationalChartButton.Size = New System.Drawing.Size(241, 45)
@@ -405,12 +406,26 @@ Partial Class MainForm
         Me.Archive_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Archive_Button.ForeColor = System.Drawing.Color.White
         Me.Archive_Button.HoverState.Parent = Me.Archive_Button
-        Me.Archive_Button.Location = New System.Drawing.Point(0, 425)
+        Me.Archive_Button.Location = New System.Drawing.Point(0, 476)
         Me.Archive_Button.Name = "Archive_Button"
         Me.Archive_Button.ShadowDecoration.Parent = Me.Archive_Button
         Me.Archive_Button.Size = New System.Drawing.Size(242, 45)
         Me.Archive_Button.TabIndex = 21
         Me.Archive_Button.Text = "Archive"
+        '
+        'Blotter_Button
+        '
+        Me.Blotter_Button.CheckedState.Parent = Me.Blotter_Button
+        Me.Blotter_Button.CustomImages.Parent = Me.Blotter_Button
+        Me.Blotter_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Blotter_Button.ForeColor = System.Drawing.Color.White
+        Me.Blotter_Button.HoverState.Parent = Me.Blotter_Button
+        Me.Blotter_Button.Location = New System.Drawing.Point(0, 425)
+        Me.Blotter_Button.Name = "Blotter_Button"
+        Me.Blotter_Button.ShadowDecoration.Parent = Me.Blotter_Button
+        Me.Blotter_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Blotter_Button.TabIndex = 22
+        Me.Blotter_Button.Text = "Blotter"
         '
         'Clearance_Button
         '
@@ -461,7 +476,7 @@ Partial Class MainForm
         Me.Logout_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Logout_Button.ForeColor = System.Drawing.Color.White
         Me.Logout_Button.HoverState.Parent = Me.Logout_Button
-        Me.Logout_Button.Location = New System.Drawing.Point(-1, 578)
+        Me.Logout_Button.Location = New System.Drawing.Point(-1, 629)
         Me.Logout_Button.Name = "Logout_Button"
         Me.Logout_Button.ShadowDecoration.Parent = Me.Logout_Button
         Me.Logout_Button.Size = New System.Drawing.Size(242, 45)
@@ -479,6 +494,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.Officials_Button)
         Me.Controls.Add(Me.Purok_Button)
         Me.Controls.Add(Me.Clearance_Button)
+        Me.Controls.Add(Me.Blotter_Button)
         Me.Controls.Add(Me.Archive_Button)
         Me.Controls.Add(Me.OrganizationalChartButton)
         Me.Controls.Add(Me.Settings_Button)
@@ -512,6 +528,7 @@ Partial Class MainForm
     Friend WithEvents Settings_Button As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents OrganizationalChartButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Archive_Button As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Blotter_Button As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Clearance_Button As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Purok_Button As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Officials_Button As Guna.UI2.WinForms.Guna2Button

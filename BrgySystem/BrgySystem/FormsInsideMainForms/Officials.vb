@@ -66,9 +66,7 @@
 
 
 
-    Private Sub SearchbarButton_Click(sender As Object, e As EventArgs) Handles SearchbarButton.Click
-        search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
-    End Sub
+
 
     Private Sub BrowseButton_Click(sender As Object, e As EventArgs) Handles BrowseButton.Click
         imageFile.openImageFromPictureBox(OfficialsPictureBox)
@@ -176,6 +174,10 @@
 
     Private Sub GunaWinSwitch1_CheckedChanged(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub SearchButtonCLicked(sender As Object, e As EventArgs) Handles OfficialSearchButton.Click
+        search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
     End Sub
 
     Private Sub ContactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown

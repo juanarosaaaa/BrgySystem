@@ -10,33 +10,33 @@ Public Class MyClearance
     Private manage As DataManipulation = New ManageSystem
     Sub arrangeGridView()
 
-        Clearance.ClearanceDataGridView.Columns("name_column").DataPropertyName = "Fullname"
-        Clearance.ClearanceDataGridView.Columns("TransactNo_Col").DataPropertyName = "TransactNo"
+        Clearance.ClearanceGridView.Columns("name_column").DataPropertyName = "Fullname"
+        Clearance.ClearanceGridView.Columns("TransactNo_Col").DataPropertyName = "TransactNo"
 
 
-        Clearance.ClearanceDataGridView.Columns("purpose_Col").DataPropertyName = "Purpose"
+        Clearance.ClearanceGridView.Columns("purpose_Col").DataPropertyName = "Purpose"
 
-        Clearance.ClearanceDataGridView.Columns("Date_col").DataPropertyName = "DateAndTime"
+        Clearance.ClearanceGridView.Columns("Date_col").DataPropertyName = "DateAndTime"
 
-        Clearance.ClearanceDataGridView.Columns("Givenby_Column1").DataPropertyName = "Given_By"
+        Clearance.ClearanceGridView.Columns("Givenby_Column1").DataPropertyName = "Given_By"
 
-        Clearance.ClearanceDataGridView.Columns("Type_Col").DataPropertyName = "Type"
+        Clearance.ClearanceGridView.Columns("Type_Col").DataPropertyName = "Type"
 
 
     End Sub
 
 
     Function insertClearanceQuery() As String
-        Return "INSERT INTO `clearance` VALUES ('" & Clearance.TransactionNumberTextBox.Text.Trim & "',
-'" & Clearance.nameTextBox.Text.Trim & "',
-'" & Clearance.addressTextBox.Text.Trim & "',
-'" & Clearance.SexTextBox.Text & "',
+        Return "INSERT INTO `clearance` VALUES ('" & Clearance.TransactionNumber_TextBox.Text.Trim & "',
+'" & Clearance.FullNameTextBox.Text.Trim & "',
+'" & Clearance.AddressTextBox.Text.Trim & "',
+'" & Clearance.GenderTextBox.Text & "',
 '" & Clearance.AgeTextBox.Text & "', 
 '" & Clearance.QuantityTextBox.Text & "',
 '" & Clearance.DateAndTimeTextBox.Text & "',
 'ADMIN',
 '" & Clearance.PurposeTextBox.Text.Trim & "',
-'" & Clearance.BrgyClearanceTypeComboBox.Text.Trim & "',
+'" & Clearance.BrgyClearanceComboBox.Text.Trim & "',
 [value-11],
 [value-12],
 [value-13],
@@ -52,9 +52,9 @@ Public Class MyClearance
     Function IsInputInValid()
 
 
-        Dim arr() As Object = {Clearance.nameTextBox,
-            Clearance.businessNameTextBox, Clearance.BusinessTypeTextBox, Clearance.TransactionNumberTextBox, Clearance.PurposeTextBox,
-             Clearance.IssuedAtTextBox, Clearance.QuantityTextBox, Clearance.AmountTextBox, Clearance.TotalTextBox}
+        Dim arr() As Object = {Clearance.FullNameTextBox,
+            Clearance.BusinessNameTextBOx, Clearance.BusinessTypeTextBox, Clearance.TransactionNumber_TextBox, Clearance.PurposeTextBox,
+             Clearance.IssuedAtTextBox, Clearance.QuantityTextBox, Clearance.AmountTextbox, Clearance.TotalTextbox}
 
         For Each inputObjects As Object In arr
 
@@ -94,7 +94,7 @@ Public Class MyClearance
             If IsInputInValid() Then
                 Return False
                 Exit Function
-            ElseIf InputContainsLetter(Clearance.TransactionNumberTextBox.Text.Trim) Then
+            ElseIf InputContainsLetter(Clearance.TransactionNumber_TextBox.Text.Trim) Then
                 MessageBox.Show("Transaction Number contains letter!", "Transaction Number Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
             ElseIf InputContainsLetter(Clearance.QuantityTextBox.Text) Then
@@ -105,8 +105,8 @@ Public Class MyClearance
                 Return False
             ElseIf InputContainsLetter(Clearance.TotalTextBox.Text) Then
                 MessageBox.Show("Total Amount contains letter!", "Total Amount  Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", Clearance.nameTextBox.Text.Trim)) Then
-                MessageBox.Show("Unknown Resident. Resident '" & Clearance.nameTextBox.Text.Trim.ToUpper & "' does not exist in Resident's list.", "INVALID Resident!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", Clearance.FullNameTextBox.Text.Trim)) Then
+                MessageBox.Show("Unknown Resident. Resident '" & Clearance.FullNameTextBox.Text.Trim.ToUpper & "' does not exist in Resident's list.", "INVALID Resident!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
             ElseIf (manage.manipulateDataAt(query)) Then
                 MessageBox.Show("Clearance sucessfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -120,8 +120,8 @@ Public Class MyClearance
             If isInputAlreadyExist("Business Name", "clearance", Clearance.businessNameTextBox.Text.Trim) And Clearance.isBusinessNamemodified Then
                 MessageBox.Show("Business Name '" & Clearance.businessNameTextBox.Text.Trim.ToUpper & "' is already used.", "INVALID BUSINESS NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
-            ElseIf isInputAlreadyExist("TransactNo", "clearance", Clearance.TransactionNumberTextBox.Text.Trim) And Clearance.isTransactNumberModified Then
-                MessageBox.Show("Transaction Number '" & Clearance.TransactionNumberTextBox.Text.Trim.ToUpper & "' is already exist.", "INVALID TRANSACTION NUMBER!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ElseIf isInputAlreadyExist("TransactNo", "clearance", Clearance.TransactionNumber_TextBox.Text.Trim) And Clearance.isTransactNumberModified Then
+                MessageBox.Show("Transaction Number '" & Clearance.TransactionNumber_TextBox.Text.Trim.ToUpper & "' is already exist.", "INVALID TRANSACTION NUMBER!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
             End If
         Finally

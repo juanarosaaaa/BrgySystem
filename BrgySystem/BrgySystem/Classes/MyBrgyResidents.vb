@@ -137,7 +137,7 @@ Public Class MyBrgyResidents
         MyResidents.PurokTextBox.Clear()
         MyResidents.BirthdateDatePicker.Value = Date.Now
         MyResidents.CivilStatusComboBox.SelectedIndex = -1
-        MyResidents.ResidentsPictureBOx.Image = MyResidents.ResidentsPictureBOx.InitialImage 
+        MyResidents.ResidentsPictureBOx.Image = MyResidents.ResidentsPictureBOx.InitialImage
 
 
         MyResidents.SexComboBox.SelectedIndex = -1

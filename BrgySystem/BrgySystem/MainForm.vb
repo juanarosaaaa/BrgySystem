@@ -26,7 +26,6 @@
 
     Private Sub Officials_Button_Click_1(sender As Object, e As EventArgs) Handles Officials_Button.Click
         Officials.Dispose()
-
         showPanelDisplayOf(Officials)
     End Sub
 
@@ -64,6 +63,4 @@
         Application.Exit()
 
     End Sub
-
-
 End Class
