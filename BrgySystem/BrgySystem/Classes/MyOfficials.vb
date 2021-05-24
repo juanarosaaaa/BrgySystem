@@ -70,24 +70,27 @@ Public Class MyOfficials
 
 
     Sub clearAllInputs()
-
-        Officials.FullnameTextBox.Clear()
-        Officials.BirthdateDatePicker.Value = Date.Now
-        Officials.SexComboBox.SelectedIndex = -1
-        Officials.TermComboBox.SelectedIndex = -1
-        Officials.StatusCombobox.SelectedIndex = -1
-        Officials.PositionCombobox.SelectedIndex = -1
-        Officials.CitizenshipTextBox.Clear()
-        Officials.HighestEducationalAttainmentTextBox.Clear()
-        Officials.OfficialsPictureBox.Image = Officials.OfficialsPictureBox.InitialImage
-        Officials.ContactTextBox.Clear()
-        Officials.PurokTxtBox.Clear()
-        Officials.AddressTextBox.Clear()
+        With Officials
 
 
+            .FullnameTextBox.Clear()
+            .BirthdateDatePicker.Value = Date.Now
+            .SexComboBox.SelectedIndex = -1
+            .TermComboBox.SelectedIndex = -1
+            .StatusCombobox.SelectedIndex = -1
+            .PositionCombobox.SelectedIndex = -1
+            .CitizenshipTextBox.Clear()
+            .HighestEducationalAttainmentTextBox.Clear()
+            .OfficialsPictureBox.Image = .OfficialsPictureBox.InitialImage
+            .ContactTextBox.Clear()
+            .PurokTxtBox.Clear()
+            .AddressTextBox.Clear()
 
-        Officials.isContactModified = False
-        Officials.isCaptainModified = False
+
+
+            .isContactModified = False
+            .isCaptainModified = False
+        End With
     End Sub
 
     Function addOrUpdateOfficials(message As String, query As String, imageName As String) As Boolean
@@ -95,8 +98,8 @@ Public Class MyOfficials
             If (IsInputValid()) Then
                 Return False
                 Exit Function
-            ElseIf InputContainsLetter(Officials.ContactTextBox.Text) Then
-                MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ElseIf InputContainsLetter(Officials.ContactTextBox.Text) And isNumberInvalid(11, Officials.ContactTextBox.Text) Then
+                MessageBox.Show("Contact Number is not valid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
 
             ElseIf isDateOrBirthdayInvalid(Officials.BirthdateDatePicker) Then

@@ -126,27 +126,33 @@ Public Class MyBrgyResidents
     End Sub
 
     Sub clearAllInputs()
-        MyResidents.Fullnametxtbox.Clear()
-        MyResidents.SuffixComboBox.SelectedIndex = -1
-        MyResidents.CitizenshipTextBox.Clear()
-        MyResidents.AddressTextBox.Clear()
-        MyResidents.ReligionTextBOx.Clear()
-        MyResidents.HighestEducationAttainmentTextBox.Clear()
-        MyResidents.ContactTextBox.Clear()
-        MyResidents.OccupationTextBox.Clear()
-        MyResidents.PurokTextBox.Clear()
-        MyResidents.BirthdateDatePicker.Value = Date.Now
-        MyResidents.CivilStatusComboBox.SelectedIndex = -1
-        MyResidents.ResidentsPictureBOx.Image = MyResidents.ResidentsPictureBOx.InitialImage
 
 
-        MyResidents.SexComboBox.SelectedIndex = -1
-        MyResidents.VoterComboBox.SelectedIndex = -1
-        MyResidents.SeniorComboBox.SelectedIndex = -1
+        With MyResidents
 
-        MyResidents.isFullNameModified = False
-        MyResidents.isContactModified = False
 
+
+            .Fullnametxtbox.Clear()
+            .SuffixComboBox.SelectedIndex = -1
+            .CitizenshipTextBox.Clear()
+            .AddressTextBox.Clear()
+            .ReligionTextBOx.Clear()
+            .HighestEducationAttainmentTextBox.Clear()
+            .ContactTextBox.Clear()
+            .OccupationTextBox.Clear()
+            .PurokTextBox.Clear()
+            .BirthdateDatePicker.Value = Date.Now
+            .CivilStatusComboBox.SelectedIndex = -1
+            .ResidentsPictureBOx.Image = .ResidentsPictureBOx.InitialImage
+
+
+            .SexComboBox.SelectedIndex = -1
+            .VoterComboBox.SelectedIndex = -1
+            .SeniorComboBox.SelectedIndex = -1
+
+            .isFullNameModified = False
+            .isContactModified = False
+        End With
 
     End Sub
 
@@ -158,8 +164,8 @@ Public Class MyBrgyResidents
             If (IsInputInValid()) Then
                 Return False
                 Exit Function
-            ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
-                MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) And isNumberInvalid(11, MyResidents.ContactTextBox.Text) Then
+                MessageBox.Show("Contact Number is not valid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
             ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
                 MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)

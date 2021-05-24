@@ -127,8 +127,26 @@ Public Class MyClearance
     End Function
 
     Sub clearAllInputs()
-        Clearance.isBusinessNamemodified = False
-        Clearance.isTransactNumberModified = False
+
+        With Clearance
+            .FullNameTextBox.Clear()
+            .BusinessNameTextBOx.Clear()
+            .BusinessTypeTextBox.Clear()
+            .TransactionNumber_TextBox.Clear()
+            .PurposeTextBox.Clear()
+            .AddressTextBox.Clear()
+            .IssuedAtTextBox.Clear()
+            .GenderTextBox.Clear()
+            .AgeTextBox.Clear()
+
+            .isBusinessNamemodified = False
+            .isTransactNumberModified = False
+        End With
+
+
+
+
+
     End Sub
 
 

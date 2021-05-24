@@ -24,8 +24,8 @@ Module InputValidation
         Return val.Value.Year >= Date.Now.Year
     End Function
 
-    Function isContactNumberInvalid(contact As String) As Boolean
-        Return contact.Length <> 11
+    Function isNumberInvalid(size As Integer, contact As String) As Boolean
+        Return contact.Length <> size
     End Function
     Function isInputAlreadyExist(columnName As String, tableName As String, input As String) As Boolean 'select PurokName from  Purok where PurokName = 'therter'
 
