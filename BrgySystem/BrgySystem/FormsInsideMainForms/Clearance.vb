@@ -5,12 +5,12 @@
     Private manage As loadGridViewValue = New ManageSystem
     Private search As Search = New SearchingFeature_Implementation
     Private isAlreadyStartSearchField, IsAlreadyStartAtName As Boolean
-    Private valueYouSearchFor As String
+    Private valueYouSearchFor, nameYouSearchFor As String
     Public isBusinessNamemodified, isTransactNumberModified As Boolean
 
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ClearanceGridView.CellFormatting
-        ' SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ClearanceGridView, e, My.Resources.icons8_trash_24px)
-        'SettinggridViewImage.setImageAtButtonColumnOf("viewButtonColumn", ClearanceGridView, e, My.Resources.icons8_edit_24px)
+        SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ClearanceGridView, e, My.Resources.icons8_trash_24px)
+        SettinggridViewImage.setImageAtButtonColumnOf("viewButtonColumn", ClearanceGridView, e, My.Resources.icons8_edit_24px)
 
     End Sub
 
@@ -54,34 +54,19 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     Private Sub SearchFieldIsClick(sender As Object, e As EventArgs) Handles SearchFieldtextBox.Click
         isAlreadyStartSearchField = True
     End Sub
 
-    Private Sub SearchFieldTextChange(sender As Object, e As EventArgs) Handles SearchFieldtextBox.TextChange
-        If InputIsNull(SearchFieldtextBox.Text.Trim) And isAlreadyStartSearchField Then
-            '    manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
+    Private Sub SearchFieldTextChange(sender As Object, e As EventArgs) Handles SearchFieldTextBox.TextChange
+        valueYouSearchFor = clearance.getClearanceValuesSelectedColumn + "where Fullname Like '%" & SearchFieldTextBox.Text.Trim & "%'"
+        If InputIsNull(SearchFieldTextBox.Text.Trim) And isAlreadyStartSearchField Then
+            manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
         End If
     End Sub
 
     Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchFieldtextBox.KeyDown
         If e.KeyCode = Keys.Enter Then
-            valueYouSearchFor = clearance.getClearanceValuesSelectedColumn + "where Fullname Like '%" & SearchFieldtextBox.Text.Trim & "%'"
             search.searchValueIn(valueYouSearchFor, ClearanceGridView)
         End If
     End Sub
@@ -103,6 +88,7 @@
     End Sub
 
     Private Sub nameTextBoxtTExtChanged(sender As Object, e As EventArgs) Handles FullNameTextBox.TextChange
+
         If InputIsNull(FullNameTextBox.Text.Trim) And IsAlreadyStartAtName Then
             AddressTextBox.Clear()
             GenderTextBox.Clear()
@@ -121,13 +107,17 @@
         isTransactNumberModified = True
     End Sub
 
-    Private Sub BusinessNameTxtBoxKeyDown(sender As Object, e As KeyEventArgs) Handles businessNameTextBox.KeyDown
+    Private Sub addButton_Click_1(sender As Object, e As EventArgs) Handles addButton.Click
+        If clearance.addClearance(clearance.insertClearanceQuery) Then
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldTextBox)
+
+            manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
+        End If
+    End Sub
+
+    Private Sub BusinessNameTxtBoxKeyDown(sender As Object, e As KeyEventArgs) Handles BusinessNameTextBOx.KeyDown
         isBusinessNamemodified = True
     End Sub
 
-    Private Sub NameTextBoxKeyDown(sender As Object, e As KeyEventArgs) Handles FullNameTextBox.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            'show inputs
-        End If
-    End Sub
+
 End Class

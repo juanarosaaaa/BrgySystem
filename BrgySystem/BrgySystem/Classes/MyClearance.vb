@@ -32,11 +32,11 @@ Public Class MyClearance
 'ADMIN',
 '" & Clearance.PurposeTextBox.Text.Trim & "',
 '" & Clearance.BrgyClearanceComboBox.Text.Trim & "',
-[value-11],
-[value-12],
-[value-13],
-[value-14],
-[value-15])"
+'" & Clearance.AmountTextbox.Text.Trim & "',
+'" & Clearance.TotalTextbox.Text.Trim & "',
+'" & Clearance.TotalTextbox.Text.Trim & "',
+'" & Clearance.BusinessTypeTextBox.Text.Trim & "',
+'" & Clearance.IssuedAtTextBox.Text.Trim & "')"
     End Function
 
     Function getClearanceValuesSelectedColumn() As String

@@ -85,9 +85,9 @@ Public Class MyOfficials
         Officials.AddressTextBox.Clear()
 
 
-        Officials.isNameModified = False
-        Officials.isContactModified = False
 
+        Officials.isContactModified = False
+        Officials.isCaptainModified = False
     End Sub
 
     Function addOrUpdateOfficials(message As String, query As String, imageName As String) As Boolean
@@ -105,6 +105,10 @@ Public Class MyOfficials
 
             ElseIf (Not isInputAlreadyExist("PurokName", "Purok", Officials.PurokTxtBox.Text.Trim)) Then
                 MessageBox.Show("Purok '" & Officials.PurokTxtBox.Text.Trim.ToUpper & "' does not exist in Purok list.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return False
+
+            ElseIf (isInputAlreadyExist("POSITION", "officials", "Barangay Captain") And Officials.PositionCombobox.SelectedIndex.Equals(0)) Then
+                MessageBox.Show("There is already a Barangay Captain assigned.", "INVALID POSITION!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
 
             ElseIf (manage.manipulateDataAt(query)) Then
@@ -195,12 +199,16 @@ Public Class MyOfficials
 
 
         Dim arr() As Object = {Officials.FullnameTextBox,
+                               Officials.SexComboBox,
                                 Officials.ContactTextBox,
                                 Officials.HighestEducationalAttainmentTextBox,
                                 Officials.PurokTxtBox,
                                 Officials.CitizenshipTextBox,
                                 Officials.PurokTxtBox,
-                                Officials.AddressTextBox}
+                                Officials.AddressTextBox,
+                                Officials.PositionCombobox,
+                                Officials.StatusCombobox,
+                                Officials.TermComboBox}
 
         For Each inputObjects As Object In arr
 

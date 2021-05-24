@@ -7,7 +7,7 @@
     Private isAlreadyStart As Boolean = False
     Private valueYouSearchFor As String
     Private imageFile As ImageFileManager = New ImageFileManager()
-    Public isNameModified, isContactModified As Boolean
+    Public isNameModified, isContactModified, isCaptainModified As Boolean
     Private selectedResidentNameInROw As String
 
 
@@ -27,6 +27,7 @@
         officials_.arrangeGridView()
         isNameModified = False
         isContactModified = False
+        isCaptainModified = False
         UpdateButton.Enabled = False
         manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Name", "officials", SearchfieldTExtBox)
@@ -85,6 +86,7 @@
 
             isNameModified = False
             isContactModified = False
+            isCaptainModified = False
             SaveButton.Enabled = False
             UpdateButton.Enabled = True
 
@@ -170,13 +172,16 @@
         UpdateButton.Enabled = False
     End Sub
 
+    Private Sub PositionCombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles PositionCombobox.SelectedIndexChanged
+        isCaptainModified = True
+
+    End Sub
+
     Private Sub FullnameKeyDown(sender As Object, e As KeyEventArgs) Handles FullnameTextBox.KeyDown
         isNameModified = True
     End Sub
 
-    Private Sub GunaWinSwitch1_CheckedChanged(sender As Object, e As EventArgs)
 
-    End Sub
 
 
 
