@@ -22,36 +22,36 @@ Partial Class Archive
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim StateProperties17 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties18 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties19 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties20 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties21 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties22 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties23 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties24 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Archive))
-        Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties5 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties6 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties7 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties8 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim StateProperties9 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties10 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties11 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties12 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties13 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties14 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties15 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties16 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.ResidentsArchiveSearchButton = New System.Windows.Forms.Button()
@@ -105,11 +105,10 @@ Partial Class Archive
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.ItemSize = New System.Drawing.Size(180, 30)
-        Me.TabControl1.Location = New System.Drawing.Point(4, 27)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabControl1.Location = New System.Drawing.Point(3, 22)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1491, 901)
+        Me.TabControl1.Size = New System.Drawing.Size(1118, 732)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
@@ -119,10 +118,9 @@ Partial Class Archive
         Me.TabPage1.Controls.Add(Me.ResidentsArchiveGridView)
         Me.TabPage1.Controls.Add(Me.ResidentsArchiveSearchField)
         Me.TabPage1.Location = New System.Drawing.Point(4, 34)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage1.Size = New System.Drawing.Size(1483, 863)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1110, 694)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Resident's Archive"
         '
@@ -130,10 +128,9 @@ Partial Class Archive
         '
         Me.ResidentsArchiveSearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ResidentsArchiveSearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.ResidentsArchiveSearchButton.Location = New System.Drawing.Point(1421, 11)
-        Me.ResidentsArchiveSearchButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.ResidentsArchiveSearchButton.Location = New System.Drawing.Point(1066, 9)
         Me.ResidentsArchiveSearchButton.Name = "ResidentsArchiveSearchButton"
-        Me.ResidentsArchiveSearchButton.Size = New System.Drawing.Size(51, 52)
+        Me.ResidentsArchiveSearchButton.Size = New System.Drawing.Size(38, 39)
         Me.ResidentsArchiveSearchButton.TabIndex = 2
         Me.ResidentsArchiveSearchButton.UseVisualStyleBackColor = True
         '
@@ -141,8 +138,8 @@ Partial Class Archive
         '
         Me.ResidentsArchiveGridView.AllowUserToAddRows = False
         Me.ResidentsArchiveGridView.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.ResidentsArchiveGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle27.BackColor = System.Drawing.Color.White
+        Me.ResidentsArchiveGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle27
         Me.ResidentsArchiveGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -152,33 +149,32 @@ Partial Class Archive
         Me.ResidentsArchiveGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ResidentsArchiveGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.ResidentsArchiveGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ResidentsArchiveGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle28.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ResidentsArchiveGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle28
         Me.ResidentsArchiveGridView.ColumnHeadersHeight = 40
         Me.ResidentsArchiveGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fname_Column, Me.sex_Column, Me.age_Column, Me.religion_Column, Me.citizenship_Column, Me.address_Column, Me.restoreofficials_ButtonColumn, Me.deleteOfficials_ButtonColumn})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ResidentsArchiveGridView.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ResidentsArchiveGridView.DefaultCellStyle = DataGridViewCellStyle29
         Me.ResidentsArchiveGridView.EnableHeadersVisualStyles = False
         Me.ResidentsArchiveGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ResidentsArchiveGridView.Location = New System.Drawing.Point(4, 70)
-        Me.ResidentsArchiveGridView.Margin = New System.Windows.Forms.Padding(4)
+        Me.ResidentsArchiveGridView.Location = New System.Drawing.Point(3, 57)
         Me.ResidentsArchiveGridView.Name = "ResidentsArchiveGridView"
         Me.ResidentsArchiveGridView.ReadOnly = True
         Me.ResidentsArchiveGridView.RowHeadersVisible = False
         Me.ResidentsArchiveGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ResidentsArchiveGridView.Size = New System.Drawing.Size(1481, 789)
+        Me.ResidentsArchiveGridView.Size = New System.Drawing.Size(1111, 641)
         Me.ResidentsArchiveGridView.TabIndex = 4
         Me.ResidentsArchiveGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ResidentsArchiveGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -286,34 +282,33 @@ Partial Class Archive
         Me.ResidentsArchiveSearchField.IconRight = Nothing
         Me.ResidentsArchiveSearchField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.ResidentsArchiveSearchField.Lines = New String(-1) {}
-        Me.ResidentsArchiveSearchField.Location = New System.Drawing.Point(1091, 11)
-        Me.ResidentsArchiveSearchField.Margin = New System.Windows.Forms.Padding(4)
+        Me.ResidentsArchiveSearchField.Location = New System.Drawing.Point(818, 9)
         Me.ResidentsArchiveSearchField.MaxLength = 32767
         Me.ResidentsArchiveSearchField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.ResidentsArchiveSearchField.Modified = False
         Me.ResidentsArchiveSearchField.Multiline = False
         Me.ResidentsArchiveSearchField.Name = "ResidentsArchiveSearchField"
-        StateProperties1.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties1.FillColor = System.Drawing.Color.Empty
-        StateProperties1.ForeColor = System.Drawing.Color.Empty
-        StateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.ResidentsArchiveSearchField.OnActiveState = StateProperties1
-        StateProperties2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties2.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.ResidentsArchiveSearchField.OnDisabledState = StateProperties2
-        StateProperties3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties3.FillColor = System.Drawing.Color.Empty
-        StateProperties3.ForeColor = System.Drawing.Color.Empty
-        StateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.ResidentsArchiveSearchField.OnHoverState = StateProperties3
-        StateProperties4.BorderColor = System.Drawing.Color.Silver
-        StateProperties4.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        StateProperties4.ForeColor = System.Drawing.Color.WhiteSmoke
-        StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.ResidentsArchiveSearchField.OnIdleState = StateProperties4
-        Me.ResidentsArchiveSearchField.Padding = New System.Windows.Forms.Padding(4)
+        StateProperties17.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties17.FillColor = System.Drawing.Color.Empty
+        StateProperties17.ForeColor = System.Drawing.Color.Empty
+        StateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.ResidentsArchiveSearchField.OnActiveState = StateProperties17
+        StateProperties18.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties18.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.ResidentsArchiveSearchField.OnDisabledState = StateProperties18
+        StateProperties19.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties19.FillColor = System.Drawing.Color.Empty
+        StateProperties19.ForeColor = System.Drawing.Color.Empty
+        StateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.ResidentsArchiveSearchField.OnHoverState = StateProperties19
+        StateProperties20.BorderColor = System.Drawing.Color.Silver
+        StateProperties20.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        StateProperties20.ForeColor = System.Drawing.Color.WhiteSmoke
+        StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.ResidentsArchiveSearchField.OnIdleState = StateProperties20
+        Me.ResidentsArchiveSearchField.Padding = New System.Windows.Forms.Padding(3)
         Me.ResidentsArchiveSearchField.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.ResidentsArchiveSearchField.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.ResidentsArchiveSearchField.PlaceholderText = "Search name"
@@ -323,7 +318,7 @@ Partial Class Archive
         Me.ResidentsArchiveSearchField.SelectionLength = 0
         Me.ResidentsArchiveSearchField.SelectionStart = 0
         Me.ResidentsArchiveSearchField.ShortcutsEnabled = True
-        Me.ResidentsArchiveSearchField.Size = New System.Drawing.Size(347, 45)
+        Me.ResidentsArchiveSearchField.Size = New System.Drawing.Size(260, 42)
         Me.ResidentsArchiveSearchField.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.ResidentsArchiveSearchField.TabIndex = 1
         Me.ResidentsArchiveSearchField.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -341,10 +336,9 @@ Partial Class Archive
         Me.TabPage2.Controls.Add(Me.PurokArchiveSearchField)
         Me.TabPage2.Controls.Add(Me.PurokGridView)
         Me.TabPage2.Location = New System.Drawing.Point(4, 34)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage2.Size = New System.Drawing.Size(1483, 863)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(1110, 694)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Purok's Archive"
         '
@@ -352,10 +346,9 @@ Partial Class Archive
         '
         Me.PurokArchiveSearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PurokArchiveSearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.PurokArchiveSearchButton.Location = New System.Drawing.Point(1421, 11)
-        Me.PurokArchiveSearchButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.PurokArchiveSearchButton.Location = New System.Drawing.Point(1066, 9)
         Me.PurokArchiveSearchButton.Name = "PurokArchiveSearchButton"
-        Me.PurokArchiveSearchButton.Size = New System.Drawing.Size(51, 52)
+        Me.PurokArchiveSearchButton.Size = New System.Drawing.Size(38, 39)
         Me.PurokArchiveSearchButton.TabIndex = 4
         Me.PurokArchiveSearchButton.UseVisualStyleBackColor = True
         '
@@ -388,34 +381,33 @@ Partial Class Archive
         Me.PurokArchiveSearchField.IconRight = Nothing
         Me.PurokArchiveSearchField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.PurokArchiveSearchField.Lines = New String(-1) {}
-        Me.PurokArchiveSearchField.Location = New System.Drawing.Point(1091, 11)
-        Me.PurokArchiveSearchField.Margin = New System.Windows.Forms.Padding(4)
+        Me.PurokArchiveSearchField.Location = New System.Drawing.Point(818, 9)
         Me.PurokArchiveSearchField.MaxLength = 32767
         Me.PurokArchiveSearchField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.PurokArchiveSearchField.Modified = False
         Me.PurokArchiveSearchField.Multiline = False
         Me.PurokArchiveSearchField.Name = "PurokArchiveSearchField"
-        StateProperties5.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties5.FillColor = System.Drawing.Color.Empty
-        StateProperties5.ForeColor = System.Drawing.Color.Empty
-        StateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.PurokArchiveSearchField.OnActiveState = StateProperties5
-        StateProperties6.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties6.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.PurokArchiveSearchField.OnDisabledState = StateProperties6
-        StateProperties7.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties7.FillColor = System.Drawing.Color.Empty
-        StateProperties7.ForeColor = System.Drawing.Color.Empty
-        StateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.PurokArchiveSearchField.OnHoverState = StateProperties7
-        StateProperties8.BorderColor = System.Drawing.Color.Silver
-        StateProperties8.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        StateProperties8.ForeColor = System.Drawing.Color.WhiteSmoke
-        StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.PurokArchiveSearchField.OnIdleState = StateProperties8
-        Me.PurokArchiveSearchField.Padding = New System.Windows.Forms.Padding(4)
+        StateProperties21.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties21.FillColor = System.Drawing.Color.Empty
+        StateProperties21.ForeColor = System.Drawing.Color.Empty
+        StateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.PurokArchiveSearchField.OnActiveState = StateProperties21
+        StateProperties22.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties22.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.PurokArchiveSearchField.OnDisabledState = StateProperties22
+        StateProperties23.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties23.FillColor = System.Drawing.Color.Empty
+        StateProperties23.ForeColor = System.Drawing.Color.Empty
+        StateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.PurokArchiveSearchField.OnHoverState = StateProperties23
+        StateProperties24.BorderColor = System.Drawing.Color.Silver
+        StateProperties24.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        StateProperties24.ForeColor = System.Drawing.Color.WhiteSmoke
+        StateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.PurokArchiveSearchField.OnIdleState = StateProperties24
+        Me.PurokArchiveSearchField.Padding = New System.Windows.Forms.Padding(3)
         Me.PurokArchiveSearchField.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.PurokArchiveSearchField.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.PurokArchiveSearchField.PlaceholderText = "Search name"
@@ -425,7 +417,7 @@ Partial Class Archive
         Me.PurokArchiveSearchField.SelectionLength = 0
         Me.PurokArchiveSearchField.SelectionStart = 0
         Me.PurokArchiveSearchField.ShortcutsEnabled = True
-        Me.PurokArchiveSearchField.Size = New System.Drawing.Size(347, 45)
+        Me.PurokArchiveSearchField.Size = New System.Drawing.Size(260, 42)
         Me.PurokArchiveSearchField.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.PurokArchiveSearchField.TabIndex = 3
         Me.PurokArchiveSearchField.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -441,8 +433,8 @@ Partial Class Archive
         Me.PurokGridView.AllowUserToAddRows = False
         Me.PurokGridView.AllowUserToDeleteRows = False
         Me.PurokGridView.AllowUserToOrderColumns = True
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.PurokGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle30.BackColor = System.Drawing.Color.White
+        Me.PurokGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle30
         Me.PurokGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -452,35 +444,34 @@ Partial Class Archive
         Me.PurokGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.PurokGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.PurokGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.WhiteSmoke
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.PurokGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        DataGridViewCellStyle31.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle31.ForeColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.PurokGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle31
         Me.PurokGridView.ColumnHeadersHeight = 40
         Me.PurokGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.purok_Column, Me.restoreButton_Column, Me.deleteButton_Column})
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.PurokGridView.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle33.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.PurokGridView.DefaultCellStyle = DataGridViewCellStyle33
         Me.PurokGridView.EnableHeadersVisualStyles = False
         Me.PurokGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PurokGridView.Location = New System.Drawing.Point(4, 70)
-        Me.PurokGridView.Margin = New System.Windows.Forms.Padding(4)
+        Me.PurokGridView.Location = New System.Drawing.Point(3, 57)
         Me.PurokGridView.Name = "PurokGridView"
         Me.PurokGridView.ReadOnly = True
         Me.PurokGridView.RowHeadersVisible = False
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.PurokGridView.RowsDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.PurokGridView.RowsDefaultCellStyle = DataGridViewCellStyle34
         Me.PurokGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.PurokGridView.Size = New System.Drawing.Size(1472, 784)
+        Me.PurokGridView.Size = New System.Drawing.Size(1104, 637)
         Me.PurokGridView.TabIndex = 5
         Me.PurokGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.PurokGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -507,8 +498,8 @@ Partial Class Archive
         '
         'purok_Column
         '
-        DataGridViewCellStyle6.NullValue = "Patio uno"
-        Me.purok_Column.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle32.NullValue = "Patio uno"
+        Me.purok_Column.DefaultCellStyle = DataGridViewCellStyle32
         Me.purok_Column.HeaderText = "Purok"
         Me.purok_Column.Name = "purok_Column"
         Me.purok_Column.ReadOnly = True
@@ -538,10 +529,9 @@ Partial Class Archive
         Me.TabPage3.Controls.Add(Me.ArchiveOfficialGridView)
         Me.TabPage3.Controls.Add(Me.OfficialsArchiveSearchField)
         Me.TabPage3.Location = New System.Drawing.Point(4, 34)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage3.Size = New System.Drawing.Size(1483, 863)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(1110, 694)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Official's Archive"
         '
@@ -550,10 +540,9 @@ Partial Class Archive
         Me.OfficialSearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.OfficialSearchButton.FlatAppearance.BorderSize = 0
         Me.OfficialSearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.OfficialSearchButton.Location = New System.Drawing.Point(1421, 11)
-        Me.OfficialSearchButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.OfficialSearchButton.Location = New System.Drawing.Point(1066, 9)
         Me.OfficialSearchButton.Name = "OfficialSearchButton"
-        Me.OfficialSearchButton.Size = New System.Drawing.Size(51, 48)
+        Me.OfficialSearchButton.Size = New System.Drawing.Size(38, 39)
         Me.OfficialSearchButton.TabIndex = 4
         Me.OfficialSearchButton.UseVisualStyleBackColor = True
         '
@@ -562,8 +551,8 @@ Partial Class Archive
         Me.ArchiveOfficialGridView.AllowUserToAddRows = False
         Me.ArchiveOfficialGridView.AllowUserToDeleteRows = False
         Me.ArchiveOfficialGridView.AllowUserToOrderColumns = True
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
-        Me.ArchiveOfficialGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.White
+        Me.ArchiveOfficialGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle18
         Me.ArchiveOfficialGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -573,34 +562,33 @@ Partial Class Archive
         Me.ArchiveOfficialGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ArchiveOfficialGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.ArchiveOfficialGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.WhiteSmoke
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ArchiveOfficialGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle19.ForeColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ArchiveOfficialGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle19
         Me.ArchiveOfficialGridView.ColumnHeadersHeight = 40
         Me.ArchiveOfficialGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fullnameColumnOfficials, Me.status_ColumnOfficials, Me.contact_ColumnOfficials, Me.positionColumnOfficials, Me.termColumnOfficials, Me.sexColumnOfficials, Me.purokColumnOfficials, Me.ageColumnOfficials, Me.restoreButtonColumnOfficials, Me.deleteButtonColumnOfficials})
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle17.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ArchiveOfficialGridView.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ArchiveOfficialGridView.DefaultCellStyle = DataGridViewCellStyle26
         Me.ArchiveOfficialGridView.EnableHeadersVisualStyles = False
         Me.ArchiveOfficialGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ArchiveOfficialGridView.Location = New System.Drawing.Point(4, 70)
-        Me.ArchiveOfficialGridView.Margin = New System.Windows.Forms.Padding(4)
+        Me.ArchiveOfficialGridView.Location = New System.Drawing.Point(3, 57)
         Me.ArchiveOfficialGridView.Name = "ArchiveOfficialGridView"
         Me.ArchiveOfficialGridView.ReadOnly = True
         Me.ArchiveOfficialGridView.RowHeadersVisible = False
         Me.ArchiveOfficialGridView.RowHeadersWidth = 40
         Me.ArchiveOfficialGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ArchiveOfficialGridView.Size = New System.Drawing.Size(1481, 789)
+        Me.ArchiveOfficialGridView.Size = New System.Drawing.Size(1111, 641)
         Me.ArchiveOfficialGridView.TabIndex = 6
         Me.ArchiveOfficialGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.ArchiveOfficialGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -628,8 +616,8 @@ Partial Class Archive
         'fullnameColumnOfficials
         '
         Me.fullnameColumnOfficials.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        DataGridViewCellStyle11.NullValue = "john dominic jasmin"
-        Me.fullnameColumnOfficials.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle20.NullValue = "john dominic jasmin"
+        Me.fullnameColumnOfficials.DefaultCellStyle = DataGridViewCellStyle20
         Me.fullnameColumnOfficials.HeaderText = "Fullname"
         Me.fullnameColumnOfficials.Name = "fullnameColumnOfficials"
         Me.fullnameColumnOfficials.ReadOnly = True
@@ -649,24 +637,24 @@ Partial Class Archive
         '
         'positionColumnOfficials
         '
-        DataGridViewCellStyle12.NullValue = "kagawad"
-        Me.positionColumnOfficials.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle21.NullValue = "kagawad"
+        Me.positionColumnOfficials.DefaultCellStyle = DataGridViewCellStyle21
         Me.positionColumnOfficials.HeaderText = "Position"
         Me.positionColumnOfficials.Name = "positionColumnOfficials"
         Me.positionColumnOfficials.ReadOnly = True
         '
         'termColumnOfficials
         '
-        DataGridViewCellStyle13.NullValue = "none"
-        Me.termColumnOfficials.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle22.NullValue = "none"
+        Me.termColumnOfficials.DefaultCellStyle = DataGridViewCellStyle22
         Me.termColumnOfficials.HeaderText = "Term"
         Me.termColumnOfficials.Name = "termColumnOfficials"
         Me.termColumnOfficials.ReadOnly = True
         '
         'sexColumnOfficials
         '
-        DataGridViewCellStyle14.NullValue = "male"
-        Me.sexColumnOfficials.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle23.NullValue = "male"
+        Me.sexColumnOfficials.DefaultCellStyle = DataGridViewCellStyle23
         Me.sexColumnOfficials.HeaderText = "Sex"
         Me.sexColumnOfficials.Name = "sexColumnOfficials"
         Me.sexColumnOfficials.ReadOnly = True
@@ -674,8 +662,8 @@ Partial Class Archive
         'purokColumnOfficials
         '
         Me.purokColumnOfficials.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        DataGridViewCellStyle15.NullValue = "22 f laurena street tanauan batangas"
-        Me.purokColumnOfficials.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle24.NullValue = "22 f laurena street tanauan batangas"
+        Me.purokColumnOfficials.DefaultCellStyle = DataGridViewCellStyle24
         Me.purokColumnOfficials.HeaderText = "Purok"
         Me.purokColumnOfficials.Name = "purokColumnOfficials"
         Me.purokColumnOfficials.ReadOnly = True
@@ -683,8 +671,8 @@ Partial Class Archive
         '
         'ageColumnOfficials
         '
-        DataGridViewCellStyle16.NullValue = "17"
-        Me.ageColumnOfficials.DefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle25.NullValue = "17"
+        Me.ageColumnOfficials.DefaultCellStyle = DataGridViewCellStyle25
         Me.ageColumnOfficials.HeaderText = "Age"
         Me.ageColumnOfficials.Name = "ageColumnOfficials"
         Me.ageColumnOfficials.ReadOnly = True
@@ -736,34 +724,33 @@ Partial Class Archive
         Me.OfficialsArchiveSearchField.IconRight = Nothing
         Me.OfficialsArchiveSearchField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.OfficialsArchiveSearchField.Lines = New String(-1) {}
-        Me.OfficialsArchiveSearchField.Location = New System.Drawing.Point(1088, 11)
-        Me.OfficialsArchiveSearchField.Margin = New System.Windows.Forms.Padding(4)
+        Me.OfficialsArchiveSearchField.Location = New System.Drawing.Point(818, 9)
         Me.OfficialsArchiveSearchField.MaxLength = 32767
         Me.OfficialsArchiveSearchField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.OfficialsArchiveSearchField.Modified = False
         Me.OfficialsArchiveSearchField.Multiline = False
         Me.OfficialsArchiveSearchField.Name = "OfficialsArchiveSearchField"
-        StateProperties9.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties9.FillColor = System.Drawing.Color.Empty
-        StateProperties9.ForeColor = System.Drawing.Color.Empty
-        StateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.OfficialsArchiveSearchField.OnActiveState = StateProperties9
-        StateProperties10.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties10.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.OfficialsArchiveSearchField.OnDisabledState = StateProperties10
-        StateProperties11.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties11.FillColor = System.Drawing.Color.Empty
-        StateProperties11.ForeColor = System.Drawing.Color.Empty
-        StateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.OfficialsArchiveSearchField.OnHoverState = StateProperties11
-        StateProperties12.BorderColor = System.Drawing.Color.Silver
-        StateProperties12.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        StateProperties12.ForeColor = System.Drawing.Color.WhiteSmoke
-        StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.OfficialsArchiveSearchField.OnIdleState = StateProperties12
-        Me.OfficialsArchiveSearchField.Padding = New System.Windows.Forms.Padding(4)
+        StateProperties13.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties13.FillColor = System.Drawing.Color.Empty
+        StateProperties13.ForeColor = System.Drawing.Color.Empty
+        StateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.OfficialsArchiveSearchField.OnActiveState = StateProperties13
+        StateProperties14.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties14.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.OfficialsArchiveSearchField.OnDisabledState = StateProperties14
+        StateProperties15.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties15.FillColor = System.Drawing.Color.Empty
+        StateProperties15.ForeColor = System.Drawing.Color.Empty
+        StateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.OfficialsArchiveSearchField.OnHoverState = StateProperties15
+        StateProperties16.BorderColor = System.Drawing.Color.Silver
+        StateProperties16.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        StateProperties16.ForeColor = System.Drawing.Color.WhiteSmoke
+        StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.OfficialsArchiveSearchField.OnIdleState = StateProperties16
+        Me.OfficialsArchiveSearchField.Padding = New System.Windows.Forms.Padding(3)
         Me.OfficialsArchiveSearchField.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.OfficialsArchiveSearchField.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.OfficialsArchiveSearchField.PlaceholderText = "Search name"
@@ -773,7 +760,7 @@ Partial Class Archive
         Me.OfficialsArchiveSearchField.SelectionLength = 0
         Me.OfficialsArchiveSearchField.SelectionStart = 0
         Me.OfficialsArchiveSearchField.ShortcutsEnabled = True
-        Me.OfficialsArchiveSearchField.Size = New System.Drawing.Size(347, 42)
+        Me.OfficialsArchiveSearchField.Size = New System.Drawing.Size(260, 39)
         Me.OfficialsArchiveSearchField.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.OfficialsArchiveSearchField.TabIndex = 3
         Me.OfficialsArchiveSearchField.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -786,13 +773,12 @@ Partial Class Archive
         '
         'Archive
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1499, 943)
+        Me.ClientSize = New System.Drawing.Size(1124, 766)
         Me.Controls.Add(Me.TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Archive"
         Me.Text = "Archive"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
