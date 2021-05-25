@@ -235,6 +235,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BarangayInformation.vb" />
     <Compile Include="Classes\imagePathManager.vb" />
     <Compile Include="Classes\InputValidation.vb" />
     <Compile Include="ChildForms\PurokChildForm.Designer.vb">

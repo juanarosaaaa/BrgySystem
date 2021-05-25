@@ -23,11 +23,6 @@ Module InputValidation
 
 
 
-    Function ContainsSpecialChars(s As String) As Boolean
-        Return s.IndexOfAny("[~`!@#$%^&*()-+=|{}':;.,<>/?]".ToCharArray) <> -1
-    End Function
-
-
 
     Function InputIsNull(s As String) As Boolean
         Return s.Length = 0 Or s = ""
@@ -42,7 +37,7 @@ Module InputValidation
 
 
 
-    Function isNumberInvalid(size As Integer, contact As String) As Boolean
+    Function isNumberSizeInvalid(size As Integer, contact As String) As Boolean
         Return contact.Length <> size
     End Function
 
