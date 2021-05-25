@@ -71,7 +71,7 @@ Public Class MyBrgyResidents
 
     Sub deleteResidents(resident As String)
 
-        If (MessageBox.Show("Are you sure you want to delete '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+        If (MessageBox.Show("Are you sure you want to delete '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manage.manipulateDataAt("DELETE FROM `residents` WHERE FULLNAME = '" & resident.Trim & "' ")) Then
                 MessageBox.Show("Resident '" & resident.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
@@ -89,7 +89,7 @@ Public Class MyBrgyResidents
                             DELETE FROM `residents` WHERE Fullname = '" & resident & "';"
 
         Try
-            If (MessageBox.Show("Are you sure you want to archive '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (MessageBox.Show("Are you sure you want to archive '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to archive?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
                 If (manage.manipulateDataAt(query)) Then
                     MessageBox.Show("Resident '" & resident.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else
@@ -126,27 +126,33 @@ Public Class MyBrgyResidents
     End Sub
 
     Sub clearAllInputs()
-        MyResidents.Fullnametxtbox.Clear()
-        MyResidents.SuffixComboBox.SelectedIndex = -1
-        MyResidents.CitizenshipTextBox.Clear()
-        MyResidents.AddressTextBox.Clear()
-        MyResidents.ReligionTextBOx.Clear()
-        MyResidents.HighestEducationAttainmentTextBox.Clear()
-        MyResidents.ContactTextBox.Clear()
-        MyResidents.OccupationTextBox.Clear()
-        MyResidents.PurokTextBox.Clear()
-        MyResidents.BirthdateDatePicker.Value = Date.Now
-        MyResidents.CivilStatusComboBox.SelectedIndex = -1
-        MyResidents.ResidentsPictureBOx.Image = MyResidents.ResidentsPictureBOx.InitialImage
 
 
-        MyResidents.SexComboBox.SelectedIndex = -1
-        MyResidents.VoterComboBox.SelectedIndex = -1
-        MyResidents.SeniorComboBox.SelectedIndex = -1
+        With MyResidents
 
-        MyResidents.isFullNameModified = False
-        MyResidents.isContactModified = False
 
+
+            .Fullnametxtbox.Clear()
+            .SuffixComboBox.SelectedIndex = -1
+            .CitizenshipTextBox.Clear()
+            .AddressTextBox.Clear()
+            .ReligionTextBOx.Clear()
+            .HighestEducationAttainmentTextBox.Clear()
+            .ContactTextBox.Clear()
+            .OccupationTextBox.Clear()
+            .PurokTextBox.Clear()
+            .BirthdateDatePicker.Value = Date.Now
+            .CivilStatusComboBox.SelectedIndex = -1
+            .ResidentsPictureBOx.Image = .ResidentsPictureBOx.InitialImage
+
+
+            .SexComboBox.SelectedIndex = -1
+            .VoterComboBox.SelectedIndex = -1
+            .SeniorComboBox.SelectedIndex = -1
+
+            .isFullNameModified = False
+            .isContactModified = False
+        End With
 
     End Sub
 
@@ -158,8 +164,8 @@ Public Class MyBrgyResidents
             If (IsInputInValid()) Then
                 Return False
                 Exit Function
-            ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Then
-                MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) And isNumberInvalid(11, MyResidents.ContactTextBox.Text) Then
+                MessageBox.Show("Contact Number is not valid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
             ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then
                 MessageBox.Show("Birthdate is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -172,7 +178,7 @@ Public Class MyBrgyResidents
                 clearAllInputs()
                 Return True
             Else
-                MessageBox.Show("An error occured. Failed to add new Resident!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("An error occured. Failed to add/update Resident.", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
             End If
         Catch duplicate As MySqlException
@@ -230,7 +236,7 @@ Public Class MyBrgyResidents
                 Exit For
                 Exit Function
             ElseIf (InputContainsSpecialCharacter(inputObjects.Text)) Then
-                MessageBox.Show("Input is invalid. Your '" & inputObjects.AccessibleName & "' field contains special characters ^&*()-+=|{}':;.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("Input is invalid. Your '" & inputObjects.AccessibleName & "' field contains special characters ^&*()-+=|{}':;.", "INVALID", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return True
                 Exit For
                 Exit Function
@@ -239,7 +245,7 @@ Public Class MyBrgyResidents
             If inputObjects.Equals(MyResidents.ContactTextBox) Or inputObjects.Equals(MyResidents.AddressTextBox) Or inputObjects.Equals(MyResidents.PurokTextBox) Then
                 Continue For
             ElseIf InputContainsNumber(inputObjects.Text) Then
-                MessageBox.Show("Input is invalid! Your " & inputObjects.AccessibleName & " contains number.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("Input is invalid! Your " & inputObjects.AccessibleName & " contains number.", "INVALID", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return True
                 Exit For
                 Exit Function
@@ -265,26 +271,32 @@ Public Class MyBrgyResidents
 
 
             While reader.Read
-                MyResidents.Fullnametxtbox.Text = reader.GetString("FULLNAME")
-                MyResidents.SuffixComboBox.Text = reader.GetString("SUFFIX")
-                MyResidents.CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
-                MyResidents.AddressTextBox.Text = reader.GetString("ADDRESS")
-                MyResidents.ReligionTextBOx.Text = reader.GetString("RELIGION")
-                MyResidents.HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
-                MyResidents.ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
-                MyResidents.OccupationTextBox.Text = reader.GetString("OCCUPATION")
-                MyResidents.PurokTextBox.Text = reader.GetString("PUROK")
-                MyResidents.BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
-                MyResidents.CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
-                MyResidents.SexComboBox.Text = reader.GetString("SEX")
-                MyResidents.VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
-                MyResidents.SeniorComboBox.Text = reader.GetString("SeniorCitizen")
 
-                imgname = reader.GetString("ImageName")
-                imgpath = reader.GetString("ImagePath")
+                With MyResidents
 
-                MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("Imagepath"))
+                    .Fullnametxtbox.Text = reader.GetString("FULLNAME")
+                    .SuffixComboBox.Text = reader.GetString("SUFFIX")
+                    .CitizenshipTextBox.Text = reader.GetString("CITIZENSHIP")
+                    .AddressTextBox.Text = reader.GetString("ADDRESS")
+                    .ReligionTextBOx.Text = reader.GetString("RELIGION")
+                    .HighestEducationAttainmentTextBox.Text = reader.GetString("Educational Attainment")
+                    .ContactTextBox.Text = reader.GetString("CONTACT_NUMBER")
+                    .OccupationTextBox.Text = reader.GetString("OCCUPATION")
+                    .PurokTextBox.Text = reader.GetString("PUROK")
+                    .BirthdateDatePicker.Value = reader.GetString("BIRTHDATE")
+                    .CivilStatusComboBox.Text = reader.GetString("CIVIL_STATUS")
+                    .SexComboBox.Text = reader.GetString("SEX")
+                    .VoterComboBox.Text = reader.GetString("REGISTERED_VOTER")
+                    .SeniorComboBox.Text = reader.GetString("SeniorCitizen")
+
+                    imgname = reader.GetString("ImageName")
+                    imgpath = reader.GetString("ImagePath")
+
+
+                    MyResidents.ResidentsPictureBOx.Image = Image.FromFile(reader.GetString("Imagepath"))
+                End With
             End While
+
         Catch x As FileNotFoundException
             MessageBox.Show("Picture for Resident '" & reader.GetString("FULLNAME").ToUpper & "' not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally

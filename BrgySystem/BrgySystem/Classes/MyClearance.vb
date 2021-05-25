@@ -6,21 +6,17 @@ Imports System.IO
 
 
 Public Class MyClearance
-    Private getValuesQueryOftheSelectedColumn As String = "SELECT `TransactNo`,`Fullname`,`Purpose`,`DateAndTime`,`Given_By`,`Type` FROM `clearance` "
+    Private getValuesQueryOftheSelectedColumn As String = "SELECT `Fullname`,`TransactNo`,`Purpose`,`DateAndTime`,`Given_By`,`Type` FROM `clearance` "
     Private manage As DataManipulation = New ManageSystem
+    Private manipulate As DataManipulation = New ManageSystem
     Sub arrangeGridView()
 
-        Clearance.ClearanceGridView.Columns("name_column").DataPropertyName = "Fullname"
-        Clearance.ClearanceGridView.Columns("TransactNo_Col").DataPropertyName = "TransactNo"
-
-
-        Clearance.ClearanceGridView.Columns("purpose_Col").DataPropertyName = "Purpose"
-
-        Clearance.ClearanceGridView.Columns("Date_col").DataPropertyName = "DateAndTime"
-
-        Clearance.ClearanceGridView.Columns("Givenby_Column1").DataPropertyName = "Given_By"
-
-        Clearance.ClearanceGridView.Columns("Type_Col").DataPropertyName = "Type"
+        Clearance.ClearanceGridView.Columns("fullname_Column").DataPropertyName = "Fullname"
+        Clearance.ClearanceGridView.Columns("Transact_Col").DataPropertyName = "TransactNo"
+        Clearance.ClearanceGridView.Columns("purpose_Column").DataPropertyName = "Purpose"
+        Clearance.ClearanceGridView.Columns("date_Column").DataPropertyName = "DateAndTime"
+        Clearance.ClearanceGridView.Columns("givenBy_Column").DataPropertyName = "Given_By"
+        Clearance.ClearanceGridView.Columns("typeColumn").DataPropertyName = "Type"
 
 
     End Sub
@@ -30,18 +26,18 @@ Public Class MyClearance
         Return "INSERT INTO `clearance` VALUES ('" & Clearance.TransactionNumber_TextBox.Text.Trim & "',
 '" & Clearance.FullNameTextBox.Text.Trim & "',
 '" & Clearance.AddressTextBox.Text.Trim & "',
-'" & Clearance.GenderTextBox.Text & "',
+'" & Clearance.SexTextBox.Text & "',
 '" & Clearance.AgeTextBox.Text & "', 
 '" & Clearance.QuantityTextBox.Text & "',
 '" & Clearance.DateAndTimeTextBox.Text & "',
 'ADMIN',
 '" & Clearance.PurposeTextBox.Text.Trim & "',
 '" & Clearance.BrgyClearanceComboBox.Text.Trim & "',
-[value-11],
-[value-12],
-[value-13],
-[value-14],
-[value-15])"
+'" & Clearance.AmountTextbox.Text.Trim & "',
+'" & Clearance.TotalTextbox.Text.Trim & "',
+'" & Clearance.TotalTextbox.Text.Trim & "',
+'" & Clearance.BusinessTypeTextBox.Text.Trim & "',
+'" & Clearance.IssuedAtTextBox.Text.Trim & "')"
     End Function
 
     Function getClearanceValuesSelectedColumn() As String
@@ -88,6 +84,40 @@ Public Class MyClearance
 
     End Function
 
+    Sub setInputValuesFrom(name As String)
+        openConnection()
+        Dim command As New MySqlCommand("SELECT ADDRESS,AGE,SEX FROM `residents` WHERE FULLNAME = '" & name.Trim & "'", getConnection)
+        Dim reader As MySqlDataReader
+        reader = command.ExecuteReader
+
+        Try
+            While reader.Read
+                With Clearance
+                    .AddressTextBox.Text = reader.GetString("ADDRESS")
+                    .AgeTextBox.Text = reader.GetString("AGE")
+                    .SexTextBox.Text = reader.GetString("SEX")
+                End With
+            End While
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            closeConnection()
+        End Try
+    End Sub
+
+    Sub deleteClearance(name As String)
+        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Barangay Clearance?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
+            If (manipulate.manipulateDataAt("DELETE FROM `clearance` WHERE Fullname = '" & name.Trim & "' ")) Then
+                MessageBox.Show("Barangay Clearance for '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("Failed to delete Barangay Clearance!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End If
+        closeConnection()
+    End Sub
+
 
     Function addClearance(query As String) As Boolean
         Try
@@ -95,30 +125,38 @@ Public Class MyClearance
                 Return False
                 Exit Function
             ElseIf InputContainsLetter(Clearance.TransactionNumber_TextBox.Text.Trim) Then
+
                 MessageBox.Show("Transaction Number contains letter!", "Transaction Number Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
+
             ElseIf InputContainsLetter(Clearance.QuantityTextBox.Text) Then
                 MessageBox.Show("Quantity contains letter!", "Quantity Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
-            ElseIf InputContainsLetter(Clearance.AmountTextBox.Text) Then
+
+            ElseIf InputContainsLetter(Clearance.AmountTextbox.Text) Then
                 MessageBox.Show("Cash Amount contains letter!", "Cash Amount Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
-            ElseIf InputContainsLetter(Clearance.TotalTextBox.Text) Then
+
+            ElseIf InputContainsLetter(Clearance.TotalTextbox.Text) Then
                 MessageBox.Show("Total Amount contains letter!", "Total Amount  Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return False
+
             ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", Clearance.FullNameTextBox.Text.Trim)) Then
                 MessageBox.Show("Unknown Resident. Resident '" & Clearance.FullNameTextBox.Text.Trim.ToUpper & "' does not exist in Resident's list.", "INVALID Resident!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
+
             ElseIf (manage.manipulateDataAt(query)) Then
                 MessageBox.Show("Clearance sucessfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 clearAllInputs()
                 Return True
+
             Else
                 MessageBox.Show("An error occured. Failed saving Clearance!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
             End If
         Catch duplicate As MySqlException
-            If isInputAlreadyExist("Business Name", "clearance", Clearance.businessNameTextBox.Text.Trim) And Clearance.isBusinessNamemodified Then
-                MessageBox.Show("Business Name '" & Clearance.businessNameTextBox.Text.Trim.ToUpper & "' is already used.", "INVALID BUSINESS NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            If isInputAlreadyExist("Business Name", "clearance", Clearance.BusinessNameTextBOx.Text.Trim) And Clearance.isBusinessNamemodified Then
+                MessageBox.Show("Business Name '" & Clearance.BusinessNameTextBOx.Text.Trim.ToUpper & "' is already used.", "INVALID BUSINESS NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
             ElseIf isInputAlreadyExist("TransactNo", "clearance", Clearance.TransactionNumber_TextBox.Text.Trim) And Clearance.isTransactNumberModified Then
                 MessageBox.Show("Transaction Number '" & Clearance.TransactionNumber_TextBox.Text.Trim.ToUpper & "' is already exist.", "INVALID TRANSACTION NUMBER!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -132,12 +170,40 @@ Public Class MyClearance
     End Function
 
     Sub clearAllInputs()
-        Clearance.isBusinessNamemodified = False
-        Clearance.isTransactNumberModified = False
+
+        With Clearance
+            .LabelStatus.Visible = False
+            .FullNameTextBox.Clear()
+            .BusinessNameTextBOx.Clear()
+            .BusinessTypeTextBox.Clear()
+            .TransactionNumber_TextBox.Clear()
+            .PurposeTextBox.Clear()
+            .AddressTextBox.Clear()
+            .IssuedAtTextBox.Clear()
+            .SexTextBox.Clear()
+            .AgeTextBox.Clear()
+
+            .isBusinessNamemodified = False
+            .isTransactNumberModified = False
+        End With
+
+
+
+
+
     End Sub
 
 
+    Function getGeneratedTransactionNumber() As String
+        Randomize()
+        Dim val As String
 
+        Do
+            val = CStr(Date.Now.Year & New Random().Next(1000, 99999))
+        Loop While isInputAlreadyExist("TransactNo", "clearance", val)
+
+        Return val
+    End Function
 
 
 

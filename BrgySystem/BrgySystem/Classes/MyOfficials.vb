@@ -70,24 +70,27 @@ Public Class MyOfficials
 
 
     Sub clearAllInputs()
-
-        Officials.FullnameTextBox.Clear()
-        Officials.BirthdateDatePicker.Value = Date.Now
-        Officials.SexComboBox.SelectedIndex = -1
-        Officials.TermComboBox.SelectedIndex = -1
-        Officials.StatusCombobox.SelectedIndex = -1
-        Officials.PositionCombobox.SelectedIndex = -1
-        Officials.CitizenshipTextBox.Clear()
-        Officials.HighestEducationalAttainmentTextBox.Clear()
-        Officials.OfficialsPictureBox.Image = Officials.OfficialsPictureBox.InitialImage
-        Officials.ContactTextBox.Clear()
-        Officials.PurokTxtBox.Clear()
-        Officials.AddressTextBox.Clear()
+        With Officials
 
 
-        Officials.isNameModified = False
-        Officials.isContactModified = False
+            .FullnameTextBox.Clear()
+            .BirthdateDatePicker.Value = Date.Now
+            .SexComboBox.SelectedIndex = -1
+            .TermComboBox.SelectedIndex = -1
+            .StatusCombobox.SelectedIndex = -1
+            .PositionCombobox.SelectedIndex = -1
+            .CitizenshipTextBox.Clear()
+            .HighestEducationalAttainmentTextBox.Clear()
+            .OfficialsPictureBox.Image = .OfficialsPictureBox.InitialImage
+            .ContactTextBox.Clear()
+            .PurokTxtBox.Clear()
+            .AddressTextBox.Clear()
 
+
+
+            .isContactModified = False
+            .isCaptainModified = False
+        End With
     End Sub
 
     Function addOrUpdateOfficials(message As String, query As String, imageName As String) As Boolean
@@ -95,8 +98,8 @@ Public Class MyOfficials
             If (IsInputValid()) Then
                 Return False
                 Exit Function
-            ElseIf InputContainsLetter(Officials.ContactTextBox.Text) Then
-                MessageBox.Show("Contact Number must not contains letter.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ElseIf InputContainsLetter(Officials.ContactTextBox.Text) And isNumberInvalid(11, Officials.ContactTextBox.Text) Then
+                MessageBox.Show("Contact Number is not valid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
 
             ElseIf isDateOrBirthdayInvalid(Officials.BirthdateDatePicker) Then
@@ -105,6 +108,10 @@ Public Class MyOfficials
 
             ElseIf (Not isInputAlreadyExist("PurokName", "Purok", Officials.PurokTxtBox.Text.Trim)) Then
                 MessageBox.Show("Purok '" & Officials.PurokTxtBox.Text.Trim.ToUpper & "' does not exist in Purok list.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return False
+
+            ElseIf (isInputAlreadyExist("POSITION", "officials", "Barangay Captain") And Officials.PositionCombobox.SelectedIndex.Equals(0)) Then
+                MessageBox.Show("There is already a Barangay Captain assigned.", "INVALID POSITION!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
 
             ElseIf (manage.manipulateDataAt(query)) Then
@@ -142,7 +149,7 @@ Public Class MyOfficials
     End Function
 
     Sub deleteOfficial(officialname As String)
-        If (MessageBox.Show("Are you sure you want to delete '" & officialname.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to delete?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+        If (MessageBox.Show("Are you sure you want to delete '" & officialname.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manage.manipulateDataAt("DELETE FROM `officials` WHERE NAME = '" & officialname.Trim & "' ")) Then
                 MessageBox.Show("Barangay Official '" & officialname.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
@@ -159,7 +166,7 @@ Public Class MyOfficials
                             DELETE FROM `officials` WHERE Name = '" & official & "';"
 
         Try
-            If (MessageBox.Show("Are you sure you want to archive '" & official.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to archive?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK) Then
+            If (MessageBox.Show("Are you sure you want to archive '" & official.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to archive?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
                 If (manage.manipulateDataAt(query)) Then
                     MessageBox.Show("Barangay Official '" & official.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else
@@ -195,12 +202,16 @@ Public Class MyOfficials
 
 
         Dim arr() As Object = {Officials.FullnameTextBox,
+                               Officials.SexComboBox,
                                 Officials.ContactTextBox,
                                 Officials.HighestEducationalAttainmentTextBox,
                                 Officials.PurokTxtBox,
                                 Officials.CitizenshipTextBox,
                                 Officials.PurokTxtBox,
-                                Officials.AddressTextBox}
+                                Officials.AddressTextBox,
+                                Officials.PositionCombobox,
+                                Officials.StatusCombobox,
+                                Officials.TermComboBox}
 
         For Each inputObjects As Object In arr
 

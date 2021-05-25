@@ -7,7 +7,7 @@
     Private isAlreadyStart As Boolean = False
     Private valueYouSearchFor As String
     Private imageFile As ImageFileManager = New ImageFileManager()
-    Public isNameModified, isContactModified As Boolean
+    Public isNameModified, isContactModified, isCaptainModified As Boolean
     Private selectedResidentNameInROw As String
 
 
@@ -27,6 +27,7 @@
         officials_.arrangeGridView()
         isNameModified = False
         isContactModified = False
+        isCaptainModified = False
         UpdateButton.Enabled = False
         manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Name", "officials", SearchfieldTExtBox)
@@ -46,18 +47,20 @@
 
 
     Private Sub SearchfieldTExtBox_TextChanged(sender As Object, e As EventArgs) Handles SearchfieldTExtBox.TextChanged
+        valueYouSearchFor = officials_.getOfficialsQueryValuesSelectedColumn + "WHERE NAME LIKE '%" & SearchfieldTExtBox.Text.Trim & "%' "
         If InputIsNull(SearchfieldTExtBox.Text.Trim) And isAlreadyStart Then
             manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
         End If
     End Sub
 
 
-
+    Private Sub SearchButtonCLicked(sender As Object, e As EventArgs) Handles OfficialSearchButton.Click
+        search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
+    End Sub
 
 
     Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchfieldTExtBox.KeyDown
         If e.KeyCode = Keys.Enter Then
-            valueYouSearchFor = officials_.getOfficialsQueryValuesSelectedColumn + "WHERE NAME LIKE '%" & SearchfieldTExtBox.Text.Trim & "%' "
             search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
         End If
     End Sub
@@ -83,6 +86,7 @@
 
             isNameModified = False
             isContactModified = False
+            isCaptainModified = False
             SaveButton.Enabled = False
             UpdateButton.Enabled = True
 
@@ -168,17 +172,18 @@
         UpdateButton.Enabled = False
     End Sub
 
+    Private Sub PositionCombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles PositionCombobox.SelectedIndexChanged
+        isCaptainModified = True
+
+    End Sub
+
     Private Sub FullnameKeyDown(sender As Object, e As KeyEventArgs) Handles FullnameTextBox.KeyDown
         isNameModified = True
     End Sub
 
-    Private Sub GunaWinSwitch1_CheckedChanged(sender As Object, e As EventArgs)
 
-    End Sub
 
-    Private Sub SearchButtonCLicked(sender As Object, e As EventArgs) Handles OfficialSearchButton.Click
-        search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
-    End Sub
+
 
     Private Sub ContactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
         isContactModified = True
