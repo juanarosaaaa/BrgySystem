@@ -132,12 +132,21 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQkAAAA2CAYAAADUM2yoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADJSURBVHhe7dRBEYNAAAAxpJ0jKgEHCANPhTL8oKsgj1jI
-        tM7bOC0AL8YviWX97F+Ah/MHSQD/SQJIkgCSJIAkCSBJAkiSAJIkgCQJIEkCSJIAkiSAJAkgSQJIkgCS
-        JIAkCSBJAkiSAJIkgCQJIEkCSJIAkiSAJAkgSQJIkgCSJIAkCSBJAkiSAJIkgCQJIEkCSJIAkiSAJAkg
-        SQJIkgCSJIAkCSBJAkiSAJIkgCQJIEkCSJIAkiSAJAkgSQJIkgDSncS4ogB42MYBzeGwCelGRbEAAAAA
-        SUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAANEAAAA2CAYAAABZe3zVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMQSURBVHhe7dwvcBNBFMfxSCQSiUQikZV1wCUd4kAikUgc
+        Epm5i4isRCKRlchIJDIzbJbKsr+9bdqSd7ncNVeS3PfNfDCXf53Zx9vdu32DLuPt7OrRcOpO5KxYvhtO
+        /SfgIZTjrRx7GodpSO5/ZLl/Ff6A2Sj3i9HUXwF7JYzLbLo8H+VuvFeJpcQpfxiJg8OR5e5yVLivqlhp
+        KD98qExmU//D+oHAIQlj+aeqUxra3UfI3OfDwn+zfgxwyFQUVBzSUO8mwrTto/XlwDHRun7nayZ9YFz3
+        GF8IHCd38XK2eJxS4H5xNls+Ye2DPtJaScuXlArt4s3k8mlcdBlfAPRC7hetE6mcwlGBgFiRwowspcb2
+        wRoIuCX33xttNrALB1jcJKXI5tD8z/4AAHpCJ6VKdahsWW8GEM03TuuUZcabANxWuA8pZdaD3TigXlb4
+        X2Y1ogoBDVjViIdKgUbmKXXKiDdWdb7CfjEAg57oSSmkHTk3tl4EoJrup6YU4ukEoB13kVJImwpM5YA2
+        4nEJrYesiwDqZfnvZ/G4g3URQL14nFz/WBcB1IvdgtiZA9qLO3S682pdBFBP3VY5OwTcQ0wizemsiwDq
+        xSRiYwFoL24saJ/bughgG8vTge642hcB1Fm107IuAqi3aqVFXwWgOfWjiwmkGBb+vfUiANVC3nxOKVT2
+        27ZeBKDa68K/SClUhs5GWC8EsE7NSlLq3ASP/wDbG07/fEmpcxOxz0LILusNAG7oEGtlg3uqEVDPrELX
+        QTUCNttYha6D80VAtTsdfjYFjRyBdWqzbbYPtiI9Tzf/90OAvtIy506zxm0iNjDJ/cL6QKBPtA5au7G6
+        beisET3p0Hu5G6eUaBfx0B4VCT0Ud+J06G4XkQ7usUZCf4TC0XoKVxXabGDXDn2gXbjGmwhNQk81cEMW
+        x0jTNzUeif21u45YlcKXsemA4+EmtU8idBH6Uj1HRGXCQQrrnlAMZp1O3ZqEGjYooXRk1vzBwB4o/8N3
+        E+06p6G7n1EmlPrZLU817QP+p3IcupNVZ56dxmDwF4FlfgcC2oFxAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>
