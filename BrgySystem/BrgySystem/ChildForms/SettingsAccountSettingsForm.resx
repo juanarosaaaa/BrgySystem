@@ -118,25 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BunifuLabel2.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="BunifuLabel3.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="BunifuLabel4.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="BunifuLabel5.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAMcAAAAsCAYAAADRhqyHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACeSURBVHhe7dNBDYNQAEAxpH1HTAIOEAaeBiMcINlz0EMl
-        dFrnbZwW4GX8cizrZ/8CD+cLOeAfOSDIAUEOCHJAkAOCHBDkgCAHBDkgyAFBDghyQJADghwQ5IAgBwQ5
-        IMgBQQ4IckCQA4IcEOSAIAcEOSDIAUEOCHJAkAOCHBDkgCAHBDkgyAFBDghyQJADghwQ5IAgB4Q7x7iC
-        AA/bOAA7G3apJx8vVAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAQkAAAA2CAYAAADUM2yoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADJSURBVHhe7dRBEYNAAAAxpJ0jKgEHCANPhTL8oKsgj1jI
+        tM7bOC0AL8YviWX97F+Ah/MHSQD/SQJIkgCSJIAkCSBJAkiSAJIkgCQJIEkCSJIAkiSAJAkgSQJIkgCS
+        JIAkCSBJAkiSAJIkgCQJIEkCSJIAkiSAJAkgSQJIkgCSJIAkCSBJAkiSAJIkgCQJIEkCSJIAkiSAJAkg
+        SQJIkgCSJIAkCSBJAkiSAJIkgCQJIEkCSJIAkiSAJAkgSQJIkgDSncS4ogB42MYBzeGwCelGRbEAAAAA
+        SUVORK5CYII=
 </value>
   </data>
 </root>
