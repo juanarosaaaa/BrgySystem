@@ -274,7 +274,7 @@ Partial Class SettingsAccountSettingsForm
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(1193, 661)
+        Me.BunifuButton1.Location = New System.Drawing.Point(555, 358)
         Me.BunifuButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
@@ -323,6 +323,7 @@ Partial Class SettingsAccountSettingsForm
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.93311!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.06689!))
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2TextBox1, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuButton1, 1, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2TextBox2, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel3, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2TextBox4, 1, 3)
@@ -330,7 +331,7 @@ Partial Class SettingsAccountSettingsForm
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel4, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel5, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2TextBox3, 1, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(55, 46)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(334, 140)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(133, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
@@ -347,7 +348,6 @@ Partial Class SettingsAccountSettingsForm
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel1)
-        Me.GroupBox1.Controls.Add(Me.BunifuButton1)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox1.Location = New System.Drawing.Point(16, 6)

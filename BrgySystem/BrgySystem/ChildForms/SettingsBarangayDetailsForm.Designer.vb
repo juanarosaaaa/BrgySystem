@@ -114,8 +114,8 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(1013, 346)
-        Me.BunifuButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuButton1.Location = New System.Drawing.Point(1016, 456)
+        Me.BunifuButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 1
@@ -187,7 +187,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox3.Lines = New String(-1) {}
         Me.BunifuTextBox3.Location = New System.Drawing.Point(257, 122)
-        Me.BunifuTextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox3.MaxLength = 32767
         Me.BunifuTextBox3.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox3.Modified = False
@@ -213,7 +213,7 @@ Partial Class SettingsBarangayDetailsForm
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox3.OnIdleState = StateProperties4
-        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox3.PlaceholderText = ""
@@ -264,7 +264,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuTextBox6.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox6.Lines = New String(-1) {}
         Me.BunifuTextBox6.Location = New System.Drawing.Point(257, 63)
-        Me.BunifuTextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox6.MaxLength = 32767
         Me.BunifuTextBox6.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox6.Modified = False
@@ -290,7 +290,7 @@ Partial Class SettingsBarangayDetailsForm
         StateProperties8.ForeColor = System.Drawing.Color.Empty
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox6.OnIdleState = StateProperties8
-        Me.BunifuTextBox6.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox6.Padding = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox6.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox6.PlaceholderText = ""
@@ -341,7 +341,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuTextBox7.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox7.Lines = New String(-1) {}
         Me.BunifuTextBox7.Location = New System.Drawing.Point(257, 4)
-        Me.BunifuTextBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox7.MaxLength = 32767
         Me.BunifuTextBox7.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox7.Modified = False
@@ -367,7 +367,7 @@ Partial Class SettingsBarangayDetailsForm
         StateProperties12.ForeColor = System.Drawing.Color.Empty
         StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox7.OnIdleState = StateProperties12
-        Me.BunifuTextBox7.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox7.Padding = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox7.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox7.PlaceholderText = ""
@@ -418,7 +418,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox1.Lines = New String(-1) {}
         Me.BunifuTextBox1.Location = New System.Drawing.Point(257, 240)
-        Me.BunifuTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox1.MaxLength = 32767
         Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox1.Modified = False
@@ -444,7 +444,7 @@ Partial Class SettingsBarangayDetailsForm
         StateProperties16.ForeColor = System.Drawing.Color.Empty
         StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox1.OnIdleState = StateProperties16
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox1.PlaceholderText = ""
@@ -474,7 +474,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel5.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel5.Location = New System.Drawing.Point(190, 137)
-        Me.BunifuLabel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel5.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel5.Name = "BunifuLabel5"
         Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel5.Size = New System.Drawing.Size(59, 21)
@@ -492,7 +492,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel4.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel4.Location = New System.Drawing.Point(113, 196)
-        Me.BunifuLabel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel4.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel4.Size = New System.Drawing.Size(136, 21)
@@ -511,7 +511,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel7.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel7.Location = New System.Drawing.Point(158, 78)
-        Me.BunifuLabel7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel7.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel7.Name = "BunifuLabel7"
         Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel7.Size = New System.Drawing.Size(91, 21)
@@ -530,7 +530,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel8.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel8.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel8.Location = New System.Drawing.Point(140, 19)
-        Me.BunifuLabel8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel8.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel8.Name = "BunifuLabel8"
         Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel8.Size = New System.Drawing.Size(109, 21)
@@ -548,8 +548,8 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel6.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel6.Location = New System.Drawing.Point(1059, 65)
-        Me.BunifuLabel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel6.Location = New System.Drawing.Point(1062, 175)
+        Me.BunifuLabel6.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel6.Name = "BunifuLabel6"
         Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel6.Size = New System.Drawing.Size(122, 21)
@@ -588,7 +588,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuTextBox4.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox4.Lines = New String(-1) {}
         Me.BunifuTextBox4.Location = New System.Drawing.Point(257, 181)
-        Me.BunifuTextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox4.MaxLength = 32767
         Me.BunifuTextBox4.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox4.Modified = False
@@ -614,7 +614,7 @@ Partial Class SettingsBarangayDetailsForm
         StateProperties20.ForeColor = System.Drawing.Color.Empty
         StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox4.OnIdleState = StateProperties20
-        Me.BunifuTextBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuTextBox4.Padding = New System.Windows.Forms.Padding(4)
         Me.BunifuTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox4.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox4.PlaceholderText = ""
@@ -644,7 +644,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel3.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel3.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel3.Location = New System.Drawing.Point(125, 256)
-        Me.BunifuLabel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuLabel3.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel3.Size = New System.Drawing.Size(124, 21)
@@ -662,8 +662,8 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.BunifuPictureBox1.Image = Global.BrgySystem.My.Resources.Resources.defaultImage
         Me.BunifuPictureBox1.IsCircle = True
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(1013, 98)
-        Me.BunifuPictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuPictureBox1.Location = New System.Drawing.Point(1016, 208)
+        Me.BunifuPictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
         Me.BunifuPictureBox1.Size = New System.Drawing.Size(259, 259)
         Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -683,10 +683,10 @@ Partial Class SettingsBarangayDetailsForm
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GroupBox1.Location = New System.Drawing.Point(16, 0)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox1.Size = New System.Drawing.Size(1451, 546)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1451, 760)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Change Barangay Information"
@@ -707,8 +707,8 @@ Partial Class SettingsBarangayDetailsForm
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox1, 1, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel7, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel8, 0, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(172, 69)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(175, 179)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -767,8 +767,8 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuButton2.IdleIconLeftImage = Nothing
         Me.BunifuButton2.IdleIconRightImage = Nothing
         Me.BunifuButton2.IndicateFocus = False
-        Me.BunifuButton2.Location = New System.Drawing.Point(1237, 466)
-        Me.BunifuButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuButton2.Location = New System.Drawing.Point(1084, 557)
+        Me.BunifuButton2.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuButton2.Name = "BunifuButton2"
         Me.BunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton2.OnDisabledState.BorderRadius = 1
@@ -818,7 +818,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.ClientSize = New System.Drawing.Size(1483, 786)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "SettingsBarangayDetailsForm"
         Me.Text = "SettingsBarangayDetailsForm"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
