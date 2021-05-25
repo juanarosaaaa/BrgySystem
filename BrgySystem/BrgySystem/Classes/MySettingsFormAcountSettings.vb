@@ -32,7 +32,7 @@
     Sub updatePassword()
         Dim updateQuery As String = "UPDATE `login` SET `Password`='" & confirmpassword.Trim & "' WHERE `Username` = '" & username.Trim & "';"
         manage.manipulateDataAt(updateQuery)
-
+        closeConnection()
     End Sub
 
 

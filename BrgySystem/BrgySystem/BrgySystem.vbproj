@@ -281,6 +281,7 @@
     <Compile Include="Classes\MySettingsFormAcountSettings.vb" />
     <Compile Include="Classes\RemainSizeOfForm.vb" />
     <Compile Include="Classes\SearchingFeature_Implementation.vb" />
+    <Compile Include="Classes\SettingMissionVision.vb" />
     <Compile Include="FormsInsideMainForms\Archive.Designer.vb">
       <DependentUpon>Archive.vb</DependentUpon>
     </Compile>

@@ -6,27 +6,48 @@ Module InputValidation
     Function InputContainsSpecialCharacter(s As String) As Boolean
         Return s.IndexOfAny("[~`!@#$%^&*()-+=|{}':;.,<>/?]".ToCharArray) <> -1
     End Function
+
+
+
     Function InputContainsLetter(s As String) As Boolean
         Return s.IndexOfAny("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray) <> -1
     End Function
+
+
+
     Function InputContainsNumber(s As String) As Boolean
         Return s.IndexOfAny("1234567890".ToCharArray) <> -1
     End Function
+
+
+
+
+
     Function ContainsSpecialChars(s As String) As Boolean
         Return s.IndexOfAny("[~`!@#$%^&*()-+=|{}':;.,<>/?]".ToCharArray) <> -1
     End Function
+
+
 
     Function InputIsNull(s As String) As Boolean
         Return s.Length = 0 Or s = ""
     End Function
 
+
+
+
     Function isDateOrBirthdayInvalid(val As DateTimePicker) As Boolean
         Return val.Value.Year >= Date.Now.Year
     End Function
 
+
+
     Function isNumberInvalid(size As Integer, contact As String) As Boolean
         Return contact.Length <> size
     End Function
+
+
+
     Function isInputAlreadyExist(columnName As String, tableName As String, input As String) As Boolean 'select PurokName from  Purok where PurokName = 'therter'
 
         Dim datatable As New DataTable
@@ -35,6 +56,8 @@ Module InputValidation
         Return datatable.Rows.Count
 
     End Function
+
+
 
 
     Function isInputAlreadyExistAtAnotherTable(columnName_Tbl_B As String, table_b As String, thisTable As String, value_Tbl_A As String, value_Tbl_B As String) As String

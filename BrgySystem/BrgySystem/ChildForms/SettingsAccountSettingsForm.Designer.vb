@@ -23,7 +23,7 @@ Partial Class SettingsAccountSettingsForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingsAccountSettingsForm))
-        Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim BorderEdges3 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Me.UsernametextBox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CurrentPassword = New Guna.UI2.WinForms.Guna2TextBox()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -59,7 +59,7 @@ Partial Class SettingsAccountSettingsForm
         Me.UsernametextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.UsernametextBox.HoverState.Parent = Me.UsernametextBox
         Me.UsernametextBox.Location = New System.Drawing.Point(191, 4)
-        Me.UsernametextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.UsernametextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UsernametextBox.Name = "UsernametextBox"
         Me.UsernametextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.UsernametextBox.PlaceholderText = ""
@@ -88,7 +88,7 @@ Partial Class SettingsAccountSettingsForm
         Me.CurrentPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CurrentPassword.HoverState.Parent = Me.CurrentPassword
         Me.CurrentPassword.Location = New System.Drawing.Point(191, 50)
-        Me.CurrentPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CurrentPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.CurrentPassword.Name = "CurrentPassword"
         Me.CurrentPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.CurrentPassword.PlaceholderText = ""
@@ -152,7 +152,7 @@ Partial Class SettingsAccountSettingsForm
         Me.NewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.NewPassword.HoverState.Parent = Me.NewPassword
         Me.NewPassword.Location = New System.Drawing.Point(191, 97)
-        Me.NewPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NewPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.NewPassword.Name = "NewPassword"
         Me.NewPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.NewPassword.PlaceholderText = ""
@@ -199,7 +199,7 @@ Partial Class SettingsAccountSettingsForm
         Me.ConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ConfirmPassword.HoverState.Parent = Me.ConfirmPassword
         Me.ConfirmPassword.Location = New System.Drawing.Point(191, 140)
-        Me.ConfirmPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ConfirmPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.ConfirmPassword.Name = "ConfirmPassword"
         Me.ConfirmPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.ConfirmPassword.PlaceholderText = ""
@@ -246,11 +246,11 @@ Partial Class SettingsAccountSettingsForm
         Me.SubmitButton.ColorContrastOnClick = 45
         Me.SubmitButton.ColorContrastOnHover = 45
         Me.SubmitButton.Cursor = System.Windows.Forms.Cursors.Default
-        BorderEdges2.BottomLeft = True
-        BorderEdges2.BottomRight = True
-        BorderEdges2.TopLeft = True
-        BorderEdges2.TopRight = True
-        Me.SubmitButton.CustomizableEdges = BorderEdges2
+        BorderEdges3.BottomLeft = True
+        BorderEdges3.BottomRight = True
+        BorderEdges3.TopLeft = True
+        BorderEdges3.TopRight = True
+        Me.SubmitButton.CustomizableEdges = BorderEdges3
         Me.SubmitButton.DialogResult = System.Windows.Forms.DialogResult.None
         Me.SubmitButton.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SubmitButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -318,6 +318,7 @@ Partial Class SettingsAccountSettingsForm
         '
         'TableLayoutPanel1
         '
+        Me.TableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.93311!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.06689!))
@@ -329,7 +330,7 @@ Partial Class SettingsAccountSettingsForm
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel4, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel5, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.NewPassword, 1, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(41, 37)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(178, 133)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(100, 3, 3, 3)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
@@ -343,7 +344,8 @@ Partial Class SettingsAccountSettingsForm
         '
         'GroupBox1
         '
-        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel1)
         Me.GroupBox1.Controls.Add(Me.SubmitButton)

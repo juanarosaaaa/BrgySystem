@@ -305,7 +305,7 @@ Partial Class SettingsOrganizationChart
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox13.OnIdleState = StateProperties4
-        Me.BunifuTextBox13.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox13.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox13.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox13.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox13.PlaceholderText = "Enter text"
@@ -382,7 +382,7 @@ Partial Class SettingsOrganizationChart
         StateProperties8.ForeColor = System.Drawing.Color.Empty
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox12.OnIdleState = StateProperties8
-        Me.BunifuTextBox12.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox12.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox12.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox12.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox12.PlaceholderText = "Enter text"
@@ -543,7 +543,7 @@ Partial Class SettingsOrganizationChart
         StateProperties12.ForeColor = System.Drawing.Color.Empty
         StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox2.OnIdleState = StateProperties12
-        Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox2.PlaceholderText = "Enter text"
@@ -620,7 +620,7 @@ Partial Class SettingsOrganizationChart
         StateProperties16.ForeColor = System.Drawing.Color.Empty
         StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox8.OnIdleState = StateProperties16
-        Me.BunifuTextBox8.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox8.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox8.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox8.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox8.PlaceholderText = "Enter text"
@@ -714,7 +714,7 @@ Partial Class SettingsOrganizationChart
         StateProperties20.ForeColor = System.Drawing.Color.Empty
         StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox7.OnIdleState = StateProperties20
-        Me.BunifuTextBox7.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox7.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox7.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox7.PlaceholderText = "Enter text"
@@ -808,7 +808,7 @@ Partial Class SettingsOrganizationChart
         StateProperties24.ForeColor = System.Drawing.Color.Empty
         StateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox6.OnIdleState = StateProperties24
-        Me.BunifuTextBox6.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox6.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox6.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox6.PlaceholderText = "Enter text"
@@ -902,7 +902,7 @@ Partial Class SettingsOrganizationChart
         StateProperties28.ForeColor = System.Drawing.Color.Empty
         StateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox5.OnIdleState = StateProperties28
-        Me.BunifuTextBox5.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox5.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox5.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox5.PlaceholderText = "Enter text"
@@ -979,7 +979,7 @@ Partial Class SettingsOrganizationChart
         StateProperties32.ForeColor = System.Drawing.Color.Empty
         StateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox3.OnIdleState = StateProperties32
-        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox3.PlaceholderText = "Enter text"
@@ -1073,7 +1073,7 @@ Partial Class SettingsOrganizationChart
         StateProperties36.ForeColor = System.Drawing.Color.Empty
         StateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox4.OnIdleState = StateProperties36
-        Me.BunifuTextBox4.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox4.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox4.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox4.PlaceholderText = "Enter text"
@@ -1265,7 +1265,7 @@ Partial Class SettingsOrganizationChart
         StateProperties40.ForeColor = System.Drawing.Color.Empty
         StateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox9.OnIdleState = StateProperties40
-        Me.BunifuTextBox9.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox9.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox9.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox9.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox9.PlaceholderText = "Enter text"
@@ -1358,7 +1358,7 @@ Partial Class SettingsOrganizationChart
         StateProperties44.ForeColor = System.Drawing.Color.Empty
         StateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox10.OnIdleState = StateProperties44
-        Me.BunifuTextBox10.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox10.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox10.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox10.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox10.PlaceholderText = "Enter text"
@@ -1531,7 +1531,7 @@ Partial Class SettingsOrganizationChart
         StateProperties48.ForeColor = System.Drawing.Color.Empty
         StateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox1.OnIdleState = StateProperties48
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox1.PlaceholderText = "Enter text"
@@ -1608,7 +1608,7 @@ Partial Class SettingsOrganizationChart
         StateProperties52.ForeColor = System.Drawing.Color.Empty
         StateProperties52.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox11.OnIdleState = StateProperties52
-        Me.BunifuTextBox11.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.BunifuTextBox11.Padding = New System.Windows.Forms.Padding(3)
         Me.BunifuTextBox11.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox11.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox11.PlaceholderText = "Enter text"
