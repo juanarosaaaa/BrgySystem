@@ -106,6 +106,7 @@ Partial Class Clearance
         Me.SearchFieldTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.IssuedAtTextBox = New System.Windows.Forms.RichTextBox()
         Me.BunifuLabel27 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.LabelStatus = New System.Windows.Forms.Label()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.FullNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel24 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -137,7 +138,6 @@ Partial Class Clearance
         Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.LabelStatus = New System.Windows.Forms.Label()
         Me.Timer = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.ClearanceGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1010,6 +1010,18 @@ Partial Class Clearance
         Me.BunifuLabel27.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel27.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'LabelStatus
+        '
+        Me.LabelStatus.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LabelStatus.AutoSize = True
+        Me.LabelStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelStatus.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.LabelStatus.Location = New System.Drawing.Point(252, 54)
+        Me.LabelStatus.Name = "LabelStatus"
+        Me.LabelStatus.Size = New System.Drawing.Size(268, 16)
+        Me.LabelStatus.TabIndex = 127
+        Me.LabelStatus.Text = "Status of residents, this is a place holder text"
+        '
         'BunifuLabel2
         '
         Me.BunifuLabel2.AllowParentOverrides = False
@@ -1540,6 +1552,7 @@ Partial Class Clearance
         Me.AddressTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.AddressTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddressTextBox.DefaultText = ""
+        Me.AddressTextBox.Enabled = False
         Me.AddressTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.AddressTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.AddressTextBox.HideSelection = True
@@ -1951,18 +1964,6 @@ Partial Class Clearance
         Me.BunifuLabel4.Text = "Quantity:"
         Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'LabelStatus
-        '
-        Me.LabelStatus.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LabelStatus.AutoSize = True
-        Me.LabelStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelStatus.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LabelStatus.Location = New System.Drawing.Point(252, 54)
-        Me.LabelStatus.Name = "LabelStatus"
-        Me.LabelStatus.Size = New System.Drawing.Size(268, 16)
-        Me.LabelStatus.TabIndex = 127
-        Me.LabelStatus.Text = "Status of residents, this is a place holder text"
         '
         'Timer
         '
