@@ -184,8 +184,7 @@ Partial Class SettingsOrganizationChart
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuPictureBox6, 5, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuTextBox11, 1, 6)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(8, 43)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(6, 35)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 8
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.49275!))
@@ -195,8 +194,8 @@ Partial Class SettingsOrganizationChart
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.2029!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.04348!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.97101!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1513, 475)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1135, 386)
         Me.TableLayoutPanel1.TabIndex = 10
         '
         'BunifuPictureBox1
@@ -204,13 +203,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox1.AllowFocused = False
         Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox1.AutoSizeHeight = True
-        Me.BunifuPictureBox1.BorderRadius = 28
+        Me.BunifuPictureBox1.BorderRadius = 21
         Me.BunifuPictureBox1.Image = CType(resources.GetObject("BunifuPictureBox1.Image"), System.Drawing.Image)
         Me.BunifuPictureBox1.IsCircle = True
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(671, 4)
-        Me.BunifuPictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox1.Location = New System.Drawing.Point(503, 3)
         Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
-        Me.BunifuPictureBox1.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox1.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox1.TabIndex = 9
         Me.BunifuPictureBox1.TabStop = False
@@ -225,8 +223,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel1.Location = New System.Drawing.Point(96, 18)
-        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(41, 13)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel1.Size = New System.Drawing.Size(124, 21)
@@ -243,8 +240,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel13.CursorType = Nothing
         Me.BunifuLabel13.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel13.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel13.Location = New System.Drawing.Point(892, 297)
-        Me.BunifuLabel13.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel13.Location = New System.Drawing.Point(648, 238)
         Me.BunifuLabel13.Name = "BunifuLabel13"
         Me.BunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel13.Size = New System.Drawing.Size(79, 21)
@@ -283,8 +279,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox13.IconRight = Nothing
         Me.BunifuTextBox13.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox13.Lines = New String(-1) {}
-        Me.BunifuTextBox13.Location = New System.Drawing.Point(979, 286)
-        Me.BunifuTextBox13.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox13.Location = New System.Drawing.Point(733, 231)
         Me.BunifuTextBox13.MaxLength = 32767
         Me.BunifuTextBox13.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox13.Modified = False
@@ -310,7 +305,7 @@ Partial Class SettingsOrganizationChart
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox13.OnIdleState = StateProperties4
-        Me.BunifuTextBox13.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox13.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox13.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox13.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox13.PlaceholderText = "Enter text"
@@ -320,7 +315,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox13.SelectionLength = 0
         Me.BunifuTextBox13.SelectionStart = 0
         Me.BunifuTextBox13.ShortcutsEnabled = True
-        Me.BunifuTextBox13.Size = New System.Drawing.Size(455, 44)
+        Me.BunifuTextBox13.Size = New System.Drawing.Size(341, 36)
         Me.BunifuTextBox13.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox13.TabIndex = 2
         Me.BunifuTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -361,8 +356,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox12.IconRight = Nothing
         Me.BunifuTextBox12.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox12.Lines = New String(-1) {}
-        Me.BunifuTextBox12.Location = New System.Drawing.Point(979, 229)
-        Me.BunifuTextBox12.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox12.Location = New System.Drawing.Point(733, 185)
         Me.BunifuTextBox12.MaxLength = 32767
         Me.BunifuTextBox12.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox12.Modified = False
@@ -388,7 +382,7 @@ Partial Class SettingsOrganizationChart
         StateProperties8.ForeColor = System.Drawing.Color.Empty
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox12.OnIdleState = StateProperties8
-        Me.BunifuTextBox12.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox12.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox12.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox12.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox12.PlaceholderText = "Enter text"
@@ -398,7 +392,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox12.SelectionLength = 0
         Me.BunifuTextBox12.SelectionStart = 0
         Me.BunifuTextBox12.ShortcutsEnabled = True
-        Me.BunifuTextBox12.Size = New System.Drawing.Size(455, 49)
+        Me.BunifuTextBox12.Size = New System.Drawing.Size(341, 40)
         Me.BunifuTextBox12.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox12.TabIndex = 2
         Me.BunifuTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -417,8 +411,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel12.CursorType = Nothing
         Me.BunifuLabel12.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel12.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel12.Location = New System.Drawing.Point(892, 243)
-        Me.BunifuLabel12.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel12.Location = New System.Drawing.Point(648, 194)
         Me.BunifuLabel12.Name = "BunifuLabel12"
         Me.BunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel12.Size = New System.Drawing.Size(79, 21)
@@ -432,13 +425,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox3.AllowFocused = False
         Me.BunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox3.AutoSizeHeight = True
-        Me.BunifuPictureBox3.BorderRadius = 28
+        Me.BunifuPictureBox3.BorderRadius = 21
         Me.BunifuPictureBox3.Image = CType(resources.GetObject("BunifuPictureBox3.Image"), System.Drawing.Image)
         Me.BunifuPictureBox3.IsCircle = True
-        Me.BunifuPictureBox3.Location = New System.Drawing.Point(671, 116)
-        Me.BunifuPictureBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox3.Location = New System.Drawing.Point(503, 94)
         Me.BunifuPictureBox3.Name = "BunifuPictureBox3"
-        Me.BunifuPictureBox3.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox3.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox3.TabIndex = 3
         Me.BunifuPictureBox3.TabStop = False
@@ -452,8 +444,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel8.CursorType = Nothing
         Me.BunifuLabel8.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel8.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel8.Location = New System.Drawing.Point(905, 186)
-        Me.BunifuLabel8.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel8.Location = New System.Drawing.Point(661, 149)
         Me.BunifuLabel8.Name = "BunifuLabel8"
         Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel8.Size = New System.Drawing.Size(66, 21)
@@ -470,8 +461,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel11.CursorType = Nothing
         Me.BunifuLabel11.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel11.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel11.Location = New System.Drawing.Point(141, 359)
-        Me.BunifuLabel11.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel11.Location = New System.Drawing.Point(86, 288)
         Me.BunifuLabel11.Name = "BunifuLabel11"
         Me.BunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel11.Size = New System.Drawing.Size(79, 21)
@@ -488,8 +478,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel7.CursorType = Nothing
         Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel7.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel7.Location = New System.Drawing.Point(884, 130)
-        Me.BunifuLabel7.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel7.Location = New System.Drawing.Point(640, 103)
         Me.BunifuLabel7.Name = "BunifuLabel7"
         Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel7.Size = New System.Drawing.Size(87, 21)
@@ -528,8 +517,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox2.IconRight = Nothing
         Me.BunifuTextBox2.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox2.Lines = New String(-1) {}
-        Me.BunifuTextBox2.Location = New System.Drawing.Point(228, 62)
-        Me.BunifuTextBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox2.Location = New System.Drawing.Point(171, 50)
         Me.BunifuTextBox2.MaxLength = 32767
         Me.BunifuTextBox2.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox2.Modified = False
@@ -555,7 +543,7 @@ Partial Class SettingsOrganizationChart
         StateProperties12.ForeColor = System.Drawing.Color.Empty
         StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox2.OnIdleState = StateProperties12
-        Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox2.PlaceholderText = "Enter text"
@@ -565,7 +553,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox2.SelectionLength = 0
         Me.BunifuTextBox2.SelectionStart = 0
         Me.BunifuTextBox2.ShortcutsEnabled = True
-        Me.BunifuTextBox2.Size = New System.Drawing.Size(435, 46)
+        Me.BunifuTextBox2.Size = New System.Drawing.Size(326, 38)
         Me.BunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox2.TabIndex = 2
         Me.BunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -606,8 +594,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox8.IconRight = Nothing
         Me.BunifuTextBox8.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox8.Lines = New String(-1) {}
-        Me.BunifuTextBox8.Location = New System.Drawing.Point(979, 173)
-        Me.BunifuTextBox8.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox8.Location = New System.Drawing.Point(733, 140)
         Me.BunifuTextBox8.MaxLength = 32767
         Me.BunifuTextBox8.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox8.Modified = False
@@ -633,7 +620,7 @@ Partial Class SettingsOrganizationChart
         StateProperties16.ForeColor = System.Drawing.Color.Empty
         StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox8.OnIdleState = StateProperties16
-        Me.BunifuTextBox8.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox8.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox8.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox8.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox8.PlaceholderText = "Enter text"
@@ -643,7 +630,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox8.SelectionLength = 0
         Me.BunifuTextBox8.SelectionStart = 0
         Me.BunifuTextBox8.ShortcutsEnabled = True
-        Me.BunifuTextBox8.Size = New System.Drawing.Size(455, 48)
+        Me.BunifuTextBox8.Size = New System.Drawing.Size(341, 39)
         Me.BunifuTextBox8.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox8.TabIndex = 2
         Me.BunifuTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -662,8 +649,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel6.CursorType = Nothing
         Me.BunifuLabel6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel6.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel6.Location = New System.Drawing.Point(901, 74)
-        Me.BunifuLabel6.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel6.Location = New System.Drawing.Point(657, 58)
         Me.BunifuLabel6.Name = "BunifuLabel6"
         Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel6.Size = New System.Drawing.Size(70, 21)
@@ -702,8 +688,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox7.IconRight = Nothing
         Me.BunifuTextBox7.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox7.Lines = New String(-1) {}
-        Me.BunifuTextBox7.Location = New System.Drawing.Point(979, 116)
-        Me.BunifuTextBox7.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox7.Location = New System.Drawing.Point(733, 94)
         Me.BunifuTextBox7.MaxLength = 32767
         Me.BunifuTextBox7.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox7.Modified = False
@@ -729,7 +714,7 @@ Partial Class SettingsOrganizationChart
         StateProperties20.ForeColor = System.Drawing.Color.Empty
         StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox7.OnIdleState = StateProperties20
-        Me.BunifuTextBox7.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox7.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox7.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox7.PlaceholderText = "Enter text"
@@ -739,7 +724,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox7.SelectionLength = 0
         Me.BunifuTextBox7.SelectionStart = 0
         Me.BunifuTextBox7.ShortcutsEnabled = True
-        Me.BunifuTextBox7.Size = New System.Drawing.Size(455, 49)
+        Me.BunifuTextBox7.Size = New System.Drawing.Size(341, 40)
         Me.BunifuTextBox7.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox7.TabIndex = 2
         Me.BunifuTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -758,8 +743,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel10.CursorType = Nothing
         Me.BunifuLabel10.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel10.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel10.Location = New System.Drawing.Point(154, 297)
-        Me.BunifuLabel10.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel10.Location = New System.Drawing.Point(99, 238)
         Me.BunifuLabel10.Name = "BunifuLabel10"
         Me.BunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel10.Size = New System.Drawing.Size(66, 21)
@@ -798,8 +782,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox6.IconRight = Nothing
         Me.BunifuTextBox6.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox6.Lines = New String(-1) {}
-        Me.BunifuTextBox6.Location = New System.Drawing.Point(979, 62)
-        Me.BunifuTextBox6.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox6.Location = New System.Drawing.Point(733, 50)
         Me.BunifuTextBox6.MaxLength = 32767
         Me.BunifuTextBox6.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox6.Modified = False
@@ -825,7 +808,7 @@ Partial Class SettingsOrganizationChart
         StateProperties24.ForeColor = System.Drawing.Color.Empty
         StateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox6.OnIdleState = StateProperties24
-        Me.BunifuTextBox6.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox6.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox6.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox6.PlaceholderText = "Enter text"
@@ -835,7 +818,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox6.SelectionLength = 0
         Me.BunifuTextBox6.SelectionStart = 0
         Me.BunifuTextBox6.ShortcutsEnabled = True
-        Me.BunifuTextBox6.Size = New System.Drawing.Size(455, 46)
+        Me.BunifuTextBox6.Size = New System.Drawing.Size(341, 38)
         Me.BunifuTextBox6.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox6.TabIndex = 2
         Me.BunifuTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -854,8 +837,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel5.CursorType = Nothing
         Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel5.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel5.Location = New System.Drawing.Point(901, 18)
-        Me.BunifuLabel5.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel5.Location = New System.Drawing.Point(657, 13)
         Me.BunifuLabel5.Name = "BunifuLabel5"
         Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel5.Size = New System.Drawing.Size(70, 21)
@@ -894,8 +876,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox5.IconRight = Nothing
         Me.BunifuTextBox5.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox5.Lines = New String(-1) {}
-        Me.BunifuTextBox5.Location = New System.Drawing.Point(979, 4)
-        Me.BunifuTextBox5.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox5.Location = New System.Drawing.Point(733, 3)
         Me.BunifuTextBox5.MaxLength = 32767
         Me.BunifuTextBox5.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox5.Modified = False
@@ -921,7 +902,7 @@ Partial Class SettingsOrganizationChart
         StateProperties28.ForeColor = System.Drawing.Color.Empty
         StateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox5.OnIdleState = StateProperties28
-        Me.BunifuTextBox5.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox5.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox5.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox5.PlaceholderText = "Enter text"
@@ -931,7 +912,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox5.SelectionLength = 0
         Me.BunifuTextBox5.SelectionStart = 0
         Me.BunifuTextBox5.ShortcutsEnabled = True
-        Me.BunifuTextBox5.Size = New System.Drawing.Size(455, 50)
+        Me.BunifuTextBox5.Size = New System.Drawing.Size(341, 41)
         Me.BunifuTextBox5.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox5.TabIndex = 2
         Me.BunifuTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -972,8 +953,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox3.IconRight = Nothing
         Me.BunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox3.Lines = New String(-1) {}
-        Me.BunifuTextBox3.Location = New System.Drawing.Point(228, 116)
-        Me.BunifuTextBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox3.Location = New System.Drawing.Point(171, 94)
         Me.BunifuTextBox3.MaxLength = 32767
         Me.BunifuTextBox3.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox3.Modified = False
@@ -999,7 +979,7 @@ Partial Class SettingsOrganizationChart
         StateProperties32.ForeColor = System.Drawing.Color.Empty
         StateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox3.OnIdleState = StateProperties32
-        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox3.PlaceholderText = "Enter text"
@@ -1009,7 +989,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox3.SelectionLength = 0
         Me.BunifuTextBox3.SelectionStart = 0
         Me.BunifuTextBox3.ShortcutsEnabled = True
-        Me.BunifuTextBox3.Size = New System.Drawing.Size(435, 49)
+        Me.BunifuTextBox3.Size = New System.Drawing.Size(326, 40)
         Me.BunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox3.TabIndex = 2
         Me.BunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1028,8 +1008,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel9.CursorType = Nothing
         Me.BunifuLabel9.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel9.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel9.Location = New System.Drawing.Point(154, 243)
-        Me.BunifuLabel9.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel9.Location = New System.Drawing.Point(99, 194)
         Me.BunifuLabel9.Name = "BunifuLabel9"
         Me.BunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel9.Size = New System.Drawing.Size(66, 21)
@@ -1068,8 +1047,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox4.IconRight = Nothing
         Me.BunifuTextBox4.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox4.Lines = New String(-1) {}
-        Me.BunifuTextBox4.Location = New System.Drawing.Point(228, 173)
-        Me.BunifuTextBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox4.Location = New System.Drawing.Point(171, 140)
         Me.BunifuTextBox4.MaxLength = 32767
         Me.BunifuTextBox4.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox4.Modified = False
@@ -1095,7 +1073,7 @@ Partial Class SettingsOrganizationChart
         StateProperties36.ForeColor = System.Drawing.Color.Empty
         StateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox4.OnIdleState = StateProperties36
-        Me.BunifuTextBox4.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox4.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox4.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox4.PlaceholderText = "Enter text"
@@ -1105,7 +1083,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox4.SelectionLength = 0
         Me.BunifuTextBox4.SelectionStart = 0
         Me.BunifuTextBox4.ShortcutsEnabled = True
-        Me.BunifuTextBox4.Size = New System.Drawing.Size(435, 48)
+        Me.BunifuTextBox4.Size = New System.Drawing.Size(326, 39)
         Me.BunifuTextBox4.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox4.TabIndex = 2
         Me.BunifuTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1121,13 +1099,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox11.AllowFocused = False
         Me.BunifuPictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox11.AutoSizeHeight = True
-        Me.BunifuPictureBox11.BorderRadius = 28
+        Me.BunifuPictureBox11.BorderRadius = 21
         Me.BunifuPictureBox11.Image = CType(resources.GetObject("BunifuPictureBox11.Image"), System.Drawing.Image)
         Me.BunifuPictureBox11.IsCircle = True
-        Me.BunifuPictureBox11.Location = New System.Drawing.Point(671, 342)
-        Me.BunifuPictureBox11.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox11.Location = New System.Drawing.Point(503, 278)
         Me.BunifuPictureBox11.Name = "BunifuPictureBox11"
-        Me.BunifuPictureBox11.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox11.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox11.TabIndex = 3
         Me.BunifuPictureBox11.TabStop = False
@@ -1141,8 +1118,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel3.CursorType = Nothing
         Me.BunifuLabel3.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel3.Location = New System.Drawing.Point(155, 74)
-        Me.BunifuLabel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel3.Location = New System.Drawing.Point(100, 58)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel3.Size = New System.Drawing.Size(65, 21)
@@ -1159,8 +1135,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel2.CursorType = Nothing
         Me.BunifuLabel2.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel2.Location = New System.Drawing.Point(153, 130)
-        Me.BunifuLabel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel2.Location = New System.Drawing.Point(98, 103)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel2.Size = New System.Drawing.Size(67, 21)
@@ -1177,8 +1152,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel4.CursorType = Nothing
         Me.BunifuLabel4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel4.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel4.Location = New System.Drawing.Point(150, 186)
-        Me.BunifuLabel4.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel4.Location = New System.Drawing.Point(95, 149)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel4.Size = New System.Drawing.Size(70, 21)
@@ -1192,13 +1166,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox10.AllowFocused = False
         Me.BunifuPictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox10.AutoSizeHeight = True
-        Me.BunifuPictureBox10.BorderRadius = 28
+        Me.BunifuPictureBox10.BorderRadius = 21
         Me.BunifuPictureBox10.Image = CType(resources.GetObject("BunifuPictureBox10.Image"), System.Drawing.Image)
         Me.BunifuPictureBox10.IsCircle = True
-        Me.BunifuPictureBox10.Location = New System.Drawing.Point(671, 286)
-        Me.BunifuPictureBox10.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox10.Location = New System.Drawing.Point(503, 231)
         Me.BunifuPictureBox10.Name = "BunifuPictureBox10"
-        Me.BunifuPictureBox10.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox10.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox10.TabIndex = 3
         Me.BunifuPictureBox10.TabStop = False
@@ -1209,13 +1182,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox2.AllowFocused = False
         Me.BunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox2.AutoSizeHeight = True
-        Me.BunifuPictureBox2.BorderRadius = 28
+        Me.BunifuPictureBox2.BorderRadius = 21
         Me.BunifuPictureBox2.Image = CType(resources.GetObject("BunifuPictureBox2.Image"), System.Drawing.Image)
         Me.BunifuPictureBox2.IsCircle = True
-        Me.BunifuPictureBox2.Location = New System.Drawing.Point(671, 62)
-        Me.BunifuPictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox2.Location = New System.Drawing.Point(503, 50)
         Me.BunifuPictureBox2.Name = "BunifuPictureBox2"
-        Me.BunifuPictureBox2.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox2.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox2.TabIndex = 3
         Me.BunifuPictureBox2.TabStop = False
@@ -1226,13 +1198,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox4.AllowFocused = False
         Me.BunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox4.AutoSizeHeight = True
-        Me.BunifuPictureBox4.BorderRadius = 28
+        Me.BunifuPictureBox4.BorderRadius = 21
         Me.BunifuPictureBox4.Image = CType(resources.GetObject("BunifuPictureBox4.Image"), System.Drawing.Image)
         Me.BunifuPictureBox4.IsCircle = True
-        Me.BunifuPictureBox4.Location = New System.Drawing.Point(671, 173)
-        Me.BunifuPictureBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox4.Location = New System.Drawing.Point(503, 140)
         Me.BunifuPictureBox4.Name = "BunifuPictureBox4"
-        Me.BunifuPictureBox4.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox4.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox4.TabIndex = 3
         Me.BunifuPictureBox4.TabStop = False
@@ -1268,8 +1239,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox9.IconRight = Nothing
         Me.BunifuTextBox9.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox9.Lines = New String(-1) {}
-        Me.BunifuTextBox9.Location = New System.Drawing.Point(228, 229)
-        Me.BunifuTextBox9.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox9.Location = New System.Drawing.Point(171, 185)
         Me.BunifuTextBox9.MaxLength = 32767
         Me.BunifuTextBox9.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox9.Modified = False
@@ -1295,7 +1265,7 @@ Partial Class SettingsOrganizationChart
         StateProperties40.ForeColor = System.Drawing.Color.Empty
         StateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox9.OnIdleState = StateProperties40
-        Me.BunifuTextBox9.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox9.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox9.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox9.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox9.PlaceholderText = "Enter text"
@@ -1305,7 +1275,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox9.SelectionLength = 0
         Me.BunifuTextBox9.SelectionStart = 0
         Me.BunifuTextBox9.ShortcutsEnabled = True
-        Me.BunifuTextBox9.Size = New System.Drawing.Size(435, 49)
+        Me.BunifuTextBox9.Size = New System.Drawing.Size(326, 40)
         Me.BunifuTextBox9.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox9.TabIndex = 2
         Me.BunifuTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1321,13 +1291,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox9.AllowFocused = False
         Me.BunifuPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox9.AutoSizeHeight = True
-        Me.BunifuPictureBox9.BorderRadius = 28
+        Me.BunifuPictureBox9.BorderRadius = 21
         Me.BunifuPictureBox9.Image = CType(resources.GetObject("BunifuPictureBox9.Image"), System.Drawing.Image)
         Me.BunifuPictureBox9.IsCircle = True
-        Me.BunifuPictureBox9.Location = New System.Drawing.Point(671, 229)
-        Me.BunifuPictureBox9.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox9.Location = New System.Drawing.Point(503, 185)
         Me.BunifuPictureBox9.Name = "BunifuPictureBox9"
-        Me.BunifuPictureBox9.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox9.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox9.TabIndex = 3
         Me.BunifuPictureBox9.TabStop = False
@@ -1363,8 +1332,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox10.IconRight = Nothing
         Me.BunifuTextBox10.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox10.Lines = New String(-1) {}
-        Me.BunifuTextBox10.Location = New System.Drawing.Point(228, 286)
-        Me.BunifuTextBox10.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox10.Location = New System.Drawing.Point(171, 231)
         Me.BunifuTextBox10.MaxLength = 32767
         Me.BunifuTextBox10.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox10.Modified = False
@@ -1390,7 +1358,7 @@ Partial Class SettingsOrganizationChart
         StateProperties44.ForeColor = System.Drawing.Color.Empty
         StateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox10.OnIdleState = StateProperties44
-        Me.BunifuTextBox10.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox10.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox10.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox10.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox10.PlaceholderText = "Enter text"
@@ -1400,7 +1368,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox10.SelectionLength = 0
         Me.BunifuTextBox10.SelectionStart = 0
         Me.BunifuTextBox10.ShortcutsEnabled = True
-        Me.BunifuTextBox10.Size = New System.Drawing.Size(435, 44)
+        Me.BunifuTextBox10.Size = New System.Drawing.Size(326, 36)
         Me.BunifuTextBox10.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox10.TabIndex = 2
         Me.BunifuTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1416,13 +1384,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox14.AllowFocused = False
         Me.BunifuPictureBox14.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox14.AutoSizeHeight = True
-        Me.BunifuPictureBox14.BorderRadius = 28
+        Me.BunifuPictureBox14.BorderRadius = 21
         Me.BunifuPictureBox14.Image = CType(resources.GetObject("BunifuPictureBox14.Image"), System.Drawing.Image)
         Me.BunifuPictureBox14.IsCircle = True
-        Me.BunifuPictureBox14.Location = New System.Drawing.Point(1442, 286)
-        Me.BunifuPictureBox14.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox14.Location = New System.Drawing.Point(1080, 231)
         Me.BunifuPictureBox14.Name = "BunifuPictureBox14"
-        Me.BunifuPictureBox14.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox14.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox14.TabIndex = 10
         Me.BunifuPictureBox14.TabStop = False
@@ -1433,13 +1400,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox12.AllowFocused = False
         Me.BunifuPictureBox12.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox12.AutoSizeHeight = True
-        Me.BunifuPictureBox12.BorderRadius = 28
+        Me.BunifuPictureBox12.BorderRadius = 21
         Me.BunifuPictureBox12.Image = CType(resources.GetObject("BunifuPictureBox12.Image"), System.Drawing.Image)
         Me.BunifuPictureBox12.IsCircle = True
-        Me.BunifuPictureBox12.Location = New System.Drawing.Point(1442, 229)
-        Me.BunifuPictureBox12.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox12.Location = New System.Drawing.Point(1080, 185)
         Me.BunifuPictureBox12.Name = "BunifuPictureBox12"
-        Me.BunifuPictureBox12.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox12.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox12.TabIndex = 3
         Me.BunifuPictureBox12.TabStop = False
@@ -1450,13 +1416,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox13.AllowFocused = False
         Me.BunifuPictureBox13.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox13.AutoSizeHeight = True
-        Me.BunifuPictureBox13.BorderRadius = 28
+        Me.BunifuPictureBox13.BorderRadius = 21
         Me.BunifuPictureBox13.Image = CType(resources.GetObject("BunifuPictureBox13.Image"), System.Drawing.Image)
         Me.BunifuPictureBox13.IsCircle = True
-        Me.BunifuPictureBox13.Location = New System.Drawing.Point(1442, 173)
-        Me.BunifuPictureBox13.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox13.Location = New System.Drawing.Point(1080, 140)
         Me.BunifuPictureBox13.Name = "BunifuPictureBox13"
-        Me.BunifuPictureBox13.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox13.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox13.TabIndex = 3
         Me.BunifuPictureBox13.TabStop = False
@@ -1467,13 +1432,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox7.AllowFocused = False
         Me.BunifuPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox7.AutoSizeHeight = True
-        Me.BunifuPictureBox7.BorderRadius = 28
+        Me.BunifuPictureBox7.BorderRadius = 21
         Me.BunifuPictureBox7.Image = CType(resources.GetObject("BunifuPictureBox7.Image"), System.Drawing.Image)
         Me.BunifuPictureBox7.IsCircle = True
-        Me.BunifuPictureBox7.Location = New System.Drawing.Point(1442, 62)
-        Me.BunifuPictureBox7.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox7.Location = New System.Drawing.Point(1080, 50)
         Me.BunifuPictureBox7.Name = "BunifuPictureBox7"
-        Me.BunifuPictureBox7.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox7.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox7.TabIndex = 3
         Me.BunifuPictureBox7.TabStop = False
@@ -1484,13 +1448,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox8.AllowFocused = False
         Me.BunifuPictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox8.AutoSizeHeight = True
-        Me.BunifuPictureBox8.BorderRadius = 28
+        Me.BunifuPictureBox8.BorderRadius = 21
         Me.BunifuPictureBox8.Image = CType(resources.GetObject("BunifuPictureBox8.Image"), System.Drawing.Image)
         Me.BunifuPictureBox8.IsCircle = True
-        Me.BunifuPictureBox8.Location = New System.Drawing.Point(1442, 4)
-        Me.BunifuPictureBox8.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox8.Location = New System.Drawing.Point(1080, 3)
         Me.BunifuPictureBox8.Name = "BunifuPictureBox8"
-        Me.BunifuPictureBox8.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox8.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox8.TabIndex = 3
         Me.BunifuPictureBox8.TabStop = False
@@ -1501,13 +1464,12 @@ Partial Class SettingsOrganizationChart
         Me.BunifuPictureBox6.AllowFocused = False
         Me.BunifuPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.BunifuPictureBox6.AutoSizeHeight = True
-        Me.BunifuPictureBox6.BorderRadius = 28
+        Me.BunifuPictureBox6.BorderRadius = 21
         Me.BunifuPictureBox6.Image = CType(resources.GetObject("BunifuPictureBox6.Image"), System.Drawing.Image)
         Me.BunifuPictureBox6.IsCircle = True
-        Me.BunifuPictureBox6.Location = New System.Drawing.Point(1442, 116)
-        Me.BunifuPictureBox6.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuPictureBox6.Location = New System.Drawing.Point(1080, 94)
         Me.BunifuPictureBox6.Name = "BunifuPictureBox6"
-        Me.BunifuPictureBox6.Size = New System.Drawing.Size(56, 56)
+        Me.BunifuPictureBox6.Size = New System.Drawing.Size(42, 42)
         Me.BunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox6.TabIndex = 11
         Me.BunifuPictureBox6.TabStop = False
@@ -1543,8 +1505,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox1.IconRight = Nothing
         Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox1.Lines = New String(-1) {}
-        Me.BunifuTextBox1.Location = New System.Drawing.Point(228, 4)
-        Me.BunifuTextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox1.Location = New System.Drawing.Point(171, 3)
         Me.BunifuTextBox1.MaxLength = 32767
         Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox1.Modified = False
@@ -1570,7 +1531,7 @@ Partial Class SettingsOrganizationChart
         StateProperties48.ForeColor = System.Drawing.Color.Empty
         StateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox1.OnIdleState = StateProperties48
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox1.PlaceholderText = "Enter text"
@@ -1580,7 +1541,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox1.SelectionLength = 0
         Me.BunifuTextBox1.SelectionStart = 0
         Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(435, 50)
+        Me.BunifuTextBox1.Size = New System.Drawing.Size(326, 41)
         Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox1.TabIndex = 2
         Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1621,8 +1582,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox11.IconRight = Nothing
         Me.BunifuTextBox11.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox11.Lines = New String(-1) {}
-        Me.BunifuTextBox11.Location = New System.Drawing.Point(228, 338)
-        Me.BunifuTextBox11.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox11.Location = New System.Drawing.Point(171, 273)
         Me.BunifuTextBox11.MaxLength = 32767
         Me.BunifuTextBox11.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox11.Modified = False
@@ -1648,7 +1608,7 @@ Partial Class SettingsOrganizationChart
         StateProperties52.ForeColor = System.Drawing.Color.Empty
         StateProperties52.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox11.OnIdleState = StateProperties52
-        Me.BunifuTextBox11.Padding = New System.Windows.Forms.Padding(4)
+        Me.BunifuTextBox11.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.BunifuTextBox11.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox11.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox11.PlaceholderText = "Enter text"
@@ -1658,7 +1618,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuTextBox11.SelectionLength = 0
         Me.BunifuTextBox11.SelectionStart = 0
         Me.BunifuTextBox11.ShortcutsEnabled = True
-        Me.BunifuTextBox11.Size = New System.Drawing.Size(435, 64)
+        Me.BunifuTextBox11.Size = New System.Drawing.Size(326, 52)
         Me.BunifuTextBox11.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox11.TabIndex = 2
         Me.BunifuTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -1711,14 +1671,13 @@ Partial Class SettingsOrganizationChart
         Me.BunifuButton1.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.BunifuButton1.IconSize = 25
         Me.BunifuButton1.IdleBorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.BunifuButton1.IdleBorderRadius = 60
+        Me.BunifuButton1.IdleBorderRadius = 48
         Me.BunifuButton1.IdleBorderThickness = 1
         Me.BunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.BunifuButton1.IdleIconLeftImage = Nothing
         Me.BunifuButton1.IdleIconRightImage = Nothing
         Me.BunifuButton1.IndicateFocus = False
-        Me.BunifuButton1.Location = New System.Drawing.Point(1276, 671)
-        Me.BunifuButton1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuButton1.Location = New System.Drawing.Point(957, 545)
         Me.BunifuButton1.Name = "BunifuButton1"
         Me.BunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton1.OnDisabledState.BorderRadius = 1
@@ -1752,7 +1711,7 @@ Partial Class SettingsOrganizationChart
         Me.BunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton1.OnPressedState.IconLeftImage = Nothing
         Me.BunifuButton1.OnPressedState.IconRightImage = Nothing
-        Me.BunifuButton1.Size = New System.Drawing.Size(232, 62)
+        Me.BunifuButton1.Size = New System.Drawing.Size(174, 50)
         Me.BunifuButton1.TabIndex = 9
         Me.BunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -1768,24 +1727,21 @@ Partial Class SettingsOrganizationChart
         Me.GroupBox1.Controls.Add(Me.BunifuButton1)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.GroupBox1.Location = New System.Drawing.Point(17, 16)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(1529, 754)
+        Me.GroupBox1.Size = New System.Drawing.Size(1147, 613)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Organizational Chart"
         '
         'SettingsOrganizationChart
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1563, 785)
+        Me.ClientSize = New System.Drawing.Size(1172, 638)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "SettingsOrganizationChart"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SettingsOrganizationChart"

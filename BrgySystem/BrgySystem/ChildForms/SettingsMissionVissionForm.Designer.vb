@@ -46,16 +46,15 @@ Partial Class SettingsMissionVissionForm
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.RichTextBox1, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.RichTextBox2, 0, 1)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(8, 23)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel1, 1, 0)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(6, 19)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.810036!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.18996!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1435, 681)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1076, 553)
         Me.TableLayoutPanel1.TabIndex = 4
         '
         'BunifuLabel2
@@ -66,8 +65,7 @@ Partial Class SettingsMissionVissionForm
         Me.BunifuLabel2.CursorType = Nothing
         Me.BunifuLabel2.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel2.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel2.Location = New System.Drawing.Point(331, 20)
-        Me.BunifuLabel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel2.Location = New System.Drawing.Point(242, 13)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel2.Size = New System.Drawing.Size(54, 21)
@@ -84,10 +82,9 @@ Partial Class SettingsMissionVissionForm
         Me.RichTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.RichTextBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.RichTextBox1.Location = New System.Drawing.Point(721, 49)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.RichTextBox1.Location = New System.Drawing.Point(541, 40)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(710, 616)
+        Me.RichTextBox1.Size = New System.Drawing.Size(532, 500)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
@@ -100,8 +97,7 @@ Partial Class SettingsMissionVissionForm
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel1.Location = New System.Drawing.Point(1054, 20)
-        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(785, 13)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel1.Size = New System.Drawing.Size(43, 21)
@@ -118,10 +114,9 @@ Partial Class SettingsMissionVissionForm
         Me.RichTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.RichTextBox2.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.RichTextBox2.Location = New System.Drawing.Point(4, 49)
-        Me.RichTextBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.RichTextBox2.Location = New System.Drawing.Point(3, 40)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(709, 616)
+        Me.RichTextBox2.Size = New System.Drawing.Size(532, 500)
         Me.RichTextBox2.TabIndex = 0
         Me.RichTextBox2.Text = resources.GetString("RichTextBox2.Text")
         '
@@ -173,8 +168,7 @@ Partial Class SettingsMissionVissionForm
         Me.BunifuButton2.IdleIconLeftImage = Nothing
         Me.BunifuButton2.IdleIconRightImage = Nothing
         Me.BunifuButton2.IndicateFocus = False
-        Me.BunifuButton2.Location = New System.Drawing.Point(1232, 711)
-        Me.BunifuButton2.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuButton2.Location = New System.Drawing.Point(924, 578)
         Me.BunifuButton2.Name = "BunifuButton2"
         Me.BunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BunifuButton2.OnDisabledState.BorderRadius = 50
@@ -208,7 +202,7 @@ Partial Class SettingsMissionVissionForm
         Me.BunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BunifuButton2.OnPressedState.IconLeftImage = Nothing
         Me.BunifuButton2.OnPressedState.IconRightImage = Nothing
-        Me.BunifuButton2.Size = New System.Drawing.Size(191, 54)
+        Me.BunifuButton2.Size = New System.Drawing.Size(143, 44)
         Me.BunifuButton2.TabIndex = 3
         Me.BunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -225,25 +219,22 @@ Partial Class SettingsMissionVissionForm
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel1)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox1.Location = New System.Drawing.Point(16, -1)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, -1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(1451, 773)
+        Me.GroupBox1.Size = New System.Drawing.Size(1088, 628)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Barangay's Mission and Vision"
         '
         'SettingsMissionVissionForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1483, 786)
+        Me.ClientSize = New System.Drawing.Size(1112, 639)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "SettingsMissionVissionForm"
         Me.Text = "SettingsMissionVissionForm"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
