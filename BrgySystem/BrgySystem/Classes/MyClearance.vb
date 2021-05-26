@@ -124,21 +124,21 @@ Public Class MyClearance
             If IsInputInValid() Then
                 Return False
                 Exit Function
-            ElseIf InputContainsLetter(Clearance.TransactionNumber_TextBox.Text.Trim) Then
+            ElseIf InputContainsLetter(Clearance.TransactionNumber_TextBox.Text.Trim) Or InputContainsSpecialCharacter(Clearance.TransactionNumber_TextBox.Text.Trim) Then
 
-                MessageBox.Show("Transaction Number contains letter!", "Transaction Number Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Transaction Number invalid!", "Transaction Number Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
 
-            ElseIf InputContainsLetter(Clearance.QuantityTextBox.Text) Then
-                MessageBox.Show("Quantity contains letter!", "Quantity Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            ElseIf InputContainsLetter(Clearance.QuantityTextBox.Text) Or InputContainsSpecialCharacter(Clearance.QuantityTextBox.Text) Then
+                MessageBox.Show("Quantity is invalid!", "Quantity Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
 
-            ElseIf InputContainsLetter(Clearance.AmountTextbox.Text) Then
-                MessageBox.Show("Cash Amount contains letter!", "Cash Amount Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            ElseIf InputContainsLetter(Clearance.AmountTextbox.Text) Or InputContainsSpecialCharacter(Clearance.AmountTextbox.Text) Then
+                MessageBox.Show("Cash Amount is invalid!", "Cash Amount Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
 
-            ElseIf InputContainsLetter(Clearance.TotalTextbox.Text) Then
-                MessageBox.Show("Total Amount contains letter!", "Total Amount  Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            ElseIf InputContainsLetter(Clearance.TotalTextbox.Text) Or InputContainsSpecialCharacter(Clearance.TotalTextbox.Text) Then
+                MessageBox.Show("Total Amount is invalid!", "Total Amount  Invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
 
             ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", Clearance.FullNameTextBox.Text.Trim)) Then

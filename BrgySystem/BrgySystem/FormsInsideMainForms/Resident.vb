@@ -147,7 +147,7 @@ Public Class MyResidents
 
             selectedNameInRow = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
             brgyResidents.getValuesFromDatabaseAndDisplayToInputs(selectedNameInRow)
-            imageFile.getImageNameFromSelectedRow(brgyResidents.getImagePathFromSelectedRowValue, ResidentsPictureBOx)
+            imageFile.setImage(brgyResidents.getImagePathFromSelectedRowValue, ResidentsPictureBOx)
 
             isFullNameModified = False
             isContactModified = False

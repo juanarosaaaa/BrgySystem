@@ -235,6 +235,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BarangayInformation.vb" />
     <Compile Include="Classes\imagePathManager.vb" />
     <Compile Include="Classes\InputValidation.vb" />
     <Compile Include="ChildForms\PurokChildForm.Designer.vb">
@@ -278,8 +279,10 @@
     <Compile Include="Classes\ConnectionDB.vb" />
     <Compile Include="Classes\DataGridViewActionButtonEvent.vb" />
     <Compile Include="Classes\DataGridViewImages.vb" />
+    <Compile Include="Classes\MySettingsFormAcountSettings.vb" />
     <Compile Include="Classes\RemainSizeOfForm.vb" />
     <Compile Include="Classes\SearchingFeature_Implementation.vb" />
+    <Compile Include="Classes\SettingMissionVision.vb" />
     <Compile Include="FormsInsideMainForms\Archive.Designer.vb">
       <DependentUpon>Archive.vb</DependentUpon>
     </Compile>

@@ -118,35 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BunifuLabel2.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Calibri'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
-  <data name="RichTextBox1.Text" xml:space="preserve">
+  <data name="VisionRichTextBox.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
+  </data>
+  <data name="MissionRichTextBox.Text" xml:space="preserve">
     <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
   </data>
   <data name="BunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
-  </data>
-  <data name="RichTextBox2.Text" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Calibri'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="SaveButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAL8AAAA2CAYAAACWVUgWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL9SURBVHhe7d0vkNNAFMfxSCQSiUQikchzQNoOOE4ikchz
-        yJOdJKLyJBJZiUQikcjOkOydPPJLFjqFV5r+T3a/b+ZTk3Sz4nW72exukmPGqCifyySvLkeFuwK6aPOl
-        zZ23s/sHPp36G3WFn46K2+u6wt/HhbsHDinN3Y9xUU7HRXXhU+68oYRXhdqK2ZUGDi5zi/ofYqZ/Bp+K
-        p4vJrHqki5sVA04pc3M1wj41jxcvZouHo9x9TLPyzqwIcCZpUd28nt499ql62Gj79PTn0WN1dyjN3Euf
-        socJFaiCzQsCfZOX733q7hcqyLwA0GO6J91rmLTuR32wCgaGQPcBPpW3i6arYxQIDIkacJ/S3UI3t4zo
-        IBSdb4LbMXxGdRAONeRp9vOJT/H1oSkKVgHAoGVu7lPcDj0koLuDUP23+zPOy0/Wl4AQpIX76lN9NdpJ
-        avaXgFCMcvfOp/wymKiGOJRffMovg+kLiMXKBDjNi7ZOAkK00vVpV8jYJwKhqZP/s0/9JGElFmKi4fxm
-        0ps+rBOAkDX9fn1YB4GQNet/udlFlLLyTaIP8yAQMq32YqUWYqTNsfRk98o6CISM5Ee0muRnnS5i1CT/
-        JK8urYNAyHy3h6FOxEeNfqK1jdZBIGzVRbP/pn0QCJcWb7UT21i3i8hol5I2+YvqxjoBCNHKWl5GfBCT
-        ZqTnd6jfT9cHsXiVu2c+9dvQ6hbrRCAk2o3Qp/wymN2JGGhHQp/yq6EbAesLQBAyt/gzyvN3sC05grbp
-        jS30/REibdKw8U0tevLFyA9C08zl6RLa1McqABimcupTu1uwTz+CkLn5Ti+mo/+PIdOYvh7g+nTeLpoZ
-        n/UvxyoY6DMl/t5vZG93dGMvTwxI3WDv3OJbwRYnGIZyulMff1P4JY/f/r0gcF4ax+88nLlPaCiUnZ3R
-        C5lbaIryUVr7daGL6aK6sTArBRxTk/S312vn6pwq9FRYPwQmxuGY1NAq4dX99qnXr9DwkirX0j8DsDvt
-        sqBc6vQG9a0iSX4B5kkQVqAG/SUAAAAASUVORK5CYII=
+        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
+        QmCC
 </value>
   </data>
 </root>
