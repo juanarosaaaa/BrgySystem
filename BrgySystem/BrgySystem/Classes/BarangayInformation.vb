@@ -1,6 +1,7 @@
 ﻿
 Imports MySql.Data.MySqlClient
 Imports Bunifu.UI.WinForms
+Imports System.IO
 Public Class BarangayInformation
     Private adminName As String
     Private address As String
@@ -73,7 +74,6 @@ Public Class BarangayInformation
         Dim command As New MySqlCommand(query, getConnection)
         Dim reader As MySqlDataReader
         reader = command.ExecuteReader
-
         Try
             While reader.Read
                 adminName = reader.GetString("AdminName")
@@ -84,30 +84,27 @@ Public Class BarangayInformation
                 imagePath = reader.GetString("ImagePath")
                 imageName = reader.GetString("ImageName")
             End While
-
-        Catch x As MySqlException
-            MessageBox.Show(x.Message, "WARNING!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        Catch x As FileNotFoundException
+            MessageBox.Show("Municipality Logo not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
-            closeConnection()
         End Try
+        closeConnection()
+
     End Sub
 
     Sub updateBarangayInformation()
-        Dim query As String = "UPDATE `barangaydetails` SET `AdminName`= '" & adminName & "',`Address`= '" & address & "',`ContactNumber`= '" & contactNumber & "',`BarangayCaptain`= '" & barangayCaptainName & "',`Zipcode`= '" & zipCode & "',`ImagePath`= '" & imagePathManager.getImagePath(imagePath) & "',`ImageName= '" & imageName & "' WHERE ID = 1"
-        If oneInputIsNull() Then
-            MessageBox.Show("Incomplete details!", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        ElseIf InputContainsNumber(adminName) Or InputContainsSpecialCharacter(adminName) Then
-            MessageBox.Show("Admin name is invalid!", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        ElseIf isCharacterSizeInvalid(11, contactNumber) Or InputContainsLetter(contactNumber) Or InputContainsSpecialCharacter(contactNumber) Then
-            MessageBox.Show("Contact is invalid!", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        ElseIf InputContainsNumber(barangayCaptainName) Or InputContainsSpecialCharacter(barangayCaptainName) Then
-            MessageBox.Show("Barangay Captain is invalid!", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        Dim query As String = "UPDATE `barangaydetails` SET `AdminName` = '" & adminName & "',
+                                                            `Address` = '" & address & "',
+                                                            `ContactNumber` = '" & contactNumber & "',
+                                                            `BarangayCaptain` = '" & barangayCaptainName & "',
+                                                            `Zipcode` = '" & zipCode & "',
+                                                            `ImagePath` = '" & imagePathManager.getImagePath(imagePath) & "',
+                                                            `ImageName` = '" & imageName & "' WHERE ID = 1"
 
 
 
-        End If
-
-
+        manage.manipulateDataAt(query)
+        closeConnection()
 
     End Sub
 

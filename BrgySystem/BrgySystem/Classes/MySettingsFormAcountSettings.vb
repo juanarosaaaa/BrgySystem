@@ -28,6 +28,9 @@
 
     End Function
 
+    Function isPasswordStrong() As Boolean
+        Return (confirmpassword.Length >= 8 Or confirmpassword.Length <= 16) And InputContainsNumber(confirmpassword) And (InputContainsLetter(confirmpassword) Or InputContainsSpecialCharacter(confirmpassword))
+    End Function
 
     Sub updatePassword()
         Dim updateQuery As String = "UPDATE `login` SET `Password`='" & confirmpassword.Trim & "' WHERE `Username` = '" & username.Trim & "';"

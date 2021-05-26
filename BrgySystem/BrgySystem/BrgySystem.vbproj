@@ -521,5 +521,8 @@
   <ItemGroup>
     <None Include="Resources\defaultImage.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barangay1Logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

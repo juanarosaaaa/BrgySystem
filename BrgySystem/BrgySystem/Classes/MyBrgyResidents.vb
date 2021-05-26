@@ -235,6 +235,8 @@ Public Class MyBrgyResidents
                 Return True
                 Exit For
                 Exit Function
+            ElseIf inputObjects.Equals(MyResidents.AddressTextBox) Then
+                Continue For
             ElseIf (InputContainsSpecialCharacter(inputObjects.Text)) Then
                 MessageBox.Show("Input is invalid. Your '" & inputObjects.AccessibleName & "' field contains special characters ^&*()-+=|{}':;.", "INVALID", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return True
