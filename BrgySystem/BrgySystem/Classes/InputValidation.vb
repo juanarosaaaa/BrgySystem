@@ -37,7 +37,7 @@ Module InputValidation
 
 
 
-    Function isNumberSizeInvalid(size As Integer, contact As String) As Boolean
+    Function isCharacterSizeInvalid(size As Integer, contact As String) As Boolean
         Return contact.Length <> size
     End Function
 

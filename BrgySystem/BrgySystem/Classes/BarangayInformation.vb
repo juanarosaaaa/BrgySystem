@@ -96,13 +96,12 @@ Public Class BarangayInformation
         Dim query As String = "UPDATE `barangaydetails` SET `AdminName`= '" & adminName & "',`Address`= '" & address & "',`ContactNumber`= '" & contactNumber & "',`BarangayCaptain`= '" & barangayCaptainName & "',`Zipcode`= '" & zipCode & "',`ImagePath`= '" & imagePathManager.getImagePath(imagePath) & "',`ImageName= '" & imageName & "' WHERE ID = 1"
         If oneInputIsNull() Then
             MessageBox.Show("Incomplete details!", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        ElseIf InputContainsLetter(adminName) Or InputContainsSpecialCharacter(adminName) Then
-            MessageBox.Show("Admin name is invalid! Name must not contain number or special characters @#$%^&*()-+=|{", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        ElseIf InputContainsSpecialCharacter(address) Then
-
-        ElseIf isNumberSizeInvalid(11, contactNumber) Or  
-
-
+        ElseIf InputContainsNumber(adminName) Or InputContainsSpecialCharacter(adminName) Then
+            MessageBox.Show("Admin name is invalid!", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        ElseIf isCharacterSizeInvalid(11, contactNumber) Or InputContainsLetter(contactNumber) Or InputContainsSpecialCharacter(contactNumber) Then
+            MessageBox.Show("Contact is invalid!", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        ElseIf InputContainsNumber(barangayCaptainName) Or InputContainsSpecialCharacter(barangayCaptainName) Then
+            MessageBox.Show("Barangay Captain is invalid!", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
 
 
 

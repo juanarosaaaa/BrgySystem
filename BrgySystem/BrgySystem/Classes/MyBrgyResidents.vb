@@ -164,7 +164,7 @@ Public Class MyBrgyResidents
             If (IsInputInValid()) Then
                 Return False
                 Exit Function
-            ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Or isNumberSizeInvalid(11, MyResidents.ContactTextBox.Text) Or InputContainsSpecialCharacter(MyResidents.ContactTextBox.Text) Then
+            ElseIf InputContainsLetter(MyResidents.ContactTextBox.Text) Or isCharacterSizeInvalid(11, MyResidents.ContactTextBox.Text) Or InputContainsSpecialCharacter(MyResidents.ContactTextBox.Text) Then
                 MessageBox.Show("Contact Number is not valid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
             ElseIf isDateOrBirthdayInvalid(MyResidents.BirthdateDatePicker) Then

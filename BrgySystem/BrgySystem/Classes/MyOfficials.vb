@@ -98,7 +98,7 @@ Public Class MyOfficials
             If (IsInputValid()) Then
                 Return False
                 Exit Function
-            ElseIf InputContainsLetter(Officials.ContactTextBox.Text) Or isNumberSizeInvalid(11, Officials.ContactTextBox.Text.Trim) Or InputContainsSpecialCharacter(Officials.ContactTextBox.Text) Then
+            ElseIf InputContainsLetter(Officials.ContactTextBox.Text) Or isCharacterSizeInvalid(11, Officials.ContactTextBox.Text.Trim) Or InputContainsSpecialCharacter(Officials.ContactTextBox.Text) Then
                 MessageBox.Show("Contact Number is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
 

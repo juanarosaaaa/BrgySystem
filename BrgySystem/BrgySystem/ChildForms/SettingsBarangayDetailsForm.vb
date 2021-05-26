@@ -11,7 +11,7 @@ Public Class SettingsBarangayDetailsForm
         AdminNameTextBox.Text = brgyInfo.getAdminName
         Addresstextbox.Text = brgyInfo.getAddress
         BarangayCaptainTextBox.Text = brgyInfo.getBarangayCaptainName
-        ZipcodeTextBox.Text = brgyInfo.getZipCode
+        ZipCodeTxtBox.Text = brgyInfo.getZipCode
         ContactNumberTextBox.Text = brgyInfo.getContactNumber
         MunicipalityLogoPictureBox.Image = Image.FromFile(brgyInfo.getImagePath)
 
@@ -41,14 +41,15 @@ Public Class SettingsBarangayDetailsForm
         brgyInfo.setBarangayCaptainName(BarangayCaptainTextBox.Text.Trim)
     End Sub
 
-    Private Sub ZipcodeTextChanged(sender As Object, e As EventArgs) Handles ZipcodeTextBox.TextChange
-        brgyInfo.setZipcode(ZipcodeTextBox.Text)
+    Private Sub ZipcodeTextChanged(sender As Object, e As EventArgs) Handles ZipCodeTxtBox.TextChange
+        brgyInfo.setZipcode(ZipCodeTxtBox.Text)
     End Sub
 
     Private Sub ContactNumberTextChanged(sender As Object, e As EventArgs) Handles ContactNumberTextBox.TextChange
         brgyInfo.setContactNumber(ContactNumberTextBox.Text.Trim)
     End Sub
 
+    Private Sub BunifuButton2_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
 
-
+    End Sub
 End Class

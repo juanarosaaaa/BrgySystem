@@ -21,4 +21,8 @@
             MessageBox.Show("Your Password has been changed successfully!", "Password has been changed", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
+
+    Private Sub BunifuButton1_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
+
+    End Sub
 End Class
