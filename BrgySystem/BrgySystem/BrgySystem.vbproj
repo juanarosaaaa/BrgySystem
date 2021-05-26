@@ -280,6 +280,7 @@
     <Compile Include="Classes\DataGridViewActionButtonEvent.vb" />
     <Compile Include="Classes\DataGridViewImages.vb" />
     <Compile Include="Classes\MySettingsFormAcountSettings.vb" />
+    <Compile Include="Classes\MySettingsOrganizationalChart.vb" />
     <Compile Include="Classes\RemainSizeOfForm.vb" />
     <Compile Include="Classes\SearchingFeature_Implementation.vb" />
     <Compile Include="Classes\SettingMissionVision.vb" />
