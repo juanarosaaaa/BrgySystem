@@ -78,37 +78,30 @@ Partial Class SettingsOrganizationChart
         Dim StateProperties52 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.SaveButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel9 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel6 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel7 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel12 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel13 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel14 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel15 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel16 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel17 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel18 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel19 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel20 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel21 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel22 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel23 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel24 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel25 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel26 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.CommitteeLabelStatus3 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.CommitteeLabelStatus2 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.KagawadLabelStatus3 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.SkChairmanLabelStatus = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.CouncilorLabelStatus3 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.CouncilorLabelStatus2 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.CommitteeLabelStatus1 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.KagawadLabelStatus2 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.KagawadLabelStatus1 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.CouncilorLabelStatus1 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.TreasurerLabelStatus = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.SecretaryLabelStatus = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.CaptainNameLabelStatus = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel40 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel41 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel42 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel43 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel44 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel45 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel46 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel47 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel48 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel49 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel50 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel51 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.CaptainPictureBox = New Bunifu.UI.WinForms.BunifuPictureBox()
         Me.CommitteeTextBox3 = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -137,12 +130,32 @@ Partial Class SettingsOrganizationChart
         Me.CaptainTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.CommitteeTextBox1 = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel52 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel50 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel48 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel41 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel43 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel45 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel49 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel9 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel6 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel7 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel12 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel13 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel14 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel15 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel16 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel17 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel18 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel19 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel20 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel21 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel22 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel23 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel24 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel25 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel26 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.GroupBox1.SuspendLayout()
         CType(Me.CaptainPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TreasurerPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -253,6 +266,19 @@ Partial Class SettingsOrganizationChart
         '
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.CommitteeLabelStatus3)
+        Me.GroupBox1.Controls.Add(Me.CommitteeLabelStatus2)
+        Me.GroupBox1.Controls.Add(Me.KagawadLabelStatus3)
+        Me.GroupBox1.Controls.Add(Me.SkChairmanLabelStatus)
+        Me.GroupBox1.Controls.Add(Me.CouncilorLabelStatus3)
+        Me.GroupBox1.Controls.Add(Me.CouncilorLabelStatus2)
+        Me.GroupBox1.Controls.Add(Me.CommitteeLabelStatus1)
+        Me.GroupBox1.Controls.Add(Me.KagawadLabelStatus2)
+        Me.GroupBox1.Controls.Add(Me.KagawadLabelStatus1)
+        Me.GroupBox1.Controls.Add(Me.CouncilorLabelStatus1)
+        Me.GroupBox1.Controls.Add(Me.TreasurerLabelStatus)
+        Me.GroupBox1.Controls.Add(Me.SecretaryLabelStatus)
+        Me.GroupBox1.Controls.Add(Me.CaptainNameLabelStatus)
         Me.GroupBox1.Controls.Add(Me.BunifuLabel40)
         Me.GroupBox1.Controls.Add(Me.BunifuLabel41)
         Me.GroupBox1.Controls.Add(Me.BunifuLabel42)
@@ -302,449 +328,239 @@ Partial Class SettingsOrganizationChart
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Organizational Chart"
         '
-        'BunifuLabel4
+        'CommitteeLabelStatus3
         '
-        Me.BunifuLabel4.AllowParentOverrides = False
-        Me.BunifuLabel4.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel4.AutoEllipsis = False
-        Me.BunifuLabel4.CursorType = Nothing
-        Me.BunifuLabel4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel4.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel4.Location = New System.Drawing.Point(95, 149)
-        Me.BunifuLabel4.Name = "BunifuLabel4"
-        Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel4.Size = New System.Drawing.Size(70, 21)
-        Me.BunifuLabel4.TabIndex = 5
-        Me.BunifuLabel4.Text = "Councilor:"
-        Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CommitteeLabelStatus3.AllowParentOverrides = False
+        Me.CommitteeLabelStatus3.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CommitteeLabelStatus3.AutoEllipsis = False
+        Me.CommitteeLabelStatus3.CursorType = Nothing
+        Me.CommitteeLabelStatus3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CommitteeLabelStatus3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CommitteeLabelStatus3.Location = New System.Drawing.Point(792, 388)
+        Me.CommitteeLabelStatus3.Name = "CommitteeLabelStatus3"
+        Me.CommitteeLabelStatus3.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CommitteeLabelStatus3.Size = New System.Drawing.Size(180, 15)
+        Me.CommitteeLabelStatus3.TabIndex = 89
+        Me.CommitteeLabelStatus3.Text = "Committee's name does not exist!"
+        Me.CommitteeLabelStatus3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.CommitteeLabelStatus3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CommitteeLabelStatus3.Visible = False
         '
-        'BunifuLabel2
+        'CommitteeLabelStatus2
         '
-        Me.BunifuLabel2.AllowParentOverrides = False
-        Me.BunifuLabel2.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel2.AutoEllipsis = False
-        Me.BunifuLabel2.CursorType = Nothing
-        Me.BunifuLabel2.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel2.Location = New System.Drawing.Point(98, 103)
-        Me.BunifuLabel2.Name = "BunifuLabel2"
-        Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel2.Size = New System.Drawing.Size(67, 21)
-        Me.BunifuLabel2.TabIndex = 4
-        Me.BunifuLabel2.Text = "Treasurer:"
-        Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CommitteeLabelStatus2.AllowParentOverrides = False
+        Me.CommitteeLabelStatus2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CommitteeLabelStatus2.AutoEllipsis = False
+        Me.CommitteeLabelStatus2.CursorType = Nothing
+        Me.CommitteeLabelStatus2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CommitteeLabelStatus2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CommitteeLabelStatus2.Location = New System.Drawing.Point(793, 321)
+        Me.CommitteeLabelStatus2.Name = "CommitteeLabelStatus2"
+        Me.CommitteeLabelStatus2.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CommitteeLabelStatus2.Size = New System.Drawing.Size(180, 15)
+        Me.CommitteeLabelStatus2.TabIndex = 88
+        Me.CommitteeLabelStatus2.Text = "Committee's name does not exist!"
+        Me.CommitteeLabelStatus2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.CommitteeLabelStatus2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CommitteeLabelStatus2.Visible = False
         '
-        'BunifuLabel3
+        'KagawadLabelStatus3
         '
-        Me.BunifuLabel3.AllowParentOverrides = False
-        Me.BunifuLabel3.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel3.AutoEllipsis = False
-        Me.BunifuLabel3.CursorType = Nothing
-        Me.BunifuLabel3.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel3.Location = New System.Drawing.Point(100, 58)
-        Me.BunifuLabel3.Name = "BunifuLabel3"
-        Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel3.Size = New System.Drawing.Size(65, 21)
-        Me.BunifuLabel3.TabIndex = 0
-        Me.BunifuLabel3.Text = "Secretary:"
-        Me.BunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.KagawadLabelStatus3.AllowParentOverrides = False
+        Me.KagawadLabelStatus3.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.KagawadLabelStatus3.AutoEllipsis = False
+        Me.KagawadLabelStatus3.CursorType = Nothing
+        Me.KagawadLabelStatus3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.KagawadLabelStatus3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.KagawadLabelStatus3.Location = New System.Drawing.Point(801, 246)
+        Me.KagawadLabelStatus3.Name = "KagawadLabelStatus3"
+        Me.KagawadLabelStatus3.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.KagawadLabelStatus3.Size = New System.Drawing.Size(168, 15)
+        Me.KagawadLabelStatus3.TabIndex = 87
+        Me.KagawadLabelStatus3.Text = "Kagawad's name does not exist!"
+        Me.KagawadLabelStatus3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.KagawadLabelStatus3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.KagawadLabelStatus3.Visible = False
         '
-        'BunifuLabel9
+        'SkChairmanLabelStatus
         '
-        Me.BunifuLabel9.AllowParentOverrides = False
-        Me.BunifuLabel9.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel9.AutoEllipsis = False
-        Me.BunifuLabel9.CursorType = Nothing
-        Me.BunifuLabel9.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel9.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel9.Location = New System.Drawing.Point(99, 194)
-        Me.BunifuLabel9.Name = "BunifuLabel9"
-        Me.BunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel9.Size = New System.Drawing.Size(66, 21)
-        Me.BunifuLabel9.TabIndex = 7
-        Me.BunifuLabel9.Text = "Kagawad:"
-        Me.BunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.SkChairmanLabelStatus.AllowParentOverrides = False
+        Me.SkChairmanLabelStatus.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.SkChairmanLabelStatus.AutoEllipsis = False
+        Me.SkChairmanLabelStatus.CursorType = Nothing
+        Me.SkChairmanLabelStatus.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.SkChairmanLabelStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.SkChairmanLabelStatus.Location = New System.Drawing.Point(796, 181)
+        Me.SkChairmanLabelStatus.Name = "SkChairmanLabelStatus"
+        Me.SkChairmanLabelStatus.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.SkChairmanLabelStatus.Size = New System.Drawing.Size(187, 15)
+        Me.SkChairmanLabelStatus.TabIndex = 86
+        Me.SkChairmanLabelStatus.Text = "Sk Chairman's name does not exist!"
+        Me.SkChairmanLabelStatus.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.SkChairmanLabelStatus.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.SkChairmanLabelStatus.Visible = False
         '
-        'BunifuLabel5
+        'CouncilorLabelStatus3
         '
-        Me.BunifuLabel5.AllowParentOverrides = False
-        Me.BunifuLabel5.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel5.AutoEllipsis = False
-        Me.BunifuLabel5.CursorType = Nothing
-        Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel5.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel5.Location = New System.Drawing.Point(657, 13)
-        Me.BunifuLabel5.Name = "BunifuLabel5"
-        Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel5.Size = New System.Drawing.Size(70, 21)
-        Me.BunifuLabel5.TabIndex = 5
-        Me.BunifuLabel5.Text = "Councilor:"
-        Me.BunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CouncilorLabelStatus3.AllowParentOverrides = False
+        Me.CouncilorLabelStatus3.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CouncilorLabelStatus3.AutoEllipsis = False
+        Me.CouncilorLabelStatus3.CursorType = Nothing
+        Me.CouncilorLabelStatus3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CouncilorLabelStatus3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CouncilorLabelStatus3.Location = New System.Drawing.Point(800, 108)
+        Me.CouncilorLabelStatus3.Name = "CouncilorLabelStatus3"
+        Me.CouncilorLabelStatus3.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CouncilorLabelStatus3.Size = New System.Drawing.Size(172, 15)
+        Me.CouncilorLabelStatus3.TabIndex = 85
+        Me.CouncilorLabelStatus3.Text = "Councilor's name does not exist!"
+        Me.CouncilorLabelStatus3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.CouncilorLabelStatus3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CouncilorLabelStatus3.Visible = False
         '
-        'BunifuLabel10
+        'CouncilorLabelStatus2
         '
-        Me.BunifuLabel10.AllowParentOverrides = False
-        Me.BunifuLabel10.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel10.AutoEllipsis = False
-        Me.BunifuLabel10.CursorType = Nothing
-        Me.BunifuLabel10.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel10.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel10.Location = New System.Drawing.Point(99, 238)
-        Me.BunifuLabel10.Name = "BunifuLabel10"
-        Me.BunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel10.Size = New System.Drawing.Size(66, 21)
-        Me.BunifuLabel10.TabIndex = 7
-        Me.BunifuLabel10.Text = "Kagawad:"
-        Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CouncilorLabelStatus2.AllowParentOverrides = False
+        Me.CouncilorLabelStatus2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CouncilorLabelStatus2.AutoEllipsis = False
+        Me.CouncilorLabelStatus2.CursorType = Nothing
+        Me.CouncilorLabelStatus2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CouncilorLabelStatus2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CouncilorLabelStatus2.Location = New System.Drawing.Point(800, 38)
+        Me.CouncilorLabelStatus2.Name = "CouncilorLabelStatus2"
+        Me.CouncilorLabelStatus2.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CouncilorLabelStatus2.Size = New System.Drawing.Size(172, 15)
+        Me.CouncilorLabelStatus2.TabIndex = 84
+        Me.CouncilorLabelStatus2.Text = "Councilor's name does not exist!"
+        Me.CouncilorLabelStatus2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.CouncilorLabelStatus2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CouncilorLabelStatus2.Visible = False
         '
-        'BunifuLabel6
+        'CommitteeLabelStatus1
         '
-        Me.BunifuLabel6.AllowParentOverrides = False
-        Me.BunifuLabel6.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel6.AutoEllipsis = False
-        Me.BunifuLabel6.CursorType = Nothing
-        Me.BunifuLabel6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel6.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel6.Location = New System.Drawing.Point(657, 58)
-        Me.BunifuLabel6.Name = "BunifuLabel6"
-        Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel6.Size = New System.Drawing.Size(70, 21)
-        Me.BunifuLabel6.TabIndex = 5
-        Me.BunifuLabel6.Text = "Councilor:"
-        Me.BunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CommitteeLabelStatus1.AllowParentOverrides = False
+        Me.CommitteeLabelStatus1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CommitteeLabelStatus1.AutoEllipsis = False
+        Me.CommitteeLabelStatus1.CursorType = Nothing
+        Me.CommitteeLabelStatus1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CommitteeLabelStatus1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CommitteeLabelStatus1.Location = New System.Drawing.Point(248, 456)
+        Me.CommitteeLabelStatus1.Name = "CommitteeLabelStatus1"
+        Me.CommitteeLabelStatus1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CommitteeLabelStatus1.Size = New System.Drawing.Size(180, 15)
+        Me.CommitteeLabelStatus1.TabIndex = 83
+        Me.CommitteeLabelStatus1.Text = "Committee's name does not exist!"
+        Me.CommitteeLabelStatus1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.CommitteeLabelStatus1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CommitteeLabelStatus1.Visible = False
         '
-        'BunifuLabel7
+        'KagawadLabelStatus2
         '
-        Me.BunifuLabel7.AllowParentOverrides = False
-        Me.BunifuLabel7.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel7.AutoEllipsis = False
-        Me.BunifuLabel7.CursorType = Nothing
-        Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel7.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel7.Location = New System.Drawing.Point(640, 103)
-        Me.BunifuLabel7.Name = "BunifuLabel7"
-        Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel7.Size = New System.Drawing.Size(87, 21)
-        Me.BunifuLabel7.TabIndex = 6
-        Me.BunifuLabel7.Text = "Sk chairman:"
-        Me.BunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.KagawadLabelStatus2.AllowParentOverrides = False
+        Me.KagawadLabelStatus2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.KagawadLabelStatus2.AutoEllipsis = False
+        Me.KagawadLabelStatus2.CursorType = Nothing
+        Me.KagawadLabelStatus2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.KagawadLabelStatus2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.KagawadLabelStatus2.Location = New System.Drawing.Point(251, 388)
+        Me.KagawadLabelStatus2.Name = "KagawadLabelStatus2"
+        Me.KagawadLabelStatus2.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.KagawadLabelStatus2.Size = New System.Drawing.Size(168, 15)
+        Me.KagawadLabelStatus2.TabIndex = 82
+        Me.KagawadLabelStatus2.Text = "Kagawad's name does not exist!"
+        Me.KagawadLabelStatus2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.KagawadLabelStatus2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.KagawadLabelStatus2.Visible = False
         '
-        'BunifuLabel11
+        'KagawadLabelStatus1
         '
-        Me.BunifuLabel11.AllowParentOverrides = False
-        Me.BunifuLabel11.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel11.AutoEllipsis = False
-        Me.BunifuLabel11.CursorType = Nothing
-        Me.BunifuLabel11.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel11.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel11.Location = New System.Drawing.Point(86, 288)
-        Me.BunifuLabel11.Name = "BunifuLabel11"
-        Me.BunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel11.Size = New System.Drawing.Size(79, 21)
-        Me.BunifuLabel11.TabIndex = 8
-        Me.BunifuLabel11.Text = "Committee:"
-        Me.BunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.KagawadLabelStatus1.AllowParentOverrides = False
+        Me.KagawadLabelStatus1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.KagawadLabelStatus1.AutoEllipsis = False
+        Me.KagawadLabelStatus1.CursorType = Nothing
+        Me.KagawadLabelStatus1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.KagawadLabelStatus1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.KagawadLabelStatus1.Location = New System.Drawing.Point(253, 321)
+        Me.KagawadLabelStatus1.Name = "KagawadLabelStatus1"
+        Me.KagawadLabelStatus1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.KagawadLabelStatus1.Size = New System.Drawing.Size(168, 15)
+        Me.KagawadLabelStatus1.TabIndex = 81
+        Me.KagawadLabelStatus1.Text = "Kagawad's name does not exist!"
+        Me.KagawadLabelStatus1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.KagawadLabelStatus1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.KagawadLabelStatus1.Visible = False
         '
-        'BunifuLabel8
+        'CouncilorLabelStatus1
         '
-        Me.BunifuLabel8.AllowParentOverrides = False
-        Me.BunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel8.AutoEllipsis = False
-        Me.BunifuLabel8.CursorType = Nothing
-        Me.BunifuLabel8.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel8.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel8.Location = New System.Drawing.Point(661, 149)
-        Me.BunifuLabel8.Name = "BunifuLabel8"
-        Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel8.Size = New System.Drawing.Size(66, 21)
-        Me.BunifuLabel8.TabIndex = 7
-        Me.BunifuLabel8.Text = "Kagawad:"
-        Me.BunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CouncilorLabelStatus1.AllowParentOverrides = False
+        Me.CouncilorLabelStatus1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CouncilorLabelStatus1.AutoEllipsis = False
+        Me.CouncilorLabelStatus1.CursorType = Nothing
+        Me.CouncilorLabelStatus1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CouncilorLabelStatus1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CouncilorLabelStatus1.Location = New System.Drawing.Point(253, 246)
+        Me.CouncilorLabelStatus1.Name = "CouncilorLabelStatus1"
+        Me.CouncilorLabelStatus1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CouncilorLabelStatus1.Size = New System.Drawing.Size(172, 15)
+        Me.CouncilorLabelStatus1.TabIndex = 80
+        Me.CouncilorLabelStatus1.Text = "Councilor's name does not exist!"
+        Me.CouncilorLabelStatus1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.CouncilorLabelStatus1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CouncilorLabelStatus1.Visible = False
         '
-        'BunifuLabel12
+        'TreasurerLabelStatus
         '
-        Me.BunifuLabel12.AllowParentOverrides = False
-        Me.BunifuLabel12.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel12.AutoEllipsis = False
-        Me.BunifuLabel12.CursorType = Nothing
-        Me.BunifuLabel12.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel12.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel12.Location = New System.Drawing.Point(648, 194)
-        Me.BunifuLabel12.Name = "BunifuLabel12"
-        Me.BunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel12.Size = New System.Drawing.Size(79, 21)
-        Me.BunifuLabel12.TabIndex = 8
-        Me.BunifuLabel12.Text = "Committee:"
-        Me.BunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.TreasurerLabelStatus.AllowParentOverrides = False
+        Me.TreasurerLabelStatus.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.TreasurerLabelStatus.AutoEllipsis = False
+        Me.TreasurerLabelStatus.CursorType = Nothing
+        Me.TreasurerLabelStatus.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TreasurerLabelStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TreasurerLabelStatus.Location = New System.Drawing.Point(250, 181)
+        Me.TreasurerLabelStatus.Name = "TreasurerLabelStatus"
+        Me.TreasurerLabelStatus.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TreasurerLabelStatus.Size = New System.Drawing.Size(168, 15)
+        Me.TreasurerLabelStatus.TabIndex = 79
+        Me.TreasurerLabelStatus.Text = "Treasurer's name does not exist!"
+        Me.TreasurerLabelStatus.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.TreasurerLabelStatus.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.TreasurerLabelStatus.Visible = False
         '
-        'BunifuLabel13
+        'SecretaryLabelStatus
         '
-        Me.BunifuLabel13.AllowParentOverrides = False
-        Me.BunifuLabel13.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel13.AutoEllipsis = False
-        Me.BunifuLabel13.CursorType = Nothing
-        Me.BunifuLabel13.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel13.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel13.Location = New System.Drawing.Point(648, 238)
-        Me.BunifuLabel13.Name = "BunifuLabel13"
-        Me.BunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel13.Size = New System.Drawing.Size(79, 21)
-        Me.BunifuLabel13.TabIndex = 8
-        Me.BunifuLabel13.Text = "Committee:"
-        Me.BunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.SecretaryLabelStatus.AllowParentOverrides = False
+        Me.SecretaryLabelStatus.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.SecretaryLabelStatus.AutoEllipsis = False
+        Me.SecretaryLabelStatus.CursorType = Nothing
+        Me.SecretaryLabelStatus.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.SecretaryLabelStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.SecretaryLabelStatus.Location = New System.Drawing.Point(253, 108)
+        Me.SecretaryLabelStatus.Name = "SecretaryLabelStatus"
+        Me.SecretaryLabelStatus.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.SecretaryLabelStatus.Size = New System.Drawing.Size(168, 15)
+        Me.SecretaryLabelStatus.TabIndex = 78
+        Me.SecretaryLabelStatus.Text = "Secretary's name does not exist!"
+        Me.SecretaryLabelStatus.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.SecretaryLabelStatus.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.SecretaryLabelStatus.Visible = False
         '
-        'BunifuLabel1
+        'CaptainNameLabelStatus
         '
-        Me.BunifuLabel1.AllowParentOverrides = False
-        Me.BunifuLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel1.AutoEllipsis = False
-        Me.BunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel1.Location = New System.Drawing.Point(41, 13)
-        Me.BunifuLabel1.Name = "BunifuLabel1"
-        Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(124, 21)
-        Me.BunifuLabel1.TabIndex = 0
-        Me.BunifuLabel1.Text = "Barangay Captain:"
-        Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel14
-        '
-        Me.BunifuLabel14.AllowParentOverrides = False
-        Me.BunifuLabel14.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel14.AutoEllipsis = False
-        Me.BunifuLabel14.Cursor = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel14.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel14.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel14.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel14.Location = New System.Drawing.Point(39, 13)
-        Me.BunifuLabel14.Name = "BunifuLabel14"
-        Me.BunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel14.Size = New System.Drawing.Size(125, 21)
-        Me.BunifuLabel14.TabIndex = 12
-        Me.BunifuLabel14.Text = "Barangay Captain:"
-        Me.BunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel14.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel15
-        '
-        Me.BunifuLabel15.AllowParentOverrides = False
-        Me.BunifuLabel15.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel15.AutoEllipsis = False
-        Me.BunifuLabel15.CursorType = Nothing
-        Me.BunifuLabel15.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel15.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel15.Location = New System.Drawing.Point(617, 13)
-        Me.BunifuLabel15.Name = "BunifuLabel15"
-        Me.BunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel15.Size = New System.Drawing.Size(70, 21)
-        Me.BunifuLabel15.TabIndex = 13
-        Me.BunifuLabel15.Text = "Councilor:"
-        Me.BunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel16
-        '
-        Me.BunifuLabel16.AllowParentOverrides = False
-        Me.BunifuLabel16.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel16.AutoEllipsis = False
-        Me.BunifuLabel16.CursorType = Nothing
-        Me.BunifuLabel16.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel16.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel16.Location = New System.Drawing.Point(96, 58)
-        Me.BunifuLabel16.Name = "BunifuLabel16"
-        Me.BunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel16.Size = New System.Drawing.Size(68, 21)
-        Me.BunifuLabel16.TabIndex = 14
-        Me.BunifuLabel16.Text = "Secretary:"
-        Me.BunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel17
-        '
-        Me.BunifuLabel17.AllowParentOverrides = False
-        Me.BunifuLabel17.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel17.AutoEllipsis = False
-        Me.BunifuLabel17.CursorType = Nothing
-        Me.BunifuLabel17.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel17.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel17.Location = New System.Drawing.Point(617, 58)
-        Me.BunifuLabel17.Name = "BunifuLabel17"
-        Me.BunifuLabel17.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel17.Size = New System.Drawing.Size(70, 21)
-        Me.BunifuLabel17.TabIndex = 15
-        Me.BunifuLabel17.Text = "Councilor:"
-        Me.BunifuLabel17.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel17.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel18
-        '
-        Me.BunifuLabel18.AllowParentOverrides = False
-        Me.BunifuLabel18.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel18.AutoEllipsis = False
-        Me.BunifuLabel18.CursorType = Nothing
-        Me.BunifuLabel18.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel18.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel18.Location = New System.Drawing.Point(95, 103)
-        Me.BunifuLabel18.Name = "BunifuLabel18"
-        Me.BunifuLabel18.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel18.Size = New System.Drawing.Size(69, 21)
-        Me.BunifuLabel18.TabIndex = 16
-        Me.BunifuLabel18.Text = "Treasurer:"
-        Me.BunifuLabel18.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel18.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel19
-        '
-        Me.BunifuLabel19.AllowParentOverrides = False
-        Me.BunifuLabel19.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel19.AutoEllipsis = False
-        Me.BunifuLabel19.CursorType = Nothing
-        Me.BunifuLabel19.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel19.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel19.Location = New System.Drawing.Point(595, 103)
-        Me.BunifuLabel19.Name = "BunifuLabel19"
-        Me.BunifuLabel19.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel19.Size = New System.Drawing.Size(92, 21)
-        Me.BunifuLabel19.TabIndex = 17
-        Me.BunifuLabel19.Text = "Sk Chairman:"
-        Me.BunifuLabel19.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel19.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel20
-        '
-        Me.BunifuLabel20.AllowParentOverrides = False
-        Me.BunifuLabel20.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel20.AutoEllipsis = False
-        Me.BunifuLabel20.CursorType = Nothing
-        Me.BunifuLabel20.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel20.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel20.Location = New System.Drawing.Point(94, 149)
-        Me.BunifuLabel20.Name = "BunifuLabel20"
-        Me.BunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel20.Size = New System.Drawing.Size(70, 21)
-        Me.BunifuLabel20.TabIndex = 18
-        Me.BunifuLabel20.Text = "Councilor:"
-        Me.BunifuLabel20.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel20.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel21
-        '
-        Me.BunifuLabel21.AllowParentOverrides = False
-        Me.BunifuLabel21.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel21.AutoEllipsis = False
-        Me.BunifuLabel21.CursorType = Nothing
-        Me.BunifuLabel21.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel21.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel21.Location = New System.Drawing.Point(621, 149)
-        Me.BunifuLabel21.Name = "BunifuLabel21"
-        Me.BunifuLabel21.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel21.Size = New System.Drawing.Size(66, 21)
-        Me.BunifuLabel21.TabIndex = 19
-        Me.BunifuLabel21.Text = "Kagawad:"
-        Me.BunifuLabel21.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel21.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel22
-        '
-        Me.BunifuLabel22.AllowParentOverrides = False
-        Me.BunifuLabel22.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel22.AutoEllipsis = False
-        Me.BunifuLabel22.CursorType = Nothing
-        Me.BunifuLabel22.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel22.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel22.Location = New System.Drawing.Point(98, 196)
-        Me.BunifuLabel22.Name = "BunifuLabel22"
-        Me.BunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel22.Size = New System.Drawing.Size(66, 21)
-        Me.BunifuLabel22.TabIndex = 20
-        Me.BunifuLabel22.Text = "Kagawad:"
-        Me.BunifuLabel22.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel22.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel23
-        '
-        Me.BunifuLabel23.AllowParentOverrides = False
-        Me.BunifuLabel23.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel23.AutoEllipsis = False
-        Me.BunifuLabel23.CursorType = Nothing
-        Me.BunifuLabel23.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel23.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel23.Location = New System.Drawing.Point(607, 196)
-        Me.BunifuLabel23.Name = "BunifuLabel23"
-        Me.BunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel23.Size = New System.Drawing.Size(80, 21)
-        Me.BunifuLabel23.TabIndex = 21
-        Me.BunifuLabel23.Text = "Committee:"
-        Me.BunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel24
-        '
-        Me.BunifuLabel24.AllowParentOverrides = False
-        Me.BunifuLabel24.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel24.AutoEllipsis = False
-        Me.BunifuLabel24.CursorType = Nothing
-        Me.BunifuLabel24.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel24.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel24.Location = New System.Drawing.Point(98, 245)
-        Me.BunifuLabel24.Name = "BunifuLabel24"
-        Me.BunifuLabel24.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel24.Size = New System.Drawing.Size(66, 21)
-        Me.BunifuLabel24.TabIndex = 22
-        Me.BunifuLabel24.Text = "Kagawad:"
-        Me.BunifuLabel24.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel24.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel25
-        '
-        Me.BunifuLabel25.AllowParentOverrides = False
-        Me.BunifuLabel25.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel25.AutoEllipsis = False
-        Me.BunifuLabel25.CursorType = Nothing
-        Me.BunifuLabel25.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel25.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel25.Location = New System.Drawing.Point(607, 245)
-        Me.BunifuLabel25.Name = "BunifuLabel25"
-        Me.BunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel25.Size = New System.Drawing.Size(80, 21)
-        Me.BunifuLabel25.TabIndex = 23
-        Me.BunifuLabel25.Text = "Committee:"
-        Me.BunifuLabel25.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel25.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel26
-        '
-        Me.BunifuLabel26.AllowParentOverrides = False
-        Me.BunifuLabel26.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.BunifuLabel26.AutoEllipsis = False
-        Me.BunifuLabel26.CursorType = Nothing
-        Me.BunifuLabel26.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel26.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel26.Location = New System.Drawing.Point(84, 293)
-        Me.BunifuLabel26.Name = "BunifuLabel26"
-        Me.BunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel26.Size = New System.Drawing.Size(80, 21)
-        Me.BunifuLabel26.TabIndex = 24
-        Me.BunifuLabel26.Text = "Committee:"
-        Me.BunifuLabel26.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel26.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CaptainNameLabelStatus.AllowParentOverrides = False
+        Me.CaptainNameLabelStatus.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CaptainNameLabelStatus.AutoEllipsis = False
+        Me.CaptainNameLabelStatus.CursorType = Nothing
+        Me.CaptainNameLabelStatus.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CaptainNameLabelStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CaptainNameLabelStatus.Location = New System.Drawing.Point(227, 38)
+        Me.CaptainNameLabelStatus.Name = "CaptainNameLabelStatus"
+        Me.CaptainNameLabelStatus.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CaptainNameLabelStatus.Size = New System.Drawing.Size(213, 15)
+        Me.CaptainNameLabelStatus.TabIndex = 77
+        Me.CaptainNameLabelStatus.Text = "Barangay's Captain name does not exist!"
+        Me.CaptainNameLabelStatus.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.CaptainNameLabelStatus.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.CaptainNameLabelStatus.Visible = False
         '
         'BunifuLabel40
         '
@@ -763,6 +579,23 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel40.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel40.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'BunifuLabel41
+        '
+        Me.BunifuLabel41.AllowParentOverrides = False
+        Me.BunifuLabel41.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel41.AutoEllipsis = False
+        Me.BunifuLabel41.CursorType = Nothing
+        Me.BunifuLabel41.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel41.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel41.Location = New System.Drawing.Point(619, 415)
+        Me.BunifuLabel41.Name = "BunifuLabel41"
+        Me.BunifuLabel41.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel41.Size = New System.Drawing.Size(80, 21)
+        Me.BunifuLabel41.TabIndex = 75
+        Me.BunifuLabel41.Text = "Committee:"
+        Me.BunifuLabel41.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel41.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
         'BunifuLabel42
         '
         Me.BunifuLabel42.AllowParentOverrides = False
@@ -780,6 +613,23 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel42.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel42.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'BunifuLabel43
+        '
+        Me.BunifuLabel43.AllowParentOverrides = False
+        Me.BunifuLabel43.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel43.AutoEllipsis = False
+        Me.BunifuLabel43.CursorType = Nothing
+        Me.BunifuLabel43.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel43.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel43.Location = New System.Drawing.Point(619, 345)
+        Me.BunifuLabel43.Name = "BunifuLabel43"
+        Me.BunifuLabel43.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel43.Size = New System.Drawing.Size(80, 21)
+        Me.BunifuLabel43.TabIndex = 73
+        Me.BunifuLabel43.Text = "Committee:"
+        Me.BunifuLabel43.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel43.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
         'BunifuLabel44
         '
         Me.BunifuLabel44.AllowParentOverrides = False
@@ -796,6 +646,23 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel44.Text = "Kagawad:"
         Me.BunifuLabel44.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel44.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel45
+        '
+        Me.BunifuLabel45.AllowParentOverrides = False
+        Me.BunifuLabel45.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel45.AutoEllipsis = False
+        Me.BunifuLabel45.CursorType = Nothing
+        Me.BunifuLabel45.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel45.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel45.Location = New System.Drawing.Point(633, 274)
+        Me.BunifuLabel45.Name = "BunifuLabel45"
+        Me.BunifuLabel45.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel45.Size = New System.Drawing.Size(66, 21)
+        Me.BunifuLabel45.TabIndex = 71
+        Me.BunifuLabel45.Text = "Kagawad:"
+        Me.BunifuLabel45.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel45.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
         'BunifuLabel46
         '
@@ -831,6 +698,57 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel47.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel47.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'BunifuLabel48
+        '
+        Me.BunifuLabel48.AllowParentOverrides = False
+        Me.BunifuLabel48.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel48.AutoEllipsis = False
+        Me.BunifuLabel48.CursorType = Nothing
+        Me.BunifuLabel48.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel48.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel48.Location = New System.Drawing.Point(67, 206)
+        Me.BunifuLabel48.Name = "BunifuLabel48"
+        Me.BunifuLabel48.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel48.Size = New System.Drawing.Size(69, 21)
+        Me.BunifuLabel48.TabIndex = 68
+        Me.BunifuLabel48.Text = "Treasurer:"
+        Me.BunifuLabel48.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel48.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel49
+        '
+        Me.BunifuLabel49.AllowParentOverrides = False
+        Me.BunifuLabel49.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel49.AutoEllipsis = False
+        Me.BunifuLabel49.CursorType = Nothing
+        Me.BunifuLabel49.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel49.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel49.Location = New System.Drawing.Point(629, 135)
+        Me.BunifuLabel49.Name = "BunifuLabel49"
+        Me.BunifuLabel49.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel49.Size = New System.Drawing.Size(70, 21)
+        Me.BunifuLabel49.TabIndex = 67
+        Me.BunifuLabel49.Text = "Councilor:"
+        Me.BunifuLabel49.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel49.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel50
+        '
+        Me.BunifuLabel50.AllowParentOverrides = False
+        Me.BunifuLabel50.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel50.AutoEllipsis = False
+        Me.BunifuLabel50.CursorType = Nothing
+        Me.BunifuLabel50.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel50.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel50.Location = New System.Drawing.Point(69, 135)
+        Me.BunifuLabel50.Name = "BunifuLabel50"
+        Me.BunifuLabel50.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel50.Size = New System.Drawing.Size(68, 21)
+        Me.BunifuLabel50.TabIndex = 66
+        Me.BunifuLabel50.Text = "Secretary:"
+        Me.BunifuLabel50.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel50.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
         'BunifuLabel51
         '
         Me.BunifuLabel51.AllowParentOverrides = False
@@ -855,7 +773,7 @@ Partial Class SettingsOrganizationChart
         Me.CaptainPictureBox.AutoSizeHeight = True
         Me.CaptainPictureBox.BorderRadius = 32
         Me.CaptainPictureBox.Image = CType(resources.GetObject("CaptainPictureBox.Image"), System.Drawing.Image)
-        Me.CaptainPictureBox.InitialImage = CType(resources.GetObject("CaptainPictureBox.Image"), System.Drawing.Image)
+        Me.CaptainPictureBox.InitialImage = CType(resources.GetObject("CaptainPictureBox.InitialImage"), System.Drawing.Image)
         Me.CaptainPictureBox.IsCircle = True
         Me.CaptainPictureBox.Location = New System.Drawing.Point(518, 42)
         Me.CaptainPictureBox.Name = "CaptainPictureBox"
@@ -1022,7 +940,7 @@ Partial Class SettingsOrganizationChart
         Me.TreasurerPictureBox.AutoSizeHeight = True
         Me.TreasurerPictureBox.BorderRadius = 32
         Me.TreasurerPictureBox.Image = CType(resources.GetObject("TreasurerPictureBox.Image"), System.Drawing.Image)
-        Me.TreasurerPictureBox.InitialImage = CType(resources.GetObject("TreasurerPictureBox.Image"), System.Drawing.Image)
+        Me.TreasurerPictureBox.InitialImage = CType(resources.GetObject("TreasurerPictureBox.InitialImage"), System.Drawing.Image)
         Me.TreasurerPictureBox.IsCircle = True
         Me.TreasurerPictureBox.Location = New System.Drawing.Point(518, 184)
         Me.TreasurerPictureBox.Name = "TreasurerPictureBox"
@@ -1564,7 +1482,7 @@ Partial Class SettingsOrganizationChart
         Me.CommitteePictureBox1.AutoSizeHeight = True
         Me.CommitteePictureBox1.BorderRadius = 32
         Me.CommitteePictureBox1.Image = CType(resources.GetObject("CommitteePictureBox1.Image"), System.Drawing.Image)
-        Me.CommitteePictureBox1.InitialImage = CType(resources.GetObject("CommitteePictureBox1.Image"), System.Drawing.Image)
+        Me.CommitteePictureBox1.InitialImage = CType(resources.GetObject("CommitteePictureBox1.InitialImage"), System.Drawing.Image)
         Me.CommitteePictureBox1.IsCircle = True
         Me.CommitteePictureBox1.Location = New System.Drawing.Point(518, 465)
         Me.CommitteePictureBox1.Name = "CommitteePictureBox1"
@@ -1581,7 +1499,7 @@ Partial Class SettingsOrganizationChart
         Me.KagawadPictureBox2.AutoSizeHeight = True
         Me.KagawadPictureBox2.BorderRadius = 32
         Me.KagawadPictureBox2.Image = CType(resources.GetObject("KagawadPictureBox2.Image"), System.Drawing.Image)
-        Me.KagawadPictureBox2.InitialImage = CType(resources.GetObject("KagawadPictureBox2.Image"), System.Drawing.Image)
+        Me.KagawadPictureBox2.InitialImage = CType(resources.GetObject("KagawadPictureBox2.InitialImage"), System.Drawing.Image)
         Me.KagawadPictureBox2.IsCircle = True
         Me.KagawadPictureBox2.Location = New System.Drawing.Point(518, 394)
         Me.KagawadPictureBox2.Name = "KagawadPictureBox2"
@@ -1598,7 +1516,7 @@ Partial Class SettingsOrganizationChart
         Me.SecretaryPictureBox.AutoSizeHeight = True
         Me.SecretaryPictureBox.BorderRadius = 32
         Me.SecretaryPictureBox.Image = CType(resources.GetObject("SecretaryPictureBox.Image"), System.Drawing.Image)
-        Me.SecretaryPictureBox.InitialImage = CType(resources.GetObject("SecretaryPictureBox.Image"), System.Drawing.Image)
+        Me.SecretaryPictureBox.InitialImage = CType(resources.GetObject("SecretaryPictureBox.InitialImage"), System.Drawing.Image)
         Me.SecretaryPictureBox.IsCircle = True
         Me.SecretaryPictureBox.Location = New System.Drawing.Point(518, 112)
         Me.SecretaryPictureBox.Name = "SecretaryPictureBox"
@@ -1615,7 +1533,7 @@ Partial Class SettingsOrganizationChart
         Me.CouncilorPicturebox1.AutoSizeHeight = True
         Me.CouncilorPicturebox1.BorderRadius = 32
         Me.CouncilorPicturebox1.Image = CType(resources.GetObject("CouncilorPicturebox1.Image"), System.Drawing.Image)
-        Me.CouncilorPicturebox1.InitialImage = CType(resources.GetObject("CouncilorPicturebox1.Image"), System.Drawing.Image)
+        Me.CouncilorPicturebox1.InitialImage = CType(resources.GetObject("CouncilorPicturebox1.InitialImage"), System.Drawing.Image)
         Me.CouncilorPicturebox1.IsCircle = True
         Me.CouncilorPicturebox1.Location = New System.Drawing.Point(518, 254)
         Me.CouncilorPicturebox1.Name = "CouncilorPicturebox1"
@@ -1707,7 +1625,7 @@ Partial Class SettingsOrganizationChart
         Me.KagawadPicturebox1.AutoSizeHeight = True
         Me.KagawadPicturebox1.BorderRadius = 32
         Me.KagawadPicturebox1.Image = CType(resources.GetObject("KagawadPicturebox1.Image"), System.Drawing.Image)
-        Me.KagawadPicturebox1.InitialImage = CType(resources.GetObject("KagawadPicturebox1.Image"), System.Drawing.Image)
+        Me.KagawadPicturebox1.InitialImage = CType(resources.GetObject("KagawadPicturebox1.InitialImage"), System.Drawing.Image)
         Me.KagawadPicturebox1.IsCircle = True
         Me.KagawadPicturebox1.Location = New System.Drawing.Point(518, 325)
         Me.KagawadPicturebox1.Name = "KagawadPicturebox1"
@@ -1799,7 +1717,7 @@ Partial Class SettingsOrganizationChart
         Me.CommitteePictureBox3.AutoSizeHeight = True
         Me.CommitteePictureBox3.BorderRadius = 32
         Me.CommitteePictureBox3.Image = CType(resources.GetObject("CommitteePictureBox3.Image"), System.Drawing.Image)
-        Me.CommitteePictureBox3.InitialImage = CType(resources.GetObject("CommitteePictureBox3.Image"), System.Drawing.Image)
+        Me.CommitteePictureBox3.InitialImage = CType(resources.GetObject("CommitteePictureBox3.InitialImage"), System.Drawing.Image)
         Me.CommitteePictureBox3.IsCircle = True
         Me.CommitteePictureBox3.Location = New System.Drawing.Point(1066, 394)
         Me.CommitteePictureBox3.Name = "CommitteePictureBox3"
@@ -1816,7 +1734,7 @@ Partial Class SettingsOrganizationChart
         Me.CommitteePictureBox2.AutoSizeHeight = True
         Me.CommitteePictureBox2.BorderRadius = 32
         Me.CommitteePictureBox2.Image = CType(resources.GetObject("CommitteePictureBox2.Image"), System.Drawing.Image)
-        Me.CommitteePictureBox2.InitialImage = CType(resources.GetObject("CommitteePictureBox2.Image"), System.Drawing.Image)
+        Me.CommitteePictureBox2.InitialImage = CType(resources.GetObject("CommitteePictureBox2.InitialImage"), System.Drawing.Image)
         Me.CommitteePictureBox2.IsCircle = True
         Me.CommitteePictureBox2.Location = New System.Drawing.Point(1066, 325)
         Me.CommitteePictureBox2.Name = "CommitteePictureBox2"
@@ -1833,7 +1751,7 @@ Partial Class SettingsOrganizationChart
         Me.KagawadPicturebox3.AutoSizeHeight = True
         Me.KagawadPicturebox3.BorderRadius = 32
         Me.KagawadPicturebox3.Image = CType(resources.GetObject("KagawadPicturebox3.Image"), System.Drawing.Image)
-        Me.KagawadPicturebox3.InitialImage = CType(resources.GetObject("KagawadPicturebox3.Image"), System.Drawing.Image)
+        Me.KagawadPicturebox3.InitialImage = CType(resources.GetObject("KagawadPicturebox3.InitialImage"), System.Drawing.Image)
         Me.KagawadPicturebox3.IsCircle = True
         Me.KagawadPicturebox3.Location = New System.Drawing.Point(1066, 254)
         Me.KagawadPicturebox3.Name = "KagawadPicturebox3"
@@ -1850,7 +1768,7 @@ Partial Class SettingsOrganizationChart
         Me.CouncilorPicturebox3.AutoSizeHeight = True
         Me.CouncilorPicturebox3.BorderRadius = 32
         Me.CouncilorPicturebox3.Image = CType(resources.GetObject("CouncilorPicturebox3.Image"), System.Drawing.Image)
-        Me.CouncilorPicturebox3.InitialImage = CType(resources.GetObject("CouncilorPicturebox3.Image"), System.Drawing.Image)
+        Me.CouncilorPicturebox3.InitialImage = CType(resources.GetObject("CouncilorPicturebox3.InitialImage"), System.Drawing.Image)
         Me.CouncilorPicturebox3.IsCircle = True
         Me.CouncilorPicturebox3.Location = New System.Drawing.Point(1066, 112)
         Me.CouncilorPicturebox3.Name = "CouncilorPicturebox3"
@@ -1867,7 +1785,7 @@ Partial Class SettingsOrganizationChart
         Me.CouncilorPicturebox2.AutoSizeHeight = True
         Me.CouncilorPicturebox2.BorderRadius = 32
         Me.CouncilorPicturebox2.Image = CType(resources.GetObject("CouncilorPicturebox2.Image"), System.Drawing.Image)
-        Me.CouncilorPicturebox2.InitialImage = CType(resources.GetObject("CouncilorPicturebox2.Image"), System.Drawing.Image)
+        Me.CouncilorPicturebox2.InitialImage = CType(resources.GetObject("CouncilorPicturebox2.InitialImage"), System.Drawing.Image)
         Me.CouncilorPicturebox2.IsCircle = True
         Me.CouncilorPicturebox2.Location = New System.Drawing.Point(1066, 42)
         Me.CouncilorPicturebox2.Name = "CouncilorPicturebox2"
@@ -1884,7 +1802,7 @@ Partial Class SettingsOrganizationChart
         Me.SkChairmanPictureBox.AutoSizeHeight = True
         Me.SkChairmanPictureBox.BorderRadius = 32
         Me.SkChairmanPictureBox.Image = CType(resources.GetObject("SkChairmanPictureBox.Image"), System.Drawing.Image)
-        Me.SkChairmanPictureBox.InitialImage = CType(resources.GetObject("SkChairmanPictureBox.Image"), System.Drawing.Image)
+        Me.SkChairmanPictureBox.InitialImage = CType(resources.GetObject("SkChairmanPictureBox.InitialImage"), System.Drawing.Image)
         Me.SkChairmanPictureBox.IsCircle = True
         Me.SkChairmanPictureBox.Location = New System.Drawing.Point(1066, 184)
         Me.SkChairmanPictureBox.Name = "SkChairmanPictureBox"
@@ -2062,107 +1980,449 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel52.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel52.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'BunifuLabel50
+        'BunifuLabel4
         '
-        Me.BunifuLabel50.AllowParentOverrides = False
-        Me.BunifuLabel50.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel50.AutoEllipsis = False
-        Me.BunifuLabel50.CursorType = Nothing
-        Me.BunifuLabel50.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel50.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel50.Location = New System.Drawing.Point(69, 135)
-        Me.BunifuLabel50.Name = "BunifuLabel50"
-        Me.BunifuLabel50.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel50.Size = New System.Drawing.Size(68, 21)
-        Me.BunifuLabel50.TabIndex = 66
-        Me.BunifuLabel50.Text = "Secretary:"
-        Me.BunifuLabel50.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel50.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.BunifuLabel4.AllowParentOverrides = False
+        Me.BunifuLabel4.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel4.AutoEllipsis = False
+        Me.BunifuLabel4.CursorType = Nothing
+        Me.BunifuLabel4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel4.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel4.Location = New System.Drawing.Point(95, 149)
+        Me.BunifuLabel4.Name = "BunifuLabel4"
+        Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel4.Size = New System.Drawing.Size(70, 21)
+        Me.BunifuLabel4.TabIndex = 5
+        Me.BunifuLabel4.Text = "Councilor:"
+        Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'BunifuLabel48
+        'BunifuLabel2
         '
-        Me.BunifuLabel48.AllowParentOverrides = False
-        Me.BunifuLabel48.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel48.AutoEllipsis = False
-        Me.BunifuLabel48.CursorType = Nothing
-        Me.BunifuLabel48.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel48.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel48.Location = New System.Drawing.Point(67, 206)
-        Me.BunifuLabel48.Name = "BunifuLabel48"
-        Me.BunifuLabel48.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel48.Size = New System.Drawing.Size(69, 21)
-        Me.BunifuLabel48.TabIndex = 68
-        Me.BunifuLabel48.Text = "Treasurer:"
-        Me.BunifuLabel48.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel48.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.BunifuLabel2.AllowParentOverrides = False
+        Me.BunifuLabel2.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel2.AutoEllipsis = False
+        Me.BunifuLabel2.CursorType = Nothing
+        Me.BunifuLabel2.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel2.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel2.Location = New System.Drawing.Point(98, 103)
+        Me.BunifuLabel2.Name = "BunifuLabel2"
+        Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel2.Size = New System.Drawing.Size(67, 21)
+        Me.BunifuLabel2.TabIndex = 4
+        Me.BunifuLabel2.Text = "Treasurer:"
+        Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'BunifuLabel41
+        'BunifuLabel3
         '
-        Me.BunifuLabel41.AllowParentOverrides = False
-        Me.BunifuLabel41.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel41.AutoEllipsis = False
-        Me.BunifuLabel41.CursorType = Nothing
-        Me.BunifuLabel41.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel41.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel41.Location = New System.Drawing.Point(619, 415)
-        Me.BunifuLabel41.Name = "BunifuLabel41"
-        Me.BunifuLabel41.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel41.Size = New System.Drawing.Size(80, 21)
-        Me.BunifuLabel41.TabIndex = 75
-        Me.BunifuLabel41.Text = "Committee:"
-        Me.BunifuLabel41.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel41.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.BunifuLabel3.AllowParentOverrides = False
+        Me.BunifuLabel3.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel3.AutoEllipsis = False
+        Me.BunifuLabel3.CursorType = Nothing
+        Me.BunifuLabel3.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel3.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel3.Location = New System.Drawing.Point(100, 58)
+        Me.BunifuLabel3.Name = "BunifuLabel3"
+        Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel3.Size = New System.Drawing.Size(65, 21)
+        Me.BunifuLabel3.TabIndex = 0
+        Me.BunifuLabel3.Text = "Secretary:"
+        Me.BunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'BunifuLabel43
+        'BunifuLabel9
         '
-        Me.BunifuLabel43.AllowParentOverrides = False
-        Me.BunifuLabel43.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel43.AutoEllipsis = False
-        Me.BunifuLabel43.CursorType = Nothing
-        Me.BunifuLabel43.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel43.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel43.Location = New System.Drawing.Point(619, 345)
-        Me.BunifuLabel43.Name = "BunifuLabel43"
-        Me.BunifuLabel43.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel43.Size = New System.Drawing.Size(80, 21)
-        Me.BunifuLabel43.TabIndex = 73
-        Me.BunifuLabel43.Text = "Committee:"
-        Me.BunifuLabel43.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel43.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.BunifuLabel9.AllowParentOverrides = False
+        Me.BunifuLabel9.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel9.AutoEllipsis = False
+        Me.BunifuLabel9.CursorType = Nothing
+        Me.BunifuLabel9.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel9.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel9.Location = New System.Drawing.Point(99, 194)
+        Me.BunifuLabel9.Name = "BunifuLabel9"
+        Me.BunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel9.Size = New System.Drawing.Size(66, 21)
+        Me.BunifuLabel9.TabIndex = 7
+        Me.BunifuLabel9.Text = "Kagawad:"
+        Me.BunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'BunifuLabel45
+        'BunifuLabel5
         '
-        Me.BunifuLabel45.AllowParentOverrides = False
-        Me.BunifuLabel45.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel45.AutoEllipsis = False
-        Me.BunifuLabel45.CursorType = Nothing
-        Me.BunifuLabel45.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel45.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel45.Location = New System.Drawing.Point(633, 274)
-        Me.BunifuLabel45.Name = "BunifuLabel45"
-        Me.BunifuLabel45.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel45.Size = New System.Drawing.Size(66, 21)
-        Me.BunifuLabel45.TabIndex = 71
-        Me.BunifuLabel45.Text = "Kagawad:"
-        Me.BunifuLabel45.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel45.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.BunifuLabel5.AllowParentOverrides = False
+        Me.BunifuLabel5.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel5.AutoEllipsis = False
+        Me.BunifuLabel5.CursorType = Nothing
+        Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel5.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel5.Location = New System.Drawing.Point(657, 13)
+        Me.BunifuLabel5.Name = "BunifuLabel5"
+        Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel5.Size = New System.Drawing.Size(70, 21)
+        Me.BunifuLabel5.TabIndex = 5
+        Me.BunifuLabel5.Text = "Councilor:"
+        Me.BunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'BunifuLabel49
+        'BunifuLabel10
         '
-        Me.BunifuLabel49.AllowParentOverrides = False
-        Me.BunifuLabel49.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel49.AutoEllipsis = False
-        Me.BunifuLabel49.CursorType = Nothing
-        Me.BunifuLabel49.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel49.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel49.Location = New System.Drawing.Point(629, 135)
-        Me.BunifuLabel49.Name = "BunifuLabel49"
-        Me.BunifuLabel49.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel49.Size = New System.Drawing.Size(70, 21)
-        Me.BunifuLabel49.TabIndex = 67
-        Me.BunifuLabel49.Text = "Councilor:"
-        Me.BunifuLabel49.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel49.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        Me.BunifuLabel10.AllowParentOverrides = False
+        Me.BunifuLabel10.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel10.AutoEllipsis = False
+        Me.BunifuLabel10.CursorType = Nothing
+        Me.BunifuLabel10.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel10.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel10.Location = New System.Drawing.Point(99, 238)
+        Me.BunifuLabel10.Name = "BunifuLabel10"
+        Me.BunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel10.Size = New System.Drawing.Size(66, 21)
+        Me.BunifuLabel10.TabIndex = 7
+        Me.BunifuLabel10.Text = "Kagawad:"
+        Me.BunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel6
+        '
+        Me.BunifuLabel6.AllowParentOverrides = False
+        Me.BunifuLabel6.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel6.AutoEllipsis = False
+        Me.BunifuLabel6.CursorType = Nothing
+        Me.BunifuLabel6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel6.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel6.Location = New System.Drawing.Point(657, 58)
+        Me.BunifuLabel6.Name = "BunifuLabel6"
+        Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel6.Size = New System.Drawing.Size(70, 21)
+        Me.BunifuLabel6.TabIndex = 5
+        Me.BunifuLabel6.Text = "Councilor:"
+        Me.BunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel7
+        '
+        Me.BunifuLabel7.AllowParentOverrides = False
+        Me.BunifuLabel7.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel7.AutoEllipsis = False
+        Me.BunifuLabel7.CursorType = Nothing
+        Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel7.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel7.Location = New System.Drawing.Point(640, 103)
+        Me.BunifuLabel7.Name = "BunifuLabel7"
+        Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel7.Size = New System.Drawing.Size(87, 21)
+        Me.BunifuLabel7.TabIndex = 6
+        Me.BunifuLabel7.Text = "Sk chairman:"
+        Me.BunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel11
+        '
+        Me.BunifuLabel11.AllowParentOverrides = False
+        Me.BunifuLabel11.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel11.AutoEllipsis = False
+        Me.BunifuLabel11.CursorType = Nothing
+        Me.BunifuLabel11.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel11.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel11.Location = New System.Drawing.Point(86, 288)
+        Me.BunifuLabel11.Name = "BunifuLabel11"
+        Me.BunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel11.Size = New System.Drawing.Size(79, 21)
+        Me.BunifuLabel11.TabIndex = 8
+        Me.BunifuLabel11.Text = "Committee:"
+        Me.BunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel8
+        '
+        Me.BunifuLabel8.AllowParentOverrides = False
+        Me.BunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel8.AutoEllipsis = False
+        Me.BunifuLabel8.CursorType = Nothing
+        Me.BunifuLabel8.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel8.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel8.Location = New System.Drawing.Point(661, 149)
+        Me.BunifuLabel8.Name = "BunifuLabel8"
+        Me.BunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel8.Size = New System.Drawing.Size(66, 21)
+        Me.BunifuLabel8.TabIndex = 7
+        Me.BunifuLabel8.Text = "Kagawad:"
+        Me.BunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel12
+        '
+        Me.BunifuLabel12.AllowParentOverrides = False
+        Me.BunifuLabel12.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel12.AutoEllipsis = False
+        Me.BunifuLabel12.CursorType = Nothing
+        Me.BunifuLabel12.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel12.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel12.Location = New System.Drawing.Point(648, 194)
+        Me.BunifuLabel12.Name = "BunifuLabel12"
+        Me.BunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel12.Size = New System.Drawing.Size(79, 21)
+        Me.BunifuLabel12.TabIndex = 8
+        Me.BunifuLabel12.Text = "Committee:"
+        Me.BunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel13
+        '
+        Me.BunifuLabel13.AllowParentOverrides = False
+        Me.BunifuLabel13.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel13.AutoEllipsis = False
+        Me.BunifuLabel13.CursorType = Nothing
+        Me.BunifuLabel13.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel13.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel13.Location = New System.Drawing.Point(648, 238)
+        Me.BunifuLabel13.Name = "BunifuLabel13"
+        Me.BunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel13.Size = New System.Drawing.Size(79, 21)
+        Me.BunifuLabel13.TabIndex = 8
+        Me.BunifuLabel13.Text = "Committee:"
+        Me.BunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel1
+        '
+        Me.BunifuLabel1.AllowParentOverrides = False
+        Me.BunifuLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel1.AutoEllipsis = False
+        Me.BunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel1.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.BunifuLabel1.Location = New System.Drawing.Point(41, 13)
+        Me.BunifuLabel1.Name = "BunifuLabel1"
+        Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel1.Size = New System.Drawing.Size(124, 21)
+        Me.BunifuLabel1.TabIndex = 0
+        Me.BunifuLabel1.Text = "Barangay Captain:"
+        Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel14
+        '
+        Me.BunifuLabel14.AllowParentOverrides = False
+        Me.BunifuLabel14.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel14.AutoEllipsis = False
+        Me.BunifuLabel14.Cursor = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel14.CursorType = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel14.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel14.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel14.Location = New System.Drawing.Point(39, 13)
+        Me.BunifuLabel14.Name = "BunifuLabel14"
+        Me.BunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel14.Size = New System.Drawing.Size(125, 21)
+        Me.BunifuLabel14.TabIndex = 12
+        Me.BunifuLabel14.Text = "Barangay Captain:"
+        Me.BunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel14.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel15
+        '
+        Me.BunifuLabel15.AllowParentOverrides = False
+        Me.BunifuLabel15.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel15.AutoEllipsis = False
+        Me.BunifuLabel15.CursorType = Nothing
+        Me.BunifuLabel15.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel15.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel15.Location = New System.Drawing.Point(617, 13)
+        Me.BunifuLabel15.Name = "BunifuLabel15"
+        Me.BunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel15.Size = New System.Drawing.Size(70, 21)
+        Me.BunifuLabel15.TabIndex = 13
+        Me.BunifuLabel15.Text = "Councilor:"
+        Me.BunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel16
+        '
+        Me.BunifuLabel16.AllowParentOverrides = False
+        Me.BunifuLabel16.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel16.AutoEllipsis = False
+        Me.BunifuLabel16.CursorType = Nothing
+        Me.BunifuLabel16.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel16.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel16.Location = New System.Drawing.Point(96, 58)
+        Me.BunifuLabel16.Name = "BunifuLabel16"
+        Me.BunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel16.Size = New System.Drawing.Size(68, 21)
+        Me.BunifuLabel16.TabIndex = 14
+        Me.BunifuLabel16.Text = "Secretary:"
+        Me.BunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel17
+        '
+        Me.BunifuLabel17.AllowParentOverrides = False
+        Me.BunifuLabel17.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel17.AutoEllipsis = False
+        Me.BunifuLabel17.CursorType = Nothing
+        Me.BunifuLabel17.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel17.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel17.Location = New System.Drawing.Point(617, 58)
+        Me.BunifuLabel17.Name = "BunifuLabel17"
+        Me.BunifuLabel17.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel17.Size = New System.Drawing.Size(70, 21)
+        Me.BunifuLabel17.TabIndex = 15
+        Me.BunifuLabel17.Text = "Councilor:"
+        Me.BunifuLabel17.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel17.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel18
+        '
+        Me.BunifuLabel18.AllowParentOverrides = False
+        Me.BunifuLabel18.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel18.AutoEllipsis = False
+        Me.BunifuLabel18.CursorType = Nothing
+        Me.BunifuLabel18.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel18.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel18.Location = New System.Drawing.Point(95, 103)
+        Me.BunifuLabel18.Name = "BunifuLabel18"
+        Me.BunifuLabel18.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel18.Size = New System.Drawing.Size(69, 21)
+        Me.BunifuLabel18.TabIndex = 16
+        Me.BunifuLabel18.Text = "Treasurer:"
+        Me.BunifuLabel18.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel18.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel19
+        '
+        Me.BunifuLabel19.AllowParentOverrides = False
+        Me.BunifuLabel19.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel19.AutoEllipsis = False
+        Me.BunifuLabel19.CursorType = Nothing
+        Me.BunifuLabel19.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel19.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel19.Location = New System.Drawing.Point(595, 103)
+        Me.BunifuLabel19.Name = "BunifuLabel19"
+        Me.BunifuLabel19.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel19.Size = New System.Drawing.Size(92, 21)
+        Me.BunifuLabel19.TabIndex = 17
+        Me.BunifuLabel19.Text = "Sk Chairman:"
+        Me.BunifuLabel19.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel19.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel20
+        '
+        Me.BunifuLabel20.AllowParentOverrides = False
+        Me.BunifuLabel20.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel20.AutoEllipsis = False
+        Me.BunifuLabel20.CursorType = Nothing
+        Me.BunifuLabel20.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel20.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel20.Location = New System.Drawing.Point(94, 149)
+        Me.BunifuLabel20.Name = "BunifuLabel20"
+        Me.BunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel20.Size = New System.Drawing.Size(70, 21)
+        Me.BunifuLabel20.TabIndex = 18
+        Me.BunifuLabel20.Text = "Councilor:"
+        Me.BunifuLabel20.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel20.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel21
+        '
+        Me.BunifuLabel21.AllowParentOverrides = False
+        Me.BunifuLabel21.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel21.AutoEllipsis = False
+        Me.BunifuLabel21.CursorType = Nothing
+        Me.BunifuLabel21.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel21.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel21.Location = New System.Drawing.Point(621, 149)
+        Me.BunifuLabel21.Name = "BunifuLabel21"
+        Me.BunifuLabel21.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel21.Size = New System.Drawing.Size(66, 21)
+        Me.BunifuLabel21.TabIndex = 19
+        Me.BunifuLabel21.Text = "Kagawad:"
+        Me.BunifuLabel21.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel21.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel22
+        '
+        Me.BunifuLabel22.AllowParentOverrides = False
+        Me.BunifuLabel22.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel22.AutoEllipsis = False
+        Me.BunifuLabel22.CursorType = Nothing
+        Me.BunifuLabel22.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel22.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel22.Location = New System.Drawing.Point(98, 196)
+        Me.BunifuLabel22.Name = "BunifuLabel22"
+        Me.BunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel22.Size = New System.Drawing.Size(66, 21)
+        Me.BunifuLabel22.TabIndex = 20
+        Me.BunifuLabel22.Text = "Kagawad:"
+        Me.BunifuLabel22.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel22.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel23
+        '
+        Me.BunifuLabel23.AllowParentOverrides = False
+        Me.BunifuLabel23.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel23.AutoEllipsis = False
+        Me.BunifuLabel23.CursorType = Nothing
+        Me.BunifuLabel23.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel23.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel23.Location = New System.Drawing.Point(607, 196)
+        Me.BunifuLabel23.Name = "BunifuLabel23"
+        Me.BunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel23.Size = New System.Drawing.Size(80, 21)
+        Me.BunifuLabel23.TabIndex = 21
+        Me.BunifuLabel23.Text = "Committee:"
+        Me.BunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel24
+        '
+        Me.BunifuLabel24.AllowParentOverrides = False
+        Me.BunifuLabel24.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel24.AutoEllipsis = False
+        Me.BunifuLabel24.CursorType = Nothing
+        Me.BunifuLabel24.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel24.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel24.Location = New System.Drawing.Point(98, 245)
+        Me.BunifuLabel24.Name = "BunifuLabel24"
+        Me.BunifuLabel24.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel24.Size = New System.Drawing.Size(66, 21)
+        Me.BunifuLabel24.TabIndex = 22
+        Me.BunifuLabel24.Text = "Kagawad:"
+        Me.BunifuLabel24.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel24.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel25
+        '
+        Me.BunifuLabel25.AllowParentOverrides = False
+        Me.BunifuLabel25.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel25.AutoEllipsis = False
+        Me.BunifuLabel25.CursorType = Nothing
+        Me.BunifuLabel25.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel25.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel25.Location = New System.Drawing.Point(607, 245)
+        Me.BunifuLabel25.Name = "BunifuLabel25"
+        Me.BunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel25.Size = New System.Drawing.Size(80, 21)
+        Me.BunifuLabel25.TabIndex = 23
+        Me.BunifuLabel25.Text = "Committee:"
+        Me.BunifuLabel25.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel25.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel26
+        '
+        Me.BunifuLabel26.AllowParentOverrides = False
+        Me.BunifuLabel26.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.BunifuLabel26.AutoEllipsis = False
+        Me.BunifuLabel26.CursorType = Nothing
+        Me.BunifuLabel26.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel26.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel26.Location = New System.Drawing.Point(84, 293)
+        Me.BunifuLabel26.Name = "BunifuLabel26"
+        Me.BunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel26.Size = New System.Drawing.Size(80, 21)
+        Me.BunifuLabel26.TabIndex = 24
+        Me.BunifuLabel26.Text = "Committee:"
+        Me.BunifuLabel26.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel26.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
         'SettingsOrganizationChart
         '
@@ -2171,6 +2431,7 @@ Partial Class SettingsOrganizationChart
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1172, 638)
         Me.Controls.Add(Me.GroupBox1)
+        Me.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "SettingsOrganizationChart"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -2261,4 +2522,17 @@ Partial Class SettingsOrganizationChart
     Friend WithEvents CaptainTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents CommitteeTextBox1 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents BunifuLabel52 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents CommitteeLabelStatus3 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents CommitteeLabelStatus2 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents KagawadLabelStatus3 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents SkChairmanLabelStatus As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents CouncilorLabelStatus3 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents CouncilorLabelStatus2 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents CommitteeLabelStatus1 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents KagawadLabelStatus2 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents KagawadLabelStatus1 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents CouncilorLabelStatus1 As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents TreasurerLabelStatus As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents SecretaryLabelStatus As Bunifu.UI.WinForms.BunifuLabel
+    Friend WithEvents CaptainNameLabelStatus As Bunifu.UI.WinForms.BunifuLabel
 End Class

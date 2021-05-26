@@ -33,6 +33,7 @@ Public Class SettingMissionVision
         Catch x As MySqlException
             MessageBox.Show(x.Message, "WARNING!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Finally
+            reader.Close()
             closeConnection()
         End Try
     End Sub

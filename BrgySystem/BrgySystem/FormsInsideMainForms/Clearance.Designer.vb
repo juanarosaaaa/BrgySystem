@@ -1016,11 +1016,11 @@ Partial Class Clearance
         Me.LabelStatus.AutoSize = True
         Me.LabelStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelStatus.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LabelStatus.Location = New System.Drawing.Point(252, 54)
+        Me.LabelStatus.Location = New System.Drawing.Point(270, 54)
         Me.LabelStatus.Name = "LabelStatus"
-        Me.LabelStatus.Size = New System.Drawing.Size(268, 16)
+        Me.LabelStatus.Size = New System.Drawing.Size(277, 16)
         Me.LabelStatus.TabIndex = 127
-        Me.LabelStatus.Text = "Status of residents, this is a place holder text"
+        Me.LabelStatus.Text = "Resident name does not exist in residents list!"
         '
         'BunifuLabel2
         '

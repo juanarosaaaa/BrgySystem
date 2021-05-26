@@ -107,7 +107,7 @@ Public Class Clearance
                 LabelStatus.Visible = False
             ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
                 LabelStatus.Visible = True
-                LabelStatus.Text = "Resident name does not exist in residents list!"
+
 
             Else
                 LabelStatus.Visible = False
