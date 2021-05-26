@@ -101,8 +101,6 @@ Public Class BarangayInformation
                                                             `ImagePath` = '" & imagePathManager.getImagePath(imagePath) & "',
                                                             `ImageName` = '" & imageName & "' WHERE ID = 1"
 
-
-
         manage.manipulateDataAt(query)
         closeConnection()
 
@@ -117,9 +115,8 @@ Public Class BarangayInformation
         Return False
     End Function
     'update
-    'check nulls
-    'display
-    ' check this \\\
+
+
 
 
 
