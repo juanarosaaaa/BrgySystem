@@ -192,11 +192,10 @@ Public Class SettingsOrganizationChart
             End If
 
         Catch x As ArgumentException
-
+        Finally
+            closeConnection()
         End Try
     End Sub
 
-    Private Sub TreasurerTextBox_TextChanged(sender As Object, e As EventArgs) Handles TreasurerTextBox.TextChanged
 
-    End Sub
 End Class

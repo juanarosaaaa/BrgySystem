@@ -11,6 +11,7 @@ Public Class Dashboard
         lblCountPurok.Text = getRowCount("purok")
 
         RichTextBoxMission.Text = setMissionVision.getMission
+        RichTextBoxVision.Text = setMissionVision.getVision
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -35,7 +36,6 @@ Public Class Dashboard
         Finally
             reader.Close()
             closeConnection()
-
         End Try
 
         Return "0"

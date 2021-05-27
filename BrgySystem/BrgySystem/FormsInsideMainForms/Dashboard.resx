@@ -1989,27 +1989,6 @@
         cb1gGDCbrx8Y3yPG9H1j+3Pd9/75LXXn2Ztu+v/+zFeBOsrYDAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="BunifuPictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAYAAACOqiAdAAAABGdBTUEAALGPC/xhBQAAA4tJREFUeF7t
-        nFmoTVEchzcyRIQyZhYlQ+RBypShZMgQwhNFhjIriYjihTyKoowvHlDkgSIePSkZHlAiyoOMkfn7rdU6
-        7XTrrruOk9tZ/6++Wv9d99y9fufuae21bmEYhmEYhmEYhlE17XEiLm6ik7AbZkdL3IVf8Xeiv/AajsFs
-        2Ijq/De8iReaqH7mDeozPuMszILX+BN1yKXSDg+iwnuHPbGu6Y7q7BNXVc9Z1Ocdc1UdMwDV0fuuqp7+
-        +AM/YWdtqFf+dXDiIuozz+OOZuZqHIlVU4vgpqI+szl7Cas6ImoRXAvcjA194//bQ/gS1efTmEwtgmvu
-        9MC3qDuJTtqQQo7Bieuofo93VQK5BncF1e8prkogBPcQF+EBPJ6Bz1H9VoDq80LUo2c0ITizKG5j9Dmv
-        HJz+6tZhQyMg9az6/AiVwUmMIgT3BXtpQybo3HYY27qqKHqjRoc+YtQhG4J74Kp8OIXq9whXeXTEaVtf
-        VzVCCC63q2pXHOebFZSBslAmjZJrcA1hwUWwADUI29FVHgsugqOo4a8hrvJYcBG0xr9HqS24RCy4CFbi
-        LdTVNWDBRXAEdcM70FUeCy4CPR108M0KFlwiFlwE2/Eplq+sFlwEO1Ev4vVwH7DgErHgErHgItBw+Qfs
-        5yqPBRfBBryH5Xl9FlwiFlwE9pCfiA0rJbIEr2L5daAFl4gFF4Ee8If6ZgULLoITqJnyw1zlseAimI16
-        a6+1HQELLhELLgLNtp/umxUsuAjOoPo9ylUeCy4CTX/Yh21c5bHgErHgIhiEy1Az5AMWXATnUP0e7SqP
-        BRfBcFyP5UmEFlwiycEp/W0YJtxpmuduDI8lGknQlaiPq/x41n4M0wgG414Md+Na9KvVLK1cVRSTUSOv
-        gTm4wjcdy1GzvwNrcIZv1nzfRHJwGptS+zIKdVS1xq7EUlS9x1VFsRVVr3KVn1OrWo8zQovgVIdV05qr
-        oefDMID4GLW4OOz8e3zhmy4IrXy566ra75tIDk7objrMgdUVR78ojMtr1HQehsl4+vbmY5iA3AXnYghC
-        7yxn+qZDV7LyggydZ8rTScdi+YZ0ApZHMGq5b6JJwYWFvnqrnTvPUFlE/2OGV6hDKHl5Th0wDZWBVhZG
-        sxaVtM43d/BGZqrP31EZaCFwNDpfbEEtEtEP56j6vgmT0AlVyxB1Es5J9TncphiGYRiGYRiGYSRRFH8A
-        s/yBiFsM+5IAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="lblCountClearance.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Palatino Linotype'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>

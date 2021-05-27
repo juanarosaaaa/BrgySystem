@@ -14,7 +14,7 @@ Public Class Clearance
 
     Private Sub CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ClearanceGridView.CellFormatting
         SettinggridViewImage.setImageAtButtonColumnOf("deleteButton_Column", ClearanceGridView, e, My.Resources.icons8_trash_24px)
-        SettinggridViewImage.setImageAtButtonColumnOf("viewButtonColumn", ClearanceGridView, e, My.Resources.icons8_edit_24px)
+
 
     End Sub
 
@@ -43,11 +43,13 @@ Public Class Clearance
         isBusinessNamemodified = False
         isTransactNumberModified = False
         BrgyClearanceComboBox.SelectedIndex = 0
+
         clearance.arrangeGridView()
         manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
-        TransactionNumber_TextBox.Text = clearance.getGeneratedTransactionNumber()
+        TransactionNumber_TextBox.Text = clearance.getGeneratedTransactionNumber
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldTextBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "residents", FullNameTextBox)
+
     End Sub
 
 
@@ -86,37 +88,35 @@ Public Class Clearance
 
 
 
-    'Private Sub FullNameTextBoxKeyDown(sender As Object, e As KeyEventArgs) Handles FullNameTextBox.KeyDown
-    '    'If e.KeyCode = Keys.Enter Then
-    '    '    clearance.setInputValuesFrom(FullNameTextBox.Text.Trim)
-    '    '    If (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
-    '    '        LabelStatus.Visible = True
-    '    '        LabelStatus.Text = "Resident '" & FullNameTextBox.Text.Trim.ToUpper & "' does not exist in resident's list."
-    '    '    End If
-    '    'End If
-    'End Sub
+    Private Sub FullNameTextBoxKeyDown(sender As Object, e As KeyEventArgs) Handles FullNameTextBox.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            clearance.setInputValuesFrom(FullNameTextBox.Text.Trim)
+            If (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
+                LabelStatus.Visible = True
+            End If
+        End If
+    End Sub
 
     Private Sub NameTextBoxIsClick(sender As Object, e As EventArgs) Handles FullNameTextBox.Click
         IsAlreadyStartAtName = True
     End Sub
 
     Private Sub nameTextBoxtTExtChanged(sender As Object, e As EventArgs) Handles FullNameTextBox.TextChange
-        If IsAlreadyStartAtName Then
-            clearance.setInputValuesFrom(FullNameTextBox.Text.Trim)
-            If InputIsNull(FullNameTextBox.Text.Trim) Then
-                AddressTextBox.Clear()
-                SexTextBox.Clear()
-                AgeTextBox.Clear()
-                LabelStatus.Visible = False
-            ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
-                LabelStatus.Visible = True
 
-
-            Else
-                LabelStatus.Visible = False
-            End If
-
+        If InputIsNull(FullNameTextBox.Text.Trim) Then
+            AddressTextBox.Clear()
+            SexTextBox.Clear()
+            AgeTextBox.Clear()
+            LabelStatus.Visible = False
+        ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
+            closeConnection()
+            LabelStatus.Visible = True
+        Else
+            LabelStatus.Visible = False
         End If
+
+
+
     End Sub
 
     Private Sub ClearanceGridViewClicked(sender As Object, e As DataGridViewCellEventArgs) Handles ClearanceGridView.CellClick
@@ -140,6 +140,10 @@ Public Class Clearance
         TotalTextbox.Text = Val(total)
     End Sub
 
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
     Private Sub TransactionNumber_TextBox_KeyDown(sender As Object, e As KeyEventArgs) Handles TransactionNumber_TextBox.KeyDown
         isTransactNumberModified = True
     End Sub
@@ -148,6 +152,8 @@ Public Class Clearance
 
 
     Private Sub addButton_Click_1(sender As Object, e As EventArgs) Handles addButton.Click
+
+
         If Val(AmountTextbox.Text) < Val(TotalTextbox.Text) Then
             MessageBox.Show("INSUFFICIENT AMOUNT.", "NO BALANCE", MessageBoxButtons.OK, MessageBoxIcon.Error)
         ElseIf clearance.addClearance(clearance.insertClearanceQuery) Then

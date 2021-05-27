@@ -37,7 +37,7 @@
 
 
 
-    Private Sub SearchFieldIsClicked(sender As Object, e As EventArgs)
+    Private Sub SearchFieldIsClicked(sender As Object, e As EventArgs) Handles SearchfieldTExtBox.Click
         isAlreadyStart = True
     End Sub
 
@@ -46,7 +46,7 @@
 
 
 
-    Private Sub SearchfieldTExtBox_TextChanged(sender As Object, e As EventArgs)
+    Private Sub SearchfieldTExtBox_TextChanged(sender As Object, e As EventArgs) Handles SearchfieldTExtBox.TextChange
         valueYouSearchFor = officials_.getOfficialsQueryValuesSelectedColumn + "WHERE NAME LIKE '%" & SearchfieldTExtBox.Text.Trim & "%' "
         If InputIsNull(SearchfieldTExtBox.Text.Trim) And isAlreadyStart Then
             manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
@@ -59,7 +59,7 @@
     End Sub
 
 
-    Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs)
+    Private Sub SearchFieldKeyDown(sender As Object, e As KeyEventArgs) Handles SearchfieldTExtBox.KeyDown
         If e.KeyCode = Keys.Enter Then
             search.searchValueIn(valueYouSearchFor, OfficialsGridVIew)
         End If
@@ -71,7 +71,7 @@
 
 
 
-    Private Sub BrowseButton_Click(sender As Object, e As EventArgs)
+    Private Sub BrowseButton_Click(sender As Object, e As EventArgs) Handles BrowseButton.Click
         imageFile.openImageFromPictureBox(OfficialsPictureBox)
     End Sub
 
@@ -121,7 +121,7 @@
 
 
 
-    Private Sub SaveButton_Click(sender As Object, e As EventArgs)
+    Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
         Try
             If OfficialsPictureBox.Image Is OfficialsPictureBox.InitialImage Then
                 Throw New NoNullAllowedException
@@ -142,7 +142,7 @@
         End If
     End Sub
 
-    Private Sub UpdateButton_Click(sender As Object, e As EventArgs)
+    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
         Try
             If OfficialsPictureBox.Image Is OfficialsPictureBox.InitialImage Then
                 Throw New NoNullAllowedException
@@ -166,18 +166,18 @@
 
 
 
-    Private Sub AddNewButton_Click(sender As Object, e As EventArgs)
+    Private Sub AddNewButton_Click(sender As Object, e As EventArgs) Handles AddNewButton.Click
         officials_.clearAllInputs()
         SaveButton.Enabled = True
         UpdateButton.Enabled = False
     End Sub
 
-    Private Sub PositionCombobox_SelectedIndexChanged(sender As Object, e As EventArgs)
+    Private Sub PositionCombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles PositionCombobox.SelectedIndexChanged
         isCaptainModified = True
 
     End Sub
 
-    Private Sub FullnameKeyDown(sender As Object, e As KeyEventArgs)
+    Private Sub FullnameKeyDown(sender As Object, e As KeyEventArgs) Handles FullnameTextBox.KeyDown
         isNameModified = True
     End Sub
 
@@ -185,7 +185,7 @@
 
 
 
-    Private Sub ContactKeyDown(sender As Object, e As KeyEventArgs)
+    Private Sub ContactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
         isContactModified = True
     End Sub
 
