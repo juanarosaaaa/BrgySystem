@@ -59,6 +59,7 @@
 
     Private Sub Logout_Button_Click_1(sender As Object, e As EventArgs) Handles Logout_Button.Click
         My.Settings.UserNotLoggedOut = False
+        My.Settings.Save()
         closeConnection() 'check later
         Application.Exit()
 
@@ -66,5 +67,17 @@
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         showPanelDisplayOf(Dashboard)
+    End Sub
+
+
+
+    Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+
+        If MessageBox.Show("Are you sure you want to quit Barangay System?", "Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            My.Settings.UserNotLoggedOut = True
+            My.Settings.Save()
+
+        End If
+
     End Sub
 End Class

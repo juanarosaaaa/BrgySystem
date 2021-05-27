@@ -525,5 +525,41 @@
   <ItemGroup>
     <None Include="Resources\barangay1Logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_20px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_20px_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_20px_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_20px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_20px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_27px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_27px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_33px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_folder_78px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_downtown_70px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_people_78px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

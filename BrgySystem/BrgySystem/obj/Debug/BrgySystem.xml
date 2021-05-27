@@ -42,6 +42,56 @@ BrgySystem
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_close_window_20px_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_close_window_27px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_close_window_27px_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_close_window_33px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_delete_20px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_delete_20px_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_delete_20px_11">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_delete_20px_12">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_delete_20px1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_downtown_55px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:BrgySystem.My.Resources.Resources.icons8_edit_24px">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -58,6 +108,11 @@ BrgySystem
 </summary>
 </member>
 <member name="P:BrgySystem.My.Resources.Resources.icons8_leadership_30px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_login_26px">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
