@@ -82,11 +82,10 @@ Public Class MainForm
 
     Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
-        If MessageBox.Show("Are you sure you want to quit Barangay System?", "Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-            My.Settings.UserNotLoggedOut = True
+
+        My.Settings.UserNotLoggedOut = True
             My.Settings.Save()
 
-        End If
 
     End Sub
 
