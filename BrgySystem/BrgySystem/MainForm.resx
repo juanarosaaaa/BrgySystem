@@ -121,24 +121,6 @@
     <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 18pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(245, 245, 245); text-align: left; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BunifuTextBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAPkAAAAiCAYAAACdtn98AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVHhe7dOxDQIxAARB91+VTU4BiPgr+AJAlhxRwjIn
-        TXL5DjP7g631eM85P0DH7vokPsY+nq8LCNldn8RFDkUihziRQ5zIIU7kECdyiBM5xIkc4kQOcSKHOJFD
-        nMghTuQQJ3KIEznEiRziRA5xIoc4kUOcyCFO5BAncogTOcSJHOJEDnEihziRQ5zIIU7kEPcT+br3AZSs
-        +yRuZt2N8QUHLqhxZtgpYAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="AdminNameTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAPcAAAAiCAYAAACDf0/PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVHhe7dOxDQIxAARB91+VTU4BiPgr+AJAlhzRAas5
-        aZLLd5hZeGs93nPOD/D/ds8n7TH28XxdQMDu+aQtbigRN0SJG6LEDVHihihxQ5S4IUrcECVuiBI3RIkb
-        osQNUeKGKHFDlLghStwQJW6IEjdEiRuixA1R4oYocUOUuCFK3BAlbogSN0SJG6LEDVHihqifuNe9D6Bg
-        3SdtM+ttjC+xFMcO5BErDQAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="MainPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABGUAAAMBCAYAAABGKAmcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
