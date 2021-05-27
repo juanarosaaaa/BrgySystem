@@ -48,7 +48,6 @@ Partial Class Dashboard
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.lblCountResidents = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.lblMission = New Guna.UI.WinForms.GunaLabel()
         Me.BunifuGradientPanel5.SuspendLayout()
         Me.BunifuGradientPanel4.SuspendLayout()
         Me.BunifuGradientPanel3.SuspendLayout()
@@ -154,7 +153,6 @@ Partial Class Dashboard
         Me.BunifuGradientPanel4.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel4.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuGradientPanel4.BorderRadius = 25
-        Me.BunifuGradientPanel4.Controls.Add(Me.lblMission)
         Me.BunifuGradientPanel4.Controls.Add(Me.RichTextBoxMission)
         Me.BunifuGradientPanel4.Controls.Add(Me.BunifuLabel8)
         Me.BunifuGradientPanel4.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(251, Byte), Integer))
@@ -467,16 +465,6 @@ Partial Class Dashboard
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'lblMission
-        '
-        Me.lblMission.AutoSize = True
-        Me.lblMission.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMission.Location = New System.Drawing.Point(3, 150)
-        Me.lblMission.Name = "lblMission"
-        Me.lblMission.Size = New System.Drawing.Size(1444, 75)
-        Me.lblMission.TabIndex = 6
-        Me.lblMission.Text = resources.GetString("lblMission.Text")
-        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -539,5 +527,4 @@ Partial Class Dashboard
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents RichTextBoxMission As RichTextBox
     Friend WithEvents RichTextBoxVision As RichTextBox
-    Friend WithEvents lblMission As Guna.UI.WinForms.GunaLabel
 End Class
