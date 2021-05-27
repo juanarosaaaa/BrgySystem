@@ -92,7 +92,17 @@ BrgySystem
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_downtown_70px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:BrgySystem.My.Resources.Resources.icons8_edit_24px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_folder_78px">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -123,6 +133,11 @@ BrgySystem
 </summary>
 </member>
 <member name="P:BrgySystem.My.Resources.Resources.icons8_people_50px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_people_78px">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

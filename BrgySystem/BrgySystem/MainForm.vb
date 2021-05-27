@@ -1,5 +1,5 @@
 ﻿Public Class MainForm
-
+    Private brgyInfo As BarangayInformation = New BarangayInformation
 
 
     Sub showPanelDisplayOf(panelDisplay As Form)
@@ -67,6 +67,14 @@
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         showPanelDisplayOf(Dashboard)
+        brgyInfo.displayInformation()
+        MunicipalityLogo.Image = Image.FromFile(brgyInfo.getImagePath)
+        Try
+            imageFile.setImage(brgyInfo.getImagePath, MunicipalityLogoPictureBox)
+            MunicipalityLogoPictureBox.Image = Image.FromFile(brgyInfo.getImagePath)
+        Catch n As FileNotFoundException
+            MessageBox.Show("Municipality Logo not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
 
@@ -80,4 +88,6 @@
         End If
 
     End Sub
+
+
 End Class

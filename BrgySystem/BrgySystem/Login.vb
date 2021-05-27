@@ -7,9 +7,9 @@ Public Class Login
         checkConnectionConnectivityInForm(Me)
 
         If (My.Settings.UserNotLoggedOut) Then
+            closeConnection()
             MainForm.Show()
             Me.Close()
-            closeConnection()
         End If
 
 

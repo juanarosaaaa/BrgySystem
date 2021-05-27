@@ -15,7 +15,7 @@ Public Class SettingsBarangayDetailsForm
         ContactNumberTextBox.Text = brgyInfo.getContactNumber
 
         Try
-            imageFile.setImage(brgyInfo.getImagePath, MunicipalityLogoPictureBox)
+            'imageFile.setImage(brgyInfo.getImagePath, MunicipalityLogoPictureBox)
             MunicipalityLogoPictureBox.Image = Image.FromFile(brgyInfo.getImagePath)
         Catch n As FileNotFoundException
             MessageBox.Show("Municipality Logo not found. File might have been moved or deleted.", "IMAGE NOT FOUND!", MessageBoxButtons.OK, MessageBoxIcon.Error)

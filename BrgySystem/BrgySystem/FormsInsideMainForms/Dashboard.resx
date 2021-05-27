@@ -625,7 +625,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="RichTextBox2.Text" xml:space="preserve">
+  <data name="RichTextBoxVision.Text" xml:space="preserve">
     <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
   </data>
   <data name="BunifuLabel10.BaseStylesheet" xml:space="preserve">
@@ -1128,7 +1128,7 @@
         /P8qMN8dntOe/QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="RichTextBox1.Text" xml:space="preserve">
+  <data name="RichTextBoxMission.Text" xml:space="preserve">
     <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
   </data>
   <data name="BunifuLabel8.BaseStylesheet" xml:space="preserve">
@@ -1330,7 +1330,7 @@
         62dj+/e9x/3Mvx9NOxccOfIfyuizhAIpKDYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BunifuLabel6.BaseStylesheet" xml:space="preserve">
+  <data name="lblCountPurok.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Sylfaen'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="BunifuLabel7.BaseStylesheet" xml:space="preserve">
@@ -1553,7 +1553,7 @@
         s/yBiFsM+5IAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BunifuLabel9.BaseStylesheet" xml:space="preserve">
+  <data name="lblCountClearance.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Sylfaen'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="BunifuLabel11.BaseStylesheet" xml:space="preserve">
@@ -1755,7 +1755,7 @@
         62dj+/e9x/3Mvx9NOxccOfIfyuizhAIpKDYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BunifuLabel3.BaseStylesheet" xml:space="preserve">
+  <data name="lblCountResidents.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Sylfaen'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="BunifuLabel2.BaseStylesheet" xml:space="preserve">
