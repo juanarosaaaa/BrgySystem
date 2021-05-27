@@ -41,13 +41,13 @@ Partial Class MainForm
         Me.Officials_Button = New Guna.UI2.WinForms.Guna2Button()
         Me.Logout_Button = New Guna.UI2.WinForms.Guna2Button()
         Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.MunicipalityLogo = New Bunifu.UI.WinForms.BunifuPictureBox()
         Me.BunifuTextBox3 = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.BunifuPictureBox1 = New Bunifu.UI.WinForms.BunifuPictureBox()
         Me.AdminNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.MainPanel = New Bunifu.UI.WinForms.BunifuPanel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.MunicipalityLogo = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MunicipalityLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Dashboard_Button
@@ -57,10 +57,10 @@ Partial Class MainForm
         Me.Dashboard_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Dashboard_Button.ForeColor = System.Drawing.Color.White
         Me.Dashboard_Button.HoverState.Parent = Me.Dashboard_Button
-        Me.Dashboard_Button.Location = New System.Drawing.Point(2, 235)
+        Me.Dashboard_Button.Location = New System.Drawing.Point(-2, 220)
         Me.Dashboard_Button.Name = "Dashboard_Button"
         Me.Dashboard_Button.ShadowDecoration.Parent = Me.Dashboard_Button
-        Me.Dashboard_Button.Size = New System.Drawing.Size(240, 45)
+        Me.Dashboard_Button.Size = New System.Drawing.Size(247, 45)
         Me.Dashboard_Button.TabIndex = 17
         Me.Dashboard_Button.Text = "Dashboard"
         '
@@ -71,10 +71,10 @@ Partial Class MainForm
         Me.Residents_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Residents_Button.ForeColor = System.Drawing.Color.White
         Me.Residents_Button.HoverState.Parent = Me.Residents_Button
-        Me.Residents_Button.Location = New System.Drawing.Point(0, 286)
+        Me.Residents_Button.Location = New System.Drawing.Point(-2, 270)
         Me.Residents_Button.Name = "Residents_Button"
         Me.Residents_Button.ShadowDecoration.Parent = Me.Residents_Button
-        Me.Residents_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Residents_Button.Size = New System.Drawing.Size(247, 45)
         Me.Residents_Button.TabIndex = 18
         Me.Residents_Button.Text = "Residents"
         '
@@ -85,10 +85,10 @@ Partial Class MainForm
         Me.Settings_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Settings_Button.ForeColor = System.Drawing.Color.White
         Me.Settings_Button.HoverState.Parent = Me.Settings_Button
-        Me.Settings_Button.Location = New System.Drawing.Point(0, 591)
+        Me.Settings_Button.Location = New System.Drawing.Point(-2, 574)
         Me.Settings_Button.Name = "Settings_Button"
         Me.Settings_Button.ShadowDecoration.Parent = Me.Settings_Button
-        Me.Settings_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Settings_Button.Size = New System.Drawing.Size(246, 45)
         Me.Settings_Button.TabIndex = 19
         Me.Settings_Button.Text = "Settings"
         '
@@ -99,10 +99,10 @@ Partial Class MainForm
         Me.OrganizationalChartButton.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OrganizationalChartButton.ForeColor = System.Drawing.Color.White
         Me.OrganizationalChartButton.HoverState.Parent = Me.OrganizationalChartButton
-        Me.OrganizationalChartButton.Location = New System.Drawing.Point(0, 540)
+        Me.OrganizationalChartButton.Location = New System.Drawing.Point(-5, 523)
         Me.OrganizationalChartButton.Name = "OrganizationalChartButton"
         Me.OrganizationalChartButton.ShadowDecoration.Parent = Me.OrganizationalChartButton
-        Me.OrganizationalChartButton.Size = New System.Drawing.Size(242, 45)
+        Me.OrganizationalChartButton.Size = New System.Drawing.Size(248, 45)
         Me.OrganizationalChartButton.TabIndex = 20
         Me.OrganizationalChartButton.Text = "Organizational Chart"
         '
@@ -113,10 +113,10 @@ Partial Class MainForm
         Me.Archive_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Archive_Button.ForeColor = System.Drawing.Color.White
         Me.Archive_Button.HoverState.Parent = Me.Archive_Button
-        Me.Archive_Button.Location = New System.Drawing.Point(0, 489)
+        Me.Archive_Button.Location = New System.Drawing.Point(-2, 472)
         Me.Archive_Button.Name = "Archive_Button"
         Me.Archive_Button.ShadowDecoration.Parent = Me.Archive_Button
-        Me.Archive_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Archive_Button.Size = New System.Drawing.Size(245, 45)
         Me.Archive_Button.TabIndex = 21
         Me.Archive_Button.Text = "Archive"
         '
@@ -127,10 +127,10 @@ Partial Class MainForm
         Me.Clearance_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Clearance_Button.ForeColor = System.Drawing.Color.White
         Me.Clearance_Button.HoverState.Parent = Me.Clearance_Button
-        Me.Clearance_Button.Location = New System.Drawing.Point(0, 439)
+        Me.Clearance_Button.Location = New System.Drawing.Point(-2, 421)
         Me.Clearance_Button.Name = "Clearance_Button"
         Me.Clearance_Button.ShadowDecoration.Parent = Me.Clearance_Button
-        Me.Clearance_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Clearance_Button.Size = New System.Drawing.Size(244, 45)
         Me.Clearance_Button.TabIndex = 23
         Me.Clearance_Button.Text = "Clearance"
         '
@@ -141,10 +141,10 @@ Partial Class MainForm
         Me.Purok_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Purok_Button.ForeColor = System.Drawing.Color.White
         Me.Purok_Button.HoverState.Parent = Me.Purok_Button
-        Me.Purok_Button.Location = New System.Drawing.Point(0, 388)
+        Me.Purok_Button.Location = New System.Drawing.Point(-2, 370)
         Me.Purok_Button.Name = "Purok_Button"
         Me.Purok_Button.ShadowDecoration.Parent = Me.Purok_Button
-        Me.Purok_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Purok_Button.Size = New System.Drawing.Size(244, 45)
         Me.Purok_Button.TabIndex = 24
         Me.Purok_Button.Text = "Purok"
         '
@@ -155,10 +155,10 @@ Partial Class MainForm
         Me.Officials_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Officials_Button.ForeColor = System.Drawing.Color.White
         Me.Officials_Button.HoverState.Parent = Me.Officials_Button
-        Me.Officials_Button.Location = New System.Drawing.Point(0, 337)
+        Me.Officials_Button.Location = New System.Drawing.Point(-2, 320)
         Me.Officials_Button.Name = "Officials_Button"
         Me.Officials_Button.ShadowDecoration.Parent = Me.Officials_Button
-        Me.Officials_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Officials_Button.Size = New System.Drawing.Size(247, 45)
         Me.Officials_Button.TabIndex = 25
         Me.Officials_Button.Text = "Officials"
         '
@@ -169,10 +169,10 @@ Partial Class MainForm
         Me.Logout_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Logout_Button.ForeColor = System.Drawing.Color.White
         Me.Logout_Button.HoverState.Parent = Me.Logout_Button
-        Me.Logout_Button.Location = New System.Drawing.Point(-1, 644)
+        Me.Logout_Button.Location = New System.Drawing.Point(-2, 625)
         Me.Logout_Button.Name = "Logout_Button"
         Me.Logout_Button.ShadowDecoration.Parent = Me.Logout_Button
-        Me.Logout_Button.Size = New System.Drawing.Size(243, 45)
+        Me.Logout_Button.Size = New System.Drawing.Size(247, 45)
         Me.Logout_Button.TabIndex = 26
         Me.Logout_Button.Text = "Logout"
         '
@@ -184,7 +184,7 @@ Partial Class MainForm
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.Font = New System.Drawing.Font("Times New Roman", 18.0!)
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel1.Location = New System.Drawing.Point(57, 15)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(68, 21)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BunifuLabel1.Size = New System.Drawing.Size(167, 27)
@@ -193,27 +193,10 @@ Partial Class MainForm
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'MunicipalityLogo
-        '
-        Me.MunicipalityLogo.AllowFocused = False
-        Me.MunicipalityLogo.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.MunicipalityLogo.AutoSizeHeight = True
-        Me.MunicipalityLogo.BorderRadius = 22
-        Me.MunicipalityLogo.Image = CType(resources.GetObject("MunicipalityLogo.Image"), System.Drawing.Image)
-        Me.MunicipalityLogo.IsCircle = True
-        Me.MunicipalityLogo.Location = New System.Drawing.Point(7, 8)
-        Me.MunicipalityLogo.Name = "MunicipalityLogo"
-        Me.MunicipalityLogo.Size = New System.Drawing.Size(44, 44)
-        Me.MunicipalityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.MunicipalityLogo.TabIndex = 27
-        Me.MunicipalityLogo.TabStop = False
-        Me.MunicipalityLogo.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle
-        '
         'BunifuTextBox3
         '
         Me.BunifuTextBox3.AcceptsReturn = False
         Me.BunifuTextBox3.AcceptsTab = False
-        Me.BunifuTextBox3.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BunifuTextBox3.AnimationSpeed = 200
         Me.BunifuTextBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
         Me.BunifuTextBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
@@ -237,7 +220,7 @@ Partial Class MainForm
         Me.BunifuTextBox3.IconRight = Nothing
         Me.BunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox3.Lines = New String() {"ADMINISTRATOR"}
-        Me.BunifuTextBox3.Location = New System.Drawing.Point(-5, 135)
+        Me.BunifuTextBox3.Location = New System.Drawing.Point(-2, 149)
         Me.BunifuTextBox3.MaxLength = 32767
         Me.BunifuTextBox3.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox3.Modified = False
@@ -273,7 +256,7 @@ Partial Class MainForm
         Me.BunifuTextBox3.SelectionLength = 0
         Me.BunifuTextBox3.SelectionStart = 0
         Me.BunifuTextBox3.ShortcutsEnabled = True
-        Me.BunifuTextBox3.Size = New System.Drawing.Size(249, 31)
+        Me.BunifuTextBox3.Size = New System.Drawing.Size(249, 34)
         Me.BunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox3.TabIndex = 12
         Me.BunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -284,27 +267,10 @@ Partial Class MainForm
         Me.BunifuTextBox3.UseSystemPasswordChar = False
         Me.BunifuTextBox3.WordWrap = True
         '
-        'BunifuPictureBox1
-        '
-        Me.BunifuPictureBox1.AllowFocused = False
-        Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.BunifuPictureBox1.AutoSizeHeight = True
-        Me.BunifuPictureBox1.BorderRadius = 0
-        Me.BunifuPictureBox1.Image = Global.BrgySystem.My.Resources.Resources.icons8_administrator_male_60px
-        Me.BunifuPictureBox1.IsCircle = False
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(89, 44)
-        Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
-        Me.BunifuPictureBox1.Size = New System.Drawing.Size(60, 60)
-        Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuPictureBox1.TabIndex = 11
-        Me.BunifuPictureBox1.TabStop = False
-        Me.BunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square
-        '
         'AdminNameTextBox
         '
         Me.AdminNameTextBox.AcceptsReturn = False
         Me.AdminNameTextBox.AcceptsTab = False
-        Me.AdminNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.AdminNameTextBox.AnimationSpeed = 200
         Me.AdminNameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
         Me.AdminNameTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
@@ -328,7 +294,7 @@ Partial Class MainForm
         Me.AdminNameTextBox.IconRight = Nothing
         Me.AdminNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.AdminNameTextBox.Lines = New String() {"Juan Tamad"}
-        Me.AdminNameTextBox.Location = New System.Drawing.Point(-1, 108)
+        Me.AdminNameTextBox.Location = New System.Drawing.Point(-1, 114)
         Me.AdminNameTextBox.MaxLength = 32767
         Me.AdminNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.AdminNameTextBox.Modified = False
@@ -364,7 +330,7 @@ Partial Class MainForm
         Me.AdminNameTextBox.SelectionLength = 0
         Me.AdminNameTextBox.SelectionStart = 0
         Me.AdminNameTextBox.ShortcutsEnabled = True
-        Me.AdminNameTextBox.Size = New System.Drawing.Size(245, 28)
+        Me.AdminNameTextBox.Size = New System.Drawing.Size(247, 34)
         Me.AdminNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.AdminNameTextBox.TabIndex = 12
         Me.AdminNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -392,6 +358,26 @@ Partial Class MainForm
         Me.MainPanel.Size = New System.Drawing.Size(1125, 769)
         Me.MainPanel.TabIndex = 1
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.BrgySystem.My.Resources.Resources.icons8_administrator_male_60px
+        Me.PictureBox1.Location = New System.Drawing.Point(93, 53)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(73, 60)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
+        '
+        'MunicipalityLogo
+        '
+        Me.MunicipalityLogo.Image = Global.BrgySystem.My.Resources.Resources.barangay1Logo
+        Me.MunicipalityLogo.Location = New System.Drawing.Point(4, 5)
+        Me.MunicipalityLogo.Name = "MunicipalityLogo"
+        Me.MunicipalityLogo.Size = New System.Drawing.Size(57, 57)
+        Me.MunicipalityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.MunicipalityLogo.TabIndex = 27
+        Me.MunicipalityLogo.TabStop = False
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -400,20 +386,20 @@ Partial Class MainForm
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(59, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1366, 768)
         Me.Controls.Add(Me.MunicipalityLogo)
-        Me.Controls.Add(Me.BunifuLabel1)
-        Me.Controls.Add(Me.BunifuTextBox3)
-        Me.Controls.Add(Me.BunifuPictureBox1)
-        Me.Controls.Add(Me.Logout_Button)
-        Me.Controls.Add(Me.AdminNameTextBox)
-        Me.Controls.Add(Me.Officials_Button)
-        Me.Controls.Add(Me.Purok_Button)
-        Me.Controls.Add(Me.Clearance_Button)
-        Me.Controls.Add(Me.Archive_Button)
-        Me.Controls.Add(Me.OrganizationalChartButton)
-        Me.Controls.Add(Me.Settings_Button)
-        Me.Controls.Add(Me.Residents_Button)
-        Me.Controls.Add(Me.Dashboard_Button)
         Me.Controls.Add(Me.MainPanel)
+        Me.Controls.Add(Me.Officials_Button)
+        Me.Controls.Add(Me.Clearance_Button)
+        Me.Controls.Add(Me.Dashboard_Button)
+        Me.Controls.Add(Me.Residents_Button)
+        Me.Controls.Add(Me.Settings_Button)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Logout_Button)
+        Me.Controls.Add(Me.BunifuTextBox3)
+        Me.Controls.Add(Me.OrganizationalChartButton)
+        Me.Controls.Add(Me.AdminNameTextBox)
+        Me.Controls.Add(Me.Archive_Button)
+        Me.Controls.Add(Me.BunifuLabel1)
+        Me.Controls.Add(Me.Purok_Button)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.MinimumSize = New System.Drawing.Size(1366, 768)
@@ -421,14 +407,13 @@ Partial Class MainForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MunicipalityLogo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents MainPanel As Bunifu.UI.WinForms.BunifuPanel
-    Friend WithEvents BunifuPictureBox1 As Bunifu.UI.WinForms.BunifuPictureBox
     Friend WithEvents BunifuTextBox3 As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents AdminNameTextBox As Bunifu.UI.WinForms.BunifuTextBox
     Friend WithEvents Dashboard_Button As Guna.UI2.WinForms.Guna2Button
@@ -441,5 +426,6 @@ Partial Class MainForm
     Friend WithEvents Officials_Button As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Logout_Button As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BunifuLabel1 As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents MunicipalityLogo As Bunifu.UI.WinForms.BunifuPictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents MunicipalityLogo As PictureBox
 End Class
