@@ -60,16 +60,17 @@ Partial Class MainForm
         Me.MainPanel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MainPanel.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.MainPanel.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
         Me.MainPanel.BackgroundImage = CType(resources.GetObject("MainPanel.BackgroundImage"), System.Drawing.Image)
         Me.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainPanel.BorderColor = System.Drawing.Color.Transparent
         Me.MainPanel.BorderRadius = 3
         Me.MainPanel.BorderThickness = 1
-        Me.MainPanel.Location = New System.Drawing.Point(242, -1)
+        Me.MainPanel.Location = New System.Drawing.Point(282, -1)
+        Me.MainPanel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.ShowBorders = True
-        Me.MainPanel.Size = New System.Drawing.Size(1125, 769)
+        Me.MainPanel.Size = New System.Drawing.Size(1313, 1005)
         Me.MainPanel.TabIndex = 1
         '
         'GroupBox1
@@ -78,9 +79,11 @@ Partial Class MainForm
         Me.GroupBox1.Controls.Add(Me.BunifuTextBox2)
         Me.GroupBox1.Controls.Add(Me.BunifuTextBox1)
         Me.GroupBox1.Controls.Add(Me.BunifuPictureBox1)
-        Me.GroupBox1.Location = New System.Drawing.Point(5, 63)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 83)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(234, 82)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(273, 108)
         Me.GroupBox1.TabIndex = 16
         Me.GroupBox1.TabStop = False
         '
@@ -102,7 +105,7 @@ Partial Class MainForm
         Me.BunifuTextBox3.BorderThickness = 1
         Me.BunifuTextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox3.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.BunifuTextBox3.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox3.DefaultText = "ADMINISTRATOR"
         Me.BunifuTextBox3.FillColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.BunifuTextBox3.HideSelection = True
@@ -112,7 +115,8 @@ Partial Class MainForm
         Me.BunifuTextBox3.IconRight = Nothing
         Me.BunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox3.Lines = New String() {"ADMINISTRATOR"}
-        Me.BunifuTextBox3.Location = New System.Drawing.Point(42, 57)
+        Me.BunifuTextBox3.Location = New System.Drawing.Point(49, 74)
+        Me.BunifuTextBox3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BunifuTextBox3.MaxLength = 32767
         Me.BunifuTextBox3.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox3.Modified = False
@@ -138,7 +142,7 @@ Partial Class MainForm
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox3.OnIdleState = StateProperties4
-        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(3)
+        Me.BunifuTextBox3.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BunifuTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox3.PlaceholderText = "Enter text"
@@ -148,7 +152,7 @@ Partial Class MainForm
         Me.BunifuTextBox3.SelectionLength = 0
         Me.BunifuTextBox3.SelectionStart = 0
         Me.BunifuTextBox3.ShortcutsEnabled = True
-        Me.BunifuTextBox3.Size = New System.Drawing.Size(192, 23)
+        Me.BunifuTextBox3.Size = New System.Drawing.Size(224, 41)
         Me.BunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox3.TabIndex = 12
         Me.BunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -177,7 +181,7 @@ Partial Class MainForm
         Me.BunifuTextBox2.BorderThickness = 1
         Me.BunifuTextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox2.DefaultFont = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.BunifuTextBox2.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox2.DefaultText = "Juan Tamad"
         Me.BunifuTextBox2.FillColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.BunifuTextBox2.HideSelection = True
@@ -187,7 +191,8 @@ Partial Class MainForm
         Me.BunifuTextBox2.IconRight = Nothing
         Me.BunifuTextBox2.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox2.Lines = New String() {"Juan Tamad"}
-        Me.BunifuTextBox2.Location = New System.Drawing.Point(42, 34)
+        Me.BunifuTextBox2.Location = New System.Drawing.Point(49, 45)
+        Me.BunifuTextBox2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BunifuTextBox2.MaxLength = 32767
         Me.BunifuTextBox2.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox2.Modified = False
@@ -213,7 +218,7 @@ Partial Class MainForm
         StateProperties8.ForeColor = System.Drawing.Color.Empty
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox2.OnIdleState = StateProperties8
-        Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(3)
+        Me.BunifuTextBox2.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BunifuTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox2.PlaceholderText = "Enter text"
@@ -223,7 +228,7 @@ Partial Class MainForm
         Me.BunifuTextBox2.SelectionLength = 0
         Me.BunifuTextBox2.SelectionStart = 0
         Me.BunifuTextBox2.ShortcutsEnabled = True
-        Me.BunifuTextBox2.Size = New System.Drawing.Size(192, 23)
+        Me.BunifuTextBox2.Size = New System.Drawing.Size(224, 41)
         Me.BunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox2.TabIndex = 12
         Me.BunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -252,7 +257,7 @@ Partial Class MainForm
         Me.BunifuTextBox1.BorderThickness = 1
         Me.BunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.BunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuTextBox1.DefaultFont = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuTextBox1.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuTextBox1.DefaultText = "WELCOME"
         Me.BunifuTextBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.BunifuTextBox1.HideSelection = True
@@ -262,7 +267,8 @@ Partial Class MainForm
         Me.BunifuTextBox1.IconRight = Nothing
         Me.BunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTextBox1.Lines = New String() {"WELCOME"}
-        Me.BunifuTextBox1.Location = New System.Drawing.Point(42, 10)
+        Me.BunifuTextBox1.Location = New System.Drawing.Point(49, 13)
+        Me.BunifuTextBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BunifuTextBox1.MaxLength = 32767
         Me.BunifuTextBox1.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BunifuTextBox1.Modified = False
@@ -288,7 +294,7 @@ Partial Class MainForm
         StateProperties12.ForeColor = System.Drawing.Color.Empty
         StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.BunifuTextBox1.OnIdleState = StateProperties12
-        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3)
+        Me.BunifuTextBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BunifuTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BunifuTextBox1.PlaceholderText = "Enter text"
@@ -298,7 +304,7 @@ Partial Class MainForm
         Me.BunifuTextBox1.SelectionLength = 0
         Me.BunifuTextBox1.SelectionStart = 7
         Me.BunifuTextBox1.ShortcutsEnabled = True
-        Me.BunifuTextBox1.Size = New System.Drawing.Size(192, 24)
+        Me.BunifuTextBox1.Size = New System.Drawing.Size(224, 41)
         Me.BunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BunifuTextBox1.TabIndex = 12
         Me.BunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -317,9 +323,10 @@ Partial Class MainForm
         Me.BunifuPictureBox1.BorderRadius = 21
         Me.BunifuPictureBox1.Image = CType(resources.GetObject("BunifuPictureBox1.Image"), System.Drawing.Image)
         Me.BunifuPictureBox1.IsCircle = False
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(0, 20)
+        Me.BunifuPictureBox1.Location = New System.Drawing.Point(0, 27)
+        Me.BunifuPictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
-        Me.BunifuPictureBox1.Size = New System.Drawing.Size(42, 42)
+        Me.BunifuPictureBox1.Size = New System.Drawing.Size(49, 55)
         Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuPictureBox1.TabIndex = 11
         Me.BunifuPictureBox1.TabStop = False
@@ -331,12 +338,13 @@ Partial Class MainForm
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel1.Font = New System.Drawing.Font("Times New Roman", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.BunifuLabel1.Location = New System.Drawing.Point(12, 18)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(28, 30)
+        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(217, 36)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(234, 45)
         Me.BunifuLabel1.TabIndex = 0
         Me.BunifuLabel1.Text = "Barangay System"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -346,13 +354,14 @@ Partial Class MainForm
         '
         Me.Dashboard_Button.CheckedState.Parent = Me.Dashboard_Button
         Me.Dashboard_Button.CustomImages.Parent = Me.Dashboard_Button
-        Me.Dashboard_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Dashboard_Button.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Dashboard_Button.ForeColor = System.Drawing.Color.White
         Me.Dashboard_Button.HoverState.Parent = Me.Dashboard_Button
-        Me.Dashboard_Button.Location = New System.Drawing.Point(2, 170)
+        Me.Dashboard_Button.Location = New System.Drawing.Point(2, 222)
+        Me.Dashboard_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Dashboard_Button.Name = "Dashboard_Button"
         Me.Dashboard_Button.ShadowDecoration.Parent = Me.Dashboard_Button
-        Me.Dashboard_Button.Size = New System.Drawing.Size(240, 45)
+        Me.Dashboard_Button.Size = New System.Drawing.Size(280, 58)
         Me.Dashboard_Button.TabIndex = 17
         Me.Dashboard_Button.Text = "Dashboard"
         '
@@ -360,13 +369,14 @@ Partial Class MainForm
         '
         Me.Residents_Button.CheckedState.Parent = Me.Residents_Button
         Me.Residents_Button.CustomImages.Parent = Me.Residents_Button
-        Me.Residents_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Residents_Button.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Residents_Button.ForeColor = System.Drawing.Color.White
         Me.Residents_Button.HoverState.Parent = Me.Residents_Button
-        Me.Residents_Button.Location = New System.Drawing.Point(0, 221)
+        Me.Residents_Button.Location = New System.Drawing.Point(2, 289)
+        Me.Residents_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Residents_Button.Name = "Residents_Button"
         Me.Residents_Button.ShadowDecoration.Parent = Me.Residents_Button
-        Me.Residents_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Residents_Button.Size = New System.Drawing.Size(280, 58)
         Me.Residents_Button.TabIndex = 18
         Me.Residents_Button.Text = "Residents"
         '
@@ -374,13 +384,14 @@ Partial Class MainForm
         '
         Me.Settings_Button.CheckedState.Parent = Me.Settings_Button
         Me.Settings_Button.CustomImages.Parent = Me.Settings_Button
-        Me.Settings_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Settings_Button.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Settings_Button.ForeColor = System.Drawing.Color.White
         Me.Settings_Button.HoverState.Parent = Me.Settings_Button
-        Me.Settings_Button.Location = New System.Drawing.Point(0, 526)
+        Me.Settings_Button.Location = New System.Drawing.Point(2, 691)
+        Me.Settings_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Settings_Button.Name = "Settings_Button"
         Me.Settings_Button.ShadowDecoration.Parent = Me.Settings_Button
-        Me.Settings_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Settings_Button.Size = New System.Drawing.Size(280, 58)
         Me.Settings_Button.TabIndex = 19
         Me.Settings_Button.Text = "Settings"
         '
@@ -388,13 +399,14 @@ Partial Class MainForm
         '
         Me.OrganizationalChartButton.CheckedState.Parent = Me.OrganizationalChartButton
         Me.OrganizationalChartButton.CustomImages.Parent = Me.OrganizationalChartButton
-        Me.OrganizationalChartButton.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OrganizationalChartButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OrganizationalChartButton.ForeColor = System.Drawing.Color.White
         Me.OrganizationalChartButton.HoverState.Parent = Me.OrganizationalChartButton
-        Me.OrganizationalChartButton.Location = New System.Drawing.Point(0, 475)
+        Me.OrganizationalChartButton.Location = New System.Drawing.Point(2, 624)
+        Me.OrganizationalChartButton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.OrganizationalChartButton.Name = "OrganizationalChartButton"
         Me.OrganizationalChartButton.ShadowDecoration.Parent = Me.OrganizationalChartButton
-        Me.OrganizationalChartButton.Size = New System.Drawing.Size(242, 45)
+        Me.OrganizationalChartButton.Size = New System.Drawing.Size(280, 58)
         Me.OrganizationalChartButton.TabIndex = 20
         Me.OrganizationalChartButton.Text = "Organizational Chart"
         '
@@ -402,13 +414,14 @@ Partial Class MainForm
         '
         Me.Archive_Button.CheckedState.Parent = Me.Archive_Button
         Me.Archive_Button.CustomImages.Parent = Me.Archive_Button
-        Me.Archive_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Archive_Button.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Archive_Button.ForeColor = System.Drawing.Color.White
         Me.Archive_Button.HoverState.Parent = Me.Archive_Button
-        Me.Archive_Button.Location = New System.Drawing.Point(0, 424)
+        Me.Archive_Button.Location = New System.Drawing.Point(2, 557)
+        Me.Archive_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Archive_Button.Name = "Archive_Button"
         Me.Archive_Button.ShadowDecoration.Parent = Me.Archive_Button
-        Me.Archive_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Archive_Button.Size = New System.Drawing.Size(280, 58)
         Me.Archive_Button.TabIndex = 21
         Me.Archive_Button.Text = "Archive"
         '
@@ -416,13 +429,14 @@ Partial Class MainForm
         '
         Me.Clearance_Button.CheckedState.Parent = Me.Clearance_Button
         Me.Clearance_Button.CustomImages.Parent = Me.Clearance_Button
-        Me.Clearance_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Clearance_Button.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Clearance_Button.ForeColor = System.Drawing.Color.White
         Me.Clearance_Button.HoverState.Parent = Me.Clearance_Button
-        Me.Clearance_Button.Location = New System.Drawing.Point(0, 374)
+        Me.Clearance_Button.Location = New System.Drawing.Point(2, 490)
+        Me.Clearance_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Clearance_Button.Name = "Clearance_Button"
         Me.Clearance_Button.ShadowDecoration.Parent = Me.Clearance_Button
-        Me.Clearance_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Clearance_Button.Size = New System.Drawing.Size(280, 58)
         Me.Clearance_Button.TabIndex = 23
         Me.Clearance_Button.Text = "Clearance"
         '
@@ -430,13 +444,14 @@ Partial Class MainForm
         '
         Me.Purok_Button.CheckedState.Parent = Me.Purok_Button
         Me.Purok_Button.CustomImages.Parent = Me.Purok_Button
-        Me.Purok_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Purok_Button.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Purok_Button.ForeColor = System.Drawing.Color.White
         Me.Purok_Button.HoverState.Parent = Me.Purok_Button
-        Me.Purok_Button.Location = New System.Drawing.Point(0, 323)
+        Me.Purok_Button.Location = New System.Drawing.Point(2, 423)
+        Me.Purok_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Purok_Button.Name = "Purok_Button"
         Me.Purok_Button.ShadowDecoration.Parent = Me.Purok_Button
-        Me.Purok_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Purok_Button.Size = New System.Drawing.Size(280, 58)
         Me.Purok_Button.TabIndex = 24
         Me.Purok_Button.Text = "Purok"
         '
@@ -444,13 +459,14 @@ Partial Class MainForm
         '
         Me.Officials_Button.CheckedState.Parent = Me.Officials_Button
         Me.Officials_Button.CustomImages.Parent = Me.Officials_Button
-        Me.Officials_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Officials_Button.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Officials_Button.ForeColor = System.Drawing.Color.White
         Me.Officials_Button.HoverState.Parent = Me.Officials_Button
-        Me.Officials_Button.Location = New System.Drawing.Point(0, 272)
+        Me.Officials_Button.Location = New System.Drawing.Point(2, 356)
+        Me.Officials_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Officials_Button.Name = "Officials_Button"
         Me.Officials_Button.ShadowDecoration.Parent = Me.Officials_Button
-        Me.Officials_Button.Size = New System.Drawing.Size(242, 45)
+        Me.Officials_Button.Size = New System.Drawing.Size(280, 58)
         Me.Officials_Button.TabIndex = 25
         Me.Officials_Button.Text = "Officials"
         '
@@ -458,23 +474,24 @@ Partial Class MainForm
         '
         Me.Logout_Button.CheckedState.Parent = Me.Logout_Button
         Me.Logout_Button.CustomImages.Parent = Me.Logout_Button
-        Me.Logout_Button.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Logout_Button.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Logout_Button.ForeColor = System.Drawing.Color.White
         Me.Logout_Button.HoverState.Parent = Me.Logout_Button
-        Me.Logout_Button.Location = New System.Drawing.Point(-1, 579)
+        Me.Logout_Button.Location = New System.Drawing.Point(2, 758)
+        Me.Logout_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Logout_Button.Name = "Logout_Button"
         Me.Logout_Button.ShadowDecoration.Parent = Me.Logout_Button
-        Me.Logout_Button.Size = New System.Drawing.Size(243, 45)
+        Me.Logout_Button.Size = New System.Drawing.Size(280, 58)
         Me.Logout_Button.TabIndex = 26
         Me.Logout_Button.Text = "Logout"
         '
         'MainForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1366, 768)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1509, 890)
         Me.Controls.Add(Me.Logout_Button)
         Me.Controls.Add(Me.Officials_Button)
         Me.Controls.Add(Me.Purok_Button)
@@ -487,9 +504,11 @@ Partial Class MainForm
         Me.Controls.Add(Me.BunifuLabel1)
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(1366, 768)
+        Me.MinimumSize = New System.Drawing.Size(1492, 845)
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
