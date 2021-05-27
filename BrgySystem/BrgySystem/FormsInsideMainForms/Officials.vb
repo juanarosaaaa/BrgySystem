@@ -92,7 +92,7 @@
 
             selectedResidentNameInROw = OfficialsGridVIew.CurrentRow.Cells("name_Column").FormattedValue
             officials_.getValuesFromDatabaseAndDisplayToInputs(selectedResidentNameInROw)
-            imageFile.getImageNameFromSelectedRow(officials_.getImagePathFromSelectedRowValue, OfficialsPictureBox)
+            imageFile.setImage(officials_.getImagePathFromSelectedRowValue, OfficialsPictureBox)
 
 
         ElseIf SettingAction.buttonOf_IsClick("deleteButton_Column", OfficialsGridVIew, e) Then

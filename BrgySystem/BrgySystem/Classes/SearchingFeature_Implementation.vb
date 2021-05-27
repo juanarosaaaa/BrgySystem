@@ -10,11 +10,13 @@ Public Class SearchingFeature_Implementation
         Dim adapter As New MySqlDataAdapter(query, getConnection)
         adapter.Fill(table)
         gridview.DataSource = table
+
         closeConnection()
     End Sub
 
 
     Sub addAndRefresh_DataSuggestion_WhileSearchingAt(columnName As String, tableName As String, searchField As BunifuTextBox) Implements Search.addAndRefresh_DataSuggestion_WhileSearchingAt
+
         searchField.AutoCompleteMode = AutoCompleteMode.SuggestAppend
         searchField.AutoCompleteSource = AutoCompleteSource.CustomSource
         Dim autoFill As AutoCompleteStringCollection = New AutoCompleteStringCollection
@@ -27,6 +29,7 @@ Public Class SearchingFeature_Implementation
             autoFill.Add(reader.GetString(columnName))
         End While
         searchField.AutoCompleteCustomSource = autoFill
+        reader.Close()
         closeConnection()
     End Sub
 

@@ -98,8 +98,8 @@ Public Class MyOfficials
             If (IsInputValid()) Then
                 Return False
                 Exit Function
-            ElseIf InputContainsLetter(Officials.ContactTextBox.Text) And isNumberInvalid(11, Officials.ContactTextBox.Text) Then
-                MessageBox.Show("Contact Number is not valid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ElseIf InputContainsLetter(Officials.ContactTextBox.Text) Or isCharacterSizeInvalid(11, Officials.ContactTextBox.Text.Trim) Or InputContainsSpecialCharacter(Officials.ContactTextBox.Text) Then
+                MessageBox.Show("Contact Number is invalid.", "INVALID INPUT!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return False
 
             ElseIf isDateOrBirthdayInvalid(Officials.BirthdateDatePicker) Then
@@ -221,6 +221,8 @@ Public Class MyOfficials
                 Return True
                 Exit For
                 Exit Function
+            ElseIf inputObjects.Equals(Officials.AddressTextBox) Then
+                Continue For
             ElseIf (InputContainsSpecialCharacter(inputObjects.Text)) Then
                 MessageBox.Show("Input is invalid. Your '" & inputObjects.AccessibleName & "' field contains special characters ^&*()-+=|{}':;.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return True
@@ -228,7 +230,7 @@ Public Class MyOfficials
                 Exit Function
             End If
 
-            If inputObjects.Equals(Officials.ContactTextBox) Or inputObjects.Equals(Officials.PurokTxtBox) Or inputObjects.Equals(Officials.AddressTextBox) Then
+            If inputObjects.Equals(Officials.ContactTextBox) Or inputObjects.Equals(Officials.PurokTxtBox) Or inputObjects.Equals(Officials.AddressTextBox) Or inputObjects.Equals(Officials.TermComboBox) Then
                 Continue For
             ElseIf InputContainsNumber(inputObjects.Text) Then
                 MessageBox.Show("Input is invalid! Your " & inputObjects.AccessibleName & " contains number.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)

@@ -83,15 +83,15 @@ Public Class Clearance
 
 
 
-    Private Sub FullNameTextBoxKeyDown(sender As Object, e As KeyEventArgs) Handles FullNameTextBox.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            clearance.setInputValuesFrom(FullNameTextBox.Text.Trim)
-            If (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
-                LabelStatus.Visible = True
-                LabelStatus.Text = "Resident '" & FullNameTextBox.Text.Trim.ToUpper & "' does not exist in resident's list."
-            End If
-        End If
-    End Sub
+    'Private Sub FullNameTextBoxKeyDown(sender As Object, e As KeyEventArgs) Handles FullNameTextBox.KeyDown
+    '    'If e.KeyCode = Keys.Enter Then
+    '    '    clearance.setInputValuesFrom(FullNameTextBox.Text.Trim)
+    '    '    If (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
+    '    '        LabelStatus.Visible = True
+    '    '        LabelStatus.Text = "Resident '" & FullNameTextBox.Text.Trim.ToUpper & "' does not exist in resident's list."
+    '    '    End If
+    '    'End If
+    'End Sub
 
     Private Sub NameTextBoxIsClick(sender As Object, e As EventArgs) Handles FullNameTextBox.Click
         IsAlreadyStartAtName = True
@@ -107,7 +107,7 @@ Public Class Clearance
                 LabelStatus.Visible = False
             ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", FullNameTextBox.Text.Trim)) Then
                 LabelStatus.Visible = True
-                LabelStatus.Text = "Resident name does not exist in residents list!"
+
 
             Else
                 LabelStatus.Visible = False

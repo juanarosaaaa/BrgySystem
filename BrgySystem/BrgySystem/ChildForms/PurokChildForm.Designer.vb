@@ -64,8 +64,7 @@ Partial Class PurokChildForm
         Me.PurokTextBox.IconRight = Nothing
         Me.PurokTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.PurokTextBox.Lines = New String(-1) {}
-        Me.PurokTextBox.Location = New System.Drawing.Point(73, 81)
-        Me.PurokTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PurokTextBox.Location = New System.Drawing.Point(55, 66)
         Me.PurokTextBox.MaxLength = 32767
         Me.PurokTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.PurokTextBox.Modified = False
@@ -91,7 +90,7 @@ Partial Class PurokChildForm
         StateProperties4.ForeColor = System.Drawing.Color.WhiteSmoke
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.PurokTextBox.OnIdleState = StateProperties4
-        Me.PurokTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PurokTextBox.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.PurokTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.PurokTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.PurokTextBox.PlaceholderText = ""
@@ -101,7 +100,7 @@ Partial Class PurokChildForm
         Me.PurokTextBox.SelectionLength = 0
         Me.PurokTextBox.SelectionStart = 0
         Me.PurokTextBox.ShortcutsEnabled = True
-        Me.PurokTextBox.Size = New System.Drawing.Size(408, 45)
+        Me.PurokTextBox.Size = New System.Drawing.Size(306, 37)
         Me.PurokTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.PurokTextBox.TabIndex = 0
         Me.PurokTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -153,14 +152,13 @@ Partial Class PurokChildForm
         Me.AddPurokBttn.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.AddPurokBttn.IconSize = 25
         Me.AddPurokBttn.IdleBorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.AddPurokBttn.IdleBorderRadius = 40
+        Me.AddPurokBttn.IdleBorderRadius = 32
         Me.AddPurokBttn.IdleBorderThickness = 1
         Me.AddPurokBttn.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.AddPurokBttn.IdleIconLeftImage = Nothing
         Me.AddPurokBttn.IdleIconRightImage = Nothing
         Me.AddPurokBttn.IndicateFocus = False
-        Me.AddPurokBttn.Location = New System.Drawing.Point(281, 147)
-        Me.AddPurokBttn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AddPurokBttn.Location = New System.Drawing.Point(211, 119)
         Me.AddPurokBttn.Name = "AddPurokBttn"
         Me.AddPurokBttn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.AddPurokBttn.OnDisabledState.BorderRadius = 1
@@ -194,7 +192,7 @@ Partial Class PurokChildForm
         Me.AddPurokBttn.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.AddPurokBttn.OnPressedState.IconLeftImage = Nothing
         Me.AddPurokBttn.OnPressedState.IconRightImage = Nothing
-        Me.AddPurokBttn.Size = New System.Drawing.Size(167, 42)
+        Me.AddPurokBttn.Size = New System.Drawing.Size(125, 34)
         Me.AddPurokBttn.TabIndex = 1
         Me.AddPurokBttn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.AddPurokBttn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -243,14 +241,13 @@ Partial Class PurokChildForm
         Me.UpdateBttn.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.UpdateBttn.IconSize = 25
         Me.UpdateBttn.IdleBorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.UpdateBttn.IdleBorderRadius = 40
+        Me.UpdateBttn.IdleBorderRadius = 32
         Me.UpdateBttn.IdleBorderThickness = 1
         Me.UpdateBttn.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.UpdateBttn.IdleIconLeftImage = Nothing
         Me.UpdateBttn.IdleIconRightImage = Nothing
         Me.UpdateBttn.IndicateFocus = False
-        Me.UpdateBttn.Location = New System.Drawing.Point(97, 147)
-        Me.UpdateBttn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.UpdateBttn.Location = New System.Drawing.Point(73, 119)
         Me.UpdateBttn.Name = "UpdateBttn"
         Me.UpdateBttn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.UpdateBttn.OnDisabledState.BorderRadius = 1
@@ -284,7 +281,7 @@ Partial Class PurokChildForm
         Me.UpdateBttn.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.UpdateBttn.OnPressedState.IconLeftImage = Nothing
         Me.UpdateBttn.OnPressedState.IconRightImage = Nothing
-        Me.UpdateBttn.Size = New System.Drawing.Size(167, 42)
+        Me.UpdateBttn.Size = New System.Drawing.Size(125, 34)
         Me.UpdateBttn.TabIndex = 2
         Me.UpdateBttn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.UpdateBttn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -298,7 +295,8 @@ Partial Class PurokChildForm
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label1.Location = New System.Drawing.Point(1628, 162)
+        Me.Label1.Location = New System.Drawing.Point(1221, 132)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(109, 30)
         Me.Label1.TabIndex = 3
@@ -310,7 +308,8 @@ Partial Class PurokChildForm
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label2.Location = New System.Drawing.Point(223, 37)
+        Me.Label2.Location = New System.Drawing.Point(164, 30)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(109, 30)
         Me.Label2.TabIndex = 4
@@ -318,17 +317,16 @@ Partial Class PurokChildForm
         '
         'PurokChildForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(567, 215)
+        Me.ClientSize = New System.Drawing.Size(425, 175)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.UpdateBttn)
         Me.Controls.Add(Me.AddPurokBttn)
         Me.Controls.Add(Me.PurokTextBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MinimizeBox = False
         Me.Name = "PurokChildForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

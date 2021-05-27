@@ -28,7 +28,7 @@ Public Class ImageFileManager
 
     End Function
 
-    Sub getImageNameFromSelectedRow(imagePathFromTheImageInSelectedRow As String, pic As BunifuPictureBox)
+    Sub setImage(imagePathFromTheImageInSelectedRow As String, pic As BunifuPictureBox)
         imageName = imagePathFromTheImageInSelectedRow
 
         pictureValue = pic

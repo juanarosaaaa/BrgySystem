@@ -548,17 +548,17 @@ Partial Class MyResidents
         Me.ResidentsPictureBOx.AllowFocused = False
         Me.ResidentsPictureBOx.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.ResidentsPictureBOx.AutoSizeHeight = True
-        Me.ResidentsPictureBOx.BorderRadius = 0
+        Me.ResidentsPictureBOx.BorderRadius = 88
         Me.ResidentsPictureBOx.Image = CType(resources.GetObject("ResidentsPictureBOx.Image"), System.Drawing.Image)
         Me.ResidentsPictureBOx.InitialImage = CType(resources.GetObject("ResidentsPictureBOx.InitialImage"), System.Drawing.Image)
         Me.ResidentsPictureBOx.IsCircle = True
         Me.ResidentsPictureBOx.Location = New System.Drawing.Point(911, 70)
         Me.ResidentsPictureBOx.Name = "ResidentsPictureBOx"
-        Me.ResidentsPictureBOx.Size = New System.Drawing.Size(158, 158)
+        Me.ResidentsPictureBOx.Size = New System.Drawing.Size(176, 176)
         Me.ResidentsPictureBOx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.ResidentsPictureBOx.TabIndex = 105
         Me.ResidentsPictureBOx.TabStop = False
-        Me.ResidentsPictureBOx.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square
+        Me.ResidentsPictureBOx.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle
         '
         'PurokTextBox
         '
@@ -1027,7 +1027,7 @@ Partial Class MyResidents
         Me.BrowseButton.IdleIconLeftImage = Nothing
         Me.BrowseButton.IdleIconRightImage = Nothing
         Me.BrowseButton.IndicateFocus = False
-        Me.BrowseButton.Location = New System.Drawing.Point(911, 227)
+        Me.BrowseButton.Location = New System.Drawing.Point(911, 244)
         Me.BrowseButton.Name = "BrowseButton"
         Me.BrowseButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BrowseButton.OnDisabledState.BorderRadius = 1
@@ -1061,7 +1061,7 @@ Partial Class MyResidents
         Me.BrowseButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BrowseButton.OnPressedState.IconLeftImage = Nothing
         Me.BrowseButton.OnPressedState.IconRightImage = Nothing
-        Me.BrowseButton.Size = New System.Drawing.Size(158, 28)
+        Me.BrowseButton.Size = New System.Drawing.Size(176, 28)
         Me.BrowseButton.TabIndex = 98
         Me.BrowseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BrowseButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
