@@ -19,15 +19,18 @@ Public Class Clearance
     End Sub
 
     Private Sub BrgyClearanceTypeComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles BrgyClearanceComboBox.SelectedIndexChanged
+
+
         If BrgyClearanceComboBox.SelectedIndex = 0 Then
-            BusinessNameTextBOx.Enabled = False
-            BusinessTypeTextBox.Enabled = False
+            BusinessNameTextBOx.ReadOnly = True
+            BusinessTypeTextBox.ReadOnly = True
+
             BusinessNameTextBOx.Clear()
             BusinessTypeTextBox.Clear()
         ElseIf BrgyClearanceComboBox.SelectedIndex = 1 Then
 
-            BusinessNameTextBOx.Enabled = True
-            BusinessTypeTextBox.Enabled = True
+            BusinessNameTextBOx.ReadOnly = False
+            BusinessTypeTextBox.ReadOnly = False
         End If
     End Sub
 
@@ -132,18 +135,26 @@ Public Class Clearance
         DateAndTimeTextBox.Text = Date.Now
     End Sub
 
+    Private Sub QuantityTextBox_TextChange(sender As Object, e As EventArgs) Handles QuantityTextBox.TextChange
+        Dim total As Double = Val(QuantityTextBox.Text) * 75
+        TotalTextbox.Text = Val(total)
+    End Sub
 
-
-    Private Sub TransactionNumTxtBoxTextChanged(sender As Object, e As KeyEventArgs) Handles TransactionNumber_TextBox.KeyDown
+    Private Sub TransactionNumber_TextBox_KeyDown(sender As Object, e As KeyEventArgs) Handles TransactionNumber_TextBox.KeyDown
         isTransactNumberModified = True
     End Sub
 
-    Private Sub addButton_Click_1(sender As Object, e As EventArgs) Handles addButton.Click
-        If clearance.addClearance(clearance.insertClearanceQuery) Then
-            search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldTextBox)
 
+
+
+    Private Sub addButton_Click_1(sender As Object, e As EventArgs) Handles addButton.Click
+        If Val(AmountTextbox.Text) < Val(TotalTextbox.Text) Then
+            MessageBox.Show("INSUFFICIENT AMOUNT.", "NO BALANCE", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        ElseIf clearance.addClearance(clearance.insertClearanceQuery) Then
+            search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldTextBox)
             manage.loadGridViewValueOf(clearance.getClearanceValuesSelectedColumn, ClearanceGridView)
         End If
+
     End Sub
 
     Private Sub BusinessNameTxtBoxKeyDown(sender As Object, e As KeyEventArgs) Handles BusinessNameTextBOx.KeyDown

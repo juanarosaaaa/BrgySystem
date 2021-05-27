@@ -2,12 +2,15 @@
 
 Public Class Dashboard
 
-
+    Private setMissionVision As SettingMissionVision = New SettingMissionVision
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        setMissionVision.displayMissionAndVision()
         LiveDateAndTime.Text = "TODAY IS " & Date.Now
         lblCountClearance.Text = getRowCount("clearance")
         lblCountResidents.Text = getRowCount("residents")
         lblCountPurok.Text = getRowCount("purok")
+
+        RichTextBoxMission.Text = setMissionVision.getMission
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

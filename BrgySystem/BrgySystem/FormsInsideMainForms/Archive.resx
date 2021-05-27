@@ -117,68 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="fname_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="sex_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="age_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="religion_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="citizenship_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="address_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="restoreofficials_ButtonColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="deleteOfficials_ButtonColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ResidentsArchiveSearchField.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQQAAAAhCAYAAAA/HtU7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVHhe7d1PK0RRGIDxs5yllY0Nyp+wYMFmFlaUFIqF
-        UjZKk/ARiGZJUz6D3Ui6Z66ZaTCz8xGsLaRIolBmcZ2X08vk+gLH89ZvgWN25+l2ldcwDMP8OfV6fTGy
-        9qJcrtw3Go0EQFjkbrs7funues5f+9/jftgmh/b2C0/Ts/PJ4PBY0t7RDSAwcrcnp2aSrZ38iy2Vrtzd
-        7/QZ+B6JwdzCYuoHAAhTdnwisdZeuyhkfAqMqVQqG9u7+ee0XwAQttza5puLwoHPwdfTgTxCpB0GELaR
-        0WwSx6c3PgfG1Gq1166eodTDAMInLxt9DoyRL9IOAfgfCAIARRAAKIIAQBEEAIogAFAEAYAiCAAUQQCg
-        CAIARRAAKIIAQBEEAIogAFAEAYAiCAAUQQCgCAIARRAAqJYgnJ2dNzs6+1IPAghfSxBkWYP8f/a0gwDC
-        1jswklSr1SefA2Picrmwmltvph0GEDZZ0BRFpdjn4HONW8bG8S3r24D/RV4VHJ+cPP5a5+a+MRxF9m5p
-        eeWdHQ1A2CQEssO1WDx6sNbO+Ay0jotCm3t0OJTFLfKSAUCY5A8JsuXd3fl+f/0ZhmF+jjEfOB11G0ZS
-        XzcAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="PurokArchiveSearchField.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQQAAAAhCAYAAAA/HtU7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVHhe7d1PK0RRGIDxs5yllY0Nyp+wYMFmFlaUFIqF
-        UjZKk/ARiGZJUz6D3Ui6Z66ZaTCz8xGsLaRIolBmcZ2X08vk+gLH89ZvgWN25+l2ldcwDMP8OfV6fTGy
-        9qJcrtw3Go0EQFjkbrs7funues5f+9/jftgmh/b2C0/Ts/PJ4PBY0t7RDSAwcrcnp2aSrZ38iy2Vrtzd
-        7/QZ+B6JwdzCYuoHAAhTdnwisdZeuyhkfAqMqVQqG9u7+ee0XwAQttza5puLwoHPwdfTgTxCpB0GELaR
-        0WwSx6c3PgfG1Gq1166eodTDAMInLxt9DoyRL9IOAfgfCAIARRAAKIIAQBEEAIogAFAEAYAiCAAUQQCg
-        CAIARRAAKIIAQBEEAIogAFAEAYAiCAAUQQCgCAIARRAAqJYgnJ2dNzs6+1IPAghfSxBkWYP8f/a0gwDC
-        1jswklSr1SefA2Picrmwmltvph0GEDZZ0BRFpdjn4HONW8bG8S3r24D/RV4VHJ+cPP5a5+a+MRxF9m5p
-        eeWdHQ1A2CQEssO1WDx6sNbO+Ay0jotCm3t0OJTFLfKSAUCY5A8JsuXd3fl+f/0ZhmF+jjEfOB11G0ZS
-        XzcAAAAASUVORK5CYII=
-</value>
-  </data>
-  <metadata name="purok_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="restoreButton_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="deleteButton_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="OfficialsArchiveSearchField.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQQAAAAhCAYAAAA/HtU7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -223,7 +162,65 @@
   <metadata name="deleteButtonColumnOfficials.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="BunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Palatino Linotype'; font-size: 21.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  <data name="PurokArchiveSearchField.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQQAAAAhCAYAAAA/HtU7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVHhe7d1PK0RRGIDxs5yllY0Nyp+wYMFmFlaUFIqF
+        UjZKk/ARiGZJUz6D3Ui6Z66ZaTCz8xGsLaRIolBmcZ2X08vk+gLH89ZvgWN25+l2ldcwDMP8OfV6fTGy
+        9qJcrtw3Go0EQFjkbrs7funues5f+9/jftgmh/b2C0/Ts/PJ4PBY0t7RDSAwcrcnp2aSrZ38iy2Vrtzd
+        7/QZ+B6JwdzCYuoHAAhTdnwisdZeuyhkfAqMqVQqG9u7+ee0XwAQttza5puLwoHPwdfTgTxCpB0GELaR
+        0WwSx6c3PgfG1Gq1166eodTDAMInLxt9DoyRL9IOAfgfCAIARRAAKIIAQBEEAIogAFAEAYAiCAAUQQCg
+        CAIARRAAKIIAQBEEAIogAFAEAYAiCAAUQQCgCAIARRAAqJYgnJ2dNzs6+1IPAghfSxBkWYP8f/a0gwDC
+        1jswklSr1SefA2Picrmwmltvph0GEDZZ0BRFpdjn4HONW8bG8S3r24D/RV4VHJ+cPP5a5+a+MRxF9m5p
+        eeWdHQ1A2CQEssO1WDx6sNbO+Ay0jotCm3t0OJTFLfKSAUCY5A8JsuXd3fl+f/0ZhmF+jjEfOB11G0ZS
+        XzcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="purok_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="restoreButton_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="deleteButton_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="fname_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="sex_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="age_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="religion_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="citizenship_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="address_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="restoreofficials_ButtonColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="deleteOfficials_ButtonColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ResidentsArchiveSearchField.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQQAAAAhCAYAAAA/HtU7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVHhe7d1PK0RRGIDxs5yllY0Nyp+wYMFmFlaUFIqF
+        UjZKk/ARiGZJUz6D3Ui6Z66ZaTCz8xGsLaRIolBmcZ2X08vk+gLH89ZvgWN25+l2ldcwDMP8OfV6fTGy
+        9qJcrtw3Go0EQFjkbrs7funues5f+9/jftgmh/b2C0/Ts/PJ4PBY0t7RDSAwcrcnp2aSrZ38iy2Vrtzd
+        7/QZ+B6JwdzCYuoHAAhTdnwisdZeuyhkfAqMqVQqG9u7+ee0XwAQttza5puLwoHPwdfTgTxCpB0GELaR
+        0WwSx6c3PgfG1Gq1166eodTDAMInLxt9DoyRL9IOAfgfCAIARRAAKIIAQBEEAIogAFAEAYAiCAAUQQCg
+        CAIARRAAKIIAQBEEAIogAFAEAYAiCAAUQQCgCAIARRAAqJYgnJ2dNzs6+1IPAghfSxBkWYP8f/a0gwDC
+        1jswklSr1SefA2Picrmwmltvph0GEDZZ0BRFpdjn4HONW8bG8S3r24D/RV4VHJ+cPP5a5+a+MRxF9m5p
+        eeWdHQ1A2CQEssO1WDx6sNbO+Ay0jotCm3t0OJTFLfKSAUCY5A8JsuXd3fl+f/0ZhmF+jjEfOB11G0ZS
+        XzcAAAAASUVORK5CYII=
+</value>
   </data>
 </root>
