@@ -47,12 +47,13 @@ Partial Class Login
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel1.Font = New System.Drawing.Font("Palatino Linotype", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.BunifuLabel1.Location = New System.Drawing.Point(131, 40)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(208, 53)
+        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(225, 31)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(230, 36)
         Me.BunifuLabel1.TabIndex = 3
         Me.BunifuLabel1.Text = "Admin Panel Login"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -71,11 +72,12 @@ Partial Class Login
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
         Me.Guna2Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_close_window_33px
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(28, 28)
-        Me.Guna2Button1.Location = New System.Drawing.Point(457, 8)
+        Me.Guna2Button1.Location = New System.Drawing.Point(609, 10)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.PressedColor = System.Drawing.Color.White
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(22, 22)
+        Me.Guna2Button1.Size = New System.Drawing.Size(29, 27)
         Me.Guna2Button1.TabIndex = 0
         '
         'LoginButton
@@ -108,7 +110,7 @@ Partial Class Login
         Me.LoginButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.LoginButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.LoginButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.LoginButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoginButton.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoginButton.ForeColor = System.Drawing.Color.White
         Me.LoginButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.LoginButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -120,13 +122,14 @@ Partial Class Login
         Me.LoginButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.LoginButton.IconSize = 25
         Me.LoginButton.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.LoginButton.IdleBorderRadius = 46
+        Me.LoginButton.IdleBorderRadius = 57
         Me.LoginButton.IdleBorderThickness = 1
         Me.LoginButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.LoginButton.IdleIconLeftImage = Nothing
         Me.LoginButton.IdleIconRightImage = Nothing
         Me.LoginButton.IndicateFocus = False
-        Me.LoginButton.Location = New System.Drawing.Point(149, 219)
+        Me.LoginButton.Location = New System.Drawing.Point(204, 270)
+        Me.LoginButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.LoginButton.OnDisabledState.BorderRadius = 40
@@ -160,7 +163,7 @@ Partial Class Login
         Me.LoginButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.LoginButton.OnPressedState.IconLeftImage = Nothing
         Me.LoginButton.OnPressedState.IconRightImage = Nothing
-        Me.LoginButton.Size = New System.Drawing.Size(179, 48)
+        Me.LoginButton.Size = New System.Drawing.Size(239, 59)
         Me.LoginButton.TabIndex = 0
         Me.LoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LoginButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -186,7 +189,7 @@ Partial Class Login
         Me.userNameTextBox.BorderThickness = 1
         Me.userNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.userNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.userNameTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.userNameTextBox.DefaultFont = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.userNameTextBox.DefaultText = ""
         Me.userNameTextBox.FillColor = System.Drawing.Color.WhiteSmoke
         Me.userNameTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
@@ -197,7 +200,8 @@ Partial Class Login
         Me.userNameTextBox.IconRight = Nothing
         Me.userNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.userNameTextBox.Lines = New String(-1) {}
-        Me.userNameTextBox.Location = New System.Drawing.Point(24, 112)
+        Me.userNameTextBox.Location = New System.Drawing.Point(31, 138)
+        Me.userNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.userNameTextBox.MaxLength = 32767
         Me.userNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.userNameTextBox.Modified = False
@@ -223,7 +227,7 @@ Partial Class Login
         StateProperties4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.userNameTextBox.OnIdleState = StateProperties4
-        Me.userNameTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.userNameTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.userNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.userNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.userNameTextBox.PlaceholderText = "Username"
@@ -233,7 +237,7 @@ Partial Class Login
         Me.userNameTextBox.SelectionLength = 0
         Me.userNameTextBox.SelectionStart = 0
         Me.userNameTextBox.ShortcutsEnabled = True
-        Me.userNameTextBox.Size = New System.Drawing.Size(438, 39)
+        Me.userNameTextBox.Size = New System.Drawing.Size(584, 45)
         Me.userNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.userNameTextBox.TabIndex = 1
         Me.userNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -262,7 +266,7 @@ Partial Class Login
         Me.passwordTextBox.BorderThickness = 1
         Me.passwordTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.passwordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.passwordTextBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.passwordTextBox.DefaultFont = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.passwordTextBox.DefaultText = ""
         Me.passwordTextBox.FillColor = System.Drawing.Color.WhiteSmoke
         Me.passwordTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
@@ -273,7 +277,8 @@ Partial Class Login
         Me.passwordTextBox.IconRight = Nothing
         Me.passwordTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.passwordTextBox.Lines = New String(-1) {}
-        Me.passwordTextBox.Location = New System.Drawing.Point(24, 157)
+        Me.passwordTextBox.Location = New System.Drawing.Point(31, 193)
+        Me.passwordTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.passwordTextBox.MaxLength = 32767
         Me.passwordTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.passwordTextBox.Modified = False
@@ -299,7 +304,7 @@ Partial Class Login
         StateProperties8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
         StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.passwordTextBox.OnIdleState = StateProperties8
-        Me.passwordTextBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.passwordTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.passwordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.passwordTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.passwordTextBox.PlaceholderText = "Password"
@@ -309,7 +314,7 @@ Partial Class Login
         Me.passwordTextBox.SelectionLength = 0
         Me.passwordTextBox.SelectionStart = 0
         Me.passwordTextBox.ShortcutsEnabled = True
-        Me.passwordTextBox.Size = New System.Drawing.Size(439, 39)
+        Me.passwordTextBox.Size = New System.Drawing.Size(585, 45)
         Me.passwordTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.passwordTextBox.TabIndex = 2
         Me.passwordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -322,10 +327,10 @@ Partial Class Login
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(486, 300)
+        Me.ClientSize = New System.Drawing.Size(648, 369)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.BunifuLabel1)
         Me.Controls.Add(Me.passwordTextBox)
@@ -333,6 +338,7 @@ Partial Class Login
         Me.Controls.Add(Me.LoginButton)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

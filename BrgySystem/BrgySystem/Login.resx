@@ -118,45 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(205, 217, 229); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Palatino Linotype'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(205, 217, 229); text-align: left; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="LoginButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAALMAAAAwCAYAAABaMEuFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALCSURBVHhe7d0hkNNAFMbxSCQSiUQikSfPAWlvwIFEnkTW
-        IZE3SUQlEomsrEQikcjOkCwnj36bpTfHvfYuubTZ7fzfzK8maRLxZmf3ZXeTDR3v5lePJlV9Imdl835S
-        uRkgbT60ufFyvnocUiaeyIvfz/Kq+ZhX7vu0cldARz8mpfu0TvTnIaUOG2p9lcB6kP8eDOgtL92vSfXn
-        89m8eRJSbb8xLetz3dR6GGAIeVFfqluiRjOk3bAxrZrTdV/np3VzYB/UaKqfHVJwmFBrbN0MOAR1PUIq
-        9o+2MuHm1g2AgyrconcFRImsC5gXBkagbm6vwWFeNV+sCwLjqpedBoah7GZcCIhBfRFSdXfkhXtlXwCI
-        SFmfh5S1w78MoYaMBKgWvbP/TAkOKdlasqNVRmq2ts6a7GH9AYiZqm4hha+DV9VIkVrnG6W616V7YZ0I
-        JKGo34ZUVqvsZuZJQAI05SKksmbEMS8ZCSvcync19GOeACREK56yNxeXT62DQEq0rlBVjBPrIJASP4lf
-        I0HrIJASTY7jFTaOgipyTPfEUfDJrL6GdRBIiU9mBoA4Bn4AqPqcdRBIS3OaacWrfRBIx2Z7L+YxI2Wa
-        ObfZhkATNayTgCQUbuETWaH+hnkSkIBJ6T6EVA5LptZNtXUiEDvNLwqp3AabviBN9TKk8HVoNGifDMRL
-        +7yEFL4ZWrpt/QGIUll/Dal7O7Rsm74zUrGpLW8LveO2/gjEROXkkLK7Q823dQEgDh12AvWlOr4ehQjp
-        bfWtUtxd4dcGFm5lXRAYg8Zzfq1fnwgz6tiGAONbN6y9E/lf+Fl19KExInV5O3ctdgUbK2IMqlrce7DX
-        JXw/mlYah1C4xZ115CFCN1m31N/MhwAeQF2Kra+o9xl6Y6jpdyQ2HqZeassLv8VWDKGBYrs4Vp8ldjNg
-        F7W+ypde3/UzI8v+AhHKvyhZkbMOAAAAAElFTkSuQmCC
+        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
 </value>
   </data>
   <data name="userNameTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAbYAAAAnCAYAAABjRG0iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVHhe7dXBCcMwAARB9V+VrTZSRvDbQaBPStAyB/O5
-        BnaYmZnlNuf8XNf1AsCpVst21sZYx/M8AHCs1bKdNWED4HzCBkCKsAGQImwApAgbACnCBkCKsAGQImwA
-        pAgbACnCBkCKsAGQImwApAgbACnCBkCKsAGQImwApAgbACnCBkCKsAGQImwApAgbACnCBkCKsAGQImwA
-        pAgbACnCBkCKsAGQImwApAgbACnCBkCKsAGQImwApAgbACnCBkDKX9ju+/6uAwBOtVq2s2ZmZlbZGD89
-        33Y4SPEBYgAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAkgAAAAtCAYAAABVuJRvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEASURBVHhe7dbBCcMwAARB9V+V5TZSRvDbQWAIWdKB5mA+
+        V8EOMzMzM/uz8zxfx3HcAAA7W0305NEY67iuCwBga6uJnjwSSAAAi0ACAAiBBAAQAgkAIAQSAEAIJACA
+        EEgAACGQAABCIAEAhEACAAiBBAAQAgkAIAQSAEAIJACAEEgAACGQAABCIAEAhEACAAiBBAAQAgkAIAQS
+        AEAIJACAEEgAACGQAABCIAEAhEACAAiBBAAQAgkAIAQSAEAIJACAEEgAACGQAABCIAEAhEACAAiBBAAQ
+        AgkAIAQSAEAIJACAEEgAACGQAADiJ5DmnO91AADsbDXRk0dmZmZm9t0YH/J3HAaOnlLsAAAAAElFTkSu
+        QmCC
 </value>
   </data>
   <data name="passwordTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAbcAAAAnCAYAAACMhgYcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVHhe7dXBCcMwAARB9V+VrDZSRvDbQaBPSvAyB/O5
-        BnaYmZklt9b6zDkfAHiz3bOTtjH2cd83ALza7tlJm7gB0CBuAOSIGwA54gZAjrgBkCNuAOSIGwA54gZA
-        jrgBkCNuAOSIGwA54gZAjrgBkCNuAOSIGwA54gZAjrgBkCNuAOSIGwA54gZAjrgBkCNuAOSIGwA54gZA
-        jrgBkCNuAOSIGwA54gZAjrgBkCNuAOSIGwA54gZAjrgBkCNuAOT8xe26ru8+AODNds9O2szMzEob4wcS
-        9wQfqkMgigAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAkkAAAAtCAYAAAC6ev9RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEGSURBVHhe7dbBCcMwAARB9V+V7TZSRtA7QaA8DJsKPAfz
+        uQp2mJmZmdmfXdf1Oo7jAwDwdKuLdiKNsY45JwDA460u2okkkgAAfkQSAEAQSQAAQSQBAASRBAAQRBIA
+        QBBJAABBJAEABJEEABBEEgBAEEkAAEEkAQAEkQQAEEQSAEAQSQAAQSQBAASRBAAQRBIAQBBJAABBJAEA
+        BJEEABBEEgBAEEkAAEEkAQAEkQQAEEQSAEAQSQAAQSQBAASRBAAQRBIAQBBJAABBJAEABJEEABBEEgBA
+        EEkAAEEkAQAEkQQAEEQSAEAQSQAAQSQBAIRbJJ3n+V4HAMDTrS7aiWRmZmZm943xBTpewRJvo/kZAAAA
+        AElFTkSuQmCC
 </value>
   </data>
 </root>
