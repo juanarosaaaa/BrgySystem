@@ -28,8 +28,10 @@ Partial Class Dashboard
         Me.LiveDateAndTime = New Bunifu.UI.WinForms.BunifuLabel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BunifuGradientPanel5 = New Bunifu.UI.WinForms.BunifuGradientPanel()
+        Me.RichTextBoxVision = New System.Windows.Forms.RichTextBox()
         Me.BunifuLabel10 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuGradientPanel4 = New Bunifu.UI.WinForms.BunifuGradientPanel()
+        Me.RichTextBoxMission = New System.Windows.Forms.RichTextBox()
         Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuGradientPanel3 = New Bunifu.UI.WinForms.BunifuGradientPanel()
         Me.BunifuPictureBox3 = New Bunifu.UI.WinForms.BunifuPictureBox()
@@ -46,8 +48,6 @@ Partial Class Dashboard
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.lblCountResidents = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.RichTextBoxMission = New System.Windows.Forms.RichTextBox()
-        Me.RichTextBoxVision = New System.Windows.Forms.RichTextBox()
         Me.BunifuGradientPanel5.SuspendLayout()
         Me.BunifuGradientPanel4.SuspendLayout()
         Me.BunifuGradientPanel3.SuspendLayout()
@@ -63,12 +63,12 @@ Partial Class Dashboard
         Me.BunifuLabel1.AllowParentOverrides = False
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.CursorType = Nothing
-        Me.BunifuLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel1.Font = New System.Drawing.Font("Palatino Linotype", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel1.Location = New System.Drawing.Point(23, 11)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(158, 37)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(141, 38)
         Me.BunifuLabel1.TabIndex = 1
         Me.BunifuLabel1.Text = "Dashboard"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -116,6 +116,17 @@ Partial Class Dashboard
         Me.BunifuGradientPanel5.Size = New System.Drawing.Size(1089, 208)
         Me.BunifuGradientPanel5.TabIndex = 4
         '
+        'RichTextBoxVision
+        '
+        Me.RichTextBoxVision.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.RichTextBoxVision.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBoxVision.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBoxVision.Location = New System.Drawing.Point(1, 54)
+        Me.RichTextBoxVision.Name = "RichTextBoxVision"
+        Me.RichTextBoxVision.Size = New System.Drawing.Size(1087, 154)
+        Me.RichTextBoxVision.TabIndex = 2
+        Me.RichTextBoxVision.Text = resources.GetString("RichTextBoxVision.Text")
+        '
         'BunifuLabel10
         '
         Me.BunifuLabel10.AllowParentOverrides = False
@@ -151,6 +162,17 @@ Partial Class Dashboard
         Me.BunifuGradientPanel4.Quality = 10
         Me.BunifuGradientPanel4.Size = New System.Drawing.Size(1089, 208)
         Me.BunifuGradientPanel4.TabIndex = 4
+        '
+        'RichTextBoxMission
+        '
+        Me.RichTextBoxMission.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.RichTextBoxMission.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBoxMission.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBoxMission.Location = New System.Drawing.Point(1, 54)
+        Me.RichTextBoxMission.Name = "RichTextBoxMission"
+        Me.RichTextBoxMission.Size = New System.Drawing.Size(1087, 154)
+        Me.RichTextBoxMission.TabIndex = 1
+        Me.RichTextBoxMission.Text = resources.GetString("RichTextBoxMission.Text")
         '
         'BunifuLabel8
         '
@@ -435,28 +457,6 @@ Partial Class Dashboard
         Me.BunifuLabel2.Text = "NUMBER OF RESIDENTS"
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'RichTextBoxMission
-        '
-        Me.RichTextBoxMission.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.RichTextBoxMission.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBoxMission.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBoxMission.Location = New System.Drawing.Point(1, 54)
-        Me.RichTextBoxMission.Name = "RichTextBoxMission"
-        Me.RichTextBoxMission.Size = New System.Drawing.Size(1087, 154)
-        Me.RichTextBoxMission.TabIndex = 1
-        Me.RichTextBoxMission.Text = resources.GetString("RichTextBoxMission.Text")
-        '
-        'RichTextBoxVision
-        '
-        Me.RichTextBoxVision.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.RichTextBoxVision.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBoxVision.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBoxVision.Location = New System.Drawing.Point(1, 54)
-        Me.RichTextBoxVision.Name = "RichTextBoxVision"
-        Me.RichTextBoxVision.Size = New System.Drawing.Size(1087, 154)
-        Me.RichTextBoxVision.TabIndex = 2
-        Me.RichTextBoxVision.Text = resources.GetString("RichTextBoxVision.Text")
         '
         'Dashboard
         '
