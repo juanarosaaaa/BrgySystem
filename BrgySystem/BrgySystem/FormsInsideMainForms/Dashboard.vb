@@ -37,4 +37,5 @@ Public Class Dashboard
 
         Return "0"
     End Function
+
 End Class
