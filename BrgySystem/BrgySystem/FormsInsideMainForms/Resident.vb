@@ -193,7 +193,6 @@ Public Class MyResidents
     End Sub
 
 
-
     Private Sub contactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown
 
         isContactModified = True

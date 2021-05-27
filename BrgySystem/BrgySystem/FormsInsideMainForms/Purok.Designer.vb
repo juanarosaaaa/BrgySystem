@@ -29,12 +29,12 @@ Partial Class Purok
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Purok))
         Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Purok))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.SearchButton = New System.Windows.Forms.Button()
@@ -45,6 +45,7 @@ Partial Class Purok
         Me.archiveButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.SearchBarField = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.AddPurokButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
+        Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PurokGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,11 +59,12 @@ Partial Class Purok
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 10)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(4, 37)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1121, 757)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1495, 901)
         Me.TableLayoutPanel1.TabIndex = 6
         '
         'GroupBox1
@@ -71,13 +73,16 @@ Partial Class Purok
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
+        Me.GroupBox1.Controls.Add(Me.BunifuLabel1)
         Me.GroupBox1.Controls.Add(Me.SearchButton)
         Me.GroupBox1.Controls.Add(Me.PurokGridView)
         Me.GroupBox1.Controls.Add(Me.SearchBarField)
         Me.GroupBox1.Controls.Add(Me.AddPurokButton)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1115, 751)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1487, 893)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
@@ -85,9 +90,10 @@ Partial Class Purok
         '
         Me.SearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.SearchButton.Location = New System.Drawing.Point(1071, 17)
+        Me.SearchButton.Location = New System.Drawing.Point(1428, 21)
+        Me.SearchButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SearchButton.Name = "SearchButton"
-        Me.SearchButton.Size = New System.Drawing.Size(40, 42)
+        Me.SearchButton.Size = New System.Drawing.Size(53, 52)
         Me.SearchButton.TabIndex = 3
         Me.SearchButton.UseVisualStyleBackColor = True
         '
@@ -127,14 +133,15 @@ Partial Class Purok
         Me.PurokGridView.DefaultCellStyle = DataGridViewCellStyle7
         Me.PurokGridView.EnableHeadersVisualStyles = False
         Me.PurokGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PurokGridView.Location = New System.Drawing.Point(4, 70)
+        Me.PurokGridView.Location = New System.Drawing.Point(5, 149)
+        Me.PurokGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PurokGridView.Name = "PurokGridView"
         Me.PurokGridView.ReadOnly = True
         Me.PurokGridView.RowHeadersVisible = False
         Me.PurokGridView.RowHeadersWidth = 47
         Me.PurokGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.PurokGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.PurokGridView.Size = New System.Drawing.Size(1107, 674)
+        Me.PurokGridView.Size = New System.Drawing.Size(1476, 799)
         Me.PurokGridView.TabIndex = 6
         Me.PurokGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.PurokGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -230,7 +237,8 @@ Partial Class Purok
         Me.SearchBarField.IconRight = Nothing
         Me.SearchBarField.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.SearchBarField.Lines = New String(-1) {}
-        Me.SearchBarField.Location = New System.Drawing.Point(799, 17)
+        Me.SearchBarField.Location = New System.Drawing.Point(1065, 21)
+        Me.SearchBarField.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SearchBarField.MaxLength = 32767
         Me.SearchBarField.MinimumSize = New System.Drawing.Size(1, 1)
         Me.SearchBarField.Modified = False
@@ -256,7 +264,7 @@ Partial Class Purok
         StateProperties4.ForeColor = System.Drawing.Color.Empty
         StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
         Me.SearchBarField.OnIdleState = StateProperties4
-        Me.SearchBarField.Padding = New System.Windows.Forms.Padding(3)
+        Me.SearchBarField.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SearchBarField.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.SearchBarField.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.SearchBarField.PlaceholderText = "Search"
@@ -266,7 +274,7 @@ Partial Class Purok
         Me.SearchBarField.SelectionLength = 0
         Me.SearchBarField.SelectionStart = 0
         Me.SearchBarField.ShortcutsEnabled = True
-        Me.SearchBarField.Size = New System.Drawing.Size(286, 42)
+        Me.SearchBarField.Size = New System.Drawing.Size(381, 52)
         Me.SearchBarField.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.SearchBarField.TabIndex = 1
         Me.SearchBarField.TabStop = False
@@ -319,13 +327,14 @@ Partial Class Purok
         Me.AddPurokButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.AddPurokButton.IconSize = 25
         Me.AddPurokButton.IdleBorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.AddPurokButton.IdleBorderRadius = 35
+        Me.AddPurokButton.IdleBorderRadius = 44
         Me.AddPurokButton.IdleBorderThickness = 1
         Me.AddPurokButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.AddPurokButton.IdleIconLeftImage = Nothing
         Me.AddPurokButton.IdleIconRightImage = Nothing
         Me.AddPurokButton.IndicateFocus = False
-        Me.AddPurokButton.Location = New System.Drawing.Point(9, 17)
+        Me.AddPurokButton.Location = New System.Drawing.Point(12, 84)
+        Me.AddPurokButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.AddPurokButton.Name = "AddPurokButton"
         Me.AddPurokButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.AddPurokButton.OnDisabledState.BorderRadius = 1
@@ -359,7 +368,7 @@ Partial Class Purok
         Me.AddPurokButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.AddPurokButton.OnPressedState.IconLeftImage = Nothing
         Me.AddPurokButton.OnPressedState.IconRightImage = Nothing
-        Me.AddPurokButton.Size = New System.Drawing.Size(150, 37)
+        Me.AddPurokButton.Size = New System.Drawing.Size(200, 46)
         Me.AddPurokButton.TabIndex = 5
         Me.AddPurokButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.AddPurokButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -367,21 +376,40 @@ Partial Class Purok
         Me.AddPurokButton.TextPadding = New System.Windows.Forms.Padding(0)
         Me.AddPurokButton.UseDefaultRadiusAndThickness = True
         '
+        'BunifuLabel1
+        '
+        Me.BunifuLabel1.AllowParentOverrides = False
+        Me.BunifuLabel1.AutoEllipsis = False
+        Me.BunifuLabel1.CursorType = Nothing
+        Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel1.Location = New System.Drawing.Point(30, 12)
+        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuLabel1.Name = "BunifuLabel1"
+        Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel1.Size = New System.Drawing.Size(86, 47)
+        Me.BunifuLabel1.TabIndex = 7
+        Me.BunifuLabel1.Text = "Purok"
+        Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
         'Purok
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1124, 766)
+        Me.ClientSize = New System.Drawing.Size(1499, 943)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Purok"
         Me.Text = "Purok"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.PurokGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -396,4 +424,5 @@ Partial Class Purok
     Friend WithEvents editButton_Column As DataGridViewImageColumn
     Friend WithEvents deleteButton_Column As DataGridViewImageColumn
     Friend WithEvents archiveButton_Column As DataGridViewImageColumn
+    Friend WithEvents BunifuLabel1 As Bunifu.UI.WinForms.BunifuLabel
 End Class
