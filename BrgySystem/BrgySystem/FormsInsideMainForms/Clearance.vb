@@ -132,8 +132,6 @@ Public Class Clearance
         DateAndTimeTextBox.Text = Date.Now
     End Sub
 
-
-
     Private Sub TransactionNumTxtBoxTextChanged(sender As Object, e As KeyEventArgs) Handles TransactionNumber_TextBox.KeyDown
         isTransactNumberModified = True
     End Sub

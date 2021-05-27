@@ -72,7 +72,7 @@ Public Class Archive
         search.searchValueIn("SELECT * FROM `archive_purok` WHERE PurokName Like '%" & PurokArchiveSearchField.Text.Trim & "%'", PurokGridView)
     End Sub
 
-    Private Sub PurokArchiveSearchField_TextChanged(sender As Object, e As EventArgs) Handles PurokArchiveSearchField.TextChanged
+    Private Sub PurokArchiveSearchField_TextChanged(sender As Object, e As EventArgs) Handles PurokArchiveSearchField.TextChange
         If InputIsNull(PurokArchiveSearchField.Text.Trim) And AlreadyStartAtPurokArchive Then
             manage.loadGridViewValueOf(archivePurokQuery, PurokGridView)
         End If
@@ -165,7 +165,7 @@ Public Class Archive
 
 
 
-    Private Sub ArchiveOfficialsSearchFieldTextChanged(sender As Object, e As EventArgs) Handles OfficialsArchiveSearchField.TextChanged
+    Private Sub ArchiveOfficialsSearchFieldTextChanged(sender As Object, e As EventArgs) Handles OfficialsArchiveSearchField.TextChange
         If InputIsNull(OfficialsArchiveSearchField.Text.Trim) And alreadyStartAtOfficialArchive Then
             manage.loadGridViewValueOf(archiveOfficialQuery, ArchiveOfficialGridView)
         End If
