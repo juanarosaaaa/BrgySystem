@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semilight'; font-size: 26.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Palatino Linotype'; font-size: 26.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <metadata name="purok_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -135,8 +135,8 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="SearchBarField.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAX0AAAA0CAYAAABmWehBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM0SURBVHhe7dtPSBRRHMDxd9yjpwi8rIF/UA/uQYk85KEk
+        iVBORw0KGgoAAAANSUhEUgAAAX0AAAAtCAYAAABCgLsSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMUSURBVHhe7dtPSBRRHMDxd9yjpwi8rIF/UA/uQYk85KEk
         EWxBi/VQeCkkoogkIjp0qZAUwQiKqOy8KrMz+3ZXZm3t5LFD98CDl0RWMQz0ML2nL2LpYXTb2ff9weew
         +Ga8fWf2zaxgGIZhmKOpVCoJJeP7eRkEwZdisbS1trYWAQDqg+6y7rMfBJ9UryeUJpPw/xt14CVZKGzP
         zM7tpscy0cCFoairpy861XwGAFAndJd1n4cvj0ZPn0/v5aWslkqlGybl/x59lcj5/vLrN2+rbZ0p6z8B
@@ -144,13 +144,12 @@
         Pnq/3yS+dvQevt7SsR0IAIinqQePfkgpn5jUH48KfkI/tGUPHwAaS3OyPcpmF7dV5ztM8o+iP6Gf+toO
         AADE283J24eyWJwzyRdCv9+pX/exLQYAxFvfuYEoL+U3k3whpCxspnr7rYsBAPGmt3jK5dVDk3whwjDc
         1+922hYDAOJP/3rXJF8I/cG2CADQGIg+ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ4g+
-        ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOA
-        Q4g+ADiE6AOAQ4g+ADiE6AOAQ4g+ADikJvrl8uphc7LduhAAEH810S8WS1tdPX3WhQCA+KuJvh8E64ND
-        I9aFAIB4S/X2R1IWNk3yhQjD8PH9qYc/bYsBAPF2dfxalM/LrEm+EJVKJbnseVX29QGg8cy/fLWjOp82
-        yT8ez/Nm7t6b2rMdAACIp/To+IGXy5VM6v+MugokPC/3tf/8ReuBAIB4aetMRb4ffFd9bzKprx31h47s
-        4tKW3vS3nQAAEA86+B8WPm6rrg+YxNtHLTgbBMHG5K07PNgFgBgaHhk7MHf4Jwf/96iFCRX++XfvF6r6
-        qa++YthODACoDy2t3VF6LBPNzM7t5nK5z6rj9i2dk0ZfJfRrPisrK7v6xX4AQH0Kw3Df9/NSdTtjEs4w
-        DMO4PUL8AkOSu54vndlFAAAAAElFTkSuQmCC
+        ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ4g+ADiE6AOAQ2qiXy6vHjYn
+        260LAQDxVxP9YrG01dXTZ10IAIi/muj7QbA+ODRiXQgAiLdUb38kZWHTJF+IMAwf3596+NO2GAAQb1fH
+        r0X5vMya5AtRqVSSy55XZV8fABrP/MtXO6rzaZP84/E8b+buvak92wEAgHhKj44feLlcyaT+z6irQMLz
+        cl/7z1+0HggAiJe2zlTk+8F31fcmk/raUX/oyC4ubelNf9sJAADxoIP/YeHjtur6gEm8fdSCs0EQbEze
+        usODXQCIoeGRsQNzh39y8H+PWphQ4Z9/936hqp/66iuG7cQAgPrQ0todpccy0czs3G4ul/usOm7f0jlp
+        9FVCv+azsrKyq1/sBwDUpzAM930/L1W3MybhDMMwjNsjxC/ATfEMDSxudgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="AddPurokButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -49,7 +49,7 @@ Partial Class Login
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.Font = New System.Drawing.Font("Palatino Linotype", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.BunifuLabel1.Location = New System.Drawing.Point(208, 53)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(211, 53)
         Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -128,7 +128,7 @@ Partial Class Login
         Me.LoginButton.IdleIconLeftImage = Nothing
         Me.LoginButton.IdleIconRightImage = Nothing
         Me.LoginButton.IndicateFocus = False
-        Me.LoginButton.Location = New System.Drawing.Point(204, 270)
+        Me.LoginButton.Location = New System.Drawing.Point(207, 270)
         Me.LoginButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
@@ -200,7 +200,7 @@ Partial Class Login
         Me.userNameTextBox.IconRight = Nothing
         Me.userNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.userNameTextBox.Lines = New String(-1) {}
-        Me.userNameTextBox.Location = New System.Drawing.Point(31, 138)
+        Me.userNameTextBox.Location = New System.Drawing.Point(78, 138)
         Me.userNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.userNameTextBox.MaxLength = 32767
         Me.userNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
@@ -237,7 +237,7 @@ Partial Class Login
         Me.userNameTextBox.SelectionLength = 0
         Me.userNameTextBox.SelectionStart = 0
         Me.userNameTextBox.ShortcutsEnabled = True
-        Me.userNameTextBox.Size = New System.Drawing.Size(584, 45)
+        Me.userNameTextBox.Size = New System.Drawing.Size(497, 45)
         Me.userNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.userNameTextBox.TabIndex = 1
         Me.userNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -277,7 +277,7 @@ Partial Class Login
         Me.passwordTextBox.IconRight = Nothing
         Me.passwordTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.passwordTextBox.Lines = New String(-1) {}
-        Me.passwordTextBox.Location = New System.Drawing.Point(31, 193)
+        Me.passwordTextBox.Location = New System.Drawing.Point(77, 193)
         Me.passwordTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.passwordTextBox.MaxLength = 32767
         Me.passwordTextBox.MinimumSize = New System.Drawing.Size(1, 1)
@@ -314,7 +314,7 @@ Partial Class Login
         Me.passwordTextBox.SelectionLength = 0
         Me.passwordTextBox.SelectionStart = 0
         Me.passwordTextBox.ShortcutsEnabled = True
-        Me.passwordTextBox.Size = New System.Drawing.Size(585, 45)
+        Me.passwordTextBox.Size = New System.Drawing.Size(498, 45)
         Me.passwordTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.passwordTextBox.TabIndex = 2
         Me.passwordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left

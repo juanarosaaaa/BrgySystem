@@ -48,7 +48,7 @@ Partial Class Settings
         Me.MainPanelSetting.BorderRadius = 3
         Me.MainPanelSetting.BorderThickness = 1
         Me.MainPanelSetting.Location = New System.Drawing.Point(-1, 147)
-        Me.MainPanelSetting.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MainPanelSetting.Margin = New System.Windows.Forms.Padding(4)
         Me.MainPanelSetting.Name = "MainPanelSetting"
         Me.MainPanelSetting.ShowBorders = True
         Me.MainPanelSetting.Size = New System.Drawing.Size(1503, 833)
@@ -84,7 +84,7 @@ Partial Class Settings
         Me.BarangayDetailsButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BarangayDetailsButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.BarangayDetailsButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.BarangayDetailsButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BarangayDetailsButton.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BarangayDetailsButton.ForeColor = System.Drawing.Color.White
         Me.BarangayDetailsButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BarangayDetailsButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -103,7 +103,7 @@ Partial Class Settings
         Me.BarangayDetailsButton.IdleIconRightImage = Nothing
         Me.BarangayDetailsButton.IndicateFocus = False
         Me.BarangayDetailsButton.Location = New System.Drawing.Point(496, 95)
-        Me.BarangayDetailsButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BarangayDetailsButton.Margin = New System.Windows.Forms.Padding(4)
         Me.BarangayDetailsButton.Name = "BarangayDetailsButton"
         Me.BarangayDetailsButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BarangayDetailsButton.OnDisabledState.BorderRadius = 40
@@ -175,7 +175,7 @@ Partial Class Settings
         Me.AccountSettingsButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.AccountSettingsButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.AccountSettingsButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.AccountSettingsButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AccountSettingsButton.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AccountSettingsButton.ForeColor = System.Drawing.Color.White
         Me.AccountSettingsButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AccountSettingsButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -194,7 +194,7 @@ Partial Class Settings
         Me.AccountSettingsButton.IdleIconRightImage = Nothing
         Me.AccountSettingsButton.IndicateFocus = False
         Me.AccountSettingsButton.Location = New System.Drawing.Point(235, 95)
-        Me.AccountSettingsButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AccountSettingsButton.Margin = New System.Windows.Forms.Padding(4)
         Me.AccountSettingsButton.Name = "AccountSettingsButton"
         Me.AccountSettingsButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.AccountSettingsButton.OnDisabledState.BorderRadius = 40
@@ -266,7 +266,7 @@ Partial Class Settings
         Me.MissionVisionzButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.MissionVisionzButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.MissionVisionzButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.MissionVisionzButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MissionVisionzButton.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MissionVisionzButton.ForeColor = System.Drawing.Color.White
         Me.MissionVisionzButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.MissionVisionzButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -285,7 +285,7 @@ Partial Class Settings
         Me.MissionVisionzButton.IdleIconRightImage = Nothing
         Me.MissionVisionzButton.IndicateFocus = False
         Me.MissionVisionzButton.Location = New System.Drawing.Point(1019, 95)
-        Me.MissionVisionzButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MissionVisionzButton.Margin = New System.Windows.Forms.Padding(4)
         Me.MissionVisionzButton.Name = "MissionVisionzButton"
         Me.MissionVisionzButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.MissionVisionzButton.OnDisabledState.BorderRadius = 40
@@ -357,7 +357,7 @@ Partial Class Settings
         Me.OrganizationChart.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.OrganizationChart.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.OrganizationChart.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.OrganizationChart.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OrganizationChart.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OrganizationChart.ForeColor = System.Drawing.Color.White
         Me.OrganizationChart.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.OrganizationChart.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -376,7 +376,7 @@ Partial Class Settings
         Me.OrganizationChart.IdleIconRightImage = Nothing
         Me.OrganizationChart.IndicateFocus = False
         Me.OrganizationChart.Location = New System.Drawing.Point(757, 95)
-        Me.OrganizationChart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.OrganizationChart.Margin = New System.Windows.Forms.Padding(4)
         Me.OrganizationChart.Name = "OrganizationChart"
         Me.OrganizationChart.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.OrganizationChart.OnDisabledState.BorderRadius = 40
@@ -423,13 +423,13 @@ Partial Class Settings
         Me.BunifuLabel1.AllowParentOverrides = False
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.CursorType = Nothing
-        Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel1.Font = New System.Drawing.Font("Palatino Linotype", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
         Me.BunifuLabel1.Location = New System.Drawing.Point(43, 46)
         Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(119, 47)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(122, 47)
         Me.BunifuLabel1.TabIndex = 7
         Me.BunifuLabel1.Text = "Settings"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -450,7 +450,7 @@ Partial Class Settings
         Me.Controls.Add(Me.AccountSettingsButton)
         Me.Controls.Add(Me.MainPanelSetting)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Settings"
         Me.Text = "Settings"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
