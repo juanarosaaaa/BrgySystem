@@ -37,6 +37,11 @@ BrgySystem
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:BrgySystem.My.Resources.Resources.icons8_administrator_male_60px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:BrgySystem.My.Resources.Resources.icons8_archive_24px_1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
