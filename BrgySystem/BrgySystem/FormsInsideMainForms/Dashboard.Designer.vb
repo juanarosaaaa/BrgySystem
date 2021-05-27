@@ -48,6 +48,7 @@ Partial Class Dashboard
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.lblCountResidents = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.lblMission = New Guna.UI.WinForms.GunaLabel()
         Me.BunifuGradientPanel5.SuspendLayout()
         Me.BunifuGradientPanel4.SuspendLayout()
         Me.BunifuGradientPanel3.SuspendLayout()
@@ -65,7 +66,7 @@ Partial Class Dashboard
         Me.BunifuLabel1.CursorType = Nothing
         Me.BunifuLabel1.Font = New System.Drawing.Font("Segoe UI Semilight", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel1.Location = New System.Drawing.Point(31, 14)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(31, 37)
         Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -83,7 +84,7 @@ Partial Class Dashboard
         Me.LiveDateAndTime.CursorType = System.Windows.Forms.Cursors.Default
         Me.LiveDateAndTime.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LiveDateAndTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LiveDateAndTime.Location = New System.Drawing.Point(31, 62)
+        Me.LiveDateAndTime.Location = New System.Drawing.Point(31, 85)
         Me.LiveDateAndTime.Margin = New System.Windows.Forms.Padding(4)
         Me.LiveDateAndTime.Name = "LiveDateAndTime"
         Me.LiveDateAndTime.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -111,7 +112,7 @@ Partial Class Dashboard
         Me.BunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.BunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.BunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.BunifuGradientPanel5.Location = New System.Drawing.Point(23, 580)
+        Me.BunifuGradientPanel5.Location = New System.Drawing.Point(23, 603)
         Me.BunifuGradientPanel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel5.Name = "BunifuGradientPanel5"
         Me.BunifuGradientPanel5.Quality = 10
@@ -153,13 +154,14 @@ Partial Class Dashboard
         Me.BunifuGradientPanel4.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel4.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuGradientPanel4.BorderRadius = 25
+        Me.BunifuGradientPanel4.Controls.Add(Me.lblMission)
         Me.BunifuGradientPanel4.Controls.Add(Me.RichTextBoxMission)
         Me.BunifuGradientPanel4.Controls.Add(Me.BunifuLabel8)
         Me.BunifuGradientPanel4.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.BunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.BunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.BunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.BunifuGradientPanel4.Location = New System.Drawing.Point(23, 308)
+        Me.BunifuGradientPanel4.Location = New System.Drawing.Point(23, 331)
         Me.BunifuGradientPanel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel4.Name = "BunifuGradientPanel4"
         Me.BunifuGradientPanel4.Quality = 10
@@ -171,10 +173,10 @@ Partial Class Dashboard
         Me.RichTextBoxMission.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.RichTextBoxMission.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBoxMission.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBoxMission.Location = New System.Drawing.Point(0, 66)
+        Me.RichTextBoxMission.Location = New System.Drawing.Point(1, 66)
         Me.RichTextBoxMission.Margin = New System.Windows.Forms.Padding(4)
         Me.RichTextBoxMission.Name = "RichTextBoxMission"
-        Me.RichTextBoxMission.Size = New System.Drawing.Size(1450, 190)
+        Me.RichTextBoxMission.Size = New System.Drawing.Size(1449, 190)
         Me.RichTextBoxMission.TabIndex = 1
         Me.RichTextBoxMission.Text = resources.GetString("RichTextBoxMission.Text")
         '
@@ -210,7 +212,7 @@ Partial Class Dashboard
         Me.BunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.BunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.BunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.BunifuGradientPanel3.Location = New System.Drawing.Point(1012, 117)
+        Me.BunifuGradientPanel3.Location = New System.Drawing.Point(1012, 140)
         Me.BunifuGradientPanel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel3.Name = "BunifuGradientPanel3"
         Me.BunifuGradientPanel3.Quality = 10
@@ -300,7 +302,7 @@ Partial Class Dashboard
         Me.BunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.BunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.BunifuGradientPanel6.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.BunifuGradientPanel6.Location = New System.Drawing.Point(516, 117)
+        Me.BunifuGradientPanel6.Location = New System.Drawing.Point(516, 140)
         Me.BunifuGradientPanel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel6.Name = "BunifuGradientPanel6"
         Me.BunifuGradientPanel6.Quality = 10
@@ -390,7 +392,7 @@ Partial Class Dashboard
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(23, 117)
+        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(23, 140)
         Me.BunifuGradientPanel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
         Me.BunifuGradientPanel1.Quality = 10
@@ -465,6 +467,16 @@ Partial Class Dashboard
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
+        'lblMission
+        '
+        Me.lblMission.AutoSize = True
+        Me.lblMission.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMission.Location = New System.Drawing.Point(3, 150)
+        Me.lblMission.Name = "lblMission"
+        Me.lblMission.Size = New System.Drawing.Size(1444, 75)
+        Me.lblMission.TabIndex = 6
+        Me.lblMission.Text = resources.GetString("lblMission.Text")
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -527,4 +539,5 @@ Partial Class Dashboard
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents RichTextBoxMission As RichTextBox
     Friend WithEvents RichTextBoxVision As RichTextBox
+    Friend WithEvents lblMission As Guna.UI.WinForms.GunaLabel
 End Class
