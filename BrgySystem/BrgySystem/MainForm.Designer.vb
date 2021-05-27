@@ -220,7 +220,7 @@ Partial Class MainForm
         Me.AdminNameTextBox.Size = New System.Drawing.Size(243, 36)
         Me.AdminNameTextBox.TabIndex = 28
         Me.AdminNameTextBox.Text = "Admin Name"
-        Me.AdminNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.AdminNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'GunaTextBox2
         '
@@ -240,7 +240,7 @@ Partial Class MainForm
         Me.GunaTextBox2.Size = New System.Drawing.Size(241, 36)
         Me.GunaTextBox2.TabIndex = 29
         Me.GunaTextBox2.Text = "ADMINISTRATOR"
-        Me.GunaTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.GunaTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'MunicipalityLogo
         '

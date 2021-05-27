@@ -774,7 +774,7 @@ Partial Class Archive
         Me.ResidentsArchiveSearchField.Padding = New System.Windows.Forms.Padding(3)
         Me.ResidentsArchiveSearchField.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.ResidentsArchiveSearchField.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.ResidentsArchiveSearchField.PlaceholderText = "Search name"
+        Me.ResidentsArchiveSearchField.PlaceholderText = "Search Name"
         Me.ResidentsArchiveSearchField.ReadOnly = False
         Me.ResidentsArchiveSearchField.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.ResidentsArchiveSearchField.SelectedText = ""
@@ -788,7 +788,7 @@ Partial Class Archive
         Me.ResidentsArchiveSearchField.TextMarginBottom = 0
         Me.ResidentsArchiveSearchField.TextMarginLeft = 9
         Me.ResidentsArchiveSearchField.TextMarginTop = 0
-        Me.ResidentsArchiveSearchField.TextPlaceholder = "Search name"
+        Me.ResidentsArchiveSearchField.TextPlaceholder = "Search Name"
         Me.ResidentsArchiveSearchField.UseSystemPasswordChar = False
         Me.ResidentsArchiveSearchField.WordWrap = True
         '

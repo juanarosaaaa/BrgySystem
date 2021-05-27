@@ -310,7 +310,7 @@ Partial Class Dashboard
         Me.BunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BunifuPictureBox4.AutoSizeHeight = True
         Me.BunifuPictureBox4.BorderRadius = 0
-        Me.BunifuPictureBox4.Image = CType(resources.GetObject("BunifuPictureBox4.Image"), System.Drawing.Image)
+        Me.BunifuPictureBox4.Image = Global.BrgySystem.My.Resources.Resources.icons8_folder_78px1
         Me.BunifuPictureBox4.IsCircle = True
         Me.BunifuPictureBox4.Location = New System.Drawing.Point(13, 27)
         Me.BunifuPictureBox4.Margin = New System.Windows.Forms.Padding(2)

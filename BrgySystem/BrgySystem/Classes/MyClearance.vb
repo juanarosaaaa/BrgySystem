@@ -35,7 +35,7 @@ Public Class MyClearance
 '" & Clearance.BrgyClearanceComboBox.Text.Trim & "',
 '" & Clearance.AmountTextbox.Text.Trim & "',
 '" & Clearance.TotalTextbox.Text.Trim & "',
-'" & Clearance.TotalTextbox.Text.Trim & "',
+'" & Clearance.BusinessNameTextBOx.Text.Trim & "',
 '" & Clearance.BusinessTypeTextBox.Text.Trim & "',
 '" & Clearance.IssuedAtTextBox.Text.Trim & "')"
     End Function
@@ -49,8 +49,12 @@ Public Class MyClearance
 
 
         Dim arr() As Object = {Clearance.FullNameTextBox,
-            Clearance.BusinessNameTextBOx, Clearance.BusinessTypeTextBox, Clearance.TransactionNumber_TextBox, Clearance.PurposeTextBox,
-             Clearance.IssuedAtTextBox, Clearance.QuantityTextBox, Clearance.AmountTextbox, Clearance.TotalTextbox}
+          Clearance.PurposeTextBox,
+             Clearance.IssuedAtTextBox,
+             Clearance.QuantityTextBox,
+             Clearance.AmountTextbox,
+             Clearance.TotalTextbox,
+             Clearance.AddressTextBox}
 
         For Each inputObjects As Object In arr
 
@@ -60,6 +64,8 @@ Public Class MyClearance
                 Return True
                 Exit For
                 Exit Function
+            ElseIf inputObjects.Equals(arr(2)) Or inputObjects.Equals(arr(6)) Then
+
             ElseIf (InputContainsSpecialCharacter(inputObjects.Text)) Then
                 MessageBox.Show("Input is invalid. Your '" & inputObjects.AccessibleName & "' field contains special characters ^&*()-+=|{}':;.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return True
@@ -67,7 +73,7 @@ Public Class MyClearance
                 Exit Function
             End If
 
-            If inputObjects.Equals(arr(1)) Or inputObjects.Equals(arr(3)) Or inputObjects.Equals(arr(5)) Or inputObjects.Equals(arr(6)) Or inputObjects.Equals(arr(7)) Or inputObjects.Equals(arr(8)) Then
+            If inputObjects.Equals(arr(2)) Or inputObjects.Equals(arr(3)) Or inputObjects.Equals(arr(4)) Or inputObjects.Equals(arr(5)) Or inputObjects.Equals(arr(6)) Then
                 Continue For
             ElseIf InputContainsNumber(inputObjects.Text) Then
                 MessageBox.Show("Input is invalid! Your " & inputObjects.AccessibleName & " contains number.", "INCOMPLETE DETAILS", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -96,6 +102,7 @@ Public Class MyClearance
                     .AddressTextBox.Text = reader.GetString("ADDRESS")
                     .AgeTextBox.Text = reader.GetString("AGE")
                     .SexTextBox.Text = reader.GetString("SEX")
+
                 End With
             End While
 
@@ -104,11 +111,12 @@ Public Class MyClearance
             MsgBox(ex.Message)
         Finally
             closeConnection()
+
         End Try
     End Sub
 
     Sub deleteClearance(name As String)
-        If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Barangay Clearance?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
+        If (MessageBox.Show("Are you sure you want to delete ALL the history of Resident '" & name.ToUpper.Trim & "'s Barangay Clearance?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manipulate.manipulateDataAt("DELETE FROM `clearance` WHERE Fullname = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Barangay Clearance for '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
@@ -143,11 +151,13 @@ Public Class MyClearance
 
             ElseIf (Not isInputAlreadyExist("FULLNAME", "residents", Clearance.FullNameTextBox.Text.Trim)) Then
                 MessageBox.Show("Unknown Resident. Resident '" & Clearance.FullNameTextBox.Text.Trim.ToUpper & "' does not exist in Resident's list.", "INVALID Resident!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+
                 Return False
 
             ElseIf (manage.manipulateDataAt(query)) Then
                 MessageBox.Show("Clearance sucessfully added!", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 clearAllInputs()
+
                 Return True
 
             Else
@@ -155,13 +165,8 @@ Public Class MyClearance
                 Return False
             End If
         Catch duplicate As MySqlException
-            If isInputAlreadyExist("Business Name", "clearance", Clearance.BusinessNameTextBOx.Text.Trim) And Clearance.isBusinessNamemodified Then
-                MessageBox.Show("Business Name '" & Clearance.BusinessNameTextBOx.Text.Trim.ToUpper & "' is already used.", "INVALID BUSINESS NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                Return False
-            ElseIf isInputAlreadyExist("TransactNo", "clearance", Clearance.TransactionNumber_TextBox.Text.Trim) And Clearance.isTransactNumberModified Then
-                MessageBox.Show("Transaction Number '" & Clearance.TransactionNumber_TextBox.Text.Trim.ToUpper & "' is already exist.", "INVALID TRANSACTION NUMBER!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                Return False
-            End If
+            MessageBox.Show("Business Name '" & Clearance.BusinessNameTextBOx.Text.Trim.ToUpper & "' is already used.", "INVALID BUSINESS NAME!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return False
         Finally
             closeConnection()
         End Try
@@ -176,13 +181,15 @@ Public Class MyClearance
             .FullNameTextBox.Clear()
             .BusinessNameTextBOx.Clear()
             .BusinessTypeTextBox.Clear()
-            .TransactionNumber_TextBox.Clear()
             .PurposeTextBox.Clear()
             .AddressTextBox.Clear()
             .IssuedAtTextBox.Clear()
             .SexTextBox.Clear()
             .AgeTextBox.Clear()
-
+            .TransactionNumber_TextBox.Text = getGeneratedTransactionNumber()
+            .QuantityTextBox.Clear()
+            .AmountTextbox.Clear()
+            .TotalTextbox.Clear()
             .isBusinessNamemodified = False
             .isTransactNumberModified = False
         End With
@@ -201,7 +208,7 @@ Public Class MyClearance
         Do
             val = CStr(Date.Now.Year & New Random().Next(1000, 99999))
         Loop While isInputAlreadyExist("TransactNo", "clearance", val)
-
+        closeConnection()
         Return val
     End Function
 

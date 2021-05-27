@@ -36,7 +36,6 @@ Public Class Dashboard
         Finally
             reader.Close()
             closeConnection()
-
         End Try
 
         Return "0"
