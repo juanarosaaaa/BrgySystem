@@ -48,13 +48,14 @@ Partial Class SettingsMissionVissionForm
         Me.TableLayoutPanel1.Controls.Add(Me.VisionRichTextBox, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.MissionRichTextBox, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel1, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(6, 29)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(8, 36)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.810036!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.18996!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1076, 523)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1435, 644)
         Me.TableLayoutPanel1.TabIndex = 4
         '
         'BunifuLabel2
@@ -63,12 +64,13 @@ Partial Class SettingsMissionVissionForm
         Me.BunifuLabel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.BunifuLabel2.AutoEllipsis = False
         Me.BunifuLabel2.CursorType = Nothing
-        Me.BunifuLabel2.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel2.Font = New System.Drawing.Font("Palatino Linotype", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel2.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel2.Location = New System.Drawing.Point(236, 6)
+        Me.BunifuLabel2.Location = New System.Drawing.Point(321, 11)
+        Me.BunifuLabel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel2.Size = New System.Drawing.Size(66, 26)
+        Me.BunifuLabel2.Size = New System.Drawing.Size(75, 28)
         Me.BunifuLabel2.TabIndex = 1
         Me.BunifuLabel2.Text = "Mission"
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -80,11 +82,12 @@ Partial Class SettingsMissionVissionForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.VisionRichTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.VisionRichTextBox.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VisionRichTextBox.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VisionRichTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.VisionRichTextBox.Location = New System.Drawing.Point(541, 38)
+        Me.VisionRichTextBox.Location = New System.Drawing.Point(721, 47)
+        Me.VisionRichTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VisionRichTextBox.Name = "VisionRichTextBox"
-        Me.VisionRichTextBox.Size = New System.Drawing.Size(532, 472)
+        Me.VisionRichTextBox.Size = New System.Drawing.Size(710, 581)
         Me.VisionRichTextBox.TabIndex = 0
         Me.VisionRichTextBox.Text = resources.GetString("VisionRichTextBox.Text")
         '
@@ -94,11 +97,12 @@ Partial Class SettingsMissionVissionForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.MissionRichTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.MissionRichTextBox.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MissionRichTextBox.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MissionRichTextBox.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.MissionRichTextBox.Location = New System.Drawing.Point(3, 38)
+        Me.MissionRichTextBox.Location = New System.Drawing.Point(4, 47)
+        Me.MissionRichTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MissionRichTextBox.Name = "MissionRichTextBox"
-        Me.MissionRichTextBox.Size = New System.Drawing.Size(532, 472)
+        Me.MissionRichTextBox.Size = New System.Drawing.Size(709, 581)
         Me.MissionRichTextBox.TabIndex = 0
         Me.MissionRichTextBox.Text = resources.GetString("MissionRichTextBox.Text")
         '
@@ -109,12 +113,13 @@ Partial Class SettingsMissionVissionForm
         Me.BunifuLabel1.AutoEllipsis = False
         Me.BunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel1.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel1.Font = New System.Drawing.Font("Palatino Linotype", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel1.Location = New System.Drawing.Point(781, 6)
+        Me.BunifuLabel1.Location = New System.Drawing.Point(1045, 11)
+        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel1.Name = "BunifuLabel1"
         Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(52, 26)
+        Me.BunifuLabel1.Size = New System.Drawing.Size(61, 28)
         Me.BunifuLabel1.TabIndex = 1
         Me.BunifuLabel1.Text = "Vision"
         Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -150,7 +155,7 @@ Partial Class SettingsMissionVissionForm
         Me.SaveButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.SaveButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.SaveButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.SaveButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaveButton.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SaveButton.ForeColor = System.Drawing.Color.White
         Me.SaveButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SaveButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -168,7 +173,8 @@ Partial Class SettingsMissionVissionForm
         Me.SaveButton.IdleIconLeftImage = Nothing
         Me.SaveButton.IdleIconRightImage = Nothing
         Me.SaveButton.IndicateFocus = False
-        Me.SaveButton.Location = New System.Drawing.Point(933, 556)
+        Me.SaveButton.Location = New System.Drawing.Point(1244, 684)
+        Me.SaveButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SaveButton.OnDisabledState.BorderRadius = 50
@@ -202,7 +208,7 @@ Partial Class SettingsMissionVissionForm
         Me.SaveButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.SaveButton.OnPressedState.IconLeftImage = Nothing
         Me.SaveButton.OnPressedState.IconRightImage = Nothing
-        Me.SaveButton.Size = New System.Drawing.Size(143, 44)
+        Me.SaveButton.Size = New System.Drawing.Size(191, 54)
         Me.SaveButton.TabIndex = 3
         Me.SaveButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SaveButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -217,24 +223,27 @@ Partial Class SettingsMissionVissionForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.SaveButton)
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel1)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox1.Location = New System.Drawing.Point(12, -1)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, -1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1088, 628)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1451, 773)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Barangay's Mission and Vision"
         '
         'SettingsMissionVissionForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1112, 639)
+        Me.ClientSize = New System.Drawing.Size(1483, 786)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "SettingsMissionVissionForm"
         Me.Text = "SettingsMissionVissionForm"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

@@ -54,17 +54,17 @@ Partial Class SettingsAccountSettingsForm
         Me.UsernametextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.UsernametextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.UsernametextBox.FocusedState.Parent = Me.UsernametextBox
-        Me.UsernametextBox.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UsernametextBox.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsernametextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.UsernametextBox.HoverState.Parent = Me.UsernametextBox
-        Me.UsernametextBox.Location = New System.Drawing.Point(232, 4)
-        Me.UsernametextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.UsernametextBox.Location = New System.Drawing.Point(309, 5)
+        Me.UsernametextBox.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.UsernametextBox.Name = "UsernametextBox"
         Me.UsernametextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.UsernametextBox.PlaceholderText = ""
         Me.UsernametextBox.SelectedText = ""
         Me.UsernametextBox.ShadowDecoration.Parent = Me.UsernametextBox
-        Me.UsernametextBox.Size = New System.Drawing.Size(373, 38)
+        Me.UsernametextBox.Size = New System.Drawing.Size(497, 46)
         Me.UsernametextBox.TabIndex = 0
         '
         'CurrentPassword
@@ -82,17 +82,17 @@ Partial Class SettingsAccountSettingsForm
         Me.CurrentPassword.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.CurrentPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CurrentPassword.FocusedState.Parent = Me.CurrentPassword
-        Me.CurrentPassword.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CurrentPassword.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CurrentPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CurrentPassword.HoverState.Parent = Me.CurrentPassword
-        Me.CurrentPassword.Location = New System.Drawing.Point(232, 50)
-        Me.CurrentPassword.Margin = New System.Windows.Forms.Padding(4)
+        Me.CurrentPassword.Location = New System.Drawing.Point(309, 61)
+        Me.CurrentPassword.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.CurrentPassword.Name = "CurrentPassword"
         Me.CurrentPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.CurrentPassword.PlaceholderText = ""
         Me.CurrentPassword.SelectedText = ""
         Me.CurrentPassword.ShadowDecoration.Parent = Me.CurrentPassword
-        Me.CurrentPassword.Size = New System.Drawing.Size(373, 39)
+        Me.CurrentPassword.Size = New System.Drawing.Size(497, 48)
         Me.CurrentPassword.TabIndex = 0
         Me.CurrentPassword.UseSystemPasswordChar = True
         '
@@ -102,12 +102,13 @@ Partial Class SettingsAccountSettingsForm
         Me.BunifuLabel2.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BunifuLabel2.AutoEllipsis = False
         Me.BunifuLabel2.CursorType = Nothing
-        Me.BunifuLabel2.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel2.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel2.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel2.Location = New System.Drawing.Point(79, 57)
+        Me.BunifuLabel2.Location = New System.Drawing.Point(174, 74)
+        Me.BunifuLabel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel2.Name = "BunifuLabel2"
         Me.BunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel2.Size = New System.Drawing.Size(146, 25)
+        Me.BunifuLabel2.Size = New System.Drawing.Size(126, 22)
         Me.BunifuLabel2.TabIndex = 1
         Me.BunifuLabel2.Text = "Current Password:"
         Me.BunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -119,12 +120,13 @@ Partial Class SettingsAccountSettingsForm
         Me.BunifuLabel3.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BunifuLabel3.AutoEllipsis = False
         Me.BunifuLabel3.CursorType = Nothing
-        Me.BunifuLabel3.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel3.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel3.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel3.Location = New System.Drawing.Point(138, 10)
+        Me.BunifuLabel3.Location = New System.Drawing.Point(226, 17)
+        Me.BunifuLabel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel3.Size = New System.Drawing.Size(87, 25)
+        Me.BunifuLabel3.Size = New System.Drawing.Size(74, 22)
         Me.BunifuLabel3.TabIndex = 1
         Me.BunifuLabel3.Text = "Username:"
         Me.BunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -145,17 +147,17 @@ Partial Class SettingsAccountSettingsForm
         Me.NewPassword.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.NewPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.NewPassword.FocusedState.Parent = Me.NewPassword
-        Me.NewPassword.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NewPassword.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.NewPassword.HoverState.Parent = Me.NewPassword
-        Me.NewPassword.Location = New System.Drawing.Point(232, 97)
-        Me.NewPassword.Margin = New System.Windows.Forms.Padding(4)
+        Me.NewPassword.Location = New System.Drawing.Point(309, 119)
+        Me.NewPassword.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.NewPassword.Name = "NewPassword"
         Me.NewPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.NewPassword.PlaceholderText = ""
         Me.NewPassword.SelectedText = ""
         Me.NewPassword.ShadowDecoration.Parent = Me.NewPassword
-        Me.NewPassword.Size = New System.Drawing.Size(373, 35)
+        Me.NewPassword.Size = New System.Drawing.Size(497, 43)
         Me.NewPassword.TabIndex = 0
         Me.NewPassword.UseSystemPasswordChar = True
         '
@@ -165,12 +167,13 @@ Partial Class SettingsAccountSettingsForm
         Me.BunifuLabel4.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BunifuLabel4.AutoEllipsis = False
         Me.BunifuLabel4.CursorType = Nothing
-        Me.BunifuLabel4.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel4.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel4.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel4.Location = New System.Drawing.Point(102, 102)
+        Me.BunifuLabel4.Location = New System.Drawing.Point(195, 129)
+        Me.BunifuLabel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel4.Size = New System.Drawing.Size(123, 25)
+        Me.BunifuLabel4.Size = New System.Drawing.Size(105, 22)
         Me.BunifuLabel4.TabIndex = 1
         Me.BunifuLabel4.Text = "New Password:"
         Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -191,17 +194,17 @@ Partial Class SettingsAccountSettingsForm
         Me.ConfirmPassword.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.ConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ConfirmPassword.FocusedState.Parent = Me.ConfirmPassword
-        Me.ConfirmPassword.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConfirmPassword.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ConfirmPassword.HoverState.Parent = Me.ConfirmPassword
-        Me.ConfirmPassword.Location = New System.Drawing.Point(232, 140)
-        Me.ConfirmPassword.Margin = New System.Windows.Forms.Padding(4)
+        Me.ConfirmPassword.Location = New System.Drawing.Point(309, 172)
+        Me.ConfirmPassword.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ConfirmPassword.Name = "ConfirmPassword"
         Me.ConfirmPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.ConfirmPassword.PlaceholderText = ""
         Me.ConfirmPassword.SelectedText = ""
         Me.ConfirmPassword.ShadowDecoration.Parent = Me.ConfirmPassword
-        Me.ConfirmPassword.Size = New System.Drawing.Size(373, 36)
+        Me.ConfirmPassword.Size = New System.Drawing.Size(497, 44)
         Me.ConfirmPassword.TabIndex = 0
         Me.ConfirmPassword.UseSystemPasswordChar = True
         '
@@ -211,12 +214,13 @@ Partial Class SettingsAccountSettingsForm
         Me.BunifuLabel5.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BunifuLabel5.AutoEllipsis = False
         Me.BunifuLabel5.CursorType = Nothing
-        Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel5.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel5.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel5.Location = New System.Drawing.Point(74, 145)
+        Me.BunifuLabel5.Location = New System.Drawing.Point(170, 183)
+        Me.BunifuLabel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel5.Name = "BunifuLabel5"
         Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel5.Size = New System.Drawing.Size(151, 25)
+        Me.BunifuLabel5.Size = New System.Drawing.Size(130, 22)
         Me.BunifuLabel5.TabIndex = 1
         Me.BunifuLabel5.Text = "Confirm Password:"
         Me.BunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -252,7 +256,7 @@ Partial Class SettingsAccountSettingsForm
         Me.SubmitButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.SubmitButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.SubmitButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.SubmitButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SubmitButton.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SubmitButton.ForeColor = System.Drawing.Color.White
         Me.SubmitButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SubmitButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -264,13 +268,14 @@ Partial Class SettingsAccountSettingsForm
         Me.SubmitButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.SubmitButton.IconSize = 25
         Me.SubmitButton.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.SubmitButton.IdleBorderRadius = 42
+        Me.SubmitButton.IdleBorderRadius = 52
         Me.SubmitButton.IdleBorderThickness = 1
         Me.SubmitButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.SubmitButton.IdleIconLeftImage = Nothing
         Me.SubmitButton.IdleIconRightImage = Nothing
         Me.SubmitButton.IndicateFocus = False
-        Me.SubmitButton.Location = New System.Drawing.Point(602, 291)
+        Me.SubmitButton.Location = New System.Drawing.Point(803, 358)
+        Me.SubmitButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SubmitButton.Name = "SubmitButton"
         Me.SubmitButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SubmitButton.OnDisabledState.BorderRadius = 1
@@ -304,7 +309,7 @@ Partial Class SettingsAccountSettingsForm
         Me.SubmitButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.SubmitButton.OnPressedState.IconLeftImage = Nothing
         Me.SubmitButton.OnPressedState.IconRightImage = Nothing
-        Me.SubmitButton.Size = New System.Drawing.Size(157, 44)
+        Me.SubmitButton.Size = New System.Drawing.Size(209, 54)
         Me.SubmitButton.TabIndex = 2
         Me.SubmitButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SubmitButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -326,8 +331,8 @@ Partial Class SettingsAccountSettingsForm
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel4, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel5, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.NewPassword, 1, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(158, 121)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(100, 3, 3, 3)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(211, 149)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(133, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.60947!))
@@ -335,7 +340,7 @@ Partial Class SettingsAccountSettingsForm
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.72189!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.01775!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.4497!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(762, 338)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1016, 416)
         Me.TableLayoutPanel1.TabIndex = 3
         '
         'GroupBox1
@@ -343,23 +348,26 @@ Partial Class SettingsAccountSettingsForm
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel1)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 5)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 6)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1077, 609)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1436, 750)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Change Password"
         '
         'SettingsAccountSettingsForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1101, 626)
+        Me.ClientSize = New System.Drawing.Size(1468, 770)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "SettingsAccountSettingsForm"
         Me.Text = "SettingsAccountSettingsForm"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

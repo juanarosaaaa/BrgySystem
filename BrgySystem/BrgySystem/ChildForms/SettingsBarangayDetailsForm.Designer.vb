@@ -23,47 +23,47 @@ Partial Class SettingsBarangayDetailsForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingsBarangayDetailsForm))
-        Dim StateProperties21 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties22 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties23 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties24 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties25 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties26 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties27 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties28 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties29 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties30 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties31 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties32 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties33 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties34 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties35 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties36 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties37 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties38 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties39 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties40 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim BorderEdges3 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
-        Dim BorderEdges4 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties5 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties6 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties7 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties8 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties9 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties10 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties11 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties12 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties13 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties14 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties15 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties16 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties17 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties18 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties19 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties20 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel7 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel6 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel3 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.ZipCodeTextBox = New Bunifu.UI.WinForms.BunifuLabel()
         Me.MunicipalityLogoPictureBox = New Bunifu.UI.WinForms.BunifuPictureBox()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.AdminNameTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.Addresstextbox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BarangayCaptainTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.ContactNumberTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.ZipCodeTxtBox = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.ZipCodeTextBox = New Bunifu.UI.WinForms.BunifuLabel()
         Me.SaveButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.BrowseButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.GroupBox1.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.MunicipalityLogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'BunifuLabel5
@@ -72,12 +72,13 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel5.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BunifuLabel5.AutoEllipsis = False
         Me.BunifuLabel5.CursorType = Nothing
-        Me.BunifuLabel5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel5.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel5.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel5.Location = New System.Drawing.Point(128, 61)
+        Me.BunifuLabel5.Location = New System.Drawing.Point(191, 77)
+        Me.BunifuLabel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel5.Name = "BunifuLabel5"
         Me.BunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel5.Size = New System.Drawing.Size(59, 21)
+        Me.BunifuLabel5.Size = New System.Drawing.Size(58, 22)
         Me.BunifuLabel5.TabIndex = 4
         Me.BunifuLabel5.Text = "Address:"
         Me.BunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -89,12 +90,13 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel4.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BunifuLabel4.AutoEllipsis = False
         Me.BunifuLabel4.CursorType = Nothing
-        Me.BunifuLabel4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel4.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel4.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel4.Location = New System.Drawing.Point(70, 109)
+        Me.BunifuLabel4.Location = New System.Drawing.Point(130, 136)
+        Me.BunifuLabel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel4.Name = "BunifuLabel4"
         Me.BunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel4.Size = New System.Drawing.Size(117, 21)
+        Me.BunifuLabel4.Size = New System.Drawing.Size(119, 22)
         Me.BunifuLabel4.TabIndex = 3
         Me.BunifuLabel4.Text = "Contact  Number:"
         Me.BunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -107,12 +109,13 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel7.AutoEllipsis = False
         Me.BunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel7.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel7.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel7.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel7.Location = New System.Drawing.Point(96, 13)
+        Me.BunifuLabel7.Location = New System.Drawing.Point(156, 18)
+        Me.BunifuLabel7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel7.Name = "BunifuLabel7"
         Me.BunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel7.Size = New System.Drawing.Size(91, 21)
+        Me.BunifuLabel7.Size = New System.Drawing.Size(93, 22)
         Me.BunifuLabel7.TabIndex = 0
         Me.BunifuLabel7.Text = "Admin name:"
         Me.BunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -125,12 +128,13 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel6.AutoEllipsis = False
         Me.BunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default
         Me.BunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel6.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel6.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel6.Location = New System.Drawing.Point(796, 142)
+        Me.BunifuLabel6.Location = New System.Drawing.Point(1082, 175)
+        Me.BunifuLabel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel6.Name = "BunifuLabel6"
         Me.BunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel6.Size = New System.Drawing.Size(122, 21)
+        Me.BunifuLabel6.Size = New System.Drawing.Size(126, 22)
         Me.BunifuLabel6.TabIndex = 13
         Me.BunifuLabel6.Text = "Municipality Logo"
         Me.BunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -142,12 +146,13 @@ Partial Class SettingsBarangayDetailsForm
         Me.BunifuLabel3.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BunifuLabel3.AutoEllipsis = False
         Me.BunifuLabel3.CursorType = Nothing
-        Me.BunifuLabel3.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel3.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuLabel3.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel3.Location = New System.Drawing.Point(63, 157)
+        Me.BunifuLabel3.Location = New System.Drawing.Point(120, 195)
+        Me.BunifuLabel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuLabel3.Name = "BunifuLabel3"
         Me.BunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel3.Size = New System.Drawing.Size(124, 21)
+        Me.BunifuLabel3.Size = New System.Drawing.Size(129, 22)
         Me.BunifuLabel3.TabIndex = 2
         Me.BunifuLabel3.Text = "Barangay Captain:"
         Me.BunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft
@@ -157,19 +162,39 @@ Partial Class SettingsBarangayDetailsForm
         '
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.BrowseButton)
         Me.GroupBox1.Controls.Add(Me.MunicipalityLogoPictureBox)
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel1)
         Me.GroupBox1.Controls.Add(Me.SaveButton)
         Me.GroupBox1.Controls.Add(Me.BunifuLabel6)
-        Me.GroupBox1.Controls.Add(Me.BrowseButton)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 0)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 0)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1088, 618)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1451, 761)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Change Barangay Information"
+        '
+        'MunicipalityLogoPictureBox
+        '
+        Me.MunicipalityLogoPictureBox.AllowFocused = False
+        Me.MunicipalityLogoPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MunicipalityLogoPictureBox.AutoSizeHeight = True
+        Me.MunicipalityLogoPictureBox.BorderRadius = 129
+        Me.MunicipalityLogoPictureBox.Image = CType(resources.GetObject("MunicipalityLogoPictureBox.Image"), System.Drawing.Image)
+        Me.MunicipalityLogoPictureBox.InitialImage = CType(resources.GetObject("MunicipalityLogoPictureBox.InitialImage"), System.Drawing.Image)
+        Me.MunicipalityLogoPictureBox.IsCircle = True
+        Me.MunicipalityLogoPictureBox.Location = New System.Drawing.Point(1016, 208)
+        Me.MunicipalityLogoPictureBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MunicipalityLogoPictureBox.Name = "MunicipalityLogoPictureBox"
+        Me.MunicipalityLogoPictureBox.Size = New System.Drawing.Size(259, 259)
+        Me.MunicipalityLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.MunicipalityLogoPictureBox.TabIndex = 17
+        Me.MunicipalityLogoPictureBox.TabStop = False
+        Me.MunicipalityLogoPictureBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle
         '
         'TableLayoutPanel1
         '
@@ -187,7 +212,8 @@ Partial Class SettingsBarangayDetailsForm
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel4, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuLabel3, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.ZipCodeTextBox, 0, 4)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(131, 145)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(175, 178)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -195,43 +221,8 @@ Partial Class SettingsBarangayDetailsForm
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(588, 242)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(784, 298)
         Me.TableLayoutPanel1.TabIndex = 16
-        '
-        'ZipCodeTextBox
-        '
-        Me.ZipCodeTextBox.AllowParentOverrides = False
-        Me.ZipCodeTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.ZipCodeTextBox.AutoEllipsis = False
-        Me.ZipCodeTextBox.Cursor = System.Windows.Forms.Cursors.Default
-        Me.ZipCodeTextBox.CursorType = System.Windows.Forms.Cursors.Default
-        Me.ZipCodeTextBox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ZipCodeTextBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ZipCodeTextBox.Location = New System.Drawing.Point(125, 206)
-        Me.ZipCodeTextBox.Name = "ZipCodeTextBox"
-        Me.ZipCodeTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ZipCodeTextBox.Size = New System.Drawing.Size(62, 21)
-        Me.ZipCodeTextBox.TabIndex = 9
-        Me.ZipCodeTextBox.Text = "Zip code:"
-        Me.ZipCodeTextBox.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.ZipCodeTextBox.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'MunicipalityLogoPictureBox
-        '
-        Me.MunicipalityLogoPictureBox.AllowFocused = False
-        Me.MunicipalityLogoPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.MunicipalityLogoPictureBox.AutoSizeHeight = True
-        Me.MunicipalityLogoPictureBox.BorderRadius = 97
-        Me.MunicipalityLogoPictureBox.Image = CType(resources.GetObject("MunicipalityLogoPictureBox.Image"), System.Drawing.Image)
-        Me.MunicipalityLogoPictureBox.InitialImage = CType(resources.GetObject("MunicipalityLogoPictureBox.Image"), System.Drawing.Image)
-        Me.MunicipalityLogoPictureBox.IsCircle = True
-        Me.MunicipalityLogoPictureBox.Location = New System.Drawing.Point(762, 169)
-        Me.MunicipalityLogoPictureBox.Name = "MunicipalityLogoPictureBox"
-        Me.MunicipalityLogoPictureBox.Size = New System.Drawing.Size(194, 194)
-        Me.MunicipalityLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.MunicipalityLogoPictureBox.TabIndex = 17
-        Me.MunicipalityLogoPictureBox.TabStop = False
-        Me.MunicipalityLogoPictureBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle
         '
         'AdminNameTextBox
         '
@@ -262,33 +253,34 @@ Partial Class SettingsBarangayDetailsForm
         Me.AdminNameTextBox.IconRight = Nothing
         Me.AdminNameTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.AdminNameTextBox.Lines = New String(-1) {}
-        Me.AdminNameTextBox.Location = New System.Drawing.Point(193, 3)
+        Me.AdminNameTextBox.Location = New System.Drawing.Point(257, 4)
+        Me.AdminNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.AdminNameTextBox.MaxLength = 32767
         Me.AdminNameTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.AdminNameTextBox.Modified = False
         Me.AdminNameTextBox.Multiline = False
         Me.AdminNameTextBox.Name = "AdminNameTextBox"
-        StateProperties21.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties21.FillColor = System.Drawing.Color.Empty
-        StateProperties21.ForeColor = System.Drawing.Color.Empty
-        StateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.AdminNameTextBox.OnActiveState = StateProperties21
-        StateProperties22.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties22.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.AdminNameTextBox.OnDisabledState = StateProperties22
-        StateProperties23.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties23.FillColor = System.Drawing.Color.Empty
-        StateProperties23.ForeColor = System.Drawing.Color.Empty
-        StateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.AdminNameTextBox.OnHoverState = StateProperties23
-        StateProperties24.BorderColor = System.Drawing.Color.Silver
-        StateProperties24.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        StateProperties24.ForeColor = System.Drawing.Color.Empty
-        StateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.AdminNameTextBox.OnIdleState = StateProperties24
-        Me.AdminNameTextBox.Padding = New System.Windows.Forms.Padding(3)
+        StateProperties1.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties1.FillColor = System.Drawing.Color.Empty
+        StateProperties1.ForeColor = System.Drawing.Color.Empty
+        StateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.AdminNameTextBox.OnActiveState = StateProperties1
+        StateProperties2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties2.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.AdminNameTextBox.OnDisabledState = StateProperties2
+        StateProperties3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties3.FillColor = System.Drawing.Color.Empty
+        StateProperties3.ForeColor = System.Drawing.Color.Empty
+        StateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.AdminNameTextBox.OnHoverState = StateProperties3
+        StateProperties4.BorderColor = System.Drawing.Color.Silver
+        StateProperties4.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        StateProperties4.ForeColor = System.Drawing.Color.Empty
+        StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.AdminNameTextBox.OnIdleState = StateProperties4
+        Me.AdminNameTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.AdminNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.AdminNameTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.AdminNameTextBox.PlaceholderText = ""
@@ -298,7 +290,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.AdminNameTextBox.SelectionLength = 0
         Me.AdminNameTextBox.SelectionStart = 0
         Me.AdminNameTextBox.ShortcutsEnabled = True
-        Me.AdminNameTextBox.Size = New System.Drawing.Size(373, 42)
+        Me.AdminNameTextBox.Size = New System.Drawing.Size(497, 51)
         Me.AdminNameTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.AdminNameTextBox.TabIndex = 6
         Me.AdminNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -338,33 +330,34 @@ Partial Class SettingsBarangayDetailsForm
         Me.Addresstextbox.IconRight = Nothing
         Me.Addresstextbox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.Addresstextbox.Lines = New String(-1) {}
-        Me.Addresstextbox.Location = New System.Drawing.Point(193, 51)
+        Me.Addresstextbox.Location = New System.Drawing.Point(257, 63)
+        Me.Addresstextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Addresstextbox.MaxLength = 32767
         Me.Addresstextbox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.Addresstextbox.Modified = False
         Me.Addresstextbox.Multiline = False
         Me.Addresstextbox.Name = "Addresstextbox"
-        StateProperties25.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties25.FillColor = System.Drawing.Color.Empty
-        StateProperties25.ForeColor = System.Drawing.Color.Empty
-        StateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.Addresstextbox.OnActiveState = StateProperties25
-        StateProperties26.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties26.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.Addresstextbox.OnDisabledState = StateProperties26
-        StateProperties27.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties27.FillColor = System.Drawing.Color.Empty
-        StateProperties27.ForeColor = System.Drawing.Color.Empty
-        StateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.Addresstextbox.OnHoverState = StateProperties27
-        StateProperties28.BorderColor = System.Drawing.Color.Silver
-        StateProperties28.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        StateProperties28.ForeColor = System.Drawing.Color.Empty
-        StateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.Addresstextbox.OnIdleState = StateProperties28
-        Me.Addresstextbox.Padding = New System.Windows.Forms.Padding(3)
+        StateProperties5.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties5.FillColor = System.Drawing.Color.Empty
+        StateProperties5.ForeColor = System.Drawing.Color.Empty
+        StateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.Addresstextbox.OnActiveState = StateProperties5
+        StateProperties6.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties6.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.Addresstextbox.OnDisabledState = StateProperties6
+        StateProperties7.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties7.FillColor = System.Drawing.Color.Empty
+        StateProperties7.ForeColor = System.Drawing.Color.Empty
+        StateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.Addresstextbox.OnHoverState = StateProperties7
+        StateProperties8.BorderColor = System.Drawing.Color.Silver
+        StateProperties8.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        StateProperties8.ForeColor = System.Drawing.Color.Empty
+        StateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.Addresstextbox.OnIdleState = StateProperties8
+        Me.Addresstextbox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Addresstextbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Addresstextbox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.Addresstextbox.PlaceholderText = ""
@@ -374,7 +367,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.Addresstextbox.SelectionLength = 0
         Me.Addresstextbox.SelectionStart = 0
         Me.Addresstextbox.ShortcutsEnabled = True
-        Me.Addresstextbox.Size = New System.Drawing.Size(373, 42)
+        Me.Addresstextbox.Size = New System.Drawing.Size(497, 51)
         Me.Addresstextbox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.Addresstextbox.TabIndex = 6
         Me.Addresstextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -414,33 +407,34 @@ Partial Class SettingsBarangayDetailsForm
         Me.BarangayCaptainTextBox.IconRight = Nothing
         Me.BarangayCaptainTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.BarangayCaptainTextBox.Lines = New String(-1) {}
-        Me.BarangayCaptainTextBox.Location = New System.Drawing.Point(193, 147)
+        Me.BarangayCaptainTextBox.Location = New System.Drawing.Point(257, 181)
+        Me.BarangayCaptainTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BarangayCaptainTextBox.MaxLength = 32767
         Me.BarangayCaptainTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.BarangayCaptainTextBox.Modified = False
         Me.BarangayCaptainTextBox.Multiline = False
         Me.BarangayCaptainTextBox.Name = "BarangayCaptainTextBox"
-        StateProperties29.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties29.FillColor = System.Drawing.Color.Empty
-        StateProperties29.ForeColor = System.Drawing.Color.Empty
-        StateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BarangayCaptainTextBox.OnActiveState = StateProperties29
-        StateProperties30.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties30.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.BarangayCaptainTextBox.OnDisabledState = StateProperties30
-        StateProperties31.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties31.FillColor = System.Drawing.Color.Empty
-        StateProperties31.ForeColor = System.Drawing.Color.Empty
-        StateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BarangayCaptainTextBox.OnHoverState = StateProperties31
-        StateProperties32.BorderColor = System.Drawing.Color.Silver
-        StateProperties32.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        StateProperties32.ForeColor = System.Drawing.Color.Empty
-        StateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.BarangayCaptainTextBox.OnIdleState = StateProperties32
-        Me.BarangayCaptainTextBox.Padding = New System.Windows.Forms.Padding(3)
+        StateProperties9.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties9.FillColor = System.Drawing.Color.Empty
+        StateProperties9.ForeColor = System.Drawing.Color.Empty
+        StateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.BarangayCaptainTextBox.OnActiveState = StateProperties9
+        StateProperties10.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties10.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.BarangayCaptainTextBox.OnDisabledState = StateProperties10
+        StateProperties11.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties11.FillColor = System.Drawing.Color.Empty
+        StateProperties11.ForeColor = System.Drawing.Color.Empty
+        StateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.BarangayCaptainTextBox.OnHoverState = StateProperties11
+        StateProperties12.BorderColor = System.Drawing.Color.Silver
+        StateProperties12.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        StateProperties12.ForeColor = System.Drawing.Color.Empty
+        StateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.BarangayCaptainTextBox.OnIdleState = StateProperties12
+        Me.BarangayCaptainTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BarangayCaptainTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BarangayCaptainTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.BarangayCaptainTextBox.PlaceholderText = ""
@@ -450,7 +444,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BarangayCaptainTextBox.SelectionLength = 0
         Me.BarangayCaptainTextBox.SelectionStart = 0
         Me.BarangayCaptainTextBox.ShortcutsEnabled = True
-        Me.BarangayCaptainTextBox.Size = New System.Drawing.Size(373, 42)
+        Me.BarangayCaptainTextBox.Size = New System.Drawing.Size(497, 51)
         Me.BarangayCaptainTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.BarangayCaptainTextBox.TabIndex = 8
         Me.BarangayCaptainTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -490,33 +484,34 @@ Partial Class SettingsBarangayDetailsForm
         Me.ContactNumberTextBox.IconRight = Nothing
         Me.ContactNumberTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.ContactNumberTextBox.Lines = New String(-1) {}
-        Me.ContactNumberTextBox.Location = New System.Drawing.Point(193, 99)
+        Me.ContactNumberTextBox.Location = New System.Drawing.Point(257, 122)
+        Me.ContactNumberTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactNumberTextBox.MaxLength = 32767
         Me.ContactNumberTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.ContactNumberTextBox.Modified = False
         Me.ContactNumberTextBox.Multiline = False
         Me.ContactNumberTextBox.Name = "ContactNumberTextBox"
-        StateProperties33.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties33.FillColor = System.Drawing.Color.Empty
-        StateProperties33.ForeColor = System.Drawing.Color.Empty
-        StateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.ContactNumberTextBox.OnActiveState = StateProperties33
-        StateProperties34.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties34.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties34.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties34.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.ContactNumberTextBox.OnDisabledState = StateProperties34
-        StateProperties35.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties35.FillColor = System.Drawing.Color.Empty
-        StateProperties35.ForeColor = System.Drawing.Color.Empty
-        StateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.ContactNumberTextBox.OnHoverState = StateProperties35
-        StateProperties36.BorderColor = System.Drawing.Color.Silver
-        StateProperties36.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        StateProperties36.ForeColor = System.Drawing.Color.Empty
-        StateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.ContactNumberTextBox.OnIdleState = StateProperties36
-        Me.ContactNumberTextBox.Padding = New System.Windows.Forms.Padding(3)
+        StateProperties13.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties13.FillColor = System.Drawing.Color.Empty
+        StateProperties13.ForeColor = System.Drawing.Color.Empty
+        StateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.ContactNumberTextBox.OnActiveState = StateProperties13
+        StateProperties14.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties14.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.ContactNumberTextBox.OnDisabledState = StateProperties14
+        StateProperties15.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties15.FillColor = System.Drawing.Color.Empty
+        StateProperties15.ForeColor = System.Drawing.Color.Empty
+        StateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.ContactNumberTextBox.OnHoverState = StateProperties15
+        StateProperties16.BorderColor = System.Drawing.Color.Silver
+        StateProperties16.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        StateProperties16.ForeColor = System.Drawing.Color.Empty
+        StateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.ContactNumberTextBox.OnIdleState = StateProperties16
+        Me.ContactNumberTextBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactNumberTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.ContactNumberTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.ContactNumberTextBox.PlaceholderText = ""
@@ -526,7 +521,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.ContactNumberTextBox.SelectionLength = 0
         Me.ContactNumberTextBox.SelectionStart = 0
         Me.ContactNumberTextBox.ShortcutsEnabled = True
-        Me.ContactNumberTextBox.Size = New System.Drawing.Size(373, 42)
+        Me.ContactNumberTextBox.Size = New System.Drawing.Size(497, 51)
         Me.ContactNumberTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.ContactNumberTextBox.TabIndex = 7
         Me.ContactNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -566,33 +561,34 @@ Partial Class SettingsBarangayDetailsForm
         Me.ZipCodeTxtBox.IconRight = Nothing
         Me.ZipCodeTxtBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.ZipCodeTxtBox.Lines = New String(-1) {}
-        Me.ZipCodeTxtBox.Location = New System.Drawing.Point(193, 195)
+        Me.ZipCodeTxtBox.Location = New System.Drawing.Point(257, 240)
+        Me.ZipCodeTxtBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ZipCodeTxtBox.MaxLength = 32767
         Me.ZipCodeTxtBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.ZipCodeTxtBox.Modified = False
         Me.ZipCodeTxtBox.Multiline = False
         Me.ZipCodeTxtBox.Name = "ZipCodeTxtBox"
-        StateProperties37.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties37.FillColor = System.Drawing.Color.Empty
-        StateProperties37.ForeColor = System.Drawing.Color.Empty
-        StateProperties37.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.ZipCodeTxtBox.OnActiveState = StateProperties37
-        StateProperties38.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties38.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties38.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties38.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.ZipCodeTxtBox.OnDisabledState = StateProperties38
-        StateProperties39.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties39.FillColor = System.Drawing.Color.Empty
-        StateProperties39.ForeColor = System.Drawing.Color.Empty
-        StateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.ZipCodeTxtBox.OnHoverState = StateProperties39
-        StateProperties40.BorderColor = System.Drawing.Color.Silver
-        StateProperties40.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        StateProperties40.ForeColor = System.Drawing.Color.Empty
-        StateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.ZipCodeTxtBox.OnIdleState = StateProperties40
-        Me.ZipCodeTxtBox.Padding = New System.Windows.Forms.Padding(3)
+        StateProperties17.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties17.FillColor = System.Drawing.Color.Empty
+        StateProperties17.ForeColor = System.Drawing.Color.Empty
+        StateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.ZipCodeTxtBox.OnActiveState = StateProperties17
+        StateProperties18.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties18.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.ZipCodeTxtBox.OnDisabledState = StateProperties18
+        StateProperties19.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties19.FillColor = System.Drawing.Color.Empty
+        StateProperties19.ForeColor = System.Drawing.Color.Empty
+        StateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.ZipCodeTxtBox.OnHoverState = StateProperties19
+        StateProperties20.BorderColor = System.Drawing.Color.Silver
+        StateProperties20.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        StateProperties20.ForeColor = System.Drawing.Color.Empty
+        StateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.ZipCodeTxtBox.OnIdleState = StateProperties20
+        Me.ZipCodeTxtBox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ZipCodeTxtBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.ZipCodeTxtBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.ZipCodeTxtBox.PlaceholderText = ""
@@ -602,7 +598,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.ZipCodeTxtBox.SelectionLength = 0
         Me.ZipCodeTxtBox.SelectionStart = 0
         Me.ZipCodeTxtBox.ShortcutsEnabled = True
-        Me.ZipCodeTxtBox.Size = New System.Drawing.Size(373, 44)
+        Me.ZipCodeTxtBox.Size = New System.Drawing.Size(497, 54)
         Me.ZipCodeTxtBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.ZipCodeTxtBox.TabIndex = 5
         Me.ZipCodeTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -612,6 +608,25 @@ Partial Class SettingsBarangayDetailsForm
         Me.ZipCodeTxtBox.TextPlaceholder = ""
         Me.ZipCodeTxtBox.UseSystemPasswordChar = False
         Me.ZipCodeTxtBox.WordWrap = True
+        '
+        'ZipCodeTextBox
+        '
+        Me.ZipCodeTextBox.AllowParentOverrides = False
+        Me.ZipCodeTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.ZipCodeTextBox.AutoEllipsis = False
+        Me.ZipCodeTextBox.Cursor = System.Windows.Forms.Cursors.Default
+        Me.ZipCodeTextBox.CursorType = System.Windows.Forms.Cursors.Default
+        Me.ZipCodeTextBox.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ZipCodeTextBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ZipCodeTextBox.Location = New System.Drawing.Point(186, 256)
+        Me.ZipCodeTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ZipCodeTextBox.Name = "ZipCodeTextBox"
+        Me.ZipCodeTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.ZipCodeTextBox.Size = New System.Drawing.Size(63, 22)
+        Me.ZipCodeTextBox.TabIndex = 9
+        Me.ZipCodeTextBox.Text = "Zip code:"
+        Me.ZipCodeTextBox.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.ZipCodeTextBox.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
         'SaveButton
         '
@@ -633,17 +648,17 @@ Partial Class SettingsBarangayDetailsForm
         Me.SaveButton.ColorContrastOnClick = 45
         Me.SaveButton.ColorContrastOnHover = 45
         Me.SaveButton.Cursor = System.Windows.Forms.Cursors.Default
-        BorderEdges3.BottomLeft = True
-        BorderEdges3.BottomRight = True
-        BorderEdges3.TopLeft = True
-        BorderEdges3.TopRight = True
-        Me.SaveButton.CustomizableEdges = BorderEdges3
+        BorderEdges2.BottomLeft = True
+        BorderEdges2.BottomRight = True
+        BorderEdges2.TopLeft = True
+        BorderEdges2.TopRight = True
+        Me.SaveButton.CustomizableEdges = BorderEdges2
         Me.SaveButton.DialogResult = System.Windows.Forms.DialogResult.None
         Me.SaveButton.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SaveButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.SaveButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.SaveButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.SaveButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaveButton.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SaveButton.ForeColor = System.Drawing.Color.White
         Me.SaveButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SaveButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -655,13 +670,14 @@ Partial Class SettingsBarangayDetailsForm
         Me.SaveButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.SaveButton.IconSize = 25
         Me.SaveButton.IdleBorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.SaveButton.IdleBorderRadius = 46
+        Me.SaveButton.IdleBorderRadius = 57
         Me.SaveButton.IdleBorderThickness = 1
         Me.SaveButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.SaveButton.IdleIconLeftImage = Nothing
         Me.SaveButton.IdleIconRightImage = Nothing
         Me.SaveButton.IndicateFocus = False
-        Me.SaveButton.Location = New System.Drawing.Point(813, 453)
+        Me.SaveButton.Location = New System.Drawing.Point(1084, 558)
+        Me.SaveButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SaveButton.OnDisabledState.BorderRadius = 1
@@ -695,7 +711,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.SaveButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.SaveButton.OnPressedState.IconLeftImage = Nothing
         Me.SaveButton.OnPressedState.IconRightImage = Nothing
-        Me.SaveButton.Size = New System.Drawing.Size(143, 48)
+        Me.SaveButton.Size = New System.Drawing.Size(191, 59)
         Me.SaveButton.TabIndex = 15
         Me.SaveButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SaveButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -723,17 +739,17 @@ Partial Class SettingsBarangayDetailsForm
         Me.BrowseButton.ColorContrastOnClick = 45
         Me.BrowseButton.ColorContrastOnHover = 45
         Me.BrowseButton.Cursor = System.Windows.Forms.Cursors.Default
-        BorderEdges4.BottomLeft = True
-        BorderEdges4.BottomRight = True
-        BorderEdges4.TopLeft = True
-        BorderEdges4.TopRight = True
-        Me.BrowseButton.CustomizableEdges = BorderEdges4
+        BorderEdges1.BottomLeft = True
+        BorderEdges1.BottomRight = True
+        BorderEdges1.TopLeft = True
+        BorderEdges1.TopRight = True
+        Me.BrowseButton.CustomizableEdges = BorderEdges1
         Me.BrowseButton.DialogResult = System.Windows.Forms.DialogResult.None
         Me.BrowseButton.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BrowseButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BrowseButton.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
         Me.BrowseButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.BrowseButton.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BrowseButton.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BrowseButton.ForeColor = System.Drawing.Color.White
         Me.BrowseButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BrowseButton.IconLeftCursor = System.Windows.Forms.Cursors.Default
@@ -751,7 +767,8 @@ Partial Class SettingsBarangayDetailsForm
         Me.BrowseButton.IdleIconLeftImage = Nothing
         Me.BrowseButton.IdleIconRightImage = Nothing
         Me.BrowseButton.IndicateFocus = False
-        Me.BrowseButton.Location = New System.Drawing.Point(762, 370)
+        Me.BrowseButton.Location = New System.Drawing.Point(1016, 455)
+        Me.BrowseButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BrowseButton.Name = "BrowseButton"
         Me.BrowseButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BrowseButton.OnDisabledState.BorderRadius = 1
@@ -785,7 +802,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.BrowseButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BrowseButton.OnPressedState.IconLeftImage = Nothing
         Me.BrowseButton.OnPressedState.IconRightImage = Nothing
-        Me.BrowseButton.Size = New System.Drawing.Size(195, 32)
+        Me.BrowseButton.Size = New System.Drawing.Size(260, 39)
         Me.BrowseButton.TabIndex = 11
         Me.BrowseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BrowseButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -795,20 +812,21 @@ Partial Class SettingsBarangayDetailsForm
         '
         'SettingsBarangayDetailsForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1112, 639)
+        Me.ClientSize = New System.Drawing.Size(1483, 786)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "SettingsBarangayDetailsForm"
         Me.Text = "SettingsBarangayDetailsForm"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.MunicipalityLogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        CType(Me.MunicipalityLogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
