@@ -23,6 +23,7 @@ Partial Class Clearance
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Clearance))
         Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -84,8 +85,9 @@ Partial Class Clearance
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Clearance))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BunifuLabel29 = New Bunifu.UI.WinForms.BunifuLabel()
+        Me.BunifuLabel23 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.SearchButton = New System.Windows.Forms.Button()
         Me.SearchFieldTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.IssuedAtTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
@@ -141,8 +143,6 @@ Partial Class Clearance
         Me.BunifuLabel5 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel4 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.Timer = New System.Windows.Forms.Timer(Me.components)
-        Me.BunifuLabel23 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuLabel29 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.GroupBox1.SuspendLayout()
         CType(Me.ClearanceGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -195,6 +195,43 @@ Partial Class Clearance
         Me.GroupBox1.TabIndex = 96
         Me.GroupBox1.TabStop = False
         '
+        'BunifuLabel29
+        '
+        Me.BunifuLabel29.AllowParentOverrides = False
+        Me.BunifuLabel29.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel29.AutoEllipsis = False
+        Me.BunifuLabel29.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.BunifuLabel29.CursorType = Nothing
+        Me.BunifuLabel29.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel29.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel29.Location = New System.Drawing.Point(806, 300)
+        Me.BunifuLabel29.Name = "BunifuLabel29"
+        Me.BunifuLabel29.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel29.Size = New System.Drawing.Size(11, 25)
+        Me.BunifuLabel29.TabIndex = 169
+        Me.BunifuLabel29.Text = "₱"
+        Me.BunifuLabel29.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel29.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
+        'BunifuLabel23
+        '
+        Me.BunifuLabel23.AllowParentOverrides = False
+        Me.BunifuLabel23.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuLabel23.AutoEllipsis = False
+        Me.BunifuLabel23.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.BunifuLabel23.Cursor = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel23.CursorType = System.Windows.Forms.Cursors.Default
+        Me.BunifuLabel23.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuLabel23.ForeColor = System.Drawing.Color.White
+        Me.BunifuLabel23.Location = New System.Drawing.Point(588, 300)
+        Me.BunifuLabel23.Name = "BunifuLabel23"
+        Me.BunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BunifuLabel23.Size = New System.Drawing.Size(11, 25)
+        Me.BunifuLabel23.TabIndex = 169
+        Me.BunifuLabel23.Text = "₱"
+        Me.BunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft
+        Me.BunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
+        '
         'SearchButton
         '
         Me.SearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -237,10 +274,10 @@ Partial Class Clearance
         Me.SearchFieldTextBox.IconRight = Nothing
         Me.SearchFieldTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.SearchFieldTextBox.Lines = New String(-1) {}
-        Me.SearchFieldTextBox.Location = New System.Drawing.Point(803, 22)
+        Me.SearchFieldTextBox.Location = New System.Drawing.Point(763, 22)
         Me.SearchFieldTextBox.MaximumSize = New System.Drawing.Size(260, 33)
         Me.SearchFieldTextBox.MaxLength = 32767
-        Me.SearchFieldTextBox.MinimumSize = New System.Drawing.Size(260, 33)
+        Me.SearchFieldTextBox.MinimumSize = New System.Drawing.Size(300, 33)
         Me.SearchFieldTextBox.Modified = False
         Me.SearchFieldTextBox.Multiline = False
         Me.SearchFieldTextBox.Name = "SearchFieldTextBox"
@@ -274,7 +311,7 @@ Partial Class Clearance
         Me.SearchFieldTextBox.SelectionLength = 0
         Me.SearchFieldTextBox.SelectionStart = 0
         Me.SearchFieldTextBox.ShortcutsEnabled = True
-        Me.SearchFieldTextBox.Size = New System.Drawing.Size(260, 33)
+        Me.SearchFieldTextBox.Size = New System.Drawing.Size(300, 33)
         Me.SearchFieldTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
         Me.SearchFieldTextBox.TabIndex = 167
         Me.SearchFieldTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -2005,42 +2042,6 @@ Partial Class Clearance
         '
         Me.Timer.Enabled = True
         Me.Timer.Interval = 1000
-        '
-        'BunifuLabel23
-        '
-        Me.BunifuLabel23.AllowParentOverrides = False
-        Me.BunifuLabel23.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel23.AutoEllipsis = False
-        Me.BunifuLabel23.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.BunifuLabel23.CursorType = System.Windows.Forms.Cursors.Default
-        Me.BunifuLabel23.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel23.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel23.Location = New System.Drawing.Point(588, 300)
-        Me.BunifuLabel23.Name = "BunifuLabel23"
-        Me.BunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel23.Size = New System.Drawing.Size(11, 25)
-        Me.BunifuLabel23.TabIndex = 169
-        Me.BunifuLabel23.Text = "₱"
-        Me.BunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'BunifuLabel29
-        '
-        Me.BunifuLabel29.AllowParentOverrides = False
-        Me.BunifuLabel29.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuLabel29.AutoEllipsis = False
-        Me.BunifuLabel29.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.BunifuLabel29.CursorType = Nothing
-        Me.BunifuLabel29.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel29.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel29.Location = New System.Drawing.Point(806, 300)
-        Me.BunifuLabel29.Name = "BunifuLabel29"
-        Me.BunifuLabel29.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel29.Size = New System.Drawing.Size(11, 25)
-        Me.BunifuLabel29.TabIndex = 169
-        Me.BunifuLabel29.Text = "₱"
-        Me.BunifuLabel29.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel29.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
         'Clearance
         '
