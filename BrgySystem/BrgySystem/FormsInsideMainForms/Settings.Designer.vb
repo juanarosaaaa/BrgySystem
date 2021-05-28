@@ -32,7 +32,6 @@ Partial Class Settings
         Me.AccountSettingsButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.MissionVisionzButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.OrganizationChart = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
-        Me.BunifuLabel1 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.SuspendLayout()
         '
         'MainPanelSetting
@@ -47,11 +46,10 @@ Partial Class Settings
         Me.MainPanelSetting.BorderColor = System.Drawing.Color.Transparent
         Me.MainPanelSetting.BorderRadius = 3
         Me.MainPanelSetting.BorderThickness = 1
-        Me.MainPanelSetting.Location = New System.Drawing.Point(-1, 147)
-        Me.MainPanelSetting.Margin = New System.Windows.Forms.Padding(4)
+        Me.MainPanelSetting.Location = New System.Drawing.Point(-1, 119)
         Me.MainPanelSetting.Name = "MainPanelSetting"
         Me.MainPanelSetting.ShowBorders = True
-        Me.MainPanelSetting.Size = New System.Drawing.Size(1503, 833)
+        Me.MainPanelSetting.Size = New System.Drawing.Size(1127, 647)
         Me.MainPanelSetting.TabIndex = 2
         '
         'BarangayDetailsButton
@@ -96,14 +94,13 @@ Partial Class Settings
         Me.BarangayDetailsButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.BarangayDetailsButton.IconSize = 25
         Me.BarangayDetailsButton.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.BarangayDetailsButton.IdleBorderRadius = 42
+        Me.BarangayDetailsButton.IdleBorderRadius = 44
         Me.BarangayDetailsButton.IdleBorderThickness = 1
         Me.BarangayDetailsButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.BarangayDetailsButton.IdleIconLeftImage = Nothing
         Me.BarangayDetailsButton.IdleIconRightImage = Nothing
         Me.BarangayDetailsButton.IndicateFocus = False
-        Me.BarangayDetailsButton.Location = New System.Drawing.Point(496, 95)
-        Me.BarangayDetailsButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.BarangayDetailsButton.Location = New System.Drawing.Point(302, 67)
         Me.BarangayDetailsButton.Name = "BarangayDetailsButton"
         Me.BarangayDetailsButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.BarangayDetailsButton.OnDisabledState.BorderRadius = 40
@@ -137,7 +134,7 @@ Partial Class Settings
         Me.BarangayDetailsButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.BarangayDetailsButton.OnPressedState.IconLeftImage = Nothing
         Me.BarangayDetailsButton.OnPressedState.IconRightImage = Nothing
-        Me.BarangayDetailsButton.Size = New System.Drawing.Size(253, 44)
+        Me.BarangayDetailsButton.Size = New System.Drawing.Size(254, 46)
         Me.BarangayDetailsButton.TabIndex = 6
         Me.BarangayDetailsButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BarangayDetailsButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -187,14 +184,13 @@ Partial Class Settings
         Me.AccountSettingsButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.AccountSettingsButton.IconSize = 25
         Me.AccountSettingsButton.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.AccountSettingsButton.IdleBorderRadius = 42
+        Me.AccountSettingsButton.IdleBorderRadius = 44
         Me.AccountSettingsButton.IdleBorderThickness = 1
         Me.AccountSettingsButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.AccountSettingsButton.IdleIconLeftImage = Nothing
         Me.AccountSettingsButton.IdleIconRightImage = Nothing
         Me.AccountSettingsButton.IndicateFocus = False
-        Me.AccountSettingsButton.Location = New System.Drawing.Point(235, 95)
-        Me.AccountSettingsButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.AccountSettingsButton.Location = New System.Drawing.Point(42, 67)
         Me.AccountSettingsButton.Name = "AccountSettingsButton"
         Me.AccountSettingsButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.AccountSettingsButton.OnDisabledState.BorderRadius = 40
@@ -228,7 +224,7 @@ Partial Class Settings
         Me.AccountSettingsButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.AccountSettingsButton.OnPressedState.IconLeftImage = Nothing
         Me.AccountSettingsButton.OnPressedState.IconRightImage = Nothing
-        Me.AccountSettingsButton.Size = New System.Drawing.Size(253, 44)
+        Me.AccountSettingsButton.Size = New System.Drawing.Size(254, 46)
         Me.AccountSettingsButton.TabIndex = 0
         Me.AccountSettingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.AccountSettingsButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -278,14 +274,13 @@ Partial Class Settings
         Me.MissionVisionzButton.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.MissionVisionzButton.IconSize = 25
         Me.MissionVisionzButton.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.MissionVisionzButton.IdleBorderRadius = 42
+        Me.MissionVisionzButton.IdleBorderRadius = 44
         Me.MissionVisionzButton.IdleBorderThickness = 1
         Me.MissionVisionzButton.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.MissionVisionzButton.IdleIconLeftImage = Nothing
         Me.MissionVisionzButton.IdleIconRightImage = Nothing
         Me.MissionVisionzButton.IndicateFocus = False
-        Me.MissionVisionzButton.Location = New System.Drawing.Point(1019, 95)
-        Me.MissionVisionzButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.MissionVisionzButton.Location = New System.Drawing.Point(822, 67)
         Me.MissionVisionzButton.Name = "MissionVisionzButton"
         Me.MissionVisionzButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.MissionVisionzButton.OnDisabledState.BorderRadius = 40
@@ -319,7 +314,7 @@ Partial Class Settings
         Me.MissionVisionzButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.MissionVisionzButton.OnPressedState.IconLeftImage = Nothing
         Me.MissionVisionzButton.OnPressedState.IconRightImage = Nothing
-        Me.MissionVisionzButton.Size = New System.Drawing.Size(253, 44)
+        Me.MissionVisionzButton.Size = New System.Drawing.Size(254, 46)
         Me.MissionVisionzButton.TabIndex = 4
         Me.MissionVisionzButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.MissionVisionzButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -369,14 +364,13 @@ Partial Class Settings
         Me.OrganizationChart.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
         Me.OrganizationChart.IconSize = 25
         Me.OrganizationChart.IdleBorderColor = System.Drawing.Color.Transparent
-        Me.OrganizationChart.IdleBorderRadius = 42
+        Me.OrganizationChart.IdleBorderRadius = 44
         Me.OrganizationChart.IdleBorderThickness = 1
         Me.OrganizationChart.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.OrganizationChart.IdleIconLeftImage = Nothing
         Me.OrganizationChart.IdleIconRightImage = Nothing
         Me.OrganizationChart.IndicateFocus = False
-        Me.OrganizationChart.Location = New System.Drawing.Point(757, 95)
-        Me.OrganizationChart.Margin = New System.Windows.Forms.Padding(4)
+        Me.OrganizationChart.Location = New System.Drawing.Point(562, 67)
         Me.OrganizationChart.Name = "OrganizationChart"
         Me.OrganizationChart.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.OrganizationChart.OnDisabledState.BorderRadius = 40
@@ -410,7 +404,7 @@ Partial Class Settings
         Me.OrganizationChart.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.OrganizationChart.OnPressedState.IconLeftImage = Nothing
         Me.OrganizationChart.OnPressedState.IconRightImage = Nothing
-        Me.OrganizationChart.Size = New System.Drawing.Size(253, 44)
+        Me.OrganizationChart.Size = New System.Drawing.Size(254, 46)
         Me.OrganizationChart.TabIndex = 3
         Me.OrganizationChart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.OrganizationChart.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
@@ -418,39 +412,20 @@ Partial Class Settings
         Me.OrganizationChart.TextPadding = New System.Windows.Forms.Padding(0)
         Me.OrganizationChart.UseDefaultRadiusAndThickness = True
         '
-        'BunifuLabel1
-        '
-        Me.BunifuLabel1.AllowParentOverrides = False
-        Me.BunifuLabel1.AutoEllipsis = False
-        Me.BunifuLabel1.CursorType = Nothing
-        Me.BunifuLabel1.Font = New System.Drawing.Font("Palatino Linotype", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuLabel1.ForeColor = System.Drawing.Color.White
-        Me.BunifuLabel1.Location = New System.Drawing.Point(43, 46)
-        Me.BunifuLabel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuLabel1.Name = "BunifuLabel1"
-        Me.BunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BunifuLabel1.Size = New System.Drawing.Size(122, 47)
-        Me.BunifuLabel1.TabIndex = 7
-        Me.BunifuLabel1.Text = "Settings"
-        Me.BunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft
-        Me.BunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
         'Settings
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1499, 943)
-        Me.Controls.Add(Me.BunifuLabel1)
+        Me.ClientSize = New System.Drawing.Size(1124, 766)
         Me.Controls.Add(Me.MissionVisionzButton)
         Me.Controls.Add(Me.OrganizationChart)
         Me.Controls.Add(Me.BarangayDetailsButton)
         Me.Controls.Add(Me.AccountSettingsButton)
         Me.Controls.Add(Me.MainPanelSetting)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Settings"
         Me.Text = "Settings"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -464,5 +439,4 @@ Partial Class Settings
     Friend WithEvents OrganizationChart As Bunifu.UI.WinForms.BunifuButton.BunifuButton
     Friend WithEvents MainPanelSetting As Bunifu.UI.WinForms.BunifuPanel
     Friend WithEvents BarangayDetailsButton As Bunifu.UI.WinForms.BunifuButton.BunifuButton
-    Friend WithEvents BunifuLabel1 As Bunifu.UI.WinForms.BunifuLabel
 End Class

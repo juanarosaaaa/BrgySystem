@@ -61,6 +61,7 @@ Public Class Purok
         PurokGridView.Columns("purok_Column").DataPropertyName = "PurokName"
         manage.loadGridViewValueOf(var.getAllPurokQuery, PurokGridView)
         foo.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", SearchBarField)
+        SearchBarField.PlaceholderText = "Search Purok"
     End Sub
 
 

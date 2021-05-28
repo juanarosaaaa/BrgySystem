@@ -39,6 +39,7 @@ Public Class MyResidents
         manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "Residents", SearchFieldTxtBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTextBox)
+        SearchFieldTxtBox.PlaceholderText = "Search Name"
     End Sub
 
 
@@ -191,6 +192,7 @@ Public Class MyResidents
 
 
     End Sub
+
 
 
     Private Sub contactKeyDown(sender As Object, e As KeyEventArgs) Handles ContactTextBox.KeyDown

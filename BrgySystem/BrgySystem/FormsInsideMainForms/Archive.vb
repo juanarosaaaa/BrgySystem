@@ -44,6 +44,10 @@ Public Class Archive
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "archive_purok", PurokArchiveSearchField)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "archive_residents", ResidentsArchiveSearchField)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("NAME", "archive_officials", OfficialsArchiveSearchField)
+
+        PurokArchiveSearchField.PlaceholderText = "Search Purok"
+        OfficialsArchiveSearchField.PlaceholderText = "Search Name"
+        ResidentsArchiveSearchField.PlaceholderText = "Search Name"
     End Sub
 
 
