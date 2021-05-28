@@ -159,21 +159,20 @@ Public Class MyResidents
 
             brgyResidents.deleteResidents(selectedNameInRow)
             manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
-            search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "residents", SearchFieldTxtBox)
+                search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "residents", SearchFieldTxtBox)
+                brgyResidents.clearAllInputs()
 
-            brgyResidents.clearAllInputs()
-            UpdateButton.Enabled = False
+
 
         ElseIf SettingAction.buttonOf_IsClick("archiveButton_Column", ResidentsGridView, e) Then
             selectedNameInRow = ResidentsGridView.CurrentRow.Cells("fullname_Column").FormattedValue
-
 
             brgyResidents.archiveResidents(selectedNameInRow)
             manage.loadGridViewValueOf(brgyResidents.getResidentsQueryForSelectedColumns, ResidentsGridView)
             search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "residents", SearchFieldTxtBox)
             brgyResidents.clearAllInputs()
 
-            UpdateButton.Enabled = False
+
         End If
 
     End Sub

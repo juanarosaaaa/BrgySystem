@@ -74,6 +74,7 @@ Public Class MyBrgyResidents
         If (MessageBox.Show("Are you sure you want to delete '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manage.manipulateDataAt("DELETE FROM `residents` WHERE FULLNAME = '" & resident.Trim & "' ")) Then
                 MessageBox.Show("Resident '" & resident.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MyResidents.UpdateButton.Enabled = False
             Else
                 MessageBox.Show("Failed to delete Resident!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -92,6 +93,7 @@ Public Class MyBrgyResidents
             If (MessageBox.Show("Are you sure you want to archive '" & resident.ToUpper.Trim & "' Resident?", "Are you sure you want to archive?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
                 If (manage.manipulateDataAt(query)) Then
                     MessageBox.Show("Resident '" & resident.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MyResidents.UpdateButton.Enabled = False
                 Else
                     MessageBox.Show("Failed to archive Resident!", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If

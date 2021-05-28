@@ -23,7 +23,7 @@ Partial Class SettingsMissionVissionForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingsMissionVissionForm))
-        Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.VisionRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.MissionRichTextBox = New System.Windows.Forms.RichTextBox()
@@ -112,11 +112,11 @@ Partial Class SettingsMissionVissionForm
         Me.SaveButton.ColorContrastOnClick = 45
         Me.SaveButton.ColorContrastOnHover = 45
         Me.SaveButton.Cursor = System.Windows.Forms.Cursors.Default
-        BorderEdges2.BottomLeft = True
-        BorderEdges2.BottomRight = True
-        BorderEdges2.TopLeft = True
-        BorderEdges2.TopRight = True
-        Me.SaveButton.CustomizableEdges = BorderEdges2
+        BorderEdges1.BottomLeft = True
+        BorderEdges1.BottomRight = True
+        BorderEdges1.TopLeft = True
+        BorderEdges1.TopRight = True
+        Me.SaveButton.CustomizableEdges = BorderEdges1
         Me.SaveButton.DialogResult = System.Windows.Forms.DialogResult.None
         Me.SaveButton.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SaveButton.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
@@ -140,7 +140,7 @@ Partial Class SettingsMissionVissionForm
         Me.SaveButton.IdleIconLeftImage = Nothing
         Me.SaveButton.IdleIconRightImage = Nothing
         Me.SaveButton.IndicateFocus = False
-        Me.SaveButton.Location = New System.Drawing.Point(921, 615)
+        Me.SaveButton.Location = New System.Drawing.Point(923, 630)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SaveButton.OnDisabledState.BorderRadius = 50
@@ -174,7 +174,7 @@ Partial Class SettingsMissionVissionForm
         Me.SaveButton.OnPressedState.ForeColor = System.Drawing.Color.White
         Me.SaveButton.OnPressedState.IconLeftImage = Nothing
         Me.SaveButton.OnPressedState.IconRightImage = Nothing
-        Me.SaveButton.Size = New System.Drawing.Size(188, 44)
+        Me.SaveButton.Size = New System.Drawing.Size(188, 37)
         Me.SaveButton.TabIndex = 3
         Me.SaveButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SaveButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center

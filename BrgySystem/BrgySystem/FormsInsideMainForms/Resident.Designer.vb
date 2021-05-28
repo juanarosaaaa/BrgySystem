@@ -30,6 +30,11 @@ Partial Class MyResidents
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MyResidents))
+        Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
+        Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim StateProperties5 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -66,11 +71,6 @@ Partial Class MyResidents
         Dim StateProperties34 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties35 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties36 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MyResidents))
-        Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim StateProperties4 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Me.ResidentsGridView = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.fullname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -84,6 +84,8 @@ Partial Class MyResidents
         Me.archiveButton_Column = New System.Windows.Forms.DataGridViewImageColumn()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.SearchButton = New System.Windows.Forms.Button()
+        Me.SearchFieldTxtBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.SeniorComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.VoterComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CivilStatusComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
@@ -117,8 +119,6 @@ Partial Class MyResidents
         Me.ContactTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
         Me.BunifuLabel7 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.AddressTextBox = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.SearchButton = New System.Windows.Forms.Button()
-        Me.SearchFieldTxtBox = New Bunifu.UI.WinForms.BunifuTextBox()
         CType(Me.ResidentsGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -346,6 +346,95 @@ Partial Class MyResidents
         Me.GroupBox1.Size = New System.Drawing.Size(1115, 768)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'SearchButton
+        '
+        Me.SearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SearchButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(147, Byte), Integer))
+        Me.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
+        Me.SearchButton.Location = New System.Drawing.Point(1050, 26)
+        Me.SearchButton.Name = "SearchButton"
+        Me.SearchButton.Size = New System.Drawing.Size(49, 33)
+        Me.SearchButton.TabIndex = 116
+        Me.SearchButton.UseVisualStyleBackColor = False
+        '
+        'SearchFieldTxtBox
+        '
+        Me.SearchFieldTxtBox.AcceptsReturn = False
+        Me.SearchFieldTxtBox.AcceptsTab = False
+        Me.SearchFieldTxtBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SearchFieldTxtBox.AnimationSpeed = 200
+        Me.SearchFieldTxtBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
+        Me.SearchFieldTxtBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
+        Me.SearchFieldTxtBox.BackColor = System.Drawing.Color.Transparent
+        Me.SearchFieldTxtBox.BackgroundImage = CType(resources.GetObject("SearchFieldTxtBox.BackgroundImage"), System.Drawing.Image)
+        Me.SearchFieldTxtBox.BorderColorActive = System.Drawing.Color.DodgerBlue
+        Me.SearchFieldTxtBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.SearchFieldTxtBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SearchFieldTxtBox.BorderColorIdle = System.Drawing.Color.Silver
+        Me.SearchFieldTxtBox.BorderRadius = 10
+        Me.SearchFieldTxtBox.BorderThickness = 1
+        Me.SearchFieldTxtBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.SearchFieldTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.SearchFieldTxtBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SearchFieldTxtBox.DefaultText = ""
+        Me.SearchFieldTxtBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.SearchFieldTxtBox.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.SearchFieldTxtBox.HideSelection = True
+        Me.SearchFieldTxtBox.IconLeft = Nothing
+        Me.SearchFieldTxtBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
+        Me.SearchFieldTxtBox.IconPadding = 10
+        Me.SearchFieldTxtBox.IconRight = Nothing
+        Me.SearchFieldTxtBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
+        Me.SearchFieldTxtBox.Lines = New String(-1) {}
+        Me.SearchFieldTxtBox.Location = New System.Drawing.Point(796, 26)
+        Me.SearchFieldTxtBox.MaximumSize = New System.Drawing.Size(260, 33)
+        Me.SearchFieldTxtBox.MaxLength = 32767
+        Me.SearchFieldTxtBox.MinimumSize = New System.Drawing.Size(260, 33)
+        Me.SearchFieldTxtBox.Modified = False
+        Me.SearchFieldTxtBox.Multiline = False
+        Me.SearchFieldTxtBox.Name = "SearchFieldTxtBox"
+        StateProperties1.BorderColor = System.Drawing.Color.DodgerBlue
+        StateProperties1.FillColor = System.Drawing.Color.Empty
+        StateProperties1.ForeColor = System.Drawing.Color.Empty
+        StateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.SearchFieldTxtBox.OnActiveState = StateProperties1
+        StateProperties2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        StateProperties2.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        StateProperties2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        StateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray
+        Me.SearchFieldTxtBox.OnDisabledState = StateProperties2
+        StateProperties3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        StateProperties3.FillColor = System.Drawing.Color.Empty
+        StateProperties3.ForeColor = System.Drawing.Color.Empty
+        StateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.SearchFieldTxtBox.OnHoverState = StateProperties3
+        StateProperties4.BorderColor = System.Drawing.Color.Silver
+        StateProperties4.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
+        StateProperties4.ForeColor = System.Drawing.Color.WhiteSmoke
+        StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.SearchFieldTxtBox.OnIdleState = StateProperties4
+        Me.SearchFieldTxtBox.Padding = New System.Windows.Forms.Padding(3)
+        Me.SearchFieldTxtBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.SearchFieldTxtBox.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.SearchFieldTxtBox.PlaceholderText = "Search Name"
+        Me.SearchFieldTxtBox.ReadOnly = False
+        Me.SearchFieldTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.SearchFieldTxtBox.SelectedText = ""
+        Me.SearchFieldTxtBox.SelectionLength = 0
+        Me.SearchFieldTxtBox.SelectionStart = 0
+        Me.SearchFieldTxtBox.ShortcutsEnabled = True
+        Me.SearchFieldTxtBox.Size = New System.Drawing.Size(260, 33)
+        Me.SearchFieldTxtBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
+        Me.SearchFieldTxtBox.TabIndex = 115
+        Me.SearchFieldTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.SearchFieldTxtBox.TextMarginBottom = 0
+        Me.SearchFieldTxtBox.TextMarginLeft = 5
+        Me.SearchFieldTxtBox.TextMarginTop = 0
+        Me.SearchFieldTxtBox.TextPlaceholder = "Search Name"
+        Me.SearchFieldTxtBox.UseSystemPasswordChar = False
+        Me.SearchFieldTxtBox.WordWrap = True
         '
         'SeniorComboBox
         '
@@ -577,7 +666,7 @@ Partial Class MyResidents
         Me.BirthdateDatePicker.Name = "BirthdateDatePicker"
         Me.BirthdateDatePicker.Size = New System.Drawing.Size(276, 42)
         Me.BirthdateDatePicker.TabIndex = 109
-        Me.BirthdateDatePicker.Value = New Date(2026, 9, 15, 0, 0, 0, 0)
+        Me.BirthdateDatePicker.Value = New Date(2021, 5, 28, 22, 56, 17, 0)
         '
         'AddNewBttn
         '
@@ -1721,95 +1810,6 @@ Partial Class MyResidents
         Me.AddressTextBox.TextPlaceholder = ""
         Me.AddressTextBox.UseSystemPasswordChar = False
         Me.AddressTextBox.WordWrap = True
-        '
-        'SearchButton
-        '
-        Me.SearchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SearchButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(147, Byte), Integer))
-        Me.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SearchButton.Image = Global.BrgySystem.My.Resources.Resources.icons8_search_24px
-        Me.SearchButton.Location = New System.Drawing.Point(1050, 26)
-        Me.SearchButton.Name = "SearchButton"
-        Me.SearchButton.Size = New System.Drawing.Size(49, 33)
-        Me.SearchButton.TabIndex = 116
-        Me.SearchButton.UseVisualStyleBackColor = False
-        '
-        'SearchFieldTxtBox
-        '
-        Me.SearchFieldTxtBox.AcceptsReturn = False
-        Me.SearchFieldTxtBox.AcceptsTab = False
-        Me.SearchFieldTxtBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SearchFieldTxtBox.AnimationSpeed = 200
-        Me.SearchFieldTxtBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None
-        Me.SearchFieldTxtBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None
-        Me.SearchFieldTxtBox.BackColor = System.Drawing.Color.Transparent
-        Me.SearchFieldTxtBox.BackgroundImage = CType(resources.GetObject("SearchFieldTxtBox.BackgroundImage"), System.Drawing.Image)
-        Me.SearchFieldTxtBox.BorderColorActive = System.Drawing.Color.DodgerBlue
-        Me.SearchFieldTxtBox.BorderColorDisabled = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.SearchFieldTxtBox.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SearchFieldTxtBox.BorderColorIdle = System.Drawing.Color.Silver
-        Me.SearchFieldTxtBox.BorderRadius = 10
-        Me.SearchFieldTxtBox.BorderThickness = 1
-        Me.SearchFieldTxtBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.SearchFieldTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.SearchFieldTxtBox.DefaultFont = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SearchFieldTxtBox.DefaultText = ""
-        Me.SearchFieldTxtBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.SearchFieldTxtBox.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.SearchFieldTxtBox.HideSelection = True
-        Me.SearchFieldTxtBox.IconLeft = Nothing
-        Me.SearchFieldTxtBox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam
-        Me.SearchFieldTxtBox.IconPadding = 10
-        Me.SearchFieldTxtBox.IconRight = Nothing
-        Me.SearchFieldTxtBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
-        Me.SearchFieldTxtBox.Lines = New String(-1) {}
-        Me.SearchFieldTxtBox.Location = New System.Drawing.Point(796, 26)
-        Me.SearchFieldTxtBox.MaximumSize = New System.Drawing.Size(260, 33)
-        Me.SearchFieldTxtBox.MaxLength = 32767
-        Me.SearchFieldTxtBox.MinimumSize = New System.Drawing.Size(260, 33)
-        Me.SearchFieldTxtBox.Modified = False
-        Me.SearchFieldTxtBox.Multiline = False
-        Me.SearchFieldTxtBox.Name = "SearchFieldTxtBox"
-        StateProperties1.BorderColor = System.Drawing.Color.DodgerBlue
-        StateProperties1.FillColor = System.Drawing.Color.Empty
-        StateProperties1.ForeColor = System.Drawing.Color.Empty
-        StateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.SearchFieldTxtBox.OnActiveState = StateProperties1
-        StateProperties2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        StateProperties2.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        StateProperties2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        StateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.SearchFieldTxtBox.OnDisabledState = StateProperties2
-        StateProperties3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        StateProperties3.FillColor = System.Drawing.Color.Empty
-        StateProperties3.ForeColor = System.Drawing.Color.Empty
-        StateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.SearchFieldTxtBox.OnHoverState = StateProperties3
-        StateProperties4.BorderColor = System.Drawing.Color.Silver
-        StateProperties4.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(34, Byte), Integer))
-        StateProperties4.ForeColor = System.Drawing.Color.WhiteSmoke
-        StateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty
-        Me.SearchFieldTxtBox.OnIdleState = StateProperties4
-        Me.SearchFieldTxtBox.Padding = New System.Windows.Forms.Padding(3)
-        Me.SearchFieldTxtBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.SearchFieldTxtBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.SearchFieldTxtBox.PlaceholderText = "Search Name"
-        Me.SearchFieldTxtBox.ReadOnly = False
-        Me.SearchFieldTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.SearchFieldTxtBox.SelectedText = ""
-        Me.SearchFieldTxtBox.SelectionLength = 0
-        Me.SearchFieldTxtBox.SelectionStart = 0
-        Me.SearchFieldTxtBox.ShortcutsEnabled = True
-        Me.SearchFieldTxtBox.Size = New System.Drawing.Size(260, 33)
-        Me.SearchFieldTxtBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu
-        Me.SearchFieldTxtBox.TabIndex = 115
-        Me.SearchFieldTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.SearchFieldTxtBox.TextMarginBottom = 0
-        Me.SearchFieldTxtBox.TextMarginLeft = 5
-        Me.SearchFieldTxtBox.TextMarginTop = 0
-        Me.SearchFieldTxtBox.TextPlaceholder = "Search Name"
-        Me.SearchFieldTxtBox.UseSystemPasswordChar = False
-        Me.SearchFieldTxtBox.WordWrap = True
         '
         'MyResidents
         '

@@ -723,6 +723,7 @@ Partial Class Officials
         Me.BirthdateDatePicker.Name = "BirthdateDatePicker"
         Me.BirthdateDatePicker.Size = New System.Drawing.Size(258, 42)
         Me.BirthdateDatePicker.TabIndex = 107
+        Me.BirthdateDatePicker.Value = New Date(2021, 5, 28, 22, 56, 26, 0)
         '
         'UpdateButton
         '

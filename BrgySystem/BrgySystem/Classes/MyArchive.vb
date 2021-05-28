@@ -29,6 +29,7 @@ Public Class MyArchive
         If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Purok?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manipulate.manipulateDataAt("DELETE FROM `archive_purok` WHERE PurokName = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Purok '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
             Else
                 MessageBox.Show("An error occured. Failed to delete Purok'" & name & "'", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
