@@ -50,6 +50,7 @@ Public Class Clearance
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "clearance", SearchFieldTextBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Fullname", "residents", FullNameTextBox)
 
+        SearchFieldTextBox.PlaceholderText = "Search Name"
     End Sub
 
 

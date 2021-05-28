@@ -13,7 +13,7 @@ Public Class MySettingsOrganizationalChart
         Try
             While reader.Read()
                 Return reader.GetString("ImagePath")
-                closeConnection()
+
             End While
         Catch x As MySqlException
 

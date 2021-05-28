@@ -3,6 +3,7 @@
 Public Class Dashboard
 
     Private setMissionVision As SettingMissionVision = New SettingMissionVision
+    Private mainform As New MainForm
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         setMissionVision.displayMissionAndVision()
         LiveDateAndTime.Text = "TODAY IS " & Date.Now
@@ -41,4 +42,7 @@ Public Class Dashboard
         Return "0"
     End Function
 
+    Private Sub ResBttn1_Click(sender As Object, e As EventArgs) Handles ResBttn1.Click
+
+    End Sub
 End Class

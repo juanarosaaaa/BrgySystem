@@ -152,6 +152,7 @@ Public Class MyOfficials
         If (MessageBox.Show("Are you sure you want to delete '" & officialname.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manage.manipulateDataAt("DELETE FROM `officials` WHERE NAME = '" & officialname.Trim & "' ")) Then
                 MessageBox.Show("Barangay Official '" & officialname.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
             Else
                 MessageBox.Show("Failed to delete Barangay Official!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -169,6 +170,7 @@ Public Class MyOfficials
             If (MessageBox.Show("Are you sure you want to archive '" & official.ToUpper.Trim & "' Barangay Official?", "Are you sure you want to archive?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
                 If (manage.manipulateDataAt(query)) Then
                     MessageBox.Show("Barangay Official '" & official.ToUpper.Trim & "' was archived successfully! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
                 Else
                     MessageBox.Show("Failed to archive Barangay Official!", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If

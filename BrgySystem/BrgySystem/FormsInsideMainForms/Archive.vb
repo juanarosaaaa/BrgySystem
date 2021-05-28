@@ -10,7 +10,7 @@ Public Class Archive
     Private AlreadyStartAtResidentArchive As Boolean = False
     Private alreadyStartAtOfficialArchive As Boolean = False
     Private Const archivePurokQuery As String = "SELECT PurokName FROM `archive_purok`"
-    Private Const archiveResidentsQuery As String = "SELECT FULLNAME,SEX,AGE,RELIGION,CITIZENSHIP,ADDRESS FROM `archive_residents`"
+    Private Const archiveResidentsQuery As String = "SELECT FULLNAME,SEX,AGE,RELIGION,CITIZENSHIP,ADDRESS,CIVIL_STATUS,REGISTERED_VOTER FROM `archive_residents`"
     Private Const archiveOfficialQuery As String = "SELECT NAME,STATUS,CONTACT,POSITION,TERM,SEX,PUROK,AGE from `archive_officials`"
 
 
@@ -44,6 +44,10 @@ Public Class Archive
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "archive_purok", PurokArchiveSearchField)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("FULLNAME", "archive_residents", ResidentsArchiveSearchField)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("NAME", "archive_officials", OfficialsArchiveSearchField)
+
+        PurokArchiveSearchField.PlaceholderText = "Search Purok"
+        OfficialsArchiveSearchField.PlaceholderText = "Search Name"
+        ResidentsArchiveSearchField.PlaceholderText = "Search Name"
     End Sub
 
 

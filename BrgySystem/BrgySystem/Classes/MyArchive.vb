@@ -29,6 +29,7 @@ Public Class MyArchive
         If (MessageBox.Show("Are you sure you want to delete '" & name.ToUpper.Trim & "' Purok?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manipulate.manipulateDataAt("DELETE FROM `archive_purok` WHERE PurokName = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Purok '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
             Else
                 MessageBox.Show("An error occured. Failed to delete Purok'" & name & "'", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -54,6 +55,8 @@ Public Class MyArchive
         Archive.ResidentsArchiveGridView.Columns("religion_Column").DataPropertyName = "RELIGION"
         Archive.ResidentsArchiveGridView.Columns("citizenship_Column").DataPropertyName = "CITIZENSHIP"
         Archive.ResidentsArchiveGridView.Columns("address_Column").DataPropertyName = "ADDRESS"
+        Archive.ResidentsArchiveGridView.Columns("civilStatus_Col").DataPropertyName = "CIVIL_STATUS"
+        Archive.ResidentsArchiveGridView.Columns("registeredvoter_column").DataPropertyName = "REGISTERED_VOTER"
     End Sub
     Sub arrangeOfficialsColumns()
         Archive.ArchiveOfficialGridView.Columns("fullnameColumnOfficials").DataPropertyName = "NAME"

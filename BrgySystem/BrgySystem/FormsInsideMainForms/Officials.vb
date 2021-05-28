@@ -32,6 +32,8 @@
         manage.loadGridViewValueOf(officials_.getOfficialsQueryValuesSelectedColumn, OfficialsGridVIew)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("Name", "officials", SearchfieldTExtBox)
         search.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", PurokTxtBox)
+
+        SearchfieldTExtBox.PlaceholderText = "Search Name"
     End Sub
 
 

@@ -119,6 +119,7 @@ Public Class MyClearance
         If (MessageBox.Show("Are you sure you want to delete ALL the history of Resident '" & name.ToUpper.Trim & "'s Barangay Clearance?", "Are you sure you want to delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
             If (manipulate.manipulateDataAt("DELETE FROM `clearance` WHERE Fullname = '" & name.Trim & "' ")) Then
                 MessageBox.Show("Barangay Clearance for '" & name.ToUpper.Trim & "' was successfully deleted! ", "SUCCESS!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
             Else
                 MessageBox.Show("Failed to delete Barangay Clearance!", "FAILED!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
