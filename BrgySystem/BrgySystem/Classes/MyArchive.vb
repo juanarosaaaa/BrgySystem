@@ -54,6 +54,8 @@ Public Class MyArchive
         Archive.ResidentsArchiveGridView.Columns("religion_Column").DataPropertyName = "RELIGION"
         Archive.ResidentsArchiveGridView.Columns("citizenship_Column").DataPropertyName = "CITIZENSHIP"
         Archive.ResidentsArchiveGridView.Columns("address_Column").DataPropertyName = "ADDRESS"
+        Archive.ResidentsArchiveGridView.Columns("civilStatus_Col").DataPropertyName = "CIVIL_STATUS"
+        Archive.ResidentsArchiveGridView.Columns("registeredvoter_column").DataPropertyName = "REGISTERED_VOTER"
     End Sub
     Sub arrangeOfficialsColumns()
         Archive.ArchiveOfficialGridView.Columns("fullnameColumnOfficials").DataPropertyName = "NAME"

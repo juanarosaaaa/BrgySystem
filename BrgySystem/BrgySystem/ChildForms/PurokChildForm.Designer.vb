@@ -35,6 +35,8 @@ Partial Class PurokChildForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PurokTextBox
@@ -66,7 +68,7 @@ Partial Class PurokChildForm
         Me.PurokTextBox.IconRight = Nothing
         Me.PurokTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam
         Me.PurokTextBox.Lines = New String(-1) {}
-        Me.PurokTextBox.Location = New System.Drawing.Point(19, 108)
+        Me.PurokTextBox.Location = New System.Drawing.Point(17, 114)
         Me.PurokTextBox.MaxLength = 32767
         Me.PurokTextBox.MinimumSize = New System.Drawing.Size(1, 1)
         Me.PurokTextBox.Modified = False
@@ -161,7 +163,7 @@ Partial Class PurokChildForm
         Me.AddPurokBttn.IdleIconLeftImage = Nothing
         Me.AddPurokBttn.IdleIconRightImage = Nothing
         Me.AddPurokBttn.IndicateFocus = False
-        Me.AddPurokBttn.Location = New System.Drawing.Point(240, 169)
+        Me.AddPurokBttn.Location = New System.Drawing.Point(245, 166)
         Me.AddPurokBttn.Name = "AddPurokBttn"
         Me.AddPurokBttn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.AddPurokBttn.OnDisabledState.BorderRadius = 1
@@ -251,7 +253,7 @@ Partial Class PurokChildForm
         Me.UpdateBttn.IdleIconLeftImage = Nothing
         Me.UpdateBttn.IdleIconRightImage = Nothing
         Me.UpdateBttn.IndicateFocus = False
-        Me.UpdateBttn.Location = New System.Drawing.Point(48, 168)
+        Me.UpdateBttn.Location = New System.Drawing.Point(51, 166)
         Me.UpdateBttn.Name = "UpdateBttn"
         Me.UpdateBttn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.UpdateBttn.OnDisabledState.BorderRadius = 1
@@ -313,7 +315,7 @@ Partial Class PurokChildForm
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label2.Location = New System.Drawing.Point(176, 46)
+        Me.Label2.Location = New System.Drawing.Point(179, 58)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(104, 26)
@@ -333,12 +335,28 @@ Partial Class PurokChildForm
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
         Me.Guna2Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_close_window_33px
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(28, 28)
-        Me.Guna2Button1.Location = New System.Drawing.Point(432, 10)
+        Me.Guna2Button1.Location = New System.Drawing.Point(431, 14)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.PressedColor = System.Drawing.Color.White
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
         Me.Guna2Button1.Size = New System.Drawing.Size(22, 22)
         Me.Guna2Button1.TabIndex = 5
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Guna2Button1)
+        Me.GroupBox1.Controls.Add(Me.UpdateBttn)
+        Me.GroupBox1.Controls.Add(Me.PurokTextBox)
+        Me.GroupBox1.Controls.Add(Me.AddPurokBttn)
+        Me.GroupBox1.Location = New System.Drawing.Point(1, -4)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(462, 245)
+        Me.GroupBox1.TabIndex = 6
+        Me.GroupBox1.TabStop = False
         '
         'PurokChildForm
         '
@@ -346,16 +364,14 @@ Partial Class PurokChildForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(23, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(463, 241)
-        Me.Controls.Add(Me.Guna2Button1)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.UpdateBttn)
-        Me.Controls.Add(Me.AddPurokBttn)
-        Me.Controls.Add(Me.PurokTextBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MinimizeBox = False
         Me.Name = "PurokChildForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -367,4 +383,5 @@ Partial Class PurokChildForm
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

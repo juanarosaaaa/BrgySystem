@@ -170,7 +170,7 @@ Partial Class SettingsBarangayDetailsForm
         Me.GroupBox1.Controls.Add(Me.ZipCodeTextBox)
         Me.GroupBox1.Controls.Add(Me.BunifuLabel4)
         Me.GroupBox1.Controls.Add(Me.BunifuLabel3)
-        Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GroupBox1.Location = New System.Drawing.Point(1, 0)
         Me.GroupBox1.Name = "GroupBox1"

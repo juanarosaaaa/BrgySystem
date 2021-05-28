@@ -10,7 +10,7 @@ Public Class Archive
     Private AlreadyStartAtResidentArchive As Boolean = False
     Private alreadyStartAtOfficialArchive As Boolean = False
     Private Const archivePurokQuery As String = "SELECT PurokName FROM `archive_purok`"
-    Private Const archiveResidentsQuery As String = "SELECT FULLNAME,SEX,AGE,RELIGION,CITIZENSHIP,ADDRESS FROM `archive_residents`"
+    Private Const archiveResidentsQuery As String = "SELECT FULLNAME,SEX,AGE,RELIGION,CITIZENSHIP,ADDRESS,CIVIL_STATUS,REGISTERED_VOTER FROM `archive_residents`"
     Private Const archiveOfficialQuery As String = "SELECT NAME,STATUS,CONTACT,POSITION,TERM,SEX,PUROK,AGE from `archive_officials`"
 
 

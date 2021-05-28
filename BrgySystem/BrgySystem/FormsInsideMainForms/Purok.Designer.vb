@@ -62,7 +62,7 @@ Partial Class Purok
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1121, 755)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1121, 764)
         Me.TableLayoutPanel1.TabIndex = 6
         '
         'GroupBox1
@@ -76,9 +76,9 @@ Partial Class Purok
         Me.GroupBox1.Controls.Add(Me.PurokGridView)
         Me.GroupBox1.Controls.Add(Me.AddPurokButton)
         Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 14.25!)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 1)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, -11)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1115, 756)
+        Me.GroupBox1.Size = New System.Drawing.Size(1115, 777)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
@@ -210,7 +210,7 @@ Partial Class Purok
         Me.PurokGridView.DefaultCellStyle = DataGridViewCellStyle7
         Me.PurokGridView.EnableHeadersVisualStyles = False
         Me.PurokGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(187, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(251, Byte), Integer))
-        Me.PurokGridView.Location = New System.Drawing.Point(4, 92)
+        Me.PurokGridView.Location = New System.Drawing.Point(4, 89)
         Me.PurokGridView.Name = "PurokGridView"
         Me.PurokGridView.ReadOnly = True
         Me.PurokGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
@@ -231,7 +231,7 @@ Partial Class Purok
         Me.PurokGridView.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.PurokGridView.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Palatino Linotype", 14.25!)
         Me.PurokGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.PurokGridView.Size = New System.Drawing.Size(1107, 658)
+        Me.PurokGridView.Size = New System.Drawing.Size(1107, 684)
         Me.PurokGridView.TabIndex = 6
         Me.PurokGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue
         Me.PurokGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(189, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(251, Byte), Integer))

@@ -79,16 +79,18 @@ Partial Class Archive
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.ResidentsArchiveSearchButton = New System.Windows.Forms.Button()
         Me.ResidentsArchiveGridView = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.ResidentsArchiveSearchField = New Bunifu.UI.WinForms.BunifuTextBox()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.fname_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.sex_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.age_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.religion_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.citizenship_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.address_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.civilStatus_Col = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.registeredvoter_column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.restoreofficials_ButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
         Me.deleteOfficials_ButtonColumn = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.ResidentsArchiveSearchField = New Bunifu.UI.WinForms.BunifuTextBox()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage3.SuspendLayout()
         CType(Me.ArchiveOfficialGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
@@ -610,7 +612,7 @@ Partial Class Archive
         Me.ResidentsArchiveGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle18
         Me.ResidentsArchiveGridView.ColumnHeadersHeight = 40
         Me.ResidentsArchiveGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.ResidentsArchiveGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fname_Column, Me.sex_Column, Me.age_Column, Me.religion_Column, Me.citizenship_Column, Me.address_Column, Me.restoreofficials_ButtonColumn, Me.deleteOfficials_ButtonColumn})
+        Me.ResidentsArchiveGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fname_Column, Me.sex_Column, Me.age_Column, Me.religion_Column, Me.citizenship_Column, Me.address_Column, Me.civilStatus_Col, Me.registeredvoter_column, Me.restoreofficials_ButtonColumn, Me.deleteOfficials_ButtonColumn})
         DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(252, Byte), Integer))
         DataGridViewCellStyle19.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -659,62 +661,6 @@ Partial Class Archive
         Me.ResidentsArchiveGridView.ThemeStyle.RowsStyle.Height = 22
         Me.ResidentsArchiveGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.ResidentsArchiveGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black
-        '
-        'fname_Column
-        '
-        Me.fname_Column.HeaderText = "Fullname"
-        Me.fname_Column.Name = "fname_Column"
-        Me.fname_Column.ReadOnly = True
-        '
-        'sex_Column
-        '
-        Me.sex_Column.HeaderText = "Sex"
-        Me.sex_Column.Name = "sex_Column"
-        Me.sex_Column.ReadOnly = True
-        '
-        'age_Column
-        '
-        Me.age_Column.HeaderText = "Age"
-        Me.age_Column.Name = "age_Column"
-        Me.age_Column.ReadOnly = True
-        '
-        'religion_Column
-        '
-        Me.religion_Column.HeaderText = "Religion"
-        Me.religion_Column.Name = "religion_Column"
-        Me.religion_Column.ReadOnly = True
-        '
-        'citizenship_Column
-        '
-        Me.citizenship_Column.HeaderText = "Citizenship"
-        Me.citizenship_Column.Name = "citizenship_Column"
-        Me.citizenship_Column.ReadOnly = True
-        '
-        'address_Column
-        '
-        Me.address_Column.HeaderText = "Address"
-        Me.address_Column.Name = "address_Column"
-        Me.address_Column.ReadOnly = True
-        '
-        'restoreofficials_ButtonColumn
-        '
-        Me.restoreofficials_ButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.restoreofficials_ButtonColumn.HeaderText = ""
-        Me.restoreofficials_ButtonColumn.MinimumWidth = 30
-        Me.restoreofficials_ButtonColumn.Name = "restoreofficials_ButtonColumn"
-        Me.restoreofficials_ButtonColumn.ReadOnly = True
-        Me.restoreofficials_ButtonColumn.ToolTipText = "Restore"
-        Me.restoreofficials_ButtonColumn.Width = 30
-        '
-        'deleteOfficials_ButtonColumn
-        '
-        Me.deleteOfficials_ButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.deleteOfficials_ButtonColumn.HeaderText = ""
-        Me.deleteOfficials_ButtonColumn.MinimumWidth = 30
-        Me.deleteOfficials_ButtonColumn.Name = "deleteOfficials_ButtonColumn"
-        Me.deleteOfficials_ButtonColumn.ReadOnly = True
-        Me.deleteOfficials_ButtonColumn.ToolTipText = "Delete"
-        Me.deleteOfficials_ButtonColumn.Width = 30
         '
         'ResidentsArchiveSearchField
         '
@@ -811,6 +757,74 @@ Partial Class Archive
         Me.TabControl1.Size = New System.Drawing.Size(1120, 761)
         Me.TabControl1.TabIndex = 0
         '
+        'fname_Column
+        '
+        Me.fname_Column.HeaderText = "Fullname"
+        Me.fname_Column.Name = "fname_Column"
+        Me.fname_Column.ReadOnly = True
+        '
+        'sex_Column
+        '
+        Me.sex_Column.HeaderText = "Sex"
+        Me.sex_Column.Name = "sex_Column"
+        Me.sex_Column.ReadOnly = True
+        '
+        'age_Column
+        '
+        Me.age_Column.HeaderText = "Age"
+        Me.age_Column.Name = "age_Column"
+        Me.age_Column.ReadOnly = True
+        '
+        'religion_Column
+        '
+        Me.religion_Column.HeaderText = "Religion"
+        Me.religion_Column.Name = "religion_Column"
+        Me.religion_Column.ReadOnly = True
+        '
+        'citizenship_Column
+        '
+        Me.citizenship_Column.HeaderText = "Citizenship"
+        Me.citizenship_Column.Name = "citizenship_Column"
+        Me.citizenship_Column.ReadOnly = True
+        '
+        'address_Column
+        '
+        Me.address_Column.HeaderText = "Address"
+        Me.address_Column.Name = "address_Column"
+        Me.address_Column.ReadOnly = True
+        '
+        'civilStatus_Col
+        '
+        Me.civilStatus_Col.HeaderText = "Civil Status"
+        Me.civilStatus_Col.Name = "civilStatus_Col"
+        Me.civilStatus_Col.ReadOnly = True
+        '
+        'registeredvoter_column
+        '
+        Me.registeredvoter_column.HeaderText = "Voter"
+        Me.registeredvoter_column.Name = "registeredvoter_column"
+        Me.registeredvoter_column.ReadOnly = True
+        '
+        'restoreofficials_ButtonColumn
+        '
+        Me.restoreofficials_ButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.restoreofficials_ButtonColumn.HeaderText = ""
+        Me.restoreofficials_ButtonColumn.MinimumWidth = 30
+        Me.restoreofficials_ButtonColumn.Name = "restoreofficials_ButtonColumn"
+        Me.restoreofficials_ButtonColumn.ReadOnly = True
+        Me.restoreofficials_ButtonColumn.ToolTipText = "Restore"
+        Me.restoreofficials_ButtonColumn.Width = 30
+        '
+        'deleteOfficials_ButtonColumn
+        '
+        Me.deleteOfficials_ButtonColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.deleteOfficials_ButtonColumn.HeaderText = ""
+        Me.deleteOfficials_ButtonColumn.MinimumWidth = 30
+        Me.deleteOfficials_ButtonColumn.Name = "deleteOfficials_ButtonColumn"
+        Me.deleteOfficials_ButtonColumn.ReadOnly = True
+        Me.deleteOfficials_ButtonColumn.ToolTipText = "Delete"
+        Me.deleteOfficials_ButtonColumn.Width = 30
+        '
         'Archive
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -857,14 +871,16 @@ Partial Class Archive
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents ResidentsArchiveSearchButton As Button
     Friend WithEvents ResidentsArchiveGridView As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents ResidentsArchiveSearchField As Bunifu.UI.WinForms.BunifuTextBox
+    Friend WithEvents TabControl1 As TabControl
     Friend WithEvents fname_Column As DataGridViewTextBoxColumn
     Friend WithEvents sex_Column As DataGridViewTextBoxColumn
     Friend WithEvents age_Column As DataGridViewTextBoxColumn
     Friend WithEvents religion_Column As DataGridViewTextBoxColumn
     Friend WithEvents citizenship_Column As DataGridViewTextBoxColumn
     Friend WithEvents address_Column As DataGridViewTextBoxColumn
+    Friend WithEvents civilStatus_Col As DataGridViewTextBoxColumn
+    Friend WithEvents registeredvoter_column As DataGridViewTextBoxColumn
     Friend WithEvents restoreofficials_ButtonColumn As DataGridViewImageColumn
     Friend WithEvents deleteOfficials_ButtonColumn As DataGridViewImageColumn
-    Friend WithEvents ResidentsArchiveSearchField As Bunifu.UI.WinForms.BunifuTextBox
-    Friend WithEvents TabControl1 As TabControl
 End Class

@@ -24,6 +24,7 @@ Partial Class SettingsOrganizationChart
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingsOrganizationChart))
         Dim BorderEdges1 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
+        Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Dim StateProperties1 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties2 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties3 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
@@ -76,9 +77,9 @@ Partial Class SettingsOrganizationChart
         Dim StateProperties50 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties51 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
         Dim StateProperties52 As Bunifu.UI.WinForms.BunifuTextBox.StateProperties = New Bunifu.UI.WinForms.BunifuTextBox.StateProperties()
-        Dim BorderEdges2 As Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges = New Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges()
         Me.SaveButton = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.SaveBttn = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.CommitteeLabelStatus3 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.CommitteeLabelStatus2 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.KagawadLabelStatus3 = New Bunifu.UI.WinForms.BunifuLabel()
@@ -157,7 +158,6 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel24 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel25 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel26 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.SaveBttn = New Bunifu.UI.WinForms.BunifuButton.BunifuButton()
         Me.GroupBox1.SuspendLayout()
         CType(Me.CaptainPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TreasurerPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -222,7 +222,7 @@ Partial Class SettingsOrganizationChart
         Me.SaveButton.IdleIconLeftImage = Nothing
         Me.SaveButton.IdleIconRightImage = Nothing
         Me.SaveButton.IndicateFocus = False
-        Me.SaveButton.Location = New System.Drawing.Point(1705, 1237)
+        Me.SaveButton.Location = New System.Drawing.Point(1705, 1242)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.SaveButton.OnDisabledState.BorderRadius = 1
@@ -322,14 +322,104 @@ Partial Class SettingsOrganizationChart
         Me.GroupBox1.Controls.Add(Me.CommitteeTextBox1)
         Me.GroupBox1.Controls.Add(Me.BunifuLabel52)
         Me.GroupBox1.Controls.Add(Me.SaveButton)
-        Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.GroupBox1.Location = New System.Drawing.Point(5, -1)
+        Me.GroupBox1.Location = New System.Drawing.Point(5, -4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1118, 675)
+        Me.GroupBox1.Size = New System.Drawing.Size(1118, 680)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Organizational Chart"
+        Me.GroupBox1.Text = "Organizational Chart Settings"
+        '
+        'SaveBttn
+        '
+        Me.SaveBttn.AllowAnimations = True
+        Me.SaveBttn.AllowMouseEffects = True
+        Me.SaveBttn.AllowToggling = False
+        Me.SaveBttn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SaveBttn.AnimationSpeed = 200
+        Me.SaveBttn.AutoGenerateColors = False
+        Me.SaveBttn.AutoRoundBorders = True
+        Me.SaveBttn.AutoSizeLeftIcon = True
+        Me.SaveBttn.AutoSizeRightIcon = True
+        Me.SaveBttn.BackColor = System.Drawing.Color.Transparent
+        Me.SaveBttn.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.SaveBttn.BackgroundImage = CType(resources.GetObject("SaveBttn.BackgroundImage"), System.Drawing.Image)
+        Me.SaveBttn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.SaveBttn.ButtonText = "Save"
+        Me.SaveBttn.ButtonTextMarginLeft = 0
+        Me.SaveBttn.ColorContrastOnClick = 45
+        Me.SaveBttn.ColorContrastOnHover = 45
+        Me.SaveBttn.Cursor = System.Windows.Forms.Cursors.Default
+        BorderEdges2.BottomLeft = True
+        BorderEdges2.BottomRight = True
+        BorderEdges2.TopLeft = True
+        BorderEdges2.TopRight = True
+        Me.SaveBttn.CustomizableEdges = BorderEdges2
+        Me.SaveBttn.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.SaveBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.SaveBttn.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.SaveBttn.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.SaveBttn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
+        Me.SaveBttn.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaveBttn.ForeColor = System.Drawing.Color.White
+        Me.SaveBttn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SaveBttn.IconLeftCursor = System.Windows.Forms.Cursors.Default
+        Me.SaveBttn.IconLeftPadding = New System.Windows.Forms.Padding(11, 3, 3, 3)
+        Me.SaveBttn.IconMarginLeft = 11
+        Me.SaveBttn.IconPadding = 10
+        Me.SaveBttn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.SaveBttn.IconRightCursor = System.Windows.Forms.Cursors.Default
+        Me.SaveBttn.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
+        Me.SaveBttn.IconSize = 25
+        Me.SaveBttn.IdleBorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.SaveBttn.IdleBorderRadius = 42
+        Me.SaveBttn.IdleBorderThickness = 1
+        Me.SaveBttn.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.SaveBttn.IdleIconLeftImage = Nothing
+        Me.SaveBttn.IdleIconRightImage = Nothing
+        Me.SaveBttn.IndicateFocus = False
+        Me.SaveBttn.Location = New System.Drawing.Point(910, 609)
+        Me.SaveBttn.Name = "SaveBttn"
+        Me.SaveBttn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.SaveBttn.OnDisabledState.BorderRadius = 1
+        Me.SaveBttn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.SaveBttn.OnDisabledState.BorderThickness = 1
+        Me.SaveBttn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.SaveBttn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.SaveBttn.OnDisabledState.IconLeftImage = Nothing
+        Me.SaveBttn.OnDisabledState.IconRightImage = Nothing
+        Me.SaveBttn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SaveBttn.onHoverState.BorderRadius = 1
+        Me.SaveBttn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.SaveBttn.onHoverState.BorderThickness = 1
+        Me.SaveBttn.onHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SaveBttn.onHoverState.ForeColor = System.Drawing.Color.White
+        Me.SaveBttn.onHoverState.IconLeftImage = Nothing
+        Me.SaveBttn.onHoverState.IconRightImage = Nothing
+        Me.SaveBttn.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.SaveBttn.OnIdleState.BorderRadius = 1
+        Me.SaveBttn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.SaveBttn.OnIdleState.BorderThickness = 1
+        Me.SaveBttn.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.SaveBttn.OnIdleState.ForeColor = System.Drawing.Color.White
+        Me.SaveBttn.OnIdleState.IconLeftImage = Nothing
+        Me.SaveBttn.OnIdleState.IconRightImage = Nothing
+        Me.SaveBttn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.SaveBttn.OnPressedState.BorderRadius = 1
+        Me.SaveBttn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
+        Me.SaveBttn.OnPressedState.BorderThickness = 1
+        Me.SaveBttn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.SaveBttn.OnPressedState.ForeColor = System.Drawing.Color.White
+        Me.SaveBttn.OnPressedState.IconLeftImage = Nothing
+        Me.SaveBttn.OnPressedState.IconRightImage = Nothing
+        Me.SaveBttn.Size = New System.Drawing.Size(188, 44)
+        Me.SaveBttn.TabIndex = 90
+        Me.SaveBttn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.SaveBttn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
+        Me.SaveBttn.TextMarginLeft = 0
+        Me.SaveBttn.TextPadding = New System.Windows.Forms.Padding(0)
+        Me.SaveBttn.UseDefaultRadiusAndThickness = True
         '
         'CommitteeLabelStatus3
         '
@@ -2426,96 +2516,6 @@ Partial Class SettingsOrganizationChart
         Me.BunifuLabel26.Text = "Committee:"
         Me.BunifuLabel26.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel26.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
-        '
-        'SaveBttn
-        '
-        Me.SaveBttn.AllowAnimations = True
-        Me.SaveBttn.AllowMouseEffects = True
-        Me.SaveBttn.AllowToggling = False
-        Me.SaveBttn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SaveBttn.AnimationSpeed = 200
-        Me.SaveBttn.AutoGenerateColors = False
-        Me.SaveBttn.AutoRoundBorders = True
-        Me.SaveBttn.AutoSizeLeftIcon = True
-        Me.SaveBttn.AutoSizeRightIcon = True
-        Me.SaveBttn.BackColor = System.Drawing.Color.Transparent
-        Me.SaveBttn.BackColor1 = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.SaveBttn.BackgroundImage = CType(resources.GetObject("SaveBttn.BackgroundImage"), System.Drawing.Image)
-        Me.SaveBttn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.SaveBttn.ButtonText = "Save"
-        Me.SaveBttn.ButtonTextMarginLeft = 0
-        Me.SaveBttn.ColorContrastOnClick = 45
-        Me.SaveBttn.ColorContrastOnHover = 45
-        Me.SaveBttn.Cursor = System.Windows.Forms.Cursors.Default
-        BorderEdges2.BottomLeft = True
-        BorderEdges2.BottomRight = True
-        BorderEdges2.TopLeft = True
-        BorderEdges2.TopRight = True
-        Me.SaveBttn.CustomizableEdges = BorderEdges2
-        Me.SaveBttn.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.SaveBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.SaveBttn.DisabledFillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.SaveBttn.DisabledForecolor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
-        Me.SaveBttn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed
-        Me.SaveBttn.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SaveBttn.ForeColor = System.Drawing.Color.White
-        Me.SaveBttn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.SaveBttn.IconLeftCursor = System.Windows.Forms.Cursors.Default
-        Me.SaveBttn.IconLeftPadding = New System.Windows.Forms.Padding(11, 3, 3, 3)
-        Me.SaveBttn.IconMarginLeft = 11
-        Me.SaveBttn.IconPadding = 10
-        Me.SaveBttn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.SaveBttn.IconRightCursor = System.Windows.Forms.Cursors.Default
-        Me.SaveBttn.IconRightPadding = New System.Windows.Forms.Padding(3, 3, 7, 3)
-        Me.SaveBttn.IconSize = 25
-        Me.SaveBttn.IdleBorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.SaveBttn.IdleBorderRadius = 42
-        Me.SaveBttn.IdleBorderThickness = 1
-        Me.SaveBttn.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.SaveBttn.IdleIconLeftImage = Nothing
-        Me.SaveBttn.IdleIconRightImage = Nothing
-        Me.SaveBttn.IndicateFocus = False
-        Me.SaveBttn.Location = New System.Drawing.Point(910, 604)
-        Me.SaveBttn.Name = "SaveBttn"
-        Me.SaveBttn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.SaveBttn.OnDisabledState.BorderRadius = 1
-        Me.SaveBttn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.SaveBttn.OnDisabledState.BorderThickness = 1
-        Me.SaveBttn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.SaveBttn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(168, Byte), Integer))
-        Me.SaveBttn.OnDisabledState.IconLeftImage = Nothing
-        Me.SaveBttn.OnDisabledState.IconRightImage = Nothing
-        Me.SaveBttn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SaveBttn.onHoverState.BorderRadius = 1
-        Me.SaveBttn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.SaveBttn.onHoverState.BorderThickness = 1
-        Me.SaveBttn.onHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SaveBttn.onHoverState.ForeColor = System.Drawing.Color.White
-        Me.SaveBttn.onHoverState.IconLeftImage = Nothing
-        Me.SaveBttn.onHoverState.IconRightImage = Nothing
-        Me.SaveBttn.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.SaveBttn.OnIdleState.BorderRadius = 1
-        Me.SaveBttn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.SaveBttn.OnIdleState.BorderThickness = 1
-        Me.SaveBttn.OnIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.SaveBttn.OnIdleState.ForeColor = System.Drawing.Color.White
-        Me.SaveBttn.OnIdleState.IconLeftImage = Nothing
-        Me.SaveBttn.OnIdleState.IconRightImage = Nothing
-        Me.SaveBttn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.SaveBttn.OnPressedState.BorderRadius = 1
-        Me.SaveBttn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid
-        Me.SaveBttn.OnPressedState.BorderThickness = 1
-        Me.SaveBttn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.SaveBttn.OnPressedState.ForeColor = System.Drawing.Color.White
-        Me.SaveBttn.OnPressedState.IconLeftImage = Nothing
-        Me.SaveBttn.OnPressedState.IconRightImage = Nothing
-        Me.SaveBttn.Size = New System.Drawing.Size(188, 44)
-        Me.SaveBttn.TabIndex = 90
-        Me.SaveBttn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.SaveBttn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
-        Me.SaveBttn.TextMarginLeft = 0
-        Me.SaveBttn.TextPadding = New System.Windows.Forms.Padding(0)
-        Me.SaveBttn.UseDefaultRadiusAndThickness = True
         '
         'SettingsOrganizationChart
         '
