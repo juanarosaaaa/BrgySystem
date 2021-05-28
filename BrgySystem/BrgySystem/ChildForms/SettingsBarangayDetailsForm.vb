@@ -45,6 +45,8 @@ Public Class SettingsBarangayDetailsForm
                 MessageBox.Show("Zip code is invalid!", "FAILED TO UPDATE BARANGAY INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 brgyInfo.updateBarangayInformation()
+                MainForm.AdminNameTextBox.Text = brgyInfo.getAdminName
+                MainForm.MunicipalityLogo.Image = Image.FromFile(brgyInfo.getImagePath)
                 MessageBox.Show("Barangay Information updated successfully!", "SUCCESSFULLY UPDATED!", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
             End If

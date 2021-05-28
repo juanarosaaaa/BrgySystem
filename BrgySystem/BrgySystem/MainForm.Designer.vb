@@ -73,6 +73,7 @@ Partial Class MainForm
         Me.AdminNameTextBox.Location = New System.Drawing.Point(-1, 129)
         Me.AdminNameTextBox.Name = "AdminNameTextBox"
         Me.AdminNameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.AdminNameTextBox.ReadOnly = True
         Me.AdminNameTextBox.SelectedText = ""
         Me.AdminNameTextBox.Size = New System.Drawing.Size(243, 36)
         Me.AdminNameTextBox.TabIndex = 28
@@ -93,6 +94,7 @@ Partial Class MainForm
         Me.GunaTextBox2.Location = New System.Drawing.Point(-1, 165)
         Me.GunaTextBox2.Name = "GunaTextBox2"
         Me.GunaTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.GunaTextBox2.ReadOnly = True
         Me.GunaTextBox2.SelectedText = ""
         Me.GunaTextBox2.Size = New System.Drawing.Size(250, 36)
         Me.GunaTextBox2.TabIndex = 29

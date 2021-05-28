@@ -34,28 +34,22 @@ Partial Class Dashboard
         Me.RichTextBoxMission = New System.Windows.Forms.RichTextBox()
         Me.BunifuLabel8 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuGradientPanel3 = New Bunifu.UI.WinForms.BunifuGradientPanel()
-        Me.BunifuPictureBox3 = New Bunifu.UI.WinForms.BunifuPictureBox()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.lblCountPurok = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel7 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuGradientPanel6 = New Bunifu.UI.WinForms.BunifuGradientPanel()
-        Me.BunifuPictureBox4 = New Bunifu.UI.WinForms.BunifuPictureBox()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.lblCountClearance = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel11 = New Bunifu.UI.WinForms.BunifuLabel()
-        Me.BunifuGradientPanel1 = New Bunifu.UI.WinForms.BunifuGradientPanel()
-        Me.BunifuPictureBox1 = New Bunifu.UI.WinForms.BunifuPictureBox()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.ResBttn = New Bunifu.UI.WinForms.BunifuGradientPanel()
+        Me.ResBttn1 = New Guna.UI2.WinForms.Guna2Button()
         Me.lblCountResidents = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuLabel2 = New Bunifu.UI.WinForms.BunifuLabel()
         Me.BunifuGradientPanel5.SuspendLayout()
         Me.BunifuGradientPanel4.SuspendLayout()
         Me.BunifuGradientPanel3.SuspendLayout()
-        CType(Me.BunifuPictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel6.SuspendLayout()
-        CType(Me.BunifuPictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.BunifuGradientPanel1.SuspendLayout()
-        CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ResBttn.SuspendLayout()
         Me.SuspendLayout()
         '
         'BunifuLabel1
@@ -200,7 +194,6 @@ Partial Class Dashboard
         Me.BunifuGradientPanel3.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel3.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuGradientPanel3.BorderRadius = 30
-        Me.BunifuGradientPanel3.Controls.Add(Me.BunifuPictureBox3)
         Me.BunifuGradientPanel3.Controls.Add(Me.Guna2Button1)
         Me.BunifuGradientPanel3.Controls.Add(Me.lblCountPurok)
         Me.BunifuGradientPanel3.Controls.Add(Me.BunifuLabel7)
@@ -215,23 +208,6 @@ Partial Class Dashboard
         Me.BunifuGradientPanel3.Size = New System.Drawing.Size(347, 138)
         Me.BunifuGradientPanel3.TabIndex = 3
         '
-        'BunifuPictureBox3
-        '
-        Me.BunifuPictureBox3.AllowFocused = False
-        Me.BunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuPictureBox3.AutoSizeHeight = True
-        Me.BunifuPictureBox3.BorderRadius = 0
-        Me.BunifuPictureBox3.Image = Global.BrgySystem.My.Resources.Resources.icons8_downtown_70px
-        Me.BunifuPictureBox3.IsCircle = True
-        Me.BunifuPictureBox3.Location = New System.Drawing.Point(11, 27)
-        Me.BunifuPictureBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.BunifuPictureBox3.Name = "BunifuPictureBox3"
-        Me.BunifuPictureBox3.Size = New System.Drawing.Size(78, 78)
-        Me.BunifuPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuPictureBox3.TabIndex = 1
-        Me.BunifuPictureBox3.TabStop = False
-        Me.BunifuPictureBox3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square
-        '
         'Guna2Button1
         '
         Me.Guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -242,6 +218,8 @@ Partial Class Dashboard
         Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Image = Global.BrgySystem.My.Resources.Resources.icons8_downtown_70px
+        Me.Guna2Button1.ImageSize = New System.Drawing.Size(78, 78)
         Me.Guna2Button1.Location = New System.Drawing.Point(-1, -1)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
@@ -289,7 +267,6 @@ Partial Class Dashboard
         Me.BunifuGradientPanel6.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel6.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuGradientPanel6.BorderRadius = 30
-        Me.BunifuGradientPanel6.Controls.Add(Me.BunifuPictureBox4)
         Me.BunifuGradientPanel6.Controls.Add(Me.Guna2Button2)
         Me.BunifuGradientPanel6.Controls.Add(Me.lblCountClearance)
         Me.BunifuGradientPanel6.Controls.Add(Me.BunifuLabel11)
@@ -304,23 +281,6 @@ Partial Class Dashboard
         Me.BunifuGradientPanel6.Size = New System.Drawing.Size(347, 138)
         Me.BunifuGradientPanel6.TabIndex = 2
         '
-        'BunifuPictureBox4
-        '
-        Me.BunifuPictureBox4.AllowFocused = False
-        Me.BunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuPictureBox4.AutoSizeHeight = True
-        Me.BunifuPictureBox4.BorderRadius = 0
-        Me.BunifuPictureBox4.Image = Global.BrgySystem.My.Resources.Resources.icons8_folder_78px1
-        Me.BunifuPictureBox4.IsCircle = True
-        Me.BunifuPictureBox4.Location = New System.Drawing.Point(13, 27)
-        Me.BunifuPictureBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.BunifuPictureBox4.Name = "BunifuPictureBox4"
-        Me.BunifuPictureBox4.Size = New System.Drawing.Size(78, 78)
-        Me.BunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuPictureBox4.TabIndex = 1
-        Me.BunifuPictureBox4.TabStop = False
-        Me.BunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square
-        '
         'Guna2Button2
         '
         Me.Guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -331,6 +291,8 @@ Partial Class Dashboard
         Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
         Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
+        Me.Guna2Button2.Image = Global.BrgySystem.My.Resources.Resources.icons8_folder_78px1
+        Me.Guna2Button2.ImageSize = New System.Drawing.Size(78, 78)
         Me.Guna2Button2.Location = New System.Drawing.Point(0, -1)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
@@ -371,60 +333,44 @@ Partial Class Dashboard
         Me.BunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft
         Me.BunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.[Default]
         '
-        'BunifuGradientPanel1
+        'ResBttn
         '
-        Me.BunifuGradientPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuGradientPanel1.BorderRadius = 30
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuPictureBox1)
-        Me.BunifuGradientPanel1.Controls.Add(Me.Guna2Button3)
-        Me.BunifuGradientPanel1.Controls.Add(Me.lblCountResidents)
-        Me.BunifuGradientPanel1.Controls.Add(Me.BunifuLabel2)
-        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(251, Byte), Integer))
-        Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(17, 114)
-        Me.BunifuGradientPanel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
-        Me.BunifuGradientPanel1.Quality = 10
-        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(347, 138)
-        Me.BunifuGradientPanel1.TabIndex = 2
+        Me.ResBttn.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.ResBttn.BackColor = System.Drawing.Color.Transparent
+        Me.ResBttn.BackgroundImage = CType(resources.GetObject("ResBttn.BackgroundImage"), System.Drawing.Image)
+        Me.ResBttn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ResBttn.BorderRadius = 30
+        Me.ResBttn.Controls.Add(Me.ResBttn1)
+        Me.ResBttn.Controls.Add(Me.lblCountResidents)
+        Me.ResBttn.Controls.Add(Me.BunifuLabel2)
+        Me.ResBttn.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.ResBttn.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(251, Byte), Integer))
+        Me.ResBttn.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(219, Byte), Integer))
+        Me.ResBttn.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.ResBttn.Location = New System.Drawing.Point(17, 114)
+        Me.ResBttn.Margin = New System.Windows.Forms.Padding(2)
+        Me.ResBttn.Name = "ResBttn"
+        Me.ResBttn.Quality = 10
+        Me.ResBttn.Size = New System.Drawing.Size(347, 138)
+        Me.ResBttn.TabIndex = 2
         '
-        'BunifuPictureBox1
+        'ResBttn1
         '
-        Me.BunifuPictureBox1.AllowFocused = False
-        Me.BunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuPictureBox1.AutoSizeHeight = True
-        Me.BunifuPictureBox1.BorderRadius = 39
-        Me.BunifuPictureBox1.Image = Global.BrgySystem.My.Resources.Resources.icons8_people_78px
-        Me.BunifuPictureBox1.IsCircle = True
-        Me.BunifuPictureBox1.Location = New System.Drawing.Point(12, 27)
-        Me.BunifuPictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.BunifuPictureBox1.Name = "BunifuPictureBox1"
-        Me.BunifuPictureBox1.Size = New System.Drawing.Size(78, 78)
-        Me.BunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuPictureBox1.TabIndex = 1
-        Me.BunifuPictureBox1.TabStop = False
-        Me.BunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle
-        '
-        'Guna2Button3
-        '
-        Me.Guna2Button3.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Guna2Button3.BorderThickness = 2
-        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
-        Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Location = New System.Drawing.Point(0, -1)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(101, 143)
-        Me.Guna2Button3.TabIndex = 8
+        Me.ResBttn1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.ResBttn1.BorderThickness = 2
+        Me.ResBttn1.CheckedState.Parent = Me.ResBttn1
+        Me.ResBttn1.CustomImages.Parent = Me.ResBttn1
+        Me.ResBttn1.FillColor = System.Drawing.Color.Transparent
+        Me.ResBttn1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ResBttn1.ForeColor = System.Drawing.Color.White
+        Me.ResBttn1.HoverState.Parent = Me.ResBttn1
+        Me.ResBttn1.Image = Global.BrgySystem.My.Resources.Resources.icons8_people_78px
+        Me.ResBttn1.ImageSize = New System.Drawing.Size(78, 78)
+        Me.ResBttn1.Location = New System.Drawing.Point(0, -1)
+        Me.ResBttn1.Name = "ResBttn1"
+        Me.ResBttn1.ShadowDecoration.Parent = Me.ResBttn1
+        Me.ResBttn1.Size = New System.Drawing.Size(101, 143)
+        Me.ResBttn1.TabIndex = 8
         '
         'lblCountResidents
         '
@@ -473,7 +419,7 @@ Partial Class Dashboard
         Me.Controls.Add(Me.BunifuGradientPanel4)
         Me.Controls.Add(Me.BunifuGradientPanel3)
         Me.Controls.Add(Me.BunifuGradientPanel6)
-        Me.Controls.Add(Me.BunifuGradientPanel1)
+        Me.Controls.Add(Me.ResBttn)
         Me.Controls.Add(Me.BunifuLabel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Dashboard"
@@ -485,25 +431,20 @@ Partial Class Dashboard
         Me.BunifuGradientPanel4.PerformLayout()
         Me.BunifuGradientPanel3.ResumeLayout(False)
         Me.BunifuGradientPanel3.PerformLayout()
-        CType(Me.BunifuPictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuGradientPanel6.ResumeLayout(False)
         Me.BunifuGradientPanel6.PerformLayout()
-        CType(Me.BunifuPictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.BunifuGradientPanel1.ResumeLayout(False)
-        Me.BunifuGradientPanel1.PerformLayout()
-        CType(Me.BunifuPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResBttn.ResumeLayout(False)
+        Me.ResBttn.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents BunifuLabel1 As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents BunifuGradientPanel1 As Bunifu.UI.WinForms.BunifuGradientPanel
+    Friend WithEvents ResBttn As Bunifu.UI.WinForms.BunifuGradientPanel
     Friend WithEvents lblCountResidents As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents BunifuPictureBox1 As Bunifu.UI.WinForms.BunifuPictureBox
     Friend WithEvents BunifuLabel2 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuGradientPanel3 As Bunifu.UI.WinForms.BunifuGradientPanel
-    Friend WithEvents BunifuPictureBox3 As Bunifu.UI.WinForms.BunifuPictureBox
     Friend WithEvents BunifuLabel7 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuGradientPanel4 As Bunifu.UI.WinForms.BunifuGradientPanel
     Friend WithEvents BunifuLabel8 As Bunifu.UI.WinForms.BunifuLabel
@@ -511,14 +452,13 @@ Partial Class Dashboard
     Friend WithEvents BunifuLabel10 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents BunifuGradientPanel6 As Bunifu.UI.WinForms.BunifuGradientPanel
     Friend WithEvents lblCountClearance As Bunifu.UI.WinForms.BunifuLabel
-    Friend WithEvents BunifuPictureBox4 As Bunifu.UI.WinForms.BunifuPictureBox
     Friend WithEvents BunifuLabel11 As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents LiveDateAndTime As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents lblCountPurok As Bunifu.UI.WinForms.BunifuLabel
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents ResBttn1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents RichTextBoxMission As RichTextBox
     Friend WithEvents RichTextBoxVision As RichTextBox
 End Class

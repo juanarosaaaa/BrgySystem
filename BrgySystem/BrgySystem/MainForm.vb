@@ -3,7 +3,7 @@ Public Class MainForm
     Private brgyInfo As BarangayInformation = New BarangayInformation
 
 
-    Sub showPanelDisplayOf(panelDisplay As Form)
+    Public Sub showPanelDisplayOf(panelDisplay As Form)
 
         MainPanel.Controls.Clear()
         panelDisplay.TopLevel = False
@@ -59,15 +59,18 @@ Public Class MainForm
     End Sub
 
     Private Sub Logout_Button_Click_1(sender As Object, e As EventArgs) Handles Logout_Button.Click
+        Application.Exit()
+
         My.Settings.UserNotLoggedOut = False
         My.Settings.Save()
         closeConnection() 'check later
-        Application.Exit()
+
 
     End Sub
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         showPanelDisplayOf(Dashboard)
+
         brgyInfo.displayInformation()
 
         Try
@@ -80,11 +83,11 @@ Public Class MainForm
 
 
 
-    Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+    Private Sub MainForm_FormClosing(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
 
 
         My.Settings.UserNotLoggedOut = True
-            My.Settings.Save()
+        My.Settings.Save()
 
 
     End Sub

@@ -28,11 +28,11 @@ Public Class PurokChildForm
     End Sub
 
     Private Sub FormIsClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        MsgBox(True)
-        'UpdateBttn.Enabled = True
-        'AddPurokBttn.Enabled = True
-        'PurokTextBox.Clear()
-        'searchVal.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", Purok.SearchBarField)
+
+        UpdateBttn.Enabled = True
+        AddPurokBttn.Enabled = True
+        PurokTextBox.Clear()
+        searchVal.addAndRefresh_DataSuggestion_WhileSearchingAt("PurokName", "Purok", Purok.SearchBarField)
     End Sub
 
     Private Sub PuroktextChange(sender As Object, e As EventArgs) Handles PurokTextBox.TextChange
@@ -42,6 +42,6 @@ Public Class PurokChildForm
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        Application.Exit()
+        Me.Close()
     End Sub
 End Class
