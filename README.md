@@ -1,4 +1,6 @@
-# BrgySystem
+# Barangay System
+First year final project vb.net
+Using CRUD
 
 Purok form
 ![](sc1.png)
