@@ -2,32 +2,32 @@
 # First year final project vb.net
 # CRUD APP
 
-Purok form
+#Purok form
 ![](sc1.png)
 
-Barangay Official's form
+#Barangay Official's form
 ![](sc2.png)
 
-Archive form
+#Archive form
 ![](sc3.png)
 
-Account Settings form
+#Account Settings form
 ![](sc4.png)
 
-Organizational Chart form
+#Organizational Chart form
 ![](sc5.png)
 
-Mission and Vision form
+#Mission and Vision form
 ![](sc6.png)
 
-Dashboard
+#Dashboard
 ![](sc7.png)
 
-Resident's form
+#Resident's form
 ![](sc8.png)
 
-Clearance form
+#Clearance form
 ![](sc9.png)
 
-Barangay Details form
+#Barangay Details form
 ![](sc10.png)
